@@ -29,10 +29,10 @@
 | Envoy-Archivist Calla Merion | Rival | Provisional Republic | [Republic & Admiralty](republic-admiralty.md) |
 | Archive Wardens | Minions | Provisional Republic | [Republic & Admiralty](republic-admiralty.md) |
 | Lady Admiral Maren Voss | Nemesis | Admiralty | [Republic & Admiralty](republic-admiralty.md) |
-| Bastion Marines | Minions | Admiralty | [Republic & Admiralty](republic-admiralty.md) |
+| Bastion Marines | Minions | Admiralty | [Republic & Admiralty](republic-admiralty.md) (also with the *Steadfast* boarding party in [Vesta-9](session-one.md)) |
 | Lieutenant-at-Writs Enna Calloway | Rival | Admiralty | [Republic & Admiralty](republic-admiralty.md) |
 | First Keeper Odran Su | Nemesis | Vigil (hardline) | [Vigil & Inheritors](vigil-inheritors.md) |
-| Keeper Liss Averil | Rival | Vigil (reform) | [Vigil & Inheritors](vigil-inheritors.md) |
+| Keeper Tessa Marn | Rival | Vigil (reform) | [Vigil & Inheritors](vigil-inheritors.md) |
 | Vigil Wardens | Minions | Vigil | [Vigil & Inheritors](vigil-inheritors.md) |
 | Meru Vane, "the First Friend" | Nemesis | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
 | Inheritor Adept | Rival | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
@@ -52,12 +52,12 @@
 | Runi Ordo | Rival | Mandalorian Clans (Awakened foundling) | [Lanes & Ledgers](lanes-ledgers.md) |
 | "Dead Letter" | Nemesis | a ninety-year-old contract | [The Reaches](reaches.md) |
 | Docent-7 | Rival | the Sealed Enclave | [The Reaches](reaches.md) |
-| The Quartermaster | Nemesis | the Ration Engine | [The Reaches](reaches.md) |
+| The Quartermaster | Rival (social) | the Ration Engine | [The Reaches](reaches.md) |
 | Anwei, the Oracle of Brel | Rival | Brel | [The Reaches](reaches.md) |
 | Provenance-Broker Halla Wex + Scribes | Rival + Minions | the Memory Market | [The Reaches](reaches.md) |
 | Junk Baron Okkam Dree + Clan Cutters | Rival + Minions | salvage economy | [The Reaches](reaches.md) |
 | Swoop Ace "Kettle" Maro | Rival | the circuit | [The Reaches](reaches.md) |
-| Pirate Captain of the Quiet + Quiet Pirates | Rival + Minions | the Quiet | [The Reaches](reaches.md) |
+| Pirate Captain of the Quiet + Quiet Pirates | Nemesis + Minions | the Quiet | [The Reaches](reaches.md) |
 | Hullmayor Bessa Rin + Hull-City Militia | Rival + Minions | the Mausoleum Yards | [The Reaches](reaches.md) |
 | Master Yenna Sar | Nemesis | hidden Jedi lineage | [Keepers of the Flame](keepers.md) 🔒 |
 | Coll Bren | Rival | hidden Jedi lineage | [Keepers of the Flame](keepers.md) 🔒 |
