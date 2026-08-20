@@ -13,10 +13,15 @@ screen:
 wiki:
 	mkdocs serve -f mkdocs.yml
 
-## Strict-build wiki + GM screen (what CI runs)
+## Rebuild the player-aid handouts (HTML; print to PDF from any browser)
+aids:
+	python3 tools/build-player-aids.py
+
+## Strict-build wiki + GM screen + player aids (what CI runs)
 build:
 	mkdocs build --strict -f mkdocs.yml
 	python3 tools/build-gm-screen.py
+	python3 tools/build-player-aids.py
 
 clean:
 	rm -rf site-gm gm-screen.html

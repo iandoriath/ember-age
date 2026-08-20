@@ -72,6 +72,7 @@ nav:
   - Mechanics:
       - Overview: mechanics/index.md
       - "Character Creation": mechanics/character-creation.md
+      - "Reading the Dice": mechanics/dice-results.md
       - "Obligation": mechanics/obligation.md
       - "Lore Fragments": mechanics/lore-fragments.md
       - "Relighting a Beacon": mechanics/beacon-relighting.md

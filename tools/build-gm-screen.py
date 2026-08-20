@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
-"""Build gm-screen.html — The Ember Age's single-file interactive GM screen.
+"""Build the Ember Age GM screen from the campaign markdown under docs/.
 
-Reads the campaign markdown under docs/, renders it, and injects it into
-tools/gm-screen-template.html. Output: gm-screen.html at the repo root.
-No network, no dependencies beyond Python-Markdown (installed with mkdocs).
+Outputs:
+  gm-screen.html           — standalone full document (open from disk, works offline)
+  gm-screen.artifact.html  — the same app as artifact body-content (published to claude.ai,
+                             where the platform wraps it in its own document skeleton)
+
+Internal wiki links are resolved into in-app navigation (data-nav specs); the app can
+republish itself with its saved state via the artifact runtime, so the template's
+HEAD/SKELETON fragments are also embedded as JS constants for renderDocument().
 """
 import json
+import posixpath
 import re
 from datetime import date
 from pathlib import Path
@@ -15,7 +21,8 @@ import markdown
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 TEMPLATE = ROOT / "tools" / "gm-screen-template.html"
-OUT = ROOT / "gm-screen.html"
+OUT_FULL = ROOT / "gm-screen.html"
+OUT_ARTIFACT = ROOT / "gm-screen.artifact.html"
 
 MD = markdown.Markdown(extensions=["tables"])
 
@@ -23,7 +30,6 @@ ADM_RE = re.compile(r'^!!!\s+(\w+)(?:\s+"([^"]*)")?\s*$')
 
 
 def preprocess_admonitions(text: str) -> str:
-    """Convert mkdocs '!!! type "Title"' blocks into plain HTML divs."""
     out, lines, i = [], text.splitlines(), 0
     while i < len(lines):
         m = ADM_RE.match(lines[i])
@@ -50,13 +56,73 @@ def preprocess_admonitions(text: str) -> str:
     return "\n".join(out)
 
 
-LINK_RE = re.compile(r'<a href="[^"]*\.md[^"]*"[^>]*>(.*?)</a>', re.S)
+# -------------------------------------------------------------- link routing
+# docs-relative path -> in-app navigation spec understood by navTo()
+NAV_MAP = {
+    "index.md": "page:setting:home",
+    "setting/timeline.md": "page:setting:timeline",
+    "setting/galaxy.md": "page:setting:galaxy",
+    "setting/awakening.md": "page:setting:awakening",
+    "setting/glossary.md": "page:setting:glossary",
+    "factions/index.md": "page:setting:factions",
+    "factions/provisional-republic.md": "page:setting:republic",
+    "factions/admiralty.md": "page:setting:admiralty",
+    "factions/vigil.md": "page:setting:vigil",
+    "factions/inheritors.md": "page:setting:inheritors",
+    "factions/lamplighters.md": "page:setting:lamplighters",
+    "factions/kajidics.md": "page:setting:kajidics",
+    "factions/bounty-hunters-guild.md": "page:setting:guild",
+    "factions/mandalorians.md": "page:setting:mandalorians",
+    "campaign/index.md": "page:setting:structure",
+    "campaign/act-1.md": "page:setting:act-1",
+    "campaign/act-2.md": "page:setting:act-2",
+    "campaign/act-3.md": "page:setting:act-3",
+    "campaign/session-one.md": "page:setting:session-one",
+    "campaign/session-log.md": "tab:log",
+    "mechanics/index.md": "tab:reference",
+    "mechanics/character-creation.md": "page:reference:character-creation",
+    "mechanics/obligation.md": "page:reference:obligation",
+    "mechanics/lore-fragments.md": "page:reference:lore-fragments",
+    "mechanics/beacon-relighting.md": "page:reference:beacon-relighting",
+    "mechanics/force.md": "page:reference:force",
+    "mechanics/dice-results.md": "page:reference:dice-results",
+    "mechanics/ships.md": "npcs:group:ships",
+    "gm/index.md": "tab:trackers",
+    "gm/truths.md": "tab:truths",
+    "gm/npcs/index.md": "page:reference:primer",
+    "gm/npcs/session-one.md": "npcs:group:session-one",
+    "gm/npcs/republic-admiralty.md": "npcs:group:republic-admiralty",
+    "gm/npcs/vigil-inheritors.md": "npcs:group:vigil-inheritors",
+    "gm/npcs/lanes-ledgers.md": "npcs:group:lanes-ledgers",
+    "gm/npcs/reaches.md": "npcs:group:reaches",
+    "gm/npcs/keepers.md": "npcs:group:keepers",
+    "gm/tools/fragment-tracker.md": "tab:trackers",
+    "gm/tools/beacon-map.md": "tab:trackers",
+    "gm/tools/faction-clocks.md": "tab:trackers",
+}
+
+LINK_RE = re.compile(r'<a href="([^"]*\.md)(?:#[^"]*)?"[^>]*>(.*?)</a>', re.S)
 
 
-def render(md_text: str) -> str:
+def resolve_links(html: str, src_rel_dir: str) -> str:
+    def sub(m):
+        href, text = m.group(1), m.group(2)
+        target = posixpath.normpath(posixpath.join(src_rel_dir, href)) if not href.startswith("/") else href.lstrip("/")
+        spec = NAV_MAP.get(target)
+        if spec:
+            return f'<a href="#" class="xin" data-nav="{spec}">{text}</a>'
+        return f'<span class="xref">{text}</span>'
+    return LINK_RE.sub(sub, html)
+
+
+def render(md_text: str, src_rel_dir: str) -> str:
     MD.reset()
     html = MD.convert(preprocess_admonitions(md_text))
-    return LINK_RE.sub(r'<span class="xref">\1</span>', html)
+    return resolve_links(html, src_rel_dir)
+
+
+def render_file(relpath: str) -> str:
+    return render((DOCS / relpath).read_text(encoding="utf-8"), posixpath.dirname(relpath))
 
 
 def plain(md_text: str) -> str:
@@ -66,13 +132,13 @@ def plain(md_text: str) -> str:
 
 # ---------------------------------------------------------------- NPC library
 NPC_FILES = [
-    ("session-one", "Vesta-9 & the Crew's Orbit", DOCS / "gm/npcs/session-one.md"),
-    ("republic-admiralty", "Republic & Admiralty", DOCS / "gm/npcs/republic-admiralty.md"),
-    ("vigil-inheritors", "Vigil & Inheritors", DOCS / "gm/npcs/vigil-inheritors.md"),
-    ("lanes-ledgers", "Lanes & Ledgers", DOCS / "gm/npcs/lanes-ledgers.md"),
-    ("reaches", "The Reaches", DOCS / "gm/npcs/reaches.md"),
-    ("keepers", "Keepers of the Flame 🔒", DOCS / "gm/npcs/keepers.md"),
-    ("ships", "Ships of the Ember Age", DOCS / "mechanics/ships.md"),
+    ("session-one", "Vesta-9 & the Crew's Orbit", "gm/npcs/session-one.md"),
+    ("republic-admiralty", "Republic & Admiralty", "gm/npcs/republic-admiralty.md"),
+    ("vigil-inheritors", "Vigil & Inheritors", "gm/npcs/vigil-inheritors.md"),
+    ("lanes-ledgers", "Lanes & Ledgers", "gm/npcs/lanes-ledgers.md"),
+    ("reaches", "The Reaches", "gm/npcs/reaches.md"),
+    ("keepers", "Keepers of the Flame 🔒", "gm/npcs/keepers.md"),
+    ("ships", "Ships of the Ember Age", "mechanics/ships.md"),
 ]
 
 TYPE_WORDS = ("Nemesis", "Rival", "Minion")
@@ -80,11 +146,11 @@ TYPE_WORDS = ("Nemesis", "Rival", "Minion")
 
 def parse_npcs():
     npcs, groups = [], []
-    for slug, label, path in NPC_FILES:
-        text = path.read_text(encoding="utf-8")
+    for slug, label, relpath in NPC_FILES:
+        src_dir = posixpath.dirname(relpath)
+        text = (DOCS / relpath).read_text(encoding="utf-8")
         parts = re.split(r"(?m)^### ", text)
-        preamble = parts[0]
-        groups.append({"slug": slug, "label": label, "intro": render(preamble)})
+        groups.append({"slug": slug, "label": label, "intro": render(parts[0], src_dir)})
         for chunk in parts[1:]:
             name, _, body = chunk.partition("\n")
             name = re.sub(r"\*+", "", name).strip()
@@ -115,27 +181,21 @@ def parse_npcs():
                 "role": role,
                 "derived": derived.group(1) if derived else "",
                 "group": slug,
-                "html": render(body),
+                "html": render(body, src_dir),
                 "search": plain(name + " " + body),
             })
     return npcs, groups
 
 
 # ---------------------------------------------------------------- pages
-def page(section, pid, title, relpath):
-    return {"section": section, "id": pid, "title": title,
-            "html": render((DOCS / relpath).read_text(encoding="utf-8"))}
-
-
-PAGES = [
-    # Reference tab
+PAGES_SPEC = [
     ("reference", "primer", "Adversary Rules Primer", "gm/npcs/index.md"),
+    ("reference", "dice-results", "Reading the Dice", "mechanics/dice-results.md"),
     ("reference", "lore-fragments", "Lore Fragments", "mechanics/lore-fragments.md"),
     ("reference", "beacon-relighting", "Relighting a Beacon", "mechanics/beacon-relighting.md"),
     ("reference", "force", "The Force in the Ember Age", "mechanics/force.md"),
     ("reference", "obligation", "Obligation", "mechanics/obligation.md"),
     ("reference", "character-creation", "Character Creation", "mechanics/character-creation.md"),
-    # Setting tab
     ("setting", "home", "The Ember Age", "index.md"),
     ("setting", "timeline", "The Withering (Timeline)", "setting/timeline.md"),
     ("setting", "galaxy", "The Galaxy at 90 AR", "setting/galaxy.md"),
@@ -155,10 +215,8 @@ PAGES = [
     ("setting", "act-2", "Act 2 — Convergence", "campaign/act-2.md"),
     ("setting", "act-3", "Act 3 — The Founding", "campaign/act-3.md"),
     ("setting", "session-one", "Session One — Vesta-9", "campaign/session-one.md"),
-    # Truths tab
     ("truths", "truths", "GM Truths (Part V)", "gm/truths.md"),
 ]
-
 
 SEED = {
     "questions": [
@@ -185,25 +243,56 @@ SEED = {
     "truthsFound": [],
     "corrupted": [],
     "sessions": [],
+    "rev": 0,
 }
 
 
+def between(text, start, end):
+    return text.split(start, 1)[1].split(end, 1)[0]
+
+
 def main():
-    npcs, groups = parse_npcs()
-    pages = [page(*p) for p in PAGES]
     tpl = TEMPLATE.read_text(encoding="utf-8")
-    out = (tpl
-           .replace("/*__NPCS__*/[]", json.dumps(npcs, ensure_ascii=False))
-           .replace("/*__GROUPS__*/[]", json.dumps(groups, ensure_ascii=False))
-           .replace("/*__PAGES__*/[]", json.dumps(pages, ensure_ascii=False))
-           .replace("/*__SEED__*/{}", json.dumps(SEED, ensure_ascii=False))
-           .replace("__BUILDDATE__", date.today().isoformat()))
-    OUT.write_text(out, encoding="utf-8")
+    head_static = between(tpl, "<!--HEAD_STATIC_START-->", "<!--HEAD_STATIC_END-->").strip()
+    style_block = "<style id=\"app-style\">" + between(tpl, '<style id="app-style">', "</style>") + "</style>"
+    skeleton = between(tpl, "<!--SKELETON_START-->", "<!--SKELETON_END-->").strip()
+    app_code = between(tpl, '<script id="app-code">', "</script>")
+
+    npcs, groups = parse_npcs()
+    pages = [{"section": s, "id": i, "title": t, "html": render_file(p)} for s, i, t, p in PAGES_SPEC]
+
+    skeleton = skeleton.replace("__BUILDDATE__", date.today().isoformat())
+    code = (app_code
+            .replace("/*__NPCS__*/[]", json.dumps(npcs, ensure_ascii=False))
+            .replace("/*__GROUPS__*/[]", json.dumps(groups, ensure_ascii=False))
+            .replace("/*__PAGES__*/[]", json.dumps(pages, ensure_ascii=False))
+            .replace("/*__SEED__*/{}", json.dumps(SEED, ensure_ascii=False))
+            .replace('/*__HEAD__*/""', json.dumps(head_static, ensure_ascii=False))
+            .replace('/*__SKEL__*/""', json.dumps(skeleton, ensure_ascii=False)))
+    if "</scr" + "ipt" in code.lower():
+        raise SystemExit("app code may not contain a literal script close tag")
+
+    state_block = ('<script id="gm-state" type="application/json">'
+                   + json.dumps(SEED, ensure_ascii=False).replace("<", "\\u003c")
+                   + "</script>")
+    code_block = '<script id="app-code">' + code + "</script>"
+
+    body = skeleton + "\n" + state_block + "\n" + code_block
+
+    full = ("<!doctype html>\n<html lang=\"en\">\n<head>\n" + head_static + "\n"
+            + style_block + "\n</head>\n<body>\n" + body + "\n</body>\n</html>\n")
+    artifact = head_static + "\n" + style_block + "\n" + body + "\n"
+
+    OUT_FULL.write_text(full, encoding="utf-8")
+    OUT_ARTIFACT.write_text(artifact, encoding="utf-8")
+
     kinds = {}
     for n in npcs:
         kinds[n["kind"]] = kinds.get(n["kind"], 0) + 1
-    print(f"gm-screen.html written: {OUT.stat().st_size // 1024} KB, "
-          f"{len(npcs)} blocks {kinds}, {len(pages)} pages")
+    nav_specs = set(NAV_MAP.values())
+    print(f"gm-screen.html: {OUT_FULL.stat().st_size // 1024} KB · artifact variant: "
+          f"{OUT_ARTIFACT.stat().st_size // 1024} KB · {len(npcs)} blocks {kinds} · "
+          f"{len(pages)} pages · {len(nav_specs)} nav routes")
 
 
 if __name__ == "__main__":

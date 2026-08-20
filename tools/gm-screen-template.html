@@ -1,35 +1,43 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!--HEAD_STATIC_START-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Ember Age — GM Screen</title>
-<style>
+<title>Ember Age GM Screen</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap">
+<!--HEAD_STATIC_END-->
+<style id="app-style">
   :root{
     --bg:#171310; --panel:#211a14; --panel2:#2a221a; --line:#3a2f24;
     --ink:#e9ded0; --dim:#a89a88; --ember:#e07b39; --gold:#ffb454;
     --ok:#7fb069; --bad:#c65f4a; --tag-jedi:#7fa7d6; --tag-sith:#c65f4a; --tag-civic:#b9a26b;
+    --disp:"Rajdhani",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   }
   *{box-sizing:border-box} html,body{margin:0;padding:0}
   body{background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
   header{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,#241b12,#1c1611);border-bottom:1px solid var(--line);
          display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;padding:.55rem .9rem}
-  header h1{font-size:1.05rem;margin:0 .8rem 0 0;color:var(--gold);letter-spacing:.04em;white-space:nowrap}
+  header h1{font-family:var(--disp);font-size:1.15rem;margin:0 .8rem 0 0;color:var(--gold);letter-spacing:.06em;white-space:nowrap}
   header h1 .flame{color:var(--ember)}
   nav{display:flex;gap:.25rem;flex-wrap:wrap}
-  nav button{background:none;border:1px solid transparent;color:var(--dim);padding:.35rem .7rem;border-radius:.5rem;cursor:pointer;font:inherit}
+  nav button{background:none;border:1px solid transparent;color:var(--dim);padding:.35rem .7rem;border-radius:.5rem;cursor:pointer;font:inherit;font-family:var(--disp);font-weight:600;letter-spacing:.03em}
   nav button.on{color:var(--gold);border-color:var(--line);background:var(--panel)}
-  nav button:hover{color:var(--ink)}
+  nav button:hover,nav button:focus-visible{color:var(--ink);outline:none}
+  nav button:focus-visible{border-color:var(--ember)}
   .spacer{flex:1}
   .hbtn{background:var(--panel);border:1px solid var(--line);color:var(--dim);border-radius:.5rem;padding:.3rem .6rem;cursor:pointer;font:inherit;font-size:.85rem}
-  .hbtn:hover{color:var(--ink);border-color:var(--ember)}
+  .hbtn:hover,.hbtn:focus-visible{color:var(--ink);border-color:var(--ember);outline:none}
+  .hbtn.dirty{color:#1b120a;background:var(--gold);border-color:var(--gold);font-weight:700}
+  #syncbanner{display:none;background:#33261a;border-bottom:1px solid var(--line);padding:.45rem .9rem;font-size:.88rem;color:var(--gold)}
+  #syncbanner button{margin-left:.6rem}
   main{max-width:1200px;margin:0 auto;padding:1rem .9rem 4rem}
   .tab{display:none} .tab.on{display:block}
 
-  /* ---------- generic content rendering ---------- */
-  .doc h1{color:var(--gold);font-size:1.5rem;margin:.4rem 0 .6rem} .doc h2{color:var(--gold);font-size:1.2rem;margin:1.2rem 0 .4rem}
+  .doc h1{font-family:var(--disp);color:var(--gold);font-size:1.5rem;margin:.4rem 0 .6rem}
+  .doc h2{font-family:var(--disp);color:var(--gold);font-size:1.2rem;margin:1.2rem 0 .4rem}
   .doc h3{color:var(--ember);font-size:1.05rem;margin:1rem 0 .3rem}
-  .doc a{color:var(--gold)} .doc .xref{color:var(--gold);border-bottom:1px dotted var(--dim)}
+  .doc a{color:var(--gold)}
+  .doc a.xin{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--ember)}
+  .doc a.xin:hover{color:var(--ember)}
+  .doc .xref{color:var(--gold);border-bottom:1px dotted var(--dim)}
   .doc table{border-collapse:collapse;margin:.6rem 0;width:100%;font-size:.92em;display:block;overflow-x:auto}
   .doc th,.doc td{border:1px solid var(--line);padding:.3rem .55rem;text-align:left;vertical-align:top}
   .doc th{background:var(--panel2);color:var(--gold)}
@@ -40,13 +48,12 @@
   .adm-title{font-weight:700;color:var(--gold);margin:.1rem 0 .3rem}
   .adm-danger{border-left-color:var(--bad)} .adm-tip{border-left-color:var(--ok)} .adm-quote{border-left-color:var(--gold)}
 
-  /* ---------- layout helpers ---------- */
   .cols{display:grid;grid-template-columns:250px 1fr;gap:1rem}
   @media(max-width:800px){.cols{grid-template-columns:1fr}}
   .side{position:sticky;top:60px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;background:var(--panel);
         border:1px solid var(--line);border-radius:.6rem;padding:.5rem}
   .side button{display:block;width:100%;text-align:left;background:none;border:0;color:var(--dim);padding:.3rem .5rem;border-radius:.4rem;cursor:pointer;font:inherit;font-size:.9rem}
-  .side button.on{background:var(--panel2);color:var(--gold)} .side button:hover{color:var(--ink)}
+  .side button.on{background:var(--panel2);color:var(--gold)} .side button:hover,.side button:focus-visible{color:var(--ink);outline:none}
   .side .grp{margin:.5rem 0 .15rem;padding:0 .5rem;color:var(--ember);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}
   .pane{min-width:0}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;margin:0 0 .8rem}
@@ -60,7 +67,6 @@
   .rowbtns button{background:none;border:0;color:var(--dim);cursor:pointer;font-size:1rem;padding:.1rem .25rem}
   .rowbtns button:hover{color:var(--gold)}
 
-  /* ---------- NPC tab ---------- */
   .toolbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:.9rem}
   .toolbar input[type=search]{flex:1;min-width:220px}
   .chip{border:1px solid var(--line);background:var(--panel);color:var(--dim);border-radius:2rem;padding:.25rem .75rem;cursor:pointer;font:inherit;font-size:.85rem}
@@ -69,7 +75,7 @@
   details.npc>summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;gap:.35rem .8rem;align-items:baseline;padding:.6rem .9rem}
   details.npc>summary::-webkit-details-marker{display:none}
   details.npc[open]>summary{border-bottom:1px solid var(--line);background:var(--panel2)}
-  .npc .nm{font-weight:700;color:var(--gold);font-size:1.02rem}
+  .npc .nm{font-family:var(--disp);font-weight:700;color:var(--gold);font-size:1.05rem;letter-spacing:.02em}
   .badge{font-size:.72rem;padding:.08rem .5rem;border-radius:1rem;border:1px solid var(--line);color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
   .badge.Nemesis{color:#f0a0a0;border-color:#7a4038}.badge.Rival{color:var(--gold);border-color:#7a5f2c}
   .badge.Minion{color:#9fc49f;border-color:#40603f}.badge.Vehicle{color:#9fb7d8;border-color:#3d5a7a}
@@ -78,7 +84,6 @@
   .npc .body{padding:.4rem 1rem .8rem}
   .groupintro{margin:.2rem 0 .8rem}
 
-  /* ---------- trackers ---------- */
   .clockgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:.7rem}
   .clock .segs{display:flex;gap:.25rem;margin:.4rem 0}
   .clock .seg{width:32px;height:20px;border:1px solid var(--line);border-radius:.25rem;background:var(--panel2);cursor:pointer}
@@ -97,26 +102,27 @@
   .qcard b{color:var(--gold)} .ready{color:var(--ok);font-weight:700} .bias{color:var(--bad)}
   .stat{border:1px dashed var(--line);border-radius:.5rem;padding:.5rem .8rem;margin:.4rem 0;background:var(--panel2)}
 
-  /* ---------- truths gate ---------- */
   .gate{border:2px solid var(--bad);border-radius:.7rem;padding:2rem;text-align:center;background:var(--panel)}
   .gate .btn{margin-top:.8rem}
 
-  /* ---------- session log ---------- */
-  .sess h3{margin:.1rem 0;color:var(--gold)} .sess dt{color:var(--ember);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;margin-top:.4rem}
+  .sess h3{font-family:var(--disp);margin:.1rem 0;color:var(--gold)}
+  .sess dt{color:var(--ember);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;margin-top:.4rem}
   .sess dd{margin:0 0 .1rem}
   footer{color:var(--dim);text-align:center;font-size:.75rem;padding:2rem 0}
+  @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
 </style>
-</head>
-<body>
+<!--SKELETON_START-->
 <header>
   <h1><span class="flame">◆</span> THE EMBER AGE <span class="small muted">GM screen</span></h1>
   <nav id="nav"></nav>
   <div class="spacer"></div>
+  <button class="hbtn" id="syncchip" style="display:none" onclick="syncNow()">Sync</button>
   <button class="hbtn" onclick="exportState()">Export save</button>
   <button class="hbtn" onclick="document.getElementById('importfile').click()">Import</button>
   <input type="file" id="importfile" accept=".json" style="display:none" onchange="importState(this)">
   <button class="hbtn" onclick="resetState()">Reset</button>
 </header>
+<div id="syncbanner"></div>
 <main>
   <div id="tab-npcs" class="tab"></div>
   <div id="tab-trackers" class="tab"></div>
@@ -125,39 +131,108 @@
   <div id="tab-setting" class="tab"></div>
   <div id="tab-truths" class="tab"></div>
 </main>
-<footer>The Ember Age — homebrew campaign GM screen · offline single file · built __BUILDDATE__ · state saved in this browser (Export to move it)</footer>
-
-<script>
+<footer>The Ember Age — homebrew campaign GM screen · built __BUILDDATE__ · state autosaves locally; Sync publishes it to this page's live copy</footer>
+<!--SKELETON_END-->
+<script id="app-code">
 const NPCS   = /*__NPCS__*/[];
 const GROUPS = /*__GROUPS__*/[];
 const PAGES  = /*__PAGES__*/[];
 const SEED   = /*__SEED__*/{};
+const HEAD_STATIC = /*__HEAD__*/"";
+const SKELETON = /*__SKEL__*/"";
 
-/* ------------------------------------------------ state */
+/* ------------------------------------------------ state & sync */
 const KEY = "emberAgeGM.v1";
-function freshState(){ return JSON.parse(JSON.stringify(SEED)); }
-function load(){
-  try{
-    const raw = localStorage.getItem(KEY);
-    if(!raw) return freshState();
-    const s = Object.assign(freshState(), JSON.parse(raw));
-    return s;
-  }catch(e){ return freshState(); }
-}
-let S = load();
-function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
+function freshState(){ const s = JSON.parse(JSON.stringify(SEED)); s.rev = 0; return s; }
+const stateEl = document.getElementById("gm-state");
+let EMBED = freshState();
+try{ if(stateEl) EMBED = Object.assign(freshState(), JSON.parse(stateEl.textContent)); }catch(e){}
+let S = EMBED;
+try{
+  const ls = JSON.parse(localStorage.getItem(KEY));
+  if(ls && (ls.rev||0) > (EMBED.rev||0)) S = Object.assign(freshState(), ls);
+}catch(e){}
+function save(){ S.rev = (S.rev||0)+1; try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} updateSyncUI(); }
 function esc(x){ return String(x==null?"":x).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
 
-function exportState(){
-  const blob = new Blob([JSON.stringify(S,null,2)],{type:"application/json"});
+let artifactNS = null, downloadsNS = null, readOnly = false;
+(async () => {
+  try{
+    if(window.claude && window.claude.use){
+      artifactNS = await window.claude.use("artifact");
+      downloadsNS = await window.claude.use("downloads");
+    }
+  }catch(e){}
+  updateSyncUI();
+})();
+
+function dirty(){ return (S.rev||0) > (EMBED.rev||0); }
+function updateSyncUI(){
+  const chip = document.getElementById("syncchip");
+  if(!artifactNS || readOnly){ chip.style.display = "none"; }
+  else{
+    chip.style.display = "";
+    chip.className = "hbtn" + (dirty() ? " dirty" : "");
+    chip.textContent = dirty() ? `Sync (${(S.rev||0)-(EMBED.rev||0)} change${(S.rev-EMBED.rev)===1?"":"s"})` : "Synced ✓";
+  }
+  const ban = document.getElementById("syncbanner");
+  if(artifactNS && !readOnly && dirty() && (EMBED.rev||0) > 0){
+    ban.style.display = "block";
+    ban.innerHTML = `This browser holds changes newer than the page's live copy.
+      <button class="hbtn" onclick="syncNow()">Publish local changes</button>
+      <button class="hbtn" onclick="keepCloud()">Discard local, keep live copy</button>`;
+  } else ban.style.display = "none";
+}
+function keepCloud(){ S = JSON.parse(JSON.stringify(EMBED)); try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} renderAll(); }
+
+function stateJSON(){ return JSON.stringify(S).replace(/</g, "\\u003c"); }
+function renderDocument(){
+  const code = document.getElementById("app-code").textContent;
+  const style = document.getElementById("app-style").textContent;
+  const SC = "script";
+  return "<!doctype html>\n<html lang=\"en\">\n<head>\n" + HEAD_STATIC +
+    "\n<style id=\"app-style\">" + style + "</style>\n</head>\n<body>\n" + SKELETON +
+    "\n<" + SC + " id=\"gm-state\" type=\"application/json\">" + stateJSON() + "</" + SC + ">\n" +
+    "<" + SC + " id=\"app-code\">" + code + "</" + SC + ">\n</body>\n</html>\n";
+}
+async function syncNow(){
+  if(!artifactNS) return;
+  try{ sessionStorage.setItem("ea.resume", JSON.stringify({tab: cur})); }catch(e){}
+  const chip = document.getElementById("syncchip");
+  chip.textContent = "Syncing…";
+  try{
+    await artifactNS.publish(renderDocument());
+    /* on success the shell reloads this view with the new embedded state */
+  }catch(err){
+    const code = err && err.code;
+    if(code === "conflict"){ /* shell reloads to the winning version; local state stays in localStorage and the banner offers the merge choice */ }
+    else if(code === "not_writer" || code === "not_granted" || code === "not_declared"){ readOnly = true; updateSyncUI(); }
+    else if(code === "rate_limited"){ chip.textContent = "Rate limited — try again in a moment"; setTimeout(updateSyncUI, 4000); }
+    else { chip.textContent = "Sync failed — will retry on next Sync"; setTimeout(updateSyncUI, 4000); }
+  }
+}
+
+async function exportState(){
+  const data = JSON.stringify(S, null, 2);
+  const fname = "ember-age-save-" + new Date().toISOString().slice(0,10) + ".json";
+  if(downloadsNS){
+    try{ await downloadsNS.save({filename: fname, data}); }catch(err){ /* declined or unavailable — fall through */
+      if(err && (err.code === "declined" || err.code === "rate_limited")) return;
+      tryBlobDownload(fname, data);
+    }
+    return;
+  }
+  tryBlobDownload(fname, data);
+}
+function tryBlobDownload(fname, data){
+  const blob = new Blob([data], {type:"application/json"});
   const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = "ember-age-save-"+new Date().toISOString().slice(0,10)+".json";
-  a.click(); URL.revokeObjectURL(a.href);
+  a.href = URL.createObjectURL(blob); a.download = fname; a.click();
+  URL.revokeObjectURL(a.href);
 }
 function importState(inp){
   const f = inp.files[0]; if(!f) return;
-  f.text().then(t=>{ S = Object.assign(freshState(), JSON.parse(t)); save(); renderAll(); alert("Save imported."); })
+  f.text().then(t=>{ S = Object.assign(freshState(), JSON.parse(t)); save(); renderAll(); alert("Save imported. Use Sync to publish it to the live copy."); })
    .catch(()=>alert("Could not read that file."));
   inp.value = "";
 }
@@ -165,15 +240,30 @@ function resetState(){
   if(confirm("Reset ALL tracker/log state to the campaign start? (Export first if unsure.)")){ S = freshState(); save(); renderAll(); }
 }
 
-/* ------------------------------------------------ tabs */
+/* ------------------------------------------------ tabs & in-app links */
 const TABS = [["npcs","NPCs"],["trackers","Trackers"],["log","Session Log"],["reference","Reference"],["setting","Setting"],["truths","GM Truths"]];
-let cur = location.hash.replace("#","") || "npcs";
+let cur = "npcs";
+try{ const r = JSON.parse(sessionStorage.getItem("ea.resume")); if(r && r.tab){ cur = r.tab; sessionStorage.removeItem("ea.resume"); } }catch(e){}
+if(location.hash && TABS.some(t=>t[0]===location.hash.slice(1))) cur = location.hash.slice(1);
 function nav(){
   document.getElementById("nav").innerHTML = TABS.map(([id,lbl])=>
     `<button class="${cur===id?'on':''}" onclick="go('${id}')">${lbl}</button>`).join("");
   TABS.forEach(([id])=>document.getElementById("tab-"+id).classList.toggle("on", cur===id));
 }
-function go(id){ cur=id; location.hash=id; nav(); }
+function go(id){ cur=id; try{history.replaceState(null,"","#"+id);}catch(e){} nav(); window.scrollTo(0,0); }
+function navTo(spec){
+  const p = spec.split(":");
+  if(p[0]==="tab"){ go(p[1]); }
+  else if(p[0]==="page"){ pageSel[p[1]] = p[2]; pagesTab(p[1]); go(p[1]); }
+  else if(p[0]==="npcs"){
+    if(p[1]==="group"){ npcGroup = p[2]; npcKind = "All"; npcQ = ""; }
+    npcTab(); go("npcs");
+  }
+}
+document.addEventListener("click", e => {
+  const a = e.target.closest("a.xin[data-nav]");
+  if(a){ e.preventDefault(); navTo(a.dataset.nav); }
+});
 
 /* ------------------------------------------------ NPC tab */
 const KINDS = ["All","Nemesis","Rival","Minion","Vehicle","Hazard"];
@@ -191,7 +281,6 @@ function npcTab(){
       </select>
     </div>
     <div id="npclist"></div>`;
-  const inp = el.querySelector("input[type=search]"); inp.focus(); inp.setSelectionRange(inp.value.length,inp.value.length);
   npcList();
 }
 function npcList(){
@@ -251,7 +340,7 @@ function trackersTab(){
         <div><label>Status</label><select id="f-status"><option>trusted</option><option>suspect</option><option>spent</option><option>forged?</option></select></div>
         <div style="align-self:end"><button class="btn" onclick="addFragment()">Add fragment</button></div>
       </div>
-      <div class="stat small muted">Rules: a held, relevant fragment = boost die on related Knowledge checks. 3+ fragments on one Question → Hard Knowledge (Lore) Reconstruction as a group scene; all three tags represented → upgrade an ability die once; only one tag → upgrade difficulty once.</div>
+      <div class="stat small muted">Rules: a held, relevant fragment = boost die on related Knowledge checks. 3+ fragments on one Question → Hard Knowledge (Lore) Reconstruction as a group scene; all three tags represented → upgrade an ability die once; only one tag → upgrade difficulty once. Full rules: <a href="#" class="xin" data-nav="page:reference:lore-fragments">Lore Fragments</a>.</div>
     </div>
 
     <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Beacon map</h2>
@@ -271,7 +360,7 @@ function trackersTab(){
         <div class="wide"><label>Who followed through</label><input id="b-followed"></div>
         <div style="align-self:end"><button class="btn" onclick="addBeacon()">Add beacon</button></div>
       </div>
-      <div class="stat small muted">Relight challenge — three stages, any order: <b>Wake it</b> (Mechanics/Computers) · <b>Chart it</b> (Hard Astrogation, fragments/rutters = boost) · <b>Speak to it</b> (Knowledge or social). Then: region opens, faction map shifts, fee pays, and — who follows you through?</div>
+      <div class="stat small muted">Relight challenge — three stages, any order: <b>Wake it</b> (Mechanics/Computers) · <b>Chart it</b> (Hard Astrogation, fragments/rutters = boost) · <b>Speak to it</b> (Knowledge or social). Full rules: <a href="#" class="xin" data-nav="page:reference:beacon-relighting">Relighting a Beacon</a>.</div>
     </div>
 
     <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Truths revealed &amp; corrupted conclusions</h2>
@@ -397,9 +486,7 @@ function truthsTab(){
 
 /* ------------------------------------------------ boot */
 function renderAll(){ nav(); npcTab(); trackersTab(); logTab(); pagesTab("reference"); pagesTab("setting"); truthsTab();
-  if(document.getElementById("mc-out")) mcOut(); }
-window.addEventListener("hashchange",()=>{ cur=location.hash.replace("#","")||"npcs"; nav(); });
+  if(document.getElementById("mc-out")) mcOut(); updateSyncUI(); }
+window.addEventListener("hashchange",()=>{ const h=location.hash.replace("#",""); if(TABS.some(t=>t[0]===h)){ cur=h; nav(); } });
 renderAll();
 </script>
-</body>
-</html>

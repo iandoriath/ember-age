@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading the Dice</title>
+<style>
+  @page { size: Letter; margin: 14mm 13mm; }
+  :root {
+    --ink:#241d15; --dim:#6b5f50; --ember:#b4501e; --gold:#8a6a1f; --line:#cfc4b2; --wash:#f6f1e7;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background:#fff; color:var(--ink); font: 10.5pt/1.45 Georgia, "Times New Roman", serif; }
+  .sheet { max-width: 7.6in; margin: 0 auto; padding: 24px 18px; }
+  h1 { font: 700 20pt/1.15 "Trebuchet MS", Verdana, sans-serif; color: var(--ember);
+       letter-spacing: .02em; margin: 0 0 2pt; }
+  h1 + p em, .subtitle { color: var(--dim); }
+  h2 { font: 700 12.5pt/1.2 "Trebuchet MS", Verdana, sans-serif; color: var(--ink);
+       border-bottom: 2px solid var(--ember); padding-bottom: 2pt; margin: 12pt 0 5pt;
+       break-after: avoid; }
+  h3 { font: 700 10.5pt/1.2 "Trebuchet MS", Verdana, sans-serif; color: var(--ember);
+       margin: 8pt 0 3pt; break-after: avoid; }
+  p { margin: 4pt 0; }
+  ul, ol { margin: 4pt 0 4pt 16pt; padding: 0; }
+  li { margin: 2pt 0; }
+  table { border-collapse: collapse; width: 100%; margin: 5pt 0; font-size: 9.5pt;
+          break-inside: avoid; }
+  th, td { border: 1px solid var(--line); padding: 3pt 6pt; text-align: left; vertical-align: top; }
+  th { background: var(--wash); font-family: "Trebuchet MS", Verdana, sans-serif;
+       font-size: 8.5pt; text-transform: uppercase; letter-spacing: .05em; color: var(--gold); }
+  tr { break-inside: avoid; }
+  blockquote { margin: 5pt 0; padding: 4pt 10pt; border-left: 3px solid var(--ember);
+              background: var(--wash); font-style: italic; color: var(--dim); }
+  .adm { border: 1px solid var(--line); border-left: 4px solid var(--ember); background: var(--wash);
+        padding: 5pt 9pt; margin: 6pt 0; break-inside: avoid; }
+  .adm-title { font: 700 9.5pt "Trebuchet MS", Verdana, sans-serif; color: var(--ember); margin: 0 0 2pt; }
+  code { font: 9pt Consolas, monospace; background: var(--wash); padding: 0 3px; }
+  footer { margin-top: 10pt; padding-top: 4pt; border-top: 1px solid var(--line);
+          color: var(--dim); font-size: 8pt; font-family: "Trebuchet MS", Verdana, sans-serif; }
+  @media screen { body { background:#e8e2d6; } .sheet { background:#fff; margin:16px auto;
+    box-shadow:0 2px 14px rgba(60,45,25,.25); } }
+</style>
+</head>
+<body>
+<div class="sheet">
+<h1>Reading the Dice</h1>
+<p><em>A player reference for The Ember Age (FFG Star Wars narrative dice)</em></p>
+<p>You rolled. Symbols everywhere. Here is the whole trick: the dice answer <strong>two separate questions</strong>, and you only freeze when you try to make them answer one. Question one — <em>did it work?</em> Question two — <em>what else happened?</em> Settle them in that order, out loud, and you are done in ten seconds.</p>
+<h2>Reading a Roll in 10 Seconds</h2>
+<p><strong>Axis 1 — Did it work?</strong> Count <strong>Success</strong> symbols, count <strong>Failure</strong> symbols. Each Failure cancels one Success. If at least one Success is left over, the check succeeds. If Successes and Failures cancel out exactly — or Failures win — the check fails. Ties go to failure. Nothing else on the table can change this answer.</p>
+<p><strong>Axis 2 — What else happened?</strong> Count <strong>Advantage</strong> symbols, count <strong>Threat</strong> symbols. Each Threat cancels one Advantage. Whatever is left over is a side effect — a perk if Advantage remains, a complication if Threat remains. This currency <strong>never</strong> turns success into failure or failure into success. You can fail brilliantly (failure with Advantage: the lock holds, but you spot the maintenance hatch) or succeed at a price (success with Threat: the door opens, loudly).</p>
+<p><strong>The big symbols:</strong></p>
+<ul>
+<li><strong>Triumph</strong> is a Success <em>plus</em> something spectacular. Its built-in Success goes into the Axis 1 tally and can be cancelled by a Failure like any other — but the Triumph <em>effect</em> is never cancelled. Even on a check that fails overall, you still spend the Triumph.</li>
+<li><strong>Despair</strong> is the mirror: it adds one Failure to the Axis 1 tally (cancellable normally), and its <em>effect</em> always lands regardless of the roll's outcome. You can succeed and still eat a Despair.</li>
+<li>Triumph and Despair do <strong>not</strong> cancel each other. Both fire.</li>
+</ul>
+<p>So every roll lands in one of four quadrants — succeed/fail crossed with perk/complication — plus optional fireworks. Name the quadrant, then spend.</p>
+<h2>Spending Advantage and Triumph in Combat</h2>
+<p>These are the standard rulebook options. Announce your spend; the GM narrates it.</p>
+<table>
+<thead>
+<tr>
+<th>Cost</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 Advantage</td>
+<td>Recover 1 strain (may be chosen more than once).</td>
+</tr>
+<tr>
+<td>1 Advantage</td>
+<td>Add a boost die to the next allied character's check.</td>
+</tr>
+<tr>
+<td>1 Advantage</td>
+<td>Notice one important point in the fight — the blast door controls, a weak seam in the armor plating, the catwalk above.</td>
+</tr>
+<tr>
+<td>1 Advantage</td>
+<td>Activate a weapon quality whose listed cost is 1.</td>
+</tr>
+<tr>
+<td>2 Advantage</td>
+<td>Perform one immediate free maneuver (cannot exceed the two-maneuver-per-turn limit).</td>
+</tr>
+<tr>
+<td>2 Advantage</td>
+<td>Add a setback die to a targeted character's next check.</td>
+</tr>
+<tr>
+<td>2 Advantage</td>
+<td>Activate a weapon quality (2 is the default cost unless the quality says otherwise).</td>
+</tr>
+<tr>
+<td>3 Advantage</td>
+<td>Negate the target's defensive bonuses (cover, equipment, guarded stance) until the end of the current round.</td>
+</tr>
+<tr>
+<td>3 Advantage</td>
+<td>Ignore penalizing environmental effects (weather, zero-g, and the like) until the end of your next turn.</td>
+</tr>
+<tr>
+<td>3 Advantage</td>
+<td>Force the target into a significant drawback — drop a wielded weapon, or (on a damaging hit, with GM agreement) disable a piece of their gear instead of dealing the damage.</td>
+</tr>
+<tr>
+<td>Advantage = weapon's Critical rating</td>
+<td>On a hit that deals damage past soak, trigger a <strong>Critical Injury</strong>. Extra activations add +10 each to the Critical roll.</td>
+</tr>
+<tr>
+<td>1 Triumph</td>
+<td>Any option above, regardless of its Advantage cost.</td>
+</tr>
+<tr>
+<td>1 Triumph</td>
+<td>Trigger a Critical Injury on a damaging hit, regardless of Critical rating.</td>
+</tr>
+<tr>
+<td>1 Triumph</td>
+<td>Activate any weapon quality, regardless of its cost.</td>
+</tr>
+<tr>
+<td>1 Triumph</td>
+<td>Upgrade the difficulty of the target's next check, or upgrade the ability of an ally's next check (yourself included).</td>
+</tr>
+<tr>
+<td>1 Triumph</td>
+<td>Do something vital and scene-shaping: shoot the blast-door controls, collapse the catwalk, spot the escape route.</td>
+</tr>
+<tr>
+<td>2 Triumph</td>
+<td>On a damaging hit, destroy one piece of equipment the target is using — blow up their blaster, burn out their shield generator.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>One crit per hit.</strong> A single hit can inflict only <strong>one</strong> Critical Injury, no matter how you pay for it. Every activation after the first — whether bought with Advantage or Triumph — instead adds +10 to that one Critical roll.</p>
+</blockquote>
+<h3>The Mirror: Threat and Despair in Combat</h3>
+<p>The GM (or you, narrating your own stumble) spends these against the active character.</p>
+<table>
+<thead>
+<tr>
+<th>Cost</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 Threat</td>
+<td>Suffer 1 strain (may be applied more than once).</td>
+</tr>
+<tr>
+<td>1 Threat</td>
+<td>Lose the benefit of a prior maneuver (your aim, your guarded stance) until you take it again.</td>
+</tr>
+<tr>
+<td>2 Threat</td>
+<td>An opponent may take one immediate free maneuver.</td>
+</tr>
+<tr>
+<td>2 Threat</td>
+<td>Add a boost die to a targeted character's next check, or a setback die to your own or an ally's next check.</td>
+</tr>
+<tr>
+<td>3 Threat</td>
+<td>Fall prone.</td>
+</tr>
+<tr>
+<td>3 Threat</td>
+<td>Grant the enemy a significant advantage in the encounter — you shoot out the bridge controls you needed for your own escape.</td>
+</tr>
+<tr>
+<td>1 Despair</td>
+<td>Your ranged weapon runs out of ammunition for the rest of the encounter.</td>
+</tr>
+<tr>
+<td>1 Despair</td>
+<td>Your weapon or tool is damaged — it jams, cracks, or degrades a step.</td>
+</tr>
+<tr>
+<td>1 Despair</td>
+<td>Upgrade the difficulty of an ally's (or your own) next check.</td>
+</tr>
+<tr>
+<td>1 Despair</td>
+<td>A serious GM complication: the shot hits an ally, the gear breaks at the worst moment, the fallback plan closes.</td>
+</tr>
+</tbody>
+</table>
+<h2>Advantage Outside Combat</h2>
+<p>Out of combat, Advantage buys narrative position: information, time, goodwill, or a setup for the next check (usually a boost die to a follow-up, a setback die on the opposition, or a detail the GM confirms). One or two Advantage buys something small; three or more, or a Triumph, buys something the whole scene turns on. <strong>You may suggest any of these to the GM:</strong></p>
+<ul>
+<li><strong>Slicing (Computers):</strong> leave no trace in the log; find one extra file you were not looking for; keep the backdoor open for later.</li>
+<li><strong>Mechanics:</strong> the repair holds longer than it should; finish faster than expected; salvage a usable spare part from the job.</li>
+<li><strong>Astrogation:</strong> shave hours off the transit; note a landmark worth adding to the rutter; arrive positioned exactly where you wanted.</li>
+<li><strong>Negotiation:</strong> better price, or a favor thrown in; learn what the other side actually values; leave the door open for future business.</li>
+<li><strong>Charm / Deception:</strong> the target repeats your version to others; you read what they are hiding; the lie survives one follow-up question.</li>
+<li><strong>Stealth:</strong> find an exit route as you go; overhear something useful; leave the guards arguing about whether they saw anything at all.</li>
+</ul>
+<p>Failed the check but rolled Advantage? Same menu, smaller portions: the attempt did not work, <em>and</em> you learned something, kept your cover, or set up the next try.</p>
+<h2>The Ember Age Spends (Campaign-Specific)</h2>
+<p>House options for this campaign's subsystems. All of these are proposals, not entitlements — see the etiquette box.</p>
+<table>
+<thead>
+<tr>
+<th>Cost</th>
+<th>Situation</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 Advantage</td>
+<td>Any relevant Knowledge check</td>
+<td>Surface a lead: the GM names where a related <strong>lore fragment</strong> might be found — a witness, a rutter page, an unwiped droid.</td>
+</tr>
+<tr>
+<td>2 Advantage</td>
+<td>Beacon relight, any stage</td>
+<td>Ease the next stage: hand a boost die to whichever crewmate tackles it.</td>
+</tr>
+<tr>
+<td>1 Advantage</td>
+<td>Social check with a faction agent</td>
+<td>Glimpse a hairline crack: one hint of the tension running through their faction.</td>
+</tr>
+<tr>
+<td>3 Advantage</td>
+<td>Cantina or swoop-circuit scene</td>
+<td>The rumor network works for you: a courier carries one message or question ahead of you, free.</td>
+</tr>
+<tr>
+<td>1 Triumph</td>
+<td>Beacon relight, any stage</td>
+<td>One stage's failsafes yield early: that stage completes without a further check.</td>
+</tr>
+<tr>
+<td>1 Triumph</td>
+<td>Reconstruction scene</td>
+<td>A secret beyond the Question: the GM reveals something the fragments were never asked about.</td>
+</tr>
+<tr>
+<td>1 Threat</td>
+<td>Open Force use with witnesses</td>
+<td>The crowd's reaction worsens one extra step beyond the normal witness rule.</td>
+</tr>
+<tr>
+<td>2 Threat</td>
+<td>Astrogation on a decayed lane</td>
+<td>Your route leaks: a rival crew or faction learns which corridor you are running.</td>
+</tr>
+<tr>
+<td>1 Despair</td>
+<td>Reconstruction scene</td>
+<td>A <strong>corrupted conclusion</strong> enters play — and the party believes it.</td>
+</tr>
+<tr>
+<td>1 Despair</td>
+<td>Beacon relight, any stage</td>
+<td>The relight broadcasts wider than intended. Someone you did not invite heard it, and is coming.</td>
+</tr>
+</tbody>
+</table>
+<h2>Etiquette at the Table</h2>
+<blockquote>
+<p><strong>The player proposes, the GM disposes.</strong> Suggest a spend in plain words — "two Advantage: can I get a free maneuver to duck behind the crates?" — and let the GM shape it. You will rarely be told no; you will often be told "yes, and."</p>
+<p><strong>Spend promptly.</strong> A decent spend now beats a perfect spend after two minutes of menu-reading. Table momentum is worth more than optimization, and the strain recovery is <em>always</em> there when nothing else sings.</p>
+<p><strong>Use it or lose it — gracefully.</strong> Unspent Advantage does not bank between rolls. If you shrug, the GM may spend it as scene color on your behalf. That is not a punishment; it is the dice refusing to be boring.</p>
+</blockquote>
+<p>When in doubt: recover strain, boost a friend, or notice something. Those three answers are never wrong.</p>
+<footer>The Ember Age — a homebrew FFG Star Wars campaign · player aid · 2026-08-20</footer>
+</div>
+</body>
+</html>
