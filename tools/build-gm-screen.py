@@ -99,6 +99,7 @@ NAV_MAP = {
     "gm/tools/fragment-tracker.md": "tab:trackers",
     "gm/tools/beacon-map.md": "tab:trackers",
     "gm/tools/faction-clocks.md": "tab:trackers",
+    "gm/modules/01-the-light-on-vesta-9.md": "tab:run",
 }
 
 LINK_RE = re.compile(r'<a href="([^"]*\.md)(?:#[^"]*)?"[^>]*>(.*?)</a>', re.S)
@@ -165,7 +166,7 @@ def parse_npcs():
                     faction = bits[1] if len(bits) > 1 else ""
                     role = bits[2] if len(bits) > 2 else ""
                     break
-            if slug == "ships":
+            if slug == "ships" or typ.startswith("Vehicle"):
                 kind = "Vehicle"
             elif "hazard" in typ.lower() or "hazard" in name.lower():
                 kind = "Hazard"
@@ -185,6 +186,87 @@ def parse_npcs():
                 "search": plain(name + " " + body),
             })
     return npcs, groups
+
+
+# ---------------------------------------------------------------- run modules
+MODULE_FILES = [
+    ("01", "gm/modules/01-the-light-on-vesta-9.md"),
+]
+
+CLOCK_FACTIONS = {"Provisional Republic", "Admiralty", "Vigil", "Inheritors",
+                  "Lamplighters", "Kajidics", "The Awakening"}
+FRAGMENT_TAGS = {"Jedi", "Sith", "Civic"}
+
+ACTION_RE = re.compile(r"(?m)^@@action:(\w+)\s+(\{.*\})@@\s*$")
+NPCREF_RE = re.compile(r"@@npc:([^@]+)@@")
+
+
+def action_label(kind, args):
+    if kind == "fragment":
+        return (f"Issue fragment: {args.get('name','')}",
+                f"{args.get('tag','')} · bears on “{args.get('question','')}”")
+    if kind == "clock":
+        d = args.get("delta", 1)
+        return (f"Advance clock: {args.get('faction','')} {'+' if d >= 0 else ''}{d}",
+                args.get("note", ""))
+    if kind == "beacon":
+        return (f"Update beacon map: {args.get('name','')}",
+                f"{args.get('status','')} · {args.get('fee','')}")
+    return (kind, "")
+
+
+def parse_module(mid, relpath, name_to_id):
+    import html as htmllib
+    path = DOCS / relpath
+    if not path.exists():
+        return None
+    src_dir = posixpath.dirname(relpath)
+    text = path.read_text(encoding="utf-8")
+    problems = []
+    counter = [0]
+
+    def sub_action(m):
+        kind, raw = m.group(1), m.group(2)
+        try:
+            args = json.loads(raw)
+        except json.JSONDecodeError as e:
+            problems.append(f"action JSON invalid ({kind}): {e}")
+            return ""
+        if kind == "clock" and args.get("faction") not in CLOCK_FACTIONS:
+            problems.append(f"unknown clock faction: {args.get('faction')}")
+        if kind == "fragment" and args.get("tag") not in FRAGMENT_TAGS:
+            problems.append(f"bad fragment tag: {args.get('tag')}")
+        counter[0] += 1
+        aid = f"m{mid}-{counter[0]}"
+        label, desc = action_label(kind, args)
+        payload = htmllib.escape(json.dumps(args, ensure_ascii=False), quote=True)
+        return (f'\n<div class="runact" data-kind="{kind}" data-aid="{aid}" data-args="{payload}">'
+                f'<button class="btn">{htmllib.escape(label)}</button>'
+                f'<span class="runact-desc">{htmllib.escape(desc)}</span></div>\n')
+
+    def sub_npc(m):
+        name = m.group(1).strip()
+        nid = name_to_id.get(name)
+        if not nid:
+            problems.append(f"unknown NPC reference: {name!r}")
+            return name
+        return f'<a href="#" class="xin" data-nav="npc:{nid}">{name}</a>'
+
+    text = ACTION_RE.sub(sub_action, text)
+    text = NPCREF_RE.sub(sub_npc, text)
+    if problems:
+        raise SystemExit(f"module {relpath}: " + "; ".join(problems))
+
+    title_m = re.search(r"(?m)^# (.+)$", text)
+    title = title_m.group(1).strip() if title_m else relpath
+    body = text[title_m.end():] if title_m else text
+    parts = re.split(r"(?m)^## ", body)
+    intro = render(parts[0], src_dir)
+    scenes = []
+    for i, chunk in enumerate(parts[1:], 1):
+        stitle, _, sbody = chunk.partition("\n")
+        scenes.append({"sid": f"s{i}", "title": stitle.strip(), "html": render(sbody, src_dir)})
+    return {"id": mid, "title": title, "intro": intro, "scenes": scenes}
 
 
 # ---------------------------------------------------------------- pages
@@ -243,6 +325,7 @@ SEED = {
     "truthsFound": [],
     "corrupted": [],
     "sessions": [],
+    "run": {},
     "rev": 0,
 }
 
@@ -260,12 +343,15 @@ def main():
 
     npcs, groups = parse_npcs()
     pages = [{"section": s, "id": i, "title": t, "html": render_file(p)} for s, i, t, p in PAGES_SPEC]
+    name_to_id = {n["name"]: n["id"] for n in npcs}
+    modules = [m for m in (parse_module(mid, rp, name_to_id) for mid, rp in MODULE_FILES) if m]
 
     skeleton = skeleton.replace("__BUILDDATE__", date.today().isoformat())
     code = (app_code
             .replace("/*__NPCS__*/[]", json.dumps(npcs, ensure_ascii=False))
             .replace("/*__GROUPS__*/[]", json.dumps(groups, ensure_ascii=False))
             .replace("/*__PAGES__*/[]", json.dumps(pages, ensure_ascii=False))
+            .replace("/*__MODULES__*/[]", json.dumps(modules, ensure_ascii=False))
             .replace("/*__SEED__*/{}", json.dumps(SEED, ensure_ascii=False))
             .replace('/*__HEAD__*/""', json.dumps(head_static, ensure_ascii=False))
             .replace('/*__SKEL__*/""', json.dumps(skeleton, ensure_ascii=False)))
@@ -292,7 +378,8 @@ def main():
     nav_specs = set(NAV_MAP.values())
     print(f"gm-screen.html: {OUT_FULL.stat().st_size // 1024} KB · artifact variant: "
           f"{OUT_ARTIFACT.stat().st_size // 1024} KB · {len(npcs)} blocks {kinds} · "
-          f"{len(pages)} pages · {len(nav_specs)} nav routes")
+          f"{len(pages)} pages · {len(nav_specs)} nav routes · "
+          f"{len(modules)} run module(s): " + ", ".join(f"{m['title']} ({len(m['scenes'])} scenes)" for m in modules))
 
 
 if __name__ == "__main__":

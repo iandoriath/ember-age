@@ -89,6 +89,8 @@ nav:
           - "Lanes & Ledgers": gm/npcs/lanes-ledgers.md
           - "The Reaches": gm/npcs/reaches.md
           - "Keepers of the Flame": gm/npcs/keepers.md
+      - Run Modules:
+          - "01 — The Light on Vesta-9": gm/modules/01-the-light-on-vesta-9.md
       - Tools:
           - "Fragment Tracker": gm/tools/fragment-tracker.md
           - "Beacon Map": gm/tools/beacon-map.md

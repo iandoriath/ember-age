@@ -10,7 +10,7 @@
 | Inheritors | Nobody knows whose hand is at the top | 0 | **The Unveiling** → (Dial 1: the culling) |
 | Lamplighters | The relighting order is for sale, price very high | 0 | **The Conclave of Charts** (rigged — Dial 3 mole) |
 | Kajidics | The young Hutts have run the numbers | 0 | Clan war, one bad season away |
-| The Awakening itself | Every public display raises the temperature | 0 | **The Awakening goes public** |
+| The Awakening | Every public display raises the temperature | 0 | **The Awakening goes public** |
 
 ## Notes per faction
 

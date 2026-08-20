@@ -102,6 +102,10 @@
   .qcard b{color:var(--gold)} .ready{color:var(--ok);font-weight:700} .bias{color:var(--bad)}
   .stat{border:1px dashed var(--line);border-radius:.5rem;padding:.5rem .8rem;margin:.4rem 0;background:var(--panel2)}
 
+  .scenepills{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}
+  .runact{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;border:1px dashed var(--ember);border-radius:.5rem;padding:.5rem .7rem;margin:.6rem 0;background:var(--panel2)}
+  .runact .runact-desc{color:var(--dim);font-size:.85rem}
+  .runact button[disabled]{opacity:.75;cursor:default}
   .gate{border:2px solid var(--bad);border-radius:.7rem;padding:2rem;text-align:center;background:var(--panel)}
   .gate .btn{margin-top:.8rem}
 
@@ -124,6 +128,7 @@
 </header>
 <div id="syncbanner"></div>
 <main>
+  <div id="tab-run" class="tab"></div>
   <div id="tab-npcs" class="tab"></div>
   <div id="tab-trackers" class="tab"></div>
   <div id="tab-log" class="tab"></div>
@@ -137,6 +142,7 @@
 const NPCS   = /*__NPCS__*/[];
 const GROUPS = /*__GROUPS__*/[];
 const PAGES  = /*__PAGES__*/[];
+const MODULES= /*__MODULES__*/[];
 const SEED   = /*__SEED__*/{};
 const HEAD_STATIC = /*__HEAD__*/"";
 const SKELETON = /*__SKEL__*/"";
@@ -241,7 +247,7 @@ function resetState(){
 }
 
 /* ------------------------------------------------ tabs & in-app links */
-const TABS = [["npcs","NPCs"],["trackers","Trackers"],["log","Session Log"],["reference","Reference"],["setting","Setting"],["truths","GM Truths"]];
+const TABS = [["run","Run"],["npcs","NPCs"],["trackers","Trackers"],["log","Session Log"],["reference","Reference"],["setting","Setting"],["truths","GM Truths"]];
 let cur = "npcs";
 try{ const r = JSON.parse(sessionStorage.getItem("ea.resume")); if(r && r.tab){ cur = r.tab; sessionStorage.removeItem("ea.resume"); } }catch(e){}
 if(location.hash && TABS.some(t=>t[0]===location.hash.slice(1))) cur = location.hash.slice(1);
@@ -251,6 +257,7 @@ function nav(){
   TABS.forEach(([id])=>document.getElementById("tab-"+id).classList.toggle("on", cur===id));
 }
 function go(id){ cur=id; try{history.replaceState(null,"","#"+id);}catch(e){} nav(); window.scrollTo(0,0); }
+let npcFocus = null;
 function navTo(spec){
   const p = spec.split(":");
   if(p[0]==="tab"){ go(p[1]); }
@@ -259,11 +266,85 @@ function navTo(spec){
     if(p[1]==="group"){ npcGroup = p[2]; npcKind = "All"; npcQ = ""; }
     npcTab(); go("npcs");
   }
+  else if(p[0]==="npc"){
+    npcFocus = p.slice(1).join(":"); npcGroup = "all"; npcKind = "All"; npcQ = "";
+    npcTab(); go("npcs");
+    const el = document.getElementById("npc-"+npcFocus);
+    if(el){ el.open = true; el.scrollIntoView({block:"start"}); }
+  }
 }
 document.addEventListener("click", e => {
   const a = e.target.closest("a.xin[data-nav]");
-  if(a){ e.preventDefault(); navTo(a.dataset.nav); }
+  if(a){ e.preventDefault(); navTo(a.dataset.nav); return; }
+  const b = e.target.closest(".runact button");
+  if(b){ runAction(b.closest(".runact")); }
 });
+
+/* ------------------------------------------------ Run tab */
+function runState(mid){
+  if(!S.run) S.run = {};
+  if(!S.run[mid]) S.run[mid] = { scenes: {}, actions: {} };
+  return S.run[mid];
+}
+function runTab(){
+  const el = document.getElementById("tab-run");
+  if(!MODULES.length){ el.innerHTML = `<p class="muted">No run modules built yet.</p>`; return; }
+  const m = MODULES[0];
+  const rs = runState(m.id);
+  el.innerHTML = `
+    <div class="card">
+      <h2 style="margin:.1rem 0;font-family:var(--disp);color:var(--gold)">${esc(m.title)}</h2>
+      <div class="scenepills">${m.scenes.map(s=>`
+        <button class="chip ${rs.scenes[s.sid]?'on':''}" onclick="document.getElementById('scene-${s.sid}').scrollIntoView({block:'start'})"
+          title="jump to scene">${esc(s.title)}</button>`).join("")}
+      </div>
+      <p class="muted small" style="margin:.4rem 0 0">Pills jump to a scene; tick a scene done with the checkbox on its header. Action buttons write straight into your Trackers.</p>
+    </div>
+    <div class="card doc">${m.intro}</div>
+    ${m.scenes.map(s=>`
+      <div class="card doc" id="scene-${s.sid}">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:.6rem">
+          <h2 style="margin:.1rem 0">${esc(s.title)}</h2>
+          <label class="small muted" style="white-space:nowrap"><input type="checkbox" ${rs.scenes[s.sid]?"checked":""}
+            onchange="runState('${m.id}').scenes['${s.sid}']=this.checked;save();runTab()"> done</label>
+        </div>
+        ${s.html}
+      </div>`).join("")}`;
+  markDoneActions(m.id);
+}
+function markDoneActions(mid){
+  const rs = runState(mid);
+  document.querySelectorAll("#tab-run .runact").forEach(d=>{
+    if(rs.actions[d.dataset.aid]){
+      const b = d.querySelector("button");
+      b.disabled = true; b.textContent = "✓ " + b.textContent.replace(/^✓ /,"");
+      b.classList.add("ghost");
+    }
+  });
+}
+function runAction(div){
+  const kind = div.dataset.kind, aid = div.dataset.aid;
+  let args = {};
+  try{ args = JSON.parse(div.dataset.args); }catch(e){ return; }
+  const m = MODULES[0], rs = runState(m.id);
+  if(rs.actions[aid]) return;
+  if(kind === "fragment"){
+    if(args.question && !S.questions.includes(args.question)) S.questions.push(args.question);
+    S.fragments.push({name:args.name||"", form:args.form||"", tag:args.tag||"Civic", question:args.question||"",
+                      claim:args.claim||"", holder:args.holder||"crew", status:args.status||"trusted"});
+  } else if(kind === "clock"){
+    const c = S.clocks.find(c=>c.faction===args.faction);
+    if(c){ c.value = Math.max(0, Math.min(6, c.value + (args.delta||1)));
+           if(args.note) c.notes = (c.notes? c.notes+"\n" : "") + args.note; }
+  } else if(kind === "beacon"){
+    const b = S.beacons.find(b=>b.name===args.name);
+    if(b) Object.assign(b, args);
+    else S.beacons.push({name:args.name||"", status:args.status||"lit", corridor:args.corridor||"",
+                         certified:args.certified||"", fee:args.fee||"", followed:args.followed||""});
+  } else return;
+  rs.actions[aid] = true;
+  save(); trackersTab(); markDoneActions(m.id);
+}
 
 /* ------------------------------------------------ NPC tab */
 const KINDS = ["All","Nemesis","Rival","Minion","Vehicle","Hazard"];
@@ -294,7 +375,7 @@ function npcList(){
     (gi?`<div class="card groupintro doc small">${gi.intro}</div>`:"") +
     `<p class="muted small">${hits.length} of ${NPCS.length} blocks</p>` +
     hits.map(n=>`
-      <details class="npc" ${hits.length===1?"open":""}>
+      <details class="npc" id="npc-${n.id}" ${hits.length===1||n.id===npcFocus?"open":""}>
         <summary>
           <span class="nm">${esc(n.name)}</span>
           <span class="badge ${n.kind}">${n.kind}</span>
@@ -485,7 +566,7 @@ function truthsTab(){
 }
 
 /* ------------------------------------------------ boot */
-function renderAll(){ nav(); npcTab(); trackersTab(); logTab(); pagesTab("reference"); pagesTab("setting"); truthsTab();
+function renderAll(){ nav(); runTab(); npcTab(); trackersTab(); logTab(); pagesTab("reference"); pagesTab("setting"); truthsTab();
   if(document.getElementById("mc-out")) mcOut(); updateSyncUI(); }
 window.addEventListener("hashchange",()=>{ const h=location.hash.replace("#",""); if(TABS.some(t=>t[0]===h)){ cur=h; nav(); } });
 renderAll();
