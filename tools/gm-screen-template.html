@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Ember Age — GM Screen</title>
+<style>
+  :root{
+    --bg:#171310; --panel:#211a14; --panel2:#2a221a; --line:#3a2f24;
+    --ink:#e9ded0; --dim:#a89a88; --ember:#e07b39; --gold:#ffb454;
+    --ok:#7fb069; --bad:#c65f4a; --tag-jedi:#7fa7d6; --tag-sith:#c65f4a; --tag-civic:#b9a26b;
+  }
+  *{box-sizing:border-box} html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  header{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,#241b12,#1c1611);border-bottom:1px solid var(--line);
+         display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;padding:.55rem .9rem}
+  header h1{font-size:1.05rem;margin:0 .8rem 0 0;color:var(--gold);letter-spacing:.04em;white-space:nowrap}
+  header h1 .flame{color:var(--ember)}
+  nav{display:flex;gap:.25rem;flex-wrap:wrap}
+  nav button{background:none;border:1px solid transparent;color:var(--dim);padding:.35rem .7rem;border-radius:.5rem;cursor:pointer;font:inherit}
+  nav button.on{color:var(--gold);border-color:var(--line);background:var(--panel)}
+  nav button:hover{color:var(--ink)}
+  .spacer{flex:1}
+  .hbtn{background:var(--panel);border:1px solid var(--line);color:var(--dim);border-radius:.5rem;padding:.3rem .6rem;cursor:pointer;font:inherit;font-size:.85rem}
+  .hbtn:hover{color:var(--ink);border-color:var(--ember)}
+  main{max-width:1200px;margin:0 auto;padding:1rem .9rem 4rem}
+  .tab{display:none} .tab.on{display:block}
+
+  /* ---------- generic content rendering ---------- */
+  .doc h1{color:var(--gold);font-size:1.5rem;margin:.4rem 0 .6rem} .doc h2{color:var(--gold);font-size:1.2rem;margin:1.2rem 0 .4rem}
+  .doc h3{color:var(--ember);font-size:1.05rem;margin:1rem 0 .3rem}
+  .doc a{color:var(--gold)} .doc .xref{color:var(--gold);border-bottom:1px dotted var(--dim)}
+  .doc table{border-collapse:collapse;margin:.6rem 0;width:100%;font-size:.92em;display:block;overflow-x:auto}
+  .doc th,.doc td{border:1px solid var(--line);padding:.3rem .55rem;text-align:left;vertical-align:top}
+  .doc th{background:var(--panel2);color:var(--gold)}
+  .doc blockquote{margin:.6rem 0;padding:.4rem .8rem;border-left:3px solid var(--ember);background:var(--panel);color:var(--dim);font-style:italic}
+  .doc code{background:var(--panel2);padding:.05rem .3rem;border-radius:.25rem}
+  .doc pre{background:var(--panel2);padding:.6rem;border-radius:.5rem;overflow:auto}
+  .adm{border:1px solid var(--line);border-left:4px solid var(--ember);background:var(--panel);border-radius:.4rem;padding:.5rem .8rem;margin:.7rem 0}
+  .adm-title{font-weight:700;color:var(--gold);margin:.1rem 0 .3rem}
+  .adm-danger{border-left-color:var(--bad)} .adm-tip{border-left-color:var(--ok)} .adm-quote{border-left-color:var(--gold)}
+
+  /* ---------- layout helpers ---------- */
+  .cols{display:grid;grid-template-columns:250px 1fr;gap:1rem}
+  @media(max-width:800px){.cols{grid-template-columns:1fr}}
+  .side{position:sticky;top:60px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;background:var(--panel);
+        border:1px solid var(--line);border-radius:.6rem;padding:.5rem}
+  .side button{display:block;width:100%;text-align:left;background:none;border:0;color:var(--dim);padding:.3rem .5rem;border-radius:.4rem;cursor:pointer;font:inherit;font-size:.9rem}
+  .side button.on{background:var(--panel2);color:var(--gold)} .side button:hover{color:var(--ink)}
+  .side .grp{margin:.5rem 0 .15rem;padding:0 .5rem;color:var(--ember);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}
+  .pane{min-width:0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;margin:0 0 .8rem}
+  .muted{color:var(--dim)} .small{font-size:.85rem}
+  input,select,textarea{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:.4rem;padding:.35rem .5rem;font:inherit}
+  input:focus,select:focus,textarea:focus{outline:1px solid var(--ember)}
+  label{font-size:.8rem;color:var(--dim);display:block;margin-bottom:.1rem}
+  .btn{background:var(--ember);border:0;color:#1b120a;font-weight:700;border-radius:.45rem;padding:.4rem .8rem;cursor:pointer;font:inherit}
+  .btn.ghost{background:var(--panel2);color:var(--dim);border:1px solid var(--line)} .btn.ghost:hover{color:var(--ink)}
+  .btn.danger{background:var(--bad);color:#fff}
+  .rowbtns button{background:none;border:0;color:var(--dim);cursor:pointer;font-size:1rem;padding:.1rem .25rem}
+  .rowbtns button:hover{color:var(--gold)}
+
+  /* ---------- NPC tab ---------- */
+  .toolbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:.9rem}
+  .toolbar input[type=search]{flex:1;min-width:220px}
+  .chip{border:1px solid var(--line);background:var(--panel);color:var(--dim);border-radius:2rem;padding:.25rem .75rem;cursor:pointer;font:inherit;font-size:.85rem}
+  .chip.on{background:var(--ember);color:#1b120a;border-color:var(--ember);font-weight:700}
+  details.npc{background:var(--panel);border:1px solid var(--line);border-radius:.6rem;margin:0 0 .55rem;overflow:hidden}
+  details.npc>summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;gap:.35rem .8rem;align-items:baseline;padding:.6rem .9rem}
+  details.npc>summary::-webkit-details-marker{display:none}
+  details.npc[open]>summary{border-bottom:1px solid var(--line);background:var(--panel2)}
+  .npc .nm{font-weight:700;color:var(--gold);font-size:1.02rem}
+  .badge{font-size:.72rem;padding:.08rem .5rem;border-radius:1rem;border:1px solid var(--line);color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+  .badge.Nemesis{color:#f0a0a0;border-color:#7a4038}.badge.Rival{color:var(--gold);border-color:#7a5f2c}
+  .badge.Minion{color:#9fc49f;border-color:#40603f}.badge.Vehicle{color:#9fb7d8;border-color:#3d5a7a}
+  .badge.Hazard{color:#d8a0e0;border-color:#6a3d7a}.badge.Special{color:var(--dim)}
+  .npc .fac{color:var(--dim);font-size:.85rem} .npc .drv{width:100%;color:var(--dim);font-size:.82rem}
+  .npc .body{padding:.4rem 1rem .8rem}
+  .groupintro{margin:.2rem 0 .8rem}
+
+  /* ---------- trackers ---------- */
+  .clockgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:.7rem}
+  .clock .segs{display:flex;gap:.25rem;margin:.4rem 0}
+  .clock .seg{width:32px;height:20px;border:1px solid var(--line);border-radius:.25rem;background:var(--panel2);cursor:pointer}
+  .clock .seg.f{background:var(--ember);border-color:var(--gold)}
+  .clock textarea{width:100%;min-height:44px;margin-top:.35rem;font-size:.85rem}
+  .formgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.5rem;margin:.5rem 0}
+  .formgrid .wide{grid-column:1/-1}
+  table.tr{border-collapse:collapse;width:100%;font-size:.9rem;margin:.5rem 0;display:block;overflow-x:auto}
+  table.tr thead,table.tr tbody{display:table;width:100%}
+  table.tr th,table.tr td{border:1px solid var(--line);padding:.3rem .5rem;text-align:left;vertical-align:top}
+  table.tr th{background:var(--panel2);color:var(--gold);font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
+  .tag{font-size:.75rem;padding:.05rem .45rem;border-radius:1rem;font-weight:700}
+  .tag.Jedi{background:#24344a;color:var(--tag-jedi)} .tag.Sith{background:#40241e;color:#e8a396} .tag.Civic{background:#3a3323;color:#d8c48e}
+  .qsum{display:flex;flex-wrap:wrap;gap:.5rem;margin:.4rem 0}
+  .qcard{border:1px solid var(--line);border-radius:.5rem;padding:.45rem .7rem;background:var(--panel2);font-size:.85rem}
+  .qcard b{color:var(--gold)} .ready{color:var(--ok);font-weight:700} .bias{color:var(--bad)}
+  .stat{border:1px dashed var(--line);border-radius:.5rem;padding:.5rem .8rem;margin:.4rem 0;background:var(--panel2)}
+
+  /* ---------- truths gate ---------- */
+  .gate{border:2px solid var(--bad);border-radius:.7rem;padding:2rem;text-align:center;background:var(--panel)}
+  .gate .btn{margin-top:.8rem}
+
+  /* ---------- session log ---------- */
+  .sess h3{margin:.1rem 0;color:var(--gold)} .sess dt{color:var(--ember);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;margin-top:.4rem}
+  .sess dd{margin:0 0 .1rem}
+  footer{color:var(--dim);text-align:center;font-size:.75rem;padding:2rem 0}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="flame">◆</span> THE EMBER AGE <span class="small muted">GM screen</span></h1>
+  <nav id="nav"></nav>
+  <div class="spacer"></div>
+  <button class="hbtn" onclick="exportState()">Export save</button>
+  <button class="hbtn" onclick="document.getElementById('importfile').click()">Import</button>
+  <input type="file" id="importfile" accept=".json" style="display:none" onchange="importState(this)">
+  <button class="hbtn" onclick="resetState()">Reset</button>
+</header>
+<main>
+  <div id="tab-npcs" class="tab"></div>
+  <div id="tab-trackers" class="tab"></div>
+  <div id="tab-log" class="tab"></div>
+  <div id="tab-reference" class="tab"></div>
+  <div id="tab-setting" class="tab"></div>
+  <div id="tab-truths" class="tab"></div>
+</main>
+<footer>The Ember Age — homebrew campaign GM screen · offline single file · built __BUILDDATE__ · state saved in this browser (Export to move it)</footer>
+
+<script>
+const NPCS   = /*__NPCS__*/[];
+const GROUPS = /*__GROUPS__*/[];
+const PAGES  = /*__PAGES__*/[];
+const SEED   = /*__SEED__*/{};
+
+/* ------------------------------------------------ state */
+const KEY = "emberAgeGM.v1";
+function freshState(){ return JSON.parse(JSON.stringify(SEED)); }
+function load(){
+  try{
+    const raw = localStorage.getItem(KEY);
+    if(!raw) return freshState();
+    const s = Object.assign(freshState(), JSON.parse(raw));
+    return s;
+  }catch(e){ return freshState(); }
+}
+let S = load();
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
+function esc(x){ return String(x==null?"":x).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+
+function exportState(){
+  const blob = new Blob([JSON.stringify(S,null,2)],{type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "ember-age-save-"+new Date().toISOString().slice(0,10)+".json";
+  a.click(); URL.revokeObjectURL(a.href);
+}
+function importState(inp){
+  const f = inp.files[0]; if(!f) return;
+  f.text().then(t=>{ S = Object.assign(freshState(), JSON.parse(t)); save(); renderAll(); alert("Save imported."); })
+   .catch(()=>alert("Could not read that file."));
+  inp.value = "";
+}
+function resetState(){
+  if(confirm("Reset ALL tracker/log state to the campaign start? (Export first if unsure.)")){ S = freshState(); save(); renderAll(); }
+}
+
+/* ------------------------------------------------ tabs */
+const TABS = [["npcs","NPCs"],["trackers","Trackers"],["log","Session Log"],["reference","Reference"],["setting","Setting"],["truths","GM Truths"]];
+let cur = location.hash.replace("#","") || "npcs";
+function nav(){
+  document.getElementById("nav").innerHTML = TABS.map(([id,lbl])=>
+    `<button class="${cur===id?'on':''}" onclick="go('${id}')">${lbl}</button>`).join("");
+  TABS.forEach(([id])=>document.getElementById("tab-"+id).classList.toggle("on", cur===id));
+}
+function go(id){ cur=id; location.hash=id; nav(); }
+
+/* ------------------------------------------------ NPC tab */
+const KINDS = ["All","Nemesis","Rival","Minion","Vehicle","Hazard"];
+let npcQ="", npcKind="All", npcGroup="all";
+function npcTab(){
+  const el = document.getElementById("tab-npcs");
+  el.innerHTML = `
+    <div class="toolbar">
+      <input type="search" placeholder="Search ${NPCS.length} stat blocks — name, faction, skill, gear…" value="${esc(npcQ)}"
+             oninput="npcQ=this.value;npcList()">
+      ${KINDS.map(k=>`<button class="chip ${npcKind===k?'on':''}" onclick="npcKind='${k}';npcTab()">${k}</button>`).join("")}
+      <select onchange="npcGroup=this.value;npcTab()">
+        <option value="all">All groups</option>
+        ${GROUPS.map(g=>`<option value="${g.slug}" ${npcGroup===g.slug?'selected':''}>${esc(g.label)}</option>`).join("")}
+      </select>
+    </div>
+    <div id="npclist"></div>`;
+  const inp = el.querySelector("input[type=search]"); inp.focus(); inp.setSelectionRange(inp.value.length,inp.value.length);
+  npcList();
+}
+function npcList(){
+  const q = npcQ.trim().toLowerCase();
+  const hits = NPCS.filter(n =>
+    (npcKind==="All"||n.kind===npcKind) &&
+    (npcGroup==="all"||n.group===npcGroup) &&
+    (!q || n.search.includes(q)));
+  const gi = (npcGroup!=="all" && !q) ? GROUPS.find(g=>g.slug===npcGroup) : null;
+  document.getElementById("npclist").innerHTML =
+    (gi?`<div class="card groupintro doc small">${gi.intro}</div>`:"") +
+    `<p class="muted small">${hits.length} of ${NPCS.length} blocks</p>` +
+    hits.map(n=>`
+      <details class="npc" ${hits.length===1?"open":""}>
+        <summary>
+          <span class="nm">${esc(n.name)}</span>
+          <span class="badge ${n.kind}">${n.kind}</span>
+          <span class="fac">${esc(n.faction)}${n.role?" · "+esc(n.role):""}</span>
+          ${n.derived?`<span class="drv">${esc(n.derived)}</span>`:""}
+        </summary>
+        <div class="body doc">${n.html}</div>
+      </details>`).join("") || `<p class="muted">Nothing matches.</p>`;
+}
+
+/* ------------------------------------------------ Trackers tab */
+function trackersTab(){
+  const el = document.getElementById("tab-trackers");
+  el.innerHTML = `
+    <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Faction clocks</h2>
+      <p class="muted small">Each faction's crack, 0–6. Click a segment; a full clock fires its Act 2 hinge.</p>
+      <div class="clockgrid">${S.clocks.map((c,i)=>`
+        <div class="card clock" style="margin:0">
+          <b style="color:var(--gold)">${esc(c.faction)}</b>
+          <div class="muted small">${esc(c.crack)}</div>
+          <div class="segs">${[1,2,3,4,5,6].map(v=>
+            `<div class="seg ${c.value>=v?'f':''}" title="${v}" onclick="clockSet(${i},${v})"></div>`).join("")}</div>
+          <textarea placeholder="notes…" onchange="S.clocks[${i}].notes=this.value;save()">${esc(c.notes)}</textarea>
+        </div>`).join("")}
+      </div></div>
+
+    <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Lore fragments</h2>
+      <div class="qsum">${questionSummary()}</div>
+      <table class="tr"><thead><tr><th>Fragment</th><th>Form</th><th>Tag</th><th>Question</th><th>Load-bearing claim</th><th>Holder</th><th>Status</th><th></th></tr></thead>
+      <tbody>${S.fragments.map((f,i)=>`
+        <tr><td><b>${esc(f.name)}</b></td><td>${esc(f.form)}</td><td><span class="tag ${esc(f.tag)}">${esc(f.tag)}</span></td>
+        <td>${esc(f.question)}</td><td class="small">${esc(f.claim)}</td><td>${esc(f.holder)}</td><td>${esc(f.status)}</td>
+        <td class="rowbtns"><button title="delete" onclick="S.fragments.splice(${i},1);save();trackersTab()">✕</button></td></tr>`).join("")}
+      </tbody></table>
+      <div class="formgrid">
+        <div><label>Fragment name</label><input id="f-name" placeholder="Grandmother Osk's rutter, p.40"></div>
+        <div><label>Form</label><input id="f-form" placeholder="rutter / witness / droid core…"></div>
+        <div><label>Tag</label><select id="f-tag"><option>Jedi</option><option>Sith</option><option>Civic</option></select></div>
+        <div><label>Question</label><input id="f-q" list="qlist" placeholder="What ended the Order?">
+          <datalist id="qlist">${S.questions.map(q=>`<option>${esc(q)}</option>`).join("")}</datalist></div>
+        <div class="wide"><label>Load-bearing claim (what it insists on)</label><input id="f-claim"></div>
+        <div><label>Holder</label><input id="f-holder" value="crew"></div>
+        <div><label>Status</label><select id="f-status"><option>trusted</option><option>suspect</option><option>spent</option><option>forged?</option></select></div>
+        <div style="align-self:end"><button class="btn" onclick="addFragment()">Add fragment</button></div>
+      </div>
+      <div class="stat small muted">Rules: a held, relevant fragment = boost die on related Knowledge checks. 3+ fragments on one Question → Hard Knowledge (Lore) Reconstruction as a group scene; all three tags represented → upgrade an ability die once; only one tag → upgrade difficulty once.</div>
+    </div>
+
+    <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Beacon map</h2>
+      <table class="tr"><thead><tr><th>Beacon</th><th>Status</th><th>Corridor</th><th>Certified by</th><th>First-lighting fee</th><th>Who followed through</th><th></th></tr></thead>
+      <tbody>${S.beacons.map((b,i)=>`
+        <tr><td><b>${esc(b.name)}</b></td>
+        <td><select onchange="S.beacons[${i}].status=this.value;save()">${["dark","attempted","lit"].map(s=>`<option ${b.status===s?"selected":""}>${s}</option>`).join("")}</select></td>
+        <td>${esc(b.corridor)}</td><td>${esc(b.certified)}</td><td>${esc(b.fee)}</td><td class="small">${esc(b.followed)}</td>
+        <td class="rowbtns"><button title="delete" onclick="S.beacons.splice(${i},1);save();trackersTab()">✕</button></td></tr>`).join("")}
+      </tbody></table>
+      <div class="formgrid">
+        <div><label>Beacon</label><input id="b-name"></div>
+        <div><label>Status</label><select id="b-status"><option>dark</option><option>attempted</option><option>lit</option></select></div>
+        <div><label>Corridor it opens</label><input id="b-corridor"></div>
+        <div><label>Certified by</label><input id="b-certified"></div>
+        <div><label>Fee</label><input id="b-fee"></div>
+        <div class="wide"><label>Who followed through</label><input id="b-followed"></div>
+        <div style="align-self:end"><button class="btn" onclick="addBeacon()">Add beacon</button></div>
+      </div>
+      <div class="stat small muted">Relight challenge — three stages, any order: <b>Wake it</b> (Mechanics/Computers) · <b>Chart it</b> (Hard Astrogation, fragments/rutters = boost) · <b>Speak to it</b> (Knowledge or social). Then: region opens, faction map shifts, fee pays, and — who follows you through?</div>
+    </div>
+
+    <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Truths revealed &amp; corrupted conclusions</h2>
+      <table class="tr"><thead><tr><th>Truth / Insight granted</th><th></th></tr></thead><tbody>
+        ${S.truthsFound.map((t,i)=>`<tr><td>${esc(t)}</td><td class="rowbtns"><button onclick="S.truthsFound.splice(${i},1);save();trackersTab()">✕</button></td></tr>`).join("")}
+      </tbody></table>
+      <div class="formgrid"><div class="wide"><input id="t-new" placeholder="Truth revealed + Insight granted (setback removed / talent unlocked)"></div>
+      <div><button class="btn" onclick="pushItem('truthsFound','t-new')">Add</button></div></div>
+      <table class="tr"><thead><tr><th>Corrupted conclusion in play (Despair)</th><th></th></tr></thead><tbody>
+        ${S.corrupted.map((t,i)=>`<tr><td class="bias">${esc(t)}</td><td class="rowbtns"><button onclick="S.corrupted.splice(${i},1);save();trackersTab()">✕</button></td></tr>`).join("")}
+      </tbody></table>
+      <div class="formgrid"><div class="wide"><input id="c-new" placeholder="What the party now wrongly believes — and where it will bite"></div>
+      <div><button class="btn" onclick="pushItem('corrupted','c-new')">Add</button></div></div>
+    </div>`;
+}
+function clockSet(i,v){ S.clocks[i].value = (S.clocks[i].value===v? v-1 : v); save(); trackersTab(); }
+function pushItem(key,inputId){ const el=document.getElementById(inputId); if(el.value.trim()){ S[key].push(el.value.trim()); save(); trackersTab(); } }
+function addFragment(){
+  const g=id=>document.getElementById(id).value;
+  if(!g("f-name").trim()) return;
+  const q=g("f-q").trim();
+  if(q && !S.questions.includes(q)) S.questions.push(q);
+  S.fragments.push({name:g("f-name"),form:g("f-form"),tag:g("f-tag"),question:q,claim:g("f-claim"),holder:g("f-holder"),status:g("f-status")});
+  save(); trackersTab();
+}
+function addBeacon(){
+  const g=id=>document.getElementById(id).value;
+  if(!g("b-name").trim()) return;
+  S.beacons.push({name:g("b-name"),status:g("b-status"),corridor:g("b-corridor"),certified:g("b-certified"),fee:g("b-fee"),followed:g("b-followed")});
+  save(); trackersTab();
+}
+function questionSummary(){
+  return S.questions.map(q=>{
+    const fs = S.fragments.filter(f=>f.question===q);
+    const tags = [...new Set(fs.map(f=>f.tag))];
+    let note = "";
+    if(fs.length>=3) note = tags.length>=3 ? `<span class="ready">Reconstruction ready — all three tags: upgrade ability once</span>`
+      : tags.length===1 ? `<span class="ready">Reconstruction ready</span> · <span class="bias">single tag: upgrade difficulty once</span>`
+      : `<span class="ready">Reconstruction ready</span>`;
+    return `<div class="qcard"><b>${esc(q)}</b> — ${fs.length} fragment${fs.length===1?"":"s"}
+      ${tags.map(t=>`<span class="tag ${esc(t)}">${esc(t)}</span>`).join(" ")} ${note?"· "+note:""}</div>`;
+  }).join("");
+}
+
+/* ------------------------------------------------ Session log tab */
+function logTab(){
+  const el = document.getElementById("tab-log");
+  const F = [["title","Title"],["date","Date"],["where","Where (system / world / beacon)"],["obligation","Obligation triggered"],
+             ["beacons","Beacons (relit / attempted / learned of)"],["fragments","Fragments gained (name — tag — Question)"],
+             ["factions","Factions moved"],["debts","Debts & favors"],["xp","XP awarded"],["line","The line of the night"]];
+  el.innerHTML = `
+    <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">New session entry</h2>
+      <div class="formgrid">
+        ${F.map(([k,lbl])=>`<div class="${["where","fragments","factions","debts","line","beacons","obligation"].includes(k)?"wide":""}">
+          <label>${lbl}</label><input id="s-${k}"></div>`).join("")}
+        <div style="align-self:end"><button class="btn" onclick="addSession()">Add session ${S.sessions.length+1}</button></div>
+      </div></div>
+    ${S.sessions.map((s,i)=>`
+      <div class="card sess">
+        <div style="display:flex;justify-content:space-between;align-items:baseline">
+          <h3>Session ${i+1} — ${esc(s.title||"untitled")} <span class="muted small">${esc(s.date||"")}</span></h3>
+          <span class="rowbtns"><button title="copy as markdown" onclick="copySession(${i})">⧉</button>
+          <button title="delete" onclick="if(confirm('Delete this session entry?')){S.sessions.splice(${i},1);save();logTab()}">✕</button></span>
+        </div>
+        <dl>${F.slice(2).map(([k,lbl])=>s[k]?`<dt>${lbl}</dt><dd>${esc(s[k])}</dd>`:"").join("")}</dl>
+      </div>`).reverse().join("")}`;
+}
+function addSession(){
+  const keys = ["title","date","where","obligation","beacons","fragments","factions","debts","xp","line"];
+  const s = {}; keys.forEach(k=>s[k]=document.getElementById("s-"+k).value);
+  if(!s.title.trim()) { alert("Give it at least a title."); return; }
+  S.sessions.push(s); save(); logTab();
+}
+function copySession(i){
+  const s = S.sessions[i];
+  const md = `## Session ${i+1} — ${s.title} (${s.date})\n\n**Where:** ${s.where}\n**Obligation triggered:** ${s.obligation}\n**Beacons:** ${s.beacons}\n**Fragments gained:** ${s.fragments}\n**Factions moved:** ${s.factions}\n**Debts & favors:** ${s.debts}\n**XP awarded:** ${s.xp}\n**The line of the night:** ${s.line}\n`;
+  navigator.clipboard ? navigator.clipboard.writeText(md).then(()=>alert("Copied as markdown."))
+    : alert("Clipboard unavailable — select and copy:\n\n"+md);
+}
+
+/* ------------------------------------------------ page tabs (reference / setting / truths) */
+const pageSel = {reference:null, setting:null};
+function pagesTab(section){
+  const el = document.getElementById("tab-"+section);
+  const list = PAGES.filter(p=>p.section===section);
+  if(!pageSel[section]) pageSel[section] = list[0].id;
+  const curP = list.find(p=>p.id===pageSel[section]) || list[0];
+  el.innerHTML = `<div class="cols">
+    <div class="side">${section==="reference" ? minionCalc() : ""}
+      ${list.map(p=>`<button class="${p.id===curP.id?'on':''}" onclick="pageSel['${section}']='${p.id}';pagesTab('${section}')">${esc(p.title)}</button>`).join("")}
+    </div>
+    <div class="pane"><div class="card doc">${curP.html}</div></div>
+  </div>`;
+  if(section==="reference" && document.getElementById("mc-out")) mcOut();
+}
+function minionCalc(){
+  return `<div class="grp">Minion group math</div>
+    <div style="padding:.2rem .5rem .5rem">
+      <label>WT each × count</label>
+      <div style="display:flex;gap:.3rem">
+        <input id="mc-wt" type="number" value="5" min="1" style="width:60px" oninput="mcOut()">
+        <input id="mc-n" type="number" value="4" min="1" style="width:60px" oninput="mcOut()">
+      </div>
+      <div id="mc-out" class="small muted" style="margin-top:.3rem"></div>
+    </div>`;
+}
+function mcOut(){
+  const wt=+document.getElementById("mc-wt").value||0, n=+document.getElementById("mc-n").value||0;
+  document.getElementById("mc-out").innerHTML =
+    `Group WT <b style="color:var(--gold)">${wt*n}</b> · group skills at <b style="color:var(--gold)">${Math.max(0,n-1)}</b> ranks<br>
+     one minion drops at ${Array.from({length:n},(_,i)=>wt*(i+1)).join(", ")} total damage`;
+}
+let truthsOpen = false;
+function truthsTab(){
+  const el = document.getElementById("tab-truths");
+  const p = PAGES.find(p=>p.section==="truths");
+  el.innerHTML = truthsOpen
+    ? `<div class="card doc">${p.html}</div><button class="btn ghost" onclick="truthsOpen=false;truthsTab()">Seal it again</button>`
+    : `<div class="gate"><h2 style="color:var(--bad)">Part V — GM Truths (locked)</h2>
+       <p class="muted">Players never see this page. Three dials, now set.<br>Don't open it with anyone looking over your shoulder.</p>
+       <button class="btn danger" onclick="truthsOpen=true;truthsTab()">Break the seal</button></div>`;
+}
+
+/* ------------------------------------------------ boot */
+function renderAll(){ nav(); npcTab(); trackersTab(); logTab(); pagesTab("reference"); pagesTab("setting"); truthsTab();
+  if(document.getElementById("mc-out")) mcOut(); }
+window.addEventListener("hashchange",()=>{ cur=location.hash.replace("#","")||"npcs"; nav(); });
+renderAll();
+</script>
+</body>
+</html>

@@ -67,4 +67,4 @@
 
 🔒 = spoiler-critical even within the GM section: these existences are Dial 1 material.
 
-*Ship stat blocks live player-side in [Ships of the Ember Age](../../mechanics/ships.md).*
+*Ship stat blocks live in [Ships of the Ember Age](../../mechanics/ships.md) (shareable — ship stats aren't spoilers).*

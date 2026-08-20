@@ -1,68 +1,48 @@
-# The Ember Age — Campaign Wiki
+# The Ember Age — GM Tools
 
 *A homebrew Star Wars campaign for FFG (Edge of the Empire / Age of Rebellion / Force and Destiny), set 90 years After Ruusan.*
 
 > Nobody broke the galaxy — everyone just stopped holding it up.
 
-This repository is the campaign's management tool: the full planning material as a searchable wiki, a session/fragment/beacon tracking system, and an FFG-rules-correct NPC library.
+GM-only repository. Nothing here is deployed anywhere public.
 
-## The tool
+## The GM Screen — the tool you actually run the campaign from
 
-The wiki runs on **[MkDocs](https://github.com/mkdocs/mkdocs) + [Material for MkDocs](https://github.com/squidfunk/mkdocs-material)** — the most widely used open-source engine for TTRPG campaign wikis. Chosen over server-based campaign managers (e.g. Kanka) because everything lives as plain Markdown **in this repo**: versioned in git, readable directly on GitHub with no setup, and buildable into a proper site with search, dark mode, and navigation.
+**`gm-screen.html`** — a single self-contained file. Download it (or grab it from a checkout), double-click, done: no install, no server, works offline.
 
-### Two editions, one source
+- **NPCs** — all 57 stat blocks (14 nemeses, 23 rivals, 13 minion groups, 6 ships, 1 hazard), full-text searchable, filterable by type and group. Every block is an official published FFG adversary pulled as printed, cited on its `Chassis:` line.
+- **Trackers** — faction clocks (each faction's crack, 0–6), the lore-fragment ledger (auto-flags when a Question hits 3 fragments and whether the tag mix upgrades the check), the beacon map, truths & corrupted conclusions.
+- **Session Log** — template-driven entries, copy-out as markdown.
+- **Reference** — Lore Fragments, beacon relighting, the Force rules, Obligation, the adversary primer, and a minion group-math calculator.
+- **Setting** — the full campaign text: timeline, factions, acts, session one, glossary.
+- **GM Truths** — Part V behind a click-to-reveal seal.
 
-| Edition | Config | Contains |
-|---|---|---|
-| **GM** | `mkdocs.yml` | Everything, including `docs/gm/` — Part V (GM Truths), the NPC library, the trackers |
-| **Player** | `mkdocs.players.yml` | Everything **except** `docs/gm/`, excluded mechanically via `exclude_docs` — the GM section cannot leak |
+State (clocks, fragments, beacons, log) saves automatically in your browser. **Export save** writes a JSON you can move between machines or keep with your notes; **Import** loads it back.
 
-CI builds both editions in strict mode on every push and fails if GM content ever appears in the player build.
+### Rebuilding after editing content
 
-## Quickstart
-
-```bash
-pip install -r requirements.txt   # or: make install
-make gm                           # GM edition  → http://127.0.0.1:8000
-make serve-players                # player edition → http://127.0.0.1:8001  (hand players this one)
-make build                        # strict-build both editions
-```
-
-### GitHub Pages (player edition only)
-
-The **player** edition is published at **https://iandoriath.github.io/ember-age/** — the GM edition is never deployed. To republish after content changes:
+The screen is generated from the markdown under `docs/`. Edit the content there, then:
 
 ```bash
-make deploy-players        # mkdocs gh-deploy -f mkdocs.players.yml → gh-pages branch
+pip install -r requirements.txt   # once
+make screen                       # regenerates gm-screen.html
 ```
 
-(Alternative: run the `wiki` workflow from the Actions tab with "Deploy the PLAYER edition" checked; that path needs Settings → Pages → Source set to GitHub Actions.) The site is public to anyone with the URL — exactly why only the player edition ships.
+CI rebuilds it on every push and attaches it as a workflow artifact.
 
-## Layout
+## What's in `docs/`
+
+The campaign source of truth — also browsable as a local wiki (`make wiki`) if you prefer that view:
 
 ```
 docs/
-├── index.md                 # campaign home
-├── setting/                 # the Withering timeline, the galaxy at 90 AR, the Awakening, glossary
-├── factions/                # the six answers + two standing powers
-├── campaign/                # three acts, session one, session log
-├── mechanics/               # character creation, Obligation, Lore Fragments,
-│                            # beacon relighting, the Force, ships
-└── gm/                      # ── GM EDITION ONLY ──
-    ├── truths.md            # Part V: the three dials (players never see this)
-    ├── npcs/                # the NPC library
-    └── tools/               # fragment tracker, beacon map, faction clocks
+├── setting/      # the Withering timeline, the galaxy at 90 AR, the Awakening, glossary
+├── factions/     # the six answers + two standing powers
+├── campaign/     # three acts, session one
+├── mechanics/    # character creation, Obligation, Lore Fragments, beacons, the Force, ships
+└── gm/           # Part V (GM Truths), the NPC library, tracker templates
 ```
 
-## The NPC library
+## NPC library sourcing
 
-Every stat block is an **official published FFG adversary pulled as printed** and re-skinned for the era — new name and flavor, same numbers. Each block carries:
-
-- **Chassis:** the printed adversary and book it comes from.
-- **Adjustments:** every mechanical deviation, explicitly declared (almost always "none").
-
-No fan-made/homebrew stat blocks are used anywhere. Minion/Rival/Nemesis mechanics follow the core rules; the library index (`docs/gm/npcs/index.md`) carries a one-screen rules primer.
-
-## House content
-
-The Ember Age's own subsystems — **Lore Fragments**, **beacon relighting**, the **Wellspring** and **witness** rules — are homebrew by design and documented under `docs/mechanics/`.
+Every stat block is an **official published FFG adversary pulled as printed** and re-skinned — new name and flavor, same numbers. Each block carries a `Chassis:` citation (adversary + book, usually page) and an explicit adjustments note (almost always "none"). Numbers were verified against a book-and-page-cited transcription dataset of the official books. No fan-made/homebrew stat blocks anywhere. The campaign's own subsystems (Lore Fragments, beacon relighting, Wellsprings, the witness rule) are homebrew by design and live in `docs/mechanics/`.

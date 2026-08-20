@@ -1,7 +1,7 @@
 # GM Section
 
 !!! danger "Players: stop here"
-    Nothing under this tab is player-facing. This section exists only in the GM build of the wiki — the player build excludes it entirely. If you are a player and you can read this, close the tab and tell your GM which URL they handed you.
+    Nothing under this tab is player-facing. If you are a player and you are reading this, close it and tell your GM.
 
 ## What lives here
 

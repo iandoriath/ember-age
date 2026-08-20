@@ -28,8 +28,8 @@ The thesis of the era, and the line to say aloud at session zero:
 - **[Mechanics](mechanics/index.md)** — character creation, Obligation, Lore Fragments, beacon relighting, and the Force in the Ember Age.
 - **[Terms of the Era](setting/glossary.md)** — the appendix glossary.
 
-!!! warning "Players: mind the seals"
-    Everything in this wiki's player edition can be shared as it is discovered in play. The **GM section** exists only in the GM build of this site — if you can see a "GM" tab in the navigation, you are reading the GM edition. Players never see that page.
+!!! warning "GM material"
+    This is the GM's reference. Parts I–IV and VI–VIII can be read aloud or shared as the table discovers them; everything under the **GM** tab (Part V, the NPC library, the trackers) never leaves your side of the screen.
 
 ## About this campaign and canon
 

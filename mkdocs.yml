@@ -1,6 +1,5 @@
-# The Ember Age campaign wiki — GM EDITION (includes the gm/ section: Part V, NPC library, trackers).
-# Player-safe edition: mkdocs.players.yml (mechanically excludes gm/).
-site_name: "The Ember Age — GM Edition"
+# The Ember Age — the GM's campaign wiki (optional browsing view; the primary tool is gm-screen.html).
+site_name: "The Ember Age — GM Wiki"
 site_description: "A homebrew Star Wars campaign for FFG — 90 years After Ruusan."
 site_dir: site-gm
 docs_dir: docs
