@@ -137,7 +137,7 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 **Soak 1 · Wounds 3 (each) · M/R Defense 0/0**
 
 - **Skills (group only):** Skulduggery, Stealth, Streetwise, Survival
-- **Equipment:** Thrown ballast scrap (printed: small rocks — Ranged [Light]; Damage 1; Critical —; Range [Short]; Stun Damage), satchels of copy-flimsi, memorized dead-drop schedules, and a courier's unremarkable face (props only, no mechanics).
+- **Equipment:** None printed — clerks carry satchels of copy-flimsi, memorized dead-drop schedules, and a courier's unremarkable face (props only, no mechanics).
 
 **Chassis:** Spaceport Urchin, Edge of the Empire Core Rulebook (adjustments: none).
 **Group math:** Typically deployed in threes: group Wounds 9 (3 × WT 3), group skills at 2 ranks (e.g., Stealth 2, Streetwise 2); one clerk is incapacitated each time total damage passes a multiple of 3. A lone observer is a single minion: Wounds 3, no skill ranks.

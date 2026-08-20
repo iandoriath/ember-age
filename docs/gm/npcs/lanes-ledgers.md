@@ -62,7 +62,6 @@ Ninety years after Ruusan, the powers in this file are the ones the Withering co
 - **Equipment:** Dock-gun (heavy blaster pistol: Ranged [Light]; Damage 7; Critical 3; Range [Medium]; Stun setting), salvage carbine (blaster carbine: Ranged [Heavy]; Damage 9; Critical 3; Range [Medium]; Stun setting), deck-knife (vibroknife: Melee; Damage 3; Critical 2; Range [Engaged]; Pierce 2, Vicious 1), patched vacuum-jacks (padded armor, +2 soak).
 
 **Chassis:** Pirate Crew, Edge of the Empire Core Rulebook (also Age of Rebellion Core Rulebook) (adjustments: none — renamed only).
-*(stats unverified against print — check the Pirate Crew block, Edge of the Empire Core Rulebook p.393, especially characteristics, group skills, and the two-gun loadout)*
 **Group math:** No strain threshold — strain they suffer is applied as wounds. Typically deployed in fours: group Wounds 20, group skills at 3 ranks (ranks = members − 1); one deckhand is incapacitated each time total damage passes a multiple of 5 (at 5, 10, 15, 20).
 **Using them:** They crew relay stations, tug lines, and the guild's battered packet boats; they will fight to defend a beacon and almost nothing else. Aboard their own station they know every crawlspace — give them boost dice from advantageous terrain rather than better guns. If the crew earns the guild's trust, these are the NPCs who start greeting them by name in every port.
 
@@ -102,8 +101,8 @@ Ninety years after Ruusan, the powers in this file are the ones the Withering co
 
 - **Skills:** Athletics 1, Charm 1, Coercion 2, Cool 1, Deception 2, Discipline 2, Knowledge (Outer Rim) 1, Knowledge (Underworld) 2, Melee 1, Ranged (Light) 1, Resilience 5
 - **Talents:** Convincing Demeanor 1 (*remove one setback die from Deception or Skulduggery checks*), Durable 2 (*subtract 20 from Critical Injury results against her*), Nobody's Fool 1 (*upgrade the difficulty of Charm, Coercion, and Deception checks targeting her once*)
-- **Abilities:** Awkward (*two setback dice to all Brawl, Melee, and Coordination checks she must make*), Ponderous (*never more than one maneuver of movement per turn*)
-- **Equipment:** none — the printed block lists no weapons; her weapon is the spreadsheet.
+- **Abilities:** Awkward (*two setback dice to all Brawl, Melee, and Coordination checks she must make — if your printed copy uses the full three-setback Hutt wording, print wins*), Ponderous (*never more than one maneuver of movement per turn*)
+- **Equipment:** printed weapons omitted — she goes unarmed; her weapon is the spreadsheet.
 
 **Chassis:** Mature Hutt, Lords of Nal Hutta (adjustments: none — Wounds 17 is the printed value, one above the house rival band).
 **Using her:** Jeeda is barely a century old — an adolescent by Hutt reckoning — and she has modeled what a rebuilt galaxy pays over three Hutt lifetimes versus what scarcity rents pay over one. She backs the party with fuel, black-lane rutters, and deniable cash, always framed as investment, never friendship. She is the crack in the Kajidics made flesh: every job she gives the crew quietly undermines Sorulba, and the day he notices is a hinge event you control. If open war comes, upgrade her role, not her block — she wins with ledgers, not with the ax.
@@ -117,14 +116,13 @@ Ninety years after Ruusan, the powers in this file are the ones the Withering co
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | 2 | 3 | 2 | 2 | 1 | 2 |
 
-**Soak 3 · Wounds 6 (each) · M/R Defense 0/0**
+**Soak 4 · Wounds 6 (each) · M/R Defense 0/0**
 
 - **Skills (group only):** Melee, Perception, Ranged (Light), Vigilance
 - **Abilities:** none
 - **Equipment:** Collector's blaster (blaster pistol: Ranged [Light]; Damage 6; Critical 3; Range [Medium]; Stun setting), vibroknife (Melee; Damage 3; Critical 2; Range [Engaged]; Pierce 2, Vicious 1), heavy clothing (+1 soak).
 
-**Chassis:** Klatooinian Thug, Lords of Nal Hutta (adjustments: Soak set to 3 — Brawn 2 + heavy clothing +1 — because the draft's Soak 4 could not be derived from the listed gear or attested against print; the mixed muster of Klatooinian, Nikto, and Gamorrean muscle is cosmetic. The Edge of the Empire Core Rulebook's Gamorrean Thug, a rival, makes a good squad-leader promotion when you want a heavy).
-*(stats unverified against print — check Lords of Nal Hutta's adversary appendix; if no Klatooinian Thug block appears there, re-source to an attested thug minion or an original build per policy)*
+**Chassis:** Klatooinian Thug, Lords of Nal Hutta p. 69 (adjustments: none — printed Soak 4 runs +1 over the Brawn 2 + heavy clothing derivation, as printed; do not correct it down. The mixed muster of Klatooinian, Nikto, and Gamorrean muscle is cosmetic. The Edge of the Empire Core Rulebook's Gamorrean Thug, a rival, makes a good squad-leader promotion when you want a heavy).
 **Group math:** No strain threshold — strain they suffer is applied as wounds. Typically deployed in fours: group Wounds 24, group skills at 3 ranks (ranks = members − 1); one enforcer is incapacitated each time total damage passes a multiple of 6 (at 6, 12, 18, 24).
 **Using them:** They collect, they repossess, and they guard the fuel bowsers that pass for civic infrastructure on a hundred worlds. Their orders are commercial, not murderous: stun settings first, because a dead debtor pays nothing. Vigilance and Perception as group skills make them surprisingly hard to sneak past — the smart play against kajidic muscle has always been the ledger, not the knife.
 
@@ -143,7 +141,7 @@ Ninety years after Ruusan, the powers in this file are the ones the Withering co
 
 **Soak 4 · Wounds 15 · Strain 18 · M/R Defense 1/1**
 
-- **Skills:** Athletics 3, Brawl 4, Coercion 2, Computers 2, Cool 5, Coordination 4, Deception 4, Knowledge (Underworld) 4, Mechanics 3, Piloting (Planetary) 3, Piloting (Space) 3, Ranged (Heavy) 4, Ranged (Light) 5, Stealth 3, Streetwise 4, Survival 3, Vigilance 5
+- **Skills:** Athletics 3, Brawl 4, Coercion 2, Cool 5, Coordination 4, Deception 4, Knowledge (Underworld) 4, Mechanics 3, Piloting (Planetary) 3, Piloting (Space) 3, Ranged (Heavy) 4, Ranged (Light) 5, Stealth 3, Streetwise 4, Survival 3, Vigilance 5
 - **Talents:** Adversary 3 (*upgrade the difficulty of all combat checks targeting him three times*), Quick Draw (Improved) (*twice per round, may draw or holster a weapon as an incidental*), Clever Solution (*once per session, may make one skill check using Cunning in place of the skill's normal characteristic*), Guns Blazing (*as an incidental, may suffer 2 strain to avoid increasing the difficulty when attacking with both pistols at once*)
 - **Abilities:** Always a Backup Plan (*once per encounter, may reroll any single Coercion, Streetwise, Survival, or Vigilance check*), Cybernetic Lungs (*immune to airborne poisons and toxins*)
 - **Equipment:** Matched pre-Ruusan hand-cannons (twin custom blaster pistols: Ranged [Light]; Damage 7; Critical 2; Range [Medium]; Accurate 1, Stun setting), arbiter's snare (bolas: Ranged [Light]; Damage 2; Critical —; Range [Short]; Ensnare 3, Knockdown, Limited Ammo 1), sleeve flame-jet (Ranged [Light]; Damage 5; Critical 2; Range [Short]; Blast 2, Burn 2, Pierce 2, Vicious 3), shock gauntlets (Brawl; Damage 4; Critical 5; Range [Engaged]; Stun 3), travel-stained longcoat (+1 soak, +1 defense), wrist gauntlets with integrated datapad and whipcord thrower, salvaged jump-rig boots (printed: rocket boots, "can fly" — treat his movement as flight: his maneuvers ignore terrain, gaps, and elevation).
@@ -167,7 +165,7 @@ Ninety years after Ruusan, the powers in this file are the ones the Withering co
 - **Abilities:** none
 - **Equipment:** Heavy blaster pistol (Ranged [Light]; Damage 7; Critical 3; Range [Medium]; Stun setting), relic disruptor rifle — a war-crime heirloom, and they know it (Ranged [Heavy]; Damage 10; Critical 2; Range [Long]; Cumbersome 2, Vicious 5), century-old laminate plate (+2 soak).
 
-**Chassis:** Journeyman Bounty Hunter, Edge of the Empire Core Rulebook (adjustments: relic disruptor rifle in place of the printed longarm — era war-crime-heirloom flavor, using unmodified RAW disruptor rifle stats; restore the printed weapon if you prefer print).
+**Chassis:** Journeyman Hunter, Edge of the Empire Core Rulebook (adjustments: none — the disruptor rifle is the printed loadout; only the "relic war-crime heirloom" framing is era re-skin).
 **Using them:** The purist wing of the Guild holds that a posting outlives its poster — that the code only works because nothing, not even the death of governments, voids it. This tracker works methodically down inherited contract lists, files receipts with archives that no longer exist, and is neither cruel nor bribeable: to buy them off, you must satisfy the bond or convince a circuit arbiter to rule the posting corrupt. Pair them with the Dead Letter assassin droid for a nasty question: the droid and the purist agree completely, and only one of them can be reasoned with. Survival 2 makes them patient trackers across dead lanes — they arrive weeks after the party thought the matter settled.
 
 ---
@@ -226,8 +224,8 @@ Ninety years after Ruusan, the powers in this file are the ones the Withering co
 - **Skills:** Coercion 1, Cool 3, Coordination 1, Discipline 2, Knowledge (Warfare) 2, Ranged (Heavy) 3, Vigilance 2
 - **Talents:** Adversary 1 (*upgrade the difficulty of all combat checks targeting her once*)
 - **Abilities:** Mandalorian Visage (*add one automatic success to Coercion checks to intimidate while wearing her sealed battle plate*); **Force Rating 1** — untrained: she has no power trees. Her gift manifests as basic Foresee/Sense-style flickers (a warning half a second early, a room's mood read like weather); she may spend Force points only on such minor effects at the GM's discretion.
-- **Equipment:** Foundling's carbine, a clan-pattern GALAAR-15 (Ranged [Heavy]; Damage 9; Critical 2; Range [Long]; Accurate 1, Stun setting), sealed battle plate sized down twice (Mandalorian heavy battle armor: +2 soak, +1 defense), a clan shuttle she is technically too young to sign for.
+- **Equipment:** Foundling's carbine, a clan-pattern GALAR-15 (Ranged [Heavy]; Damage 9; Critical 2; Range [Long]; Accurate 1, Stun setting), sealed battle plate sized down twice (Mandalorian heavy battle armor: +2 soak, +1 defense), a clan shuttle she is technically too young to sign for.
 
 **Chassis:** Kad Solus, Friends Like These (adjustments: **+Force Rating 1 — Awakened foundling**, this era's re-skin; nothing else changed).
-*(verified against the official Friends Like These transcription — rival type, Wounds 13, characteristics, skills, the GALAAR-15 profile, and the armor all match print; the one unverified detail is the Mandalorian Visage rules wording — check the printed text before leaning on it)*
+*(verified against the official Friends Like These transcription — rival type, Wounds 13, characteristics, skills, the GALAR-15 profile, and the armor all match print; the one unverified detail is the Mandalorian Visage rules wording — check the printed text before leaning on it)*
 **Using her:** Runi was pulled from a ruin at four and raised entirely inside the one culture that neither fears the gifted nor wants to own them — so she is the campaign's control group: a Force-sensitive with no trauma, no doctrine, and no interest in the word *Jedi*. The FR 1 is justified under the era rule (Awakened, untrained, no Wellspring, no teacher): luck that bends is just good soldiering, and the clan agrees. The witness rule almost never triggers around her because she never *performs* the Force — she just doesn't miss — which makes her invisible to the Vigil, the Inheritors, and the census-takers until the day it matters. Every faction that meets her wants her for something; run the party's dawning realization that she is the one gifted child in the galaxy who is already fine.

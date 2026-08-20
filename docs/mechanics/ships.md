@@ -30,6 +30,7 @@ Ninety years after Ruusan, nothing flies new. Every hull in this file is an inhe
 - **Weapons:** Dorsal turret-mounted quad laser cannon "the Lodge Gun" (Fire Arc Forward; Damage 5; Critical 3; Range [Close]; Accurate 1, Linked 3)
 
 **Chassis:** Wayfarer-class Medium Transport, Edge of the Empire Core Rulebook (adjustments: none).
+*(one oddity to verify against print: a turret mount with Fire Arc Forward is as transcribed — if your copy prints a wider arc, the book wins)*
 **Era notes:** A century old, held together by devotion — the detachable hold has outlived three drive sections, and the current one is the "new part" (it is forty). Scarcity flavor only; the block is stock.
 **Using it:** The Wayfarer is the crew-as-community ship: ten berths, a hold worth robbing, and handling that makes every pirate encounter a negotiation first. Its aft shields are its best — this pattern was built to run, not fight — so chases end scenes better than broadsides do.
 
