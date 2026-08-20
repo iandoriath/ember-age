@@ -1,0 +1,95 @@
+# The Ember Age campaign wiki — GM EDITION (includes the gm/ section: Part V, NPC library, trackers).
+# Player-safe edition: mkdocs.players.yml (mechanically excludes gm/).
+site_name: "The Ember Age — GM Edition"
+site_description: "A homebrew Star Wars campaign for FFG — 90 years After Ruusan."
+site_dir: site-gm
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Lights up
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Lights down
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tooltips
+  icon:
+    logo: material/lighthouse-on
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Setting:
+      - "The Withering (Timeline)": setting/timeline.md
+      - "The Galaxy at 90 AR": setting/galaxy.md
+      - "The Awakening": setting/awakening.md
+      - "Terms of the Era": setting/glossary.md
+  - Factions:
+      - Overview: factions/index.md
+      - "The Provisional Republic": factions/provisional-republic.md
+      - "The Admiralty": factions/admiralty.md
+      - "The Vigil": factions/vigil.md
+      - "The Inheritors": factions/inheritors.md
+      - "The Lamplighters": factions/lamplighters.md
+      - "The Kajidics": factions/kajidics.md
+      - "The Bounty Hunters' Guild": factions/bounty-hunters-guild.md
+      - "The Mandalorian Clans": factions/mandalorians.md
+  - Campaign:
+      - Structure: campaign/index.md
+      - "Act 1 — Reconnection": campaign/act-1.md
+      - "Act 2 — Convergence": campaign/act-2.md
+      - "Act 3 — The Founding": campaign/act-3.md
+      - "Session One — The Light on Vesta-9": campaign/session-one.md
+      - "Session Log": campaign/session-log.md
+  - Mechanics:
+      - Overview: mechanics/index.md
+      - "Character Creation": mechanics/character-creation.md
+      - "Obligation": mechanics/obligation.md
+      - "Lore Fragments": mechanics/lore-fragments.md
+      - "Relighting a Beacon": mechanics/beacon-relighting.md
+      - "The Force in the Ember Age": mechanics/force.md
+      - "Ships of the Ember Age": mechanics/ships.md
+  - GM:
+      - "GM Hub": gm/index.md
+      - "GM Truths (Part V)": gm/truths.md
+      - NPC Library:
+          - "Index & Rules Primer": gm/npcs/index.md
+          - "Vesta-9 & the Crew's Orbit": gm/npcs/session-one.md
+          - "Republic & Admiralty": gm/npcs/republic-admiralty.md
+          - "Vigil & Inheritors": gm/npcs/vigil-inheritors.md
+          - "Lanes & Ledgers": gm/npcs/lanes-ledgers.md
+          - "The Reaches": gm/npcs/reaches.md
+          - "Keepers of the Flame": gm/npcs/keepers.md
+      - Tools:
+          - "Fragment Tracker": gm/tools/fragment-tracker.md
+          - "Beacon Map": gm/tools/beacon-map.md
+          - "Faction Clocks": gm/tools/faction-clocks.md

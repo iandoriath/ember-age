@@ -1,0 +1,65 @@
+name: wiki
+
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      deploy_players:
+        description: "Deploy the PLAYER edition to GitHub Pages (never publishes the GM section)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Build GM edition (strict)
+        run: mkdocs build --strict -f mkdocs.yml
+      - name: Build player edition (strict)
+        run: mkdocs build --strict -f mkdocs.players.yml
+      - name: Guard — GM content must not exist in the player edition
+        run: |
+          if [ -d site-players/gm ]; then
+            echo "::error::gm/ leaked into the player build"; exit 1;
+          fi
+          if grep -rl "Players never see this page" site-players/ ; then
+            echo "::error::GM Truths content leaked into the player build"; exit 1;
+          fi
+          echo "Player edition is clean."
+      - name: Upload player edition artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-players
+          path: site-players/
+
+  deploy-players:
+    # Manual, opt-in, and only ever the player edition.
+    if: github.event_name == 'workflow_dispatch' && inputs.deploy_players
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: mkdocs build --strict -f mkdocs.players.yml
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site-players/
+      - id: deployment
+        uses: actions/deploy-pages@v4

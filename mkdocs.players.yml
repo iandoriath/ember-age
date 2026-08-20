@@ -1,0 +1,43 @@
+# The Ember Age campaign wiki — PLAYER EDITION.
+# Inherits everything from mkdocs.yml but mechanically excludes the gm/ tree,
+# so Part V, the NPC library, and the trackers cannot leak into this build.
+INHERIT: mkdocs.yml
+
+site_name: "The Ember Age"
+site_dir: site-players
+
+exclude_docs: |
+  gm/
+
+nav:
+  - Home: index.md
+  - Setting:
+      - "The Withering (Timeline)": setting/timeline.md
+      - "The Galaxy at 90 AR": setting/galaxy.md
+      - "The Awakening": setting/awakening.md
+      - "Terms of the Era": setting/glossary.md
+  - Factions:
+      - Overview: factions/index.md
+      - "The Provisional Republic": factions/provisional-republic.md
+      - "The Admiralty": factions/admiralty.md
+      - "The Vigil": factions/vigil.md
+      - "The Inheritors": factions/inheritors.md
+      - "The Lamplighters": factions/lamplighters.md
+      - "The Kajidics": factions/kajidics.md
+      - "The Bounty Hunters' Guild": factions/bounty-hunters-guild.md
+      - "The Mandalorian Clans": factions/mandalorians.md
+  - Campaign:
+      - Structure: campaign/index.md
+      - "Act 1 — Reconnection": campaign/act-1.md
+      - "Act 2 — Convergence": campaign/act-2.md
+      - "Act 3 — The Founding": campaign/act-3.md
+      - "Session One — The Light on Vesta-9": campaign/session-one.md
+      - "Session Log": campaign/session-log.md
+  - Mechanics:
+      - Overview: mechanics/index.md
+      - "Character Creation": mechanics/character-creation.md
+      - "Obligation": mechanics/obligation.md
+      - "Lore Fragments": mechanics/lore-fragments.md
+      - "Relighting a Beacon": mechanics/beacon-relighting.md
+      - "The Force in the Ember Age": mechanics/force.md
+      - "Ships of the Ember Age": mechanics/ships.md
