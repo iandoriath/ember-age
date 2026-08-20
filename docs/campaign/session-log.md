@@ -21,6 +21,6 @@
 
 | # | Title | Beacons | Fragments | Faction heat |
 |---|---|---|---|---|
-| 1 | The Light on Vesta-9 | Vesta-9 relit (witnessed) | — | Vigil, Admiralty, Lamplighters — and one observer nobody counted |
+| 1 | The Light on Vesta-9 | Vesta-9 relit (witnessed) | — | Vigil, Admiralty, Lamplighters — three factions know the crew's name |
 
 *(Add a row per session; write the full entry above it.)*
