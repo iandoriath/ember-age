@@ -20,5 +20,10 @@ build:
 	mkdocs build --strict -f mkdocs.yml
 	mkdocs build --strict -f mkdocs.players.yml
 
+## Publish the PLAYER edition to GitHub Pages (pushes the built site to the gh-pages branch).
+## The GM edition is never deployed.
+deploy-players:
+	mkdocs gh-deploy -f mkdocs.players.yml -m "Deploy player edition to GitHub Pages"
+
 clean:
 	rm -rf site-gm site-players

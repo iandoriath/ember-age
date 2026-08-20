@@ -28,7 +28,15 @@ make serve-players                # player edition → http://127.0.0.1:8001  (h
 make build                        # strict-build both editions
 ```
 
-To publish the **player** edition to GitHub Pages: run the `wiki` workflow manually from the Actions tab with "Deploy the PLAYER edition" checked (one-time repo setup: Settings → Pages → Source: GitHub Actions). The GM edition is never deployed.
+### GitHub Pages (player edition only)
+
+The **player** edition is published at **https://iandoriath.github.io/ember-age/** — the GM edition is never deployed. To republish after content changes:
+
+```bash
+make deploy-players        # mkdocs gh-deploy -f mkdocs.players.yml → gh-pages branch
+```
+
+(Alternative: run the `wiki` workflow from the Actions tab with "Deploy the PLAYER edition" checked; that path needs Settings → Pages → Source set to GitHub Actions.) The site is public to anyone with the URL — exactly why only the player edition ships.
 
 ## Layout
 
