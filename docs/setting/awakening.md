@@ -26,6 +26,6 @@ There are no schools, no Council, no temple that will take them — at most, rum
 
 With the Council out of session, no one alive can admit one of them to the Jedi Order — **and no one has standing to deny them either.** The day one of them stands up and says the word aloud, the only body that could rule on the claim is the one it takes three Masters to reconvene.
 
-## Immi
+## The Awakening sits at your table
 
-A Force-sensitive player character is fully supported (see [Character Creation](../mechanics/character-creation.md)). Either way, keep one in the party's orbit: **Immi Ozha**, twelve, a stowaway who turns up in the crew's hold in [session one](../campaign/session-one.md), dreaming loudly of a canyon full of light she has never seen.
+This is not a backdrop: one or more of the player characters carries the gift (see [Character Creation](../mechanics/character-creation.md)). Every faction policy in the table above is aimed at somebody's character sheet — the census, the assets, the custody, the apprenticeship, the navigator's articles. The party doesn't watch the Awakening happen to the galaxy. The galaxy watches it happen to the party, starting the moment [a sixty-years-dead beacon chooses one of their pulses to keep time with](../campaign/session-one.md).

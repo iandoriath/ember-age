@@ -26,7 +26,7 @@ Use this space for who-knows-what, current attitude toward the crew, and debts e
 —
 
 ### Inheritors
-*(Dial 3: they hold the Vesta-9 file on the crew and Immi from session one.)*
+*(Dial 3: they hold the Vesta-9 file on the crew — and its gifted — from session one.)*
 
 ### Lamplighters
 *(Dial 3: Chartkeeper Denno Pike is the Inheritors' mole — see the [NPC library](../npcs/vigil-inheritors.md).)*

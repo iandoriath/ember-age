@@ -19,7 +19,6 @@
 
 | NPC | Type | Affiliation | File |
 |---|---|---|---|
-| Immi Ozha | Rival | — (the hold of your ship) | [Vesta-9 & the Crew's Orbit](session-one.md) |
 | Keeper Adressa Vhail | Rival | Vigil | [Vesta-9 & the Crew's Orbit](session-one.md) |
 | Commander Joss Reike | Nemesis | Admiralty | [Vesta-9 & the Crew's Orbit](session-one.md) |
 | Chartmistress Bel Nerra | Rival | Lamplighters | [Vesta-9 & the Crew's Orbit](session-one.md) |

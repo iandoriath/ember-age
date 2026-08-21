@@ -22,7 +22,7 @@ The moment that changes — the Unveiling, a public claim to a Darth title, anyt
 Two aftershocks matter:
 
 1. The culling **shatters the Inheritors instead of ending them**: leaderless cells, fire-sale artifacts, half-trained adepts scattering with dangerous knowledge.
-2. The harvested archives include **the Vesta-9 file** — whoever wrecked the Inheritors now knows about the crew, and about Immi, and has never once been seen.
+2. The harvested archives include **the Vesta-9 file** — whoever wrecked the Inheritors now knows about the crew, and which of them the beacon answered, and has never once been seen.
 
 ### A second fork this history opens
 
@@ -41,7 +41,7 @@ The Valley of the Jedi is therefore **not** the engine of the Awakening — it i
 
 They lit it to take a census — of the sector's ambitious wayfinders, and of the Force-sensitive families a reopened lane would flush into motion. Three consequences are now in play:
 
-1. **An Inheritor observer was present at the relight**, so the crew — and Immi — are already in a file.
+1. **An Inheritor observer was present at the relight**, so the crew — above all its gifted — are already in a file.
 2. **First contact will be helpful**, because it always is: coin, rescue, answers, no strings visible.
 3. **Relighting a beacon requires guild handshake codes**, so the Inheritors own a mole among the Lamplighters — which quietly turns Act 2's Conclave of Charts into a rigged auction the party can discover and expose.
 

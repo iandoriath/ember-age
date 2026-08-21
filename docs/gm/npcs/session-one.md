@@ -1,6 +1,6 @@
 # Vesta-9 & the Crew's Orbit
 
-Seven roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*'s marine boarding party and the sloop itself, statted here so the standoff runs without a lookup — and for the orbit the crew will keep crossing all campaign: the port that impounded their cargo, the rival ship racing them to the beacon, and the three factions waiting at the light. It is 90 AR — the beacon has just relit after sixty dark years, nobody admits to lighting it, and every ship at Okrent's Drift that can lift is lifting. Every stat block below is an official FFG print pulled verbatim and re-skinned for the era; chassis and adjustments are declared on each.
+Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*'s marine boarding party and the sloop itself, statted here so the standoff runs without a lookup — and for the orbit the crew will keep crossing all campaign: the port that impounded their cargo, the rival ship racing them to the beacon, and the three factions waiting at the light. It is 90 AR — the beacon has just relit after sixty dark years, nobody admits to lighting it, and every ship at Okrent's Drift that can lift is lifting. Every stat block below is an official FFG print pulled verbatim and re-skinned for the era; chassis and adjustments are declared on each.
 
 **GM file — contains spoilers for session one and threads into the campaign's locked truths (Part V). Players keep out.**
 
@@ -86,7 +86,7 @@ Seven roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfas
 - **Equipment:** Vigil breath-veil (breath mask), annotated psalter-slate (datapad), stylus. She carries no weapon and never has.
 
 **Chassis:** Ashur Sungazer, Force and Destiny Core Rulebook ("Lessons from the Past") (adjustments: none).
-**Using her:** Vhail is the party's best living source on the old Order, the Valley, and relic law — the library's Jedi-tag fragment authority (Merion and Marn, on this same chassis by design, own the Civic tag and relic forensics) — every Knowledge skill at 3, and she trades answers for reverence, not scrip. She is serene under any pressure (lean on Discipline and Cool) and perfectly evasive about her arrival; decide privately whether the truth is mundane, stranded off a Vigil circuit ship, or something stranger — the planning doc leaves it open, and she need not be Dial 3's observer. When Immi surfaces, Vhail goes very quiet: she is living the Vigil's crack in real time, and which half of the order she lands on can hinge on how the party treats the girl. She is a noncombatant; if blasters come out, she kneels by the core and keeps praying.
+**Using her:** Vhail is the party's best living source on the old Order, the Valley, and relic law — the library's Jedi-tag fragment authority (Merion and Marn, on this same chassis by design, own the Civic tag and relic forensics) — every Knowledge skill at 3, and she trades answers for reverence, not scrip. She is serene under any pressure (lean on Discipline and Cool) and perfectly evasive about her arrival; decide privately whether the truth is mundane, stranded off a Vigil circuit ship, or something stranger — the planning doc leaves it open, and she need not be Dial 3's observer. When the beacon answers one of the crew, Vhail goes very quiet: she is living the Vigil's crack in real time, and which half of the order she lands on can hinge on how the crew treats its own gifted. She is a noncombatant; if blasters come out, she kneels by the core and keeps praying.
 
 ### Commander Joss Reike
 *Nemesis — The Admiralty — commander of the sloop* Steadfast
@@ -105,7 +105,7 @@ Seven roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfas
 - **Equipment:** Bastion-forged service pistol (Ranged [Light]; Damage 6; Critical 3; Range [Medium]; Stun setting), reinforced Admiralty dress greatcoat (+1 soak), fleet comlink.
 
 **Chassis:** Lt. Commander Jilan Noor, Age of Rebellion Core Rulebook ("Perlemian Haul") (adjustments: none).
-**Using him:** Reike is ambition wearing the uniform of safety, and the terrifying part is that his pitch is half true — the Republic's weakness did invite the wars. He opens every encounter with procedure (stand to, manifests, inspection) and escalates only when defied, always through his troopers, never his own temper; Tactical Direction means he is most dangerous standing behind a minion group — his boarding party is statted directly below as the Bastion Marines. He wants Immi manifested and registered as an asset, which he genuinely believes is protection. Let the party beat him lawfully and he salutes; humiliate him and the *Steadfast* becomes Act 2's Annexation problem with the crew's name in its log.
+**Using him:** Reike is ambition wearing the uniform of safety, and the terrifying part is that his pitch is half true — the Republic's weakness did invite the wars. He opens every encounter with procedure (stand to, manifests, inspection) and escalates only when defied, always through his troopers, never his own temper; Tactical Direction means he is most dangerous standing behind a minion group — his boarding party is statted directly below as the Bastion Marines. He wants any gifted crew member entered on the fleet's rolls, which he genuinely believes is protection. Let the party beat him lawfully and he salutes; humiliate him and the *Steadfast* becomes Act 2's Annexation problem with the crew's name in its log.
 
 ### Bastion Marines (Steadfast boarding party)
 *Minion — The Admiralty — Reike's naval infantry, the muscle behind his procedure*
@@ -168,27 +168,5 @@ Seven roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfas
 - **Equipment:** Sleeve-holstered holdout blaster (Ranged [Light]; Damage 5; Critical 4; Range [Short]; Stun setting), guild chartering slate, folio of blank certifications and expense chits.
 
 **Chassis:** Corporate Representative, Age of Rebellion Core Rulebook (adjustments: none).
-**Using her:** Nerra is charm with a ledger behind it: every kindness is an entry, every paper she signs makes the crew a little more the guild's. On the spot she offers accreditation, salvage rights, and a first-lighting witness fee — real value, honestly paid — and her Deception 3 is for what the offer omits, never for the offer itself. Know Somebody 2 makes her the party's best supplier of permits, parts, and rutters, which is exactly how the Lamplighters collect people. Note her Knowledge (Warfare): she has read the guild's files on who is arming, and if she meets Immi she will very smoothly mention that the guild pays navigators — a child who dreams true can feel a dead lane. Remember Dial 3: her guild has a mole, and papers she certifies may be read by eyes she never intended.
+**Using her:** Nerra is charm with a ledger behind it: every kindness is an entry, every paper she signs makes the crew a little more the guild's. On the spot she offers accreditation, salvage rights, and a first-lighting witness fee — real value, honestly paid — and her Deception 3 is for what the offer omits, never for the offer itself. Know Somebody 2 makes her the party's best supplier of permits, parts, and rutters, which is exactly how the Lamplighters collect people. Note her Knowledge (Warfare): she has read the guild's files on who is arming, and if she clocks the resonance she will very smoothly mention that the guild pays navigators — someone who dreams true can feel a dead lane the way old pilots claim to. Remember Dial 3: her guild has a mole, and papers she certifies may be read by eyes she never intended.
 
----
-
-## The Hold — The Stowaway
-
-### Immi Ozha
-*Rival — Unaligned (every faction wants her) — twelve-year-old stowaway, newly Awakened*
-
-> Found asleep between cargo crates, dreaming out loud of a canyon full of light she has never seen — and the beacon flickers in time with her breathing.
-
-| Brawn | Agility | Intellect | Cunning | Willpower | Presence |
-|:-:|:-:|:-:|:-:|:-:|:-:|
-| 1 | 2 | 2 | 3 | 2 | 3 |
-
-**Soak 1 · Wounds 10 · M/R Defense 0/0**
-
-- **Skills:** Perception 2, Skulduggery 1, Stealth 2, Streetwise 1, Vigilance 1
-- **Talents:** none
-- **Abilities:** **Force Rating 1** — Awakened, wholly untrained. Her gift never answers on command: it manifests only as the basic effects of Foresee and Sense at the GM's discretion (a true dream or a heartbeat's warning before danger; reading a room's feelings like weather), plus small luck that bends — a dropped tool landing right, a guard glancing away. She has no powers, no control, and no vocabulary for any of it; what she does under fear or anger is Conflict-adjacent behavior handled narratively, not mechanically.
-- **Equipment:** A stowaway's satchel, a stub of chalk she draws the canyon with, and a dead comlink she keeps as a talisman. No weapons — she is a noncombatant.
-
-**Chassis:** original build (core adversary guidelines) (adjustments: none — no official FFG analog exists for an untrained Awakened child: the nearest prints (generic civilians) lack the Force Rating 1 core of the concept. Numbers sit within rival guidelines (characteristics 1–3, Wounds 10, no strain threshold), and Force Rating 1 with no powers follows the conventions' untrained-Awakened rule exactly).
-**Using her:** Immi is the campaign's heart, not a party asset — never roll her gift like a tool; narrate it, and let the era's witness rule land on the crew (anyone who sees the luck bend shifts a step toward awe or fear, and the party inherits the social fallout). In the standoff she is the fuse: Reike wants her manifested and registered, Vhail goes very quiet, Nerra offers papers on the spot, and whatever the crew chooses becomes their reputation. She dreams true of the Valley — north on a compass she does not know she is holding — and per Dial 3 she is already in an Inheritor file; their first contact, when it comes, will be helpful. If she is ever in real danger, every faction's mask comes off at once.

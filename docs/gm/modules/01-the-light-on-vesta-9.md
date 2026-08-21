@@ -4,9 +4,9 @@
 
 ## Overview
 
-**The session's jobs**, in rising order of consequence: teach the [lore fragment](../../mechanics/lore-fragments.md) subsystem at the moment a single page is worth a ship's life; put three factions on the ground in front of the crew — the Vigil, the Admiralty, the Lamplighters — each wanting something real and paying for it; land @@npc:Immi Ozha@@ in the crew's lap and make whatever they do about her into their reputation; and open the corridor into the Grumani Reach — the first dead leg of the [Duros Space Run](../../setting/geography.md) — where [Act 1](../../campaign/act-1.md) lives. If the table drives home arguing about the girl, the session worked.
+**The session's jobs**, in rising order of consequence: teach the [lore fragment](../../mechanics/lore-fragments.md) subsystem at the moment a single page is worth a ship's life; put three factions on the ground in front of the crew — the Vigil, the Admiralty, the Lamplighters — each wanting something real and paying for it; land the Awakening in the crew's own lap — the beacon is going to answer one of them, in front of three factions, and what the table does about it becomes their reputation; and open the corridor into the Grumani Reach — the first dead leg of the [Duros Space Run](../../setting/geography.md) — where [Act 1](../../campaign/act-1.md) lives. If the table drives home arguing about what they owe their own gifted, the session worked.
 
-**What the players should be holding when it ends:** a certified corridor with their names on the paper; 1,200 scrip minus whatever Scene 1 cost them; at least one logged fragment and the Question it bears on; a standing witness-charter offer from the guild; and a twelve-year-old problem no rulebook prices. That last one is the campaign.
+**What the players should be holding when it ends:** a certified corridor with their names on the paper; 1,200 scrip minus whatever Scene 1 cost them; at least one logged fragment and the Question it bears on; a standing witness-charter offer from the guild; and the knowledge that the beacon answered one of their own in front of three factions. That last one is the campaign.
 
 **The spine** — five beats, about four hours with a break:
 
@@ -16,11 +16,13 @@
 | The scramble off-world | Scene 1 | ~50 min |
 | The race up a dead lane | Scene 2 | ~40 min |
 | The standoff at the light | Scene 3 | ~60 min |
-| The stowaway, and the way out | Scene 4 + The Out | ~55 min |
+| The resonance, and the way out | Scene 4 + The Out | ~55 min |
 
-**Cut for time, never for weight.** If the clock runs hot: compress the fuel problem to one roll, hand the fragment over via whichever vector is nearest, and let the *Steadfast* arrive early to squeeze Scene 3. Never cut the discovery read-aloud, the three factional reactions to Immi, or the closing image — the session is remembered by those three, in that order.
+**Cut for time, never for weight.** If the clock runs hot: compress the fuel problem to one roll, hand the fragment over via whichever vector is nearest, and let the *Steadfast* arrive early to squeeze Scene 3. Never cut the resonance read-aloud, the three factional reactions to it, or the closing image — the session is remembered by those three, in that order.
 
-**Prep checklist** — six items, half an hour:
+**Prep checklist** — seven items, half an hour:
+
+0. **Talk to your Force-sensitive player(s) before the session.** Scene 4 shines a spotlight on one of them: the beacon is going to reach for their character in front of three factions. Check they want that spotlight tonight, agree on how private the first signs should be, and promise them what the scene delivers — a choice, never an ambush. If more than one PC is gifted, pick with the players whom the beacon finds first (the others feel it secondhand, like a note struck in the next room).
 
 1. Tie each PC's Obligation to the grounding at Okrent's Drift — one written sentence per PC. The table in the Cold Open does most of the work; personalize the names.
 2. Print the [Reading the Dice](../../mechanics/dice-results.md) player sheets, one per player. This session leans on Advantage/Threat spends and the sheets keep the table fast.
@@ -193,7 +195,7 @@ When the page lands, hand over the card and log it:
 | If they ask… | She answers |
 |---|---|
 | "Who lit it?" | "Not my order. We do not wake things. Ask instead who *benefits* from a counted harvest — and count who arrives to do the counting." |
-| "How did you get here?" | A psalm about doors — but if the crew treated Immi well by session's end, she adds, quietly: "I was brought. I have not yet decided by what." |
+| "How did you get here?" | A psalm about doors — but if the crew was honest with her about the resonance by session's end, she adds, quietly: "I was brought. I have not yet decided by what." |
 | Anything about the old Order, the Valley, or relic law | A true, careful answer worth a Jedi-tag lead — name where a fragment might be found in the Grumani Reach, keyed to one of your seeded episode worlds. |
 
 **The inspection.** Reike boards with four @@npc:Bastion Marines (Steadfast boarding party)@@ — one minion group: 20 wounds, 3 ranks in its group skills, weapons set to stun for a registered boarding. If the crew's papers are honest, no roll: he is correct to the last button and thanks them. Contraband or false manifests need **Hard Deception** (his Discipline 4 misses very little), or **Hard Skulduggery** *before* the boarding to re-stow. A failed check costs confiscation and a log entry, not blood. Either way — unless the crew has already searched their own hold — a marine at the aft frame goes still and holds up a fist: he hears breathing. **Cut to Scene 4 mid-inspection.**
@@ -206,35 +208,38 @@ When the page lands, hand over the card and log it:
 
 **Certification — the "Speak to it" stage.** With Nerra aboard as guild observer, the relight's final stage is convincing her to certify: **Average Negotiation** or **Average Charm**, upgraded once for her practiced table manner — she *wants* to sign; the check is about whose terms. Honest testimony about the already-lit core adds a boost die. Without her — satisfying the old Republic handshake protocols cold — it is **Hard Knowledge (Education)**, and see Contingencies for what an uncertified claim is worth. Results: **Success** — the certificate of relight issues with the crew as witnesses of record, fee released. **Triumph** — she enters them as first-lighting claimants outright: full honors and priority at future guild tables. **Threat** — fine print: the certificate names the guild as charting authority for the whole corridor. **Despair** — the certification packet copies wider than intended; someone the crew did not invite now holds a clean copy (GM only: the mole — see [faction clocks](../tools/faction-clocks.md)).
 
-## Scene 4 — The Stowaway
+## Scene 4 — The Resonance
 
-Trigger it wherever the fiction reached first: the crew's own search, the marine's raised fist, or — if neither — her own choice (Contingencies).
+Trigger it at the height of the standoff — ideally mid-certification, while all three factions are watching the core and each other. The beacon has spent the whole session humming. Now it finds a frequency.
 
-> Behind the aft crates there is a girl, maybe twelve, asleep on a folded tarp with a satchel for a pillow, and she is talking — low and urgent, the way people argue in dreams. On the bulkhead above her, chalk: a canyon, drawn over and over, filled in with light. Through the viewport the beacon mast brightens and dims, brightens and dims — in time with her breathing.
+> The certification handshake is mid-cycle when the beacon's hum slips off its pitch. It takes a moment to hear what it has slipped *to*. Then, quietly, to one player: it's yours. The mast light through the viewport brightens when you breathe in. Dims when you breathe out. Sixty years of dead-man silence, and the first thing this machine has chosen to keep time with is your pulse. Nobody else has noticed. Yet.
 
-**@@npc:Immi Ozha@@ awake.** She wakes like a cat: no crying, no apology. She gives a fake name ("Ren"), drops it inside a minute, asks for water, and asks — as if it were a perfectly normal follow-up — whether they are going farther up the lane. Never roll her gift; narrate it (a dropped tool landing right, a glance away at the right moment). The dream, in her words: *"There's a canyon and it's full of light, and the light is people. They're all saying one word, together, and I can never quite hear it. It's not a scary dream. It's the kind you try to get back into."*
+**The choice belongs to the player.** Deliver the moment privately — a note, a word at the kitchen counter, a look — and put it plainly: *the beacon is reaching for you; do you push it down, or answer it?* There is no wrong choice. Both are the scene.
 
-!!! tip "Playing Immi"
-    She is a person, not a plot device with pigtails: streetwise enough to have gotten this far, young enough to think the plan was good. She never performs her gift and cannot answer questions about it — she has no vocabulary for what she is. If a PC is openly Force-sensitive, she clocks them inside a minute and says, matter-of-fact, *"You hear it too."* That sentence raises the stakes on every choice below, because now the crew's decision about her is also a decision about themselves.
+- **Push it down:** **Average Discipline**, upgraded once — not because the beacon resists, but because it is sixty years lonely and not subtle. Success: the sync fades into coincidence, and only the logs will ever know (see the slow-fuse box). Threat: one person in the chamber caught the pattern — pick whichever witness makes the best trouble. Despair: the suppression spikes the beacon and the whole mast flares once, in rhythm, in front of everyone.
+- **Answer it:** no roll. The mast breathes with them in front of three factions — and the certification's "Speak to it" stage completes on the spot, unasked: the handshake protocol has been waiting sixty years for a voice it recognizes. Award the crew the stage's success outright. Then every mask in the chamber moves at once.
 
-**Three reactions, three sets of teeth:**
+!!! tip "Running the spotlight"
+    You cleared this in prep (item 0); tonight, deliver what you promised. The gifted PC gets the choice with real information and real time — never narrate their gift acting without them, and never roll it as a tool. If the player holds it down all session, that is a complete and honorable version of the scene: see Contingencies.
 
-- **@@npc:Commander Joss Reike@@ — the writ.** Fleet Form 77-K: an unaccompanied minor on an inspected vessel becomes a ward of the fleet, "for her protection" — and he genuinely believes that. Refusing a lawful writ makes the crew harborers; he can re-impound pending review. The out: a guardianship claim on paper satisfies procedure — genuine **Average Charm** to make it sit right with him, or **Hard Deception** if it is invented on the spot (his Discipline 4 again). Either way he logs it *and schedules a follow-up*. The Admiralty checks.
-- **@@npc:Keeper Adressa Vhail@@ — the silence.** She says nothing during the standoff. Afterward she finds the crew alone and asks exactly one question — "When she says the word *Jedi* — and she will — who will be standing next to her?" — and leaves without pressing. What she does after is the hinge: treat Immi as a person and Vhail's report to her order leans toward the half that weeps; treat her as cargo or asset and it leans toward custody. Either way the Vigil now knows an Awakened child rides with this crew.
-- **@@npc:Chartmistress Bel Nerra@@ — the papers.** Apprentice-navigator articles, produced on the spot: 40 scrip a month, schooling, guild protection, "guardianship held in trust." She mentions, very smoothly, that the guild pays navigators — a child who dreams true can feel a dead lane. Fine print: the articles bind until majority, and her routings and dream-logs become guild property. (GM only: everything filed crosses the mole's desk.)
+**Three reactions, three sets of teeth** — aimed, now, at somebody's character sheet:
 
-**Decision matrix** — what the crew might do, and what each seeds:
+- **@@npc:Commander Joss Reike@@ — the writ.** Fleet Form 77-K: gifted crew aboard an inspected vessel are to be entered on the fleet's rolls, "for their own protection" — and he genuinely believes that. Registration, not arrest: name, ship, gift, itinerary. Refusing a lawful writ makes the whole crew harborers; he can re-impound pending review. The outs: sign it (he logs it *and schedules a follow-up* — the Admiralty checks); make the refusal lawful — **Average Charm** to have it sit right with him, or **Hard Deception** to argue the resonance was instrument error (his Discipline 4 again, and the logs disagree); or let Nerra interpose paper — a certification hearing needs its witnesses uncoerced.
+- **@@npc:Keeper Adressa Vhail@@ — the silence.** She says nothing during the standoff. Afterward she finds the gifted PC alone and asks exactly one question — *"When you say the word* Jedi *— and one day you will — who will be standing beside you?"* — and leaves without pressing. What she does after is the hinge: a crew that treats its gifted member as a person leans her report toward the half of her order that weeps; a crew that treats them as an asset, a secret, or a problem leans it toward custody. Either way, the Vigil now knows the Awakening rides with this crew.
+- **@@npc:Chartmistress Bel Nerra@@ — the papers.** Navigator's articles, produced on the spot, for an adult and at adult rates: real salary, guild protection, accreditation — because someone who dreams true can feel a dead lane the way old pilots claim to. The offer is honestly generous. Fine print: routings and dream-logs become guild property. (GM only: everything filed crosses the mole's desk.)
+
+**Decision matrix** — what the crew does about their own, and what each choice seeds:
 
 | If the crew… | Costs now | Seeds for Act 1 |
 |---|---|---|
-| Keeps her aboard, quietly | Every port becomes a risk — Reike's scheduled follow-up travels with them, and if Immi's luck visibly bends in front of strangers, the witness rule fires on the crew | The Inheritors' first contact comes *helpful*: coin, rescue, answers, no visible strings (Dial 3). *The Handoff* and *The Oracle of Brel* land personally. |
-| Signs Reike's writ | She boards the *Steadfast* as a ward of the fleet | An Admiralty child-asset pipeline to discover; visitation as recurring leverage; a familiar face at *The Mausoleum Yards*. |
-| Gives her to Vhail | Vhail must choose which half of her order she serves | The Vigil's custody argument ignites early — both halves come recruiting. *The Sealed Enclave*'s roll call gains a candidate. |
-| Signs Nerra's articles | Schooling and salary — bound to majority, dreams logged | Her dream-logs reach the Inheritors fastest of all (Dial 3), and the Conclave of Charts gains a hostage. |
-| Puts her off with coin at the next port | Nothing, visibly | She stows away toward the canyon again — and the next hold may belong to the helpful strangers. Note carefully who she is with when the crew meets her next. |
+| Closes ranks and keeps it quiet | Every port becomes a risk — Reike's follow-up travels with them, and the first time the gift visibly bends luck in front of strangers, the witness rule fires | The Inheritors' first contact comes *helpful*: coin, rescue, answers, no visible strings (Dial 3). *The Oracle of Brel* and *The Handoff* land personally. |
+| The gifted PC signs Reike's rolls | Scheduled check-ins; the fleet holds their name, gift, and itinerary | An Admiralty asset-pipeline to discover from the inside; the registration becomes conscription leverage when the Annexation comes; a sympathetic clerk at *The Mausoleum Yards*. |
+| They confide in Vhail | She must choose which half of her order she serves | The Vigil's custody argument ignites early — both halves come recruiting the PC. *The Sealed Enclave*'s roll call gains a name it answers to. |
+| The gifted PC signs Nerra's articles | Salary and protection — routings and dream-logs owned by a guild with a hole in it | The dream-logs reach the Inheritors fastest of all (Dial 3), and the Conclave of Charts gains a lever shaped like a crew member. |
+| They deny everything, publicly | **Hard Deception** against a room that includes Discipline 4 and a luminosity log | A "suspected" flag in three files instead of a fact in one — slower fuses, deeper suspicion, and the Inheritors' helpful strangers arrive anyway. |
 
 !!! note "The flicker is on the record"
-    The beacon's sync with her breathing sits in the station's own luminosity logs, and Nerra's certification packet carries the trace. Nobody in the standoff has noticed yet — do not spring it tonight. It is a slow fuse: whoever reads that packet carefully later (an Admiralty analyst, a curious archivist, the reader Dial 3 put behind the guild's desks) can date to the minute when the crew's hold started breathing.
+    The beacon's sync sits in the station's own luminosity logs, and Nerra's certification packet carries the trace — whatever the table chose, however well the roll went. Nobody in the standoff has connected it yet; do not spring it tonight. It is a slow fuse: whoever reads that packet carefully later (an Admiralty analyst, a curious archivist, the reader Dial 3 put behind the guild's desks) can date to the minute when the beacon started keeping time with somebody's heart.
 
 !!! note "The witness rule, with three factions watching"
     If any PC uses the Force openly here, apply the [witness rule](../../mechanics/force.md) — disposition shifts one step, awe or fear — but the "community" watching is *three factions' agents at once*. Reike's writ acquires a second name. Vhail stops being silent. Nerra's fine print grows a clause. Add the setback die to social checks with all of them until the crew addresses what was seen, and remember the Threat spend that worsens the crowd one extra step.
@@ -245,7 +250,7 @@ Trigger it wherever the fiction reached first: the crew's own search, the marine
 
 ## The Out
 
-> The corridor is open. On the boards it reads like a sentence finished after sixty years: VESTA-9 — LIT — Q'ELL REACH CLEAR TO TRANSIT. The Steadfast holds station like the corridor already belongs to it, the guild packet burns for home with signed paper aboard, and somewhere sunward a keeper is praying over a machine. Every one of them wrote down your names.
+> The corridor is open. On the boards it reads like a sentence finished after sixty years: VESTA-9 — LIT — RUN CLEAR TO ENARC. The Steadfast holds station like the corridor already belongs to it, the guild packet burns for home with signed paper aboard, and somewhere sunward a keeper is praying over a machine. Every one of them wrote down your names.
 
 Before the bookkeeping, settle debts on-screen: Grell's cut (if signed) transmitted with bad grace and a note that his door is open; Marrow's wager paid at whichever cantina comes next; and the promise to Osk kept or broken, said aloud either way.
 
@@ -255,24 +260,24 @@ Before the bookkeeping, settle debts on-screen: Grell's cut (if signed) transmit
 
 @@action:beacon {"name":"Vesta-9","status":"lit","corridor":"the Grumani Reach (Duros Space Run, toward Enarc)","certified":"Chartmistress Bel Nerra (Lamplighters)","fee":"1,200 sector scrip, paid to the witnesses of record","followed":"Vigil, Admiralty, Lamplighters — and one uncounted observer"}@@
 
-2. **Log the fragments.** Osk's rutter page was logged in Scene 2 (press it there if it never got pressed). If the crew heard @@npc:Immi Ozha@@'s dream — and they did — log the living witness too:
+2. **Log the fragments.** Osk's rutter page was logged in Scene 2 (press it there if it never got pressed). And that night, docked under the lit beacon, the gifted crew member dreams — a canyon full of light, the light is people, all saying one word together that they can never quite hear. Not a scary dream; the kind you try to get back into. It recurs. Log the living witness — the witness is one of the crew:
 
-@@action:fragment {"name":"Immi's canyon dream","form":"living witness","tag":"Jedi","question":"What is the Valley?","claim":"the canyon is full of light, and the light is people","holder":"crew","status":"trusted"}@@
+@@action:fragment {"name":"The canyon dream (one of the crew's)","form":"living witness — a gifted PC","tag":"Jedi","question":"What is the Valley?","claim":"the canyon is full of light, and the light is people","holder":"crew","status":"trusted"}@@
 
-3. *The quiet one. GM only — do this where the players cannot see it. The unremarkable hull in the arrival swarm files its census: the crew, the ship, the certified corridor, and the girl.*
+3. *The quiet one. GM only — do this where the players cannot see it. The unremarkable hull in the arrival swarm files its census: the crew, the ship, the certified corridor — and which of the names the beacon answered.*
 
-@@action:clock {"faction":"Inheritors","delta":1,"note":"Dial 3 — the observer files the Vesta-9 census: the crew and Immi Ozha are now in an Inheritor file"}@@
+@@action:clock {"faction":"Inheritors","delta":1,"note":"Dial 3 — the observer files the Vesta-9 census: the crew — and its gifted — are now in an Inheritor file"}@@
 
 4. **XP:** 15–20 standard for the session; **+5** for strong Obligation play — a PC who let the grounding cost them something real, not just narrated it.
 
 **Next session's door** — open one before the table stands up, keyed to what they chose:
 
-- Immi aboard: the first world up the dead Run needs a navigator's eye, and she dreams the night before you make port. Something in the dream is on the manifest.
-- Immi with a faction: a letter, a summons, or a visitation date — whichever faction holds her wants something carried, and the crew is suddenly a courier with a conscience.
+- The gift stayed the crew's secret: the gifted PC dreams again the night before making port at the first world up the dead Run — and something from the dream is on the manifest.
+- The gifted PC signed with a faction: a letter, a summons, or a scheduled check-in arrives — whoever holds the registration wants something carried, and the crew is suddenly a courier with a conscience.
 - Fee in hand: Grell's cut comes due, Marrow proposes a joint run, or the guild's 250-scrip charter dangles the next dark beacon on the Reach's far side.
 - Fee unclaimed: Nerra's backdating favor is on the table, and it has a destination attached — your pick of the seeded episode worlds.
 
-**The closing image**, said to the table in your own words: the crew came to Okrent's Drift as nobody. They leave with a corridor open behind them and three factions holding files with their names — the Vigil's psalter, the Admiralty's log, the guild's certificate. And someone nobody counted has a file too, and theirs is the only one with the girl's name spelled right.
+**The closing image**, said to the table in your own words: the crew came to Okrent's Drift as nobody. They leave with a corridor open behind them and three factions holding files with their names — the Vigil's psalter, the Admiralty's log, the guild's certificate. And someone nobody counted has a file too — and theirs is the only one that marks which of the names the beacon answered.
 
 ## Contingencies
 
@@ -283,18 +288,18 @@ Before the bookkeeping, settle debts on-screen: Grell's cut (if signed) transmit
 
 @@action:clock {"faction":"Admiralty","delta":1,"note":"Shots fired at the Steadfast over Vesta-9 — the corridor now provably needs protecting, with the crew's name in the log"}@@
 
-!!! note "They hand Immi to Reike"
-    He is gentle, correct, and keeps every promise; she goes to a school-ship in the Bastion cluster with her chalk confiscated and reissued as "recreational supplies, one (1)." Keep her in play: letters that always contain the same drawing, a scheduled visitation the crew can attend, and — when the Awakening goes public in Act 2 — a fleet suddenly very interested in its ward. She will try to escape toward the canyon exactly once. Decide whether she makes it before the crew has to.
+!!! note "The gifted PC registers with the fleet"
+    Reike is gentle, correct, and keeps every promise — that is what makes it dangerous. Registration means scheduled check-ins at named ports, a fleet physician's standing invitation, and courteous letters that always arrive on time. Keep it in play as texture, not a cage: the check-ins can be traded on, dodged at a cost, or attended for intelligence — the pipeline runs both ways. When the Awakening goes public in Act 2, the fleet comes to collect what it registered, and the PC gets to decide in front of the whole table what their signature was worth.
 
-!!! note "They hand her to Vhail or Nerra"
-    **Vhail** does not thank them. Custody of *flesh* is the thing her order's deed never granted, and accepting the girl forces the argument the Vigil has postponed for a generation. **@@npc:Chartmistress Bel Nerra@@** files the articles the same day, and Immi's dream-logs start flowing through a guild with a hole in it — the Inheritors get her location, her schedule, and her canyon, in the guild's own filing format (Dial 3).
+!!! note "They confide in Vhail, or sign Nerra's articles"
+    **Vhail** does not thank them. Custody of the *calling* is the thing her order's deed never granted, and a living, willing, adult Awakened standing in front of her forces the argument the Vigil has postponed for a generation — she leaves with the crew's trust and her order's crisis in the same satchel. **@@npc:Chartmistress Bel Nerra@@** files the articles the same day, and the PC's routings and dream-logs start flowing through a guild with a hole in it — the Inheritors get their name, their schedule, and their canyon, in the guild's own filing format (Dial 3).
 
-*If Vhail took custody:*
+*If the crew put their gifted member's existence formally in Vigil hands:*
 
-@@action:clock {"faction":"Vigil","delta":1,"note":"A living Awakened child in Vigil custody — the sacrilege-versus-rebirth argument goes from doctrinal to real"}@@
+@@action:clock {"faction":"Vigil","delta":1,"note":"A living, willing Awakened adult known to the Vigil — the sacrilege-versus-rebirth argument goes from doctrinal to real"}@@
 
-!!! note "They never search the hold"
-    She chooses her moment. If the inspection happens, she slips out *ahead* of the marine's discovery and stands behind whichever PC has the kindest face — being found is worse than choosing, and @@npc:Immi Ozha@@ knows it. If there is no inspection either, she walks onto the flight deck mid-jump on the way out of the system, points up the lane, and asks whether they are going toward the canyon. Either way the beacon has already flickered in her rhythm; anyone reviewing sensor logs can notice, later, what the crew missed live.
+!!! note "The gift never surfaces"
+    The player held it down all session — honor it; that was the scene, played well. The resonance still sits in the luminosity logs and the certification packet (slow-fuse box), so the Dial 3 observer files the crew with a "suspected" flag rather than a fact, and the Inheritors' first contact comes slower and more carefully. And the beacon remembers: at the next relight the crew attempts, the new beacon reaches for the same PC *harder* — the choice comes back around, louder, in front of whoever is watching that time.
 
 !!! note "They claim the first-lighting fee without a guild witness"
     No certificate, no bond: the claim files as "unwitnessed," which any crew may counterclaim — and the *Larksong* was there. The fee freezes; Grell's cut evaporates with it, which he takes personally and repriced. @@npc:Chartmistress Bel Nerra@@ will offer to backdate a certification later, sweetly, for a favor the guild names. That favor is a hook — spend it on whichever Act 1 seed the party is circling.

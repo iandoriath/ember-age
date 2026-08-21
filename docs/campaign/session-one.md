@@ -20,13 +20,13 @@ Vesta-9 station, lit and humming — and occupied.
 - The Admiralty sloop ***Steadfast*** (**Cmdr. Joss Reike**) drops in demanding all vessels stand to for inspection.
 - **Chartmistress Bel Nerra** of the Lamplighters arrives to certify the relight — and to hire witnesses.
 
-## Scene 4 — The Stowaway
+## Scene 4 — The Resonance
 
-Mid-standoff, the crew finds **Immi Ozha**, twelve, asleep in their hold, dreaming loudly of a canyon full of light. The beacon flickers in rhythm with her breathing.
+Mid-standoff, the beacon's carrier wave slips off its pitch — and finds the pulse of one of the crew. The mast brightens when they breathe in, dims when they breathe out: sixty years of silence, and the first thing this machine chooses to keep time with is somebody at the table. Whether they push it down or answer it is theirs to decide — in front of three factions.
 
-- Reike wants her manifested and registered.
+- Reike wants them entered on the fleet's rolls, "for their own protection."
 - Vhail goes very quiet.
-- Nerra offers papers on the spot.
+- Nerra offers navigator's articles on the spot.
 
 ## Out
 
