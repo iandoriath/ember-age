@@ -10,6 +10,8 @@ And hanging over the whole chamber is a legal fact almost nobody remembers: **th
 
 ## The Valley of the Jedi
 
+Getting there is its own act: up the [whole Hydian Way](../setting/geography.md) coreward to Brentaal, out the Perlemian to Lantillies, down the Randon Run past Kashyyyk — and then off every chart that survives, into the Teraab stellar nursery, where the nebulae have been quietly erasing the last lanes to Ruusan since the war ended. The crew that relit the Rim's beacons ends the campaign navigating a road the sky itself is closing.
+
 Whoever brings the new Force-sensitives here defines what the Force's return means. On the table:
 
 - **Release** the thousand bound souls.

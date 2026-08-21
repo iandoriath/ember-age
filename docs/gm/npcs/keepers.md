@@ -15,7 +15,7 @@ The second fork of Dial 1, resolved: one Jedi lineage survives to 90 AR. It cons
 ### Master Yenna Sar
 *Nemesis — the Hidden Lineage (unaligned) — the last Jedi Master*
 
-> A gray-braided dry-farmer on Veshet, off a dead spur of the Q'ell Reach, who has drawn her heirloom lightsaber twice in thirty years and regretted it both times.
+> A gray-braided dry-farmer on Veshet, off a dead spur of the Sanrafsix Corridor, who has drawn her heirloom lightsaber twice in thirty years and regretted it both times.
 
 | Brawn | Agility | Intellect | Cunning | Willpower | Presence |
 |:-:|:-:|:-:|:-:|:-:|:-:|

@@ -4,7 +4,7 @@
 
 ## Overview
 
-**The session's jobs**, in rising order of consequence: teach the [lore fragment](../../mechanics/lore-fragments.md) subsystem at the moment a single page is worth a ship's life; put three factions on the ground in front of the crew — the Vigil, the Admiralty, the Lamplighters — each wanting something real and paying for it; land @@npc:Immi Ozha@@ in the crew's lap and make whatever they do about her into their reputation; and open the corridor to the Q'ell Reach, where [Act 1](../../campaign/act-1.md) lives. If the table drives home arguing about the girl, the session worked.
+**The session's jobs**, in rising order of consequence: teach the [lore fragment](../../mechanics/lore-fragments.md) subsystem at the moment a single page is worth a ship's life; put three factions on the ground in front of the crew — the Vigil, the Admiralty, the Lamplighters — each wanting something real and paying for it; land @@npc:Immi Ozha@@ in the crew's lap and make whatever they do about her into their reputation; and open the corridor into the Grumani Reach — the first dead leg of the [Duros Space Run](../../setting/geography.md) — where [Act 1](../../campaign/act-1.md) lives. If the table drives home arguing about the girl, the session worked.
 
 **What the players should be holding when it ends:** a certified corridor with their names on the paper; 1,200 scrip minus whatever Scene 1 cost them; at least one logged fragment and the Question it bears on; a standing witness-charter offer from the guild; and a twelve-year-old problem no rulebook prices. That last one is the campaign.
 
@@ -25,7 +25,7 @@
 1. Tie each PC's Obligation to the grounding at Okrent's Drift — one written sentence per PC. The table in the Cold Open does most of the work; personalize the names.
 2. Print the [Reading the Dice](../../mechanics/dice-results.md) player sheets, one per player. This session leans on Advantage/Threat spends and the sheets keep the table fast.
 3. Keep the [session one NPC file](../npcs/session-one.md) open — the whole cast is statted there, marines and minion math included.
-4. Pick two or three [Act 1 episode seeds](../../campaign/act-1.md) to place in the Q'ell Reach and pencil them onto the [beacon map](../tools/beacon-map.md).
+4. Pick two or three [Act 1 episode seeds](../../campaign/act-1.md) to place along the Duros Space Run chain (see [the geography page](../../setting/geography.md) for the real systems, Enarc through Jutrand) and pencil them onto the [beacon map](../tools/beacon-map.md).
 5. Make the fragment card: *Grandmother Osk's rutter, page 40* — form, tag, Question, and its load-bearing claim written on a physical card you can hand across the table.
 6. Decide privately how @@npc:Keeper Adressa Vhail@@ reached the core before anyone — mundane, stranded, or something stranger. The Dial 3 observer is never her; it is an Inheritor hull in the arrival swarm (see the danger box below) — decide only which hull.
 
@@ -77,7 +77,7 @@ Three problems between the crew and the sky: the impound, the fuel, and the fact
 | The impound office | The bolt release, the ledger, and a portmaster who has never once torn up a ledger — only repriced it. |
 | The fuel queue | 150-scrip lift-and-jump loads, a line out the gate, and the *Larksong* holding the head of it. |
 | The cantina gantry | The rumor network at full boil: the chart-broker, the wager board, and word of who has already lifted. |
-| The depot infirmary | A vacuum-lunged old spacer who ran the Q'ell lane when it was alive — see Scene 2's third vector. |
+| The depot infirmary | A vacuum-lunged old spacer who ran the Duros Space Run when it was alive — see Scene 2's third vector. |
 
 **The impound.** @@npc:Portmaster Grell@@ hovers at eye level behind his ledger-slate so nobody can look down on him. Listed price: **450 scrip** release plus a **60-scrip lift tax**. Assume the crew can raise about a third of that — say so out loud; the shortfall is the scene. He is venal, not cruel: every fee has a listed price, and he honors what he signs. His opening line, delivered while the beacon news howls outside his window: *"Everyone in this port suddenly has somewhere to be. Prices reflect demand. Yours reflects history."* If violence so much as clears its throat, he drops behind the desk and starts naming lower numbers — keep him alive; a portmaster who owes the crew goodwill is Act 1's best recurring door.
 
@@ -110,7 +110,7 @@ Three problems between the crew and the sky: the impound, the fuel, and the fact
 
 Frame it mechanically before anyone rolls: this session *is* the [beacon-relighting set piece](../../mechanics/beacon-relighting.md), run out of order. **Wake it** was done by an unknown hand — that mystery is the campaign's. The crew is now flying **Chart it**, and **Speak to it** waits at the station.
 
-**The jump.** The Q'ell lane has decayed past its nav data: **Hard Astrogation**, exactly per the beacon rules. A rutter page bearing on the route adds a boost die — this is the fragment lesson, taught at the moment it matters. Jumping blind is legal but earns a setback die for sixty years of drift silt.
+**The jump.** The Run's first dead leg — Bannistar Station toward Enarc — has decayed past its nav data: **Hard Astrogation**, exactly per the beacon rules. A rutter page bearing on the route adds a boost die — this is the fragment lesson, taught at the moment it matters. Jumping blind is legal but earns a setback die for sixty years of drift silt.
 
 **While the navigator plots** — one supporting beat per other PC, so nobody watches one person roll:
 
@@ -128,7 +128,7 @@ Frame it mechanically before anyone rolls: this session *is* the [beacon-relight
 
 - **The Marrow trade.** @@npc:Captain Vess Marrow@@ owns a copy of Grandmother Osk's rutter. She will trade page 40 for the crew's signature backing the *Larksong* as co-witnesses at certification — both crews on the guild paper, whoever docks first. (If she paid Grell in Scene 1, this is the "one page's worth" coming home.)
 - **The cantina purchase.** A chart-broker under the depot gantry sells a fair copy for 80 scrip — or for the full, embarrassing story of how the crew lost their cargo. He collects embarrassments.
-- **The dying spacer's gift.** Tama Osk herself — the rutter's author, vacuum-lunged in the depot infirmary — gives the crew the original for a promise. Play her in her nineties and entirely unafraid: fifty years on the Q'ell lane, a dry rasp that costs her something to use, and one remaining want — to have the run she never finished finished under her name, said back into the lane by somebody who made it. (No stat block; she never leaves the infirmary bed.) The promise: *"When it answers you, tell it Osk finished the run."* She says the claim aloud, free: "That lane never went full dark. Something kept the buoys warm. I logged it, and nobody believed me." If the crew keeps the promise — says her name into the beacon's carrier during certification — give them a boost die on the Speak-to-it check, and note that Vhail hears it, and looks at the crew for the first time like they might be worth talking to.
+- **The dying spacer's gift.** Tama Osk herself — the rutter's author, vacuum-lunged in the depot infirmary — gives the crew the original for a promise. Play her in her nineties and entirely unafraid: fifty years on the Duros Run, a dry rasp that costs her something to use, and one remaining want — to have the run she never finished finished under her name, said back into the lane by somebody who made it. (No stat block; she never leaves the infirmary bed.) The promise: *"When it answers you, tell it Osk finished the run."* She says the claim aloud, free: "That lane never went full dark. Something kept the buoys warm. I logged it, and nobody believed me." If the crew keeps the promise — says her name into the beacon's carrier during certification — give them a boost die on the Speak-to-it check, and note that Vhail hears it, and looks at the crew for the first time like they might be worth talking to.
 
 When the page lands, hand over the card and log it:
 
@@ -194,12 +194,12 @@ When the page lands, hand over the card and log it:
 |---|---|
 | "Who lit it?" | "Not my order. We do not wake things. Ask instead who *benefits* from a counted harvest — and count who arrives to do the counting." |
 | "How did you get here?" | A psalm about doors — but if the crew treated Immi well by session's end, she adds, quietly: "I was brought. I have not yet decided by what." |
-| Anything about the old Order, the Valley, or relic law | A true, careful answer worth a Jedi-tag lead — name where a fragment might be found in the Q'ell Reach, keyed to one of your seeded episode worlds. |
+| Anything about the old Order, the Valley, or relic law | A true, careful answer worth a Jedi-tag lead — name where a fragment might be found in the Grumani Reach, keyed to one of your seeded episode worlds. |
 
 **The inspection.** Reike boards with four @@npc:Bastion Marines (Steadfast boarding party)@@ — one minion group: 20 wounds, 3 ranks in its group skills, weapons set to stun for a registered boarding. If the crew's papers are honest, no roll: he is correct to the last button and thanks them. Contraband or false manifests need **Hard Deception** (his Discipline 4 misses very little), or **Hard Skulduggery** *before* the boarding to re-stow. A failed check costs confiscation and a log entry, not blood. Either way — unless the crew has already searched their own hold — a marine at the aft frame goes still and holds up a fist: he hears breathing. **Cut to Scene 4 mid-inspection.**
 
 !!! danger "If blasters come out"
-    Be honest with yourself about the @@npc:BNS Steadfast, Bastion-pattern Patrol Sloop@@: a patrol sloop's gun ladder against a century-old heirloom hull is not a fight, it is an arrest. Do not stage a space battle the crew can win — the sloop cripples their engines with precise, throttled turbolaser fire, narrated as disabling rather than rolled, and the marines board under stun with Reike directing from cover (Tactical Direction; the fight is always the group, never the man, and his Adversary 1 punishes dueling him anyway). How everyone climbs down: any *lawful* proposal — "we submit under protest, log it" — stands Reike down instantly; Nerra interposes paper ("a certification hearing needs living witnesses, Commander"); Vhail kneels at the core and begins the psalm for the dead of Ruusan, loudly, which no Bastion crew will fire past; and a marine hesitating at an unlawful order is the crew's best lever — Reike would rather stand down than watch his boarding party's discipline crack. Remember also what the *Steadfast* cannot do: it has no hyperdrive and no navicomputer — it arrived clamped to a fleet tender, and until that tender returns it can hold the station, not chase the crew into the Q'ell Reach. If they push through all of it, see Contingencies.
+    Be honest with yourself about the @@npc:BNS Steadfast, Bastion-pattern Patrol Sloop@@: a patrol sloop's gun ladder against a century-old heirloom hull is not a fight, it is an arrest. Do not stage a space battle the crew can win — the sloop cripples their engines with precise, throttled turbolaser fire, narrated as disabling rather than rolled, and the marines board under stun with Reike directing from cover (Tactical Direction; the fight is always the group, never the man, and his Adversary 1 punishes dueling him anyway). How everyone climbs down: any *lawful* proposal — "we submit under protest, log it" — stands Reike down instantly; Nerra interposes paper ("a certification hearing needs living witnesses, Commander"); Vhail kneels at the core and begins the psalm for the dead of Ruusan, loudly, which no Bastion crew will fire past; and a marine hesitating at an unlawful order is the crew's best lever — Reike would rather stand down than watch his boarding party's discipline crack. Remember also what the *Steadfast* cannot do: it has no hyperdrive and no navicomputer — it arrived clamped to a fleet tender, and until that tender returns it can hold the station, not chase the crew up the dead Run into the Grumani Reach. If they push through all of it, see Contingencies.
 
 !!! tip "Pacing the standoff"
     Sixty minutes is generous and can still evaporate. Keep the *Steadfast*'s presence audible — proximity klaxons on the swarm, the marines' bootsteps on the ring — and whenever the table settles into comfortable negotiation, have one of the three corners raise the price. The scene should end because the certification and the inspection both resolved, not because everyone ran out of things to want.
@@ -253,7 +253,7 @@ Before the bookkeeping, settle debts on-screen: Grell's cut (if signed) transmit
 
 1. **Update the [beacon board](../tools/beacon-map.md).** The first-lighting fee is **1,200 sector scrip**, paid to the certified witnesses of record — Grell's signed cut, if any, comes off the top and should hurt. @@npc:Chartmistress Bel Nerra@@'s standing witness-charter offer: **250 scrip per certified lighting** plus guild accreditation — permits, parts, and rutters at guild rates. Worth more than the fee itself within three sessions, which is exactly how the Lamplighters collect people.
 
-@@action:beacon {"name":"Vesta-9","status":"lit","corridor":"the Q'ell Reach","certified":"Chartmistress Bel Nerra (Lamplighters)","fee":"1,200 sector scrip, paid to the witnesses of record","followed":"Vigil, Admiralty, Lamplighters — and one uncounted observer"}@@
+@@action:beacon {"name":"Vesta-9","status":"lit","corridor":"the Grumani Reach (Duros Space Run, toward Enarc)","certified":"Chartmistress Bel Nerra (Lamplighters)","fee":"1,200 sector scrip, paid to the witnesses of record","followed":"Vigil, Admiralty, Lamplighters — and one uncounted observer"}@@
 
 2. **Log the fragments.** Osk's rutter page was logged in Scene 2 (press it there if it never got pressed). If the crew heard @@npc:Immi Ozha@@'s dream — and they did — log the living witness too:
 
@@ -267,7 +267,7 @@ Before the bookkeeping, settle debts on-screen: Grell's cut (if signed) transmit
 
 **Next session's door** — open one before the table stands up, keyed to what they chose:
 
-- Immi aboard: the first Q'ell Reach world needs a navigator's eye, and she dreams the night before you make port. Something in the dream is on the manifest.
+- Immi aboard: the first world up the dead Run needs a navigator's eye, and she dreams the night before you make port. Something in the dream is on the manifest.
 - Immi with a faction: a letter, a summons, or a visitation date — whichever faction holds her wants something carried, and the crew is suddenly a courier with a conscience.
 - Fee in hand: Grell's cut comes due, Marrow proposes a joint run, or the guild's 250-scrip charter dangles the next dark beacon on the Reach's far side.
 - Fee unclaimed: Nerra's backdating favor is on the table, and it has a destination attached — your pick of the seeded episode worlds.

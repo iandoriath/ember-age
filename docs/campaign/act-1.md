@@ -4,6 +4,8 @@
 
 **Act goals:** meet all five factions on the ground, gather [lore fragments](../mechanics/lore-fragments.md), and let the crew's reputation outrun them.
 
+**Where:** the episodes sit along the dead [Duros Space Run](../setting/geography.md) through the Grumani Reach — one relit beacon per hop, Bannistar Station back toward Darkknell and the Hydian Way. Place each seed on a real system as the crew reaches it (the GM keeps suggested placements on the beacon map).
+
 ## Episode seeds beyond Vesta-9
 
 1. **The Sealed Enclave.** A Vigil-sealed temple whose caretaker droid still runs lessons for empty rooms — and something answered this year's roll call.

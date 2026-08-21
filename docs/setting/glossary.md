@@ -16,3 +16,5 @@
 | **the black lanes** | The unregistered routes that never went dark |
 | **a posting** | A Guild bounty, the one writ that still travels |
 | **the Quiet** | Deep-rim slang for dead space |
+| **the Grumani Reach** | Spacer slang for the withered interior of the Grumani sector — the campaign's home pocket |
+| **the Run** | The Duros Space Run, the dead lane the crew is relighting hop by hop back toward the Hydian Way |
