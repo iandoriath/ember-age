@@ -78,3 +78,13 @@ def test_template_renders_every_system_and_hud_controls():
     gm = bsm.build("gm", load(), tpl)
     assert "gm-switch" in gm and "Import save" in gm
     assert not re.search(r'<script[^>]+src="https?://', out)
+
+
+def test_template_has_state_and_share_code():
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    out = bsm.build("player", load(), tpl)
+    for token in ("ember-age.system-map.lit", 'searchParams.get("lit")', "replaceState", "clipboard.writeText", "function toggleLit"):
+        assert token in out, token
+    assert "importSave" not in out and "toggleGM" not in out
+    gm = bsm.build("gm", load(), tpl)
+    assert "function importSave" in gm and "function toggleGM" in gm

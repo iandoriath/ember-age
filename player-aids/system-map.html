@@ -120,7 +120,19 @@ let vb = {...VIEWS.reach};
 /* ---- lit state (Task 4 adds persistence) ---- */
 let lit = new Set(["bannistar"]);
 const isLit = s => s.alwaysLit || lit.has(s.id);
-/* TASK4:state */
+const KEY = "ember-age.system-map.lit";
+function loadLit() {
+  const q = new URL(location.href).searchParams.get("lit");
+  if (q !== null) return new Set(q.split(",").filter(id => byId.has(id)));
+  try { const s = JSON.parse(localStorage.getItem(KEY)); if (Array.isArray(s)) return new Set(s.filter(id => byId.has(id))); } catch (e) {}
+  return new Set(["bannistar"]);
+}
+function saveLit() {
+  try { localStorage.setItem(KEY, JSON.stringify([...lit])); } catch (e) {}
+  try { const u = new URL(location.href); u.searchParams.set("lit", [...lit].join(",")); history.replaceState(null, "", u); } catch (e) {}
+}
+function toggleLit(id) { if (lit.has(id)) lit.delete(id); else lit.add(id); saveLit(); render(); openPanel(id); }
+lit = loadLit();
 
 /* ---- rendering ---- */
 function el(tag, attrs = {}, parent) {
@@ -237,11 +249,34 @@ chart.addEventListener("click", e => { if (!(drag && drag.moved) && (e.target ==
 window.addEventListener("resize", applyView);
 
 /* ---- panel / share / GM (Task 4) ---- */
-function openPanel(id) { /* TASK4:panel */ }
+let panelId = null;
+function openPanel(id) {
+  const s = byId.get(id); if (!s) return;
+  panelId = id;
+  const lanes = [...new Set(DATA.lanes.filter(l => l.from === id || l.to === id).map(l => l.name || "dead spur"))];
+  const status = s.alwaysLit ? "ALIVE — never withered" : s.beacon ? (lit.has(id) ? "LIT" : "DARK") : "no beacon";
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const region = {reach:"The Grumani Reach", hydian:"The living galaxy", far:"The far road"}[s.region];
+  let h = `<h2 class="${isLit(s) ? "lit" : ""}">${esc(s.name)}</h2>` + (s.sub ? `<div class="k">${esc(s.sub)}</div>` : "");
+  h += `<div class="k">Region</div><p>${region}${s.hop !== undefined ? ` · hop ${s.hop}` : ""}</p>`;
+  h += `<div class="k">Lanes</div><p>${lanes.map(esc).join(" · ") || "—"}</p>`;
+  h += `<div class="k">Beacon</div><p>${status}${s.beacon && !s.alwaysLit ? ` &nbsp; <button class="hb ${lit.has(id) ? "on" : ""}" onclick="toggleLit('${id}')">${lit.has(id) ? "Darken" : "Relight"}</button>` : ""}</p>`;
+  h += `<div class="k">Chart note</div><p>${esc(s.blurb)}</p>`;
+  if (s.gm) {
+    h += `<div class="gm"><div class="k">GM — episode seed</div><p>${esc(s.gm.seed || "—")}</p><div class="k">GM — canon</div><p>${esc(s.gm.canon || "—")}</p>`;
+    h += `<div class="k">GM — factions present</div><p>${(s.gm.factions || []).map(f => `<span class="ftag">${esc(f.replace(/-/g, " "))}</span>`).join("") || "—"}</p></div>`;
+  }
+  document.getElementById("panel-body").innerHTML = h;
+  document.getElementById("panel").classList.add("open");
+}
 function closePanel() { document.getElementById("panel").classList.remove("open"); }
-function share() { /* TASK4:share */ }
+function share() {
+  saveLit();
+  const url = location.href;
+  (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => toast("Link copied"), () => { prompt("Copy this link", url); });
+}
 function toast(msg) { const t = document.getElementById("toast"); t.textContent = msg; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 2200); }
-/* TASK4:gm */
+
 
 render();
 </script>
