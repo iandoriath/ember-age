@@ -67,3 +67,14 @@ def test_embedded_json_is_script_safe():
     out = bsm.build("player", d, STUB)
     assert "</script> tag" not in out
     assert "<\\/script> tag" in out
+
+
+def test_template_renders_every_system_and_hud_controls():
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    out = bsm.build("player", load(), tpl)
+    for token in ('id="chart"', 'id="hud"', 'id="status"', 'id="panel"', "Frame the Reach", "Frame the Road", "fonts.googleapis.com/css2?family=Rajdhani"):
+        assert token in out, token
+    assert "gm-switch" not in out and "Import save" not in out
+    gm = bsm.build("gm", load(), tpl)
+    assert "gm-switch" in gm and "Import save" in gm
+    assert not re.search(r'<script[^>]+src="https?://', out)
