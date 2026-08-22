@@ -49,6 +49,7 @@
   /* HUD */
   #hud{position:absolute;inset:0;pointer-events:none}
   #hud>*{pointer-events:auto}
+  #hud>.frame{pointer-events:none}
   .frame{position:absolute;inset:10px;border:1px solid var(--holo-faint);pointer-events:none}
   .frame:before,.frame:after{content:"";position:absolute;width:22px;height:22px;border:2px solid var(--holo)}
   .frame:before{left:-1px;top:-1px;border-right:0;border-bottom:0}.frame:after{right:-1px;bottom:-1px;border-left:0;border-top:0}
@@ -224,15 +225,17 @@ function zoomAt(factor, cx, cy) {
 function zoomBy(f) { const r = chart.getBoundingClientRect(); zoomAt(f, r.left + r.width / 2, r.top + r.height / 2); }
 chart.addEventListener("wheel", e => { e.preventDefault(); zoomAt(e.deltaY < 0 ? 1.15 : 1 / 1.15, e.clientX, e.clientY); }, {passive:false});
 let drag = null;
-chart.addEventListener("pointerdown", e => { if (e.button !== 0) return; drag = {x:e.clientX, y:e.clientY, vx:vb.x, vy:vb.y, moved:false}; chart.setPointerCapture(e.pointerId); });
-chart.addEventListener("pointermove", e => {
+chart.addEventListener("pointerdown", e => { if (e.button !== 0) return; drag = {x:e.clientX, y:e.clientY, vx:vb.x, vy:vb.y, moved:false}; });
+window.addEventListener("pointermove", e => {
   if (!drag) return;
   const r = chart.getBoundingClientRect(), k = currentBox()[2] / r.width;
   const dx = (e.clientX - drag.x) * k, dy = (e.clientY - drag.y) * k;
-  if (Math.abs(dx) + Math.abs(dy) > 2) { drag.moved = true; chart.classList.add("dragging"); }
+  if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) > 3) { drag.moved = true; chart.classList.add("dragging"); }
   vb.x = drag.vx - dx; vb.y = drag.vy - dy; applyView();
 });
-chart.addEventListener("pointerup", () => { chart.classList.remove("dragging"); setTimeout(() => { drag = null; }, 0); });
+function endDrag() { chart.classList.remove("dragging"); setTimeout(() => { drag = null; }, 0); }
+window.addEventListener("pointerup", endDrag);
+window.addEventListener("pointercancel", endDrag);
 chart.addEventListener("click", e => { if (!(drag && drag.moved) && (e.target === chart || e.target.tagName === "rect")) closePanel(); });
 window.addEventListener("resize", applyView);
 
