@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Starship Primer — The Ember Age</title>
+<link rel="stylesheet" href="sheet-style.css">
+<style>
+  @page{size:Letter;margin:9mm 9mm 7mm}
+  .sheet{max-width:7.6in;margin:0 auto;padding:10px 12px}
+  .hulls td,.hulls th{text-align:center}
+  .hulls td:first-child,.hulls th:first-child{text-align:left}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<div class="masthead">
+  <h1>STARSHIP OPERATIONS</h1>
+  <div class="sub">one ship, one crew — everyone acts, every round</div>
+  <div class="spacer"></div>
+  <div class="era">The Ember Age · player primer</div>
+</div>
+
+<div class="flow">
+  <div class="step"><b>One pilot</b><span>everyone else takes a crew role — swap roles freely between rounds. Nobody sits out.</span></div>
+  <div class="step"><b>Your slot, as normal</b><span>1 Action + 1 Maneuver, spent through the ship.</span></div>
+  <div class="step"><b>The ship pays too</b><span>the pilot's 2nd flying maneuver costs the <b>ship</b> 2 system strain (2/round cap).</span></div>
+  <div class="step"><b>She's a century old</b><span>strain is the ship asking nicely. Past her threshold, she stops asking.</span></div>
+</div>
+
+<div class="cols2">
+
+<div class="sec">
+<h2><span class="n">◆</span> Pilot — maneuvers (no roll)</h2>
+<table>
+<tr><th>Maneuver</th><th>Limits</th><th>Effect</th></tr>
+<tr><td><b>Fly</b></td><td>—</td><td>Move (see Speed &amp; Range).</td></tr>
+<tr><td><b>Accelerate / Decelerate</b></td><td>—</td><td>Speed ±1 (0 to ship's max).</td></tr>
+<tr><td><b>Evasive Maneuvers</b></td><td>Sil ≤ 4, Speed 3+</td><td>Upgrade difficulty of <i>all</i> attacks on you AND by you (<span class="d di"></span>→<span class="d ch"></span>), until your next turn.</td></tr>
+<tr><td><b>Stay on Target</b></td><td>Sil ≤ 4, Speed 3+</td><td>Upgrade your crew's combat checks (<span class="d ab"></span>→<span class="d pr"></span>) — and attackers' too. Until your next turn.</td></tr>
+<tr><td><b>Angle Deflectors</b></td><td>needs Defense</td><td>Move 1 point of defense between zones; stays put.</td></tr>
+</table>
+<h3>Pilot — actions</h3>
+<ul class="tight">
+<li><b>Gain the Advantage</b> (Close range): Piloting — faster than them <span class="d di"></span> · same speed <span class="d di"></span><span class="d di"></span> · 1 slower <span class="d di"></span><span class="d di"></span><span class="d di"></span> · 2+ slower <span class="d di"></span><span class="d di"></span><span class="d di"></span><span class="d di"></span>. Win: ignore all Evasive penalties and <i>you pick the defense zone your shots hit</i>, until end of next round. They shake it only with their own Gain the Advantage, +1 difficulty per time it's already been won.</li>
+<li><b>Punch It</b>: jump straight to max Speed — 1 system strain per point gained.</li>
+<li><b>Big ships</b> (Sil 5+, the Wayfarer included): no Evasive Maneuvers, no dogfighting — angle shields and shoot back.</li>
+</ul>
+</div>
+
+<div class="sec" style="break-inside:auto">
+<h2><span class="n">◆</span> Everyone else — pick a station</h2>
+<table>
+<tr><th>Role</th><th>Check</th><th>Effect</th></tr>
+<tr><td><b>Co-pilot</b></td><td>Average Piloting</td><td>Each <span class="sy good">Success</span> downgrades the pilot's next check (<span class="d ch"></span>→<span class="d di"></span>).</td></tr>
+<tr><td><b>Gunner</b></td><td>Gunnery</td><td>Fire a weapon (difficulty: silhouette box). Aim first for <span class="d bo"></span>.</td></tr>
+<tr><td><b>Damage control</b></td><td>Mechanics — <span class="d di"></span> at ≤ half, <span class="d di"></span><span class="d di"></span> over half, <span class="d di"></span><span class="d di"></span><span class="d di"></span> past threshold</td><td>Recover hull trauma OR system strain = <span class="sy good">Successes</span>. Hull repair: once per PC per fight; strain: retry freely.</td></tr>
+<tr><td><b>Boost shields</b></td><td>Hard Mechanics</td><td>Ship takes 1 strain; +1 defense to one zone until your next turn (+1 round per extra <span class="sy good">Success</span>).</td></tr>
+<tr><td><b>Scan the enemy</b></td><td>Hard Perception</td><td>Learn weapons, mods, thresholds; <span class="sy good">Adv</span> for current totals.</td></tr>
+<tr><td><b>Jamming</b></td><td>Average Computers</td><td>Their comms need an Average Computers check to work (+1 difficulty per 2 extra <span class="sy good">Succ</span>; +1 ship per <span class="sy good">Adv</span>).</td></tr>
+<tr><td><b>Slice their systems</b></td><td>Hard Computers</td><td>Each <span class="sy good">Success</span> strips a defense zone; <span class="sy good">Adv</span> = system strain; <span class="sy good big">Triumph</span> = one weapon dead a round.</td></tr>
+<tr><td><b>Spoof missiles</b></td><td>Avg Computers / Hard Vigilance</td><td>Guided attacks on you upgrade difficulty once until your next turn (+1 per extra <span class="sy good">Adv</span>).</td></tr>
+<tr><td><b>Plot course</b></td><td>Astrogation / Perception</td><td>Each <span class="sy good">Success</span> pulls one <span class="d se"></span> (terrain, debris) off the pilot's next check.</td></tr>
+<tr><td><b>Fire discipline</b></td><td>Hard Leadership / Discipline</td><td>Next crew member's combat check gains <span class="d bo"></span> (+1 more crew per 2 extra <span class="sy good">Succ</span>).</td></tr>
+<tr><td><b>Anything else</b></td><td>normal skills</td><td>Patch a wound, fight a boarder, work the airlock.</td></tr>
+</table>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Shooting — size decides, not range</h2>
+<table>
+<tr><th>Target vs your ship</th><th class="c">Difficulty</th></tr>
+<tr><td>2+ silhouettes <b>bigger</b></td><td class="c"><span class="d di"></span></td></tr>
+<tr><td>Within 1 either way</td><td class="c"><span class="d di"></span><span class="d di"></span></td></tr>
+<tr><td>2+ silhouettes <b>smaller</b></td><td class="c"><span class="d di"></span><span class="d di"></span><span class="d di"></span></td></tr>
+</table>
+<ul class="tight">
+<li>+<span class="d se"></span> per point of defense in the zone you hit. Small targets (Sil 1–4) pick their own zone; Sil 5+ — the firing arc decides.</li>
+<li>Weapons can't fire past their listed range band (Close → Extreme).</li>
+<li><b>Critical hit:</b> <span class="sy good">Advantage</span> = weapon's Crit rating, or a <span class="sy good big">Triumph</span> — d100 on the vehicle table, +10 per existing crit.</li>
+</ul>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Taking hits</h2>
+<ul class="tight">
+<li><b>Hull trauma</b> = damage − Armor. Past the threshold: crippled + an immediate critical hit.</li>
+<li><b>System strain</b> (ion hits, Punch It, extra maneuvers, shields): past the threshold — dead in space until repaired below it.</li>
+<li><b>Handling</b> = <span class="d bo"></span> (positive) or <span class="d se"></span> (negative) per point, on every Piloting check.</li>
+</ul>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Speed &amp; range</h2>
+<ul class="tight">
+<li>Speed 0 = parked target. Evasive needs Speed 3+.</li>
+<li>Band changes cost maneuvers by speed: Speed 1 — Close↔Short in 2 · Speed 2–4 — Close↔Short in 1, Short↔Medium in 2 · Speed 5–6 — Close↔Medium in 1.</li>
+<li>Rule of thumb: the faster ship dictates the chase.</li>
+</ul>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> The heirloom — era rules</h2>
+<ul class="tight">
+<li>Nobody makes new parts. Repairs are salvage and favors; the GM may mark a worn part <b>Inferior</b> (1 automatic <span class="sy bad">Threat</span> using it) until refit.</li>
+</ul>
+<table class="hulls">
+<tr><th>Hull</th><th>Sil</th><th>Spd</th><th>Hand</th><th>Def</th><th>Arm</th><th>HT</th><th>SS</th></tr>
+<tr><td><b>Wayfarer-class</b></td><td>5</td><td>3</td><td>−2</td><td>1/1/1/2</td><td>4</td><td>32</td><td>20</td></tr>
+<tr><td><b>Ghtroc 720</b></td><td>4</td><td>3</td><td>−1</td><td>1/1</td><td>5</td><td>28</td><td>15</td></tr>
+<tr><td><b>YT-1300</b></td><td>4</td><td>3</td><td>−1</td><td>1/1</td><td>3</td><td>22</td><td>15</td></tr>
+</table>
+</div>
+
+</div>
+
+<div class="foot"><span>The Ember Age — a homebrew FFG Star Wars campaign · player table sheet</span><span>rules as written · dice spends on the Reading the Dice sheet</span></div>
+</div>
+</body>
+</html>

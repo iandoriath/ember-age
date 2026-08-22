@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ground Combat Primer — The Ember Age</title>
+<link rel="stylesheet" href="sheet-style.css">
+<style>
+  @page{size:Letter;margin:9mm 9mm 7mm}
+  .sheet{max-width:7.6in;margin:0 auto;padding:10px 12px}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<div class="masthead">
+  <h1>GROUND COMBAT</h1>
+  <div class="sub">how a fight works, on one page</div>
+  <div class="spacer"></div>
+  <div class="era">The Ember Age · player primer</div>
+</div>
+
+<div class="flow">
+  <div class="step"><b>Your slot comes up</b><span>PCs act on any open PC slot — decide together who goes.</span></div>
+  <div class="step"><b>1 Maneuver</b><span>move, aim, cover… (menu below). Incidentals — speaking, dropping things — are free.</span></div>
+  <div class="step"><b>1 Action</b><span>attack, any skill check, or trade it for another maneuver.</span></div>
+  <div class="step"><b>Need a 2nd maneuver?</b><span>suffer <b>2 strain</b> or spend <span class="sy good">2 Advantage</span>. Hard cap: 2 per turn.</span></div>
+</div>
+
+<div class="cols2">
+
+<div class="sec">
+<h2><span class="n">◆</span> Maneuvers — pick one</h2>
+<table>
+<tr><th>Maneuver</th><th>What it does</th></tr>
+<tr><td><b>Move</b></td><td>Engage or disengage a foe, or shift one range band (1 maneuver to short/medium; 2 to reach long or extreme).</td></tr>
+<tr><td><b>Aim</b></td><td>Next combat check: <span class="d bo"></span> (aim twice in a row: <span class="d bo"></span><span class="d bo"></span>). Called shot at an item/limb instead: <span class="d se"></span><span class="d se"></span> (one <span class="d se"></span> if aimed twice).</td></tr>
+<tr><td><b>Take Cover</b></td><td>Gain ranged defense 1 while behind it.</td></tr>
+<tr><td><b>Guarded Stance</b></td><td>Melee defense 1 until your next turn, but <span class="d se"></span> on your own attacks.</td></tr>
+<tr><td><b>Drop Prone / Stand</b></td><td>Prone: ranged attacks at you suffer <span class="d se"></span>, melee attacks gain <span class="d bo"></span>. Standing up is a maneuver too.</td></tr>
+<tr><td><b>Interact</b></td><td>Open the door, flip the table, hit the console.</td></tr>
+<tr><td><b>Manage gear</b></td><td>Draw / holster / reload (clears Limited Ammo) / pass an item.</td></tr>
+<tr><td><b>Assist</b></td><td>Engaged ally's next check gains <span class="d bo"></span>.</td></tr>
+</table>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Attacking — difficulty by range</h2>
+<table>
+<tr><th>Range</th><th class="c">Melee / Brawl</th><th class="c">Ranged (Light)</th><th class="c">Ranged (Heavy)</th><th class="c">Gunnery</th></tr>
+<tr><td><b>Engaged</b></td><td class="c"><span class="d di"></span><span class="d di"></span></td><td class="c"><span class="d di"></span><span class="d di"></span></td><td class="c"><span class="d di"></span><span class="d di"></span><span class="d di"></span></td><td class="c">can't</td></tr>
+<tr><td><b>Short</b></td><td class="c">—</td><td class="c"><span class="d di"></span></td><td class="c"><span class="d di"></span></td><td class="c"><span class="d di"></span></td></tr>
+<tr><td><b>Medium</b></td><td class="c">—</td><td class="c"><span class="d di"></span><span class="d di"></span></td><td class="c"><span class="d di"></span><span class="d di"></span></td><td class="c"><span class="d di"></span><span class="d di"></span></td></tr>
+<tr><td><b>Long</b></td><td class="c">—</td><td class="c"><span class="d di"></span><span class="d di"></span><span class="d di"></span></td><td class="c"><span class="d di"></span><span class="d di"></span><span class="d di"></span></td><td class="c"><span class="d di"></span><span class="d di"></span><span class="d di"></span></td></tr>
+<tr><td><b>Extreme</b></td><td class="c">—</td><td class="c"><span class="d di"></span><span class="d di"></span><span class="d di"></span><span class="d di"></span></td><td class="c"><span class="d di"></span><span class="d di"></span><span class="d di"></span><span class="d di"></span></td><td class="c"><span class="d di"></span><span class="d di"></span><span class="d di"></span><span class="d di"></span></td></tr>
+</table>
+<p class="tightnote" style="font-size:7.6pt;color:var(--dim);margin:1.5pt 0 0">Each <span class="d di"></span> = one purple Difficulty die. Melee &amp; Brawl only work engaged, and are always two. Firing a ranged weapon while engaged raises the short-range base (+1 light, +2 heavy) — it stacks with other increases.</p>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Getting hit</h2>
+<ul class="tight">
+<li><b>Wounds</b> = damage − Soak (min 0). <b>Stun damage</b> deals strain instead, Soak still applies.</li>
+<li>Wounds <i>exceed</i> Wound Threshold → knocked out <b>+ 1 Critical Injury</b>.</li>
+<li>Strain <i>exceeds</i> Strain Threshold → knocked out, no crit.</li>
+<li><b>Defense</b>: each point = <span class="d se"></span> on matching attacks against you (cap 4). Sources that <i>provide</i> defense don't stack — use the highest; effects that <i>increase</i> it (Defensive X) add on top.</li>
+</ul>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Critical injuries</h2>
+<ul class="tight">
+<li><b>Trigger:</b> wounds past threshold · spend <span class="sy good">Advantage</span> = weapon's Crit rating on a damaging hit · spend a <span class="sy good big">Triumph</span>.</li>
+<li>Max <b>one crit per hit</b> — extra activations add <b>+10</b> to its roll.</li>
+<li>Roll <b>d100</b>: +10 per crit the target already has, +10 per rank of Vicious.</li>
+</ul>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Weapon qualities you'll see</h2>
+<table>
+<tr><td><b>Stun setting</b></td><td>Flick it (free): deal strain instead of wounds.</td></tr>
+<tr><td><b>Pierce X</b></td><td>Ignore X Soak.</td></tr>
+<tr><td><b>Vicious X</b></td><td>+10&times;X on crit rolls.</td></tr>
+<tr><td><b>Blast X</b></td><td><span class="sy good">2 Adv</span>: everyone engaged with the target takes X. On a miss, <span class="sy good">3 Adv</span> hits them all anyway.</td></tr>
+<tr><td><b>Auto-fire</b></td><td>Declare first: +1 difficulty. <span class="sy good">2 Adv</span> per extra hit (may spread to other targets; each hit can crit).</td></tr>
+<tr><td><b>Defensive X</b></td><td>+X melee defense while wielded.</td></tr>
+<tr><td><b>Cumbersome X</b></td><td>Brawn short of X? +1 difficulty per point.</td></tr>
+<tr><td><b>Limited Ammo X</b></td><td>X uses, then reload (Manage gear).</td></tr>
+<tr><td><b>Disorient X</b></td><td><span class="sy good">2 Adv</span>: target adds <span class="d se"></span> to everything for X rounds.</td></tr>
+<tr><td><b>Knockdown</b></td><td><span class="sy good">2 Adv</span> (+1 per silhouette over 1): target goes prone.</td></tr>
+</table>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Getting better</h2>
+<ul class="tight">
+<li><b>After the fight:</b> Simple (no purple) <span class="kbd">Discipline</span> or <span class="kbd">Cool</span> check — recover 1 strain per <span class="sy good">Success</span>.</li>
+<li><b>Stimpack</b> (a maneuver): heals 5 wounds; each further one today heals 1 less (4, 3, 2, 1, then nothing). Resets tomorrow.</li>
+<li><b>Medicine check:</b> heals 1 wound / <span class="sy good">Success</span> + 1 strain / <span class="sy good">Advantage</span>. Difficulty: wounds at half threshold or less <span class="d di"></span> · over half <span class="d di"></span><span class="d di"></span> · past threshold <span class="d di"></span><span class="d di"></span><span class="d di"></span>. Treating yourself: +2 difficulty.</li>
+<li><b>A night's rest:</b> 1 wound, all strain.</li>
+</ul>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Reading the dice, combat edition</h2>
+<ul class="tight">
+<li><b>Did I hit?</b> 1+ net <span class="sy good">Success</span> = yes, and every net Success adds +1 damage.</li>
+<li><span class="sy good">Advantage</span> pays even on a miss: recover 1 strain, boost an ally — or bank it into crits &amp; qualities on a hit.</li>
+<li><span class="sy good big">Triumph</span>: a Success plus something spectacular — a crit, regardless of cost.</li>
+<li><span class="sy bad">Threat / Despair</span>: the GM's currency against you. Full menus: the <b>Reading the Dice</b> sheet.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="foot"><span>The Ember Age — a homebrew FFG Star Wars campaign · player table sheet</span><span>rules as written · full spends on the Reading the Dice sheet</span></div>
+</div>
+</body>
+</html>
