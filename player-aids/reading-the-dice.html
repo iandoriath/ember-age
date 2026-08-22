@@ -5,10 +5,10 @@
 <title>Reading the Dice — FFG Star Wars</title>
 <link rel="stylesheet" href="sheet-style.css">
 <style>
-  @page{size:Letter;margin:7mm 8mm 6mm}
-  body{font-size:8.3pt}
-  table{font-size:7.9pt}
-  .sec{margin-bottom:6pt;padding:3.5pt 5.5pt 4.5pt}
+  @page{size:Letter;margin:6mm 8mm 5mm}
+  body{font-size:8pt;line-height:1.27}
+  table{font-size:7.6pt}
+  .sec{margin-bottom:5pt;padding:3pt 5.5pt 4pt}
   .flow .step span{font-size:7.2pt}
   .sheet{max-width:7.7in;margin:0 auto;padding:8px 11px}
   td.cost{white-space:nowrap;font:700 7.6pt var(--head);width:1%}
@@ -55,7 +55,7 @@
 <tr><td class="cost"><span class="sy good big">Triumph</span></td><td>Do something scene-shaping: shoot the blast-door controls, collapse the catwalk, spot the way out.</td></tr>
 <tr><td class="cost"><span class="sy good big">2 Triumph</span></td><td>On a damaging hit, destroy a piece of the target's equipment outright.</td></tr>
 </table>
-<div class="note" style="margin:2.5pt 0 0"><b>One crit per hit.</b> However you pay, a single hit inflicts one Critical Injury — every further activation adds +10 to that one roll.</div>
+<div class="note" style="margin:2.5pt 0 0"><b>One crit per hit.</b> Every further activation adds +10 to that one Critical roll.</div>
 </div>
 
 <div class="sec">
@@ -67,9 +67,13 @@
 <tr><td class="cost"><span class="sy bad">2 Thr</span></td><td>An opponent takes one immediate free maneuver.</td></tr>
 <tr><td class="cost"><span class="sy bad">2 Thr</span></td><td><span class="d bo"></span> to an enemy's next check, or <span class="d se"></span> to yours or an ally's.</td></tr>
 <tr><td class="cost"><span class="sy bad">3 Thr</span></td><td>Fall prone.</td></tr>
-<tr><td class="cost"><span class="sy bad">3 Thr</span></td><td>Hand the enemy a real edge — you shoot out the controls your own escape needed.</td></tr>
-<tr><td class="cost"><span class="sy bad big">Despair</span></td><td>Out of ammo for the encounter · weapon or tool jams / cracks · upgrade an ally's (or your own) next check's difficulty · a serious complication, GM's pick.</td></tr>
+<tr><td class="cost"><span class="sy bad">3 Thr</span></td><td>Upgrade the difficulty of an ally's next check (<span class="d di"></span>→<span class="d ch"></span>) — yourself included.</td></tr>
+<tr><td class="cost"><span class="sy bad big">Despair</span></td><td>Any option above, whatever its cost.</td></tr>
+<tr><td class="cost"><span class="sy bad big">Despair</span></td><td>Out of ammo — the weapon is dry for the rest of the encounter.</td></tr>
+<tr><td class="cost"><span class="sy bad big">Despair</span></td><td>Your weapon or tool is damaged one step (minor → moderate → major).</td></tr>
+<tr><td class="cost"><span class="sy bad big">Despair</span></td><td>Something scene-shaping goes wrong: the reinforcements arrive, the bridge gives way, the contact was a plant.</td></tr>
 </table>
+<div class="note" style="margin:2.5pt 0 0"><b>Threat isn't a second failure.</b> A success with Threat still did the job — it just cost you something.</div>
 </div>
 
 <div class="sec">
@@ -93,6 +97,28 @@
 <li><b>Use it or lose it.</b> Advantage doesn't bank. Shrug, and the GM spends it as scene color — the dice refusing to be boring.</li>
 </ul>
 <p style="margin:2.5pt 0 0"><b>When in doubt:</b> recover strain, boost a friend, or notice something. Never wrong.</p>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Destiny Points — the table's shared pool</h2>
+<ul class="tight">
+<li><b>Session start:</b> each player rolls <span class="d f"></span>. Light pips go to the <b>light side</b> (players') pool, dark pips to the <b>dark side</b> (GM's). It resets every session.</li>
+<li><b>Spending flips the token.</b> A light point you spend becomes a dark point the GM can use — and vice versa. Every spend feeds the other side.</li>
+<li><b>Upgrade your check:</b> one <span class="d ab"></span>→<span class="d pr"></span> on your own roll, or one <span class="d di"></span>→<span class="d ch"></span> on an NPC's. Once per check per side — declare it <i>before</i> rolling.</li>
+<li><b>Story edit:</b> a small, plausible fact in your favor — "there's a spare power cell in my kit," "I know a guy on this station." The GM can say no.</li>
+<li><b>Some talents</b> and Force users' off-side pips (below) are paid with a flip.</li>
+</ul>
+<p class="small" style="margin:2pt 0 0;color:var(--dim)">The GM spends dark points the same way against you. A full dark pool is your cue to spend.</p>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Force Points — reading the white die</h2>
+<ul class="tight">
+<li><b>Force rating</b> = how many <span class="d f"></span> you roll for a Force power. No blank faces: every die gives light pips (white), dark pips (black), or both.</li>
+<li><b>Pips of your side</b> are Force Points. Spend them on the power's basic effect and any upgrades you've bought; unspent ones are lost.</li>
+<li><b>Pips of the other side</b> can still be used — at a price. A light-sider using dark pips flips a Destiny Point (light→dark) and suffers <b>1 strain per dark pip used</b>. Dark-siders mirror this with light pips.</li>
+<li><b>Not enough pips?</b> The power just doesn't happen this turn. Committed dice stay out of your pool until released.</li>
+</ul>
 </div>
 
 </div>
