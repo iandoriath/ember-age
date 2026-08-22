@@ -15,8 +15,10 @@ import markdown
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# reading-the-dice.html is hand-designed in the sheet-style.css system (spend-menu
+# focus) and is NOT generated from docs/mechanics/dice-results.md — the full teaching
+# version lives in the GM screen's Reference tab instead.
 SHEETS = [
-    (ROOT / "docs/mechanics/dice-results.md", ROOT / "player-aids/reading-the-dice.html"),
     (ROOT / "player-aids/pocket-primer.md", ROOT / "player-aids/pocket-primer.html"),
 ]
 
