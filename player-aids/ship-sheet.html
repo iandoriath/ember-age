@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ship Sheet — FFG Star Wars</title>
+<link rel="stylesheet" href="sheet-style.css">
+<style>
+  @page{size:Letter;margin:8mm 9mm 6mm}
+  .sheet{max-width:7.6in;margin:0 auto;padding:10px 12px}
+
+  .idgrid{display:grid;grid-template-columns:2.2fr 1.6fr .7fr .7fr .8fr .7fr 1fr .9fr;gap:4pt;margin:0 0 7pt}
+  .idcell{border:1px solid var(--line);border-radius:2pt;padding:2pt 4pt 3pt;background:var(--paper)}
+  .idcell label{display:block;font:700 6.4pt var(--head);text-transform:uppercase;letter-spacing:.07em;color:var(--gold);margin:0 0 1pt}
+  .idcell .blank{display:block;min-height:12pt;border-bottom:1px solid var(--line)}
+
+  .tk{width:10.5pt;height:10.5pt;border:1.1px solid var(--ink);border-radius:1.5pt;background:var(--paper);flex:none}
+  .tkline{display:flex;gap:1.8pt;margin:2pt 0}
+  .tkline .tk.g{margin-right:4pt}
+  .thr{display:inline-flex;align-items:center;gap:3pt;font:700 7.2pt var(--head);text-transform:uppercase;letter-spacing:.06em;color:var(--gold)}
+  .thr .box{width:22pt;height:14pt;border:1.4px solid var(--ember);border-radius:2pt;background:var(--wash)}
+
+  .speed{display:flex;gap:3pt;align-items:center}
+  .speed .sp{width:15pt;height:15pt;border:1.2px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 8pt var(--head);color:var(--dim)}
+
+  .compass{display:grid;grid-template-columns:1fr 1fr 1fr;justify-items:center;align-items:center;gap:1pt;padding:2pt 0}
+  .dz{width:24pt;height:24pt;border:1.4px solid var(--ember);border-radius:50%;background:var(--wash)}
+  .dzl{font:700 6.6pt var(--head);text-transform:uppercase;letter-spacing:.06em;color:var(--dim);text-align:center}
+  .shipmark{font-size:12pt;color:var(--ember)}
+
+  .status{display:grid;grid-template-columns:1fr 1fr;gap:2.5pt 8pt}
+  .st{display:flex;align-items:baseline;gap:4pt;font-size:7.6pt}
+  .st .tk{width:9.5pt;height:9.5pt;flex:none;transform:translateY(1.5pt)}
+  .st .lbl b{font-family:var(--head)}
+  .st .lbl small{color:var(--dim)}
+
+  table.fill td{height:14pt}
+  table.fill td.big{height:16pt}
+  .crew{display:grid;grid-template-columns:1fr 1fr;gap:2pt 10pt}
+  .crew .cr{display:flex;gap:4pt;align-items:baseline;font:700 7.2pt var(--head);text-transform:uppercase;letter-spacing:.05em;color:var(--gold)}
+  .crew .cr span{flex:1;border-bottom:1px solid var(--line);min-height:11pt}
+
+  .micro{font-size:7.2pt;color:var(--ink);clear:both}
+  .micro b{font-family:var(--head)}
+  .sec{overflow:hidden}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<div class="masthead">
+  <h1>SHIP SHEET</h1>
+  <div class="sub">the vessel's character sheet — space-combat tracker</div>
+  <div class="spacer"></div>
+  <div class="era">FFG Star Wars · table sheet</div>
+</div>
+
+<div class="idgrid">
+  <div class="idcell"><label>Ship name</label><span class="blank"></span></div>
+  <div class="idcell"><label>Make &amp; model</label><span class="blank"></span></div>
+  <div class="idcell"><label>Silhouette</label><span class="blank"></span></div>
+  <div class="idcell"><label>Max speed</label><span class="blank"></span></div>
+  <div class="idcell"><label>Handling</label><span class="blank"></span></div>
+  <div class="idcell"><label>Armor</label><span class="blank"></span></div>
+  <div class="idcell"><label>Hyperdrive</label><span class="blank"></span></div>
+  <div class="idcell"><label>Navicomp</label><span class="blank"></span></div>
+</div>
+
+<div class="cols2">
+
+<div class="sec">
+<h2><span class="n">◆</span> Hull trauma <span style="float:right" class="thr">threshold <span class="box"></span></span></h2>
+<p class="small" style="margin:1pt 0;color:var(--dim)">Damage − Armor. Mark left to right; past the threshold the ship is crippled and takes an immediate critical hit.</p>
+<div class="tkline"><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk g"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk g"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div></div>
+<div class="tkline"><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk g"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk g"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div></div>
+<div class="tkline"><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk g"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk g"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div></div>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> System strain <span style="float:right" class="thr">threshold <span class="box"></span></span></h2>
+<p class="small" style="margin:1pt 0;color:var(--dim)">Ion damage, Punch It, the pilot's 2nd maneuver (2), boosted shields (1). Past the threshold: dead in space until repaired below it.</p>
+<div class="tkline"><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk g"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk g"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div></div>
+<div class="tkline"><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk g"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk g"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div><div class="tk"></div></div>
+<hr class="hairline">
+<div style="display:flex;gap:10pt;align-items:center">
+  <span class="thr">current speed</span>
+  <div class="speed"><div class="sp">0</div><div class="sp">1</div><div class="sp">2</div><div class="sp">3</div><div class="sp">4</div><div class="sp">5</div></div>
+</div>
+<p class="small" style="margin:2pt 0 0;color:var(--dim)">Circle it in pencil. Evasive Maneuvers and Stay on Target need speed 3+; speed 0 is a parked target.</p>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Defense zones</h2>
+<p class="small" style="margin:1pt 0;color:var(--dim)">Write current defense per zone; each point = <span class="d se"></span> on shots into that zone. Angling deflectors moves a point between zones — pencil, not pen. Two-zone ships use Fore and Aft only.</p>
+<div class="compass">
+  <div></div><div><div class="dzl">Fore</div><div class="dz"></div></div><div></div>
+  <div><div class="dzl">Port</div><div class="dz"></div></div><div class="shipmark">▲</div><div><div class="dzl">Starboard</div><div class="dz"></div></div>
+  <div></div><div><div class="dz"></div><div class="dzl">Aft</div></div><div></div>
+</div>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> This round — status</h2>
+<div class="status">
+  <div class="st"><div class="tk"></div><div class="lbl"><b>Evasive Maneuvers</b><br><small>attacks in &amp; out upgraded; until pilot's next turn</small></div></div>
+  <div class="st"><div class="tk"></div><div class="lbl"><b>Stay on Target</b><br><small>crew checks upgraded — attackers' too</small></div></div>
+  <div class="st"><div class="tk"></div><div class="lbl"><b>Advantage gained</b><br><small>vs ______ · we pick their zone; until end of next round</small></div></div>
+  <div class="st"><div class="tk"></div><div class="lbl"><b>Advantage against us</b><br><small>they ignore our evasion &amp; pick our zone</small></div></div>
+  <div class="st"><div class="tk"></div><div class="lbl"><b>Shields boosted</b><br><small>+1 to zone ______ · until ______</small></div></div>
+  <div class="st"><div class="tk"></div><div class="lbl"><b>Hull repair used</b><br><small>once per character per encounter — initials: ______</small></div></div>
+</div>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Weapons</h2>
+<table class="fill">
+<tr><th style="width:30%">Weapon</th><th style="width:14%">Fire arc</th><th style="width:10%" class="c">Dam</th><th style="width:9%" class="c">Crit</th><th style="width:13%">Range</th><th>Qualities</th></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+<p class="micro" style="margin:1.5pt 0 0"><b>Gunnery difficulty by size:</b> target 2+ silhouettes bigger <span class="d di"></span> · within 1 <span class="d di"></span><span class="d di"></span> · 2+ smaller <span class="d di"></span><span class="d di"></span><span class="d di"></span> — plus <span class="d se"></span> per defense point in the zone hit. Crit: <span class="sy good">Adv</span> = Crit rating or <span class="sy good big">Triumph</span>.</p>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Critical hits</h2>
+<table class="fill">
+<tr><th style="width:12%" class="c">d100</th><th style="width:34%">Result</th><th>Effect in play</th><th style="width:11%" class="c">Fixed?</th></tr>
+<tr><td class="big"></td><td></td><td></td><td></td></tr>
+<tr><td class="big"></td><td></td><td></td><td></td></tr>
+<tr><td class="big"></td><td></td><td></td><td></td></tr>
+<tr><td class="big"></td><td></td><td></td><td></td></tr>
+</table>
+<p class="micro" style="margin:1.5pt 0 0">Each existing critical hit adds <b>+10</b> to the next crit roll. Repairing crits takes time in dock, not a combat action.</p>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Contacts — range to us</h2>
+<table class="fill">
+<tr><th style="width:34%">Contact</th><th class="c">Close</th><th class="c">Short</th><th class="c">Med</th><th class="c">Long</th><th class="c">Extreme</th></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+<p class="micro" style="margin:1.5pt 0 0">One row per enemy or objective — circle its band in pencil and move it as the chase moves. The faster ship dictates the chase.</p>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Stations this fight</h2>
+<div class="crew">
+  <div class="cr">Pilot <span></span></div>
+  <div class="cr">Co-pilot <span></span></div>
+  <div class="cr">Gunner <span></span></div>
+  <div class="cr">Gunner <span></span></div>
+  <div class="cr">Engineer <span></span></div>
+  <div class="cr">Sensors / comms <span></span></div>
+</div>
+<hr class="hairline">
+<p class="micro"><b>Damage control</b> (Mechanics): <span class="d di"></span> at ≤ half threshold · <span class="d di"></span><span class="d di"></span> over half · <span class="d di"></span><span class="d di"></span><span class="d di"></span> past it — recover hull trauma <i>or</i> system strain = <span class="sy good">Successes</span>. <b>Boost shields</b> (Hard Mechanics): ship takes 1 strain, +1 defense to one zone. Full station menus: the Starship Operations sheet.</p>
+</div>
+
+<div class="sec">
+<h2><span class="n">◆</span> Notes — quirks, damaged parts, cargo that matters</h2>
+<table class="fill"><tr><td class="big"></td></tr><tr><td class="big"></td></tr></table>
+</div>
+
+</div>
+
+<div class="foot"><span>FFG Star Wars narrative dice · vehicle record</span><span>rules on the Starship Operations sheet</span></div>
+</div>
+</body>
+</html>
