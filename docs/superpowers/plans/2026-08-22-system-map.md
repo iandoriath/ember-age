@@ -805,3 +805,75 @@ Content lives in `docs/setting/systems.json`; `make map` rebuilds both files.
 git add Makefile .github/workflows/wiki.yml README.md
 git commit -m "System Map: make map target, CI build + tests, README"
 ```
+
+---
+
+### Task 6: Coruscant — the coreward end of the road
+
+**Files:**
+- Modify: `docs/setting/systems.json` (add one system, one lane)
+- Modify: `tools/system-map-template.html` (widen `VIEWS.road` so the new node is not under the HUD)
+- Modify: `tools/test_system_map.py` (append a test)
+- Regenerate: `system-map.html`, `player-aids/system-map.html`
+
+**Interfaces:**
+- Consumes: the data shape from Task 1 and `VIEWS` from Task 3.
+- Produces: system id `coruscant`; lane `brentaal → coruscant` of kind `living` named `Perlemian Trade Route`.
+
+Canon note (Legends): the Hydian Way does not pass through Coruscant — it crosses the Perlemian Trade Route at Brentaal, and Coruscant lies coreward on the Perlemian. The chart therefore continues the road Eriadu → Darkknell → Malastare → Denon → Brentaal (Hydian, already present) → Coruscant (Perlemian).
+
+- [ ] **Step 1: Append a failing test**
+
+```python
+def test_coruscant_is_the_coreward_end_of_the_road():
+    d = load()
+    c = next(s for s in d["systems"] if s["id"] == "coruscant")
+    assert c["region"] == "far" and c["alwaysLit"] is True and c["beacon"] is False
+    lane = next(l for l in d["lanes"] if {l["from"], l["to"]} == {"brentaal", "coruscant"})
+    assert lane["kind"] == "living" and lane["name"] == "Perlemian Trade Route"
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    assert "road:{x:0, y:0, w:2100, h:1200}" in tpl
+```
+
+- [ ] **Step 2: Run to verify failure**
+
+Run: `python -m pytest tools/test_system_map.py -v`
+Expected: new test FAILS with `StopIteration` (no coruscant system).
+
+- [ ] **Step 3: Add the data**
+
+In `docs/setting/systems.json`, after the `ruusan` entry (the last system), add:
+
+```json
+    {"id":"coruscant","name":"Coruscant","sub":"the Core","x":1300,"y":90,"region":"far","beacon":false,"alwaysLit":true,
+     "blurb":"The capital, a hop or two coreward of Brentaal on the Perlemian. When the Republic's recovery money finally comes back out to the Rim, this is the road it takes.",
+     "gm":{"seed":"","canon":"Coruscant is on the Perlemian Trade Route, not the Hydian; Brentaal is the junction. The Reformation's appropriations stopped here — the Withering is this road going quiet.","factions":["provisional-republic","admiralty"]}}
+```
+
+(Add a comma after the `ruusan` entry's closing `}}` — it is no longer last.)
+
+In the `lanes` array, after `{"from":"brentaal","to":"lantillies",...}`, add:
+
+```json
+    {"from":"brentaal","to":"coruscant","kind":"living","name":"Perlemian Trade Route"},
+```
+
+- [ ] **Step 4: Widen the road view**
+
+In `tools/system-map-template.html`, change the `VIEWS` line to:
+
+```js
+const VIEWS = {reach:{x:60, y:380, w:1340, h:760}, road:{x:0, y:0, w:2100, h:1200}};
+```
+
+- [ ] **Step 5: Run tests, rebuild, look**
+
+Run: `python -m pytest tools/test_system_map.py -v` — Expected: all passed (previous count + 1).
+Run: `python tools/build-system-map.py`. Open `system-map.html`, click **Frame the Road**: Coruscant appears top-middle above Brentaal with an ember lane between them, clear of the title block and the control buttons. Check the player edition has no `"gm":` key and no Coruscant GM text.
+
+- [ ] **Step 6: Commit**
+
+```bash
+git add docs/setting/systems.json tools/system-map-template.html tools/test_system_map.py system-map.html player-aids/system-map.html
+git commit -m "System Map: Coruscant at the coreward end of the road"
+```
