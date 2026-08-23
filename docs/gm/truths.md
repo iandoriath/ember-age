@@ -5,7 +5,7 @@
 
 ## Dial 1 — The line is unbroken, and very far away
 
-A Sith Master and apprentice continue Bane's work somewhere in the galaxy — patient, hidden, and uninterested in ruins. The Rule of Two does not want a withered galaxy; it wants one worth taking. Reunification is their harvest, which makes the party their unwitting gardeners: every relit beacon sets the table.
+A Sith Master and apprentice continue Bane's work somewhere in the galaxy — patient, hidden, and interested in ruins only for what they remember. The Rule of Two does not want a withered galaxy; it wants one worth taking — and it wants every true thing about the Sith out of that galaxy and into its own hands. The Reach was Sith country in the wars, and the Withering sealed its vaults; reunification is their harvest, which makes the party their unwitting gardeners: every relit beacon opens a door she means to be first through.
 
 They will not surface until a true galactic power exists — likely not within this campaign's span at all — so **run them as an absence**: unexplained good fortune whenever reunification stalls, rivals who quietly remove themselves, a pattern visible only from very far back. If the players ever found that power, the Sith's attention is the sequel.
 
