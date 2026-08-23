@@ -33,6 +33,6 @@ The thesis of the era, and the line to say aloud at session zero:
 
 ## About this campaign and canon
 
-This campaign diverges from Legends canon nowhere at all. The record says the Republic and the Jedi Order endured from Ruusan to the prequel era — but records are written by recoveries, and institutions that outlive their crises remember themselves as unbroken. The thought bomb beheaded two institutions in an afternoon; that both were eventually refounded does not mean either was alive in between. The thousand years of peace the prequels remember includes these decades. The Bane novels remain true, and so does everything published after — this era is simply the chapter nobody wrote down.
+This campaign diverges from Legends canon nowhere at all. The record says the Republic and the Jedi Order endured from Ruusan to the prequel era — and here they do: recovered in the Core, reformed, solvent, a Temple full of children. What the record does not say is how far the recovery reached, because records are written by recoveries, and a Senate that adjourned a third of the galaxy remembers itself as whole. The Bane novels remain true, and so does everything published after — this era is simply the chapter nobody wrote down, in the sectors nobody wrote to.
 
 **Your table writes it.**

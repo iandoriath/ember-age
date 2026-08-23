@@ -24,12 +24,14 @@ Two aftershocks matter:
 1. The culling **shatters the Inheritors instead of ending them**: leaderless cells, fire-sale artifacts, half-trained adepts scattering with dangerous knowledge.
 2. The harvested archives include **the Vesta-9 file** — whoever wrecked the Inheritors now knows about the crew, and which of them the beacon answered, and has never once been seen.
 
-### A second fork this history opens
+### The second fork, resolved: two Jedi
 
-How many hidden Jedi lineages survive to 90 AR?
+The Order is alive on Coruscant and absent here, and the campaign's Jedi question is not extinction but **succession**: Coruscant's Order or the Rim's?
 
-- **Zero** hands the reconvening question entirely to the new generation and whoever teaches them.
-- **One or two** — a tired woman on a dry world, third student of a student of Ruusan — turns "who counts as a Master" from a philosophy exam into a succession fight, and makes any living mentor the most valuable being in the campaign.
+- **The Core's Jedi** — Master N'Kata Del Gormo, the Temple's envoy, arriving with the Republic's charter ships to find the gifted children and reopen the sealed temples under the Council's authority. Canon says he ends as a hermit on a swamp world who trains a crashed young Yoda and a human friend, outside the Temple's system — so his arc here is the campaign's own question, *is this really what the Force is about?*, answered by a man who came to the Reach for the Temple and stayed for the swamp. Verdanth is his swamp. The Republic ship that one day answers Yoda's distress call gets there on a lane your players relit.
+- **The Rim's Jedi** — Yenna Sar, third student of a Master who refused the recall in the year of the Adjournment; a tired woman on a dry world who has kept vigil over the gift for a century the Temple spent counting children it could reach. To Del Gormo she is the withdrawn: a heresy with a lightsaber. To the Reach she is the only Jedi it has ever met.
+
+The codicil — three Masters, met in a sealed temple, may reopen it and seat a chapter of the Order there — makes the third Master the prize of Act 3, and "who counts as a Master" a war with two faces on it. The crew's gifted adult, too old for the Temple by doctrine and too dangerous to ignore, stands between them. *(Both are statted in [Keepers of the Flame](npcs/keepers.md).)*
 
 ## Dial 2 — The tide
 

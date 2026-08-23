@@ -1,15 +1,15 @@
-# The Provisional Republic & the Admiralty
+# The Republic & the Admiralty
 
-Ninety years into an interregnum it still calls temporary, the Provisional Republic holds the old flag, the old archives, and a writ that stops at the atmosphere — while the Admiralty of the Bastion Worlds holds the last working capital ships and a founding story that requires an enemy. Between them lies the era's central argument: whether the galaxy is restored by continuity or secured by force. These six NPCs are the faces a wayfinder crew will meet when either power comes calling.
+Recovered in the Core and absent out here since the Adjournment, the Republic arrives as charter ships: the old flag, the old archives, a writ that stopped where the relays did and now wants to move again — while the Admiralty of the Bastion Worlds holds the last working capital ships and a founding story that requires an enemy. Between them lies the era's central argument: whether the galaxy is restored by continuity or secured by force. These six NPCs are the faces a wayfinder crew will meet when either power comes calling.
 
 *GM file — contains faction cracks and campaign spoilers; do not share with players.*
 
 ---
 
-## The Provisional Republic
+## The Republic
 
 ### Senator Vekris Dahl
-*Nemesis — Provisional Republic — venerable Duros custodian of the idea*
+*Nemesis — the Republic — venerable Duros senator for the adjourned sectors*
 
 > He signed relief appropriations for worlds that no longer answer, and he can tell you the vote count from memory — asking him to actually govern is another matter.
 
@@ -25,10 +25,10 @@ Ninety years into an interregnum it still calls temporary, the Provisional Repub
 - **Equipment:** Senatorial robes of the old Republic, chamber comlink, a second comlink nobody knows about (encrypted), annotated datapad of ninety years of minutes.
 
 **Chassis:** Mon Mothma, Dawn of Rebellion (also reprinted in Allies and Adversaries) (adjustments: none — the human-to-Duros re-skin is purely cosmetic; the printed block carries no species abilities, and no combat gear is added because Dahl has no combat value by design).
-**Using him:** Dahl is roughly 160 years old and personally remembers the Republic solvent, which makes him a living Civic lore fragment — his testimony grants a boost die like any fragment, and it contradicts the documents now and then, because he was there and the documents were not. He is brilliant, kind, and terrified of being tested: he will grant the crew accreditation, archive access, and moral cover with real warmth, then delay any decision that could actually fail. Play his talents as an old lion's last teeth — Incite Rebellion is him quietly turning a port against an Admiralty prize crew with three sentences and a memory. He never draws a weapon; if violence reaches him, the campaign has already gone somewhere terrible.
+**Using him:** Dahl is roughly 160 years old and personally remembers the Republic solvent, which makes him a living Civic lore fragment — his testimony grants a boost die like any fragment, and it contradicts the documents now and then, because he was there and the documents were not. He voted for the Adjournment, has spent eighty years as the one seat that kept speaking for the Rim, and is brilliant, kind, and terrified of being tested: he will grant the crew accreditation, archive access, and moral cover with real warmth, then delay any decision that could actually fail. Play his talents as an old lion's last teeth — Incite Rebellion is him quietly turning a port against an Admiralty prize crew with three sentences and a memory. He never draws a weapon; if violence reaches him, the campaign has already gone somewhere terrible.
 
 ### Envoy-Archivist Calla Merion
-*Rival — Provisional Republic — field archivist and accreditor*
+*Rival — the Republic — field archivist and accreditor*
 
 > She can date a rutter by the smell of the binding glue, and she has never once fired the pistol regulations do not require her to carry.
 
@@ -47,7 +47,7 @@ Ninety years into an interregnum it still calls temporary, the Provisional Repub
 **Using her:** Merion issues the Republic's letters of accreditation and hunts Civic lore fragments in the field, which means she wants exactly what the party wants and can pay in paperwork that opens doors. With three ranks in every Knowledge skill she is the library's Civic-tag specialist — invaluable in Reconstruction scenes, and the natural source when the party's fragments skew Jedi or Sith (Vhail and Marn, on this same chassis by design, own the Jedi tag and relic forensics). As a rival she has no strain threshold and no combat value at all: threaten her and she folds, which is precisely the Republic's crack in miniature. Her earnest heresy: she has started to suspect the archives disagree with the Senate's official continuity story, and she keeps hunting anyway.
 
 ### Archive Wardens
-*Minion — Provisional Republic — ceremonial-but-earnest archive guards*
+*Minion — the Republic — ceremonial-but-earnest archive guards*
 
 > The breastplates are older than their grandparents and polished like the day the Senate still paid for polish.
 

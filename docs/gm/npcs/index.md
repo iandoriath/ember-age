@@ -24,9 +24,9 @@
 | Chartmistress Bel Nerra | Rival | Lamplighters | [Vesta-9 & the Crew's Orbit](session-one.md) |
 | Captain Vess Marrow + the *Larksong* crew | Rival + Minions | Independent | [Vesta-9 & the Crew's Orbit](session-one.md) |
 | Portmaster Grell | Rival | Okrent's Drift | [Vesta-9 & the Crew's Orbit](session-one.md) |
-| Senator Vekris Dahl | Nemesis | Provisional Republic | [Republic & Admiralty](republic-admiralty.md) |
-| Envoy-Archivist Calla Merion | Rival | Provisional Republic | [Republic & Admiralty](republic-admiralty.md) |
-| Archive Wardens | Minions | Provisional Republic | [Republic & Admiralty](republic-admiralty.md) |
+| Senator Vekris Dahl | Nemesis | Republic | [Republic & Admiralty](republic-admiralty.md) |
+| Envoy-Archivist Calla Merion | Rival | Republic | [Republic & Admiralty](republic-admiralty.md) |
+| Archive Wardens | Minions | Republic | [Republic & Admiralty](republic-admiralty.md) |
 | Lady Admiral Maren Voss | Nemesis | Admiralty | [Republic & Admiralty](republic-admiralty.md) |
 | Bastion Marines | Minions | Admiralty | [Republic & Admiralty](republic-admiralty.md) (also with the *Steadfast* boarding party in [Vesta-9](session-one.md)) |
 | Lieutenant-at-Writs Enna Calloway | Rival | Admiralty | [Republic & Admiralty](republic-admiralty.md) |

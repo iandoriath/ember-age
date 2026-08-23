@@ -55,7 +55,8 @@ nav:
       - "Terms of the Era": setting/glossary.md
   - Factions:
       - Overview: factions/index.md
-      - "The Provisional Republic": factions/provisional-republic.md
+      - "The Republic": factions/republic.md
+      - "The Jedi Order": factions/jedi-order.md
       - "The Admiralty": factions/admiralty.md
       - "The Vigil": factions/vigil.md
       - "The Inheritors": factions/inheritors.md

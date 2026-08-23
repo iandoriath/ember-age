@@ -10,7 +10,7 @@
 
 ## Playing one of the Awakened
 
-A Force-sensitive PC enters via the **Force-Sensitive Exile** or **Force-Sensitive Emergent** universal specializations, or **any Force and Destiny career**, at **Force Rating 1 — with no living teacher.**
+A Force-sensitive PC enters via the **Force-Sensitive Exile** or **Force-Sensitive Emergent** universal specializations, or **any Force and Destiny career**, at **Force Rating 1 — with no teacher who will have them.** The Temple takes children, not adults; the Jedi who never left the Rim are a rumor; whatever taught you, it was not a Jedi.
 
 Their growth runs through discovery, not tuition: see [The Force in the Ember Age](force.md). Knowledge is treasure.
 

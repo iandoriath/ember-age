@@ -1,14 +1,15 @@
 # Factions
 
-Six answers to the question **"what comes next,"** then two standing powers not in the race but impossible to ignore. Each entry: who they are, what they want, what they offer a wayfinder crew, and the crack running through them.
+Seven answers to the question **"what comes next,"** then two standing powers not in the race but impossible to ignore. Each entry: who they are, what they want, what they offer a wayfinder crew, and the crack running through them.
 
-## The six answers
+## The seven answers
 
 | Faction | What comes next | Offers the crew | The crack |
 |---|---|---|---|
-| [The Provisional Republic](provisional-republic.md) | Continuity — the old flag restored | Accreditation, archive access, moral cover | Custodians of the idea, terrified of being tested |
+| [The Republic](republic.md) | Reconnection — the adjourned Rim re-chartered on Coruscant's terms | Accreditation, archive access, the flag | It recovered by adjourning the Rim, and would rather nobody read the minutes |
+| [The Jedi Order](jedi-order.md) | The Temple's peace — and the Rim's gifted children, sent young | A Jedi's word, training for the very young, authentication | Peacekeepers now; is that what the Force is about? |
 | [The Admiralty](admiralty.md) | Naval protection — which is to say control | Escort, fuel, repair, genuine safety | Their founding story requires an enemy |
-| [The Vigil](vigil.md) | Veneration without practice, forever | Sanctuary, authentication, sealed places | The newly Force-sensitive split them in half |
+| [The Vigil](vigil.md) | Veneration without practice, forever | Sanctuary, authentication, sealed places | The newly Force-sensitive split them in half; the Order's return splits them again |
 | [The Inheritors](inheritors.md) | A monopoly on the returning Force | Real training, when no one else can teach | They don't know whose hand is at the top |
 | [The Lamplighters](lamplighters.md) | The network relit — in the order they choose | Charters, salvage rights, first-lighting fees | Whoever sets the order decides the century |
 | [The Kajidics](kajidics.md) | Nothing, thank you — scarcity is margin | Fuel, parts, black-lane rutters, no questions | The young Hutts have run the numbers |

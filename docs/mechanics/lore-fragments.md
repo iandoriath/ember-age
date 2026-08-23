@@ -14,7 +14,7 @@ Every fragment carries a tag — **Jedi**, **Sith**, or **Civic** — and fragme
 
 ### Reconstruction
 
-With **three or more fragments** bearing on one named **Question** ("What ended the Order?" "What is the Valley?"), the party may attempt a **Hard Knowledge (Lore)** check as a group scene.
+With **three or more fragments** bearing on one named **Question** ("Why did the Jedi leave the Rim?" "What is the Valley?"), the party may attempt a **Hard Knowledge (Lore)** check as a group scene.
 
 - If **all three tags** are represented: upgrade an ability die once.
 - If **only one tag** is represented: upgrade the difficulty once — *bias is real.*
@@ -31,7 +31,7 @@ With **three or more fragments** bearing on one named **Question** ("What ended 
 
 Keep a public list of the Questions the party is working, e.g.:
 
-- *What ended the Order?*
+- *Why did the Jedi leave the Rim?*
 - *What is the Valley?*
 - *Who lit Vesta-9?*
 - *What did the Adjournment actually adjourn?*

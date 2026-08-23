@@ -11,13 +11,13 @@ Seven battles end the New Sith Wars. Lord Kaan's thought bomb consumes both armi
 
 ## 0–12 AR — The Reformation and the Adjournment
 
-The Republic demilitarizes in relief, and grief curdles fast into blame: after a thousand years of Sith wars the graves do not distinguish which order dug them, and in the mouths of the bereaved, *Jedi* and *Sith* become one curse. What remains of the Order — the old, the healers, the librarians, those who were not at Ruusan — places itself under Senate oversight and tries to continue, and finds no one willing to fund it, house it, or hand it a child.
+The Republic demilitarizes in relief. The **Ruusan Reformation** dissolves the fleets and the Army of Light together, retires the Jedi Lords and their titles, and places what is left of the Order under the Chancellor — no longer generals, now **peacekeepers** who answer to the Senate. The Core rebuilds fast, because the Core was never the battlefield. Out here the graves do not distinguish which order dug them, and in the mouths of the bereaved, *Jedi* and *Sith* become one curse.
 
-In 12 AR, too few and too unwelcome to govern anything, the High Council votes to adjourn — **itself, not the Order.** No council can adjourn a covenant with the Force, and the Masters knew it; what they suspended was governance: admissions, ranks, rulings, the voice. The motion carries with one amendment, easy to miss in the minutes: **any three Masters, met together in a temple, may call the Council back into session.**
+The Order, grieving and thin, reforms itself in the same decade. The dead of Ruusan were mostly Jedi who had been taken late and trained in war; the Council resolves never to make that Order again. The new rule: find the gifted **young**, take them from their families to the one **Temple on Coruscant**, raise them without attachment, and hold them to the peace. It is a rule written for a Core that can be searched, by an Order too small to search anything else.
 
-The Council's last act deeds the sealed temples and relics — property, never the calling — to the custodial order that becomes [the Vigil](../factions/vigil.md); the archives disperse for a safekeeping that becomes scattering. The survivors go where the anger is thinnest and do the only thing left: one master, one or two pupils, wherever a rare gifted child can be found and a family persuaded.
+In 12 AR the Senate votes **the Adjournment**: the withered sectors' seats, charters and obligations are suspended *sine die* — "until reconnection" — and the Republic's writ formally stops where its relays did. The Rim is adjourned, not the Republic. The Order withdraws with it, sealing its Rim temples and deeding stone and relic — property, never the calling — to the custodial order that becomes [the Vigil](../factions/vigil.md), under one codicil easy to miss in the minutes: **any three Masters, met together in a sealed temple, may reopen it and seat a chapter of the Order there.**
 
-The Order never ends. It thins to a handful of hidden lineages and loses its voice.
+A few Jedi refuse the recall. They stay where the anger is thickest and do the only thing left: one master, one or two pupils, wherever a gifted child can be found and a family persuaded. The Temple calls them the withdrawn. They call themselves Jedi.
 
 ## 12–35 AR — The Long Exhale
 
@@ -29,11 +29,11 @@ No villain kills the HoloNet; appropriations committees do. Relay maintenance la
 
 ## 58–75 AR — The Drift and the Ebb
 
-Rim delegations stop attending a Senate whose sessions cost more to reach than they are worth, and quorum becomes ceremony. Meanwhile Force-sensitive births thin to almost nothing — **the Ebb** — and the few children born with the gift are hidden by their own families, because the surest way to lose a child is to let the neighbors hear the word *Jedi*. The hidden lineages starve for pupils, and most of them snap. It takes a generation for anyone to notice the Ebb at all, because there is no longer an Order counting.
+The last adjourned delegations stop sending even observers to a Senate whose sessions cost more to reach than they are worth. Meanwhile Force-sensitive births thin to almost nothing — **the Ebb** — and in the Core the Temple *notices*, because the Temple counts: its search returns fewer children each year, and the Order hardens its rule in response, taking every gifted child it can find, younger each decade. In the Rim, no one is counting. The few children born with the gift are hidden by their own families, because the surest way to lose a child is to let the neighbors hear the word *Jedi*. The withdrawn lineages starve for pupils, and most of them snap.
 
 ## 75–90 AR — The Dimming and the Awakening
 
-The war generation begins to die. News travels by courier and arrives as rumor, and on ten thousand worlds the Jedi and Sith pass from testimony into story. Then, in the same years, the Ebb reverses: Force-sensitive children are born in rising numbers, the oldest of them now young adults. The galaxy is forgetting the Force at exactly the moment the Force remembers the galaxy.
+The war generation begins to die. News travels by courier and arrives as rumor, and on ten thousand worlds the Jedi and Sith pass from testimony into story. Then, in the same years, the Ebb reverses: Force-sensitive children are born in rising numbers, the oldest of them now young adults. In the Core the Temple's creches fill and its doctrine holds. In the Rim the galaxy is forgetting the Force at exactly the moment the Force remembers the galaxy — and no one out here has seen a Jedi in a lifetime.
 
 In 90 AR, hyperspace beacon **Vesta-9**, dark for sixty years, relights. Nobody admits to lighting it.
 

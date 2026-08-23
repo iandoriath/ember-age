@@ -8,13 +8,14 @@ It is the year **90 AR** — After Ruusan. Ninety years ago the Jedi and the Sit
 
 You are **wayfinders**: part scout, part envoy, part archaeologist. Your crew reopens dead hyperspace lanes one relit beacon at a time — and decides, world by world, what the reconnected galaxy is going to be.
 
-## Ten words everyone uses
+## Eleven words everyone uses
 
 | Term | Meaning |
 |---|---|
 | **AR** | After Ruusan — the common calendar |
 | **the Withering** | The long decline your grandparents watched |
 | **the Awakening** | Force-sensitive children being born again, rising for 20 years |
+| **the Temple** | The Jedi — on Coruscant, where they take the gifted young. Nobody out here has seen one in a lifetime |
 | **wayfinder** | You: scout-envoy-archaeologist |
 | **rutter** | An inherited, annotated route-log — often worth more than the ship |
 | **scrip** | Sector currency; nobody's credit is good two systems over |
@@ -33,4 +34,4 @@ You are **wayfinders**: part scout, part envoy, part archaeologist. Your crew re
 
 ## The people who want things from you
 
-Six powers are racing to answer "what comes next" — the **Provisional Republic** (the old flag), the **Admiralty** (the last navy), the **Vigil** (keepers of the sealed relics), the **Inheritors** (whisper-network with forbidden answers), the **Lamplighters** (the beacon guild, your natural patron), and the **Kajidics** (the Hutts, who liked the dark just fine). Above the race sit the **Bounty Hunters' Guild** — closest thing to law — and the **Mandalorian clans** — the finest soldiers alive. All of them will offer your crew work. Most of the campaign is deciding whose coin you can live with.
+Seven powers are racing to answer "what comes next" — the **Republic** (the flag, back from the Core with forms to sign), the **Jedi Order** (the Temple, asking for your gifted children — none seen out here in a lifetime), the **Admiralty** (the last navy), the **Vigil** (keepers of the sealed relics), the **Inheritors** (whisper-network with forbidden answers), the **Lamplighters** (the beacon guild, your natural patron), and the **Kajidics** (the Hutts, who liked the dark just fine). Above the race sit the **Bounty Hunters' Guild** — closest thing to law — and the **Mandalorian clans** — the finest soldiers alive. All of them will offer your crew work. Most of the campaign is deciding whose coin you can live with.

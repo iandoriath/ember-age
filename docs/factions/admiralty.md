@@ -14,7 +14,7 @@ The relit lanes placed under naval protection — which is to say under naval co
 
 ## What they offer a wayfinder crew
 
-What no one else can: **escort, fuel, repair, genuine safety.** Their pitch lands because it is half true: the Republic's weakness invited the wars.
+What no one else can: **escort, fuel, repair, genuine safety.** Their pitch lands because it is half true: the Republic dissolved its fleets by law, adjourned the Rim, and sends paperwork and a Jedi to take it back.
 
 ## The crack
 

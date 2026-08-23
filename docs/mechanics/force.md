@@ -17,4 +17,4 @@ Open Force use in front of ordinary people:
 
 ## Morality
 
-Run it as written, but land the aftermath of Conflict harder: there are no counselors, no Council, no one to tell a Force-sensitive what the nightmares mean — **except whoever reached them first.**
+Run it as written, but land the aftermath of Conflict harder: there are no counselors out here, no Council that has heard of this sector, no one to tell a Force-sensitive what the nightmares mean — **except whoever reached them first.**

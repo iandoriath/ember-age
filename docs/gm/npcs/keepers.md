@@ -8,12 +8,25 @@ Ninety years after Ruusan, the trained Force survives in exactly two places, and
 
 ---
 
-## The Hidden Lineage
+## The Two Jedi
 
-The second fork of Dial 1, resolved: one Jedi lineage survives to 90 AR. It consists, in its entirety, of the two people below. Neither the Vigil, the Republic, nor the Inheritors know they exist. A living mentor is the rarest Wellspring in the era (Part VII) — which makes Yenna Sar, mechanically and politically, the most valuable being in the campaign.
+The second fork of Dial 1, resolved: the Order is alive on Coruscant and absent from the Reach, so the campaign's Jedi are two — the Temple's envoy, and the woman who never left. A living mentor is the rarest Wellspring in the era (Part VII); the Reach now has one of each kind, and they disagree about what a Jedi is.
+
+### Master N'Kata Del Gormo
+*Nemesis — the Jedi Order (the Temple) — the Core's Jedi in the Reach; run unstatted*
+
+> Four arms, four small black eyes, a serpentine lower half coiled on the deck of a Republic charter ship, and a twisted staff crowned with a crystal prism. He has come a very long way to ask for your children, and he asks beautifully.
+
+**Canon:** a Hysalrian Jedi Master of the post-Ruusan Order who, according to Legends rumor, later lived as a hermit on a swamp world and trained a crashed young Yoda and a human friend until a Republic ship answered their distress call; the dates are "lost." Nothing published contradicts his being the Temple's envoy to the Grumani Reach in 90 AR, and the legend's ending is this campaign's epilogue: Yoda is born in 104 AR, and the swamp is **Verdanth**, hop 3 on the Run.
+
+**Stats:** none yet. He is an envoy and a question, not an encounter; if a duel ever becomes possible, assign an official Jedi Master chassis and verify it against print before use, per this library's sourcing rule. Until then he does not roll.
+
+**Using him:** He arrives with the Republic's accreditation mission once the corridor is certified past Enarc (Act 2) — the Temple's rule in a warm voice: the gifted children found and sent, the sealed temples reopened under the Council, the withdrawn brought back into supervision. He is not a villain and the rule is not cruel; it is a doctrine written in grief by an Order that buried its late-trained Knights at Ruusan, and he believes it. What he has never been asked, by anyone who could make the question stick, is *is this what the Force is about?* — and the Reach will ask it, through the crew's gifted adult he cannot train and cannot stop watching, through Yenna Sar, through the Vigil's locked doors. Play his arc as a slow turn: the envoy who came for the Temple and, somewhere on Verdanth, stays for the swamp. If the campaign ends with him a hermit outside the Temple's system, you have set up the legend exactly as written.
+
+**Wants from the crew:** the names of the gifted (he will ask politely, once); passage to the sealed temples; an honest account of Yenna Sar, whom he has heard of and does not yet believe in. **Offers:** a Jedi's word, which is the one Republic writ that cannot be forged out here; Jedi-tag authentication from the one archive that was never scattered; and, to the gifted adult, something no one else in the galaxy will — attention without ownership, if the player can stand being watched.
 
 ### Master Yenna Sar
-*Nemesis — the Hidden Lineage (unaligned) — the last Jedi Master*
+*Nemesis — the Rim's Jedi (unaligned) — the one who never left*
 
 > A gray-braided dry-farmer on Veshet, off a dead spur of the Sanrafsix Corridor, who has drawn her heirloom lightsaber twice in thirty years and regretted it both times.
 
@@ -29,12 +42,12 @@ The second fork of Dial 1, resolved: one Jedi lineage survives to 90 AR. It cons
 - **Equipment:** Heirloom lightsaber, four generations old, kept wrapped in a seed-sack (Lightsaber; Damage 10; Critical 1; Range [Engaged]; Breach 1, Sunder, Vicious 2 — the Edge of the Empire–era printed saber profile, kept deliberately: the Master's blade hits like the legend says, where the library's other sabers use the Force and Destiny–line profiles).
 
 **Chassis:** Forsaken Jedi, Edge of the Empire Core Rulebook, p. 412 (adjustments: none).
-**Using her:** Yenna is third student of Master Tolum Rade, who studied under a survivor of Ruusan — a complete transmission of the lineage, which justifies her Force Rating 3 in an era of untrained Awakened (era rule, Part VII). She teaches nothing until convinced: convincing her is a campaign arc, not a check — she has buried two pupils' worth of hope and will test the party's intentions, their Morality, and how they have carried their own gifted — who they let near them, and what it cost — before she so much as admits the word *Jedi*. She avoids all open Force use (witness rule); if forced to draw the saber a third time, she fights to disengage and vanish, never to win. As a living-mentor Wellspring she can support Force Rating increases and new power trees — and as the only being alive with plausible standing to be called *Master*, she is one-third of a reconvened Council, which makes her a walking constitutional crisis for Act 3.
+**Using her:** Yenna is third student of Master Tolum Rade, a survivor of Ruusan who refused the Temple's recall in the year of the Adjournment and stayed in the Rim — a complete transmission of the old lineage, which justifies her Force Rating 3 in an era of untrained Awakened (era rule, Part VII). The Temple's word for her is *the withdrawn*; she has never heard it, and when Del Gormo says it to her face the campaign's Jedi question stops being abstract. She teaches nothing until convinced: convincing her is a campaign arc, not a check — she has buried two pupils' worth of hope and will test the party's intentions, their Morality, and how they have carried their own gifted — who they let near them, and what it cost — before she so much as admits the word *Jedi*. She avoids all open Force use (witness rule); if forced to draw the saber a third time, she fights to disengage and vanish, never to win. As a living-mentor Wellspring she can support Force Rating increases and new power trees — and as the only being alive with plausible standing to be called *Master*, she is one-third of a reconvened Council, which makes her a walking constitutional crisis for Act 3.
 
 ### Coll Bren
-*Rival — the Hidden Lineage (unaligned) — Yenna's only pupil*
+*Rival — the Rim's Jedi (unaligned) — Yenna's only pupil*
 
-> Mid-twenties, sunburnt, more comfortable fixing a moisture pump than holding a training saber; the entire next generation of the Jedi Order, and he suspects it.
+> Mid-twenties, sunburnt, more comfortable fixing a moisture pump than holding a training saber; the entire next generation of the Rim's Jedi, and he suspects it.
 
 | Brawn | Agility | Intellect | Cunning | Willpower | Presence |
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -48,7 +61,7 @@ The second fork of Dial 1, resolved: one Jedi lineage survives to 90 AR. It cons
 - **Equipment:** The lineage's second lightsaber — Yenna's own training blade, handed over this season with visible reluctance (Lightsaber; Damage 6; Critical 2; Range [Engaged]; Breach 1, Sunder), field robes cut and dyed to pass as farm leathers (+1 soak).
 
 **Chassis:** Jedi Padawan, Collapse of the Republic, p. 137 (adjustments: none).
-**Using him:** Coll is a rival — no strain threshold, strain he suffers becomes wounds — and it should show: he is brave, half-trained, and breakable, more farmhand than knight. Use him as the party's mirror for their own Awakened questions, as Yenna's tell (he is watchable where she is not), and as the stakes if the lineage is ever exposed — killing or turning Coll ends the Jedi succession as surely as killing Yenna. He has never used the Force in front of a stranger and will lie badly about it (witness rule; his "small luck that bends" is exactly the sign families on Veshet know to fear).
+**Using him:** Coll is a rival — no strain threshold, strain he suffers becomes wounds — and it should show: he is brave, half-trained, and breakable, more farmhand than knight. Use him as the party's mirror for their own Awakened questions, as Yenna's tell (he is watchable where she is not), and as the stakes if the lineage is ever exposed — killing or turning Coll ends the Rim's Jedi succession as surely as killing Yenna — and hands the question to Coruscant by default. He has never used the Force in front of a stranger and will lie badly about it (witness rule; his "small luck that bends" is exactly the sign families on Veshet know to fear).
 
 ---
 
@@ -108,7 +121,7 @@ Dial 1, statted. Bane, then Zannah, then Cognus — and the record goes silent, 
 
 - **The truth, all of it.** Verification is the point: she can tell a genuine relic from the Inheritors' best forgery at a glance, and the line's inventory of what survived Ruusan is the only honest one in the galaxy.
 - **The galaxy wrong, not ignorant.** Absence invites questions; error answers them. Counterfeits are left exactly where they lie, fake lineages are allowed to flourish, and a rival who has trained on a forgery is worth more to her alive than dead — until he starts to find real things.
-- **Exactly one heir.** Any third claim on the Sith inheritance — grave-robbers in costume (the Inheritors), a prophet in the Sith Worlds (Millennial), a reconvened Jedi Order strong enough to go looking — is not an enemy to be fought but a reader to be denied the book.
+- **Exactly one heir.** Any third claim on the Sith inheritance — grave-robbers in costume (the Inheritors), a prophet in the Sith Worlds (Millennial), a Temple that starts looking outward — is not an enemy to be fought but a reader to be denied the book.
 - **To be unnecessary.** Never a name in a dispatch; never a protagonist. The day anyone can point at Veritis is the day the century was wasted.
 
 **What Mendac wants** is simpler and younger: to be good enough. Anonymity is the grade; the Inheritors are the exam; and underneath the doctrine is an apprentice who has begun to suspect that patience is the Master's weapon against *them* as much as against the galaxy — which is the Rule of Two working as designed, and not this campaign's problem.

@@ -4,7 +4,7 @@
 
 | Faction | The crack | Clock (0–6) | Feeds the hinge |
 |---|---|:-:|---|
-| Provisional Republic | Custodians of the idea, terrified of being tested | 0 | The Founding Conclave's legitimacy fight |
+| Republic | Recovered by adjourning the Rim; wants it back on its terms | 0 | The Founding Conclave's legitimacy fight |
 | Admiralty | The founding story requires an enemy | 0 | **The Annexation** |
 | Vigil | Sacrilege vs. Order-reborn — custody of the Awakened | 0 | **The Vigil breaks** |
 | Inheritors | Nobody knows whose hand is at the top | 0 | **The Unveiling** → (Dial 1: the culling) |
@@ -16,7 +16,7 @@
 
 Use this space for who-knows-what, current attitude toward the crew, and debts either direction:
 
-### Provisional Republic
+### Republic
 —
 
 ### Admiralty

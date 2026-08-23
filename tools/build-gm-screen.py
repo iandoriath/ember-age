@@ -66,7 +66,8 @@ NAV_MAP = {
     "setting/glossary.md": "page:setting:glossary",
     "setting/geography.md": "page:setting:geography",
     "factions/index.md": "page:setting:factions",
-    "factions/provisional-republic.md": "page:setting:republic",
+    "factions/republic.md": "page:setting:republic",
+    "factions/jedi-order.md": "page:setting:jedi",
     "factions/admiralty.md": "page:setting:admiralty",
     "factions/vigil.md": "page:setting:vigil",
     "factions/inheritors.md": "page:setting:inheritors",
@@ -194,7 +195,7 @@ MODULE_FILES = [
     ("01", "gm/modules/01-the-light-on-vesta-9.md"),
 ]
 
-CLOCK_FACTIONS = {"Provisional Republic", "Admiralty", "Vigil", "Inheritors",
+CLOCK_FACTIONS = {"Republic", "Admiralty", "Vigil", "Inheritors",
                   "Lamplighters", "Kajidics", "The Awakening"}
 FRAGMENT_TAGS = {"Jedi", "Sith", "Civic"}
 
@@ -286,7 +287,8 @@ PAGES_SPEC = [
     ("setting", "glossary", "Terms of the Era", "setting/glossary.md"),
     ("setting", "geography", "The Road Back to the Hydian", "setting/geography.md"),
     ("setting", "factions", "Factions Overview", "factions/index.md"),
-    ("setting", "republic", "The Provisional Republic", "factions/provisional-republic.md"),
+    ("setting", "republic", "The Republic", "factions/republic.md"),
+    ("setting", "jedi", "The Jedi Order", "factions/jedi-order.md"),
     ("setting", "admiralty", "The Admiralty", "factions/admiralty.md"),
     ("setting", "vigil", "The Vigil", "factions/vigil.md"),
     ("setting", "inheritors", "The Inheritors", "factions/inheritors.md"),
@@ -304,13 +306,13 @@ PAGES_SPEC = [
 
 SEED = {
     "questions": [
-        "What ended the Order?",
+        "Why did the Jedi leave the Rim?",
         "What is the Valley?",
         "Who lit Vesta-9?",
         "What did the Adjournment actually adjourn?",
     ],
     "clocks": [
-        {"faction": "Provisional Republic", "crack": "Custodians of the idea, terrified of being tested", "value": 0, "notes": ""},
+        {"faction": "Republic", "crack": "Recovered by adjourning the Rim; wants it back on its terms", "value": 0, "notes": ""},
         {"faction": "Admiralty", "crack": "The founding story requires an enemy → the Annexation", "value": 0, "notes": ""},
         {"faction": "Vigil", "crack": "Sacrilege vs. Order-reborn — custody of the Awakened → the Vigil breaks", "value": 0, "notes": ""},
         {"faction": "Inheritors", "crack": "Nobody knows whose hand is at the top → the Unveiling", "value": 0, "notes": "Hold the Vesta-9 file on the crew — and its gifted (Dial 3)."},

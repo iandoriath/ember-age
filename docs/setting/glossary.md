@@ -11,7 +11,9 @@
 | **rutter** | An inherited, annotated route-log |
 | **scrip** | Sector currency |
 | **first-lighting** | Fee and honor for reopening a beacon |
-| **the Adjournment** | The High Council's vote to suspend itself sine die, 12 AR — the Order itself was never adjourned |
+| **the Adjournment** | The Senate's vote of 12 AR suspending the withered sectors' seats, charters and obligations sine die — the Rim was adjourned, not the Republic; the Order withdrew with it |
+| **the Temple** | The Jedi Order's one house, on Coruscant — where the gifted are sent, young, and not sent back |
+| **the withdrawn** | The Temple's word for the Jedi who refused the recall and stayed in the Rim. They call themselves Jedi |
 | **the Bastion Worlds** | The shipyard cluster the Admiralty governs |
 | **the black lanes** | The unregistered routes that never went dark |
 | **a posting** | A Guild bounty, the one writ that still travels |

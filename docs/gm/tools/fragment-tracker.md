@@ -6,7 +6,7 @@
 
 | Question | Fragments held | Tags represented | Reconstruction attempted? |
 |---|:-:|---|---|
-| What ended the Order? | 0 | — | — |
+| Why did the Jedi leave the Rim? | 0 | — | — |
 | What is the Valley? | 0 | — | — |
 | Who lit Vesta-9? | 0 | — | — |
 
