@@ -47,7 +47,7 @@
      "blurb":"A dead principality spur.","gm":{"seed":"","canon":"Knight Errant world.","factions":[]}},
     {"id":"gazzari","name":"Gazzari","x":1050,"y":450,"region":"reach","beacon":false,"alwaysLit":false,
      "blurb":"A dead principality spur — an old battlefield.","gm":{"seed":"The Scar (candidate)","canon":"Knight Errant battlefield.","factions":[]}},
-    {"id":"naboo","name":"Naboo","sub":"Enarc Run, off-chart","x":120,"y":430,"region":"hydian","beacon":false,"alwaysLit":true,
+    {"id":"naboo","name":"Naboo","sub":"Enarc Run, off-chart","x":140,"y":480,"region":"hydian","beacon":false,"alwaysLit":true,
      "blurb":"Where the Enarc Run leads, eventually — toward the Rimma.","gm":{"seed":"","canon":"Off-chart endpoint; living galaxy.","factions":[]}},
     {"id":"hutt-space","name":"Hutt Space","sub":"Triellus, off-chart","x":300,"y":900,"region":"hydian","beacon":false,"alwaysLit":true,
      "blurb":"The Triellus ring — Kajidic country.","gm":{"seed":"","canon":"Off-chart endpoint; Hutt ring.","factions":["kajidics"]}},

@@ -14,6 +14,7 @@
   #chart{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none}
   #chart.dragging{cursor:grabbing}
   #chart text{font-family:var(--disp);fill:var(--holo);letter-spacing:.12em;text-transform:uppercase;pointer-events:none;paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
+  #chart .sys text{pointer-events:auto}
   #chart .lbl{font-size:13px;font-weight:600}
   #chart .sub{font-size:9px;fill:var(--dim);letter-spacing:.18em}
   #chart .hop{font-size:9px;fill:var(--dim)}
@@ -82,12 +83,14 @@
   #panel .k{color:var(--dim);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;margin:.9rem 0 .2rem}
   #panel p{margin:.2rem 0;font-size:.95rem;font-family:system-ui,"Segoe UI",Roboto,sans-serif;line-height:1.5}
   #panel .x{position:absolute;right:.6rem;top:.5rem;background:none;border:0;color:var(--dim);font-size:1.2rem;cursor:pointer}
+  <!-- GM:start -->
   #panel .gm{border-top:1px dashed var(--ember);margin-top:1rem;padding-top:.4rem;display:none}
   body.gm-on #panel .gm{display:block}
   #panel .gm .k{color:var(--ember)}
   .ftag{display:inline-block;border:1px solid var(--ember);color:var(--gold);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;padding:.1rem .4rem;margin:.15rem .2rem 0 0}
   #chart .fac{font-size:7px;fill:var(--ember);letter-spacing:.1em;display:none}
   body.gm-on #chart .fac{display:block}
+  <!-- GM:end -->
 </style>
 </head>
 <body>
@@ -132,7 +135,7 @@ function loadLit() {
 }
 function saveLit() {
   try { localStorage.setItem(KEY, JSON.stringify([...lit])); } catch (e) {}
-  try { const u = new URL(location.href); u.searchParams.set("lit", [...lit].join(",")); history.replaceState(null, "", u); } catch (e) {}
+  try { const u = new URL(location.href); u.search = "?lit=" + [...lit].join(","); history.replaceState(null, "", u); } catch (e) {}
 }
 function toggleLit(id) { if (lit.has(id)) lit.delete(id); else lit.add(id); saveLit(); render(); openPanel(id); }
 lit = loadLit();
@@ -144,6 +147,7 @@ function el(tag, attrs = {}, parent) {
   if (parent) parent.appendChild(n);
   return n;
 }
+const esc = t => String(t).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function laneIsRelit(l) { const a = byId.get(l.from), b = byId.get(l.to); return l.kind === "dark" && a.beacon && b.beacon && isLit(a) && isLit(b); }
 function regionOf(a, b) { return (a.region === "reach" && b.region === "reach") ? "reach" : (a.region === "far" || b.region === "far") ? "far" : "hydian"; }
 
@@ -186,10 +190,12 @@ function render() {
     const lbl = el("text", {class:"lbl", x:16, y:4}, g); lbl.textContent = s.name;
     if (s.sub) { const sub = el("text", {class:"sub", x:16, y:16}, g); sub.textContent = s.sub; }
     if (s.hop !== undefined) { const h = el("text", {class:"hop", x:-10, y:-14, "text-anchor":"end"}, g); h.textContent = s.hop === 0 ? "⌂" : s.hop; }
+    <!-- GM:start -->
     if (s.gm && s.gm.factions && s.gm.factions.length) {
       const f = el("text", {class:"fac", x:16, y:s.sub ? 27 : 16}, g);
       f.textContent = s.gm.factions.map(x => x.split("-").map(w => w[0]).join("")).join(" · ");
     }
+    <!-- GM:end -->
     g.addEventListener("pointerenter", () => highlight(s.id));
     g.addEventListener("pointerleave", () => highlight(null));
     g.addEventListener("click", e => { e.stopPropagation(); if (!(drag && drag.moved)) openPanel(s.id); });
@@ -209,9 +215,9 @@ function highlight(id) {
 }
 
 function renderStatus() {
-  const chain = DATA.systems.filter(s => s.hop !== undefined).sort((a, b) => a.hop - b.hop).concat([byId.get("darkknell"), byId.get("eriadu")]);
+  const chain = DATA.systems.filter(s => s.hop !== undefined).sort((a, b) => a.hop - b.hop).concat(DATA.systems.filter(s => s.beacon && s.alwaysLit && s.hop === undefined));
   document.getElementById("status").innerHTML = `<span class="cap">Beacons</span>` + chain.map(s =>
-    `<span class="pip ${s.alwaysLit ? "always" : lit.has(s.id) ? "lit" : ""}" onclick="openPanel('${s.id}')" title="${s.name}"><i></i><span>${s.hop === 0 ? "⌂" : s.hop !== undefined ? s.hop : "★"}</span></span>`).join("");
+    `<span class="pip ${s.alwaysLit ? "always" : lit.has(s.id) ? "lit" : ""}" onclick="openPanel('${s.id}')" title="${esc(s.name)}"><i></i><span>${s.hop === 0 ? "⌂" : s.hop !== undefined ? s.hop : "★"}</span></span>`).join("");
 }
 
 /* ---- pan / zoom ---- */
@@ -221,7 +227,8 @@ function applyView() {
   let {x, y, w, h} = vb;
   if (w / h < aspect) { const nw = h * aspect; x -= (nw - w) / 2; w = nw; } else { const nh = w / aspect; y -= (nh - h) / 2; h = nh; }
   chart.setAttribute("viewBox", `${x} ${y} ${w} ${h}`);
-  chart.dataset.zoom = vb.w > 1700 ? "far" : vb.w > 1450 ? "wide" : "reach";
+  const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx < 1400 && cy > 350;
+  chart.dataset.zoom = vb.w > 1700 ? "far" : vb.w > 1450 ? "wide" : inReach ? "reach" : "far";
 }
 function setView(v) { vb = {...v}; applyView(); }
 function frame(name) { setView(VIEWS[name]); }
@@ -233,22 +240,43 @@ function zoomAt(factor, cx, cy) {
   vb.w = nw; vb.h = vb.h / f;
   vb.x = px - (px - vb.x) / f; vb.y = py - (py - vb.y) / f;
   applyView();
+  if (drag) { drag.x = cx; drag.y = cy; drag.vx = vb.x; drag.vy = vb.y; }
 }
 function zoomBy(f) { const r = chart.getBoundingClientRect(); zoomAt(f, r.left + r.width / 2, r.top + r.height / 2); }
 chart.addEventListener("wheel", e => { e.preventDefault(); zoomAt(e.deltaY < 0 ? 1.15 : 1 / 1.15, e.clientX, e.clientY); }, {passive:false});
-let drag = null;
-chart.addEventListener("pointerdown", e => { if (e.button !== 0) return; drag = {x:e.clientX, y:e.clientY, vx:vb.x, vy:vb.y, moved:false}; });
+let drag = null, pinch = 0;
+const pointers = new Map();
+function pinchSpan() { const [a, b] = [...pointers.values()]; return {d:Math.hypot(b.x - a.x, b.y - a.y), mx:(a.x + b.x) / 2, my:(a.y + b.y) / 2}; }
+chart.addEventListener("pointerdown", e => {
+  if (e.button !== 0) return;
+  if (e.pointerType === "mouse") pointers.clear();
+  pointers.set(e.pointerId, {x:e.clientX, y:e.clientY});
+  if (pointers.size === 2) { drag = null; chart.classList.remove("dragging"); pinch = pinchSpan().d; return; }
+  if (pointers.size === 1) drag = {x:e.clientX, y:e.clientY, vx:vb.x, vy:vb.y, moved:false};
+});
 window.addEventListener("pointermove", e => {
+  if (pointers.has(e.pointerId)) pointers.set(e.pointerId, {x:e.clientX, y:e.clientY});
+  if (pointers.size === 2) {
+    const p = pinchSpan();
+    if (pinch > 0 && p.d > 0) zoomAt(p.d / pinch, p.mx, p.my);
+    pinch = p.d;
+    return;
+  }
   if (!drag) return;
   const r = chart.getBoundingClientRect(), k = currentBox()[2] / r.width;
   const dx = (e.clientX - drag.x) * k, dy = (e.clientY - drag.y) * k;
   if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) > 3) { drag.moved = true; chart.classList.add("dragging"); }
   vb.x = drag.vx - dx; vb.y = drag.vy - dy; applyView();
 });
-function endDrag() { chart.classList.remove("dragging"); setTimeout(() => { drag = null; }, 0); }
+function endDrag(e) {
+  if (e) pointers.delete(e.pointerId);
+  if (pointers.size < 2) pinch = 0;
+  chart.classList.remove("dragging"); setTimeout(() => { drag = null; }, 0);
+}
 window.addEventListener("pointerup", endDrag);
 window.addEventListener("pointercancel", endDrag);
 chart.addEventListener("click", e => { if (!(drag && drag.moved) && (e.target === chart || e.target.tagName === "rect")) closePanel(); });
+window.addEventListener("keydown", e => { if (e.key === "Escape") closePanel(); });
 window.addEventListener("resize", applyView);
 
 /* ---- panel / share / GM (Task 4) ---- */
@@ -258,17 +286,18 @@ function openPanel(id) {
   panelId = id;
   const lanes = [...new Set(DATA.lanes.filter(l => l.from === id || l.to === id).map(l => l.name || "dead spur"))];
   const status = s.alwaysLit ? "ALIVE — never withered" : s.beacon ? (lit.has(id) ? "LIT" : "DARK") : "no beacon";
-  const esc = t => String(t).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const region = {reach:"The Grumani Reach", hydian:"The living galaxy", far:"The far road"}[s.region];
   let h = `<h2 class="${isLit(s) ? "lit" : ""}">${esc(s.name)}</h2>` + (s.sub ? `<div class="k">${esc(s.sub)}</div>` : "");
   h += `<div class="k">Region</div><p>${region}${s.hop !== undefined ? ` · hop ${s.hop}` : ""}</p>`;
   h += `<div class="k">Lanes</div><p>${lanes.map(esc).join(" · ") || "—"}</p>`;
   h += `<div class="k">Beacon</div><p>${status}${s.beacon && !s.alwaysLit ? ` &nbsp; <button class="hb ${lit.has(id) ? "on" : ""}" onclick="toggleLit('${id}')">${lit.has(id) ? "Darken" : "Relight"}</button>` : ""}</p>`;
   h += `<div class="k">Chart note</div><p>${esc(s.blurb)}</p>`;
+  <!-- GM:start -->
   if (s.gm) {
     h += `<div class="gm"><div class="k">GM — episode seed</div><p>${esc(s.gm.seed || "—")}</p><div class="k">GM — canon</div><p>${esc(s.gm.canon || "—")}</p>`;
     h += `<div class="k">GM — factions present</div><p>${(s.gm.factions || []).map(f => `<span class="ftag">${esc(f.replace(/-/g, " "))}</span>`).join("") || "—"}</p></div>`;
   }
+  <!-- GM:end -->
   document.getElementById("panel-body").innerHTML = h;
   document.getElementById("panel").classList.add("open");
 }

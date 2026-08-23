@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+import pytest
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs/setting/systems.json"
 
@@ -63,13 +65,22 @@ def test_gm_edition_keeps_gm():
 
 def test_embedded_json_is_script_safe():
     d = load()
-    d["systems"][0]["blurb"] = "bad </script> tag"
+    d["systems"][0]["blurb"] = "bad </script> tag and <!--<script comment"
     out = bsm.build("player", d, STUB)
     assert "</script> tag" not in out
     assert "<\\/script> tag" in out
+    assert "<!--<script" not in out
+    assert "<\\!--<script comment" in out
 
 
-def test_template_renders_every_system_and_hud_controls():
+def test_unbalanced_gm_markers_are_rejected():
+    with pytest.raises(SystemExit):
+        bsm.build("player", load(), STUB.replace("<!-- GM:end -->", ""))
+    with pytest.raises(SystemExit):
+        bsm.build("gm", load(), STUB.replace("<!-- GM:end -->", ""))
+
+
+def test_template_has_hud_controls_and_edition_split():
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
     out = bsm.build("player", load(), tpl)
     for token in ('id="chart"', 'id="hud"', 'id="status"', 'id="panel"', "Frame the Reach", "Frame the Road", "fonts.googleapis.com/css2?family=Rajdhani"):
@@ -98,3 +109,22 @@ def test_coruscant_is_the_coreward_end_of_the_road():
     assert lane["kind"] == "living" and lane["name"] == "Perlemian Trade Route"
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
     assert "road:{x:0, y:0, w:2100, h:1200}" in tpl
+
+
+def test_committed_outputs_match_fresh_build():
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    d = load()
+    assert (ROOT / "system-map.html").read_text(encoding="utf-8") == bsm.build("gm", d, tpl)
+    assert (ROOT / "player-aids/system-map.html").read_text(encoding="utf-8") == bsm.build("player", d, tpl)
+
+
+def test_real_player_build_is_gm_free_and_complete():
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    d = load()
+    player, gm = bsm.build("player", d, tpl), bsm.build("gm", d, tpl)
+    for token in ('"gm":', "episode seed", "GM — canon", "factions present", "ftag", 'class="fac"', "gm-on",
+                  "toggleGM", "importSave", "gm-switch", "Import save", "GM:start", "GM:end"):
+        assert token not in player, token
+    for s in d["systems"]:
+        assert f'"id": "{s["id"]}"' in player, s["id"]
+        assert f'"id": "{s["id"]}"' in gm, s["id"]

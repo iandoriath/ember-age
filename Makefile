@@ -21,7 +21,7 @@ aids:
 map:
 	python3 tools/build-system-map.py
 
-## Strict-build wiki + GM screen + player aids (what CI runs)
+## Strict-build wiki + GM screen + player aids + system map (what CI runs)
 build:
 	mkdocs build --strict -f mkdocs.yml
 	python3 tools/build-gm-screen.py
@@ -29,4 +29,4 @@ build:
 	python3 tools/build-system-map.py
 
 clean:
-	rm -rf site-gm gm-screen.html
+	rm -rf site-gm gm-screen.html system-map.html player-aids/system-map.html
