@@ -18,4 +18,4 @@ The network relit — ***in the order they choose.***
 
 ## The crack
 
-Whoever sets the relighting order decides which worlds matter for the next century. The Grandmaster of Charts knows this, every faction knows she knows, and her neutrality is not unpurchasable — the price is merely very high.
+Whoever sets the relighting order decides which worlds matter for the next century. The Grandmaster of Charts knows this, every faction knows she knows, and her neutrality is not unpurchasable — the price is merely very high. The guild's insistence that beacons relight in *its* sequence, and only its sequence, is the one thing about it that is not for sale — and the one thing about it worth asking why.

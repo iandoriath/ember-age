@@ -8,7 +8,7 @@
 | Admiralty | The founding story requires an enemy | 0 | **The Annexation** |
 | Vigil | Sacrilege vs. Order-reborn — custody of the Awakened | 0 | **The Vigil breaks** |
 | Inheritors | Nobody knows whose hand is at the top | 0 | **The Unveiling** → (Dial 1: the culling) |
-| Lamplighters | The relighting order is for sale, price very high | 0 | **The Conclave of Charts** (rigged — Dial 3 mole) |
+| Lamplighters | The relighting order is for sale, price very high | 0 | **The Conclave of Charts** (rigged twice — the patron bought the order, the Inheritors' mole stole it; Dial 3) |
 | Kajidics | The young Hutts have run the numbers | 0 | Clan war, one bad season away |
 | The Awakening | Every public display raises the temperature | 0 | **The Awakening goes public** |
 
@@ -29,7 +29,7 @@ Use this space for who-knows-what, current attitude toward the crew, and debts e
 *(Dial 3: they hold the Vesta-9 file on the crew — and its gifted — from session one.)*
 
 ### Lamplighters
-*(Dial 3: Chartkeeper Denno Pike is the Inheritors' mole — see the [NPC library](../npcs/vigil-inheritors.md).)*
+*(Dial 3: the guild's coreward patron is a Sith front and the relighting order is its search pattern — see [Keepers of the Flame](../npcs/keepers.md), the Patronage. Chartkeeper Denno Pike is the Inheritors' mole on top of that — see the [NPC library](../npcs/vigil-inheritors.md).)*
 
 ### Kajidics
 —

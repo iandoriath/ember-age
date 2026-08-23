@@ -29,10 +29,10 @@
 3. Keep the [session one NPC file](../npcs/session-one.md) open — the whole cast is statted there, marines and minion math included.
 4. Pick two or three [Act 1 episode seeds](../../campaign/act-1.md) to place along the Duros Space Run chain (see [the geography page](../../setting/geography.md) for the real systems, Enarc through Jutrand) and pencil them onto the [beacon map](../tools/beacon-map.md).
 5. Make the fragment card: *Grandmother Osk's rutter, page 40* — form, tag, Question, and its load-bearing claim written on a physical card you can hand across the table.
-6. Decide privately how @@npc:Keeper Adressa Vhail@@ reached the core before anyone — mundane, stranded, or something stranger. The Dial 3 observer is never her; it is an Inheritor hull in the arrival swarm (see the danger box below) — decide only which hull.
+6. Decide privately how @@npc:Keeper Adressa Vhail@@ reached the core before anyone — mundane, stranded, or something stranger. Neither she nor anyone on camera lit the beacon: the Sith apprentice did, a week ago, and is long gone (Dial 3). The Inheritor observer is an unremarkable hull in the arrival swarm (see the danger box below) — decide only which hull.
 
 !!! danger "GM only — Dial 3 is on the field"
-    Vesta-9 was Inheritor bait, and an Inheritor observer is present at the relight: an unremarkable hull in the arrival swarm that files no claim and asks no questions. Do not cast them, do not name them, do not let the camera find them. They pay off silently in The Out. See [GM Truths](../truths.md).
+    Vesta-9 was lit by the Sith apprentice, to reopen the Reach for a holocron hunt; nothing on the field tonight knows that, and nothing should. What *is* on the field is an Inheritor observer — grave-robbers notice when a tomb opens — an unremarkable hull in the arrival swarm that files no claim and asks no questions. Do not cast them, do not name them, do not let the camera find them. They pay off silently in The Out. If the crew examines the core, the one honest trace is that it was woken by hand, competently, by someone who knew the old protocols and left nothing else. See [GM Truths](../truths.md).
 
 !!! tip "Table talk before the dice"
     If session zero did not already do it, say the era's thesis line aloud before the cold open — *nobody broke the galaxy; everyone just stopped holding it up* — and remind the table that in this era the Force is not a skill, it is an event. Both lines pay for themselves by Scene 4.
@@ -194,7 +194,7 @@ When the page lands, hand over the card and log it:
 
 | If they ask… | She answers |
 |---|---|
-| "Who lit it?" | "Not my order. We do not wake things. Ask instead who *benefits* from a counted harvest — and count who arrives to do the counting." |
+| "Who lit it?" | "Not my order. We do not wake things. Ask instead who *benefits* from an opened door — and notice who arrives already knowing which doors come next." |
 | "How did you get here?" | A psalm about doors — but if the crew was honest with her about the resonance by session's end, she adds, quietly: "I was brought. I have not yet decided by what." |
 | Anything about the old Order, the Valley, or relic law | A true, careful answer worth a Jedi-tag lead — name where a fragment might be found in the Grumani Reach, keyed to one of your seeded episode worlds. |
 
@@ -264,7 +264,7 @@ Before the bookkeeping, settle debts on-screen: Grell's cut (if signed) transmit
 
 @@action:fragment {"name":"The canyon dream (one of the crew's)","form":"living witness — a gifted PC","tag":"Jedi","question":"What is the Valley?","claim":"the canyon is full of light, and the light is people","holder":"crew","status":"trusted"}@@
 
-3. *The quiet one. GM only — do this where the players cannot see it. The unremarkable hull in the arrival swarm files its census: the crew, the ship, the certified corridor — and which of the names the beacon answered.*
+3. *The quiet one. GM only — do this where the players cannot see it. The unremarkable hull in the arrival swarm files its census: the crew, the ship, the certified corridor — and which of the names the beacon answered. The Inheritors did not light this beacon; they are the second party to arrive at a door somebody else opened, and they intend to be first through the next one.*
 
 @@action:clock {"faction":"Inheritors","delta":1,"note":"Dial 3 — the observer files the Vesta-9 census: the crew — and its gifted — are now in an Inheritor file"}@@
 

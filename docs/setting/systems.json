@@ -2,7 +2,7 @@
   "systems": [
     {"id":"bannistar","name":"Bannistar Station","sub":"Okrent's Drift","x":200,"y":700,"region":"reach","beacon":true,"alwaysLit":false,"hop":0,
      "blurb":"The great fuel gantries, and Okrent's Drift — the port that grew on their back. The frayed end of the living Duros Space Run. Its beacon, Vesta-9, was relit in 90 AR — nobody admits to lighting it.",
-     "gm":{"seed":"Session One — The Light on Vesta-9","canon":"Canonically a massive refueling depot (attested in Clone Wars-era sources, 900 years later — use freely). Vesta-9 is the beacon here; certified by Chartmistress Bel Nerra (Lamplighters).","factions":["vigil","admiralty","lamplighters"]}},
+     "gm":{"seed":"Session One — The Light on Vesta-9","canon":"Canonically a massive refueling depot (attested in Clone Wars-era sources, 900 years later — use freely). Vesta-9 is the beacon here; certified by Chartmistress Bel Nerra (Lamplighters). Dial 3: the Sith apprentice lit it.","factions":["vigil","admiralty","lamplighters"]}},
     {"id":"enarc","name":"Enarc","x":330,"y":640,"region":"reach","beacon":true,"alwaysLit":false,"hop":1,
      "blurb":"A dark crossroads: the Enarc Run (toward Naboo and the Rimma) and the Hutt-ringed Triellus both once met the Run here.",
      "gm":{"seed":"The Toll","canon":"Real junction: Enarc Run + Triellus (Hutt space ring) — natural Kajidic chokepoint.","factions":["kajidics"]}},
