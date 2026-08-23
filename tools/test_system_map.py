@@ -113,7 +113,7 @@ def test_coruscant_is_the_coreward_end_of_the_road():
     lane = next(l for l in d["lanes"] if {l["from"], l["to"]} == {"brentaal", "coruscant"})
     assert lane["kind"] == "living" and lane["name"] == "Perlemian Trade Route"
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
-    assert "road:{x:-800, y:0, w:3100, h:1250}" in tpl
+    assert "road:{x:40, y:0, w:2900, h:1660}" in tpl
 
 
 def test_committed_outputs_match_fresh_build():

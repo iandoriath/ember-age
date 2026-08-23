@@ -124,7 +124,7 @@
 <div id="fx"></div>
 <div id="hud">
   <div class="frame"></div>
-  <div id="title"><h1>Nav<b>·</b>Chart — The Grumani Reach</h1><small>Duros Space Run · 90 AR · beacon status live · schematic — not to scale</small></div>
+  <div id="title"><h1>Nav<b>·</b>Chart — The Grumani Reach</h1><small>Duros Space Run · 90 AR · beacon status live · bearings per the Atlas grid</small></div>
   <div id="ctl">
     <button class="hb" onclick="zoomBy(1.3)">+</button><button class="hb" onclick="zoomBy(1/1.3)">−</button>
     <button class="hb" onclick="frame('reach')">Frame the Reach</button>
@@ -146,7 +146,7 @@ const DATA = JSON.parse(document.getElementById("data").textContent);
 const byId = new Map(DATA.systems.map(s => [s.id, s]));
 const SVG = "http://www.w3.org/2000/svg";
 const chart = document.getElementById("chart");
-const VIEWS = {reach:{x:60, y:380, w:1340, h:760}, road:{x:-800, y:0, w:3100, h:1250}};
+const VIEWS = {reach:{x:240, y:820, w:1800, h:820}, road:{x:40, y:0, w:2900, h:1660}};
 let vb = {...VIEWS.reach};
 
 /* ---- lit state (Task 4 adds persistence) ---- */
@@ -251,12 +251,14 @@ function render() {
   }
   const cor = byId.get("coruscant");
   if (cor) {
-    const rx = -60, ry = 1180, ang = Math.atan2(cor.y - ry, cor.x - rx) * 180 / Math.PI;
-    const rose = el("g", {class:"rose", transform:`translate(${rx} ${ry}) rotate(${ang}) scale(1.25)`}, chart);
-    el("path", {class:"roseline", d:"M-26,0H22 M0,-26V26"}, rose);
-    el("path", {class:"rosehead", d:"M30,0 l-8,-4.5 v9 z"}, rose);
-    const rl = (x, y, txt) => { const n = el("text", {class:"roselbl", x, y, "text-anchor":"middle"}, rose); n.textContent = txt; };
-    rl(58, 3, "COREWARD"); rl(-52, 3, "RIMWARD"); rl(0, -32, "SPINWARD"); rl(0, 40, "TRAILING");
+    const rx = 2620, ry = 1480, ang = Math.atan2(cor.y - ry, cor.x - rx);
+    const rose = el("g", {class:"rose"}, chart);
+    const P = (r, a) => [rx + r * Math.cos(a), ry + r * Math.sin(a)];
+    const [hx, hy] = P(30, ang), [tx, ty] = P(26, ang + Math.PI);
+    el("path", {class:"roseline", d:`M${tx},${ty} L${hx},${hy} M${P(26, ang - Math.PI / 2)} L${P(26, ang + Math.PI / 2)}`}, rose);
+    el("path", {class:"rosehead", d:`M${P(38, ang)} L${P(26, ang - 0.16)} L${P(26, ang + 0.16)} z`}, rose);
+    const rl = (r, a, txt) => { const [x, y] = P(r, a); const n = el("text", {class:"roselbl", x, y: y + 3, "text-anchor":"middle"}, rose); n.textContent = txt; };
+    rl(62, ang, "COREWARD"); rl(54, ang + Math.PI, "RIMWARD"); rl(52, ang - Math.PI / 2, "SPINWARD"); rl(52, ang + Math.PI / 2, "TRAILING");
   }
   renderStatus();
   applyView();
@@ -284,8 +286,8 @@ function applyView() {
   let {x, y, w, h} = vb;
   if (w / h < aspect) { const nw = h * aspect; x -= (nw - w) / 2; w = nw; } else { const nh = w / aspect; y -= (nh - h) / 2; h = nh; }
   chart.setAttribute("viewBox", `${x} ${y} ${w} ${h}`);
-  const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx < 1400 && cy > 350;
-  chart.dataset.zoom = vb.w > 1700 ? "far" : vb.w > 1450 ? "wide" : inReach ? "reach" : "far";
+  const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx < 1850 && cy > 800;
+  chart.dataset.zoom = vb.w > 2300 ? "far" : vb.w > 1950 ? "wide" : inReach ? "reach" : "far";
 }
 function setView(v) { vb = {...v}; applyView(); }
 function frame(name) { setView(VIEWS[name]); }
@@ -345,7 +347,7 @@ function openPanel(id) {
   const status = s.alwaysLit ? "ALIVE — never withered" : s.beacon ? (lit.has(id) ? "LIT" : "DARK") : "no beacon";
   const region = {reach:"The Grumani Reach", hydian:"The living galaxy", far:"The far road"}[s.region];
   let h = `<h2 class="${isLit(s) ? "lit" : ""}">${esc(s.name)}</h2>` + (s.sub ? `<div class="k">${esc(s.sub)}</div>` : "");
-  h += `<div class="k">Region</div><p>${region}${s.hop !== undefined ? ` · hop ${s.hop}` : ""}</p>`;
+  h += `<div class="k">Region</div><p>${region}${s.grid ? ` · grid ${esc(s.grid)}` : ""}${s.hop !== undefined ? ` · hop ${s.hop}` : ""}</p>`;
   h += `<div class="k">Lanes</div><p>${lanes.map(esc).join(" · ") || "—"}</p>`;
   h += `<div class="k">Beacon</div><p>${status}${s.beacon && !s.alwaysLit ? ` &nbsp; <button class="hb ${lit.has(id) ? "on" : ""}" onclick="toggleLit('${id}')">${lit.has(id) ? "Darken" : "Relight"}</button>` : ""}</p>`;
   h += `<div class="k">Chart note</div><p>${esc(s.blurb)}</p>`;

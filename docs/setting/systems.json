@@ -1,155 +1,1039 @@
 {
-  "systems": [
-    {"id":"bannistar","name":"Bannistar Station","sub":"Okrent's Drift","x":200,"y":700,"region":"reach","beacon":true,"alwaysLit":false,"hop":0,
-     "blurb":"The great fuel gantries, and Okrent's Drift — the port that grew on their back. The frayed end of the living Duros Space Run. Its beacon, Vesta-9, was relit in 90 AR — nobody admits to lighting it.",
-     "gm":{"seed":"Session One — The Light on Vesta-9","canon":"Canonically a massive refueling depot (attested in Clone Wars-era sources, 900 years later — use freely). Vesta-9 is the beacon here; certified by Chartmistress Bel Nerra (Lamplighters). Dial 3: the Sith apprentice lit it.","factions":["vigil","admiralty","lamplighters"]}},
-    {"id":"enarc","name":"Enarc","x":330,"y":640,"region":"reach","beacon":true,"alwaysLit":false,"hop":1,
-     "blurb":"A dark crossroads: the Enarc Run (toward Naboo and the Rimma) and the Hutt-ringed Triellus both once met the Run here.",
-     "gm":{"seed":"The Toll","canon":"Real junction: Enarc Run + Triellus (Hutt space ring) — natural Kajidic chokepoint.","factions":["kajidics"]}},
-    {"id":"alui","name":"Alui","wpTitle":"Alui system/Legends","x":450,"y":660,"region":"reach","beacon":true,"alwaysLit":false,"hop":2,
-     "blurb":"First of the deep-Reach worlds.",
-     "gm":{"seed":"","canon":"Route stop; blank canvas.","factions":[]}},
-    {"id":"verdanth","name":"Verdanth","x":560,"y":720,"region":"reach","beacon":true,"alwaysLit":false,"hop":3,
-     "blurb":"Jungle world.",
-     "gm":{"seed":"The Oracle of Brel (Brel = a settlement moon here?)","canon":"Jungle world; otherwise blank.","factions":[]}},
-    {"id":"aplooine","name":"Aplooine","x":660,"y":650,"region":"reach","beacon":true,"alwaysLit":false,"hop":4,
-     "blurb":"Quiet agrarian survivor.",
-     "gm":{"seed":"The Ration Engine or The Five Systems","canon":"Blank canvas.","factions":["republic"]}},
-    {"id":"sanrafsix","name":"Sanrafsix","x":760,"y":700,"region":"reach","beacon":true,"alwaysLit":false,"hop":5,
-     "blurb":"The great dead hub — its bazaars thrived on the last war's economy and died with it. Junction of the smugglers' Sanrafsix Corridor.",
-     "gm":{"seed":"The Memory Market","canon":"Great dead trade hub of the New Sith Wars economy — provenance bazaars fit perfectly. Don't crater it: alive in later-era sources.","factions":["kajidics","bounty-hunters-guild"]}},
-    {"id":"heptooine","name":"Heptooine","x":880,"y":680,"region":"reach","beacon":true,"alwaysLit":false,"hop":6,
-     "blurb":"The Run's last waystop.",
-     "gm":{"seed":"The Mausoleum Yards","canon":"Route stop.","factions":[]}},
-    {"id":"jutrand","name":"Jutrand","x":1040,"y":700,"region":"reach","beacon":true,"alwaysLit":false,"hop":7,
-     "blurb":"City-planet; capital of a dead Sith principality, haunted by its own grandeur.",
-     "gm":{"seed":"The Sealed Enclave or The Dead Letter","canon":"Ex-Bactranate capital — haunted grandeur. Inherit the Knight Errant (1032 BBY) state.","factions":["inheritors","vigil"]}},
-    {"id":"darkknell","name":"Darkknell","sub":"Knel'char system","x":1250,"y":620,"region":"reach","beacon":true,"alwaysLit":true,
-     "blurb":"The lights come back on: a trinary-sun trade city that never stopped, the Hydian Way's local anchor.",
-     "gm":{"seed":"Act 1 finish line","canon":"Never withered. 'An important trading center for millennia,' trinary suns. Wither around it, never through it.","factions":["admiralty","republic"]}},
-    {"id":"eriadu","name":"Eriadu","x":1300,"y":790,"region":"reach","beacon":true,"alwaysLit":true,
-     "blurb":"One Hydian hop south: an old, modest world of shellwork jewelry sitting on the most valuable crossroads in the southern Rim — the Hydian Way, the Rimma Trade Route and the minor Lipsec Run. Rumors of coreward money.",
-     "gm":{"seed":"Act 2 stakes","canon":"At 910 BBY modest and ancient. The Quintad (Corulag oligarch families) canonically arrive ~900 BBY. The crew's relit corridor is part of why the money comes.","factions":["admiralty","republic","kajidics"]}},
-
-    {"id":"fostin-nine","name":"Fostin Nine","x":800,"y":850,"region":"reach","beacon":false,"alwaysLit":false,
-     "blurb":"First stop down the Sanrafsix Corridor, a notorious smugglers' road.","gm":{"seed":"","canon":"Sanrafsix Corridor.","factions":["kajidics"]}},
-    {"id":"syned","name":"Syned","x":880,"y":960,"region":"reach","beacon":false,"alwaysLit":false,
-     "blurb":"Corridor waypoint.","gm":{"seed":"","canon":"Sanrafsix Corridor.","factions":[]}},
-    {"id":"omwat","name":"Omwat","x":980,"y":1040,"region":"reach","beacon":false,"alwaysLit":false,
-     "blurb":"The Corridor runs on past here into Hutt-adjacent space.","gm":{"seed":"","canon":"Sanrafsix Corridor.","factions":[]}},
-    {"id":"veshet","name":"Veshet","wpSkip":true,"x":700,"y":900,"region":"reach","beacon":false,"alwaysLit":false,
-     "blurb":"A settlement off a dead spur of the Corridor.","gm":{"seed":"Yenna Sar's Veshet","canon":"Off a dead spur of the Sanrafsix Corridor.","factions":["lamplighters"]}},
-    {"id":"chelloa","name":"Chelloa","x":520,"y":520,"region":"reach","beacon":false,"alwaysLit":false,
-     "blurb":"A dead principality spur. Baradium-scarred.","gm":{"seed":"The Scar (candidate)","canon":"Devastated in Knight Errant (1032 BBY). Floor, not ceiling.","factions":[]}},
-    {"id":"byllura","name":"Byllura","x":640,"y":480,"region":"reach","beacon":false,"alwaysLit":false,
-     "blurb":"A dead principality spur.","gm":{"seed":"","canon":"The Dyarchy fell here (Knight Errant).","factions":["inheritors"]}},
-    {"id":"aquilaris","name":"Aquilaris","x":900,"y":520,"region":"reach","beacon":false,"alwaysLit":false,
-     "blurb":"A dead principality spur.","gm":{"seed":"","canon":"Knight Errant world.","factions":[]}},
-    {"id":"gazzari","name":"Gazzari","x":1050,"y":450,"region":"reach","beacon":false,"alwaysLit":false,
-     "blurb":"A dead principality spur — an old battlefield.","gm":{"seed":"The Scar (candidate)","canon":"Knight Errant battlefield.","factions":[]}},
-    {"id":"naboo","name":"Naboo","sub":"Enarc Run","offChart":true,"x":140,"y":480,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"Where the Enarc Run leads, eventually — toward the Rimma.","gm":{"seed":"","canon":"Off-chart endpoint; living galaxy.","factions":[]}},
-    {"id":"hutt-space","name":"Hutt Space","sub":"Triellus","offChart":true,"x":300,"y":900,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"The Triellus ring — Kajidic country.","gm":{"seed":"","canon":"Off-chart endpoint; Hutt ring.","factions":["kajidics"]}},
-
-    {"id":"triffis","name":"Triffis","x":40,"y":790,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"First living stop behind Bannistar on the Mid Rim stretch of the Duros Space Run.",
-     "gm":{"seed":"","canon":"Transit point on the Run (The Essential Atlas).","factions":[]}},
-    {"id":"glom-tho","name":"Glom Tho","x":-120,"y":860,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"Mid Rim waystop on the living stretch of the Run.",
-     "gm":{"seed":"","canon":"Transit point on the Run (The Essential Atlas).","factions":[]}},
-    {"id":"kalarba","name":"Kalarba","x":-290,"y":930,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"Mid Rim world on the living stretch of the Run.",
-     "gm":{"seed":"","canon":"Transit point on the Run (The Essential Atlas).","factions":["republic"]}},
-    {"id":"churba","name":"Churba","sub":"Corellian Run junction","x":-470,"y":990,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"Where the Duros Space Run meets the Corellian Run — the far, living end of the road the crew is relighting from the other side.",
-     "gm":{"seed":"","canon":"Endpoint of the Run with New Cov; junction with the Corellian Run (The Essential Atlas).","factions":["republic","admiralty"]}},
-    {"id":"new-cov","name":"New Cov","sub":"Corellian Run","offChart":true,"x":-580,"y":910,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"Churba's twin at the Run's Mid Rim end; the Corellian Run carries on coreward from here.",
-     "gm":{"seed":"","canon":"Named with Churba as the Run's endpoint. Alive in later-era sources — wither, don't crater.","factions":["kajidics"]}},
-    {"id":"corellia","name":"Corellia","sub":"Corellian Run","offChart":true,"wpSkip":true,"x":-640,"y":1070,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"Coreward up the Corellian Run: shipwrights, smugglers, and the Republic's other great artery.",
-     "gm":{"seed":"","canon":"Off-chart context arrow — the Corellian Run's coreward reach.","factions":[]}},
-    {"id":"bonadan","name":"Bonadan","sub":"Hydian Way","offChart":true,"wpSkip":true,"x":1660,"y":70,"region":"far","beacon":false,"alwaysLit":true,
-     "blurb":"The Hydian runs on past Brentaal to its far northern terminus among the money worlds.",
-     "gm":{"seed":"","canon":"Off-chart context arrow — the Hydian's northern end.","factions":[]}},
-    {"id":"fondor","name":"Fondor","sub":"Rimma · coreward","offChart":true,"wpSkip":true,"x":1480,"y":660,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"The Rimma Trade Route crosses the Hydian at Eriadu and runs coreward toward the great yards.",
-     "gm":{"seed":"","canon":"Off-chart context arrow — the Rimma's coreward branch at the Eriadu junction.","factions":[]}},
-    {"id":"sluis-van","name":"Sluis Van","sub":"Rimma · rimward","offChart":true,"wpSkip":true,"x":1150,"y":930,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"The Rimma's rimward branch, off the Eriadu crossroads toward the southern yards.",
-     "gm":{"seed":"","canon":"Off-chart context arrow — the Rimma's rimward branch.","factions":[]}},
-    {"id":"terminus","name":"Terminus","sub":"the Hydian's end","offChart":true,"wpSkip":true,"x":1360,"y":970,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"South of Eriadu the Hydian runs out of galaxy.",
-     "gm":{"seed":"","canon":"Off-chart context arrow — the Hydian's southern end.","factions":[]}},
-    {"id":"quermia","name":"Quermia","sub":"Perlemian","offChart":true,"wpSkip":true,"x":1905,"y":135,"region":"far","beacon":false,"alwaysLit":true,
-     "blurb":"The Perlemian carries on past Lantillies toward its far end.",
-     "gm":{"seed":"","canon":"Off-chart context arrow — the Perlemian's far end.","factions":[]}},
-    {"id":"malastare","name":"Malastare","x":1350,"y":480,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"A raw colony barely older than the Withering, coreward on the Hydian.","gm":{"seed":"","canon":"~90-year-old Gran colony among Dug natives — a mirror of the era, not an established power.","factions":["republic"]}},
-    {"id":"denon","name":"Denon","x":1420,"y":330,"region":"hydian","beacon":false,"alwaysLit":true,
-     "blurb":"Hydian Way, coreward.","gm":{"seed":"","canon":"Hydian waypoint.","factions":[]}},
-    {"id":"brentaal","name":"Brentaal","wpTitle":"Brentaal IV/Legends","x":1500,"y":180,"region":"far","beacon":false,"alwaysLit":true,
-     "blurb":"Where the Hydian crosses the Perlemian Trade Route.","gm":{"seed":"Act 3 turn","canon":"Hydian × Perlemian junction.","factions":["admiralty"]}},
-    {"id":"lantillies","name":"Lantillies","x":1700,"y":240,"region":"far","beacon":false,"alwaysLit":true,
-     "blurb":"Rimward down the Perlemian; the Randon Run begins here.","gm":{"seed":"","canon":"Perlemian → Randon Run.","factions":[]}},
-    {"id":"kashyyyk","name":"Kashyyyk","x":1850,"y":360,"region":"far","beacon":false,"alwaysLit":true,
-     "blurb":"The Randon Run passes the Wookiee homeworld.","gm":{"seed":"","canon":"Randon Run waypoint.","factions":[]}},
-    {"id":"teraab","name":"Teraab","wpTitle":"Teraab sector/Legends","sub":"stellar nursery","x":1930,"y":470,"region":"far","beacon":false,"alwaysLit":false,
-     "blurb":"Off the charts: nebulae quietly eating the last lanes to Ruusan since the war ended.","gm":{"seed":"Act 3 — the hardest astrogation of the campaign; fragments are the only charts.","canon":"The Valley is a 'lost world' by 11 BBY.","factions":[]}},
-    {"id":"ruusan","name":"Ruusan","sub":"the Valley","x":1990,"y":570,"region":"far","beacon":false,"alwaysLit":false,
-     "blurb":"Every child knows the armies reached Ruusan seven times, so the road exists.","gm":{"seed":"Act 3 finale","canon":"Valley of the Jedi.","factions":["inheritors","vigil"]}},
-    {"id":"coruscant","name":"Coruscant","sub":"the Core","x":1300,"y":90,"region":"far","beacon":false,"alwaysLit":true,
-     "blurb":"The capital, a hop or two coreward of Brentaal on the Perlemian. When the Republic's recovery money finally comes back out to the Rim, this is the road it takes.",
-     "gm":{"seed":"","canon":"Coruscant is on the Perlemian Trade Route, not the Hydian; Brentaal is the junction. The Reformation's appropriations stopped here — the Withering is this road going quiet.","factions":["republic","admiralty"]}}
-  ],
-  "lanes": [
-    {"from":"bannistar","to":"enarc","kind":"dark","name":"Duros Space Run"},
-    {"from":"enarc","to":"alui","kind":"dark","name":"Duros Space Run"},
-    {"from":"alui","to":"verdanth","kind":"dark","name":"Duros Space Run"},
-    {"from":"verdanth","to":"aplooine","kind":"dark","name":"Duros Space Run"},
-    {"from":"aplooine","to":"sanrafsix","kind":"dark","name":"Duros Space Run"},
-    {"from":"sanrafsix","to":"heptooine","kind":"dark","name":"Duros Space Run"},
-    {"from":"heptooine","to":"jutrand","kind":"dark","name":"Duros Space Run"},
-    {"from":"jutrand","to":"darkknell","kind":"dark","name":"Duros Space Run"},
-    {"from":"triffis","to":"bannistar","kind":"living","name":"Duros Space Run"},
-    {"from":"glom-tho","to":"triffis","kind":"living","name":"Duros Space Run"},
-    {"from":"kalarba","to":"glom-tho","kind":"living","name":"Duros Space Run"},
-    {"from":"churba","to":"kalarba","kind":"living","name":"Duros Space Run"},
-    {"from":"churba","to":"new-cov","kind":"living","name":"Corellian Run"},
-    {"from":"churba","to":"corellia","kind":"living","name":"Corellian Run"},
-    {"from":"brentaal","to":"bonadan","kind":"living","name":"Hydian Way"},
-    {"from":"eriadu","to":"fondor","kind":"living","name":"Rimma Trade Route"},
-    {"from":"eriadu","to":"sluis-van","kind":"living","name":"Rimma Trade Route"},
-    {"from":"eriadu","to":"terminus","kind":"living","name":"Hydian Way"},
-    {"from":"lantillies","to":"quermia","kind":"far","name":"Perlemian Trade Route"},
-    {"from":"darkknell","to":"eriadu","kind":"living","name":"Hydian Way"},
-    {"from":"darkknell","to":"malastare","kind":"living","name":"Hydian Way"},
-    {"from":"malastare","to":"denon","kind":"living","name":"Hydian Way"},
-    {"from":"denon","to":"brentaal","kind":"living","name":"Hydian Way"},
-    {"from":"brentaal","to":"lantillies","kind":"far","name":"Perlemian Trade Route"},
-    {"from":"brentaal","to":"coruscant","kind":"living","name":"Perlemian Trade Route"},
-    {"from":"lantillies","to":"kashyyyk","kind":"far","name":"Randon Run"},
-    {"from":"kashyyyk","to":"teraab","kind":"fraying","name":"Randon Run"},
-    {"from":"teraab","to":"ruusan","kind":"fraying","name":"off the charts"},
-    {"from":"enarc","to":"naboo","kind":"dark","name":"Enarc Run"},
-    {"from":"enarc","to":"hutt-space","kind":"dark","name":"Triellus"},
-    {"from":"sanrafsix","to":"fostin-nine","kind":"smuggler","name":"Sanrafsix Corridor"},
-    {"from":"fostin-nine","to":"syned","kind":"smuggler","name":"Sanrafsix Corridor"},
-    {"from":"syned","to":"omwat","kind":"smuggler","name":"Sanrafsix Corridor"},
-    {"from":"fostin-nine","to":"veshet","kind":"dark","name":"dead spur"},
-    {"from":"alui","to":"chelloa","kind":"dark","name":"dead spur"},
-    {"from":"verdanth","to":"byllura","kind":"dark","name":"dead spur"},
-    {"from":"heptooine","to":"aquilaris","kind":"dark","name":"dead spur"},
-    {"from":"jutrand","to":"gazzari","kind":"dark","name":"dead spur"}
-  ],
-  "regions": [
-    {"name":"THE CORE","kind":"core","cx":1420,"cy":115,"rx":270,"ry":115,"rot":-10,"label":[1560,55],"size":26},
-    {"name":"MID RIM","kind":"mid","cx":-170,"cy":880,"rx":430,"ry":185,"rot":-20,"label":[-380,745],"size":30},
-    {"name":"MID RIM","kind":"text","label":[1640,455],"size":20},
-    {"name":"INNER RIM","kind":"text","label":[1310,300],"size":14},
-    {"name":"OUTER RIM · TRAILING SECTORS","kind":"text","label":[560,575],"size":40,"lrot":-3},
-    {"name":"HUTT SPACE","kind":"hutt","cx":320,"cy":1035,"rx":270,"ry":105,"rot":-8,"label":[320,1090],"size":26},
-    {"name":"THE TERAAB NURSERY","kind":"nebula","cx":1950,"cy":515,"rx":150,"ry":105,"rot":25,"label":[1918,655],"size":16}
-  ]
+ "systems": [
+  {
+   "id": "bannistar",
+   "name": "Bannistar Station",
+   "sub": "Okrent's Drift",
+   "x": 1530,
+   "y": 880,
+   "region": "reach",
+   "beacon": true,
+   "alwaysLit": false,
+   "hop": 0,
+   "blurb": "The great fuel gantries, and Okrent's Drift — the port that grew on their back. The frayed end of the living Duros Space Run. Its beacon, Vesta-9, was relit in 90 AR — nobody admits to lighting it.",
+   "gm": {
+    "seed": "Session One — The Light on Vesta-9",
+    "canon": "Canonically a massive refueling depot (attested in Clone Wars-era sources, 900 years later — use freely). Vesta-9 is the beacon here; certified by Chartmistress Bel Nerra (Lamplighters). Dial 3: the Sith apprentice lit it.",
+    "factions": [
+     "vigil",
+     "admiralty",
+     "lamplighters"
+    ]
+   },
+   "grid": "O-15"
+  },
+  {
+   "id": "enarc",
+   "name": "Enarc",
+   "x": 1590,
+   "y": 1145,
+   "region": "reach",
+   "beacon": true,
+   "alwaysLit": false,
+   "hop": 1,
+   "blurb": "A dark crossroads: the Enarc Run (toward Naboo and the Rimma) and the Hutt-ringed Triellus both once met the Run here.",
+   "gm": {
+    "seed": "The Toll",
+    "canon": "Real junction: Enarc Run + Triellus (Hutt space ring) — natural Kajidic chokepoint.",
+    "factions": [
+     "kajidics"
+    ]
+   },
+   "grid": "O-17"
+  },
+  {
+   "id": "alui",
+   "name": "Alui",
+   "wpTitle": "Alui system/Legends",
+   "x": 1440,
+   "y": 1190,
+   "region": "reach",
+   "beacon": true,
+   "alwaysLit": false,
+   "hop": 2,
+   "blurb": "First of the deep-Reach worlds.",
+   "gm": {
+    "seed": "",
+    "canon": "Route stop; blank canvas.",
+    "factions": []
+   },
+   "grid": "O-17"
+  },
+  {
+   "id": "verdanth",
+   "name": "Verdanth",
+   "x": 1280,
+   "y": 1220,
+   "region": "reach",
+   "beacon": true,
+   "alwaysLit": false,
+   "hop": 3,
+   "blurb": "Jungle world.",
+   "gm": {
+    "seed": "The Oracle of Brel (Brel = a settlement moon here?)",
+    "canon": "Jungle world; otherwise blank.",
+    "factions": []
+   },
+   "grid": "N-17"
+  },
+  {
+   "id": "aplooine",
+   "name": "Aplooine",
+   "x": 1130,
+   "y": 1180,
+   "region": "reach",
+   "beacon": true,
+   "alwaysLit": false,
+   "hop": 4,
+   "blurb": "Quiet agrarian survivor.",
+   "gm": {
+    "seed": "The Ration Engine or The Five Systems",
+    "canon": "Blank canvas.",
+    "factions": [
+     "republic"
+    ]
+   },
+   "grid": "N-17"
+  },
+  {
+   "id": "sanrafsix",
+   "name": "Sanrafsix",
+   "x": 990,
+   "y": 1215,
+   "region": "reach",
+   "beacon": true,
+   "alwaysLit": false,
+   "hop": 5,
+   "blurb": "The great dead hub — its bazaars thrived on the last war's economy and died with it. Junction of the smugglers' Sanrafsix Corridor.",
+   "gm": {
+    "seed": "The Memory Market",
+    "canon": "Great dead trade hub of the New Sith Wars economy — provenance bazaars fit perfectly. Don't crater it: alive in later-era sources.",
+    "factions": [
+     "kajidics",
+     "bounty-hunters-guild"
+    ]
+   },
+   "grid": "N-17"
+  },
+  {
+   "id": "heptooine",
+   "name": "Heptooine",
+   "x": 860,
+   "y": 1185,
+   "region": "reach",
+   "beacon": true,
+   "alwaysLit": false,
+   "hop": 6,
+   "blurb": "The Run's last waystop.",
+   "gm": {
+    "seed": "The Mausoleum Yards",
+    "canon": "Route stop.",
+    "factions": []
+   },
+   "grid": "N-17"
+  },
+  {
+   "id": "jutrand",
+   "name": "Jutrand",
+   "x": 700,
+   "y": 1195,
+   "region": "reach",
+   "beacon": true,
+   "alwaysLit": false,
+   "hop": 7,
+   "blurb": "City-planet; capital of a dead Sith principality, haunted by its own grandeur.",
+   "gm": {
+    "seed": "The Sealed Enclave or The Dead Letter",
+    "canon": "Ex-Bactranate capital — haunted grandeur. Inherit the Knight Errant (1032 BBY) state.",
+    "factions": [
+     "inheritors",
+     "vigil"
+    ]
+   },
+   "grid": "M-17"
+  },
+  {
+   "id": "darkknell",
+   "name": "Darkknell",
+   "sub": "Knel'char system",
+   "x": 580,
+   "y": 1160,
+   "region": "reach",
+   "beacon": true,
+   "alwaysLit": true,
+   "blurb": "The lights come back on: a trinary-sun trade city that never stopped, the Hydian Way's local anchor.",
+   "gm": {
+    "seed": "Act 1 finish line",
+    "canon": "Never withered. 'An important trading center for millennia,' trinary suns. Wither around it, never through it.",
+    "factions": [
+     "admiralty",
+     "republic"
+    ]
+   },
+   "grid": "M-17"
+  },
+  {
+   "id": "eriadu",
+   "name": "Eriadu",
+   "x": 420,
+   "y": 1350,
+   "region": "reach",
+   "beacon": true,
+   "alwaysLit": true,
+   "blurb": "One Hydian hop south: an old, modest world of shellwork jewelry sitting on the most valuable crossroads in the southern Rim — the Hydian Way, the Rimma Trade Route and the minor Lipsec Run. Rumors of coreward money.",
+   "gm": {
+    "seed": "Act 2 stakes",
+    "canon": "At 910 BBY modest and ancient. The Quintad (Corulag oligarch families) canonically arrive ~900 BBY. The crew's relit corridor is part of why the money comes.",
+    "factions": [
+     "admiralty",
+     "republic",
+     "kajidics"
+    ]
+   },
+   "grid": "M-18"
+  },
+  {
+   "id": "fostin-nine",
+   "name": "Fostin Nine",
+   "x": 1055,
+   "y": 1335,
+   "region": "reach",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "First stop down the Sanrafsix Corridor, a notorious smugglers' road.",
+   "gm": {
+    "seed": "",
+    "canon": "Sanrafsix Corridor.",
+    "factions": [
+     "kajidics"
+    ]
+   },
+   "grid": "N-17"
+  },
+  {
+   "id": "syned",
+   "name": "Syned",
+   "x": 975,
+   "y": 1455,
+   "region": "reach",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "Corridor waypoint.",
+   "gm": {
+    "seed": "",
+    "canon": "Sanrafsix Corridor.",
+    "factions": []
+   },
+   "grid": "N-17"
+  },
+  {
+   "id": "omwat",
+   "name": "Omwat",
+   "x": 900,
+   "y": 1565,
+   "region": "reach",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "The Corridor runs on past here into Hutt-adjacent space.",
+   "gm": {
+    "seed": "",
+    "canon": "Sanrafsix Corridor.",
+    "factions": []
+   },
+   "grid": "N-18"
+  },
+  {
+   "id": "veshet",
+   "name": "Veshet",
+   "wpSkip": true,
+   "x": 1185,
+   "y": 1420,
+   "region": "reach",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "A settlement off a dead spur of the Corridor.",
+   "gm": {
+    "seed": "Yenna Sar's Veshet",
+    "canon": "Off a dead spur of the Sanrafsix Corridor.",
+    "factions": [
+     "lamplighters"
+    ]
+   },
+   "grid": "N-17"
+  },
+  {
+   "id": "chelloa",
+   "name": "Chelloa",
+   "x": 450,
+   "y": 1075,
+   "region": "reach",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "A dead principality spur. Baradium-scarred.",
+   "gm": {
+    "seed": "The Scar (candidate)",
+    "canon": "Devastated in Knight Errant (1032 BBY). Floor, not ceiling.",
+    "factions": []
+   },
+   "grid": "M-17"
+  },
+  {
+   "id": "byllura",
+   "name": "Byllura",
+   "x": 1330,
+   "y": 1080,
+   "region": "reach",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "A dead principality spur.",
+   "gm": {
+    "seed": "",
+    "canon": "The Dyarchy fell here (Knight Errant).",
+    "factions": [
+     "inheritors"
+    ]
+   },
+   "grid": "N-17"
+  },
+  {
+   "id": "aquilaris",
+   "name": "Aquilaris",
+   "x": 1525,
+   "y": 1315,
+   "region": "reach",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "A dead principality spur.",
+   "gm": {
+    "seed": "",
+    "canon": "Knight Errant world.",
+    "factions": []
+   },
+   "grid": "O-17"
+  },
+  {
+   "id": "gazzari",
+   "name": "Gazzari",
+   "x": 770,
+   "y": 1335,
+   "region": "reach",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "A dead principality spur — an old battlefield.",
+   "gm": {
+    "seed": "The Scar (candidate)",
+    "canon": "Knight Errant battlefield.",
+    "factions": []
+   },
+   "grid": "M-17"
+  },
+  {
+   "id": "naboo",
+   "name": "Naboo",
+   "sub": "Enarc Run",
+   "offChart": true,
+   "x": 1765,
+   "y": 1260,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "Where the Enarc Run leads, eventually — toward the Rimma.",
+   "gm": {
+    "seed": "",
+    "canon": "Off-chart endpoint; living galaxy.",
+    "factions": []
+   },
+   "grid": "O-17"
+  },
+  {
+   "id": "hutt-space",
+   "name": "Hutt Space",
+   "sub": "Triellus",
+   "offChart": true,
+   "x": 1950,
+   "y": 1040,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "The Triellus ring — Kajidic country.",
+   "gm": {
+    "seed": "",
+    "canon": "Off-chart endpoint; Hutt ring.",
+    "factions": [
+     "kajidics"
+    ]
+   }
+  },
+  {
+   "id": "triffis",
+   "name": "Triffis",
+   "x": 1690,
+   "y": 830,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "First living stop behind Bannistar on the Mid Rim stretch of the Duros Space Run.",
+   "gm": {
+    "seed": "",
+    "canon": "Transit point on the Run (The Essential Atlas).",
+    "factions": []
+   },
+   "grid": "O-15"
+  },
+  {
+   "id": "glom-tho",
+   "name": "Glom Tho",
+   "x": 1850,
+   "y": 780,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "Mid Rim waystop on the living stretch of the Run.",
+   "gm": {
+    "seed": "",
+    "canon": "Transit point on the Run (The Essential Atlas).",
+    "factions": []
+   },
+   "grid": "O-15"
+  },
+  {
+   "id": "kalarba",
+   "name": "Kalarba",
+   "x": 2030,
+   "y": 720,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "Mid Rim world on the living stretch of the Run.",
+   "gm": {
+    "seed": "",
+    "canon": "Transit point on the Run (The Essential Atlas).",
+    "factions": [
+     "republic"
+    ]
+   },
+   "grid": "P-15"
+  },
+  {
+   "id": "churba",
+   "name": "Churba",
+   "sub": "Corellian Run junction",
+   "x": 2180,
+   "y": 640,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "Where the Duros Space Run meets the Corellian Run — the far, living end of the road the crew is relighting from the other side.",
+   "gm": {
+    "seed": "",
+    "canon": "Endpoint of the Run with New Cov; junction with the Corellian Run (The Essential Atlas).",
+    "factions": [
+     "republic",
+     "admiralty"
+    ]
+   },
+   "grid": "P-14"
+  },
+  {
+   "id": "new-cov",
+   "name": "New Cov",
+   "sub": "Corellian Run",
+   "offChart": true,
+   "x": 2330,
+   "y": 585,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "Churba's twin at the Run's Mid Rim end; the Corellian Run carries on coreward from here.",
+   "gm": {
+    "seed": "",
+    "canon": "Named with Churba as the Run's endpoint. Alive in later-era sources — wither, don't crater.",
+    "factions": [
+     "kajidics"
+    ]
+   },
+   "grid": "P-14"
+  },
+  {
+   "id": "corellia",
+   "name": "Corellia",
+   "sub": "Corellian Run",
+   "offChart": true,
+   "wpSkip": true,
+   "x": 2000,
+   "y": 555,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "Coreward up the Corellian Run: shipwrights, smugglers, and the Republic's other great artery.",
+   "gm": {
+    "seed": "",
+    "canon": "Off-chart context arrow — the Corellian Run's coreward reach.",
+    "factions": []
+   },
+   "grid": "M-11"
+  },
+  {
+   "id": "bonadan",
+   "name": "Bonadan",
+   "sub": "Hydian Way",
+   "offChart": true,
+   "wpSkip": true,
+   "x": 905,
+   "y": 140,
+   "region": "far",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "The Hydian runs on past Brentaal to its far northern terminus among the money worlds.",
+   "gm": {
+    "seed": "",
+    "canon": "Off-chart context arrow — the Hydian's northern end.",
+    "factions": []
+   },
+   "grid": "S-3"
+  },
+  {
+   "id": "fondor",
+   "name": "Fondor",
+   "sub": "Rimma · coreward",
+   "offChart": true,
+   "wpSkip": true,
+   "x": 330,
+   "y": 1180,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "The Rimma Trade Route crosses the Hydian at Eriadu and runs coreward toward the great yards.",
+   "gm": {
+    "seed": "",
+    "canon": "Off-chart context arrow — the Rimma's coreward branch at the Eriadu junction.",
+    "factions": []
+   },
+   "grid": "L-13"
+  },
+  {
+   "id": "sluis-van",
+   "name": "Sluis Van",
+   "sub": "Rimma · rimward",
+   "offChart": true,
+   "wpSkip": true,
+   "x": 560,
+   "y": 1475,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "The Rimma's rimward branch, off the Eriadu crossroads toward the southern yards.",
+   "gm": {
+    "seed": "",
+    "canon": "Off-chart context arrow — the Rimma's rimward branch.",
+    "factions": []
+   },
+   "grid": "M-19"
+  },
+  {
+   "id": "terminus",
+   "name": "Terminus",
+   "sub": "the Hydian's end",
+   "offChart": true,
+   "wpSkip": true,
+   "x": 250,
+   "y": 1505,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "South of Eriadu the Hydian runs out of galaxy.",
+   "gm": {
+    "seed": "",
+    "canon": "Off-chart context arrow — the Hydian's southern end.",
+    "factions": []
+   },
+   "grid": "K-20"
+  },
+  {
+   "id": "quermia",
+   "name": "Quermia",
+   "sub": "Perlemian",
+   "offChart": true,
+   "wpSkip": true,
+   "x": 2100,
+   "y": 265,
+   "region": "far",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "The Perlemian carries on past Lantillies toward its far end.",
+   "gm": {
+    "seed": "",
+    "canon": "Off-chart context arrow — the Perlemian's far end.",
+    "factions": []
+   },
+   "grid": "S-5"
+  },
+  {
+   "id": "malastare",
+   "name": "Malastare",
+   "x": 860,
+   "y": 990,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "A raw colony barely older than the Withering, coreward on the Hydian.",
+   "gm": {
+    "seed": "",
+    "canon": "~90-year-old Gran colony among Dug natives — a mirror of the era, not an established power.",
+    "factions": [
+     "republic"
+    ]
+   },
+   "grid": "N-16"
+  },
+  {
+   "id": "denon",
+   "name": "Denon",
+   "x": 1160,
+   "y": 700,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "Hydian Way, coreward.",
+   "gm": {
+    "seed": "",
+    "canon": "Hydian waypoint.",
+    "factions": []
+   },
+   "grid": "N-13"
+  },
+  {
+   "id": "brentaal",
+   "name": "Brentaal",
+   "wpTitle": "Brentaal IV/Legends",
+   "x": 640,
+   "y": 245,
+   "region": "far",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "Where the Hydian crosses the Perlemian Trade Route.",
+   "gm": {
+    "seed": "Act 3 turn",
+    "canon": "Hydian × Perlemian junction.",
+    "factions": [
+     "admiralty"
+    ]
+   },
+   "grid": "L-9"
+  },
+  {
+   "id": "lantillies",
+   "name": "Lantillies",
+   "x": 1870,
+   "y": 330,
+   "region": "far",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "Rimward down the Perlemian; the Randon Run begins here.",
+   "gm": {
+    "seed": "",
+    "canon": "Perlemian → Randon Run.",
+    "factions": []
+   },
+   "grid": "P-8"
+  },
+  {
+   "id": "kashyyyk",
+   "name": "Kashyyyk",
+   "x": 1955,
+   "y": 450,
+   "region": "far",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "The Randon Run passes the Wookiee homeworld.",
+   "gm": {
+    "seed": "",
+    "canon": "Randon Run waypoint.",
+    "factions": []
+   },
+   "grid": "P-9"
+  },
+  {
+   "id": "teraab",
+   "name": "Teraab",
+   "wpTitle": "Teraab sector/Legends",
+   "sub": "stellar nursery",
+   "x": 1880,
+   "y": 585,
+   "region": "far",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "Off the charts: nebulae quietly eating the last lanes to Ruusan since the war ended.",
+   "gm": {
+    "seed": "Act 3 — the hardest astrogation of the campaign; fragments are the only charts.",
+    "canon": "The Valley is a 'lost world' by 11 BBY.",
+    "factions": []
+   },
+   "grid": "P-11"
+  },
+  {
+   "id": "ruusan",
+   "name": "Ruusan",
+   "sub": "the Valley",
+   "x": 1995,
+   "y": 655,
+   "region": "far",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "Every child knows the armies reached Ruusan seven times, so the road exists.",
+   "gm": {
+    "seed": "Act 3 finale",
+    "canon": "Valley of the Jedi.",
+    "factions": [
+     "inheritors",
+     "vigil"
+    ]
+   },
+   "grid": "P-11"
+  },
+  {
+   "id": "coruscant",
+   "name": "Coruscant",
+   "sub": "the Core",
+   "x": 520,
+   "y": 175,
+   "region": "far",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "The capital, a hop or two coreward of Brentaal on the Perlemian. When the Republic's recovery money finally comes back out to the Rim, this is the road it takes.",
+   "gm": {
+    "seed": "",
+    "canon": "Coruscant is on the Perlemian Trade Route, not the Hydian; Brentaal is the junction. The Reformation's appropriations stopped here — the Withering is this road going quiet.",
+    "factions": [
+     "republic",
+     "admiralty"
+    ]
+   },
+   "grid": "L-9"
+  }
+ ],
+ "lanes": [
+  {
+   "from": "bannistar",
+   "to": "enarc",
+   "kind": "dark",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "enarc",
+   "to": "alui",
+   "kind": "dark",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "alui",
+   "to": "verdanth",
+   "kind": "dark",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "verdanth",
+   "to": "aplooine",
+   "kind": "dark",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "aplooine",
+   "to": "sanrafsix",
+   "kind": "dark",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "sanrafsix",
+   "to": "heptooine",
+   "kind": "dark",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "heptooine",
+   "to": "jutrand",
+   "kind": "dark",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "jutrand",
+   "to": "darkknell",
+   "kind": "dark",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "triffis",
+   "to": "bannistar",
+   "kind": "living",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "glom-tho",
+   "to": "triffis",
+   "kind": "living",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "kalarba",
+   "to": "glom-tho",
+   "kind": "living",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "churba",
+   "to": "kalarba",
+   "kind": "living",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "churba",
+   "to": "new-cov",
+   "kind": "living",
+   "name": "Corellian Run"
+  },
+  {
+   "from": "churba",
+   "to": "corellia",
+   "kind": "living",
+   "name": "Corellian Run"
+  },
+  {
+   "from": "brentaal",
+   "to": "bonadan",
+   "kind": "living",
+   "name": "Hydian Way"
+  },
+  {
+   "from": "eriadu",
+   "to": "fondor",
+   "kind": "living",
+   "name": "Rimma Trade Route"
+  },
+  {
+   "from": "eriadu",
+   "to": "sluis-van",
+   "kind": "living",
+   "name": "Rimma Trade Route"
+  },
+  {
+   "from": "eriadu",
+   "to": "terminus",
+   "kind": "living",
+   "name": "Hydian Way"
+  },
+  {
+   "from": "lantillies",
+   "to": "quermia",
+   "kind": "far",
+   "name": "Perlemian Trade Route"
+  },
+  {
+   "from": "darkknell",
+   "to": "eriadu",
+   "kind": "living",
+   "name": "Hydian Way"
+  },
+  {
+   "from": "darkknell",
+   "to": "malastare",
+   "kind": "living",
+   "name": "Hydian Way"
+  },
+  {
+   "from": "malastare",
+   "to": "denon",
+   "kind": "living",
+   "name": "Hydian Way"
+  },
+  {
+   "from": "denon",
+   "to": "brentaal",
+   "kind": "living",
+   "name": "Hydian Way"
+  },
+  {
+   "from": "brentaal",
+   "to": "lantillies",
+   "kind": "far",
+   "name": "Perlemian Trade Route"
+  },
+  {
+   "from": "brentaal",
+   "to": "coruscant",
+   "kind": "living",
+   "name": "Perlemian Trade Route"
+  },
+  {
+   "from": "lantillies",
+   "to": "kashyyyk",
+   "kind": "far",
+   "name": "Randon Run"
+  },
+  {
+   "from": "kashyyyk",
+   "to": "teraab",
+   "kind": "fraying",
+   "name": "Randon Run"
+  },
+  {
+   "from": "teraab",
+   "to": "ruusan",
+   "kind": "fraying",
+   "name": "off the charts"
+  },
+  {
+   "from": "enarc",
+   "to": "naboo",
+   "kind": "dark",
+   "name": "Enarc Run"
+  },
+  {
+   "from": "enarc",
+   "to": "hutt-space",
+   "kind": "dark",
+   "name": "Triellus"
+  },
+  {
+   "from": "sanrafsix",
+   "to": "fostin-nine",
+   "kind": "smuggler",
+   "name": "Sanrafsix Corridor"
+  },
+  {
+   "from": "fostin-nine",
+   "to": "syned",
+   "kind": "smuggler",
+   "name": "Sanrafsix Corridor"
+  },
+  {
+   "from": "syned",
+   "to": "omwat",
+   "kind": "smuggler",
+   "name": "Sanrafsix Corridor"
+  },
+  {
+   "from": "fostin-nine",
+   "to": "veshet",
+   "kind": "dark",
+   "name": "dead spur"
+  },
+  {
+   "from": "darkknell",
+   "to": "chelloa",
+   "kind": "dark",
+   "name": "dead spur"
+  },
+  {
+   "from": "verdanth",
+   "to": "byllura",
+   "kind": "dark",
+   "name": "dead spur"
+  },
+  {
+   "from": "alui",
+   "to": "aquilaris",
+   "kind": "dark",
+   "name": "dead spur"
+  },
+  {
+   "from": "jutrand",
+   "to": "gazzari",
+   "kind": "dark",
+   "name": "dead spur"
+  }
+ ],
+ "regions": [
+  {
+   "name": "THE CORE",
+   "kind": "core",
+   "cx": 610,
+   "cy": 210,
+   "rx": 300,
+   "ry": 125,
+   "rot": -8,
+   "label": [
+    300,
+    235
+   ],
+   "size": 24
+  },
+  {
+   "name": "INNER RIM",
+   "kind": "text",
+   "label": [
+    1305,
+    650
+   ],
+   "size": 14
+  },
+  {
+   "name": "MID RIM",
+   "kind": "mid",
+   "cx": 1990,
+   "cy": 700,
+   "rx": 400,
+   "ry": 160,
+   "rot": -16,
+   "label": [
+    2270,
+    810
+   ],
+   "size": 30
+  },
+  {
+   "name": "MID RIM",
+   "kind": "text",
+   "label": [
+    1565,
+    555
+   ],
+   "size": 20
+  },
+  {
+   "name": "OUTER RIM",
+   "kind": "text",
+   "label": [
+    330,
+    990
+   ],
+   "size": 36
+  },
+  {
+   "name": "TRAILING SECTORS",
+   "kind": "text",
+   "label": [
+    333,
+    1040
+   ],
+   "size": 15
+  },
+  {
+   "name": "HUTT SPACE",
+   "kind": "hutt",
+   "cx": 2270,
+   "cy": 1130,
+   "rx": 300,
+   "ry": 140,
+   "rot": -10,
+   "label": [
+    2310,
+    1135
+   ],
+   "size": 26
+  },
+  {
+   "name": "THE TERAAB NURSERY",
+   "kind": "nebula",
+   "cx": 1930,
+   "cy": 620,
+   "rx": 140,
+   "ry": 85,
+   "rot": 20,
+   "label": [
+    1928,
+    735
+   ],
+   "size": 15
+  }
+ ]
 }
