@@ -255,7 +255,7 @@ window.addEventListener("pointermove", e => {
 });
 function endDrag(e) {
   if (e) pointers.delete(e.pointerId);
-  if (pointers.size < 2) pinch = 0;
+  pinch = pointers.size === 2 ? pinchSpan().d : 0;
   chart.classList.remove("dragging"); setTimeout(() => { drag = null; }, 0);
 }
 window.addEventListener("pointerup", endDrag);

@@ -38,7 +38,7 @@ def build(edition: str, data: dict, template: str) -> str:
         template = GM_REGION.sub("", template)
     else:
         template = template.replace("<!-- GM:start -->", "").replace("<!-- GM:end -->", "")
-    payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/").replace("<!--", "<\\!--")
+    payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/").replace("<!--", "<\\u0021--")
     out = template.replace("__DATA__", payload).replace("__EDITION__", edition)
     if edition == "player" and ("GM:start" in out or "GM:end" in out or '"gm":' in out):
         raise SystemExit("GM content leaked into the player edition")

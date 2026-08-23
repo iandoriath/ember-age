@@ -65,12 +65,17 @@ def test_gm_edition_keeps_gm():
 
 def test_embedded_json_is_script_safe():
     d = load()
-    d["systems"][0]["blurb"] = "bad </script> tag and <!--<script comment"
+    blurb = "bad </script> tag and <!--<script comment"
+    d["systems"][0]["blurb"] = blurb
     out = bsm.build("player", d, STUB)
+    # neither sequence may reach the HTML tokenizer verbatim
     assert "</script> tag" not in out
-    assert "<\\/script> tag" in out
     assert "<!--<script" not in out
-    assert "<\\!--<script comment" in out
+    assert "<\\/script> tag" in out
+    assert "<\\u0021--<script comment" in out
+    # ...and both escapes must be valid JSON that round-trips to the original text
+    embedded = json.loads(re.search(r'type="application/json">(.*?)</script>', out, re.S).group(1))
+    assert embedded["systems"][0]["blurb"] == blurb
 
 
 def test_unbalanced_gm_markers_are_rejected():
