@@ -20,6 +20,17 @@ jobs:
         run: mkdocs build --strict -f mkdocs.yml
       - name: Build GM screen
         run: python tools/build-gm-screen.py
+      - name: Build system map
+        run: python tools/build-system-map.py
+      - name: Test system map build
+        run: pip install pytest && python -m pytest tools/test_system_map.py -q
+      - name: Upload system map artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: system-map
+          path: |
+            system-map.html
+            player-aids/system-map.html
       - name: Upload GM screen artifact
         uses: actions/upload-artifact@v4
         with:
