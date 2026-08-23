@@ -54,10 +54,10 @@ The second fork of Dial 1, resolved: one Jedi lineage survives to 90 AR. It cons
 
 ## The Unbroken Line
 
-Dial 1, statted. Bane, then Zannah, then Cognus — and the record goes silent, because the line got better at silence. The current Master here bears the invented name **Darth Messor** — Legends names no loyal heir after Cognus (her recorded apprentice, Darth Millennial, turned heretic and defected, leaving the true succession unrecorded), so Darth Messor collides with nothing published. Third succession from Bane: young as Sith dynasties go, consolidating, and in no hurry, which is precisely why patience costs them nothing.
+Dial 1, statted. Bane, then Zannah, then Cognus — and the record goes silent, because the line got better at silence. Cognus's recorded apprentice, Darth Millennial, rejected the Rule of Two and walked out on *her* to found the Dark Force cult on Dromund Kaas; Legends names no loyal heir after him, so the Master who actually inherited collides with nothing published. Here that Master is **Darth Emptor** — *the buyer*, as in *caveat emptor* — and the apprentice, whose name nobody outside the line has ever heard spoken, is **Darth Tacet** — *is silent*, the instruction a score gives an instrument for the whole of a movement. Third succession from Bane: young as Sith dynasties go, consolidating, and in no hurry, which is precisely why patience costs them nothing. Their goals and machinations, and the one set piece that shows their work, follow the two stat blocks.
 
 ### The Patient Master
-*Nemesis — the Sith line (Dial 1) — Darth Messor; stats for completeness only*
+*Nemesis — the Sith line (Dial 1) — Darth Emptor; stats for completeness only*
 
 > Somewhere, a person of modest reputation and excellent bookkeeping watches lanes relight, and is pleased with the harvest coming in.
 
@@ -78,7 +78,7 @@ Dial 1, statted. Bane, then Zannah, then Cognus — and the record goes silent, 
 **Using them:** Never on camera. The Patient Master manifests only as pattern: unexplained good fortune whenever reunification stalls, a rival bidder who withdraws for no reason, a hostile magistrate who retires young and rich — visible only from very far back, and never provable. Force Rating 3 is justified as the living Banite line itself, the one unbroken transmission of power in the galaxy (era rule, Part VII); note that the printed block spends all of it on the blade — no power trees — because his reach off-camera is bookkeeping, patience, and other people's hands, not telepathy. It is also the reason no encounter with them this campaign is winnable or intended. If the players ever found a true galactic power, the Master's attention is the sequel's opening scene, not this campaign's.
 
 ### The Patient Apprentice
-*Nemesis — the Sith line (Dial 1) — the culling made flesh*
+*Nemesis — the Sith line (Dial 1) — Darth Tacet, the culling made flesh*
 
 > No name survives contact. When the Inheritors unveil their costume Sith, this is what a real one looks like: a week of quiet travel, one night of work across a dozen worlds' worth of planning, and no witnesses who understand what they saw.
 
@@ -95,6 +95,48 @@ Dial 1, statted. Bane, then Zannah, then Cognus — and the record goes silent, 
 
 **Chassis:** Emperor's Hand, Edge of the Empire Core Rulebook, p. 402 (adjustments: none).
 **Using them:** The culling of the Inheritors is their graduation exam, and the grade is *anonymity*: the senior circle dead across a dozen worlds in one night, the archives vanished rather than burned, and nobody sane concluding "Sith." Force Rating 2 is justified as the line's entire pedagogy poured into a single student (era rule, Part VII). They never claim a kill, never duel when a fall down a lift shaft will do, and withdraw the moment a fight turns evidentiary — being *seen* fighting with a lightsaber is a mission failure worse than death, which is why they do not carry one on a working job: the disruptor leaves no body, the vibrosword no signature, and the saber stays home with the Master. After the culling they hold the harvested Vesta-9 file: they know about the crew, and which of them the beacon answered, and have never once been seen — every misattribution the players chase (the Vigil? the Admiralty? a purge?) lights a different Act 3 fire.
+
+### What the line wants, and how it works
+
+**The strategy in one line: buy the recovery before it exists.** The Grand Plan at 90 AR is not conquest; it is solvency. Bane's line will spend a thousand years corrupting a Republic that, right now, barely exists — so the first century's work is to make sure one gets rebuilt, and to hold the paper on it. In a withered galaxy nobody has capital. Whoever lends decides what gets relit, in what order, and who owns it afterward. Emptor is that lender: on the books, a chartered factor of modest reputation with a seat on a Brentaal exchange, standing behind three or four brokerages of coreward money that have lately, very quietly, taken an interest in Eriadu. (Canon's Quintad — the Corulag families who arrive around 900 BBY and build "the Coruscant of the Outer Rim" — are not Sith. Some of their money is.)
+
+**What Emptor wants.**
+
+- **To own the genuine.** Emptor is a connoisseur before anything else: every real holocron, teaching and relic the wars scattered across the Rim is to be found, appraised, and removed from the galaxy before the Jedi or the grave-robbers reach it. Counterfeits are left exactly where they lie — nothing in the Plan is served by a galaxy that stops believing in fakes.
+- **To be the century that paid for the rest.** Every Banite Master wants to be the one who mattered. The heir who stayed when Millennial walked wants the record to show that orthodoxy, not prophecy, won.
+- **To be unnecessary.** Never a protagonist, never a name in a dispatch. The day anyone can point at Emptor is the day the century was wasted.
+
+**What Tacet wants** is simpler and younger: to be good enough. Anonymity is the grade; the Inheritors are the exam; and underneath the doctrine is an apprentice who has begun to suspect that patience is the Master's weapon against *them* as much as against the galaxy — which is the Rule of Two working as designed, and not this campaign's problem.
+
+**The machinations** (off-screen and ongoing — draw on them whenever you need the pattern to show from very far back):
+
+1. **The Ledger.** Relighting fees are financed. The first-lighting fee the crew collects is, two intermediaries back, Emptor's money lent to a Lamplighter-adjacent house at honest interest — the Sith are literally paying the party to garden. Whenever reunification stalls (a beacon certification held up, a corridor claim contested), a lender steps in, a rival withdraws, a magistrate retires young and rich. The players should feel the recovery is lucky. It is not.
+2. **The Appraisal.** A standing program, run through proxies at the provenance bazaars (Sanrafsix's Memory Market first among them), to buy real Sith material at any price and counterfeits at a *good* one — the fakes are resold, keeping the market flooded with costume pieces so that the genuine article stays cheap, unrecognized, and easy to lift. Improv hook: a buyer who pays too much for the fakes and declines the real thing with a polite excuse.
+3. **The Wasp Trap.** Millennial's heresy on Dromund Kaas is alive and tolerated. It is a sump for the loud: the ambitious, the visionary, the seer who would otherwise draw attention inside Republic space. Emptor's people never touch it — occasionally they *send* someone to it — and it will be culled the day it reaches Republic space or the day a Darth title out of the Sith Worlds is taken seriously. Dromund Kaas is on the far side of the Rim from the Reach; if the heresy ever touches this campaign, it arrives as a recruiter, a rumor, or a prophecy that is suspiciously accurate about the Valley.
+4. **The Graduation.** The culling of the Inheritors (Dial 1) is Tacet's exam — see the set piece below — and its harvest includes the Vesta-9 file. The line now knows the crew, and which of them the beacon answered. **Their desire is not to kill them.** Gardeners are not pruned. Tacet's own successor has to come from somewhere, and the Rule of Two recruits at generational distance: if you want a sequel hook, the apprentice's apprentice may already be at your table.
+5. **The Absence.** Never on camera. Emptor manifests as pattern and Tacet as aftermath; neither is ever provable, and no encounter with either is winnable or intended. If the players ever build a true galactic power, the line's attention is the sequel's opening scene.
+
+### Set piece — The Emptied House
+*Aftermath encounter — the culling, seen from inside — run it after the Unveiling, or earlier as the culling's first quiet strike*
+
+> One night, one base, nobody alive, and the relic hall still full.
+
+Use an Inheritor base the crew has already visited with courtesy — first contact is always helpful (Dial 3) — so that coming back is the point: the dig camp at the Scar, a Sanrafsix warehouse, a cell on the Veshet spur. They find it taken apart. Everyone is dead and it happened in one night. There are no blaster scorings and no cauterized wounds. The bodies that must never be identified are not there at all (the disruptor); the rest died of falls, of fire, and of each other (Influence). The archive rooms are bare — not burned, *emptied*: dust outlines where shelves stood. And the relic hall is untouched. Every "Sith artifact" the Inheritors ever displayed is still on its plinth.
+
+**The truth.** Tacet took every genuine item and left every counterfeit, because Emptor's appraisal is the one thing in the galaxy that can tell them apart — and because a room full of fakes tells the galaxy this was robbery by people who did not know what they were looking at. Nobody sane concludes "Sith." The fakes are also a message, for the one reader in ten thousand who can tell.
+
+**Reading the room** (optional clue ladder; RAW difficulties; a failed check says nothing, a despair says something false):
+
+| Check | What it gives |
+|---|---|
+| **Perception, Average** | No blaster or saber marks; too few bodies for a base this size; the missing dead are exactly the senior faces the crew remembers. |
+| **Medicine, Hard** | The survivors of the first wave killed each other and then themselves, in an order that makes no sense — unless they were *made* to (Influence). Force-sensitive characters may substitute a Sense check: the fear in the walls has a shape. |
+| **Knowledge (Lore), Hard** *(Average if the character has handled a real Sith relic or holds a Sith-tagged fragment)* | The relics on the plinths are counterfeits — good ones, the Inheritors' own costume pieces. |
+| **Knowledge (Lore), Daunting** *(Formidable without a Sith-tagged fragment)* | *Only* fakes remain. Whoever did this could tell — which means a living tradition, not grave-robbers. Success awards a **Sith-tagged lore fragment** ("Someone in the galaxy can still tell true from false") and the GM a problem: the players now know the thing nobody sane concludes. |
+| **Streetwise, Hard** | The fakes will surface on the Memory Market within weeks, consigned by a fence who never met the seller. The trail ends at a dead fence. |
+| **Vigilance (or Sense), Average, in the archive** | The house is *quiet*. Whatever was here that the Force could feel left with the thieves — the only honest inventory of what was taken. |
+
+**Aftermath.** Fire-sale of the fakes; leaderless cells; half-trained adepts scattering with dangerous knowledge; if this was a senior base, the Vesta-9 file is gone with everything else. The galaxy blames the Vigil, the Admiralty, or an Inheritor purge, and each misattribution lights a different Act 3 fire (Part V). If the crew's gifted stands in the relic hall and feels nothing at all, let that land: the real thing was here, and it is with someone now.
 
 ---
 
