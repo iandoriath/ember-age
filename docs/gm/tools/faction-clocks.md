@@ -29,7 +29,7 @@ Use this space for who-knows-what, current attitude toward the crew, and debts e
 *(Dial 3: they hold the Vesta-9 file on the crew — and its gifted — from session one.)*
 
 ### Lamplighters
-*(Dial 3: the guild's coreward patron is a Sith front and the relighting order is its search pattern — see [Keepers of the Flame](../npcs/keepers.md), the Patronage. Chartkeeper Denno Pike is the Inheritors' mole on top of that — see the [NPC library](../npcs/vigil-inheritors.md).)*
+*(Dial 3: the guild's coreward patron is a Sith front and the relighting order is its search pattern — see [GM Truths](../truths.md), the Patronage. Chartkeeper Denno Pike is the Inheritors' mole on top of that — see the [NPC library](../npcs/vigil-inheritors.md).)*
 
 ### Kajidics
 —
