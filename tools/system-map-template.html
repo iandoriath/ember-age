@@ -33,6 +33,16 @@
   #chart[data-zoom=reach] .regionlbl{opacity:.5}
   #chart[data-zoom=wide] .regionlbl{opacity:.65}
   #chart[data-zoom=far] .regionlbl{opacity:.8}
+  /* hyperlane routes */
+  .route{fill:none;stroke:#24435f;stroke-width:2;stroke-linejoin:round;stroke-linecap:round;opacity:.55}
+  .majorroute{stroke:#35597a;stroke-width:4;opacity:.7}
+  #chart[data-zoom=close] .route,#chart[data-zoom=reach] .route{opacity:.25}
+  #nav polyline{fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+  #nav .seg-live{stroke:#7fd4ff;filter:url(#glow)}
+  #nav .seg-dark{stroke:#ffb454;stroke-dasharray:14 10;filter:url(#glow)}
+  #plotbtn.on{background:var(--ember);border-color:var(--ember);color:#1b120a}
+  .navhop{margin:.1rem 0}
+  .navhop b{color:var(--holo)} .navhop.dark b{color:var(--gold)}
   /* galaxy layer */
   .gdot{opacity:.8;r:3.5px}
   #chart[data-zoom=wide] .gdot{r:7px}
@@ -143,6 +153,7 @@
     <button class="hb" onclick="frame('reach')">Frame the Reach</button>
     <button class="hb" onclick="frame('road')">Frame the Road</button>
     <button class="hb" onclick="frame('galaxy')">Galaxy</button>
+    <button class="hb" id="plotbtn" onclick="togglePlot()">Plot Course</button>
     <button class="hb" onclick="share()">Share</button>
     <!-- GM:start -->
     <button class="hb" id="gm-switch" onclick="toggleGM()">GM</button>
@@ -218,11 +229,17 @@ function render() {
   const gg = el("g", {id:"galaxy"}, chart);
   const RCOLOR = {"Deep Core":"#8a6f4d","Core":"#7d6a4e","Colonies":"#5f6472","Inner Rim":"#4d6580","Expansion Region":"#42607e","Mid Rim":"#38587c","Outer Rim":"#2c5074","Wild Space":"#254562","Unknown Regions":"#254562","Hutt Space":"#3f6a5c"};
   for (const [name, x, y, grid, sector, region] of (DATA.galaxy || [])) {
-    const dot = el("circle", {class:"gdot", cx:x, cy:y, r:3.2, fill:RCOLOR[region] || "#203c55"}, gg);
+    const dot = el("circle", {class:"gdot", cx:x, cy:y, r:3.2, fill:RCOLOR[region] || "#203c55", "data-n":name}, gg);
     const tip = el("title", {}, dot);
     tip.textContent = `${name} · ${grid}${sector ? " · " + sector + " sector" : ""}${region ? " · " + region : ""}`;
     const nm = el("text", {class:"gname", x:x + 7, y:y + 3}, gg);
     nm.textContent = name;
+  }
+
+  const gr2 = el("g", {id:"routes"}, chart);
+  for (const r of (DATA.routes || [])) {
+    const pl = el("polyline", {class:"route" + (r.major ? " majorroute" : ""), points:r.pts.map(p => p.join(",")).join(" ")}, gr2);
+    const tt = el("title", {}, pl); tt.textContent = r.n;
   }
 
   const gl = el("g", {id:"lanes"}, chart);
@@ -274,7 +291,7 @@ function render() {
     <!-- GM:end -->
     g.addEventListener("pointerenter", () => highlight(s.id));
     g.addEventListener("pointerleave", () => highlight(null));
-    g.addEventListener("click", e => { e.stopPropagation(); if (!(drag && drag.moved)) openPanel(s.id); });
+    g.addEventListener("click", e => { e.stopPropagation(); if (!(drag && drag.moved) && !plotMode) openPanel(s.id); });
     g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openPanel(s.id); } });
   }
   const cor = byId.get("coruscant");
@@ -433,6 +450,76 @@ function importSave(file) {
   }).catch(() => toast("Could not read that save"));
 }
 <!-- GM:end -->
+
+/* ---- course plotting over the combined lane graph ---- */
+let plotMode = false, plotSel = [], navLayer = null;
+const NAMES = new Map(DATA.systems.map(s => [s.name, s.id]));
+function togglePlot() {
+  plotMode = !plotMode;
+  plotSel = [];
+  document.getElementById("plotbtn").classList.toggle("on", plotMode);
+  clearNav();
+  if (plotMode) toast("Plot course: pick origin, then destination");
+}
+function clearNav() { if (navLayer) { navLayer.remove(); navLayer = null; } }
+function edgeAlive(kind, a, b) {
+  if (kind === "living" || kind === "route" || kind === "far") return true;
+  const ia = NAMES.get(a), ib = NAMES.get(b);
+  if (ia && ib) { const sa = byId.get(ia), sb = byId.get(ib); if (sa.beacon && sb.beacon && isLit(sa) && isLit(sb)) return true; }
+  return false;
+}
+function plotPick(name) {
+  plotSel.push(name);
+  toast(plotSel.length === 1 ? `Origin: ${name} — pick destination` : `Plotting ${plotSel[0]} → ${name}…`);
+  if (plotSel.length === 2) { plotCourse(plotSel[0], plotSel[1]); plotSel = []; }
+}
+function plotCourse(A, B) {
+  clearNav();
+  const pos = DATA.nav.pos, adj = new Map();
+  const addadj = (a, b, w, kind, route) => { if (!adj.has(a)) adj.set(a, []); adj.get(a).push([b, w, kind, route]); };
+  for (const [a, b, kind, route] of DATA.nav.edges) {
+    const pa = pos[a], pb = pos[b];
+    if (!pa || !pb) continue;
+    const alive = edgeAlive(kind, a, b);
+    const base = Math.hypot(pa[0] - pb[0], pa[1] - pb[1]);
+    const w = alive ? base : base * 3;
+    addadj(a, b, w, alive ? "live" : "dark", route); addadj(b, a, w, alive ? "live" : "dark", route);
+  }
+  if (!adj.has(A) || !adj.has(B)) { toast("No charted lane touches " + (adj.has(A) ? B : A)); return; }
+  const dist = new Map([[A, 0]]), prev = new Map(), done = new Set();
+  while (true) {
+    let u = null, du = Infinity;
+    for (const [k, v] of dist) if (!done.has(k) && v < du) { u = k; du = v; }
+    if (u === null || u === B) break;
+    done.add(u);
+    for (const [v, w, kind, route] of adj.get(u) || []) {
+      if (du + w < (dist.get(v) ?? Infinity)) { dist.set(v, du + w); prev.set(v, [u, kind, route]); }
+    }
+  }
+  if (!prev.has(B)) { toast("No route connects them on the charted network"); return; }
+  const hops = [];
+  for (let n = B; n !== A;) { const [p, kind, route] = prev.get(n); hops.unshift({from:p, to:n, kind, route}); n = p; }
+  navLayer = el("g", {id:"nav"}, chart);
+  for (const h of hops) {
+    const pa = pos[h.from], pb = pos[h.to];
+    el("polyline", {class:h.kind === "dark" ? "seg-dark" : "seg-live", points:`${pa[0]},${pa[1]} ${pb[0]},${pb[1]}`}, navLayer);
+  }
+  const dark = hops.filter(h => h.kind === "dark").length;
+  const esc2 = x => esc(x);
+  document.getElementById("panel-body").innerHTML =
+    `<h2>Course</h2><div class="k">${esc2(A)} → ${esc2(B)}</div>` +
+    `<p>${hops.length} jump${hops.length === 1 ? "" : "s"}${dark ? ` · <b style="color:var(--gold)">${dark} beacon-dark</b>` : " · all lanes live"}</p>` +
+    hops.map((h, i) => `<p class="navhop ${h.kind}"><b>${i + 1}.</b> ${esc2(h.from)} → ${esc2(h.to)} <span class="muted" style="color:var(--dim);font-size:.8em">${esc2(h.route || "")}${h.kind === "dark" ? " · dark" : ""}</span></p>`).join("");
+  document.getElementById("panel").classList.add("open");
+}
+chart.addEventListener("click", e => {
+  if (!plotMode || (drag && drag.moved)) return;
+  const dot = e.target.classList && e.target.classList.contains("gdot") ? e.target : null;
+  const sys = e.target.closest ? e.target.closest(".sys") : null;
+  if (dot) { e.stopPropagation(); plotPick(dot.getAttribute("data-n")); }
+  else if (sys) { plotPick(byId.get(sys.dataset.id).name); }
+}, true);
+window.addEventListener("keydown", e => { if (e.key === "Escape" && plotMode) togglePlot(); });
 
 render();
 </script>

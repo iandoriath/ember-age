@@ -183,3 +183,18 @@ def test_galaxy_layer_embedded_and_deduped():
         assert s["name"].lower() not in names, s["name"]
     out = bsm.build("player", d, tpl)
     assert '"galaxy":' in out and "gdot" in out
+
+
+def test_route_network_embedded():
+    d = bsm.load_data()
+    assert len(d["routes"]) >= 50
+    majors = {r["n"] for r in d["routes"] if r["major"]}
+    assert {"Hydian Way", "Perlemian Trade Route", "Rimma Trade Route", "Corellian Run", "Corellian Trade Spine"} <= majors
+    assert len(d["nav"]["edges"]) > 500
+    names = {g[0].lower() for g in d["galaxy"]}
+    assert "brentaal iv" not in names  # aliased to the hero system
+    kinds = {e[2] for e in d["nav"]["edges"]}
+    assert "withered" in kinds and "dark" in kinds
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    out = bsm.build("player", d, tpl)
+    assert "Plot Course" in out and '"routes":' in out
