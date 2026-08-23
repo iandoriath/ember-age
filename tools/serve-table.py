@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 PLAYER_FILES = ["index.html", "system-map.html", "welcome-to-the-ember-age.html", "pocket-primer.html",
-                "reading-the-dice.html", "combat-primer.html", "ship-primer.html", "ship-sheet.html", "sheet-style.css"]
+                "reading-the-dice.html", "combat-primer.html", "conditions.html", "ship-primer.html", "ship-sheet.html", "sheet-style.css"]
 GM_FILES = ["index.html", "gm-screen.html", "system-map.html"]
 
 
