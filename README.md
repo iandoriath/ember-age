@@ -40,9 +40,11 @@ Content lives in `docs/setting/systems.json`; `make map` rebuilds both files.
 
 ### Putting it on the table Wi-Fi
 
-`make table` (or `python tools/serve-table.py`) serves the player handouts and the **player** map to every device on your Wi-Fi and prints the address to read out — `http://<your-laptop-ip>:8080/` gives players an index; the map's **Share** button then copies links with that address. Only the player-safe files are served; `make table GM=1` additionally exposes the GM screen and GM map under `/gm/` for your own tablet (anyone on the network who guesses the path can read them). Windows asks once to let Python accept connections — allow it on private networks.
+`make table` (or `python tools/serve-table.py`) serves **`player-aids/index.html`** — the player index: handouts plus the player map — to every device on your Wi-Fi and prints the address to read out, `http://<your-laptop-ip>:8080/`. The map's **Share** button then copies links with that address. Only the player-safe files are reachable; everything else is 404.
 
-Every system's panel also carries its **Wookieepedia** pull — the article's lead image and infobox facts (region, sector, lanes, climate, terrain, population…) in both editions, and the era-spanning lead paragraph in the GM layer only, since it spoils. `make wookieepedia` refreshes `docs/setting/wookieepedia.json` from the Legends articles (pin an article with `"wpTitle"` or opt a system out with `"wpSkip"` in `systems.json`); the build itself stays offline. Text is CC BY-SA; the thumbnails are embedded for table use only.
+`make table GM=1` additionally serves **`index.html`** — the GM lander (GM screen, GM map, GM sheet, plus what the players see) — at `http://<your-laptop-ip>:8080/gm/`. It is not linked from the player page, but anyone on the network who types the path can read it. Both index pages also work straight from disk: double-click `index.html` for the GM lander.
+
+Windows asks once to let Python accept connections — allow it on private networks.
 
 ## What's in `docs/`
 

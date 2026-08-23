@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Ember Age — GM</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap">
+<style>
+  :root{--bg:#171310;--ink:#e9ded0;--dim:#a89a88;--line:#3a2f24;--ember:#e07b39;--gold:#ffb454;--holo:#5fc3ff;--holo-dim:#2a5f80}
+  *{box-sizing:border-box}html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font:17px/1.5 system-ui,"Segoe UI",Roboto,sans-serif;padding:2.2rem 1.4rem 4rem;max-width:44rem;margin:0 auto}
+  h1{font:700 1.3rem/1.2 Rajdhani,system-ui,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin:0}
+  h1 b{color:var(--ember)}
+  .sub{color:var(--dim);margin:.2rem 0 1.6rem;font-size:.9rem}
+  h2{font:600 .78rem/1 Rajdhani,system-ui,sans-serif;letter-spacing:.25em;text-transform:uppercase;margin:1.8rem 0 .5rem}
+  h2.gm{color:var(--ember)}h2.pl{color:var(--holo)}
+  ul{list-style:none;padding:0;margin:0}
+  a.card{display:block;padding:.85rem 1rem;margin:.45rem 0;border:1px solid var(--line);border-radius:.4rem;color:var(--ink);text-decoration:none;background:#211a14}
+  a.card:hover,a.card:focus-visible{border-color:var(--ember);outline:none}
+  a.card small{display:block;color:var(--dim);font-size:.8rem;margin-top:.1rem}
+  ul.pl a.card{background:#0b1520;border-color:var(--holo-dim)}ul.pl a.card:hover{border-color:var(--holo)}
+  .note{color:var(--dim);font-size:.8rem;margin-top:2rem;border-top:1px solid var(--line);padding-top:.8rem}
+</style>
+</head>
+<body>
+<h1>The Ember Age <b>·</b> GM</h1>
+<p class="sub">Nothing on this page is for players. Their index is <a href="player-aids/index.html" style="color:var(--holo)">player-aids/index.html</a> — that is what <code>make table</code> serves at the root.</p>
+
+<h2 class="gm">Run the game</h2>
+<ul>
+  <li><a class="card" href="gm-screen.html">GM Screen<small>NPC library, trackers, session log, reference, setting, GM truths — state saves in this browser; Export / Import moves it</small></a></li>
+  <li><a class="card" href="system-map.html">System Map — GM edition<small>Holo chart with the GM layer: episode seeds, canon notes, factions, Wookieepedia leads · Import save syncs beacons from a GM-screen export</small></a></li>
+  <li><a class="card" href="player-aids/gm-sheet.html">GM Sheet<small>One-page rules reference for the table (print it)</small></a></li>
+</ul>
+
+<h2 class="pl">What the players see</h2>
+<ul class="pl">
+  <li><a class="card" href="player-aids/index.html">Player index<small>The landing page players get on the Wi-Fi</small></a></li>
+  <li><a class="card" href="player-aids/system-map.html">System Map — player edition<small>Same chart, GM data stripped at build time · beacon state travels in the link (?lit=…)</small></a></li>
+  <li><a class="card" href="player-aids/welcome-to-the-ember-age.html">Welcome to the Ember Age</a></li>
+  <li><a class="card" href="player-aids/pocket-primer.html">Pocket Primer</a></li>
+  <li><a class="card" href="player-aids/reading-the-dice.html">Reading the Dice</a></li>
+  <li><a class="card" href="player-aids/combat-primer.html">Combat Primer</a></li>
+  <li><a class="card" href="player-aids/ship-primer.html">Starship Primer</a></li>
+  <li><a class="card" href="player-aids/ship-sheet.html">Ship Sheet</a></li>
+</ul>
+
+<p class="note">Rebuild after editing content: <code>make build</code> (wiki + GM screen + player aids + map). Refresh the Wookieepedia pulls with <code>make wookieepedia</code>. Put it on the table Wi-Fi with <code>make table</code> (players) or <code>make table GM=1</code> (this page at <code>/gm/</code> too).</p>
+</body>
+</html>
