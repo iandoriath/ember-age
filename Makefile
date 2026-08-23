@@ -1,6 +1,6 @@
 # The Ember Age — GM tools
 
-.PHONY: install screen wiki build map wookieepedia clean
+.PHONY: install screen wiki build map wookieepedia table clean
 
 install:
 	pip install -r requirements.txt
@@ -24,6 +24,10 @@ map:
 ## Refresh Wookieepedia summaries + lead images for the map (network; writes docs/setting/wookieepedia.json)
 wookieepedia:
 	python3 tools/fetch-wookieepedia.py
+
+## Serve the player handouts + player map to devices on the local Wi-Fi (http://<lan-ip>:8080/); add GM=1 to also serve GM files under /gm/
+table:
+	python3 tools/serve-table.py $(if $(GM),--gm,)
 
 ## Strict-build wiki + GM screen + player aids + system map (what CI runs)
 build:
