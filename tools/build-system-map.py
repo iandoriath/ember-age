@@ -18,6 +18,7 @@ TEMPLATE = ROOT / "tools/system-map-template.html"
 OUT_GM = ROOT / "system-map.html"
 OUT_PLAYER = ROOT / "player-aids/system-map.html"
 WOOKIEEPEDIA = ROOT / "docs/setting/wookieepedia.json"
+GALAXY_CSV = ROOT / "docs/maps/Star Wars Galaxy Map Grid Coordinates - planets.csv"
 # Timeless geography goes to everyone; era-stamped facts (who ruled it, how many lived there) are GM-only.
 PLAYER_FACTS = {"region", "sector", "system", "routes", "climate", "terrain", "species", "language"}
 
@@ -44,10 +45,33 @@ def merge_wookieepedia(data: dict, wp: dict) -> dict:
     return d
 
 
+def load_galaxy(exclude_names: set) -> list:
+    """Every named planet of the galaxy gazetteer, positioned on the strict grid (340 units per square)
+    with a deterministic in-square scatter. [name, x, y, grid, sector, region] per planet."""
+    if not GALAXY_CSV.exists():
+        return []
+    import csv
+    import hashlib
+    out = []
+    with open(GALAXY_CSV, encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            name = row["Planet"].strip()
+            m = re.match(r"^([A-V])(\d{1,2})$", row["Grid"].strip().upper().replace("-", ""))
+            if not name or not m or name.lower() in exclude_names:
+                continue
+            col, rown = ord(m.group(1)) - 64, int(m.group(2))
+            h = int(hashlib.md5(name.encode()).hexdigest(), 16)
+            jx, jy = (h % 1000) / 1000 - 0.5, ((h // 1000) % 1000) / 1000 - 0.5
+            out.append([name, round((col - 0.5) * 340 + jx * 290), round((rown - 0.5) * 340 + jy * 290),
+                        f"{m.group(1)}-{rown}", row["Sector"].strip(), row["Region"].strip()])
+    return out
+
+
 def load_data() -> dict:
     data = json.loads(DATA.read_text(encoding="utf-8"))
     if WOOKIEEPEDIA.exists():
         data = merge_wookieepedia(data, json.loads(WOOKIEEPEDIA.read_text(encoding="utf-8")))
+    data["galaxy"] = load_galaxy({s["name"].lower() for s in data["systems"]})
     return data
 
 

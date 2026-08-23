@@ -33,10 +33,23 @@
   #chart[data-zoom=reach] .regionlbl{opacity:.5}
   #chart[data-zoom=wide] .regionlbl{opacity:.65}
   #chart[data-zoom=far] .regionlbl{opacity:.8}
+  /* galaxy layer */
+  .gdot{opacity:.8;r:3.5px}
+  #chart[data-zoom=wide] .gdot{r:7px}
+  #chart[data-zoom=far] .gdot{r:13px;opacity:.9}
+  .gname{font-size:11px;fill:#3f6a8c;letter-spacing:.06em;display:none}
+  #chart[data-zoom=close] .gname{display:block}
+  #chart[data-zoom=close] .regionlbl{opacity:.12}
+  #chart[data-zoom=far] .sys text{display:none}
+  #chart[data-zoom=far] .sys.major .lbl{display:block;font-size:58px}
+  #chart[data-zoom=wide] .sys .lbl{font-size:26px}
+  #chart[data-zoom=wide] .sys .sub,#chart[data-zoom=wide] .sys .hop{display:none}
+  #chart[data-zoom=wide] .lanelbl{font-size:20px}
+  #chart[data-zoom=far] .lanelbl{display:none}
   /* compass rose */
-  .rose .roseline{stroke:var(--holo-dim);stroke-width:1;fill:none}
+  .rose .roseline{stroke:var(--holo-dim);stroke-width:6;fill:none}
   .rose .rosehead{fill:var(--holo-dim)}
-  .rose .roselbl{font-size:8px;fill:var(--dim);letter-spacing:.22em}
+  .rose .roselbl{font-size:42px;fill:var(--dim);letter-spacing:.22em}
   /* lanes */
   .lane{fill:none;stroke-linecap:round;transition:opacity .25s,stroke .25s}
   .lane[data-kind=dark]{stroke:var(--holo-dim);stroke-width:1.2;stroke-dasharray:6 7}
@@ -129,6 +142,7 @@
     <button class="hb" onclick="zoomBy(1.3)">+</button><button class="hb" onclick="zoomBy(1/1.3)">−</button>
     <button class="hb" onclick="frame('reach')">Frame the Reach</button>
     <button class="hb" onclick="frame('road')">Frame the Road</button>
+    <button class="hb" onclick="frame('galaxy')">Galaxy</button>
     <button class="hb" onclick="share()">Share</button>
     <!-- GM:start -->
     <button class="hb" id="gm-switch" onclick="toggleGM()">GM</button>
@@ -146,7 +160,7 @@ const DATA = JSON.parse(document.getElementById("data").textContent);
 const byId = new Map(DATA.systems.map(s => [s.id, s]));
 const SVG = "http://www.w3.org/2000/svg";
 const chart = document.getElementById("chart");
-const VIEWS = {reach:{x:240, y:820, w:1800, h:820}, road:{x:40, y:0, w:2900, h:1660}};
+const VIEWS = {reach:{x:4020, y:5330, w:1200, h:740}, road:{x:3550, y:2350, w:2150, h:4100}, galaxy:{x:0, y:120, w:7650, h:7300}};
 let vb = {...VIEWS.reach};
 
 /* ---- lit state (Task 4 adds persistence) ---- */
@@ -185,8 +199,8 @@ function render() {
     <filter id="soften" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
     <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#0f2030" stroke-width=".6"/></pattern>
     <pattern id="grid2" width="250" height="250" patternUnits="userSpaceOnUse"><path d="M250 0H0V250" fill="none" stroke="#15304a" stroke-width=".8"/></pattern>`;
-  el("rect", {x:-2000, y:-2000, width:6000, height:6000, fill:"url(#grid)"}, chart);
-  el("rect", {x:-2000, y:-2000, width:6000, height:6000, fill:"url(#grid2)"}, chart);
+  el("rect", {x:-2400, y:-2400, width:12600, height:12600, fill:"url(#grid)"}, chart);
+  el("rect", {x:-2400, y:-2400, width:12600, height:12600, fill:"url(#grid2)"}, chart);
 
   const gr = el("g", {id:"regions"}, chart);
   for (const r of (DATA.regions || [])) {
@@ -199,6 +213,16 @@ function render() {
       if (r.lrot) lt.setAttribute("transform", `rotate(${r.lrot} ${r.label[0]} ${r.label[1]})`);
       lt.textContent = r.name;
     }
+  }
+
+  const gg = el("g", {id:"galaxy"}, chart);
+  const RCOLOR = {"Deep Core":"#8a6f4d","Core":"#7d6a4e","Colonies":"#5f6472","Inner Rim":"#4d6580","Expansion Region":"#42607e","Mid Rim":"#38587c","Outer Rim":"#2c5074","Wild Space":"#254562","Unknown Regions":"#254562","Hutt Space":"#3f6a5c"};
+  for (const [name, x, y, grid, sector, region] of (DATA.galaxy || [])) {
+    const dot = el("circle", {class:"gdot", cx:x, cy:y, r:3.2, fill:RCOLOR[region] || "#203c55"}, gg);
+    const tip = el("title", {}, dot);
+    tip.textContent = `${name} · ${grid}${sector ? " · " + sector + " sector" : ""}${region ? " · " + region : ""}`;
+    const nm = el("text", {class:"gname", x:x + 7, y:y + 3}, gg);
+    nm.textContent = name;
   }
 
   const gl = el("g", {id:"lanes"}, chart);
@@ -222,7 +246,7 @@ function render() {
 
   const gs = el("g", {id:"systems"}, chart);
   for (const s of DATA.systems) {
-    const cls = `sys r-${s.region}` + (s.beacon ? " beacon" : "") + (s.alwaysLit ? " always" : lit.has(s.id) ? " lit" : "");
+    const cls = `sys r-${s.region}` + (s.major ? " major" : "") + (s.beacon ? " beacon" : "") + (s.alwaysLit ? " always" : lit.has(s.id) ? " lit" : "");
     const g = el("g", {class:cls, "data-id":s.id, transform:`translate(${s.x} ${s.y})`, tabindex:0, role:"button"}, gs);
     el("circle", {class:"hit", r:22}, g);
     if (s.beacon) el("circle", {class:"ring", r:12}, g);
@@ -235,12 +259,16 @@ function render() {
     } else {
       el("circle", {class:"core", r:s.beacon ? 5 : 3}, g);
     }
-    const lbl = el("text", {class:"lbl", x:16, y:4}, g); lbl.textContent = (s.offChart ? "To " : "") + s.name;
-    if (s.sub) { const sub = el("text", {class:"sub", x:16, y:16}, g); sub.textContent = s.sub; }
+    let lx = 16, ly = 4, anch = "start";
+    if (s.la === "left") { lx = -16; anch = "end"; }
+    else if (s.la === "above") { lx = 0; ly = -17; anch = "middle"; }
+    else if (s.la === "below") { lx = 0; ly = 28; anch = "middle"; }
+    const lbl = el("text", {class:"lbl", x:lx, y:ly, "text-anchor":anch}, g); lbl.textContent = (s.offChart ? "To " : "") + s.name;
+    if (s.sub) { const sub = el("text", {class:"sub", x:lx, y:ly + 12, "text-anchor":anch}, g); sub.textContent = s.sub; }
     if (s.hop !== undefined) { const h = el("text", {class:"hop", x:-10, y:-14, "text-anchor":"end"}, g); h.textContent = s.hop === 0 ? "⌂" : s.hop; }
     <!-- GM:start -->
     if (s.gm && s.gm.factions && s.gm.factions.length) {
-      const f = el("text", {class:"fac", x:16, y:s.sub ? 27 : 16}, g);
+      const f = el("text", {class:"fac", x:lx, y:ly + (s.sub ? 24 : 12), "text-anchor":anch}, g);
       f.textContent = s.gm.factions.map(x => x.split("-").map(w => w[0]).join("")).join(" · ");
     }
     <!-- GM:end -->
@@ -251,14 +279,14 @@ function render() {
   }
   const cor = byId.get("coruscant");
   if (cor) {
-    const rx = 2620, ry = 1480, ang = Math.atan2(cor.y - ry, cor.x - rx);
+    const rx = 1150, ry = 6780, ang = Math.atan2(cor.y - ry, cor.x - rx);
     const rose = el("g", {class:"rose"}, chart);
     const P = (r, a) => [rx + r * Math.cos(a), ry + r * Math.sin(a)];
-    const [hx, hy] = P(30, ang), [tx, ty] = P(26, ang + Math.PI);
-    el("path", {class:"roseline", d:`M${tx},${ty} L${hx},${hy} M${P(26, ang - Math.PI / 2)} L${P(26, ang + Math.PI / 2)}`}, rose);
-    el("path", {class:"rosehead", d:`M${P(38, ang)} L${P(26, ang - 0.16)} L${P(26, ang + 0.16)} z`}, rose);
+    const [hx, hy] = P(150, ang), [tx, ty] = P(130, ang + Math.PI);
+    el("path", {class:"roseline", d:`M${tx},${ty} L${hx},${hy} M${P(130, ang - Math.PI / 2)} L${P(130, ang + Math.PI / 2)}`}, rose);
+    el("path", {class:"rosehead", d:`M${P(190, ang)} L${P(130, ang - 0.16)} L${P(130, ang + 0.16)} z`}, rose);
     const rl = (r, a, txt) => { const [x, y] = P(r, a); const n = el("text", {class:"roselbl", x, y: y + 3, "text-anchor":"middle"}, rose); n.textContent = txt; };
-    rl(62, ang, "COREWARD"); rl(54, ang + Math.PI, "RIMWARD"); rl(52, ang - Math.PI / 2, "SPINWARD"); rl(52, ang + Math.PI / 2, "TRAILING");
+    rl(300, ang, "COREWARD"); rl(270, ang + Math.PI, "RIMWARD"); rl(260, ang - Math.PI / 2, "SPINWARD"); rl(260, ang + Math.PI / 2, "TRAILING");
   }
   renderStatus();
   applyView();
@@ -286,8 +314,8 @@ function applyView() {
   let {x, y, w, h} = vb;
   if (w / h < aspect) { const nw = h * aspect; x -= (nw - w) / 2; w = nw; } else { const nh = w / aspect; y -= (nh - h) / 2; h = nh; }
   chart.setAttribute("viewBox", `${x} ${y} ${w} ${h}`);
-  const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx < 1850 && cy > 800;
-  chart.dataset.zoom = vb.w > 2300 ? "far" : vb.w > 1950 ? "wide" : inReach ? "reach" : "far";
+  const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx > 4000 && cx < 5500 && cy > 5150;
+  chart.dataset.zoom = vb.w < 900 ? "close" : (vb.w < 2700 && inReach) ? "reach" : vb.w < 4800 ? "wide" : "far";
 }
 function setView(v) { vb = {...v}; applyView(); }
 function frame(name) { setView(VIEWS[name]); }
@@ -295,7 +323,7 @@ function zoomAt(factor, cx, cy) {
   const r = chart.getBoundingClientRect();
   const [x0, y0, w0, h0] = currentBox();
   const px = x0 + (cx - r.left) / r.width * w0, py = y0 + (cy - r.top) / r.height * h0;
-  const nw = Math.min(Math.max(vb.w / factor, 300), 4000), f = vb.w / nw;
+  const nw = Math.min(Math.max(vb.w / factor, 300), 8600), f = vb.w / nw;
   vb.w = nw; vb.h = vb.h / f;
   vb.x = px - (px - vb.x) / f; vb.y = py - (py - vb.y) / f;
   applyView();

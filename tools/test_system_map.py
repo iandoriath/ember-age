@@ -113,7 +113,7 @@ def test_coruscant_is_the_coreward_end_of_the_road():
     lane = next(l for l in d["lanes"] if {l["from"], l["to"]} == {"brentaal", "coruscant"})
     assert lane["kind"] == "living" and lane["name"] == "Perlemian Trade Route"
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
-    assert "road:{x:40, y:0, w:2900, h:1660}" in tpl
+    assert "road:{x:3550, y:2350, w:2150, h:4100}" in tpl
 
 
 def test_committed_outputs_match_fresh_build():
@@ -172,3 +172,14 @@ def test_regions_are_well_formed():
         if r["kind"] != "text":
             for k in ("cx", "cy", "rx", "ry"):
                 assert k in r, (r["name"], k)
+
+
+def test_galaxy_layer_embedded_and_deduped():
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    d = bsm.load_data()
+    assert len(d.get("galaxy", [])) > 1900
+    names = {g[0].lower() for g in d["galaxy"]}
+    for s in d["systems"]:
+        assert s["name"].lower() not in names, s["name"]
+    out = bsm.build("player", d, tpl)
+    assert '"galaxy":' in out and "gdot" in out

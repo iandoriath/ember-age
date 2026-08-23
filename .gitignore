@@ -4,3 +4,5 @@ __pycache__/
 *.pyc
 .venv/
 node_modules/
+docs/maps/*.jpg
+docs/maps/*.png

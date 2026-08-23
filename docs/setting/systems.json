@@ -4,8 +4,8 @@
    "id": "bannistar",
    "name": "Bannistar Station",
    "sub": "Okrent's Drift",
-   "x": 1530,
-   "y": 880,
+   "x": 4870,
+   "y": 4950,
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
@@ -20,13 +20,14 @@
      "lamplighters"
     ]
    },
-   "grid": "O-15"
+   "grid": "O-15",
+   "major": true
   },
   {
    "id": "enarc",
    "name": "Enarc",
-   "x": 1590,
-   "y": 1145,
+   "x": 5000,
+   "y": 5560,
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
@@ -45,8 +46,8 @@
    "id": "alui",
    "name": "Alui",
    "wpTitle": "Alui system/Legends",
-   "x": 1440,
-   "y": 1190,
+   "x": 4880,
+   "y": 5610,
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
@@ -57,13 +58,14 @@
     "canon": "Route stop; blank canvas.",
     "factions": []
    },
-   "grid": "O-17"
+   "grid": "O-17",
+   "la": "above"
   },
   {
    "id": "verdanth",
    "name": "Verdanth",
-   "x": 1280,
-   "y": 1220,
+   "x": 4740,
+   "y": 5655,
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
@@ -74,13 +76,14 @@
     "canon": "Jungle world; otherwise blank.",
     "factions": []
    },
-   "grid": "N-17"
+   "grid": "N-17",
+   "la": "below"
   },
   {
    "id": "aplooine",
    "name": "Aplooine",
-   "x": 1130,
-   "y": 1180,
+   "x": 4650,
+   "y": 5580,
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
@@ -93,13 +96,14 @@
      "republic"
     ]
    },
-   "grid": "N-17"
+   "grid": "N-17",
+   "la": "above"
   },
   {
    "id": "sanrafsix",
    "name": "Sanrafsix",
-   "x": 990,
-   "y": 1215,
+   "x": 4550,
+   "y": 5640,
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
@@ -113,13 +117,14 @@
      "bounty-hunters-guild"
     ]
    },
-   "grid": "N-17"
+   "grid": "N-17",
+   "la": "below"
   },
   {
    "id": "heptooine",
    "name": "Heptooine",
-   "x": 860,
-   "y": 1185,
+   "x": 4460,
+   "y": 5590,
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
@@ -130,13 +135,14 @@
     "canon": "Route stop.",
     "factions": []
    },
-   "grid": "N-17"
+   "grid": "N-17",
+   "la": "above"
   },
   {
    "id": "jutrand",
    "name": "Jutrand",
-   "x": 700,
-   "y": 1195,
+   "x": 4350,
+   "y": 5620,
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
@@ -150,14 +156,15 @@
      "vigil"
     ]
    },
-   "grid": "M-17"
+   "grid": "M-17",
+   "la": "below"
   },
   {
    "id": "darkknell",
    "name": "Darkknell",
    "sub": "Knel'char system",
-   "x": 580,
-   "y": 1160,
+   "x": 4230,
+   "y": 5570,
    "region": "reach",
    "beacon": true,
    "alwaysLit": true,
@@ -170,13 +177,15 @@
      "republic"
     ]
    },
-   "grid": "M-17"
+   "grid": "M-17",
+   "la": "above",
+   "major": true
   },
   {
    "id": "eriadu",
    "name": "Eriadu",
-   "x": 420,
-   "y": 1350,
+   "x": 4150,
+   "y": 5900,
    "region": "reach",
    "beacon": true,
    "alwaysLit": true,
@@ -190,13 +199,15 @@
      "kajidics"
     ]
    },
-   "grid": "M-18"
+   "grid": "M-18",
+   "la": "left",
+   "major": true
   },
   {
    "id": "fostin-nine",
    "name": "Fostin Nine",
-   "x": 1055,
-   "y": 1335,
+   "x": 4590,
+   "y": 5770,
    "region": "reach",
    "beacon": false,
    "alwaysLit": false,
@@ -213,8 +224,8 @@
   {
    "id": "syned",
    "name": "Syned",
-   "x": 975,
-   "y": 1455,
+   "x": 4520,
+   "y": 5870,
    "region": "reach",
    "beacon": false,
    "alwaysLit": false,
@@ -224,13 +235,14 @@
     "canon": "Sanrafsix Corridor.",
     "factions": []
    },
-   "grid": "N-17"
+   "grid": "N-17",
+   "la": "below"
   },
   {
    "id": "omwat",
    "name": "Omwat",
-   "x": 900,
-   "y": 1565,
+   "x": 4470,
+   "y": 5995,
    "region": "reach",
    "beacon": false,
    "alwaysLit": false,
@@ -240,14 +252,15 @@
     "canon": "Sanrafsix Corridor.",
     "factions": []
    },
-   "grid": "N-18"
+   "grid": "N-18",
+   "la": "below"
   },
   {
    "id": "veshet",
    "name": "Veshet",
    "wpSkip": true,
-   "x": 1185,
-   "y": 1420,
+   "x": 4690,
+   "y": 5850,
    "region": "reach",
    "beacon": false,
    "alwaysLit": false,
@@ -264,8 +277,8 @@
   {
    "id": "chelloa",
    "name": "Chelloa",
-   "x": 450,
-   "y": 1075,
+   "x": 4130,
+   "y": 5470,
    "region": "reach",
    "beacon": false,
    "alwaysLit": false,
@@ -275,13 +288,14 @@
     "canon": "Devastated in Knight Errant (1032 BBY). Floor, not ceiling.",
     "factions": []
    },
-   "grid": "M-17"
+   "grid": "M-17",
+   "la": "left"
   },
   {
    "id": "byllura",
    "name": "Byllura",
-   "x": 1330,
-   "y": 1080,
+   "x": 4700,
+   "y": 5470,
    "region": "reach",
    "beacon": false,
    "alwaysLit": false,
@@ -293,13 +307,14 @@
      "inheritors"
     ]
    },
-   "grid": "N-17"
+   "grid": "N-17",
+   "la": "above"
   },
   {
    "id": "aquilaris",
    "name": "Aquilaris",
-   "x": 1525,
-   "y": 1315,
+   "x": 4960,
+   "y": 5735,
    "region": "reach",
    "beacon": false,
    "alwaysLit": false,
@@ -309,13 +324,14 @@
     "canon": "Knight Errant world.",
     "factions": []
    },
-   "grid": "O-17"
+   "grid": "O-17",
+   "la": "below"
   },
   {
    "id": "gazzari",
    "name": "Gazzari",
-   "x": 770,
-   "y": 1335,
+   "x": 4290,
+   "y": 5760,
    "region": "reach",
    "beacon": false,
    "alwaysLit": false,
@@ -325,15 +341,16 @@
     "canon": "Knight Errant battlefield.",
     "factions": []
    },
-   "grid": "M-17"
+   "grid": "M-17",
+   "la": "below"
   },
   {
    "id": "naboo",
    "name": "Naboo",
    "sub": "Enarc Run",
    "offChart": true,
-   "x": 1765,
-   "y": 1260,
+   "x": 5095,
+   "y": 5700,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -350,8 +367,8 @@
    "name": "Hutt Space",
    "sub": "Triellus",
    "offChart": true,
-   "x": 1950,
-   "y": 1040,
+   "x": 6120,
+   "y": 4080,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -367,8 +384,8 @@
   {
    "id": "triffis",
    "name": "Triffis",
-   "x": 1690,
-   "y": 830,
+   "x": 4990,
+   "y": 4850,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -383,8 +400,8 @@
   {
    "id": "glom-tho",
    "name": "Glom Tho",
-   "x": 1850,
-   "y": 780,
+   "x": 5080,
+   "y": 4760,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -399,8 +416,8 @@
   {
    "id": "kalarba",
    "name": "Kalarba",
-   "x": 2030,
-   "y": 720,
+   "x": 5180,
+   "y": 4680,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -418,8 +435,8 @@
    "id": "churba",
    "name": "Churba",
    "sub": "Corellian Run junction",
-   "x": 2180,
-   "y": 640,
+   "x": 5290,
+   "y": 4530,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -432,15 +449,16 @@
      "admiralty"
     ]
    },
-   "grid": "P-14"
+   "grid": "P-14",
+   "major": true
   },
   {
    "id": "new-cov",
    "name": "New Cov",
    "sub": "Corellian Run",
    "offChart": true,
-   "x": 2330,
-   "y": 585,
+   "x": 5390,
+   "y": 4460,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -460,8 +478,8 @@
    "sub": "Corellian Run",
    "offChart": true,
    "wpSkip": true,
-   "x": 2000,
-   "y": 555,
+   "x": 4230,
+   "y": 3560,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -479,8 +497,8 @@
    "sub": "Hydian Way",
    "offChart": true,
    "wpSkip": true,
-   "x": 905,
-   "y": 140,
+   "x": 6310,
+   "y": 830,
    "region": "far",
    "beacon": false,
    "alwaysLit": true,
@@ -498,8 +516,8 @@
    "sub": "Rimma · coreward",
    "offChart": true,
    "wpSkip": true,
-   "x": 330,
-   "y": 1180,
+   "x": 3900,
+   "y": 4230,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -517,8 +535,8 @@
    "sub": "Rimma · rimward",
    "offChart": true,
    "wpSkip": true,
-   "x": 560,
-   "y": 1475,
+   "x": 4230,
+   "y": 6220,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -536,8 +554,8 @@
    "sub": "the Hydian's end",
    "offChart": true,
    "wpSkip": true,
-   "x": 250,
-   "y": 1505,
+   "x": 3520,
+   "y": 6560,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -555,8 +573,8 @@
    "sub": "Perlemian",
    "offChart": true,
    "wpSkip": true,
-   "x": 2100,
-   "y": 265,
+   "x": 6270,
+   "y": 1510,
    "region": "far",
    "beacon": false,
    "alwaysLit": true,
@@ -571,8 +589,8 @@
   {
    "id": "malastare",
    "name": "Malastare",
-   "x": 860,
-   "y": 990,
+   "x": 4520,
+   "y": 5210,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -589,8 +607,8 @@
   {
    "id": "denon",
    "name": "Denon",
-   "x": 1160,
-   "y": 700,
+   "x": 4560,
+   "y": 4230,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
@@ -606,8 +624,8 @@
    "id": "brentaal",
    "name": "Brentaal",
    "wpTitle": "Brentaal IV/Legends",
-   "x": 640,
-   "y": 245,
+   "x": 3990,
+   "y": 2930,
    "region": "far",
    "beacon": false,
    "alwaysLit": true,
@@ -619,13 +637,14 @@
      "admiralty"
     ]
    },
-   "grid": "L-9"
+   "grid": "L-9",
+   "major": true
   },
   {
    "id": "lantillies",
    "name": "Lantillies",
-   "x": 1870,
-   "y": 330,
+   "x": 5250,
+   "y": 2520,
    "region": "far",
    "beacon": false,
    "alwaysLit": true,
@@ -640,8 +659,8 @@
   {
    "id": "kashyyyk",
    "name": "Kashyyyk",
-   "x": 1955,
-   "y": 450,
+   "x": 5300,
+   "y": 2870,
    "region": "far",
    "beacon": false,
    "alwaysLit": true,
@@ -651,15 +670,16 @@
     "canon": "Randon Run waypoint.",
     "factions": []
    },
-   "grid": "P-9"
+   "grid": "P-9",
+   "major": true
   },
   {
    "id": "teraab",
    "name": "Teraab",
    "wpTitle": "Teraab sector/Legends",
    "sub": "stellar nursery",
-   "x": 1880,
-   "y": 585,
+   "x": 5210,
+   "y": 3520,
    "region": "far",
    "beacon": false,
    "alwaysLit": false,
@@ -675,8 +695,8 @@
    "id": "ruusan",
    "name": "Ruusan",
    "sub": "the Valley",
-   "x": 1995,
-   "y": 655,
+   "x": 5330,
+   "y": 3620,
    "region": "far",
    "beacon": false,
    "alwaysLit": false,
@@ -689,14 +709,15 @@
      "vigil"
     ]
    },
-   "grid": "P-11"
+   "grid": "P-11",
+   "major": true
   },
   {
    "id": "coruscant",
    "name": "Coruscant",
    "sub": "the Core",
-   "x": 520,
-   "y": 175,
+   "x": 3850,
+   "y": 2820,
    "region": "far",
    "beacon": false,
    "alwaysLit": true,
@@ -709,7 +730,8 @@
      "admiralty"
     ]
    },
-   "grid": "L-9"
+   "grid": "L-9",
+   "major": true
   }
  ],
  "lanes": [
@@ -946,94 +968,131 @@
   {
    "name": "THE CORE",
    "kind": "core",
-   "cx": 610,
-   "cy": 210,
-   "rx": 300,
-   "ry": 125,
+   "cx": 3900,
+   "cy": 3150,
+   "rx": 800,
+   "ry": 560,
    "rot": -8,
    "label": [
-    300,
-    235
+    3890,
+    2530
    ],
-   "size": 24
+   "size": 110
+  },
+  {
+   "name": "DEEP CORE",
+   "kind": "text",
+   "label": [
+    3900,
+    3310
+   ],
+   "size": 44
   },
   {
    "name": "INNER RIM",
    "kind": "text",
    "label": [
-    1305,
-    650
+    4310,
+    3810
    ],
-   "size": 14
+   "size": 44
   },
   {
    "name": "MID RIM",
    "kind": "mid",
-   "cx": 1990,
-   "cy": 700,
-   "rx": 400,
-   "ry": 160,
-   "rot": -16,
+   "cx": 5250,
+   "cy": 4520,
+   "rx": 700,
+   "ry": 420,
+   "rot": -25,
    "label": [
-    2270,
-    810
+    5570,
+    4185
    ],
-   "size": 30
+   "size": 90
   },
   {
    "name": "MID RIM",
    "kind": "text",
    "label": [
-    1565,
-    555
+    5760,
+    3090
    ],
-   "size": 20
+   "size": 60
+  },
+  {
+   "name": "THE SLICE",
+   "kind": "text",
+   "label": [
+    5910,
+    2290
+   ],
+   "size": 64
   },
   {
    "name": "OUTER RIM",
    "kind": "text",
    "label": [
-    330,
-    990
+    4000,
+    5115
    ],
-   "size": 36
+   "size": 110
   },
   {
    "name": "TRAILING SECTORS",
    "kind": "text",
    "label": [
-    333,
-    1040
+    4012,
+    5228
    ],
-   "size": 15
+   "size": 44
   },
   {
    "name": "HUTT SPACE",
    "kind": "hutt",
-   "cx": 2270,
-   "cy": 1130,
-   "rx": 300,
-   "ry": 140,
-   "rot": -10,
+   "cx": 6250,
+   "cy": 3950,
+   "rx": 850,
+   "ry": 600,
+   "rot": -15,
    "label": [
-    2310,
-    1135
+    6255,
+    3965
    ],
-   "size": 26
+   "size": 100
   },
   {
    "name": "THE TERAAB NURSERY",
    "kind": "nebula",
-   "cx": 1930,
-   "cy": 620,
-   "rx": 140,
-   "ry": 85,
+   "cx": 5270,
+   "cy": 3570,
+   "rx": 220,
+   "ry": 150,
    "rot": 20,
    "label": [
-    1928,
-    735
+    5268,
+    3805
    ],
-   "size": 15
+   "size": 46
+  },
+  {
+   "name": "WILD SPACE",
+   "kind": "text",
+   "label": [
+    5300,
+    540
+   ],
+   "size": 95
+  },
+  {
+   "name": "UNKNOWN REGIONS",
+   "kind": "text",
+   "label": [
+    1150,
+    3450
+   ],
+   "size": 95,
+   "lrot": -72
   }
  ]
 }
