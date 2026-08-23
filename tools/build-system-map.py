@@ -18,6 +18,8 @@ TEMPLATE = ROOT / "tools/system-map-template.html"
 OUT_GM = ROOT / "system-map.html"
 OUT_PLAYER = ROOT / "player-aids/system-map.html"
 WOOKIEEPEDIA = ROOT / "docs/setting/wookieepedia.json"
+# Timeless geography goes to everyone; era-stamped facts (who ruled it, how many lived there) are GM-only.
+PLAYER_FACTS = {"region", "sector", "system", "routes", "climate", "terrain", "species", "language"}
 
 GM_REGION = re.compile(r"<!-- GM:start -->.*?<!-- GM:end -->", re.S)
 
@@ -29,9 +31,16 @@ def merge_wookieepedia(data: dict, wp: dict) -> dict:
         e = wp.get(s["id"])
         if not e or e.get("missing"):
             continue
-        s["wp"] = {k: e[k] for k in ("title", "url", "facts", "image") if k in e}
-        if e.get("lead"):
-            s.setdefault("gm", {})["wpLead"] = e["lead"]
+        facts = e.get("facts", {})
+        s["wp"] = {k: e[k] for k in ("title", "url", "image") if k in e}
+        s["wp"]["facts"] = {k: v for k, v in facts.items() if k in PLAYER_FACTS}
+        gm_facts = {k: v for k, v in facts.items() if k not in PLAYER_FACTS}
+        if e.get("lead") or gm_facts:
+            gm = s.setdefault("gm", {})
+            if e.get("lead"):
+                gm["wpLead"] = e["lead"]
+            if gm_facts:
+                gm["wpFacts"] = gm_facts
     return d
 
 

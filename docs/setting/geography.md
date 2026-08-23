@@ -8,7 +8,7 @@ The crew starts in the withered interior of the **Grumani sector**, Outer Rim �
 
 ## The lane home: the Duros Space Run
 
-One real lane threads the Reach: the **Duros Space Run**, which once carried trade from the Mid Rim all the way to the **Hydian Way** at **Darkknell**. Its Mid Rim end still trickles — that's the "living lane" whose frayed end the crew is grounded on. Everything beyond is beacon-dark.
+One real lane threads the Reach: the **Duros Space Run**, which once carried trade from the Mid Rim all the way to the **Hydian Way** at **Darkknell**. Its Mid Rim end still trickles — **Churba / New Cov** (where it meets the Corellian Run), **Kalarba**, **Glom Tho**, **Triffis** — and that's the "living lane" whose frayed end the crew is grounded on at Bannistar. Everything beyond is beacon-dark.
 
 **The chain — one relit beacon per hop:**
 

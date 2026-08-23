@@ -126,7 +126,7 @@ const DATA = JSON.parse(document.getElementById("data").textContent);
 const byId = new Map(DATA.systems.map(s => [s.id, s]));
 const SVG = "http://www.w3.org/2000/svg";
 const chart = document.getElementById("chart");
-const VIEWS = {reach:{x:60, y:380, w:1340, h:760}, road:{x:0, y:0, w:2100, h:1200}};
+const VIEWS = {reach:{x:60, y:380, w:1340, h:760}, road:{x:-640, y:0, w:2740, h:1200}};
 let vb = {...VIEWS.reach};
 
 /* ---- lit state (Task 4 adds persistence) ---- */
@@ -310,6 +310,7 @@ function openPanel(id) {
   if (s.gm) {
     h += `<div class="gm"><div class="k">GM — episode seed</div><p>${esc(s.gm.seed || "—")}</p><div class="k">GM — canon</div><p>${esc(s.gm.canon || "—")}</p>`;
     h += `<div class="k">GM — factions present</div><p>${(s.gm.factions || []).map(f => `<span class="ftag">${esc(f.replace(/-/g, " "))}</span>`).join("") || "—"}</p>`;
+    if (s.gm.wpFacts) h += `<div class="k">GM — Wookieepedia, era-spanning facts</div><div class="facts">${Object.entries(s.gm.wpFacts).map(([k, v]) => `<b>${esc(k)}</b><span>${esc(v)}</span>`).join("")}</div>`;
     if (s.gm.wpLead) h += `<div class="k">GM — Wookieepedia lead (era-spanning)</div><p>${esc(s.gm.wpLead)}</p>`;
     h += `</div>`;
   }
