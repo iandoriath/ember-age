@@ -144,7 +144,7 @@ function el(tag, attrs = {}, parent) {
   if (parent) parent.appendChild(n);
   return n;
 }
-function laneIsRelit(l) { return l.kind === "dark" && isLit(byId.get(l.from)) && isLit(byId.get(l.to)); }
+function laneIsRelit(l) { const a = byId.get(l.from), b = byId.get(l.to); return l.kind === "dark" && a.beacon && b.beacon && isLit(a) && isLit(b); }
 function regionOf(a, b) { return (a.region === "reach" && b.region === "reach") ? "reach" : (a.region === "far" || b.region === "far") ? "far" : "hydian"; }
 
 function render() {
@@ -293,13 +293,15 @@ function importSave(file) {
     let hit = 0; const miss = [];
     for (const b of rows) {
       const n = norm(b.name);
-      const s = DATA.systems.find(x => x.beacon && !x.alwaysLit && (norm(x.name) === n || norm(x.sub) === n || (n && n.includes(norm(x.name)))))
+      if (!n) { miss.push(b.name || "(unnamed)"); continue; }
+      const s = DATA.systems.find(x => x.beacon && !x.alwaysLit && (norm(x.name) === n || norm(x.sub) === n || n.includes(norm(x.name))))
         || (n.includes("vesta") ? byId.get("bannistar") : null);
       if (!s) { miss.push(b.name); continue; }
       if (b.status === "lit") lit.add(s.id); else lit.delete(s.id);
       hit++;
     }
     saveLit(); render();
+    if (panelId && document.getElementById("panel").classList.contains("open")) openPanel(panelId);
     toast(`Imported ${hit} beacon${hit === 1 ? "" : "s"}` + (miss.length ? ` · unmatched: ${miss.join(", ")}` : ""));
   }).catch(() => toast("Could not read that save"));
 }

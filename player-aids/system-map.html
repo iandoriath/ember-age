@@ -141,7 +141,7 @@ function el(tag, attrs = {}, parent) {
   if (parent) parent.appendChild(n);
   return n;
 }
-function laneIsRelit(l) { return l.kind === "dark" && isLit(byId.get(l.from)) && isLit(byId.get(l.to)); }
+function laneIsRelit(l) { const a = byId.get(l.from), b = byId.get(l.to); return l.kind === "dark" && a.beacon && b.beacon && isLit(a) && isLit(b); }
 function regionOf(a, b) { return (a.region === "reach" && b.region === "reach") ? "reach" : (a.region === "far" || b.region === "far") ? "far" : "hydian"; }
 
 function render() {
