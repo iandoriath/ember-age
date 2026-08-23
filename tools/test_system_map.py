@@ -151,3 +151,14 @@ def test_wookieepedia_merge_is_player_safe():
     assert "SECRET-LEAD" not in player and "wpLead" not in player and "SECRET-EMPIRE" not in player
     assert "SECRET-LEAD" in gm and "Wookieepedia lead" in gm
     assert '"data": "QUJD"' in player and "Outer Rim" in player and "Wookieepedia" in player
+
+
+def test_off_chart_exits_have_exactly_one_lane_and_render_as_arrows():
+    d = load()
+    exits = [s for s in d["systems"] if s.get("offChart")]
+    assert {s["id"] for s in exits} == {"naboo", "hutt-space", "new-cov"}
+    for s in exits:
+        assert sum(1 for l in d["lanes"] if s["id"] in (l["from"], l["to"])) == 1, s["id"]
+        assert "off-chart" not in s.get("sub", "")
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    assert 'class:"arrow"' in tpl and '(s.offChart ? "To " : "")' in tpl

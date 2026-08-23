@@ -39,6 +39,8 @@
   .sys.always .ring{stroke:var(--gold);opacity:.5;stroke-dasharray:none}
   .sys.lit text,.sys.always text{fill:var(--gold)}
   .sys .hit{fill:transparent}
+  .sys .arrow{fill:none;stroke:var(--holo);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .sys.always .arrow{stroke:var(--gold);filter:url(#glow)}
   @keyframes pulse{0%,100%{opacity:.35;r:11}50%{opacity:.9;r:15}}
   /* hover dimming */
   #chart.hl .lane:not(.on),#chart.hl .sys:not(.on){opacity:.28}
@@ -192,8 +194,16 @@ function render() {
     const g = el("g", {class:cls, "data-id":s.id, transform:`translate(${s.x} ${s.y})`, tabindex:0, role:"button"}, gs);
     el("circle", {class:"hit", r:22}, g);
     if (s.beacon) el("circle", {class:"ring", r:12}, g);
-    el("circle", {class:"core", r:s.beacon ? 5 : 3}, g);
-    const lbl = el("text", {class:"lbl", x:16, y:4}, g); lbl.textContent = s.name;
+    if (s.offChart) {
+      // an exit chevron pointing away along the node's lane, instead of a world
+      const lane = DATA.lanes.find(l => l.from === s.id || l.to === s.id);
+      const from = lane ? byId.get(lane.from === s.id ? lane.to : lane.from) : null;
+      const ang = from ? Math.atan2(s.y - from.y, s.x - from.x) * 180 / Math.PI : 0;
+      el("path", {class:"arrow", d:"M-8,-7 L3,0 L-8,7 M-3,0 L3,0", transform:`rotate(${ang})`}, g);
+    } else {
+      el("circle", {class:"core", r:s.beacon ? 5 : 3}, g);
+    }
+    const lbl = el("text", {class:"lbl", x:16, y:4}, g); lbl.textContent = (s.offChart ? "To " : "") + s.name;
     if (s.sub) { const sub = el("text", {class:"sub", x:16, y:16}, g); sub.textContent = s.sub; }
     if (s.hop !== undefined) { const h = el("text", {class:"hop", x:-10, y:-14, "text-anchor":"end"}, g); h.textContent = s.hop === 0 ? "⌂" : s.hop; }
     <!-- GM:start -->
