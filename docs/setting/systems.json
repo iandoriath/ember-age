@@ -65,7 +65,10 @@
     {"id":"teraab","name":"Teraab","sub":"stellar nursery","x":1930,"y":470,"region":"far","beacon":false,"alwaysLit":false,
      "blurb":"Off the charts: nebulae quietly eating the last lanes to Ruusan since the war ended.","gm":{"seed":"Act 3 — the hardest astrogation of the campaign; fragments are the only charts.","canon":"The Valley is a 'lost world' by 11 BBY.","factions":[]}},
     {"id":"ruusan","name":"Ruusan","sub":"the Valley","x":1990,"y":570,"region":"far","beacon":false,"alwaysLit":false,
-     "blurb":"Every child knows the armies reached Ruusan seven times, so the road exists.","gm":{"seed":"Act 3 finale","canon":"Valley of the Jedi.","factions":["inheritors","vigil"]}}
+     "blurb":"Every child knows the armies reached Ruusan seven times, so the road exists.","gm":{"seed":"Act 3 finale","canon":"Valley of the Jedi.","factions":["inheritors","vigil"]}},
+    {"id":"coruscant","name":"Coruscant","sub":"the Core","x":1300,"y":90,"region":"far","beacon":false,"alwaysLit":true,
+     "blurb":"The capital, a hop or two coreward of Brentaal on the Perlemian. When the Republic's recovery money finally comes back out to the Rim, this is the road it takes.",
+     "gm":{"seed":"","canon":"Coruscant is on the Perlemian Trade Route, not the Hydian; Brentaal is the junction. The Reformation's appropriations stopped here — the Withering is this road going quiet.","factions":["provisional-republic","admiralty"]}}
   ],
   "lanes": [
     {"from":"bannistar","to":"enarc","kind":"dark","name":"Duros Space Run"},
@@ -81,6 +84,7 @@
     {"from":"malastare","to":"denon","kind":"living","name":"Hydian Way"},
     {"from":"denon","to":"brentaal","kind":"living","name":"Hydian Way"},
     {"from":"brentaal","to":"lantillies","kind":"far","name":"Perlemian Trade Route"},
+    {"from":"brentaal","to":"coruscant","kind":"living","name":"Perlemian Trade Route"},
     {"from":"lantillies","to":"kashyyyk","kind":"far","name":"Randon Run"},
     {"from":"kashyyyk","to":"teraab","kind":"fraying","name":"Randon Run"},
     {"from":"teraab","to":"ruusan","kind":"fraying","name":"off the charts"},

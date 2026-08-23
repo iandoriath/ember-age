@@ -117,7 +117,7 @@ const DATA = JSON.parse(document.getElementById("data").textContent);
 const byId = new Map(DATA.systems.map(s => [s.id, s]));
 const SVG = "http://www.w3.org/2000/svg";
 const chart = document.getElementById("chart");
-const VIEWS = {reach:{x:60, y:380, w:1340, h:760}, road:{x:0, y:60, w:2100, h:1150}};
+const VIEWS = {reach:{x:60, y:380, w:1340, h:760}, road:{x:0, y:0, w:2100, h:1200}};
 let vb = {...VIEWS.reach};
 
 /* ---- lit state (Task 4 adds persistence) ---- */

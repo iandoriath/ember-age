@@ -88,3 +88,13 @@ def test_template_has_state_and_share_code():
     assert "importSave" not in out and "toggleGM" not in out
     gm = bsm.build("gm", load(), tpl)
     assert "function importSave" in gm and "function toggleGM" in gm
+
+
+def test_coruscant_is_the_coreward_end_of_the_road():
+    d = load()
+    c = next(s for s in d["systems"] if s["id"] == "coruscant")
+    assert c["region"] == "far" and c["alwaysLit"] is True and c["beacon"] is False
+    lane = next(l for l in d["lanes"] if {l["from"], l["to"]} == {"brentaal", "coruscant"})
+    assert lane["kind"] == "living" and lane["name"] == "Perlemian Trade Route"
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    assert "road:{x:0, y:0, w:2100, h:1200}" in tpl
