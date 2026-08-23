@@ -113,7 +113,7 @@ def test_coruscant_is_the_coreward_end_of_the_road():
     lane = next(l for l in d["lanes"] if {l["from"], l["to"]} == {"brentaal", "coruscant"})
     assert lane["kind"] == "living" and lane["name"] == "Perlemian Trade Route"
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
-    assert "road:{x:-640, y:0, w:2740, h:1200}" in tpl
+    assert "road:{x:-800, y:0, w:3100, h:1250}" in tpl
 
 
 def test_committed_outputs_match_fresh_build():
@@ -156,9 +156,19 @@ def test_wookieepedia_merge_is_player_safe():
 def test_off_chart_exits_have_exactly_one_lane_and_render_as_arrows():
     d = load()
     exits = [s for s in d["systems"] if s.get("offChart")]
-    assert {s["id"] for s in exits} == {"naboo", "hutt-space", "new-cov"}
+    assert {s["id"] for s in exits} == {"naboo", "hutt-space", "new-cov", "corellia", "bonadan", "fondor", "sluis-van", "terminus", "quermia"}
     for s in exits:
         assert sum(1 for l in d["lanes"] if s["id"] in (l["from"], l["to"])) == 1, s["id"]
         assert "off-chart" not in s.get("sub", "")
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
     assert 'class:"arrow"' in tpl and '(s.offChart ? "To " : "")' in tpl
+
+
+def test_regions_are_well_formed():
+    d = load()
+    for r in d["regions"]:
+        assert r["name"] and r["kind"] in {"core", "mid", "hutt", "nebula", "text"}, r
+        assert "label" in r and len(r["label"]) == 2, r
+        if r["kind"] != "text":
+            for k in ("cx", "cy", "rx", "ry"):
+                assert k in r, (r["name"], k)

@@ -19,6 +19,24 @@
   #chart .sub{font-size:9px;fill:var(--dim);letter-spacing:.18em}
   #chart .hop{font-size:9px;fill:var(--dim)}
   #chart .lanelbl{font-size:9px;fill:var(--holo-dim);letter-spacing:.25em}
+  /* region fields */
+  .regionfield{pointer-events:none}
+  .regionfield.core{fill:rgba(255,180,84,.055)}
+  .regionfield.mid{fill:rgba(95,195,255,.04)}
+  .regionfield.hutt{fill:rgba(143,191,111,.05)}
+  .regionfield.nebula{fill:rgba(176,127,214,.10)}
+  .regionfield.nebula2{fill:rgba(214,127,178,.07)}
+  .regionlbl{fill:var(--holo-dim);letter-spacing:.5em;font-weight:600;transition:opacity .3s}
+  .regionlbl.core{fill:#8a6a3a}
+  .regionlbl.hutt{fill:#5d7a4e}
+  .regionlbl.nebula{fill:#7a5d8f;letter-spacing:.3em}
+  #chart[data-zoom=reach] .regionlbl{opacity:.5}
+  #chart[data-zoom=wide] .regionlbl{opacity:.65}
+  #chart[data-zoom=far] .regionlbl{opacity:.8}
+  /* compass rose */
+  .rose .roseline{stroke:var(--holo-dim);stroke-width:1;fill:none}
+  .rose .rosehead{fill:var(--holo-dim)}
+  .rose .roselbl{font-size:8px;fill:var(--dim);letter-spacing:.22em}
   /* lanes */
   .lane{fill:none;stroke-linecap:round;transition:opacity .25s,stroke .25s}
   .lane[data-kind=dark]{stroke:var(--holo-dim);stroke-width:1.2;stroke-dasharray:6 7}
@@ -106,7 +124,7 @@
 <div id="fx"></div>
 <div id="hud">
   <div class="frame"></div>
-  <div id="title"><h1>Nav<b>·</b>Chart — The Grumani Reach</h1><small>Duros Space Run · 90 AR · beacon status live</small></div>
+  <div id="title"><h1>Nav<b>·</b>Chart — The Grumani Reach</h1><small>Duros Space Run · 90 AR · beacon status live · schematic — not to scale</small></div>
   <div id="ctl">
     <button class="hb" onclick="zoomBy(1.3)">+</button><button class="hb" onclick="zoomBy(1/1.3)">−</button>
     <button class="hb" onclick="frame('reach')">Frame the Reach</button>
@@ -128,7 +146,7 @@ const DATA = JSON.parse(document.getElementById("data").textContent);
 const byId = new Map(DATA.systems.map(s => [s.id, s]));
 const SVG = "http://www.w3.org/2000/svg";
 const chart = document.getElementById("chart");
-const VIEWS = {reach:{x:60, y:380, w:1340, h:760}, road:{x:-640, y:0, w:2740, h:1200}};
+const VIEWS = {reach:{x:60, y:380, w:1340, h:760}, road:{x:-800, y:0, w:3100, h:1250}};
 let vb = {...VIEWS.reach};
 
 /* ---- lit state (Task 4 adds persistence) ---- */
@@ -164,10 +182,24 @@ function render() {
   const defs = el("defs", {}, chart);
   defs.innerHTML = `
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soften" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
     <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#0f2030" stroke-width=".6"/></pattern>
     <pattern id="grid2" width="250" height="250" patternUnits="userSpaceOnUse"><path d="M250 0H0V250" fill="none" stroke="#15304a" stroke-width=".8"/></pattern>`;
   el("rect", {x:-2000, y:-2000, width:6000, height:6000, fill:"url(#grid)"}, chart);
   el("rect", {x:-2000, y:-2000, width:6000, height:6000, fill:"url(#grid2)"}, chart);
+
+  const gr = el("g", {id:"regions"}, chart);
+  for (const r of (DATA.regions || [])) {
+    if (r.cx !== undefined) {
+      el("ellipse", {class:"regionfield " + r.kind, cx:r.cx, cy:r.cy, rx:r.rx, ry:r.ry, transform:`rotate(${r.rot || 0} ${r.cx} ${r.cy})`, filter:"url(#soften)"}, gr);
+      if (r.kind === "nebula") el("ellipse", {class:"regionfield nebula2", cx:r.cx + 25, cy:r.cy - 18, rx:r.rx * 0.55, ry:r.ry * 0.5, transform:`rotate(${(r.rot || 0) + 35} ${r.cx} ${r.cy})`, filter:"url(#soften)"}, gr);
+    }
+    if (r.label) {
+      const lt = el("text", {class:"regionlbl " + r.kind, x:r.label[0], y:r.label[1], "text-anchor":"middle", "font-size":r.size || 24}, gr);
+      if (r.lrot) lt.setAttribute("transform", `rotate(${r.lrot} ${r.label[0]} ${r.label[1]})`);
+      lt.textContent = r.name;
+    }
+  }
 
   const gl = el("g", {id:"lanes"}, chart);
   for (const l of DATA.lanes) {
@@ -216,6 +248,15 @@ function render() {
     g.addEventListener("pointerleave", () => highlight(null));
     g.addEventListener("click", e => { e.stopPropagation(); if (!(drag && drag.moved)) openPanel(s.id); });
     g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openPanel(s.id); } });
+  }
+  const cor = byId.get("coruscant");
+  if (cor) {
+    const rx = -60, ry = 1180, ang = Math.atan2(cor.y - ry, cor.x - rx) * 180 / Math.PI;
+    const rose = el("g", {class:"rose", transform:`translate(${rx} ${ry}) rotate(${ang}) scale(1.25)`}, chart);
+    el("path", {class:"roseline", d:"M-26,0H22 M0,-26V26"}, rose);
+    el("path", {class:"rosehead", d:"M30,0 l-8,-4.5 v9 z"}, rose);
+    const rl = (x, y, txt) => { const n = el("text", {class:"roselbl", x, y, "text-anchor":"middle"}, rose); n.textContent = txt; };
+    rl(58, 3, "COREWARD"); rl(-52, 3, "RIMWARD"); rl(0, -32, "SPINWARD"); rl(0, 40, "TRAILING");
   }
   renderStatus();
   applyView();
