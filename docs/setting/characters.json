@@ -1,0 +1,483 @@
+[
+ {
+  "slug": "mikres-kyries",
+  "name": "Mikrés Kyríes",
+  "species": "Chadra-Fan",
+  "species_abilities": [
+   {
+    "name": "Acute Senses",
+    "description": "Chandra-Fan remove up to [SE][SE] from Perception checks due to superior senses."
+   },
+   {
+    "name": "Reduced Silouette",
+    "description": "Chadra-Fan have a Silhouette of 0."
+   }
+  ],
+  "career": "Technician",
+  "specializations": [
+   "Mechanic"
+  ],
+  "characteristics": {
+   "Brawn": 1,
+   "Agility": 3,
+   "Intellect": 3,
+   "Cunning": 2,
+   "Willpower": 1,
+   "Presence": 2
+  },
+  "wounds": 12,
+  "strain": 13,
+  "soak": 3,
+  "defense": {
+   "ranged": 0,
+   "melee": 0
+  },
+  "encumbrance": {
+   "threshold": 6,
+   "current": 4
+  },
+  "force_rating": 0,
+  "morality": null,
+  "credits": 60,
+  "skills": [
+   {
+    "name": "Astrogation",
+    "characteristic": "Intellect",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Athletics",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Brawl",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Combat"
+   },
+   {
+    "name": "Charm",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Coercion",
+    "characteristic": "Willpower",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Computers",
+    "characteristic": "Intellect",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Cool",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Coordination",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Core Worlds)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Deception",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Discipline",
+    "characteristic": "Willpower",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 0,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Education)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Gunnery",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Combat"
+   },
+   {
+    "name": "Leadership",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Lightsaber",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Combat"
+   },
+   {
+    "name": "Knowledge (Lore)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Mechanics",
+    "characteristic": "Intellect",
+    "rank": 3,
+    "career": true,
+    "proficiency": 3,
+    "ability": 0,
+    "type": "General"
+   },
+   {
+    "name": "Medicine",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "General"
+   },
+   {
+    "name": "Melee",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Combat"
+   },
+   {
+    "name": "Negotiation",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Outer Rim)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Perception",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Piloting (Planetary)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "General"
+   },
+   {
+    "name": "Piloting (Space)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "General"
+   },
+   {
+    "name": "Ranged (Heavy)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Combat"
+   },
+   {
+    "name": "Ranged (Light)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Combat"
+   },
+   {
+    "name": "Resilience",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Skulduggery",
+    "characteristic": "Cunning",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Stealth",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "General"
+   },
+   {
+    "name": "Streetwise",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Survival",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Underworld)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Vigilance",
+    "characteristic": "Willpower",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Warfare)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Knowledge (Xenology)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Knowledge"
+   }
+  ],
+  "talents": [
+   {
+    "name": "Solid Repairs",
+    "count": 2,
+    "activation": "Passive",
+    "description": "The character repairs +1 hull trauma per rank of Solid Repairs whenever he repairs a starship or vehicle."
+   },
+   {
+    "name": "Grit",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Gain +1 strain threshold"
+   },
+   {
+    "name": "Enduring",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Gain +1 soak value."
+   },
+   {
+    "name": "Bad Motivator",
+    "count": 1,
+    "activation": "Active",
+    "description": "Once per game session, may take a Bad Motivator action; make a [B]Hard ([DI][DI][DI]) Mechanics check[b] to cause one targeted device to spontaneously fail."
+   },
+   {
+    "name": "Toughened",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Gain +2 wound threshold."
+   },
+   {
+    "name": "Contraption",
+    "count": 1,
+    "activation": "Active",
+    "description": "Once per session, take Contraption action; make a [B] Hard ([DI][DI][DI]) Mechanics check[b] to fashion a device to solve a current problem using just the tools and parts on hand."
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Energy Slingshot",
+    "skill": "Ranged (Light)",
+    "damage": "3",
+    "crit": "—",
+    "range": "Short",
+    "qualities": [
+     "Disorient 2",
+     "Stun Setting"
+    ],
+    "notes": "Triggering the Disorient quality requires [AD] instead of [AD][AD].",
+    "equipped": true
+   },
+   {
+    "name": "Unarmed",
+    "skill": "Brawl",
+    "damage": "1",
+    "crit": "5",
+    "range": "Engaged",
+    "qualities": [
+     "Knockdown",
+     "Stun Setting"
+    ],
+    "notes": "",
+    "equipped": true
+   }
+  ],
+  "armor": [
+   {
+    "name": "Heavy Clothing",
+    "soak": 1,
+    "defense": 0,
+    "encumbrance": 1,
+    "equipped": true
+   }
+  ],
+  "gear": [
+   {
+    "name": "Dataspike",
+    "quantity": 1,
+    "type": "Slicing Tools",
+    "encumbrance": 1,
+    "notes": "Once per round, a character with a dataspike may expend it to attempt to disable a security program as a maneuver (rather than as an action). Reduce the difficulty of the Computers check to disable the program by 2, to a minimum of Simple (-). After one use, the dataspike burns out and becomes useless."
+   },
+   {
+    "name": "Signature Modulation Pad",
+    "quantity": 1,
+    "type": "Slicing Tools",
+    "encumbrance": 2,
+    "notes": "Add [SE][SE] on attempts to acquire user's slicing signature (e.g., Trace User action)."
+   }
+  ],
+  "vehicles": [
+   {
+    "name": "YT-1300 Light Freighter",
+    "type": "Freighter",
+    "silhouette": 4,
+    "speed": 3,
+    "handling": -1,
+    "def_fore": 1,
+    "def_aft": 1,
+    "armor": 3,
+    "hull": 22,
+    "strain": 15,
+    "hyperdrive": "Class 2 (backup 12)",
+    "crew": "One Pilot, One Co-Pilot, One Engineer",
+    "passengers": 6,
+    "encumbrance": 165,
+    "consumables": "Two Months",
+    "weapons": [
+     "2× Medium laser cannon (turret)"
+    ]
+   }
+  ],
+  "obligations": [
+   {
+    "type": "Debt",
+    "text": "Predatory Lease on freighter",
+    "total": 20
+   }
+  ],
+  "duties": [],
+  "motivation": "Pursuit: Wealth",
+  "background": ""
+ }
+]

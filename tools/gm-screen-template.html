@@ -100,6 +100,14 @@
   .qsum{display:flex;flex-wrap:wrap;gap:.5rem;margin:.4rem 0}
   .qcard{border:1px solid var(--line);border-radius:.5rem;padding:.45rem .7rem;background:var(--panel2);font-size:.85rem}
   .qcard b{color:var(--gold)} .ready{color:var(--ok);font-weight:700} .bias{color:var(--bad)}
+  .crewstats{display:flex;flex-wrap:wrap;gap:.35rem;margin:.5rem 0}
+  .crewstats div{border:1px solid var(--line);border-radius:.4rem;padding:.25rem .55rem;text-align:center;min-width:3rem;background:var(--panel2)}
+  .crewstats div b{display:block;font-family:var(--disp);font-size:1.1rem;color:var(--gold)} .crewstats div span{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+  .crewstats .sep{border:0;background:none;min-width:.4rem;padding:0}
+  .crewgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.8rem}
+  .crewgrid .k{font-family:var(--disp);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ember);margin:.5rem 0 .2rem}
+  .crewgrid ul{margin:.2rem 0 .2rem 1rem;padding:0}
+  .dchip{display:inline-block;width:.75rem;height:.75rem;border-radius:2px;margin-right:2px;vertical-align:-1px} .dchip.pr{background:#c9a227} .dchip.ab{background:#3f7d3a} .dchip.di{background:#5c4a7d} .dchip.ch{background:#a0312b} .dchip.bo{background:#4f86b0;width:.6rem;height:.6rem} .dchip.se{background:#3a3a3a;width:.6rem;height:.6rem}
   .stat{border:1px dashed var(--line);border-radius:.5rem;padding:.5rem .8rem;margin:.4rem 0;background:var(--panel2)}
 
   .scenepills{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}
@@ -129,6 +137,7 @@
 <div id="syncbanner"></div>
 <main>
   <div id="tab-run" class="tab"></div>
+  <div id="tab-crew" class="tab"></div>
   <div id="tab-npcs" class="tab"></div>
   <div id="tab-trackers" class="tab"></div>
   <div id="tab-log" class="tab"></div>
@@ -144,6 +153,7 @@ const GROUPS = /*__GROUPS__*/[];
 const PAGES  = /*__PAGES__*/[];
 const MODULES= /*__MODULES__*/[];
 const SEED   = /*__SEED__*/{};
+const CREW   = /*__CREW__*/[];
 const HEAD_STATIC = /*__HEAD__*/"";
 const SKELETON = /*__SKEL__*/"";
 
@@ -247,7 +257,7 @@ function resetState(){
 }
 
 /* ------------------------------------------------ tabs & in-app links */
-const TABS = [["run","Run"],["npcs","NPCs"],["trackers","Trackers"],["log","Session Log"],["reference","Reference"],["setting","Setting"],["truths","GM Truths"]];
+const TABS = [["run","Run"],["crew","Crew"],["npcs","NPCs"],["trackers","Trackers"],["log","Session Log"],["reference","Reference"],["setting","Setting"],["truths","GM Truths"]];
 let cur = "npcs";
 try{ const r = JSON.parse(sessionStorage.getItem("ea.resume")); if(r && r.tab){ cur = r.tab; sessionStorage.removeItem("ea.resume"); } }catch(e){}
 if(location.hash && TABS.some(t=>t[0]===location.hash.slice(1))) cur = location.hash.slice(1);
@@ -349,6 +359,50 @@ function runAction(div){
 /* ------------------------------------------------ NPC tab */
 const KINDS = ["All","Nemesis","Rival","Minion","Vehicle","Hazard"];
 let npcQ="", npcKind="All", npcGroup="all";
+function crewTab(){
+  const el = document.getElementById("tab-crew");
+  if(!CREW.length){ el.innerHTML = `<div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Crew</h2><p class="muted">No characters yet. Drop Hyperdrive exports into <code>hyperdrive/</code> and run <code>make characters</code>.</p></div>`; return; }
+  const dice = s => '<span class="dchip pr"></span>'.repeat(s.proficiency) + '<span class="dchip ab"></span>'.repeat(s.ability);
+  const CHIP = {SE:"se",BO:"bo",DI:"di",CH:"ch",AB:"ab",PR:"pr"}, WORD = {AD:"Advantage",SU:"Success",TR:"Triumph",TH:"Threat",FA:"Failure",DE:"Despair"};
+  const hd = x => { let s = esc(x);
+    for (const [k,v] of Object.entries(CHIP)) s = s.split("["+k+"]").join('<span class="dchip '+v+'"></span>');
+    for (const [k,v] of Object.entries(WORD)) s = s.split("["+k+"]").join('<i>'+v+'</i>');
+    return s.replace(/\[B\](.*?)\[b\]/g, "<b>$1</b>"); };
+  el.innerHTML = CREW.map(c => {
+    const spec = (c.specializations||[]).filter(Boolean).join(" / ");
+    const ranked = c.skills.filter(s => s.rank > 0);
+    const notable = c.skills.filter(s => s.rank === 0 && s.proficiency + s.ability >= 3 && !s.name.startsWith("Knowledge")).map(s => esc(s.name)).join(", ");
+    return `<div class="card">
+      <div style="display:flex;flex-wrap:wrap;gap:.6rem;align-items:baseline">
+        <h2 style="margin:0;color:var(--gold)">${esc(c.name)}</h2>
+        <span class="muted">${esc(c.species)} · ${esc(c.career)}${spec ? " — " + esc(spec) : ""}</span>
+        <span class="spacer"></span>
+        <a class="hbtn" href="player-aids/characters/${esc(c.slug)}.html" target="_blank" rel="noopener">Print sheet</a>
+      </div>
+      <div class="crewstats">
+        ${Object.entries(c.characteristics).map(([k,v]) => `<div><b>${v}</b><span>${esc(k.slice(0,3))}</span></div>`).join("")}
+        <div class="sep"></div>
+        <div><b>${c.wounds}</b><span>WT</span></div><div><b>${c.strain}</b><span>ST</span></div><div><b>${c.soak}</b><span>Soak</span></div>
+        <div><b>${c.defense.ranged}/${c.defense.melee}</b><span>Def</span></div><div><b>${c.encumbrance.threshold}</b><span>Enc</span></div>
+        ${c.force_rating ? `<div><b>${c.force_rating}</b><span>FR</span></div>` : ""}${c.morality != null ? `<div><b>${c.morality}</b><span>Mor</span></div>` : ""}
+      </div>
+      <div class="crewgrid">
+        <div><div class="k">Trained skills</div>
+          <table class="tr"><tbody>${ranked.map(s => `<tr><td>${s.career ? "●" : ""}</td><td>${esc(s.name)}</td><td>${s.rank}</td><td>${dice(s)}</td></tr>`).join("") || "<tr><td>—</td></tr>"}</tbody></table>
+          ${notable ? `<div class="small muted">Also strong by characteristic: ${notable}</div>` : ""}</div>
+        <div><div class="k">Talents</div><ul class="small">${c.talents.map(t => `<li><b>${esc(t.name)}${t.count > 1 ? " ×" + t.count : ""}</b> <span class="muted">(${esc(t.activation)})</span> ${hd(t.description)}</li>`).join("") || "<li>—</li>"}</ul>
+          <div class="k">Species</div><ul class="small">${(c.species_abilities||[]).map(a => `<li><b>${esc(a.name)}</b> ${hd(a.description)}</li>`).join("") || "<li>—</li>"}</ul></div>
+        <div><div class="k">Weapons</div><ul class="small">${c.weapons.map(w => `<li><b>${esc(w.name)}</b> — ${esc(w.skill)} · Dmg ${esc(w.damage)} · Crit ${esc(w.crit)} · ${esc(w.range)}${w.qualities.length ? " · " + esc(w.qualities.join(", ")) : ""}</li>`).join("") || "<li>—</li>"}</ul>
+          <div class="k">Armor &amp; gear</div><ul class="small">${c.armor.map(a => `<li><b>${esc(a.name)}</b> +${a.soak} soak</li>`).join("")}${c.gear.map(g => `<li>${esc(g.name)}${g.quantity > 1 ? " ×" + g.quantity : ""}</li>`).join("")}</ul>
+          <div class="k">Hooks</div><ul class="small">${c.obligations.map(o => `<li><b>Obligation — ${esc(o.type)} ${o.total}</b>${o.text ? ": " + esc(o.text) : ""}</li>`).join("")}${c.duties.map(o => `<li><b>Duty — ${esc(o.type)} ${o.total}</b>${o.text ? ": " + esc(o.text) : ""}</li>`).join("")}<li><b>Motivation</b> ${esc(c.motivation || "—")}</li><li><b>Credits</b> ${c.credits}</li></ul>
+          ${c.vehicles.map(v => `<div class="k">Ship</div><div class="small"><b>${esc(v.name)}</b> · Sil ${v.silhouette} · Spd ${v.speed} · Hdl ${v.handling} · Def ${v.def_fore}/${v.def_aft} · Armor ${v.armor} · HT ${v.hull} · SS ${v.strain} · ${esc(v.hyperdrive)}${v.weapons.length ? " · " + esc(v.weapons.join("; ")) : ""}</div>`).join("")}
+        </div>
+      </div>
+      <div class="small muted" style="margin-top:.4rem">Obligation total for the session roll: <b>${CREW.reduce((n, x) => n + x.obligations.reduce((m, o) => m + o.total, 0), 0)}</b> across the crew.</div>
+    </div>`;
+  }).join("");
+}
+
 function npcTab(){
   const el = document.getElementById("tab-npcs");
   el.innerHTML = `
@@ -566,7 +620,7 @@ function truthsTab(){
 }
 
 /* ------------------------------------------------ boot */
-function renderAll(){ nav(); runTab(); npcTab(); trackersTab(); logTab(); pagesTab("reference"); pagesTab("setting"); truthsTab();
+function renderAll(){ nav(); runTab(); crewTab(); npcTab(); trackersTab(); logTab(); pagesTab("reference"); pagesTab("setting"); truthsTab();
   if(document.getElementById("mc-out")) mcOut(); updateSyncUI(); }
 window.addEventListener("hashchange",()=>{ const h=location.hash.replace("#",""); if(TABS.some(t=>t[0]===h)){ cur=h; nav(); } });
 renderAll();

@@ -23,6 +23,7 @@ DOCS = ROOT / "docs"
 TEMPLATE = ROOT / "tools" / "gm-screen-template.html"
 OUT_FULL = ROOT / "gm-screen.html"
 OUT_ARTIFACT = ROOT / "gm-screen.artifact.html"
+CHARACTERS = ROOT / "docs/setting/characters.json"
 
 MD = markdown.Markdown(extensions=["tables"])
 
@@ -357,6 +358,7 @@ def main():
             .replace("/*__PAGES__*/[]", json.dumps(pages, ensure_ascii=False))
             .replace("/*__MODULES__*/[]", json.dumps(modules, ensure_ascii=False))
             .replace("/*__SEED__*/{}", json.dumps(SEED, ensure_ascii=False))
+            .replace("/*__CREW__*/[]", json.dumps(json.loads(CHARACTERS.read_text(encoding="utf-8")) if CHARACTERS.exists() else [], ensure_ascii=False))
             .replace('/*__HEAD__*/""', json.dumps(head_static, ensure_ascii=False))
             .replace('/*__SKEL__*/""', json.dumps(skeleton, ensure_ascii=False)))
     if "</scr" + "ipt" in code.lower():

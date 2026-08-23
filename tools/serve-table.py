@@ -23,15 +23,21 @@ PLAYER_FILES = ["index.html", "system-map.html", "welcome-to-the-ember-age.html"
 GM_FILES = ["index.html", "gm-screen.html", "system-map.html"]
 
 
+def character_files() -> list:
+    d = ROOT / "player-aids/characters"
+    return [f"characters/{p.name}" for p in sorted(d.glob("*.html"))] if d.exists() else []
+
+
 def routes(gm: bool) -> dict:
     """url path (no leading slash) -> repo-relative file. Anything not listed is refused."""
-    r = {f: f"player-aids/{f}" for f in PLAYER_FILES}
+    r = {f: f"player-aids/{f}" for f in PLAYER_FILES + character_files()}
+    r["characters/sheet-style.css"] = "player-aids/sheet-style.css"
     r[""] = "player-aids/index.html"
     if gm:
         r.update({f"gm/{f}": f for f in GM_FILES})
         r["gm/"] = "index.html"
         # the GM lander links to player-aids/<file> relatively, so those resolve under /gm/ too (incl. gm-sheet)
-        for f in PLAYER_FILES + ["gm-sheet.html"]:
+        for f in PLAYER_FILES + ["gm-sheet.html"] + character_files():
             r[f"gm/player-aids/{f}"] = f"player-aids/{f}"
     return r
 

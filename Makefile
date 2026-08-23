@@ -1,6 +1,6 @@
 # The Ember Age — GM tools
 
-.PHONY: install screen wiki build map wookieepedia table clean
+.PHONY: install screen wiki build map wookieepedia characters table clean
 
 install:
 	pip install -r requirements.txt
@@ -21,6 +21,10 @@ aids:
 map:
 	python3 tools/build-system-map.py
 
+## Build character sheets + the GM screen's crew roster from hyperdrive/*.json
+characters:
+	python3 tools/build-characters.py
+
 ## Refresh Wookieepedia summaries + lead images for the map (network; writes docs/setting/wookieepedia.json)
 wookieepedia:
 	python3 tools/fetch-wookieepedia.py
@@ -32,8 +36,9 @@ table:
 ## Strict-build wiki + GM screen + player aids + system map (what CI runs)
 build:
 	mkdocs build --strict -f mkdocs.yml
-	python3 tools/build-gm-screen.py
 	python3 tools/build-player-aids.py
+	python3 tools/build-characters.py
+	python3 tools/build-gm-screen.py
 	python3 tools/build-system-map.py
 
 clean:

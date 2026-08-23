@@ -38,6 +38,10 @@ The GM edition adds a **GM** switch (episode seeds, canon notes, faction presenc
 
 Content lives in `docs/setting/systems.json`; `make map` rebuilds both files.
 
+### Characters
+
+Export each PC from the **Hyperdrive** character creator into `hyperdrive/<name>.json` and run `make characters`. That writes a printable sheet per character under `player-aids/characters/` (skills with computed ranks and dice pools, talents, gear, Obligation, ship), a crew index the player pages link to, and `docs/setting/characters.json`, which the GM screen embeds as its **Crew** tab — thresholds, trained skills, talents, hooks and the party's Obligation total at a glance. Re-export and rebuild after every advance.
+
 ### Putting it on the table Wi-Fi
 
 `make table` (or `python tools/serve-table.py`) serves **`player-aids/index.html`** — the player index: handouts plus the player map — to every device on your Wi-Fi and prints the address to read out, `http://<your-laptop-ip>:8080/`. The map's **Share** button then copies links with that address. Only the player-safe files are reachable; everything else is 404.
