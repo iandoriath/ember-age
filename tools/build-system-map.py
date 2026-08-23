@@ -17,8 +17,29 @@ DATA = ROOT / "docs/setting/systems.json"
 TEMPLATE = ROOT / "tools/system-map-template.html"
 OUT_GM = ROOT / "system-map.html"
 OUT_PLAYER = ROOT / "player-aids/system-map.html"
+WOOKIEEPEDIA = ROOT / "docs/setting/wookieepedia.json"
 
 GM_REGION = re.compile(r"<!-- GM:start -->.*?<!-- GM:end -->", re.S)
+
+
+def merge_wookieepedia(data: dict, wp: dict) -> dict:
+    """Attach Wookieepedia pulls: image + infobox facts for everyone (`wp`), lead paragraph GM-only (`gm.wpLead`)."""
+    d = copy.deepcopy(data)
+    for s in d["systems"]:
+        e = wp.get(s["id"])
+        if not e or e.get("missing"):
+            continue
+        s["wp"] = {k: e[k] for k in ("title", "url", "facts", "image") if k in e}
+        if e.get("lead"):
+            s.setdefault("gm", {})["wpLead"] = e["lead"]
+    return d
+
+
+def load_data() -> dict:
+    data = json.loads(DATA.read_text(encoding="utf-8"))
+    if WOOKIEEPEDIA.exists():
+        data = merge_wookieepedia(data, json.loads(WOOKIEEPEDIA.read_text(encoding="utf-8")))
+    return data
 
 
 def strip_gm(data: dict) -> dict:
@@ -46,7 +67,7 @@ def build(edition: str, data: dict, template: str) -> str:
 
 
 def main():
-    data = json.loads(DATA.read_text(encoding="utf-8"))
+    data = load_data()
     template = TEMPLATE.read_text(encoding="utf-8")
     OUT_GM.write_text(build("gm", data, template), encoding="utf-8")
     OUT_PLAYER.write_text(build("player", data, template), encoding="utf-8")

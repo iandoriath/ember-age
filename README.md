@@ -38,6 +38,8 @@ The GM edition adds a **GM** switch (episode seeds, canon notes, faction presenc
 
 Content lives in `docs/setting/systems.json`; `make map` rebuilds both files.
 
+Every system's panel also carries its **Wookieepedia** pull — the article's lead image and infobox facts (region, sector, lanes, climate, terrain, population…) in both editions, and the era-spanning lead paragraph in the GM layer only, since it spoils. `make wookieepedia` refreshes `docs/setting/wookieepedia.json` from the Legends articles (pin an article with `"wpTitle"` or opt a system out with `"wpSkip"` in `systems.json`); the build itself stays offline. Text is CC BY-SA; the thumbnails are embedded for table use only.
+
 ## What's in `docs/`
 
 The campaign source of truth — also browsable as a local wiki (`make wiki`) if you prefer that view:

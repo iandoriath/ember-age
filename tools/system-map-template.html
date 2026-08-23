@@ -83,6 +83,12 @@
   #panel .k{color:var(--dim);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;margin:.9rem 0 .2rem}
   #panel p{margin:.2rem 0;font-size:.95rem;font-family:system-ui,"Segoe UI",Roboto,sans-serif;line-height:1.5}
   #panel .x{position:absolute;right:.6rem;top:.5rem;background:none;border:0;color:var(--dim);font-size:1.2rem;cursor:pointer}
+  #panel img.wp{display:block;width:100%;height:auto;border:1px solid var(--holo-dim);margin:.4rem 0 .3rem;filter:saturate(.85) contrast(1.05)}
+  #panel .facts{display:grid;grid-template-columns:max-content 1fr;gap:.15rem .7rem;margin:.3rem 0;font:.85rem/1.4 system-ui,"Segoe UI",Roboto,sans-serif}
+  #panel .facts b{color:var(--dim);font:600 .62rem/1.7 var(--disp);letter-spacing:.18em;text-transform:uppercase}
+  #panel a.wpl{color:var(--holo);font:600 .68rem/1 var(--disp);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--holo-dim)}
+  #panel a.wpl:hover{color:var(--ink);border-color:var(--holo)}
+  #panel .cc{color:var(--dim);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;margin-left:.5rem}
   <!-- GM:start -->
   #panel .gm{border-top:1px dashed var(--ember);margin-top:1rem;padding-top:.4rem;display:none}
   body.gm-on #panel .gm{display:block}
@@ -292,10 +298,20 @@ function openPanel(id) {
   h += `<div class="k">Lanes</div><p>${lanes.map(esc).join(" · ") || "—"}</p>`;
   h += `<div class="k">Beacon</div><p>${status}${s.beacon && !s.alwaysLit ? ` &nbsp; <button class="hb ${lit.has(id) ? "on" : ""}" onclick="toggleLit('${id}')">${lit.has(id) ? "Darken" : "Relight"}</button>` : ""}</p>`;
   h += `<div class="k">Chart note</div><p>${esc(s.blurb)}</p>`;
+  if (s.wp) {
+    const FACT = {region:"Region", sector:"Sector", system:"System", routes:"Lanes", climate:"Climate", terrain:"Terrain", population:"Population", species:"Species", language:"Language", government:"Government", capital:"Capital", affiliation:"Affiliation"};
+    h += `<div class="k">Wookieepedia</div>`;
+    if (s.wp.image) h += `<img class="wp" alt="${esc(s.wp.title)}" src="data:${esc(s.wp.image.mime)};base64,${s.wp.image.data}">`;
+    const facts = Object.entries(FACT).filter(([k]) => s.wp.facts && s.wp.facts[k]).map(([k, lbl]) => `<b>${lbl}</b><span>${esc(s.wp.facts[k])}</span>`).join("");
+    if (facts) h += `<div class="facts">${facts}</div>`;
+    h += `<p><a class="wpl" href="${esc(s.wp.url)}" target="_blank" rel="noopener">${esc(s.wp.title)} ↗</a><span class="cc">text CC BY-SA</span></p>`;
+  }
   <!-- GM:start -->
   if (s.gm) {
     h += `<div class="gm"><div class="k">GM — episode seed</div><p>${esc(s.gm.seed || "—")}</p><div class="k">GM — canon</div><p>${esc(s.gm.canon || "—")}</p>`;
-    h += `<div class="k">GM — factions present</div><p>${(s.gm.factions || []).map(f => `<span class="ftag">${esc(f.replace(/-/g, " "))}</span>`).join("") || "—"}</p></div>`;
+    h += `<div class="k">GM — factions present</div><p>${(s.gm.factions || []).map(f => `<span class="ftag">${esc(f.replace(/-/g, " "))}</span>`).join("") || "—"}</p>`;
+    if (s.gm.wpLead) h += `<div class="k">GM — Wookieepedia lead (era-spanning)</div><p>${esc(s.gm.wpLead)}</p>`;
+    h += `</div>`;
   }
   <!-- GM:end -->
   document.getElementById("panel-body").innerHTML = h;

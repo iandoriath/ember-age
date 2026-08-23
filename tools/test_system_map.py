@@ -118,7 +118,7 @@ def test_coruscant_is_the_coreward_end_of_the_road():
 
 def test_committed_outputs_match_fresh_build():
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
-    d = load()
+    d = bsm.load_data()
     assert (ROOT / "system-map.html").read_text(encoding="utf-8") == bsm.build("gm", d, tpl)
     assert (ROOT / "player-aids/system-map.html").read_text(encoding="utf-8") == bsm.build("player", d, tpl)
 
@@ -133,3 +133,20 @@ def test_real_player_build_is_gm_free_and_complete():
     for s in d["systems"]:
         assert f'"id": "{s["id"]}"' in player, s["id"]
         assert f'"id": "{s["id"]}"' in gm, s["id"]
+
+
+def test_wookieepedia_merge_is_player_safe():
+    d = load()
+    wp = {"enarc": {"title": "Enarc/Legends", "url": "https://x/Enarc", "facts": {"region": "Outer Rim"},
+                    "lead": "SECRET-LEAD Enarc was a planet.", "image": {"mime": "image/jpeg", "data": "QUJD"}},
+          "alui": {"missing": True}}
+    merged = bsm.merge_wookieepedia(d, wp)
+    enarc = next(s for s in merged["systems"] if s["id"] == "enarc")
+    assert enarc["wp"] == {"title": "Enarc/Legends", "url": "https://x/Enarc", "facts": {"region": "Outer Rim"}, "image": {"mime": "image/jpeg", "data": "QUJD"}}
+    assert enarc["gm"]["wpLead"].startswith("SECRET-LEAD")
+    assert "wp" not in next(s for s in merged["systems"] if s["id"] == "alui")
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    player, gm = bsm.build("player", merged, tpl), bsm.build("gm", merged, tpl)
+    assert "SECRET-LEAD" not in player and "wpLead" not in player
+    assert "SECRET-LEAD" in gm and "Wookieepedia lead" in gm
+    assert '"data": "QUJD"' in player and "Outer Rim" in player and "Wookieepedia" in player
