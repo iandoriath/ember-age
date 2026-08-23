@@ -105,7 +105,10 @@
   .crewgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.8rem}
   .crewgrid .k{font-family:var(--disp);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ember);margin:.5rem 0 .2rem}
   .crewgrid ul{margin:.2rem 0 .2rem 1rem;padding:0}
-  .dchip{display:inline-block;width:.75rem;height:.75rem;border-radius:2px;margin-right:2px;vertical-align:-1px} .dchip.pr{background:#c9a227} .dchip.ab{background:#3f7d3a} .dchip.di{background:#5c4a7d} .dchip.ch{background:#a0312b} .dchip.bo{background:#4f86b0;width:.6rem;height:.6rem} .dchip.se{background:#3a3a3a;width:.6rem;height:.6rem}
+  .dchip{display:inline-block;width:.8rem;height:.8rem;margin-right:2px;vertical-align:-2px}
+  .dchip.bo{background:#4f86b0;width:.62rem;height:.62rem;border-radius:2px} .dchip.se{background:#3a3a3a;width:.62rem;height:.62rem;border-radius:2px}
+  .dchip.ab,.dchip.di{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)} .dchip.ab{background:#3f7d3a} .dchip.di{background:#5c4a7d}
+  .dchip.pr,.dchip.ch{clip-path:polygon(25% 4%,75% 4%,100% 50%,75% 96%,25% 96%,0 50%)} .dchip.pr{background:#c9a227} .dchip.ch{background:#a0312b}
   .stat{border:1px dashed var(--line);border-radius:.5rem;padding:.5rem .8rem;margin:.4rem 0;background:var(--panel2)}
 
   .scenepills{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}

@@ -52,13 +52,18 @@ tr{break-inside:avoid}
 td.c,th.c{text-align:center}
 
 /* ---------- dice chips ---------- */
-.d{display:inline-block;width:8.5pt;height:8.5pt;border-radius:1.5pt;vertical-align:-1.2pt;margin-right:1pt}
+.d{display:inline-block;width:8.5pt;height:8.5pt;vertical-align:-1.6pt;margin-right:1.5pt}
 .d+.d{margin-left:0}
-.d.ab{background:var(--d-ab)} .d.pr{background:var(--d-pr)}
-.d.di{background:var(--d-di)} .d.ch{background:var(--d-ch)}
+/* d6s are squares: Boost (blue), Setback (black), and the Force die (white) */
 .d.bo{background:var(--d-bo);width:7pt;height:7pt;border-radius:1pt}
 .d.se{background:var(--d-se);width:7pt;height:7pt;border-radius:1pt}
-.d.f{background:#fff;border:1px solid var(--ink)} /* Force die */
+.d.f{background:#fff;border:1px solid var(--ink);border-radius:1pt}
+/* d8s are diamonds: Ability (green), Difficulty (purple) */
+.d.ab,.d.di{width:9.5pt;height:9.5pt;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.d.ab{background:var(--d-ab)} .d.di{background:var(--d-di)}
+/* d12s are hexagons: Proficiency (yellow), Challenge (red) */
+.d.pr,.d.ch{width:9.5pt;height:9.5pt;clip-path:polygon(25% 4%,75% 4%,100% 50%,75% 96%,25% 96%,0 50%)}
+.d.pr{background:var(--d-pr)} .d.ch{background:var(--d-ch)}
 /* symbol words, color-coded */
 .sy{font:700 7.6pt var(--head)}
 .sy.good{color:var(--d-ab)} .sy.bad{color:var(--d-ch)}
