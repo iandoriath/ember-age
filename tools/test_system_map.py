@@ -7,6 +7,16 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs/setting/systems.json"
 
 
+_CACHED = None
+
+
+def load_built():
+    global _CACHED
+    if _CACHED is None:
+        _CACHED = bsm.load_data()
+    return _CACHED
+
+
 def load():
     return json.loads(DATA.read_text(encoding="utf-8"))
 
@@ -113,12 +123,12 @@ def test_coruscant_is_the_coreward_end_of_the_road():
     lane = next(l for l in d["lanes"] if {l["from"], l["to"]} == {"brentaal", "coruscant"})
     assert lane["kind"] == "living" and lane["name"] == "Perlemian Trade Route"
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
-    assert "road:{x:3550, y:2350, w:2150, h:4100}" in tpl
+    assert "road:{x:2950, y:3330, w:2800, h:3870}" in tpl
 
 
 def test_committed_outputs_match_fresh_build():
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
-    d = bsm.load_data()
+    d = load_built()
     assert (ROOT / "system-map.html").read_text(encoding="utf-8") == bsm.build("gm", d, tpl)
     assert (ROOT / "player-aids/system-map.html").read_text(encoding="utf-8") == bsm.build("player", d, tpl)
 
@@ -153,21 +163,18 @@ def test_wookieepedia_merge_is_player_safe():
     assert '"data": "QUJD"' in player and "Outer Rim" in player and "Wookieepedia" in player
 
 
-def test_off_chart_exits_have_exactly_one_lane_and_render_as_arrows():
+def test_no_off_chart_exits_remain():
     d = load()
-    exits = [s for s in d["systems"] if s.get("offChart")]
-    assert {s["id"] for s in exits} == {"naboo", "hutt-space", "new-cov", "corellia", "bonadan", "fondor", "sluis-van", "terminus", "quermia"}
-    for s in exits:
-        assert sum(1 for l in d["lanes"] if s["id"] in (l["from"], l["to"])) == 1, s["id"]
-        assert "off-chart" not in s.get("sub", "")
+    assert not any(s.get("offChart") for s in d["systems"])
+    assert not any("hutt-space" in (l["from"], l["to"]) for l in d["lanes"])
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
-    assert 'class:"arrow"' in tpl and '(s.offChart ? "To " : "")' in tpl
+    assert "offChart" not in tpl and 'class:"arrow"' not in tpl
 
 
 def test_regions_are_well_formed():
     d = load()
     for r in d["regions"]:
-        assert r["name"] and r["kind"] in {"core", "mid", "hutt", "nebula", "text"}, r
+        assert r["name"] and r["kind"] in {"nebula", "text"}, r
         assert "label" in r and len(r["label"]) == 2, r
         if r["kind"] != "text":
             for k in ("cx", "cy", "rx", "ry"):
@@ -176,7 +183,7 @@ def test_regions_are_well_formed():
 
 def test_galaxy_layer_embedded_and_deduped():
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
-    d = bsm.load_data()
+    d = load_built()
     assert len(d.get("galaxy", [])) > 1900
     names = {g[0].lower() for g in d["galaxy"]}
     for s in d["systems"]:
@@ -186,15 +193,35 @@ def test_galaxy_layer_embedded_and_deduped():
 
 
 def test_route_network_embedded():
-    d = bsm.load_data()
+    d = load_built()
     assert len(d["routes"]) >= 50
     majors = {r["n"] for r in d["routes"] if r["major"]}
     assert {"Hydian Way", "Perlemian Trade Route", "Rimma Trade Route", "Corellian Run", "Corellian Trade Spine"} <= majors
-    assert len(d["nav"]["edges"]) > 500
+    assert len(d["nav"]["edges"]) > 2000
     names = {g[0].lower() for g in d["galaxy"]}
-    assert "brentaal iv" not in names  # aliased to the hero system
+    assert "kashyyk" not in names and "darkknell" not in names  # aliased/hero names deduped
     kinds = {e[2] for e in d["nav"]["edges"]}
-    assert "withered" in kinds and "dark" in kinds
+    assert "dark" in kinds and "route" in kinds
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
     out = bsm.build("player", d, tpl)
     assert "Plot Course" in out and '"routes":' in out
+
+
+def test_svg_geometry_governs():
+    d = load_built()
+    pos = {s["name"]: (s["x"], s["y"]) for s in d["systems"]}
+    # the chain is projected onto the drawn Duros Space Run: canonical order holds along the arc
+    assert pos["Naboo"] != pos["Enarc"]
+    hero_edges = {tuple(sorted((a, b))) for a, b, k, r in d["nav"]["edges"]}
+    assert tuple(sorted(("Jutrand", "Darkknell"))) in hero_edges
+    assert any(rp["kind"] == "hutt" for rp in d["regionPaths"])
+
+
+def test_sector_label_tier():
+    d = load_built()
+    secs = {s[0]: s[3] for s in d["sectors"]}
+    assert len(secs) > 80 and all(n >= 2 for n in secs.values())
+    assert "Grumani" in secs
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    out = bsm.build("player", d, tpl)
+    assert "sectlbl" in out and "data-labels" in out

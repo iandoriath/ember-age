@@ -348,7 +348,6 @@
    "id": "naboo",
    "name": "Naboo",
    "sub": "Enarc Run",
-   "offChart": true,
    "x": 5095,
    "y": 5700,
    "region": "hydian",
@@ -360,26 +359,8 @@
     "canon": "Off-chart endpoint; living galaxy.",
     "factions": []
    },
-   "grid": "O-17"
-  },
-  {
-   "id": "hutt-space",
-   "name": "Hutt Space",
-   "sub": "Triellus",
-   "offChart": true,
-   "x": 6120,
-   "y": 4080,
-   "region": "hydian",
-   "beacon": false,
-   "alwaysLit": true,
-   "blurb": "The Triellus ring — Kajidic country.",
-   "gm": {
-    "seed": "",
-    "canon": "Off-chart endpoint; Hutt ring.",
-    "factions": [
-     "kajidics"
-    ]
-   }
+   "grid": "O-17",
+   "la": "below"
   },
   {
    "id": "triffis",
@@ -456,7 +437,6 @@
    "id": "new-cov",
    "name": "New Cov",
    "sub": "Corellian Run",
-   "offChart": true,
    "x": 5390,
    "y": 4460,
    "region": "hydian",
@@ -476,7 +456,6 @@
    "id": "corellia",
    "name": "Corellia",
    "sub": "Corellian Run",
-   "offChart": true,
    "wpSkip": true,
    "x": 4230,
    "y": 3560,
@@ -495,7 +474,6 @@
    "id": "bonadan",
    "name": "Bonadan",
    "sub": "Hydian Way",
-   "offChart": true,
    "wpSkip": true,
    "x": 6310,
    "y": 830,
@@ -514,7 +492,6 @@
    "id": "fondor",
    "name": "Fondor",
    "sub": "Rimma · coreward",
-   "offChart": true,
    "wpSkip": true,
    "x": 3900,
    "y": 4230,
@@ -533,7 +510,6 @@
    "id": "sluis-van",
    "name": "Sluis Van",
    "sub": "Rimma · rimward",
-   "offChart": true,
    "wpSkip": true,
    "x": 4230,
    "y": 6220,
@@ -552,7 +528,6 @@
    "id": "terminus",
    "name": "Terminus",
    "sub": "the Hydian's end",
-   "offChart": true,
    "wpSkip": true,
    "x": 3520,
    "y": 6560,
@@ -571,7 +546,6 @@
    "id": "quermia",
    "name": "Quermia",
    "sub": "Perlemian",
-   "offChart": true,
    "wpSkip": true,
    "x": 6270,
    "y": 1510,
@@ -910,12 +884,6 @@
    "name": "Enarc Run"
   },
   {
-   "from": "enarc",
-   "to": "hutt-space",
-   "kind": "dark",
-   "name": "Triellus"
-  },
-  {
    "from": "sanrafsix",
    "to": "fostin-nine",
    "kind": "smuggler",
@@ -967,24 +935,19 @@
  "regions": [
   {
    "name": "THE CORE",
-   "kind": "core",
-   "cx": 3900,
-   "cy": 3150,
-   "rx": 800,
-   "ry": 560,
-   "rot": -8,
+   "kind": "text",
    "label": [
-    3890,
-    2530
+    3110,
+    3450
    ],
-   "size": 110
+   "size": 100
   },
   {
    "name": "DEEP CORE",
    "kind": "text",
    "label": [
-    3900,
-    3310
+    3020,
+    4080
    ],
    "size": 44
   },
@@ -992,31 +955,26 @@
    "name": "INNER RIM",
    "kind": "text",
    "label": [
-    4310,
-    3810
+    3640,
+    4520
    ],
    "size": 44
   },
   {
    "name": "MID RIM",
-   "kind": "mid",
-   "cx": 5250,
-   "cy": 4520,
-   "rx": 700,
-   "ry": 420,
-   "rot": -25,
+   "kind": "text",
    "label": [
-    5570,
-    4185
+    5050,
+    5330
    ],
-   "size": 90
+   "size": 60
   },
   {
    "name": "MID RIM",
    "kind": "text",
    "label": [
     5760,
-    3090
+    3130
    ],
    "size": 60
   },
@@ -1024,8 +982,8 @@
    "name": "THE SLICE",
    "kind": "text",
    "label": [
-    5910,
-    2290
+    4640,
+    2830
    ],
    "size": 64
   },
@@ -1033,8 +991,8 @@
    "name": "OUTER RIM",
    "kind": "text",
    "label": [
-    4000,
-    5115
+    3680,
+    5900
    ],
    "size": 110
   },
@@ -1042,45 +1000,40 @@
    "name": "TRAILING SECTORS",
    "kind": "text",
    "label": [
-    4012,
-    5228
+    3695,
+    6015
    ],
    "size": 44
   },
   {
    "name": "HUTT SPACE",
-   "kind": "hutt",
-   "cx": 6250,
-   "cy": 3950,
-   "rx": 850,
-   "ry": 600,
-   "rot": -15,
+   "kind": "text",
    "label": [
-    6255,
-    3965
+    6150,
+    4650
    ],
-   "size": 100
+   "size": 90
   },
   {
    "name": "THE TERAAB NURSERY",
    "kind": "nebula",
-   "cx": 5270,
-   "cy": 3570,
-   "rx": 220,
-   "ry": 150,
-   "rot": 20,
+   "cx": 5450,
+   "cy": 3690,
+   "rx": 210,
+   "ry": 140,
+   "rot": 15,
    "label": [
-    5268,
-    3805
+    5180,
+    3830
    ],
-   "size": 46
+   "size": 44
   },
   {
    "name": "WILD SPACE",
    "kind": "text",
    "label": [
-    5300,
-    540
+    4700,
+    700
    ],
    "size": 95
   },
@@ -1088,8 +1041,8 @@
    "name": "UNKNOWN REGIONS",
    "kind": "text",
    "label": [
-    1150,
-    3450
+    1500,
+    4200
    ],
    "size": 95,
    "lrot": -72

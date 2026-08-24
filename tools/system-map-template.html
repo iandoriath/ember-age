@@ -33,6 +33,9 @@
   #chart[data-zoom=reach] .regionlbl{opacity:.5}
   #chart[data-zoom=wide] .regionlbl{opacity:.65}
   #chart[data-zoom=far] .regionlbl{opacity:.8}
+  /* region borders (from the vector map) */
+  .regborder{fill:none;stroke:#1e4260;stroke-width:2.5;opacity:.5;stroke-dasharray:16 10}
+  .regborder.hutt{fill:rgba(143,191,111,.05);stroke:#3f6a5c;stroke-dasharray:none;opacity:.6}
   /* hyperlane routes */
   .route{fill:none;stroke:#24435f;stroke-width:2;stroke-linejoin:round;stroke-linecap:round;opacity:.55}
   .majorroute{stroke:#35597a;stroke-width:4;opacity:.7}
@@ -44,11 +47,18 @@
   .navhop{margin:.1rem 0}
   .navhop b{color:var(--holo)} .navhop.dark b{color:var(--gold)}
   /* galaxy layer */
-  .gdot{opacity:.8;r:3.5px}
+  .gdot{opacity:.7;r:3.5px}
+  .gdot.t1{opacity:.95;r:5px}
   #chart[data-zoom=wide] .gdot{r:7px}
-  #chart[data-zoom=far] .gdot{r:13px;opacity:.9}
+  #chart[data-zoom=wide] .gdot.t1{r:10px}
+  #chart[data-zoom=far] .gdot{r:12px;opacity:.85}
+  #chart[data-zoom=far] .gdot.t1{r:17px;opacity:1}
+  .gname.t1{fill:#54809f;font-weight:600}
   .gname{font-size:11px;fill:#3f6a8c;letter-spacing:.06em;display:none}
-  #chart[data-zoom=close] .gname{display:block}
+  #chart[data-labels=all] .gname{display:block}
+  #chart[data-labels=sector] .gname.nosect{display:block}
+  .sectlbl{font-size:34px;fill:#4b7290;letter-spacing:.3em;opacity:.55;display:none;text-anchor:middle}
+  #chart[data-labels=sector] .sectlbl{display:block}
   #chart[data-zoom=close] .regionlbl{opacity:.12}
   #chart[data-zoom=far] .sys text{display:none}
   #chart[data-zoom=far] .sys.major .lbl{display:block;font-size:58px}
@@ -80,8 +90,6 @@
   .sys.always .ring{stroke:var(--gold);opacity:.5;stroke-dasharray:none}
   .sys.lit text,.sys.always text{fill:var(--gold)}
   .sys .hit{fill:transparent}
-  .sys .arrow{fill:none;stroke:var(--holo);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-  .sys.always .arrow{stroke:var(--gold);filter:url(#glow)}
   @keyframes pulse{0%,100%{opacity:.35;r:11}50%{opacity:.9;r:15}}
   /* hover dimming */
   #chart.hl .lane:not(.on),#chart.hl .sys:not(.on){opacity:.28}
@@ -171,7 +179,7 @@ const DATA = JSON.parse(document.getElementById("data").textContent);
 const byId = new Map(DATA.systems.map(s => [s.id, s]));
 const SVG = "http://www.w3.org/2000/svg";
 const chart = document.getElementById("chart");
-const VIEWS = {reach:{x:4020, y:5330, w:1200, h:740}, road:{x:3550, y:2350, w:2150, h:4100}, galaxy:{x:0, y:120, w:7650, h:7300}};
+const VIEWS = {reach:{x:4060, y:5680, w:1120, h:1280}, road:{x:2950, y:3330, w:2800, h:3870}, galaxy:{x:100, y:150, w:7500, h:8100}};
 let vb = {...VIEWS.reach};
 
 /* ---- lit state (Task 4 adds persistence) ---- */
@@ -213,6 +221,11 @@ function render() {
   el("rect", {x:-2400, y:-2400, width:12600, height:12600, fill:"url(#grid)"}, chart);
   el("rect", {x:-2400, y:-2400, width:12600, height:12600, fill:"url(#grid2)"}, chart);
 
+  const gb = el("g", {id:"regionborders"}, chart);
+  for (const rp of (DATA.regionPaths || [])) {
+    el("polyline", {class:"regborder " + rp.kind, points:rp.pts.map(pt => pt.join(",")).join(" ")}, gb);
+  }
+
   const gr = el("g", {id:"regions"}, chart);
   for (const r of (DATA.regions || [])) {
     if (r.cx !== undefined) {
@@ -228,12 +241,17 @@ function render() {
 
   const gg = el("g", {id:"galaxy"}, chart);
   const RCOLOR = {"Deep Core":"#8a6f4d","Core":"#7d6a4e","Colonies":"#5f6472","Inner Rim":"#4d6580","Expansion Region":"#42607e","Mid Rim":"#38587c","Outer Rim":"#2c5074","Wild Space":"#254562","Unknown Regions":"#254562","Hutt Space":"#3f6a5c"};
-  for (const [name, x, y, grid, sector, region] of (DATA.galaxy || [])) {
-    const dot = el("circle", {class:"gdot", cx:x, cy:y, r:3.2, fill:RCOLOR[region] || "#203c55", "data-n":name}, gg);
+  for (const [name, x, y, grid, sector, region, tier] of (DATA.galaxy || [])) {
+    const dot = el("circle", {class:"gdot" + (tier ? " t1" : ""), cx:x, cy:y, r:3.2, fill:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55"), "data-n":name}, gg);
     const tip = el("title", {}, dot);
-    tip.textContent = `${name} · ${grid}${sector ? " · " + sector + " sector" : ""}${region ? " · " + region : ""}`;
-    const nm = el("text", {class:"gname", x:x + 7, y:y + 3}, gg);
+    tip.textContent = `${name}${grid ? " · " + grid : ""}${sector ? " · " + sector + " sector" : ""}${region ? " · " + region : ""}`;
+    const nm = el("text", {class:"gname" + (tier ? " t1" : "") + (sector ? "" : " nosect"), x:x + 7, y:y + 3}, gg);
     nm.textContent = name;
+  }
+  const gsec = el("g", {id:"sectors"}, chart);
+  for (const [name, x, y, count] of (DATA.sectors || [])) {
+    const st = el("text", {class:"sectlbl", x, y}, gsec);
+    st.textContent = name;
   }
 
   const gr2 = el("g", {id:"routes"}, chart);
@@ -243,20 +261,22 @@ function render() {
   }
 
   const gl = el("g", {id:"lanes"}, chart);
-  for (const l of DATA.lanes) {
+  for (const l of (DATA.laneSegs || [])) {
     const a = byId.get(l.from), b = byId.get(l.to);
-    el("line", {class:"lane r-" + regionOf(a, b) + (laneIsRelit(l) ? " relit" : ""), x1:a.x, y1:a.y, x2:b.x, y2:b.y, "data-from":l.from, "data-to":l.to, "data-kind":l.kind}, gl);
+    el("polyline", {class:"lane r-" + regionOf(a, b) + (laneIsRelit(l) ? " relit" : ""), points:l.pts.map(pt => pt.join(",")).join(" "), "data-from":l.from, "data-to":l.to, "data-kind":l.kind}, gl);
   }
   // one label per named lane, on its longest segment
   const seen = new Map();
-  for (const l of DATA.lanes) {
+  for (const l of (DATA.laneSegs || [])) {
     if (!l.name || l.name === "dead spur") continue;
     const a = byId.get(l.from), b = byId.get(l.to), len = Math.hypot(b.x - a.x, b.y - a.y);
-    if (!seen.has(l.name) || seen.get(l.name).len < len) seen.set(l.name, {a, b, len});
+    if (!seen.has(l.name) || seen.get(l.name).len < len) seen.set(l.name, {a, b, l, len});
   }
-  for (const [name, {a, b}] of seen) {
-    const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
-    let ang = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI; if (ang > 90 || ang < -90) ang += 180;
+  for (const [name, {a, b, l}] of seen) {
+    const mid = l.pts[Math.floor(l.pts.length / 2)], nxt = l.pts[Math.min(l.pts.length - 1, Math.floor(l.pts.length / 2) + 1)];
+    const mx = mid[0], my = mid[1];
+    let ang = Math.atan2((nxt[1] - mid[1]) || (b.y - a.y), (nxt[0] - mid[0]) || (b.x - a.x)) * 180 / Math.PI;
+    if (ang > 90 || ang < -90) ang += 180;
     const t = el("text", {class:"lanelbl r-" + regionOf(a, b), x:mx, y:my - 6, "text-anchor":"middle", transform:`rotate(${ang} ${mx} ${my})`}, gl);
     t.textContent = name;
   }
@@ -267,20 +287,12 @@ function render() {
     const g = el("g", {class:cls, "data-id":s.id, transform:`translate(${s.x} ${s.y})`, tabindex:0, role:"button"}, gs);
     el("circle", {class:"hit", r:22}, g);
     if (s.beacon) el("circle", {class:"ring", r:12}, g);
-    if (s.offChart) {
-      // an exit chevron pointing away along the node's lane, instead of a world
-      const lane = DATA.lanes.find(l => l.from === s.id || l.to === s.id);
-      const from = lane ? byId.get(lane.from === s.id ? lane.to : lane.from) : null;
-      const ang = from ? Math.atan2(s.y - from.y, s.x - from.x) * 180 / Math.PI : 0;
-      el("path", {class:"arrow", d:"M-8,-7 L3,0 L-8,7 M-3,0 L3,0", transform:`rotate(${ang})`}, g);
-    } else {
-      el("circle", {class:"core", r:s.beacon ? 5 : 3}, g);
-    }
+    el("circle", {class:"core", r:s.beacon ? 5 : 3}, g);
     let lx = 16, ly = 4, anch = "start";
     if (s.la === "left") { lx = -16; anch = "end"; }
     else if (s.la === "above") { lx = 0; ly = -17; anch = "middle"; }
     else if (s.la === "below") { lx = 0; ly = 28; anch = "middle"; }
-    const lbl = el("text", {class:"lbl", x:lx, y:ly, "text-anchor":anch}, g); lbl.textContent = (s.offChart ? "To " : "") + s.name;
+    const lbl = el("text", {class:"lbl", x:lx, y:ly, "text-anchor":anch}, g); lbl.textContent = s.name;
     if (s.sub) { const sub = el("text", {class:"sub", x:lx, y:ly + 12, "text-anchor":anch}, g); sub.textContent = s.sub; }
     if (s.hop !== undefined) { const h = el("text", {class:"hop", x:-10, y:-14, "text-anchor":"end"}, g); h.textContent = s.hop === 0 ? "⌂" : s.hop; }
     <!-- GM:start -->
@@ -296,7 +308,7 @@ function render() {
   }
   const cor = byId.get("coruscant");
   if (cor) {
-    const rx = 1150, ry = 6780, ang = Math.atan2(cor.y - ry, cor.x - rx);
+    const rx = 1500, ry = 7300, ang = Math.atan2(cor.y - ry, cor.x - rx);
     const rose = el("g", {class:"rose"}, chart);
     const P = (r, a) => [rx + r * Math.cos(a), ry + r * Math.sin(a)];
     const [hx, hy] = P(150, ang), [tx, ty] = P(130, ang + Math.PI);
@@ -331,8 +343,9 @@ function applyView() {
   let {x, y, w, h} = vb;
   if (w / h < aspect) { const nw = h * aspect; x -= (nw - w) / 2; w = nw; } else { const nh = w / aspect; y -= (nh - h) / 2; h = nh; }
   chart.setAttribute("viewBox", `${x} ${y} ${w} ${h}`);
-  const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx > 4000 && cx < 5500 && cy > 5150;
+  const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx > 3950 && cx < 5350 && cy > 6050;
   chart.dataset.zoom = vb.w < 900 ? "close" : (vb.w < 2700 && inReach) ? "reach" : vb.w < 4800 ? "wide" : "far";
+  chart.dataset.labels = vb.w < 900 ? "all" : vb.w < 2600 ? "sector" : "none";
 }
 function setView(v) { vb = {...v}; applyView(); }
 function frame(name) { setView(VIEWS[name]); }
