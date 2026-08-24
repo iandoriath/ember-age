@@ -82,6 +82,33 @@ Ninety years after Ruusan, nothing flies new. Every hull in this file is an inhe
 
 ---
 
+## The Rivals
+
+### The Larksong, prize-money YT-1300
+*Vehicle — Independent (Captain Vess Marrow) — the rival's ship: the same pattern as yours, with the Triffis prize spent on it*
+
+> Same hull as half the Rim, and you hear the difference before you see it: a new ion turbine that whistles clean where yours coughs, plating that has actually been painted this decade, and a name on the bow in gold leaf that somebody paid a real artist for.
+
+| Silhouette | Speed | Handling |
+|:-:|:-:|:-:|
+| 4 | **4** | −1 |
+
+**Defense Fore/Aft 1/1 · Armor 3 · Hull Trauma Threshold 22 · System Strain Threshold 15**
+
+- **Hyperdrive:** Primary: **Class 1**, Backup: **none** (see Adjustments)
+- **Navicomputer:** Yes
+- **Sensor Range:** Short
+- **Crew:** One pilot, one co-pilot/engineer (Marrow flies; her three deckhands rotate the second seat and the turrets)
+- **Encumbrance Capacity:** 165 · **Passenger Capacity:** 6
+- **Consumables:** Two months · **Price/Rarity:** 100,000 credits/4 · **Customization Hard Points:** 6 (two spent on the attachments below)
+- **Weapons:** One dorsal and one ventral turret-mounted medium laser cannon (Fire Arc All; Damage 6; Critical 3; Range [Close])
+
+**Chassis:** YT-1300 Light Freighter, Edge of the Empire Core Rulebook (adjustments: declared — the stock block with two printed attachments installed at RAW cost, and one deliberate omission: (1) **High-Output Ion Turbine** (Edge of the Empire Core Rulebook): +1 Speed, so 4; (2) **Hyperdrive Generator** (Edge of the Empire Core Rulebook): the primary hyperdrive one class better, Class 2 → Class 1; (3) **no backup hyperdrive** — Marrow sold the Class 12 backup to the Bannistar chop-yard to make the generator's price. Confirm the two attachments' printed hard-point cost and prices against the book before the first roll that turns on them; everything else above is the YT-1300 as printed.)
+**Era notes:** This is what a first-lighting prize looks like when it is spent well. The Triffis fee went to the chop-yard under Okrent's Drift for a salvaged turbine and a generator pulled from a dead courier, and the yard quoted the crew the same work at a price they could not pay. Nothing about the *Larksong* is new; it is simply the one YT-1300 in the sector whose owner has been paid.
+**Using it:** The envy is calibrated on purpose: Speed 4 against the crew's 3, and Class 1 against their Class 2 — she wins every straight race and every jump, and "the *Larksong* got there an hour ago" is the hyperdrive math, not luck. Everything else is the same ship: same two turrets, same paper armor, same strain. The weaknesses are real and the players can find them. **No backup hyperdrive:** a Despair on her Astrogation, or a hit that drops the primary, leaves the *Larksong* drifting on a dead lane with no way home — Marrow knows it, which is why she only races lanes she holds a chart for, and why she wants the crew's page as much as they want hers. **The turbine runs hot:** after any chase flown at full speed, the GM may hang the Inferior quality on it until she has had a night in port (the lane-runner convention above). **The prize is mostly gone:** the pouch she pays Grell from is the last of it, and her hard points are two-thirds spent. And the hook under all of it: the turbine and the generator are RAW attachments at printed prices, sold by a yard that will sell the crew the same thing the day they have a prize of their own. The *Larksong* is not a better ship. It is a paid-for one. This block is mirrored in the session-one NPC file ([session-one.md](../gm/npcs/session-one.md)) beside her crew — one canonical print; if either copy is ever adjusted, keep the two in sync.
+
+---
+
 ## The Admiralty
 
 ### BNS Steadfast, Bastion-pattern Patrol Sloop
