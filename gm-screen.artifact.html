@@ -123,6 +123,35 @@
   .sess dd{margin:0 0 .1rem}
   footer{color:var(--dim);text-align:center;font-size:.75rem;padding:2rem 0}
   @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+  /* Phones (portrait). Nearly every secondary size above is in rem, which keys off the browser's
+     16px root, not the 15px body — so on a phone the .72–.85rem labels landed at 11–13px. Raising
+     the root here scales all of them together; the rest is tap targets and keeping any long token
+     from widening the layout (which makes mobile browsers zoom the whole page out). */
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  main{overflow-x:clip}
+  @media (max-width:640px){
+    html{font-size:18px}
+    body{font-size:1.0625rem;line-height:1.5}
+    .doc,.npc .body,.card,.qcard,.clock,.sess{overflow-wrap:anywhere}
+    header{gap:.45rem;padding:.5rem .7rem}
+    header h1{font-size:1.2rem;margin-right:.4rem}
+    nav{width:100%;gap:.3rem}
+    nav button{padding:.5rem .8rem;font-size:1rem}
+    .hbtn{padding:.45rem .7rem;font-size:.95rem}
+    main{padding:.8rem .7rem 4rem}
+    .doc h1{font-size:1.45rem} .doc h2{font-size:1.25rem} .doc h3{font-size:1.1rem}
+    .doc table{font-size:.95em}
+    .doc th,.doc td,table.tr th,table.tr td{padding:.4rem .5rem}
+    .side{position:static;max-height:40vh}
+    .side button{font-size:1rem;padding:.4rem .5rem} .side .grp{font-size:.8rem}
+    .badge,.tag{font-size:.8rem} label,.sess dt{font-size:.85rem}
+    .small,.muted.small,.npc .fac,.npc .drv,.qcard,.chip,.runact .runact-desc,.clock textarea{font-size:.95rem}
+    .crewstats div span{font-size:.72rem} .crewgrid .k{font-size:.8rem}
+    .chip{padding:.4rem .85rem} .btn{padding:.5rem .9rem}
+    .clock .seg{width:36px;height:24px}
+    footer{font-size:.85rem}
+  }
 </style>
 <header>
   <h1><span class="flame">◆</span> THE EMBER AGE <span class="small muted">GM screen</span></h1>
