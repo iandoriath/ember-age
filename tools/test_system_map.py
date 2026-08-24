@@ -239,3 +239,11 @@ def test_galaxy_wookieepedia_merge_is_player_safe():
         assert set(e.get("f", {})) <= bsm.PLAYER_FACTS
     player = bsm.build("player", d, tpl)
     assert '"gwpGm"' not in player
+
+
+def test_search_feature_present_in_both_editions():
+    d = load_built()
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    for ed in ("gm", "player"):
+        out = bsm.build(ed, d, tpl)
+        assert 'id="q"' in out and "doSearch" in out and "qPick" in out
