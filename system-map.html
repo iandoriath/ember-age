@@ -136,13 +136,6 @@
   #title small{display:block;color:var(--dim);letter-spacing:.3em;font-size:.7rem;text-transform:uppercase}
   #regkey{position:absolute;right:26px;bottom:22px;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.25rem .8rem;max-width:60%;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim)}
   #regkey .rk i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:.35rem;vertical-align:middle;opacity:.9}
-  @media (max-width:720px){
-    #panel{left:12px;right:12px;top:auto;bottom:56px;width:auto;max-height:46vh;transform:translateY(20px);padding:.8rem .9rem}
-    #panel.open{transform:none}
-    #regkey{display:none}
-    #ctl{flex-wrap:wrap;justify-content:flex-end;gap:.25rem}
-    #title small{display:none}
-  }
   #status{position:absolute;left:26px;bottom:22px;display:flex;gap:.6rem;align-items:flex-end;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim)}
   #status .pip{display:flex;flex-direction:column;align-items:center;gap:.25rem;cursor:pointer}
   #status .pip i{width:10px;height:10px;border-radius:50%;border:1px solid var(--holo-dim);background:var(--bg)}
@@ -182,6 +175,16 @@
   #chart .fac{font-size:7px;fill:var(--ember);letter-spacing:.1em;display:none}
   body.gm-on #chart .fac{display:block}
   
+  @media (max-width:720px){
+    #panel{left:12px;right:12px;top:auto;bottom:56px;width:auto;max-height:46vh;transform:translateY(20px);padding:.8rem .9rem}
+    #q{font-size:16px;width:150px}
+    #q:focus{width:200px}
+    #panel.open{transform:none}
+    #regkey{display:none}
+    #ctl{flex-wrap:wrap;justify-content:flex-end;gap:.25rem}
+    #title small{display:none}
+  }
+  @media (pointer:coarse){#q{font-size:16px}}  /* >=16px: mobile browsers don't auto-zoom the page into the field */
 </style>
 </head>
 <body>
@@ -456,7 +459,13 @@ function focusOn(x, y) {
   let {w, h} = vb;
   if (w / h < aspect) w = h * aspect; else h = w / aspect;  // the box as actually displayed
   const fy = matchMedia("(max-width:720px)").matches ? 0.27 : 0.5;
-  setView({x:x - w / 2, y:y - h * fy, w, h});
+  let cx = 0.5, cy = fy;
+  const vv = window.visualViewport;
+  if (vv && vv.scale > 1.02) {  // the page is pinch/auto-zoomed: aim at what is actually on screen
+    cx = (vv.offsetLeft + vv.width / 2 - r.left) / r.width;
+    cy = (vv.offsetTop + vv.height * fy - r.top) / r.height;
+  }
+  setView({x:x - w * cx, y:y - h * cy, w, h});
 }
 
 function qPick(e) {
