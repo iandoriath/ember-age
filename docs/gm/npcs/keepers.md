@@ -97,8 +97,8 @@ Dial 1, statted. Bane, then Zannah, then Cognus — and the record goes silent, 
 **Chassis:** Emperor's Hand, Edge of the Empire Core Rulebook, p. 402 (adjustments: declared — the printed vibrosword is replaced by a lightsaber, and the block's Melee 3 is read as Lightsaber 3; **Gunnery 3 and Piloting (Space) 3 are added**, so that she flies the interceptor below as well as she does everything else; everything else as printed).
 **Using her:** The culling of the Inheritors is her graduation exam, and the grade is *anonymity*: the senior circle dead across a dozen worlds in one night, the archives vanished rather than burned, and nobody sane concluding "Sith." Force Rating 2 is justified as the line's entire pedagogy poured into a single student (era rule, Part VII). She never claims a kill, never duels when a fall down a lift shaft will do, and withdraws the moment a fight turns evidentiary — being *seen* fighting with a lightsaber is a mission failure worse than death, which is why the blade comes out only when nobody present will live to describe it: the disruptor leaves no body, and the saber leaves no witnesses. A cauterized wound on a survivor is the one mistake the Mother would not forgive. After the culling she holds the harvested Vesta-9 file: she knows about the crew — what they saw at the station she lit, what they carry, and by then which of them is gifted — and has never once been seen — every misattribution the players chase (the Vigil? the Admiralty? a purge?) lights a different Act 3 fire.
 
-### Mendac's Interceptor — no name, no transponder
-*Vehicle — the Sith line (Dial 1) — the Patient Apprentice's fighter; the fastest thing in the Reach, and the least seen*
+### Sith Scout Fighter — Mendac's interceptor
+*Vehicle — the Sith line (Dial 1) — the Patient Apprentice's fighter: no name, no transponder; the fastest thing in the Reach, and the least seen*
 
 > A pre-Ruusan interceptor out of a dead principate's yards, hull the color of no color, running no transponder and answering no hail — a ship that is, legally, nothing. Nobody in the Reach has ever seen it twice.
 

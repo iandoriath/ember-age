@@ -188,6 +188,15 @@ def parse_npcs():
                 "html": render(body, src_dir),
                 "search": plain(name + " " + body),
             })
+    # Vehicles statted inside GM-only NPC files (e.g. the Sith line's fighter in
+    # keepers.md) are shelved with the other ships. ships.md itself stays
+    # player-safe, so this is the only place they meet. A hull the ships file
+    # already carries (the Steadfast, mirrored for the session-one markers) keeps
+    # its home group rather than appearing twice under Ships.
+    ship_names = {n["name"] for n in npcs if n["group"] == "ships"}
+    for n in npcs:
+        if n["kind"] == "Vehicle" and n["group"] != "ships" and n["name"] not in ship_names:
+            n["group"] = "ships"
     return npcs, groups
 
 
