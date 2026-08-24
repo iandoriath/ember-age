@@ -45,6 +45,14 @@ def num(x, default=0):
         return default
 
 
+def as_list(x) -> list:
+    """Hyperdrive's XML-derived JSON collapses a one-item collection into a bare dict (a Human's
+    single OptionChoices entry, a lone weapon quality, one obligation); always iterate a list."""
+    if x is None:
+        return []
+    return x if isinstance(x, list) else [x]
+
+
 def slugify(name: str) -> str:
     ascii_name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
     s = re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-")
@@ -64,11 +72,11 @@ def skill_ranks(d: dict) -> dict:
     sm = d.get("Species", {}).get("SkillModifiers") or {}
     if isinstance(sm, dict) and sm.get("Key"):
         ranks[SKILL_BY_KEY.get(sm["Key"], sm["Key"])] = num(sm.get("RankStart"))
-    for name in d.get("CareerRanks", []) + d.get("SpecRanks", []):
+    for name in as_list(d.get("CareerRanks")) + as_list(d.get("SpecRanks")):
         ranks[name] = ranks.get(name, 0) + 1
     for name, r in (d.get("Modifiers", {}).get("Skills") or {}).items():
         ranks[SKILL_BY_KEY.get(name, name)] = ranks.get(SKILL_BY_KEY.get(name, name), 0) + num(r)
-    for s in d.get("Skills", []):
+    for s in as_list(d.get("Skills")):
         for k in ("rank", "Rank", "ranks", "Ranks"):
             if k in s:
                 ranks[s["skill"]] = ranks.get(s["skill"], 0) + num(s[k])
@@ -77,18 +85,18 @@ def skill_ranks(d: dict) -> dict:
 
 def normalize(d: dict) -> dict:
     chars = {c: num(d["Characteristics"].get(c)) for c in CHARS}
-    career_skills = set(d.get("CareerSkills", [])) | set(d.get("SpecSkills", [])) | set(d.get("ExtraCareerSkills", []))
+    career_skills = set(as_list(d.get("CareerSkills"))) | set(as_list(d.get("SpecSkills"))) | set(as_list(d.get("ExtraCareerSkills")))
     ranks = skill_ranks(d)
     skills = []
-    for s in d.get("Skills", []):
+    for s in as_list(d.get("Skills")):
         name, char = s["skill"], s["characteristic"]
         r, c = ranks.get(name, 0), chars.get(char, 0)
         skills.append({"name": f"Knowledge ({name})" if name in KNOWLEDGE else name, "characteristic": char, "rank": r,
                        "career": name in career_skills, "proficiency": min(r, c), "ability": max(r, c) - min(r, c),
                        "type": s.get("type", "General")})
-    used_q = {q["Key"]: q["Name"] for q in d.get("UsedQualities", [])}
+    used_q = {q["Key"]: q["Name"] for q in as_list(d.get("UsedQualities")) if isinstance(q, dict)}
     weapons = []
-    for w in d.get("Weapons", []):
+    for w in as_list(d.get("Weapons")):
         skill_key = w.get("SkillKey", "")
         skill = SKILL_BY_KEY.get(skill_key, skill_key)
         if w.get("Key") == "UNARMED":
@@ -98,21 +106,20 @@ def normalize(d: dict) -> dict:
         else:
             dmg = str(w.get("Damage", "—"))
         weapons.append({"name": w.get("Name", "?"), "skill": skill, "damage": dmg, "crit": str(w.get("Crit", "—")),
-                        "range": w.get("Range", "—"), "qualities": [quality_name(q, used_q) for q in w.get("Qualities", [])],
+                        "range": w.get("Range", "—"), "qualities": [quality_name(q, used_q) for q in as_list(w.get("Qualities")) if isinstance(q, dict)],
                         "notes": (w.get("BaseMods") or {}).get("MiscDesc", "") if isinstance(w.get("BaseMods"), dict) else "",
                         "equipped": bool(w.get("Equipped")) or w.get("Key") == "UNARMED"})
     armor = [{"name": a.get("Name", "?"), "soak": num(a.get("Soak")), "defense": num(a.get("Defense")), "encumbrance": num(a.get("Encumbrance")),
-              "equipped": bool(a.get("Equipped"))} for a in d.get("Armor", [])]
+              "equipped": bool(a.get("Equipped"))} for a in as_list(d.get("Armor"))]
     gear = []
-    for g in d.get("Gear", []):
-        mods = g.get("BaseMods") or []
-        mods = mods if isinstance(mods, list) else [mods]
+    for g in as_list(d.get("Gear")):
+        mods = as_list(g.get("BaseMods"))
         gear.append({"name": g.get("Name", "?"), "quantity": num(g.get("Quantity"), 1), "type": g.get("Type", ""),
                      "encumbrance": num(g.get("Encumbrance")), "notes": " ".join(m.get("MiscDesc", "") for m in mods if isinstance(m, dict)).strip()})
     vehicles = []
-    for v in d.get("Vehicles", []):
+    for v in as_list(d.get("Vehicles")):
         weps = {}
-        for vw in v.get("VehicleWeapons", []):
+        for vw in as_list(v.get("VehicleWeapons")):
             label = VEHICLE_WEAPONS.get(vw.get("Key"), vw.get("Key", "?")) + (" (turret)" if vw.get("Turret") else "")
             weps[label] = weps.get(label, 0) + 1
         vehicles.append({"name": v.get("Name", "?"), "type": v.get("Type", ""), "silhouette": num(v.get("Silhouette")), "speed": num(v.get("Speed")),
@@ -122,13 +129,14 @@ def normalize(d: dict) -> dict:
                          "crew": v.get("Crew", ""), "passengers": num(v.get("Passengers")), "encumbrance": num(v.get("EncumbranceCapacity")),
                          "consumables": v.get("Consumables", ""), "weapons": [f"{n}× {k}" if n > 1 else k for k, n in weps.items()]})
     talents = [{"name": t["data"].get("Name", t["key"]), "count": num(t.get("count")), "activation": t["data"].get("ActivationValue", ""),
-                "description": t["data"].get("Description", "")} for t in d.get("BoughtTalents", []) if num(t.get("count")) > 0]
+                "description": t["data"].get("Description", "")} for t in as_list(d.get("BoughtTalents")) if isinstance(t, dict) and num(t.get("count")) > 0]
     species = d.get("Species", {})
-    abilities = [{"name": o["Options"].get("Name", ""), "description": o["Options"].get("Description", "")} for o in species.get("OptionChoices", []) if isinstance(o.get("Options"), dict)]
-    obligations = [{"type": o.get("Name", ""), "text": o.get("Text", ""), "total": num(o.get("Total"))} for o in d.get("Obligations", []) if o.get("Toggle") and o.get("Name")]
-    duties = [{"type": o.get("Name", ""), "text": o.get("Text", ""), "total": num(o.get("Total"))} for o in d.get("Duties", []) if o.get("Toggle") and o.get("Name")]
+    abilities = [{"name": o["Options"].get("Name", ""), "description": o["Options"].get("Description", "")}
+                 for o in as_list(species.get("OptionChoices")) if isinstance(o, dict) and isinstance(o.get("Options"), dict)]
+    obligations = [{"type": o.get("Name", ""), "text": o.get("Text", ""), "total": num(o.get("Total"))} for o in as_list(d.get("Obligations")) if isinstance(o, dict) and o.get("Toggle") and o.get("Name")]
+    duties = [{"type": o.get("Name", ""), "text": o.get("Text", ""), "total": num(o.get("Total"))} for o in as_list(d.get("Duties")) if isinstance(o, dict) and o.get("Toggle") and o.get("Name")]
     motivation = None
-    for m in d.get("Motivations", []):
+    for m in as_list(d.get("Motivations")):
         sm = m.get("SpecificMotivation") or {}
         if sm.get("Name"):
             motivation = f"{m.get('Motivation', {}).get('Name', '')}: {sm['Name']}".strip(": ")
@@ -136,7 +144,7 @@ def normalize(d: dict) -> dict:
     name = d.get("Name") or "Unnamed"
     return {
         "slug": slugify(name), "name": name, "species": species.get("Name", ""), "species_abilities": abilities,
-        "career": d.get("Career", {}).get("Name", ""), "specializations": [s.get("Name", "") for s in d.get("Specializations", [])],
+        "career": d.get("Career", {}).get("Name", ""), "specializations": [s.get("Name", "") for s in as_list(d.get("Specializations")) if isinstance(s, dict)],
         "characteristics": chars, "wounds": num(d.get("Wounds")), "strain": num(d.get("Strain")), "soak": num(d.get("Soak")),
         "defense": {"ranged": num(d.get("Defense", {}).get("Ranged")), "melee": num(d.get("Defense", {}).get("Melee"))},
         "encumbrance": {"threshold": 5 + chars["Brawn"], "current": num(d.get("EncumbranceCurrent"))},
