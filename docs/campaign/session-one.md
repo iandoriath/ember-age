@@ -2,31 +2,32 @@
 
 ## Cold open
 
-The crew is grounded at **Okrent's Drift** — the fuel-depot port that grew on the back of **Bannistar Station**'s great gantries, at the frayed end of the living stretch of the **Duros Space Run** — cargo impounded, Obligations circling — when the sky changes. **Vesta-9, dark for sixty years, is broadcasting.** Every ship that can lift is lifting.
+The crew is grounded at **Okrent's Drift** — the boomtown port on the back of **Bannistar Station**'s new fuel gantries, built for the Lamplighters' advance up the **Duros Space Run** and in recession since the advance stalled — cargo impounded, Obligations circling — when the sky changes. **Vesta-9 — the beacon nobody could find for five years — is broadcasting.** Every ship that can lift is lifting, and nobody has stopped to ask who lit it.
 
 ## Scene 1 — The Scramble
 
-Get off-world first: the impound, the fuel, and a likable rival crew worth keeping as recurring foils.
+Get off-world first: the impound, the fuel, and the *Larksong* — the crew that claimed the last prize the guild ever paid — holding the head of the queue and waving.
 
 ## Scene 2 — The Race
 
-Astrogation on a decayed route. Introduce [fragments](../mechanics/lore-fragments.md) here, when one page of somebody's grandmother's rutter is the difference between arrival and drift.
+Astrogation on a decayed route. Introduce [fragments](../mechanics/lore-fragments.md) here, when one page of somebody's grandmother's rutter is the difference between arrival and drift — and when the grandmother herself, dying in the depot infirmary, has something to say about who has been flying that lane.
 
 ## Scene 3 — The Beacon
 
-Vesta-9 station, lit and humming — and occupied.
+Vesta-9 station, three light-hours from where the charts put it, lit and humming — and occupied.
 
-- **Keeper Adressa Vhail** of the Vigil is praying at the beacon core and will not say how she got there.
+- **Keeper Adressa Vhail** of the Vigil is praying at the beacon core; she was here before the light came on, and will not say how.
+- One docking cradle is still warm. Nothing is in it.
 - The Admiralty sloop ***Steadfast*** (**Cmdr. Joss Reike**) drops in demanding all vessels stand to for inspection.
 - **Chartmistress Bel Nerra** of the Lamplighters arrives to certify the relight — and to hire witnesses.
 
-## Scene 4 — The Resonance
+## Scene 4 — The Record
 
-Mid-standoff, the beacon's carrier wave slips off its pitch — and finds the pulse of one of the crew. The mast brightens when they breathe in, dims when they breathe out: sixty years of silence, and the first thing this machine chooses to keep time with is somebody at the table. Whether they push it down or answer it is theirs to decide — in front of three factions.
+Mid-certification, the paper asks its question — *lighting party?* — and everyone looks at the witnesses of record. The crew is holding more than anyone else in the room: a dying pilot's claim, a wake log, a warm cradle, a station that isn't where it should be. What they put on the founding paper of the reopened Reach is theirs to decide — in front of three factions.
 
-- Reike wants them entered on the fleet's rolls, "for their own protection."
-- Vhail goes very quiet.
-- Nerra offers navigator's articles on the spot.
+- Reike wants a stranger on the lane, on the record.
+- Nerra wants it clean — and wants to buy the chart that found this place.
+- Vhail wants it said out loud at the core, and asks one question afterward.
 
 ## Out
 

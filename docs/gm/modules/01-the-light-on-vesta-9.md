@@ -285,18 +285,21 @@ Before the bookkeeping, settle debts on-screen: Grell's cut (if signed) transmit
 
 @@action:clock {"faction":"Admiralty","delta":1,"note":"Shots fired at the Steadfast over Vesta-9 — the corridor now provably needs protecting, with the crew's name in the log"}@@
 
-!!! note "The gifted PC registers with the fleet"
-    Reike is gentle, correct, and keeps every promise — that is what makes it dangerous. Registration means scheduled check-ins at named ports, a fleet physician's standing invitation, and courteous letters that always arrive on time. Keep it in play as texture, not a cage: the check-ins can be traded on, dodged at a cost, or attended for intelligence — the pipeline runs both ways. When the Awakening goes public in Act 2, the fleet comes to collect what it registered, and the PC gets to decide in front of the whole table what their signature was worth.
+!!! note "They name the stranger on the record"
+    Reike is gentle, correct, and keeps every promise — that is what makes it dangerous. His finding is filed the same night, and it is *true*, which is why it travels: courteous letters that arrive on time, a fleet analyst's standing interest in the crew's future certifications, and an Admiralty that now has a lawful reason to be on every lane the crew opens. Keep it as texture, not a cage — the pipeline runs both ways, and a crew the Admiralty trusts can read its files. GM only: the certification packet also carries the codes to the guild's desks, and the reader Dial 3 put behind them now knows the crew *noticed*. The Weeding will be gentle with them, at first — gardeners are not pruned — but the crew's rivals will start having remarkable luck.
 
-!!! note "They confide in Vhail, or sign Nerra's articles"
-    **Vhail** does not thank them. Custody of the *calling* is the thing her order's deed never granted, and a living, willing, adult Awakened standing in front of her forces the argument the Vigil has postponed for a generation — she leaves with the crew's trust and her order's crisis in the same satchel. **@@npc:Chartmistress Bel Nerra@@** files the articles the same day, and the PC's routings and dream-logs start flowing through a guild with a hole in it — the Inheritors get their name, their schedule, and their canyon, in the guild's own filing format (Dial 3).
+!!! note "They sell Osk's rutter"
+    **@@npc:Chartmistress Bel Nerra@@** pays what she promised, the same hour, and is warm about it forever. The book leaves the guild's hands within the month — to the patron's "survey teams," who have wanted it for ten years (Dial 3) — and the prizes up the Run stop stalling and start accelerating, in the patron's order, faster than any crew can follow. Osk hears before she dies; the infirmary orderly will tell the crew she asked for their names. The port hears too. Nothing about it is a disaster, which is the point: they will only understand what they sold when they reach the first vault that has already been emptied.
 
-*If the crew put their gifted member's existence formally in Vigil hands:*
+!!! note "They hand the evidence to Vhail"
+    **@@npc:Keeper Adressa Vhail@@** does not thank them. Someone is opening doors on purpose, with the old codes, and her order's deed never contemplated that — she leaves with the crew's trust and her order's crisis in the same satchel, and both halves of the Vigil will come asking what else the crew saw. The sealed places open to them. So does the argument.
 
-@@action:clock {"faction":"Vigil","delta":1,"note":"A living, willing Awakened adult known to the Vigil — the sacrilege-versus-rebirth argument goes from doctrinal to real"}@@
+*If the crew put the evidence formally in Vigil hands:*
 
-!!! note "The gift never surfaces"
-    The player held it down all session — honor it; that was the scene, played well. The resonance still sits in the luminosity logs and the certification packet (slow-fuse box), so the Dial 3 observer files the crew with a "suspected" flag rather than a fact, and the Inheritors' first contact comes slower and more carefully. And the beacon remembers: at the next relight the crew attempts, the new beacon reaches for the same PC *harder* — the choice comes back around, louder, in front of whoever is watching that time.
+@@action:clock {"faction":"Vigil","delta":1,"note":"The Vigil learns someone is opening the sealed doors on purpose — the custody argument goes from doctrinal to real"}@@
+
+!!! note "They lie clean and get caught"
+    A Despair at certification, or any careful reader later: the wake log says what it says, and the witnesses of record stood next to it. Nothing happens tonight. Later, a guild inquiry, an Admiralty analyst's letter, or a Vigil keeper who simply *looks* at them — and every guild door that opened swings a little less easily. The crew learns that in this era, a certificate is a promise, and the Reach keeps score.
 
 !!! note "They claim the first-lighting fee without a guild witness"
-    No certificate, no bond: the claim files as "unwitnessed," which any crew may counterclaim — and the *Larksong* was there. The fee freezes; Grell's cut evaporates with it, which he takes personally and repriced. @@npc:Chartmistress Bel Nerra@@ will offer to backdate a certification later, sweetly, for a favor the guild names. That favor is a hook — spend it on whichever Act 1 seed the party is circling.
+    No certificate, no bond: the claim files as "unwitnessed," which any crew may counterclaim — and the *Larksong* was there. The fee freezes, the famous number was never theirs to begin with, and Grell's cut evaporates with both, which he takes personally and repriced. @@npc:Chartmistress Bel Nerra@@ will offer to backdate a certification later, sweetly, for a favor the guild names. That favor is a hook — spend it on whichever Act 1 seed the party is circling.
