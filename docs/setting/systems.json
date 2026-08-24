@@ -136,7 +136,7 @@
     "factions": []
    },
    "grid": "N-17",
-   "la": "above"
+   "la": "below"
   },
   {
    "id": "jutrand",
@@ -272,7 +272,8 @@
      "lamplighters"
     ]
    },
-   "grid": "N-17"
+   "grid": "N-17",
+   "la": "below"
   },
   {
    "id": "chelloa",
@@ -308,7 +309,7 @@
     ]
    },
    "grid": "N-17",
-   "la": "above"
+   "la": "below"
   },
   {
    "id": "aquilaris",

@@ -89,24 +89,9 @@ def _vendor_pos(e):
 
 SVG_MAP = ROOT / "docs/maps/vendor/svg_map.json"
 SVG_SCALE = 9.0
-SVG_ALIASES = {"Kashyyk": "Kashyyyk"}  # svg name -> our name
+SVG_ALIASES = {"Kashyyk": "Kashyyyk", "Eridau": "Eriadu"}  # svg name -> our name (typos on the drawn map)
 MAJOR_ROUTES = {"Perlemian Trade Route", "Corellinan Run", "Corellian Trade Spine", "Hydian Way", "Rimma Trade Route"}
 ROUTE_RENAME = {"Corellinan Run": "Corellian Run", "Triellus Trade Run": "Triellus Trade Route"}
-# canonical stop orders used to project undrawn systems onto their drawn routes
-CHAINS = [
-    ("Duros Space Run", ["New Cov", "Churba", "Kalarba", "Glom Tho", "Triffis", "Bannistar Station", "Enarc",
-                          "Alui", "Verdanth", "Aplooine", "Sanrafsix", "Heptooine", "Jutrand", "Darkknell"]),
-    ("Hydian Way", ["Darkknell", "Eriadu", "Sluis Van"]),
-    ("Salin Corridor", ["Kashyyyk", "Teraab", "Ruusan"]),
-    ("Randon Run", ["Kashyyyk", "Teraab", "Ruusan"]),
-]
-
-
-def _grid_to_colrow(grid):
-    m = re.match(r"^([A-V])-(\d{1,2})$", grid or "")
-    return (ord(m.group(1)) - 64, int(m.group(2))) if m else None
-
-
 def _fit_grid_to_svg(svg_by_name, vendor_planets):
     """Least-squares col,row -> svg x,y over name matches."""
     xs = []
@@ -204,7 +189,18 @@ def build_network(data: dict) -> None:
         name = max(votes, key=votes.get) if votes else ""
         routes.append({"pts": pts, "arcs": arcs, "name": ROUTE_RENAME.get(name, name) or "hyperlane", "major": r["major"]})
 
-    # ---- hero positions: snap to the drawing; project the undrawn onto their routes
+    # ---- hero positions: the drawn map governs; the atlas fills in; four campaign
+    # worlds are our own and sit in stated relation to real neighbours. Nothing is
+    # placed by hand-drawn grid guesses any more.
+    ATLAS_WRONG = {"Heptooine"}  # vendor lists a different Heptooine (B-9, Wild Space)
+    RELATIONAL = [
+        # (name, anchorA, anchorB, along, perp)  pos = A + along*(B-A) + perp*rot90(B-A)
+        ("Alui", "Enarc", "Verdanth", 0.5, 0.0),
+        ("Heptooine", "Sanrafsix", "Jutrand", 0.5, 0.0),
+        ("Fostin Nine", "Sanrafsix", "Syned", 0.5, 0.0),
+        ("Veshet", "Sanrafsix", "Syned", 0.72, 0.3),
+        ("Teraab", None, None, 605.6, 410.0),  # absolute: the Nursery nebula
+    ]
     hero_pos = {}
     svg_matched = set()
     for s in data["systems"]:
@@ -212,59 +208,25 @@ def build_network(data: dict) -> None:
         if hit:
             hero_pos[s["name"]] = (hit["x"], hit["y"])
             svg_matched.add(s["name"])
-    all_polys = [(r["pts"], r["arcs"]) for r in routes]
-
-    def best_poly_for_pair(pa, pb, maxd=14.0):
-        best, score = None, 1e18
-        for pts, arcs in all_polys:
-            da, arca, _, _ = _nearest_on_poly(pts, arcs, *pa)
-            db, arcb, _, _ = _nearest_on_poly(pts, arcs, *pb)
-            s = da ** 0.5 + db ** 0.5
-            if da ** 0.5 < maxd and db ** 0.5 < maxd and s < score and abs(arca - arcb) > 1.0:
-                best, score = (pts, arcs, arca, arcb), s
-        return best
-
-    for cname, members in CHAINS:
-        known_idx = [i for i, m in enumerate(members) if m in hero_pos]
-        for ia, ib in zip(known_idx, known_idx[1:]):
-            if ib - ia < 2:
-                continue  # no missing members between this pair
-            pa, pb = hero_pos[members[ia]], hero_pos[members[ib]]
-            pick = best_poly_for_pair(pa, pb)
-            for j in range(ia + 1, ib):
-                if members[j] in hero_pos:
-                    continue
-                frac = (j - ia) / (ib - ia)
-                if pick:
-                    pts, arcs, arca, arcb = pick
-                    x, y = _point_at_arc(pts, arcs, arca + frac * (arcb - arca))
-                else:
-                    x, y = pa[0] + frac * (pb[0] - pa[0]), pa[1] + frac * (pb[1] - pa[1])
-                hero_pos[members[j]] = (round(x, 2), round(y, 2))
-        # members hanging off either end of the known span: nudge off the end anchor toward the next known point on the same heading
-        if known_idx:
-            first, last = known_idx[0], known_idx[-1]
-            for j in range(first - 1, -1, -1):
-                if members[j] in hero_pos:
-                    continue
-                ax, ay = hero_pos[members[j + 1]]
-                bx, by = hero_pos[members[min(j + 2, len(members) - 1)]]
-                hero_pos[members[j]] = (round(ax + (ax - bx) * 0.8, 2), round(ay + (ay - by) * 0.8, 2))
-            for j in range(last + 1, len(members)):
-                if members[j] in hero_pos:
-                    continue
-                ax, ay = hero_pos[members[j - 1]]
-                bx, by = hero_pos[members[max(j - 2, 0)]]
-                hero_pos[members[j]] = (round(ax + (ax - bx) * 0.8, 2), round(ay + (ay - by) * 0.8, 2))
-    # region-anchored stragglers (no drawn route): place near a fitted grid position
-    placed_by_fit = set()
     for s in data["systems"]:
-        if s["name"] not in hero_pos:
-            g = _grid_to_colrow(s.get("grid"))
-            if g:
-                x, y = fit(g[0] - 0.5, g[1] - 0.5)
-                hero_pos[s["name"]] = (round(x, 2), round(y, 2))
-                placed_by_fit.add(s["name"])
+        nm = s["name"]
+        if nm in hero_pos or nm in ATLAS_WRONG:
+            continue
+        gp = grid_pos.get(nm.lower())
+        if gp:
+            hero_pos[nm] = (round(gp[0], 2), round(gp[1], 2))
+    for nm, an_a, an_b, along, perp in RELATIONAL:
+        if nm in hero_pos:
+            continue
+        if an_a is None:
+            hero_pos[nm] = (along, perp)
+            continue
+        if an_a not in hero_pos or an_b not in hero_pos:
+            continue
+        ax, ay = hero_pos[an_a]
+        bx, by = hero_pos[an_b]
+        dx, dy = bx - ax, by - ay
+        hero_pos[nm] = (round(ax + along * dx - perp * dy, 2), round(ay + along * dy + perp * dx, 2))
     # a fit-placed hero that belongs to a drawn named route sits ON the stroke
     # (Eriadu is not drawn on the vector map, but the Hydian is)
     _byid0 = {s["id"]: s["name"] for s in data["systems"]}
@@ -303,6 +265,39 @@ def build_network(data: dict) -> None:
         nm = (e.get("Name") or "").strip()
         if nm:
             vendor_by_name.setdefault(nm.lower(), e)
+    def _lev1(a, b):
+        la, lb = len(a), len(b)
+        if abs(la - lb) > 1:
+            return False
+        i = j = diff = 0
+        while i < la and j < lb:
+            if a[i] == b[j]:
+                i += 1; j += 1
+                continue
+            diff += 1
+            if diff > 1:
+                return False
+            if la == lb:
+                i += 1; j += 1
+            elif la > lb:
+                i += 1
+            else:
+                j += 1
+        return diff + (la - i) + (lb - j) <= 1
+
+    _hpos_w = {s["name"].lower(): (hero_pos[s["name"]][0] * SVG_SCALE, hero_pos[s["name"]][1] * SVG_SCALE)
+               for s in data["systems"] if s["name"] in hero_pos}
+
+    _ROMAN = re.compile(r"\s+(?:i|ii|iii|iv|v|vi|vii|viii|ix|x|xi|xii)$")
+
+    def _is_ghost(nm, wx, wy):
+        n = nm.lower()
+        n2 = _ROMAN.sub("", n)
+        for hname, (hx, hy) in _hpos_w.items():
+            if (hx - wx) ** 2 + (hy - wy) ** 2 < 120 ** 2 and (_lev1(n, hname) or n2 == hname):
+                return True
+        return False
+
     galaxy, named = [], set()
     for s in svg["systems"]:
         disp = SVG_ALIASES.get(s["name"], s["name"])
@@ -314,6 +309,8 @@ def build_network(data: dict) -> None:
         sector = (v.get("Sector") or "").replace(" Sector", "").strip() if v else ""
         region = REGION_NORM.get((v.get("Region") or "").strip(), (v.get("Region") or "").strip()) if v else ""
         wx, wy = W(s["x"], s["y"])
+        if _is_ghost(disp, wx, wy):
+            continue
         galaxy.append([disp, wx, wy, pv[2] if pv else "", sector, region, 1])
     for e in vendor_planets:
         nm = (e.get("Name") or "").strip()
@@ -327,6 +324,8 @@ def build_network(data: dict) -> None:
         wx, wy = W(fx, fy)
         sector = (e.get("Sector") or "").replace(" Sector", "").strip()
         region = REGION_NORM.get((e.get("Region") or "").strip(), (e.get("Region") or "").strip())
+        if _is_ghost(nm, wx, wy):
+            continue
         galaxy.append([nm, wx, wy, pv[2], sector, region, 0])
     data["galaxy"] = galaxy
 
