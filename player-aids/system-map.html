@@ -136,8 +136,12 @@
     #q:focus{width:200px}
     #panel.open{transform:none}
     #regkey{display:none}
-    #ctl{flex-wrap:wrap;justify-content:flex-end;gap:.25rem}
+    #title{left:12px;top:10px;right:12px}
+    #title h1{font-size:.9rem;letter-spacing:.14em;white-space:nowrap}
     #title small{display:none}
+    #ctl{left:12px;right:12px;top:40px;justify-content:flex-start;gap:.25rem}
+    .hb{padding:.4rem .5rem;font-size:.62rem;letter-spacing:.1em}
+    #q{width:120px;padding:.28rem .5rem}
   }
   @media (pointer:coarse){#q{font-size:16px} #panel,#qr,.hb{backdrop-filter:none}}  /* backdrop blur over a moving raster is a per-frame readback on phones */  /* >=16px: mobile browsers don't auto-zoom the page into the field */
 </style>
@@ -561,7 +565,7 @@ window.addEventListener("pointermove", e => {
   if (!drag) return;
   const r = chartRect(), k = fitted(vb).w / r.width;
   const dx = (e.clientX - drag.x) * k, dy = (e.clientY - drag.y) * k;
-  if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) > 3) { drag.moved = true; chart.classList.add("dragging"); }
+  if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) > (e.pointerType === "touch" ? 8 : 3)) { drag.moved = true; chart.classList.add("dragging"); }
   vb.x = drag.vx - dx; vb.y = drag.vy - dy; applyView();
 });
 function endDrag(e) {
@@ -569,8 +573,9 @@ function endDrag(e) {
   pinch = pointers.size === 2 ? pinchSpan().d : 0;
   chart.classList.remove("dragging"); setTimeout(() => { drag = null; }, 0);
 }
-// browsers may still start a page pinch-zoom before touch-action regions are known; the stage owns every touch
-for (const ev of ["touchstart", "touchmove"]) document.getElementById("stage").addEventListener(ev, e => e.preventDefault(), {passive:false});
+// browsers may still start a page pinch-zoom before touch-action regions are known; the stage owns every touch.
+// touchmove ONLY — preventDefault on touchstart would suppress the synthetic click, killing taps on planets
+document.getElementById("stage").addEventListener("touchmove", e => e.preventDefault(), {passive:false});
 window.addEventListener("pointerup", endDrag);
 window.addEventListener("pointercancel", endDrag);
 chart.addEventListener("click", e => {
