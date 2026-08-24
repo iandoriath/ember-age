@@ -10,7 +10,7 @@
    "beacon": true,
    "alwaysLit": false,
    "hop": 0,
-   "blurb": "The great fuel gantries, and Okrent's Drift — the port that grew on their back. The frayed end of the living Duros Space Run. Its beacon, Vesta-9, was relit in 90 AR — nobody admits to lighting it.",
+   "blurb": "The great fuel gantries — new-built to feed the Lamplighters' advance down the Run — and Okrent's Drift, the boomtown port that grew on their back, now in recession since the advance stalled. The frayed end of the living Duros Space Run. Its beacon, Vesta-9, was relit in 90 AR — nobody admits to lighting it.",
    "gm": {
     "seed": "Session One — The Light on Vesta-9",
     "canon": "Canonically a massive refueling depot (attested in Clone Wars-era sources, 900 years later — use freely). Vesta-9 is the beacon here; certified by Chartmistress Bel Nerra (Lamplighters). Dial 3: the Sith apprentice lit it.",
@@ -356,13 +356,29 @@
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
-   "blurb": "First living stop behind Bannistar on the Mid Rim stretch of the Duros Space Run.",
+   "blurb": "First living stop behind Bannistar on the Mid Rim stretch of the Run — the last prize the guild paid (89 AR), claimed by the crew of the Larksong.",
    "gm": {
     "seed": "",
     "canon": "Transit point on the Run (The Essential Atlas).",
     "factions": []
    },
    "grid": "O-15"
+  },
+  {
+   "id": "kyrska",
+   "name": "Kyrska",
+   "x": 5130,
+   "y": 4720,
+   "region": "hydian",
+   "beacon": false,
+   "alwaysLit": true,
+   "blurb": "Quiet world on the living Run, relit mid-decade by a Lamplighter prize; reconnection has been slower to change it than its neighbors.",
+   "gm": {
+    "seed": "",
+    "canon": "User-invented: no Legends source. Keep it a quiet foil to the boomtown stops.",
+    "factions": []
+   },
+   "grid": "P-15"
   },
   {
    "id": "glom-tho",
@@ -372,7 +388,7 @@
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
-   "blurb": "Mid Rim waystop on the living stretch of the Run.",
+   "blurb": "Mid Rim waystop on the living stretch of the Run, relit by a Lamplighter prize late in the 80s AR.",
    "gm": {
     "seed": "",
     "canon": "Transit point on the Run (The Essential Atlas).",
@@ -388,7 +404,7 @@
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
-   "blurb": "Mid Rim world on the living stretch of the Run.",
+   "blurb": "Mid Rim world on the living stretch of the Run, relit by a Lamplighter first-lighting prize early in the 80s AR.",
    "gm": {
     "seed": "",
     "canon": "Transit point on the Run (The Essential Atlas).",
@@ -765,6 +781,12 @@
   },
   {
    "from": "kalarba",
+   "to": "kyrska",
+   "kind": "living",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "kyrska",
    "to": "glom-tho",
    "kind": "living",
    "name": "Duros Space Run"

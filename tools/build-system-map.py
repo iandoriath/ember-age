@@ -227,6 +227,7 @@ def build_network(data: dict) -> None:
     RELATIONAL = [
         # (name, anchorA, anchorB, along, perp)  pos = A + along*(B-A) + perp*rot90(B-A)
         ("Heptooine", "Sanrafsix", "Jutrand", 0.5, 0.0),
+        ("Kyrska", "Kalarba", "Glom Tho", 0.5, 0.0),  # user-invented Run stop; snaps onto the drawn Duros Space Run
         ("Fostin Nine", "Syned", "Sanrafsix", 0.5, 0.0),
         ("Veshet", "Syned", "Sanrafsix", 0.5, -0.28),
         ("Teraab", None, None, 605.6, 410.0),  # absolute: the Nursery nebula
