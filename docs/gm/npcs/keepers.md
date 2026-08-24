@@ -89,13 +89,38 @@ Dial 1, statted. Bane, then Zannah, then Cognus — and the record goes silent, 
 
 **Soak 4 · Wounds 18 · Strain 20 · M/R Defense 2/3**
 
-- **Skills:** Athletics 2, Brawl 2, Charm 3, Cool 3, Deception 3, Knowledge (Core Worlds) 3, Lightsaber 3, Perception 2, Ranged (Heavy) 2, Ranged (Light) 3, Stealth 3, Vigilance 4
+- **Skills:** Athletics 2, Brawl 2, Charm 3, Cool 3, Deception 3, Gunnery 3, Knowledge (Core Worlds) 3, Lightsaber 3, Perception 2, Piloting (Space) 3, Ranged (Heavy) 2, Ranged (Light) 3, Stealth 3, Vigilance 4
 - **Talents:** Adversary 3 (*upgrade the difficulty of all combat checks targeting her three times*), Intense Focus (*maneuver: suffer 1 strain to upgrade the ability of her next skill check once*), Stalker 2 (*add two boost dice to her Coordination and Stealth checks*), Uncanny Senses 2 (*add two boost dice to her Perception checks*)
 - **Abilities:** **Force Rating 2.** Dark-Side Force User (*generates Force points from dark side results; using light side results costs her a Destiny Point flip and strain, per RAW*). Force powers: Influence (*may spend a Force point to inflict 2 strain on a target within short range, or — winning an opposed Discipline versus Discipline check — to make one target within short range adopt an emotional state or believe something untrue for a few minutes, or four rounds in combat*).
 - **Equipment:** Pre-Ruusan disruptor, for the bodies that must never be identified (Ranged [Light]; Damage 10; Critical 2; Range [Short]; Vicious 4), Darth Cognus's lightsaber, carried out of Screecher's Reach seven years ago — the one thing she owns that the Mother did not give her (Lightsaber; Damage 6; Critical 2; Range [Engaged]; Breach 1, Sunder — the Force and Destiny–line profile, as Coll's), one anonymous industrial blasting charge (Ranged [Light]; Damage 8; Critical 4; Range [Short]; Blast 6, Limited Ammo 1).
 
-**Chassis:** Emperor's Hand, Edge of the Empire Core Rulebook, p. 402 (adjustments: declared — the printed vibrosword is replaced by a lightsaber, and the block's Melee 3 is read as Lightsaber 3; everything else as printed).
+**Chassis:** Emperor's Hand, Edge of the Empire Core Rulebook, p. 402 (adjustments: declared — the printed vibrosword is replaced by a lightsaber, and the block's Melee 3 is read as Lightsaber 3; **Gunnery 3 and Piloting (Space) 3 are added**, so that she flies the interceptor below as well as she does everything else; everything else as printed).
 **Using her:** The culling of the Inheritors is her graduation exam, and the grade is *anonymity*: the senior circle dead across a dozen worlds in one night, the archives vanished rather than burned, and nobody sane concluding "Sith." Force Rating 2 is justified as the line's entire pedagogy poured into a single student (era rule, Part VII). She never claims a kill, never duels when a fall down a lift shaft will do, and withdraws the moment a fight turns evidentiary — being *seen* fighting with a lightsaber is a mission failure worse than death, which is why the blade comes out only when nobody present will live to describe it: the disruptor leaves no body, and the saber leaves no witnesses. A cauterized wound on a survivor is the one mistake the Mother would not forgive. After the culling she holds the harvested Vesta-9 file: she knows about the crew, and which of them the beacon answered, and has never once been seen — every misattribution the players chase (the Vigil? the Admiralty? a purge?) lights a different Act 3 fire.
+
+### Mendac's Interceptor — no name, no transponder
+*Vehicle — the Sith line (Dial 1) — the Patient Apprentice's fighter; the fastest thing in the Reach, and the least seen*
+
+> A pre-Ruusan interceptor out of a dead principate's yards, hull the color of no color, running no transponder and answering no hail — a ship that is, legally, nothing. Nobody in the Reach has ever seen it twice.
+
+| Silhouette | Speed | Handling |
+|:-:|:-:|:-:|
+| 3 | 6 | +3 |
+
+**Defense Fore/Aft 1/1 · Armor 2 · Hull Trauma Threshold 8 · System Strain Threshold 8**
+
+- **Hyperdrive:** Primary: Class 1, Backup: None
+- **Navicomputer:** Yes
+- **Sensor Range:** Short
+- **Ship's Complement:** One pilot
+- **Encumbrance Capacity:** 4 · **Passenger Capacity:** 0
+- **Consumables:** One week · **Price/Rarity:** 175,000 credits (R)/6 · **Customization Hard Points:** 1
+- **Weapons:**
+  - Forward-mounted laser cannons (Fire Arc Forward; Damage 6; Critical 3; Range [Close]; Linked 1)
+  - Forward-mounted concussion missile launchers (Fire Arc Forward; Damage 6; Critical 3; Range [Short]; Blast 4, Breach 4, Guided 3, Limited Ammo 6, Linked 1, Slow-Firing 1)
+
+**Chassis:** RZ-1 A-wing Interceptor, Age of Rebellion Core Rulebook (adjustments: none — the numbers above are transcribed from memory of the printed block; per the sourcing rule, confirm rarity and ammo count against print before the first time it rolls).
+**Era notes:** Speed 6 and Handling +3 are the point. The Bane line does not fight; it *leaves* — and this is the ship that makes leaving a certainty. Nothing a wayfinder crew owns can match its speed, hold a sensor lock on a hull running dark at Short sensor range, or follow a Class 1 hyperdrive off a decayed lane. Mendac does not travel in it: the Scrub is done by liner, freighter, and hired hulls, and the interceptor waits in a hidden berth — a dead spur, a principate ruin, a hollowed asteroid off the Sanrafsix Corridor — for the exits. Its only wear is on the docking clamps.
+**Using it:** With Piloting (Space) 3 and Gunnery 3 she flies it as well as she does everything else, which means the fight is hers to choose and never the crew's. Two rules. First, the ship exists to *not be seen*: she disengages the moment a fight turns evidentiary, and a chase the crew "wins" is a chase she chose to end. Second, when she does fire, it is to leave no witnesses — Breach 4 concussion missiles against a century-old heirloom hull (Armor 3–4) put a lane-runner's engines out in one volley, and a ship adrift on a dead lane with no beacon is a ship nobody ever finds. Run an encounter with it as weather, not a dogfight: a contact that appears on the edge of sensors, matches every course change for one long minute, and is gone before anyone can say what it was. If the crew ever gets a clear look at it — a hull silhouette, a drive signature — that is the first hard evidence in the campaign that the Absence has a shape, and it should cost her something: the Mother would not forgive a *second* sighting. Improv hook: the docking cradle at a freshly opened site is still warm, and no ship anyone can find left it.
 
 ### Where the rest lives
 
