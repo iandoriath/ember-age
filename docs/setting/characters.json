@@ -504,14 +504,14 @@
   },
   "wounds": 17,
   "strain": 13,
-  "soak": 3,
+  "soak": 4,
   "defense": {
    "ranged": 0,
    "melee": 0
   },
   "encumbrance": {
    "threshold": 8,
-   "current": 0
+   "current": 2
   },
   "force_rating": 0,
   "morality": null,
@@ -859,7 +859,7 @@
      "Inaccurate 1"
     ],
     "notes": "[THREAT][THREAT] may cause weapon to run out of ammo.",
-    "equipped": false
+    "equipped": true
    },
    {
     "name": "Sap Gloves",
@@ -873,7 +873,7 @@
      "Stun Setting"
     ],
     "notes": "Spotting sap gloves on an individual requires a Daunting ([DI][DI][DI][DI]) Perception check.",
-    "equipped": false
+    "equipped": true
    },
    {
     "name": "Unarmed",
@@ -895,7 +895,7 @@
     "soak": 1,
     "defense": 0,
     "encumbrance": 1,
-    "equipped": false
+    "equipped": true
    }
   ],
   "gear": [
