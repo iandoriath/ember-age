@@ -418,12 +418,14 @@
   }
  },
  "Ansarra": {
-  "title": "Ansarra (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Ansarra_(disambiguation)",
-  "facts": {},
-  "lead": "Ansarra can refer to:, Attack on Ansarra Rebel base, an attack by a star destroyer on the base, Ansarra Rebel base, a Rebel Alliance starfighter base, Ansarra system, a system in the Mid Rim",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "title": "Ansarra system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Ansarra_system/Legends",
+  "facts": {
+   "region": "Mid Rim, Trailing Sectors",
+   "sector": "Iskin sector"
+  },
+  "lead": "The Ansarra system was a star system located within the Mid Rim region of the galaxy which contained the Ansarra Rebel base.",
+  "fetched": "2026-08-24"
  },
  "Atrakus": {
   "title": "Atrakus",
@@ -632,18 +634,18 @@
   "noimage": true
  },
  "Bith": {
-  "title": "Bith/Legends",
-  "url": "https://starwars.fandom.com/wiki/Bith/Legends",
+  "title": "Bith (planet)",
+  "url": "https://starwars.fandom.com/wiki/Bith_(planet)",
   "facts": {
-   "language": "Bith"
+   "region": "Outer Rim Territories, Occlusion Zone, Western Reaches",
+   "sector": "Mayagil sector",
+   "system": "Clak'dor system",
+   "routes": "Rimma Trade Route",
+   "terrain": "Mountains, Jungle, Swamp",
+   "species": "Bith, Y'bith"
   },
-  "lead": "Bith were a peaceful, highly evolved craniopod species native to the planet Clak'dor VII. Fully adapted to a civilized, high-technology lifestyle, Bith were found galaxy-wide at all levels of society, most notably as engineers, scientists, intellectuals, consultants, and musicians.",
-  "fetched": "2026-08-23",
-  "image": {
-   "file": "bith.webp",
-   "width": 199,
-   "height": 320
-  }
+  "lead": "Bith, also known as Clak'dor VII and simply Clak'dor, was a planet located in the Outer Rim Territories and situated along the Rimma Trade Route. It was the homeworld of the Bith species.",
+  "fetched": "2026-08-24"
  },
  "Behenui": {
   "title": "Behenui",
@@ -1446,19 +1448,16 @@
   "noimage": true
  },
  "Dar": {
-  "title": "Dar/Legends",
-  "url": "https://starwars.fandom.com/wiki/Dar/Legends",
+  "title": "Dar (planet)",
+  "url": "https://starwars.fandom.com/wiki/Dar_(planet)",
   "facts": {
-   "species": "Trandoshan",
-   "affiliation": "Garnac's hunting guild"
+   "region": "Outer Rim Territories, Metharian Nebula Territories",
+   "sector": "Elrood sector, Imperial Interdicted Space",
+   "system": "Derilyn system",
+   "routes": "Elrood-Derilyn Trade Route, The Extreme"
   },
-  "lead": "Dar was a male Trandoshan hunter who was alive during the Clone Wars. He was the son of Garnac, the leader of a group of hunters that abducted Ahsoka Tano on Felucia.",
-  "fetched": "2026-08-23",
-  "image": {
-   "file": "dar.webp",
-   "width": 239,
-   "height": 320
-  }
+  "lead": "Dar was the first planet in the Derilyn system.",
+  "fetched": "2026-08-24"
  },
  "Corrdair": {
   "title": "Corrdair",
@@ -1473,12 +1472,14 @@
   "noimage": true
  },
  "Deersheba": {
-  "title": "Deersheba (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Deersheba_(disambiguation)",
-  "facts": {},
-  "lead": "Deersheba may refer to one of the following:",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "title": "Deersheba system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Deersheba_system/Legends",
+  "facts": {
+   "region": "Mid Rim, Trailing Sectors",
+   "sector": "Iskin sector"
+  },
+  "lead": "The Deersheba system was located in the Iskin sector, a part of the Trailing Sectors portion of the Mid Rim. It was the origin point of the Great Pandemic of Deersheba.",
+  "fetched": "2026-08-24"
  },
  "D'Qar": {
   "title": "D'Qar",
@@ -1805,18 +1806,22 @@
   "noimage": true
  },
  "Falleen": {
-  "title": "Falleen/Legends",
-  "url": "https://starwars.fandom.com/wiki/Falleen/Legends",
+  "title": "Falleen (planet)/Legends",
+  "url": "https://starwars.fandom.com/wiki/Falleen_(planet)/Legends",
   "facts": {
-   "language": "Falleen"
+   "region": "Mid Rim, The Slice",
+   "sector": "Doldur sector",
+   "system": "Falleen system",
+   "climate": "Temperate",
+   "terrain": "Jungles, Mountains, Plains, Industrial",
+   "population": "520 million, 500 million to 1 billion",
+   "species": "Falleen",
+   "language": "Falleen",
+   "government": "Feudal Monarchy",
+   "affiliation": "Galactic Republic, Confederacy of Independent Systems, Galactic Empire, Yuuzhan Vong empire"
   },
-  "lead": "The Falleen were the indigenous reptilian sentient species of the planet Falleen.",
-  "fetched": "2026-08-23",
-  "image": {
-   "file": "falleen.webp",
-   "width": 208,
-   "height": 320
-  }
+  "lead": "Falleen was a planet in the Mid Rim region and home to the Falleen species. It had jungles, vast plains, and icy mountains.",
+  "fetched": "2026-08-24"
  },
  "Eos": {
   "title": "Eos",
@@ -2094,12 +2099,14 @@
   "noimage": true
  },
  "Espirion": {
-  "title": "Espirion (species)/Legends",
-  "url": "https://starwars.fandom.com/wiki/Espirion_(species)/Legends",
-  "facts": {},
-  "lead": "Espirion was a species that included the legendary Jedi Handi. During the rule of the Eternal Empire, researchers claimed to have discovered Handi's lost resting place.",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "title": "Espirion system",
+  "url": "https://starwars.fandom.com/wiki/Espirion_system",
+  "facts": {
+   "region": "Inner Rim Territories, The Slice",
+   "sector": "None"
+  },
+  "lead": "The Espirion system was a star system located in the Inner Rim Territories. It was located in grid square N-12 on the Standard Galactic Grid and contained the planet Espirion.",
+  "fetched": "2026-08-24"
  },
  "Gerres Gule": {
   "title": "Gerres Gule",
@@ -2621,12 +2628,14 @@
   "noimage": true
  },
  "Hapuntep": {
-  "title": "Hapuntep (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Hapuntep_(disambiguation)",
-  "facts": {},
-  "lead": "Hapuntep may refer to one of the following:",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "title": "Hapuntep system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Hapuntep_system/Legends",
+  "facts": {
+   "region": "Mid Rim",
+   "sector": "Ado sector"
+  },
+  "lead": "The Hapuntep system was a part of the Ado sector of the Mid Rim. It shared its name with the noble known as the Crown Prince of Hapuntep.",
+  "fetched": "2026-08-24"
  },
  "Hespry": {
   "title": "Hespry",
@@ -2842,12 +2851,15 @@
   }
  },
  "Kath": {
-  "title": "Kath/Legends",
-  "url": "https://starwars.fandom.com/wiki/Kath/Legends",
-  "facts": {},
-  "lead": "The Kath were a reptilian sentient species that shared its name with the ocean world Kath II, also known simply as Kath, of the Mid Rim's Dustig sector. During the Galactic Civil War between the Galactic Empire and the Rebel Alliance, the Kath Thlan-sa served as an Alliance operative. At some point by 2 ABY, the Shatras bounty hunter Ssach'thirix, who only pursued bounties posted on individuals of reptilian species, captured Thlan-sa.",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "title": "Kath system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Kath_system/Legends",
+  "facts": {
+   "region": "Mid Rim, Trailing Sectors",
+   "sector": "Dustig sector",
+   "routes": "Dustig Trace"
+  },
+  "lead": "The Kath system was a star system located in the Dustig sector of the Mid Rim that contained the planet Kath II.",
+  "fetched": "2026-08-24"
  },
  "Kerkoidia": {
   "title": "Kerkoidia/Legends",
@@ -3082,19 +3094,16 @@
   "noimage": true
  },
  "Kira": {
-  "title": "Kira",
-  "url": "https://starwars.fandom.com/wiki/Kira",
+  "title": "Kira system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Kira_system/Legends",
   "facts": {
-   "species": "Human",
-   "affiliation": "Beast Riders, New Republic"
+   "region": "Expansion Region, Trailing Sectors",
+   "sector": "Kira sector",
+   "routes": "Kira Run",
+   "affiliation": "Confederacy of Independent Systems, New Republic"
   },
-  "lead": "Lady Kira was the wife of Modon Kira and the Queen of Onderon. She offered shelter to Leia Organa Solo during Operation Shadow Hand.",
-  "fetched": "2026-08-23",
-  "image": {
-   "file": "kira.webp",
-   "width": 238,
-   "height": 320
-  }
+  "lead": "The Kira system was located at the center of the Kira Run. It originally contained four planets, until three of them were destroyed by an unknown cause.",
+  "fetched": "2026-08-24"
  },
  "Krnay": {
   "title": "Krnay",
@@ -3210,12 +3219,14 @@
   }
  },
  "Kyrska": {
-  "title": "Kyrska (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Kyrska_(disambiguation)",
-  "facts": {},
-  "lead": "Kyrska may refer to one of the following:",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "title": "Kyrska system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Kyrska_system/Legends",
+  "facts": {
+   "region": "Mid Rim, Trailing Sectors",
+   "sector": "Hevvrol sector"
+  },
+  "lead": "The Kyrska system was located in the Hevvrol sector, a part of the Trailing Sectors portion of the Mid Rim. It shared its name with the conflict known as the Siege of Kyrska, which was a three month–long, fiercely contested house-to-house campaign that took place at some point during the Galactic Civil War.",
+  "fetched": "2026-08-24"
  },
  "Knores": {
   "title": "Knores",
@@ -3789,12 +3800,15 @@
   "noimage": true
  },
  "Moth": {
-  "title": "Moth/Legends",
-  "url": "https://starwars.fandom.com/wiki/Moth/Legends",
-  "facts": {},
-  "lead": "A moth was a species of winged insect. There were many kinds of moths.",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "title": "Moth (planet)",
+  "url": "https://starwars.fandom.com/wiki/Moth_(planet)",
+  "facts": {
+   "region": "Mid Rim, Trailing Sectors",
+   "sector": "Chommell sector",
+   "system": "Naboo system"
+  },
+  "lead": "Moth was the first planet in the Naboo system.",
+  "fetched": "2026-08-24"
  },
  "Medth": {
   "title": "Medth",
@@ -3810,12 +3824,14 @@
   "noimage": true
  },
  "Medepiest": {
-  "title": "Medepiest (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Medepiest_(disambiguation)",
-  "facts": {},
-  "lead": "Medepiest may refer to one of the following:",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "title": "Medepiest system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Medepiest_system/Legends",
+  "facts": {
+   "region": "Mid Rim",
+   "sector": "Lambda sector"
+  },
+  "lead": "The Medepiest system was located in the Mid Rim's Lambda sector. It shared its name with the conflict known as the Medepiest Uprising, which was fought at some point by the time of the Battle of Yavin.",
+  "fetched": "2026-08-24"
  },
  "Melambo": {
   "title": "Melambo",
@@ -3830,12 +3846,14 @@
   "noimage": true
  },
  "Mirnic": {
-  "title": "Mirnic (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Mirnic_(disambiguation)",
-  "facts": {},
-  "lead": "Mirnic could refer to one of the following:",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "title": "Mirnic system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Mirnic_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Seswenna sector"
+  },
+  "lead": "The Mirnic system was a star system located in the Outer Rim Territories' Seswenna sector. The system shared its name with the Mirnic University.",
+  "fetched": "2026-08-24"
  },
  "Matacorn": {
   "title": "Matacorn",
@@ -5378,27 +5396,28 @@
   "noimage": true
  },
  "Shafr": {
-  "title": "Shafr (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Shafr_(disambiguation)",
-  "facts": {},
-  "lead": "Shafr may refer to one of the following:",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "title": "Shafr system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Shafr_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Trailing Sectors",
+   "sector": "Toblain sector"
+  },
+  "lead": "The Shafr system was located in the Toblain sector, in the Trailing Sectors portion of the Outer Rim Territories. It shared its name with the Shafr Center institution as well as the work The Shafr Anthology of Galactic Language, Second Edition that was published in 38 ABY by The Shafr Center Press.",
+  "fetched": "2026-08-24"
  },
  "Shogun": {
-  "title": "Shogun",
-  "url": "https://starwars.fandom.com/wiki/Shogun",
+  "title": "Shogun (planet)",
+  "url": "https://starwars.fandom.com/wiki/Shogun_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "The Empire, Jedi clans"
+   "region": "Outer Rim Territories",
+   "sector": "Quence sector",
+   "system": "Shogun system",
+   "terrain": "Crystals",
+   "language": "Mando'a",
+   "affiliation": "Mandalorians"
   },
-  "lead": "Shogun was an alias used by a Jedi of the Jedi clans who fought in the Sith rebellion. Near the end of the war, they experienced a vision of a god known as the Father, who told them to visit the Temple of Elujoji on the planet Sukalan. Years later, Shogun encountered the former Sith known as the Ronin bathing in a secret hot spring. The two shared sake and spoke of their experiences in the war and Shogun's ongoing search for the Temple of Elujoji. Before the two parted ways, the Ronin asked if Shogun had forgotten to kill him.",
-  "fetched": "2026-08-23",
-  "image": {
-   "file": "shogun.webp",
-   "width": 320,
-   "height": 320
-  }
+  "lead": "Shogun was a planet conquered by and aligned with the Mandalorians.",
+  "fetched": "2026-08-24"
  },
  "Sullust": {
   "title": "Sullust/Legends",
@@ -5691,14 +5710,15 @@
   }
  },
  "Storm": {
-  "title": "Storm",
-  "url": "https://starwars.fandom.com/wiki/Storm",
+  "title": "Storm (planet)",
+  "url": "https://starwars.fandom.com/wiki/Storm_(planet)",
   "facts": {
-   "species": "Human"
+   "region": "Mid Rim, Trailing Sectors",
+   "sector": "Chommell sector",
+   "system": "Naboo system"
   },
-  "lead": "Storm was the father of Hue Tico, who in turn was the father of Paige and Rose Tico.",
-  "fetched": "2026-08-23",
-  "noimage": true
+  "lead": "Storm was a gas giant, and the fifth planet in the Naboo system, located within the Chommell sector on the galaxy's Mid Rim. Its thirty-two moons included its third moon and its tenth moon, which housed a penal colony and Tagge Company outpost respectively.",
+  "fetched": "2026-08-24"
  },
  "Suarbi": {
   "title": "Suarbi",
@@ -7490,20 +7510,29 @@
   "fetched": "2026-08-23"
  },
  "Abbaji": {
-  "title": "Abbaji (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Abbaji_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "title": "Abbaji system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Abbaji_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Inner Zuma Region",
+   "sector": "Zuma sector, Spar sector",
+   "routes": "Spar Trade Route"
+  },
+  "lead": "The Abbaji system was a star system located in the Spar sector of the larger Zuma sector of the Outer Rim Territories. It contained the planet Abbaji.",
+  "fetched": "2026-08-24"
  },
  "Abednedo": {
-  "title": "Abednedo",
-  "url": "https://starwars.fandom.com/wiki/Abednedo",
+  "title": "Abednedo (planet)",
+  "url": "https://starwars.fandom.com/wiki/Abednedo_(planet)",
   "facts": {
-   "language": "Abednedish"
+   "region": "Colonies, The Slice",
+   "sector": "None",
+   "system": "Abednedo system",
+   "routes": "Corellian Run",
+   "species": "Abednedo",
+   "affiliation": "Galactic Republic, Galactic Empire, Alliance to Restore the Republic, New Republic"
   },
-  "lead": "Abednedos were a sentient species native to the planet of the same name in the Colonies region of the Galaxy. Abednedo were humanoid and mammalian, and their face featured dangling mouth tendrils and two fleshy nostrils.",
-  "fetched": "2026-08-23"
+  "lead": "Abednedo was a planet located on the Corellian Run and in the Abednedo system of the galaxy's Colonies region. It was the homeworld of the sentient Abednedo species, whose ancestors evolved underground and carved out tunnel-dens to create massive cathedrals housing tens of thousands of family units. The species eventually took to living on the planet's surface and constructed sprawling metropolises bristling with ornamental spires, flagpoles, and riotously colored carvings. While these cities struck outlanders as chaotic, the Abednedos found them endless sources of amusement and interest.",
+  "fetched": "2026-08-24"
  },
  "Absanz": {
   "title": "Absanz",
@@ -8040,11 +8069,20 @@
   "fetched": "2026-08-23"
  },
  "Flitter": {
-  "title": "Airspeeder/Legends",
-  "url": "https://starwars.fandom.com/wiki/Airspeeder/Legends",
-  "facts": {},
-  "lead": "Airspeeders, also known as aircars or flitters, were repulsorlift vehicles common throughout the galaxy. They were distinguished from landspeeders by a higher operating altitude and normally higher top speed. Some were also equipped with boosters that enabled them to achieve low planetary orbit for a short time. They were not designed for orbital flight, though they could attain such high altitude that they pushed the boundaries of atmosphere and space.",
-  "fetched": "2026-08-23"
+  "title": "Flitter (planet)",
+  "url": "https://starwars.fandom.com/wiki/Flitter_(planet)",
+  "facts": {
+   "region": "Expansion Region, Trans-Hydian",
+   "sector": "Sumitra sector",
+   "system": "Tierfon system",
+   "climate": "Cool temperature, Moist hydrosphere",
+   "terrain": "Mountains, Plains, Glaciers, Forests",
+   "population": "Over 40,000 (formerly), 1,000 (following Imperial attack)",
+   "government": "Anarchy",
+   "affiliation": "Alliance to Restore the Republic"
+  },
+  "lead": "Flitter was the codename for a Rebel Alliance safe world in the Tierfon system during the Galactic Civil War. Flitter became a graphic example of why the Rebellion needed to keep its safe world locations secret after an Imperial starship captured an Alliance transport bound for the planet and discovered its existence. The Empire responded by leveling Flitter's cities and poisoning its ecosystem with air-dropped toxins.",
+  "fetched": "2026-08-24"
  },
  "Agriworld-2079": {
   "title": "Agriworld-2079/Legends",
@@ -8410,11 +8448,16 @@
   "fetched": "2026-08-23"
  },
  "Alderath": {
-  "title": "Alderath (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Alderath_(disambiguation)",
-  "facts": {},
-  "lead": "Alderath may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Alderath system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Alderath_system/Legends",
+  "facts": {
+   "region": "Mid Rim, New Territories",
+   "sector": "Alderath sector",
+   "routes": "Celanon Spur",
+   "affiliation": "New Republic"
+  },
+  "lead": "The Alderath system was located in the Alderath sector, a part of the New Territories portion of the Mid Rim. It was situated on the Celanon Spur hyperlane, which linked it to the Korvaii system of the Kordu sector and the Orocco system of the Ottega sector. Another hyperspace route connected the system to the Ylix system of the M'shinni sector. The Alderath system shared its name with the organization known as the Alderath Horticultural Society, and between 12 ABY and 13 ABY, it fell within the borders of the New Republic.",
+  "fetched": "2026-08-24"
  },
  "Alee": {
   "title": "Alee",
@@ -8451,11 +8494,14 @@
   "fetched": "2026-08-23"
  },
  "Alderbathe": {
-  "title": "Alderbathe (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Alderbathe_(disambiguation)",
-  "facts": {},
-  "lead": "Alderbathe may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Alderbathe system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Alderbathe_system/Legends",
+  "facts": {
+   "region": "Mid Rim, New Territories",
+   "sector": "Churnis sector"
+  },
+  "lead": "The Alderbathe system was a part of the Churnis sector within the New Territories portion of the Mid Rim. It was the site of the Alderbathe Monastery.",
+  "fetched": "2026-08-24"
  },
  "Alcrue": {
   "title": "Alcrue",
@@ -12155,11 +12201,14 @@
   "fetched": "2026-08-23"
  },
  "Bantu": {
-  "title": "Bantu (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Bantu_(disambiguation)",
-  "facts": {},
-  "lead": "Bantu may refer to one of the following:, ==Canon==, The Bantu system, a Star system in the Core Worlds., ==Legends==, The Bantu system, a star system in the Core Worlds, The rainbow sunsets of Bantu, a weather phenomenon originating in the Bantu system",
-  "fetched": "2026-08-23"
+  "title": "Bantu system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Bantu_system/Legends",
+  "facts": {
+   "region": "Core Worlds",
+   "sector": "Emmo sector"
+  },
+  "lead": "The Bantu system was a part of the Core Worlds' Emmo sector. It was the origin point of the phenomenon known as the rainbow sunsets of Bantu.",
+  "fetched": "2026-08-24"
  },
  "Bannakon": {
   "title": "Bannakon",
@@ -12409,11 +12458,13 @@
   "fetched": "2026-08-23"
  },
  "Barbeen": {
-  "title": "Barbeen (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Barbeen_(disambiguation)",
-  "facts": {},
-  "lead": "Barbeen may refer to one of the following:, ==Canon==, The Barbeen system, ==Legends==, The Barbeen system, The Brothers of Barbeen",
-  "fetched": "2026-08-23"
+  "title": "Barbeen system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Barbeen_system/Legends",
+  "facts": {
+   "region": "Deep Core"
+  },
+  "lead": "The Barbeen system was a part of the Deep Core. It shared its name with the social group known as the Brothers of Barbeen.",
+  "fetched": "2026-08-24"
  },
  "Bar Neth": {
   "title": "Bar Neth",
@@ -12888,18 +12939,20 @@
   "fetched": "2026-08-23"
  },
  "Bazaar": {
-  "title": "Bazaar (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Bazaar_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "title": "Bazaar (planet)",
+  "url": "https://starwars.fandom.com/wiki/Bazaar_(planet)",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "Halthor sector",
+   "system": "Bazaar system"
+  },
+  "lead": "Bazaar was a trade world located in the Bazaar system, a part of the Halthor sector in the New Territories portion of the Outer Rim Territories. The distance between Bazaar and the Tamarin sector's Dravian Starport could be traversed in twenty-three days using a starship equipped with a Class 1 hyperdrive. During the Galactic Civil War, the Dravian Starport–based company Topatz Shipping offered free-traders a job of transporting one hundred tons of imitation gemstones to Bazaar for 4,500 credits.",
+  "fetched": "2026-08-24"
  },
  "Bengali": {
-  "title": "Begali Uprising",
-  "url": "https://starwars.fandom.com/wiki/Begali_Uprising",
-  "facts": {},
-  "lead": "The Begali Uprising, also known as the Bengali Uprising, was an uprising led by the world Begali against the Echani Command, the female council that governed a confederation of six Echani-dominated planets known as the Six Sisters that began in the year 1154 BBY. Begali was joined in revolt by the Thyrsians, an Echani subspecies from the planet Thyrsus, another of the Six Sisters.",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Belderone sector prison asteroid": {
   "title": "Belderone sector prison asteroid",
@@ -14753,14 +14806,20 @@
   "fetched": "2026-08-23"
  },
  "Bovo Yagen": {
-  "title": "Bovo Yagen",
-  "url": "https://starwars.fandom.com/wiki/Bovo_Yagen",
+  "title": "Bovo Yagen (planet)",
+  "url": "https://starwars.fandom.com/wiki/Bovo_Yagen_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "Galactic Empire"
+   "region": "Expansion Region",
+   "sector": "Kailion sector",
+   "system": "Bovo Yagen system",
+   "climate": "Temperate",
+   "terrain": "Jungle",
+   "population": "1.5 million Humans, 5 million Bovorians",
+   "species": "Bovorians",
+   "affiliation": "New Republic"
   },
-  "lead": "Bovo Yagen was a former Imperial captain who fled the Empire with his wife and four sons. After a period of wandering, the family landed on a planet with a humanoid species. Proving their good intentions to the natives, the family was allowed to settle on the world. Over time, more Humans fleeing the Empire arrived, forming a small outpost. By the time Yagen passed away, the planet bore his name.",
-  "fetched": "2026-08-23"
+  "lead": "Bovo Yagen was a planet near the Corellian Trade Route. It was home to the native Bovorians who were later joined by a family of settlers led by a former Imperial captain named Bovo Yagen. Initially the natives were wary of Yagen and his family due to some negative contacts with other Humans in the past. After Yagen and his family proved that they had nothing but good intentions, the Bovorians welcomed them and allowed them to stay.",
+  "fetched": "2026-08-24"
  },
  "Brodo Asogi": {
   "title": "Brodo Asogi",
@@ -14933,11 +14992,9 @@
   "fetched": "2026-08-23"
  },
  "Bridgeworld": {
-  "title": "Bridgeworld Lost",
-  "url": "https://starwars.fandom.com/wiki/Bridgeworld_Lost",
-  "facts": {},
-  "lead": "Bridgeworld Lost was a painting created after 104 ABY set during the Clone Wars between the Galactic Republic and the Confederacy of Independent Systems, which lasted from 22 BBY to 19 BBY. It depicted a group of Skakoans—a species associated with the Techno Union, a member organization of the Confederacy—surrounded by blaster-wielding clone troopers of the Grand Army of the Republic. The background of the painting contained bridge cities and three Munificent-class star frigates.",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Briston": {
   "title": "Briston",
@@ -15263,11 +15320,9 @@
   "fetched": "2026-08-23"
  },
  "Bureaucratosis": {
-  "title": "Bureaucratosis",
-  "url": "https://starwars.fandom.com/wiki/Bureaucratosis",
-  "facts": {},
-  "lead": "Bureaucratosis was an entity in the galaxy that was represented by the Human Senator Yaun in the Senate of the Galactic Republic during the Clone Wars of 22 BBY to 19 BBY and the Galactic Empire's Imperial Senate around 0 ABY.",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Cadomai Prime": {
   "title": "Cadomai Prime/Legends",
@@ -15501,14 +15556,16 @@
   "fetched": "2026-08-23"
  },
  "Cala": {
-  "title": "Cala",
-  "url": "https://starwars.fandom.com/wiki/Cala",
+  "title": "Cala (planet)",
+  "url": "https://starwars.fandom.com/wiki/Cala_(planet)",
   "facts": {
-   "species": "Koorivar",
-   "affiliation": "Galactic Republic, Loyalists, Berch Teller's rebel cell"
+   "region": "Unknown Regions",
+   "sector": "7G sector",
+   "system": "Ilum system",
+   "terrain": "Rock"
   },
-  "lead": "Cala was a male Koorivar and an operations specialist. Five years after the formation of the Galactic Empire, Cala was part of a rebel cell led by Berch Teller. He participated in the theft of the Carrion Spike, personal starship of Imperial Governor Wilhuff Tarkin. Cala subsequently participated in a Berch Teller's insurgent campaign against the Empire. The insurgents were defeated by Tarkin at the Battle near the Gulf of Tatooine.",
-  "fetched": "2026-08-23"
+  "lead": "Cala was an airless rock planet with no moons that occupied the third closest orbital position to the star Asar. It was located within the Ilum system, a part of the Unknown Regions' 7G sector.",
+  "fetched": "2026-08-24"
  },
  "Cadomai": {
   "title": "Cadomai Prime",
@@ -16042,13 +16099,22 @@
   "fetched": "2026-08-23"
  },
  "Cathar": {
-  "title": "Cathar/Legends",
-  "url": "https://starwars.fandom.com/wiki/Cathar/Legends",
+  "title": "Cathar (location)/Legends",
+  "url": "https://starwars.fandom.com/wiki/Cathar_(location)/Legends",
   "facts": {
-   "language": "Catharese"
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "Quelii sector",
+   "system": "Cathar system",
+   "climate": "Temperate",
+   "terrain": "Savannahs, Rough Uplands",
+   "population": "99% Cathar, 1% Other species",
+   "species": "Cathar",
+   "language": "Catharese",
+   "government": "Tribal",
+   "affiliation": "Mandalorian Neo-Crusaders, Yuuzhan Vong empire"
   },
-  "lead": "The Cathar were a species of feline, bipedal humanoids native to Cathar, a planet of savannas and rough uplands. They were known for their loyalty, passion, and temper. Quick and powerful, they were considered great warriors and dedicated, efficient predators.",
-  "fetched": "2026-08-23"
+  "lead": "Cathar was the homeworld of the Cathar species, filled with many ecological niches and huge insect predators.",
+  "fetched": "2026-08-24"
  },
  "Cassander": {
   "title": "Cassander",
@@ -16376,11 +16442,14 @@
   "fetched": "2026-08-23"
  },
  "Cathis": {
-  "title": "Cathis (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Cathis_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "title": "Cathis system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Cathis_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Western Reaches",
+   "sector": "Jjannex sector"
+  },
+  "lead": "The Cathis system was a star system located in the Jjannex sector, a part of the Western Reaches portion of the Outer Rim Territories. It contained the Cathis Rebel starfighter base.",
+  "fetched": "2026-08-24"
  },
  "Caursito": {
   "title": "Caursito",
@@ -17255,11 +17324,14 @@
   "fetched": "2026-08-23"
  },
  "Chirrion": {
-  "title": "Chirrion (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Chirrion_(disambiguation)",
-  "facts": {},
-  "lead": "Chirrion may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Chirrion system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Chirrion_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Rolion sector"
+  },
+  "lead": "The Chirrion system was located in the Rolion sector, a part of the Trans-Hydian portion of the Outer Rim Territories. During the Galactic Civil War, it was the site of Chirrion Base, one of the 752 military bases that the Galactic Empire maintained in the Rolion sector.",
+  "fetched": "2026-08-24"
  },
  "Chol": {
   "title": "Chol",
@@ -17273,14 +17345,18 @@
   "fetched": "2026-08-23"
  },
  "Chiron": {
-  "title": "Chiron",
-  "url": "https://starwars.fandom.com/wiki/Chiron",
+  "title": "Chiron (planet)",
+  "url": "https://starwars.fandom.com/wiki/Chiron_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "Galactic Empire, Imperial Military, Imperial Officer Corps"
+   "region": "Outer Rim Territories",
+   "sector": "Ash Worlds",
+   "system": "Chiron system",
+   "terrain": "Grassy plains",
+   "species": "Chironians (indigenous)",
+   "language": "Basic"
   },
-  "lead": "Chiron was a lieutenant of the Galactic Empire, stationed at the Academy for Young Imperials on Lothal. He was an enthusiastic officer who would often lead cadets in song during morning runs. Chiron took a special liking to one such cadet the Academy, Zare Leonis, believing him to be a fine example of a model officer and often tried to protect Leonis from the more officious bureaucrats within the Academy.",
-  "fetched": "2026-08-23"
+  "lead": "Chiron was a planet located in the Chiron system, in the large sector known as the Ash Worlds. It was the homeworld of a sentient species, the Chironians.",
+  "fetched": "2026-08-24"
  },
  "Chosper": {
   "title": "Chosper system",
@@ -17809,11 +17885,15 @@
   "fetched": "2026-08-23"
  },
  "Codia": {
-  "title": "Codia (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Codia_(disambiguation)",
-  "facts": {},
-  "lead": "Codia may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Codia system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Codia_system/Legends",
+  "facts": {
+   "region": "Mid Rim",
+   "sector": "Freestanding subsectors",
+   "population": "Less than 1 million (c. 25 ABY)"
+  },
+  "lead": "The Codia system was located in the freestanding subsectors of the Mid Rim. It contained the terrestrial, moss-covered natural satellite known as the Codian Moon.",
+  "fetched": "2026-08-24"
  },
  "Cona": {
   "title": "Cona/Legends",
@@ -18054,11 +18134,14 @@
   "fetched": "2026-08-23"
  },
  "Colla": {
-  "title": "Colla",
-  "url": "https://starwars.fandom.com/wiki/Colla",
-  "facts": {},
-  "lead": "Colla was a commentator on Gundark's Gear Datalog during the early years of the New Republic. Commenting on the entry for Mandroxan Exports' Defense Weapon EDWX-843, Cholla noted that the weapon was good for disabling a target droid and recovering any information needed.",
-  "fetched": "2026-08-23"
+  "title": "Colla system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Colla_system/Legends",
+  "facts": {
+   "region": "Inner Rim, The Slice",
+   "species": "Colicoids"
+  },
+  "lead": "The Colla system was in the Inner Rim Territories. Colla IV, homeworld of the Colicoids, was part of the star system.",
+  "fetched": "2026-08-24"
  },
  "Cophrigin V": {
   "title": "Cophrigin V",
@@ -18296,11 +18379,13 @@
   "fetched": "2026-08-23"
  },
  "Corips": {
-  "title": "Corips (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Corips_(disambiguation)",
-  "facts": {},
-  "lead": "Corips may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Corips system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Corips_system/Legends",
+  "facts": {
+   "region": "Inner Rim, Trailing Sectors"
+  },
+  "lead": "The Corips system was a part of the Trailing Sectors portion of the Inner Rim. It was the site of the Caves of Corips.",
+  "fetched": "2026-08-24"
  },
  "Corulag": {
   "title": "Corulag/Legends",
@@ -18681,11 +18766,18 @@
   "fetched": "2026-08-23"
  },
  "Council": {
-  "title": "Council (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Council_(disambiguation)",
-  "facts": {},
-  "lead": "A council is a group of people, staffed by councilors and usually those possessing some form of governing power.",
-  "fetched": "2026-08-23"
+  "title": "Council (planet)/Legends",
+  "url": "https://starwars.fandom.com/wiki/Council_(planet)/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Western Reaches",
+   "sector": "Greater Javin, Anoat sector",
+   "system": "Council system",
+   "routes": "Nothoiin Corridor",
+   "government": "Representative",
+   "affiliation": "Nothoiin Colony"
+  },
+  "lead": "The planet Council served as a governmental meeting place for Nothoiin Colony representatives, who made decisions affecting the Near-Human Nothoiin civilization. Council was located in the Anoat sector of the Outer Rim Territories and neighbored the Nothoiin homeworld along the Nothoiin Corridor hyperlane.",
+  "fetched": "2026-08-24"
  },
  "Cotellier": {
   "title": "Cotellier/Legends",
@@ -19252,13 +19344,9 @@
   "fetched": "2026-08-23"
  },
  "Aracara": {
-  "title": "DVL-181",
-  "url": "https://starwars.fandom.com/wiki/DVL-181",
-  "facts": {
-   "affiliation": "Alliance to Restore the Republic"
-  },
-  "lead": "DVL-181, nicknamed the Quagmire and the Slime Pit, was a Rebel Alliance starfighter base built on a remote swampy planet. It was formerly known as the Aracara Testing Facility and was used as a corporate weapons and material testing zone. When it proved to be unprofitable, it was abandoned.",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Daermor": {
   "title": "Daermor",
@@ -20272,11 +20360,14 @@
   "fetched": "2026-08-23"
  },
  "Deadon": {
-  "title": "Deadon (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Deadon_(disambiguation)",
-  "facts": {},
-  "lead": "Deadon may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Deadon system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Deadon_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "Dantus sector"
+  },
+  "lead": "The Deadon system was a part of the Dantus sector in the New Territories portion of the Outer Rim Territories. It was the site of the Deadon Ice Temples.",
+  "fetched": "2026-08-24"
  },
  "Daxam IV": {
   "title": "Daxam IV",
@@ -20293,11 +20384,17 @@
   "fetched": "2026-08-23"
  },
  "Dela": {
-  "title": "Dela",
-  "url": "https://starwars.fandom.com/wiki/Dela",
-  "facts": {},
-  "lead": "Dela was a female who was the sister of Lindon Javes. At some point, they were killed during hazardous maneuvers. By 4 ABY, they were mentioned on Javes' Imperial record.",
-  "fetched": "2026-08-23"
+  "title": "Dela III",
+  "url": "https://starwars.fandom.com/wiki/Dela_III",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Centrality",
+   "system": "Dela system",
+   "routes": "Arleen Loop",
+   "species": "Ulorin"
+  },
+  "lead": "Dela III, also known as Dela, was a planet located in the Centrality, a sector of the Outer Rim Territories.",
+  "fetched": "2026-08-24"
  },
  "Delaya": {
   "title": "Delaya/Legends",
@@ -20528,11 +20625,14 @@
   "fetched": "2026-08-23"
  },
  "Delle": {
-  "title": "Delle (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Delle_(disambiguation)",
-  "facts": {},
-  "lead": "Delle may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Delle system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Delle_system/Legends",
+  "facts": {
+   "region": "Colonies, Northern Dependencies, The Slice",
+   "routes": "Perlemian Trade Route"
+  },
+  "lead": "The Delle system was a part of the Colonies. It was located between the Neuvia and Yabol Opa systems and the Core Worlds' Ralltiir system on the super-hyperroute known as the Perlemian Trade Route, which served as the dividing line between the Northern Dependencies and the Slice. The star system contained massive farm worlds and the terrestrial celestial body Delle II.",
+  "fetched": "2026-08-24"
  },
  "Delphon IV": {
   "title": "Delphon IV",
@@ -20869,11 +20969,17 @@
   "fetched": "2026-08-23"
  },
  "Diamal": {
-  "title": "Diamal",
-  "url": "https://starwars.fandom.com/wiki/Diamal",
-  "facts": {},
-  "lead": "The Diamala (singular Diamal) were a species from the planet Diamal, in the Core Worlds, who, along with their rivals the Ishori, became prominent during the crises over the Caamas Document and the apparent return of Grand Admiral Thrawn. Diamala were recognizable by their leathery skin, white manes, and fan-shaped ears, which they could move independently to gesture with. The Diamala temperament was generally calm and unemotional, with a strong sense of personal pride. They had extensive financial and business holdings, which they attributed to hard work rather than luck.",
-  "fetched": "2026-08-23"
+  "title": "Diamal (planet)",
+  "url": "https://starwars.fandom.com/wiki/Diamal_(planet)",
+  "facts": {
+   "region": "Core Worlds, Southern Core",
+   "system": "Diamal system",
+   "routes": "Shapani Bypass",
+   "species": "Diamal",
+   "affiliation": "New Republic"
+  },
+  "lead": "Diamal was a planet located in the Diamal system of the Core Worlds. It was the homeworld of the Diamal. The planet was frequently in conflict with its neighbor, Isht.",
+  "fetched": "2026-08-24"
  },
  "Di'tai'ni": {
   "title": "Di'tai'ni",
@@ -21847,13 +21953,22 @@
   "fetched": "2026-08-23"
  },
  "Draethos": {
-  "title": "Draethos/Legends",
-  "url": "https://starwars.fandom.com/wiki/Draethos/Legends",
+  "title": "Draethos (planet)",
+  "url": "https://starwars.fandom.com/wiki/Draethos_(planet)",
   "facts": {
-   "language": "Draethos"
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Wyl sector",
+   "system": "Thosa system",
+   "climate": "Arid",
+   "terrain": "Barren mountains, deep caves",
+   "population": "100% Draethos",
+   "species": "Draethos",
+   "language": "Draethos",
+   "government": "Military dictatorship",
+   "affiliation": "Galactic Republic, Sith Empire"
   },
-  "lead": "Draethos were a predatory humanoid species from the planet Draethos, notable for their long natural lifespans.",
-  "fetched": "2026-08-23"
+  "lead": "Thosa, known to the rest of the galaxy as Draethos, was the home planet of the Draethos species, located in the Wyl sector of the Outer Rim Territories. It had jagged, windswept mountains and deep caves. It was an isolated world of xenophobic people.",
+  "fetched": "2026-08-24"
  },
  "Dosuun": {
   "title": "Dosuun",
@@ -21996,13 +22111,23 @@
   "fetched": "2026-08-23"
  },
  "Drall": {
-  "title": "Drall/Legends",
-  "url": "https://starwars.fandom.com/wiki/Drall/Legends",
+  "title": "Drall (planet)",
+  "url": "https://starwars.fandom.com/wiki/Drall_(planet)",
   "facts": {
-   "language": "Drallish"
+   "region": "Core Worlds, The Slice, Arrowhead",
+   "sector": "Corellian sector",
+   "system": "Corellian system",
+   "routes": "Corellian Run, Corellian Trade Spine",
+   "climate": "Temperate to tropical",
+   "terrain": "Forests, Hills, Meadows, Rivers, Inland seas",
+   "population": "8 million:, 96% Drall, 3% Human, 1% other",
+   "species": "Drall",
+   "language": "Drallish, Basic",
+   "government": "Confederation of the Clans",
+   "affiliation": "Infinite Empire, Herglic Trade Empire, Galactic Republic, Galactic Empire, New Republic, Galactic Alliance, Five Worlds, Confederation"
   },
-  "lead": "The Drall were a small, furry, and highly intelligent species found on Drall in the Corellian system. They were descended from burrowing mammals and they were extremely diligent record-keepers, and it was said that they had recorded every trivial event since the dawn of intelligence. Libraries were among their greatest forms of entertainment, as were story-telling sessions called Ta'sharr.",
-  "fetched": "2026-08-23"
+  "lead": "Drall was a pleasant, temperate planet in the Corellian system, being one of the Five Brothers. It was the homeworld of the Drall, and was famous for its great food and the Boiling Sea.",
+  "fetched": "2026-08-24"
  },
  "Dorsis": {
   "title": "Dorsis",
@@ -22017,11 +22142,9 @@
   "fetched": "2026-08-23"
  },
  "Dragon's Spine": {
-  "title": "Dragon's Spine (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Dragon%27s_Spine_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Drannik": {
   "title": "Drannik",
@@ -22239,11 +22362,14 @@
   "fetched": "2026-08-23"
  },
  "Drgi": {
-  "title": "Drgi (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Drgi_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "title": "Drgi system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Drgi_system/Legends",
+  "facts": {
+   "region": "Expansion Region, The Slice",
+   "sector": "Tokamac sector"
+  },
+  "lead": "The Drgi system was located in the Tokamac sector, a part of the Slice portion of the Expansion Region. It shared its name with the Jedi Knight and pilot Rorr'hn of Drgi.",
+  "fetched": "2026-08-24"
  },
  "Dreizan": {
   "title": "Dreizan",
@@ -22321,14 +22447,17 @@
   "fetched": "2026-08-23"
  },
  "Dreena": {
-  "title": "Dreena",
-  "url": "https://starwars.fandom.com/wiki/Dreena",
+  "title": "Dreena (planet)",
+  "url": "https://starwars.fandom.com/wiki/Dreena_(planet)",
   "facts": {
-   "species": "Human (Ghorman)",
-   "affiliation": "Ghorman Front, Alliance to Restore the Republic, Massassi Group"
+   "region": "Inner Rim; Transitory Mists, The Slice",
+   "sector": "Hapes Cluster",
+   "system": "Dreena system",
+   "terrain": "Oceans",
+   "affiliation": "Hapes Consortium"
   },
-  "lead": "Dreena was a Ghorman human member of the Ghorman Front, a rebel group that opposed the Galactic Empire on the planet Ghorman. In 2 BBY, when the Empire opened the previously barricaded Palmo Plaza, Dreena was one of hundreds to enter the area to protest. When the Empire began to massacre the citizens, Dreena fled and broadcast a signal on the radio, pleading for help. Dreena and the rebel Wilmon Paak, whose lower leg was injured, later escaped Ghorman and went to the Axis network safehouse on the planet Coruscant. Dreena would later live with Paak at the Alliance's base on the moon Yavin 4.",
-  "fetched": "2026-08-23"
+  "lead": "Dreena was a nearly uninhabited ocean world visited by Prince Isolder and his father during Isolder's childhood, playing in the pure oceans of the planet.",
+  "fetched": "2026-08-24"
  },
  "Dubrillion": {
   "title": "Dubrillion/Legends",
@@ -23064,11 +23193,16 @@
   "fetched": "2026-08-23"
  },
  "Eclipse": {
-  "title": "Eclipse/Legends",
-  "url": "https://starwars.fandom.com/wiki/Eclipse/Legends",
-  "facts": {},
-  "lead": "An eclipse was a type of astronomical event. During the Galactic War, a rare lunar eclipse was prophesized to reveal a location on the planet Shalyvane where the deity Kavaan was believed to have left his mark. Pakuuni experienced a solar eclipse every seventy-six years, which (according to legend) revealed a hidden tomb of the first settler, which may have had hidden treasures.",
-  "fetched": "2026-08-23"
+  "title": "Eclipse (Deep Core)/Legends",
+  "url": "https://starwars.fandom.com/wiki/Eclipse_(Deep_Core)/Legends",
+  "facts": {
+   "region": "Deep Core",
+   "system": "Eclipse system",
+   "language": "Basic",
+   "affiliation": "New Jedi Order"
+  },
+  "lead": "Eclipse was a planet in the Deep Core of the galaxy that was hidden in an asteroid field. It was discovered by Tionne and Kam Solusar when they were looking for a safeworld for the Jedi. It was where Luke Skywalker created Eclipse Station during the Yuuzhan Vong War.",
+  "fetched": "2026-08-24"
  },
  "Eiattu": {
   "title": "Eiattu system",
@@ -23082,13 +23216,22 @@
   "fetched": "2026-08-23"
  },
  "Elom": {
-  "title": "Elom/Legends",
-  "url": "https://starwars.fandom.com/wiki/Elom/Legends",
+  "title": "Elom (planet)/Legends",
+  "url": "https://starwars.fandom.com/wiki/Elom_(planet)/Legends",
   "facts": {
-   "language": "Elom"
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Sertar sector",
+   "system": "Elom system",
+   "climate": "Cool",
+   "terrain": "Frozen desert plains, Mountains",
+   "population": "150 million",
+   "species": "Elomin, Elom",
+   "language": "Elomin, Elom",
+   "government": "Family-controlled professional guilds (New Republic allied)",
+   "affiliation": "Elomin Council, Galactic Republic, Galactic Empire, Alliance to Restore the Republic, Alliance of Free Planets, New Republic"
   },
-  "lead": "Eloms were short, stocky, bipedal sentients, with a thick pelt of oily, dark fur, native to the frigid and mineral-rich desert planet of Elom, located in the Trans-Hydian. The primitive species had extremely tough skin, several layers of fat, and their hands and feet were coated by thick calluses.",
-  "fetched": "2026-08-23"
+  "lead": "Elom was a cold and barren desert-like planet that was home to the Elom and Elomin species. The Elom lived in the caves of the A'driannamieq Mountains while the Elomin lived on the surface.",
+  "fetched": "2026-08-24"
  },
  "Elrood": {
   "title": "Elrood/Legends",
@@ -23575,14 +23718,14 @@
   "fetched": "2026-08-23"
  },
  "Ember": {
-  "title": "Ember",
-  "url": "https://starwars.fandom.com/wiki/Ember",
+  "title": "Ember (planet)",
+  "url": "https://starwars.fandom.com/wiki/Ember_(planet)",
   "facts": {
-   "species": "Charhound",
-   "affiliation": "Jedi Order, Luminous Nine"
+   "region": "Core Worlds, Southern Core",
+   "system": "Belgaroth system"
   },
-  "lead": "Ember was a female charhound owned by the Jedi Padawan Bell Zettifar during the time of the High Republic. Ember accompanied Zettifar while he was stationed at the Jedi outpost on the ore planet of Elphrona, often wandering the world's iron hills. She was friendly with all of the Jedi stationed at the outpost, namely Indeera Stokes and Porter Engle. When the Jedi chased a group of Nihil who had captured the Blythe family from their home, Ember accompanied them and killed one of the marauders at an opportune moment, saving Engle's life.",
-  "fetched": "2026-08-23"
+  "lead": "Ember was the first planet of the Belgaroth system, located in the Core Worlds of the galaxy. Illuminated by binary stars Matanya A and Matanya B, Ember was a searing world with no moons.",
+  "fetched": "2026-08-24"
  },
  "Eredenn Prime": {
   "title": "Eredenn Prime",
@@ -23766,11 +23909,14 @@
   "fetched": "2026-08-23"
  },
  "Erai": {
-  "title": "Erai (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Erai_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "title": "Erai system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Erai_system/Legends",
+  "facts": {
+   "region": "Expansion Region, The Slice",
+   "sector": "Hangshan sector"
+  },
+  "lead": "The Erai system was a star system located in the region of the galaxy known as the Expansion Region. The system contained the third moon of Erai.",
+  "fetched": "2026-08-24"
  },
  "Envos": {
   "title": "Envos",
@@ -24274,11 +24420,14 @@
   "fetched": "2026-08-23"
  },
  "Extorin Minor": {
-  "title": "Extorin Minor (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Extorin_Minor_(disambiguation)",
-  "facts": {},
-  "lead": "Extorin Minor may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Extorin Minor system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Extorin_Minor_system/Legends",
+  "facts": {
+   "region": "Expansion Region",
+   "sector": "Extorin sector"
+  },
+  "lead": "The Extorin Minor system was located in Expansion Region's Extorin sector. It shared its name with the Extorin Minor skirmishes, a conflict fought at some point by 29 BBY.",
+  "fetched": "2026-08-24"
  },
  "Eyar": {
   "title": "Eyar system/Legends",
@@ -24346,11 +24495,17 @@
   "fetched": "2026-08-23"
  },
  "Ezaraa": {
-  "title": "Ezaraa",
-  "url": "https://starwars.fandom.com/wiki/Ezaraa",
-  "facts": {},
-  "lead": "The Ezaraa were a species of warmongering carnivorous sentients that were native to the the planet Ezaraa. They intended to overthrow the Galactic Empire, only to replace it with their own dominion and feed on the other species, which they deemed as lesser to them. Despite their wide reaching dreams of conquest, however, the Dominion was limited to a mere two continents on Ezaraa. To arm their revolution, the dominion sent Ezaraa to take advantage of opportunities such as the Auction of Rur.",
-  "fetched": "2026-08-23"
+  "title": "Ezaraa (planet)",
+  "url": "https://starwars.fandom.com/wiki/Ezaraa_(planet)",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Spinward sector",
+   "system": "Ezaraa system",
+   "species": "Ezaraa",
+   "affiliation": "Dominion of the Ezaraa"
+  },
+  "lead": "Ezaraa was a planet that was the homeworld of the Ezaraa species. The Dominion of the Ezaraa, a group of Ezaraa who wished to overthrow the Galactic Empire and reign across the galaxy, were based on the planet, but the land they possessed was limited to only two continents.",
+  "fetched": "2026-08-24"
  },
  "Faargau": {
   "title": "Faargau",
@@ -24497,11 +24652,14 @@
   "fetched": "2026-08-23"
  },
  "Faa": {
-  "title": "Faa/Legends",
-  "url": "https://starwars.fandom.com/wiki/Faa/Legends",
-  "facts": {},
-  "lead": "The faa, or faynaa, as they were known to the Gungan species, were fast-moving, non-sentient predatory scalefish native to the oceans and swamps of the Mid Rim planet Naboo and Manaan. They were considered dangerous and would attack virtually anything with little provocation.",
-  "fetched": "2026-08-23"
+  "title": "Faa (planet)",
+  "url": "https://starwars.fandom.com/wiki/Faa_(planet)",
+  "facts": {
+   "region": "Wild Space",
+   "system": "Kamino system"
+  },
+  "lead": "Faa was the fourth planet in the Kamino system. It was located in Wild Space.",
+  "fetched": "2026-08-24"
  },
  "Fallowan": {
   "title": "Fallowan",
@@ -25005,11 +25163,15 @@
   "fetched": "2026-08-23"
  },
  "Fenn": {
-  "title": "Fenn (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Fenn_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "title": "Fenn (planet)",
+  "url": "https://starwars.fandom.com/wiki/Fenn_(planet)",
+  "facts": {
+   "region": "Mid Rim, The Slice",
+   "sector": "Dufilvian sector",
+   "system": "Fenn system"
+  },
+  "lead": "Fenn was a planet in the mid rim. The ganjuko originated on Fenn before spreading across the galaxy.",
+  "fetched": "2026-08-24"
  },
  "Feldrona": {
   "title": "Feldrona",
@@ -25071,14 +25233,15 @@
   "fetched": "2026-08-23"
  },
  "Fern": {
-  "title": "Fern",
-  "url": "https://starwars.fandom.com/wiki/Fern",
+  "title": "Fern (planet)",
+  "url": "https://starwars.fandom.com/wiki/Fern_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "At Attin Middle School Gamma, Skeleton Crew, Troiks (Conscripted, briefly), Troik Army (Conscripted, briefly)"
+   "region": "Unknown Regions",
+   "sector": "7G sector",
+   "system": "Ilum system"
   },
-  "lead": "Fern was a human female youngling who lived in the galaxy in the early New Republic Era. Fern lived together with her mother Fara on At Attin, where Fara was a teacher and part of the government, and was best friends with another child called KB. Around 9 ABY, Fern met the boy Wim who found an old starship buried in the woods outside their city. After the two, KB and Wim's best friend Neel investigated the ship, they accidentally activated it and became lost in space.",
-  "fetched": "2026-08-23"
+  "lead": "Fern was a gas giant–type planet with twenty moons that occupied the eighth orbital position around the star Asar. It was located within the Ilum system, a part of the Unknown Regions' 7G sector.",
+  "fetched": "2026-08-24"
  },
  "Firrerre": {
   "title": "Firrerre/Legends",
@@ -25309,11 +25472,17 @@
   "fetched": "2026-08-23"
  },
  "Fillithar": {
-  "title": "Fillithar",
-  "url": "https://starwars.fandom.com/wiki/Fillithar",
-  "facts": {},
-  "lead": "Fillithar were a snake-like sentient species hailing from the world of the same name. As a serpentine life-form, they lacked hindquarters. Their tail, however, was prehensile. During the High Republic Era, the Fillithar Jedi Master Simmix trained the Padawan Cohmac Vitus. Around 3 BBY, a male Fillithar named Sssamm Ashsssen was part of the Apprentice Legislature along with Leia Organa. Twenty years into the reign of the New Republic, the Fillithar were represented in the Galactic Senate. Around the time of the so-called Napkin Bombing, their senator sided with the Populist faction.",
-  "fetched": "2026-08-23"
+  "title": "Fillithar (planet)",
+  "url": "https://starwars.fandom.com/wiki/Fillithar_(planet)",
+  "facts": {
+   "region": "Colonies, The Slice",
+   "sector": "None",
+   "system": "Fillithar system",
+   "species": "Fillithar",
+   "affiliation": "New Republic"
+  },
+  "lead": "Fillithar was a planet in the galaxy that was the homeworld of the snake-like Fillithar species. Twenty years into the reign of the New Republic, it was represented in the Galactic Senate.",
+  "fetched": "2026-08-24"
  },
  "Filata": {
   "title": "Filata",
@@ -25509,11 +25678,21 @@
   "fetched": "2026-08-23"
  },
  "Flashpoint": {
-  "title": "Flashpoint (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Flashpoint_(disambiguation)",
-  "facts": {},
-  "lead": "Flashpoint can refer to:, ===In-universe===, Flashpoint (clone trooper), Flashpoint (planet), Flashpoint (star), Flashpoint system, Flashpoint Stellar Research Station, Battle of Flashpoint Station",
-  "fetched": "2026-08-23"
+  "title": "Flashpoint (planet)",
+  "url": "https://starwars.fandom.com/wiki/Flashpoint_(planet)",
+  "facts": {
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Meerian sector",
+   "system": "Flashpoint system",
+   "routes": "Mandalorian Road",
+   "climate": "Arid",
+   "terrain": "Desert",
+   "population": "99% Human, 1% other",
+   "government": "None",
+   "affiliation": "Galactic Republic, Mandalorian Neo-Crusaders"
+  },
+  "lead": "Flashpoint was an airless planet that orbited very close to its star, with a day lasting just one standard hour. Being so close to its star meant that the planet was bathed in stellar radiation and thus devoid of life. Before the Great Sith War, a protective magnetic field was set up and a research station established by scientists to study stars. In 3965 BBY, this station was seized by Mandalorian warriors as part of their invasion of Galactic Republic space.",
+  "fetched": "2026-08-24"
  },
  "Fislan": {
   "title": "Fislan",
@@ -26094,13 +26273,15 @@
   "fetched": "2026-08-23"
  },
  "Gale": {
-  "title": "Gale",
-  "url": "https://starwars.fandom.com/wiki/Gale",
+  "title": "Gale (planet)",
+  "url": "https://starwars.fandom.com/wiki/Gale_(planet)",
   "facts": {
-   "affiliation": "Jedi Order, Army of Light, Galactic Republic"
+   "region": "Mid Rim, The Slice",
+   "sector": "Teraab sector",
+   "system": "Hoth's Brand system"
   },
-  "lead": "Gale was a male Jedi Knight and Lord of a series of constituent planets who served the Jedi Order and the Galactic Republic during the final decades of the wars with the new Sith Empire. During one of the clashes Jedi Kiel Charny, Gale's forces were able to silence the gun turrets of the Sith army. Despite these successes, Lord Gale was struck down during the battle, perishing on the muddy world with so many of his brethren.",
-  "fetched": "2026-08-23"
+  "lead": "Gale was an icy world that was located within the Hoth's Brand system on the Mid Rim of the galaxy. Situated in the star system's ninth orbit and the eight planet, it was named for Lord Gale, who fought in the Ruusan campaign. Gale was orbited by two moons.",
+  "fetched": "2026-08-24"
  },
  "Gala": {
   "title": "Gala",
@@ -26332,13 +26513,21 @@
   "fetched": "2026-08-23"
  },
  "Gand": {
-  "title": "Gand/Legends",
-  "url": "https://starwars.fandom.com/wiki/Gand/Legends",
+  "title": "Gand (planet)/Legends",
+  "url": "https://starwars.fandom.com/wiki/Gand_(planet)/Legends",
   "facts": {
-   "language": "Gand"
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Shadola sector",
+   "system": "Gand system",
+   "terrain": "Ammonia-filled mists, Rocky landscape",
+   "population": "1–10 billion (25 ABY)",
+   "species": "Gand",
+   "language": "Gand",
+   "government": "Modern:, Meritocratic democracy, Historic:, Totalitarian monarchy",
+   "affiliation": "Galactic Empire"
   },
-  "lead": "The Gands, or Gand , were a sentient species of humanoids that xenobiologists believed to have evolved from an insect genus that inhabited the ammonia-gas planet of Gand. Several physical varieties of the species existed, differing from one another in the structure of the head and the texture and color of the exoskeleton, but the species was usually divided into two main subspecies: those with lungs and those without.",
-  "fetched": "2026-08-23"
+  "lead": "Gand was a planet in the Outer Rim Territories, located in The Slice, just beyond the Centrality, and on the border of Wild Space. It was the homeworld of the Gand species. Small pocket colonies covered the surface, separated by kilometers of thick ammonia-gas mists, all of which were ruled by the Gand's long-standing totalitarian government. Commerce and trade were conducted on any of the five orbiting space stations.",
+  "fetched": "2026-08-24"
  },
  "Gamorr": {
   "title": "Gamorr/Legends",
@@ -27461,11 +27650,9 @@
   "fetched": "2026-08-23"
  },
  "Geric IV": {
-  "title": "Geric IV",
-  "url": "https://starwars.fandom.com/wiki/Geric_IV",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Gestrex III": {
   "title": "Gestrex III",
@@ -27806,11 +27993,14 @@
   "fetched": "2026-08-23"
  },
  "Gligger": {
-  "title": "Gligger (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Gligger_(disambiguation)",
-  "facts": {},
-  "lead": "Gligger may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Gligger system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Gligger_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Ash Worlds"
+  },
+  "lead": "The Gligger system was a part of the Ash Worlds sector in the Slice portion of the Outer Rim Territories. During the Clone Wars between the Galactic Republic and the Confederacy of Independent Systems, the Battle of Gligger was fought in the vicinity of the Gligger system.",
+  "fetched": "2026-08-24"
  },
  "Ginn Jump": {
   "title": "Ginn Jump/Legends",
@@ -27949,11 +28139,14 @@
   "fetched": "2026-08-23"
  },
  "Gormen": {
-  "title": "Gormen (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Gormen_(disambiguation)",
-  "facts": {},
-  "lead": "Gormen may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Gormen system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Gormen_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Nuiri sector"
+  },
+  "lead": "The Gormen system was located in the Nuiri sector, a part of the Trans-Hydian portion of the Outer Rim Territories. It shared its name with the Battle of Gormen of the Galactic Civil War.",
+  "fetched": "2026-08-24"
  },
  "Golh": {
   "title": "Golh",
@@ -28073,13 +28266,19 @@
   "fetched": "2026-08-23"
  },
  "Gossam": {
-  "title": "Gossam/Legends",
-  "url": "https://starwars.fandom.com/wiki/Gossam/Legends",
+  "title": "Castell",
+  "url": "https://starwars.fandom.com/wiki/Castell",
   "facts": {
-   "language": "Gossam"
+   "region": "Colonies, The Slice",
+   "sector": "A sector",
+   "system": "Castell system",
+   "routes": "Perlemian Trade Route",
+   "species": "Gossam",
+   "government": "Imperial Governor",
+   "affiliation": "Commerce Guild, Confederacy of Independent Systems, Galactic Republic, Galactic Empire"
   },
-  "lead": "Gossams were a small saurian species native to the planet Castell in the Colonies region of the galaxy, with colonies on the Outer Rim worlds of Felucia and Saleucami. Averaging slightly over one meter in height, Gossams had wrinkled skin, with narrowing, shriveled heads on elongated necks. Physical appearance was considered important in Gossam society, and females often curved their hair up from the back of their heads. They were bipeds, balancing their frail bodies on small feet, and had long three-fingered hands. The average lifespan of a Gossam was about seventy-five years.",
-  "fetched": "2026-08-23"
+  "lead": "Castell, also known as Gossam, was a planet located in the Castell system of the Colonies, situated along the Perlemian Trade Route. The Commerce Guild had interests on Castell and their Presidente Shu Mai hailed from the planet. Castell sided with the Confederacy of Independent Systems during the Clone Wars during which it was defended by Diamond-class cruisers, Recusant-class Commerce Guild destroyers, as well as Commerce Guild Bombers and Commerce Guild corvettes. By the time of the Battle of Felucia during the Clone Wars final year, Castell had been captured by Republic forces.",
+  "fetched": "2026-08-24"
  },
  "Gorsh": {
   "title": "Gorsh",
@@ -28243,11 +28442,14 @@
   "fetched": "2026-08-23"
  },
  "Grandeel": {
-  "title": "Grandeel (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Grandeel_(disambiguation)",
-  "facts": {},
-  "lead": "Grandeel may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Grandeel system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Grandeel_system/Legends",
+  "facts": {
+   "region": "Expansion Region, Trailing Sectors",
+   "sector": "Tynna sector"
+  },
+  "lead": "The Grandeel system was a part of the Tynna sector in the Trailing Sectors portion of the Expansion Region. It was the site of Grandeel fish farms.",
+  "fetched": "2026-08-24"
  },
  "Gorta": {
   "title": "Gorta",
@@ -28782,11 +28984,14 @@
   "fetched": "2026-08-23"
  },
  "Gurrisalia": {
-  "title": "Gurrisalia (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Gurrisalia_(disambiguation)",
-  "facts": {},
-  "lead": "Gurrisalia may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Gurrisalia system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Gurrisalia_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "Relgim sector"
+  },
+  "lead": "The Gurrisalia system was located in the Relgim sector, a part of the New Territories portion of the Outer Rim Territories. The Sacred Scroll of Gurrisalia originated from the system.",
+  "fetched": "2026-08-24"
  },
  "Haaridin": {
   "title": "Haaridin",
@@ -29037,13 +29242,17 @@
   "fetched": "2026-08-23"
  },
  "Halcyon": {
-  "title": "Halcyon",
-  "url": "https://starwars.fandom.com/wiki/Halcyon",
+  "title": "Halcyon (planet)",
+  "url": "https://starwars.fandom.com/wiki/Halcyon_(planet)",
   "facts": {
-   "affiliation": "Chandrila Star Line, Hutt Clan, Galactic Empire"
+   "region": "Colonies",
+   "sector": "None",
+   "system": "Halcyon system",
+   "terrain": "Forests",
+   "affiliation": "Galactic Republic"
   },
-  "lead": "The Halcyon was a Corellian passenger MPO-1400 Purgill-class star cruiser operated by Chandrila Star Line.",
-  "fetched": "2026-08-23"
+  "lead": "Halcyon was an arboreal planet located in the binary Halcyon system in the galaxy's Colonies. The planet notably housed a species of large rodents, and sparkstone could be found there. It also had several moons.",
+  "fetched": "2026-08-24"
  },
  "Hapes": {
   "title": "Hapes/Legends",
@@ -29131,11 +29340,15 @@
   "fetched": "2026-08-23"
  },
  "Harridan": {
-  "title": "Harridan (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Harridan_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "title": "Harridan (planet)",
+  "url": "https://starwars.fandom.com/wiki/Harridan_(planet)",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Dantus sector",
+   "system": "Harridan system"
+  },
+  "lead": "Harridan was a planet located on the fringe of Imperial space, and was originally used as a prison colony in the past. Even after it was fully colonized, it still continued to draw in the rogue elements as well as the Rebels of the galaxy. These groups managed to build up a society where laws were kept to a bare minimum, and cunning and daring were two of the most admired qualities to be found. The planet itself was one of wild, rocky hills, dim forests, and tempestuous seas.",
+  "fetched": "2026-08-24"
  },
  "Hast": {
   "title": "Hast",
@@ -29162,11 +29375,16 @@
   "fetched": "2026-08-23"
  },
  "Hasaq": {
-  "title": "Hasaq (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Hasaq_(disambiguation)",
-  "facts": {},
-  "lead": "Hasaq may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Hasaq system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Hasaq_system/Legends",
+  "facts": {
+   "region": "Expansion Region, The Slice",
+   "sector": "Askarian sector",
+   "routes": "Nanth'ri Route",
+   "affiliation": "Darth Revan's Sith Empire"
+  },
+  "lead": "The Hasaq system was located in the Askarian sector, a part of the Slice portion of the Expansion Region. It was situated on the hyperlane known as the Nanth'ri Route, which linked it to the Attahox, Circarpous, and Zaloriis systems, and contained an orange-colored sun. Between 3959 BBY and 3956 BBY, the system was part of the Sith Empire founded by Dark Lord of the Sith Darth Revan.",
+  "fetched": "2026-08-24"
  },
  "Harrandarr": {
   "title": "Harrandarr",
@@ -29216,11 +29434,15 @@
   "fetched": "2026-08-23"
  },
  "Harterra": {
-  "title": "Harterra (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Harterra_(disambiguation)",
-  "facts": {},
-  "lead": "Harterra may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Harterra system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Harterra_system/Legends",
+  "facts": {
+   "region": "Inner Rim, The Slice",
+   "sector": "Hapes Cluster, Interior Region",
+   "routes": "Gallinore Reach"
+  },
+  "lead": "The Harterra system was located in the Interior Region, an area of the Hapes Cluster in the Slice portion of the Inner Rim. It was connected by the hyperlane known as the Gallinore Reach to the Selab and Ut systems. The Harterra system was the origin point of the mineral known as Harterran moonstone, and it also shared its name with the gemstone Shard of Harterra.",
+  "fetched": "2026-08-24"
  },
  "Harugi Spill": {
   "title": "Harugi Spill",
@@ -29477,11 +29699,15 @@
   "fetched": "2026-08-23"
  },
  "Heloan Yagen": {
-  "title": "Heloan Yagen",
-  "url": "https://starwars.fandom.com/wiki/Heloan_Yagen",
-  "facts": {},
-  "lead": "Heloan Yagen was the wife of Bovo Yagen. The fifth planet in the Bovo Yagen system was named after her.",
-  "fetched": "2026-08-23"
+  "title": "Heloan Yagen (planet)",
+  "url": "https://starwars.fandom.com/wiki/Heloan_Yagen_(planet)",
+  "facts": {
+   "region": "Expansion Region",
+   "sector": "Kailion sector",
+   "system": "Bovo Yagen system"
+  },
+  "lead": "Heloan Yagen was a gas giant planet in the Bovo Yagen system. It was named after Bovo Yagen's wife.",
+  "fetched": "2026-08-24"
  },
  "Hays Minor": {
   "title": "Hays Minor",
@@ -29620,11 +29846,16 @@
   "fetched": "2026-08-23"
  },
  "Hewett": {
-  "title": "Hewett",
-  "url": "https://starwars.fandom.com/wiki/Hewett",
-  "facts": {},
-  "lead": "The Hewett were a non-humanoid, sentient species from the Hewett system. At one point, an official banquet was held for Hewett senators, at which Konkeel pie was served on the menu. The pie was toxic to humanoids, and the Jedi Master Qui-Gon Jinn almost ate some before his contemporary Adi Gallia stopped him.",
-  "fetched": "2026-08-23"
+  "title": "Hewett system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Hewett_system/Legends",
+  "facts": {
+   "region": "Mid Rim, New Territories",
+   "sector": "Hewett sector",
+   "species": "Hewett",
+   "affiliation": "Galactic Republic, New Republic"
+  },
+  "lead": "The Hewett system was located in the Hewett sector, a part of the New Territories portion of the Mid Rim. It was linked via hyperlanes to the Vectinia system as well as the Er'Kit system in the Outer Rim Territories' Noonian sector.",
+  "fetched": "2026-08-24"
  },
  "Hethar": {
   "title": "Hethar",
@@ -29991,14 +30222,15 @@
   "fetched": "2026-08-23"
  },
  "Hilo": {
-  "title": "Hilo",
-  "url": "https://starwars.fandom.com/wiki/Hilo",
+  "title": "Hilo (planet)",
+  "url": "https://starwars.fandom.com/wiki/Hilo_(planet)",
   "facts": {
-   "species": "Human (clone)",
-   "affiliation": "Galactic Republic, Grand Army of the Republic, Galactic Empire, Recovery Strike Team"
+   "region": "Expansion Region, The Slice",
+   "sector": "Hilo sector",
+   "system": "Hilo system"
   },
-  "lead": "Clone Lieutenant Hilo was a clone commando who served in the Galactic Empire as part of Clone Commander Wolffe's Recovery Strike Team. A human clone of Jango Fett who had once served the Galactic Republic, Hilo participated in a battle on the B'Omarr Order Monastery against the Clone Underground movement during or after 18 BBY.",
-  "fetched": "2026-08-23"
+  "lead": "Hilo was a planet located in the Hilo sector of the Expansion Region.",
+  "fetched": "2026-08-24"
  },
  "Hok": {
   "title": "Hok/Legends",
@@ -30611,13 +30843,9 @@
   "fetched": "2026-08-23"
  },
  "Hyperion": {
-  "title": "Hyperion",
-  "url": "https://starwars.fandom.com/wiki/Hyperion",
-  "facts": {
-   "affiliation": "Galactic Empire"
-  },
-  "lead": "The Hyperion was a Ton-Falk-class escort carrier that was part of Task Force Vengeance during the Galactic Civil War.",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Hyder": {
   "title": "Hyder",
@@ -30664,11 +30892,17 @@
   "fetched": "2026-08-23"
  },
  "Huloon": {
-  "title": "Huloon/Legends",
-  "url": "https://starwars.fandom.com/wiki/Huloon/Legends",
-  "facts": {},
-  "lead": "The Huloons were a pliant, sentient species long enslaved by the Hutts. Their homeworld, Huloon, was a part of Hutt Space and was forcibly depopulated and converted into a nature preserve by the Hutts, resulting in the near extinction of the species. The Huloons then spread to nearby systems in order to escape their planet's fate. Some Huloons attempted to return every so often, simply trying to see their lost planet, only to be intercepted and tortured for entertainment by the Hutts.",
-  "fetched": "2026-08-23"
+  "title": "Huloon (planet)",
+  "url": "https://starwars.fandom.com/wiki/Huloon_(planet)",
+  "facts": {
+   "region": "The Slice, Hutt Space",
+   "sector": "Bootana Hutta",
+   "system": "Huloon system",
+   "population": "None (depopulated)",
+   "species": "Huloons"
+  },
+  "lead": "Huloon was a planet located in the Huloon system within Bootana Hutta near the center of Hutt Space. A part of Hutt Space, it was formerly the home to a slave species also called Huloons before it was depopulated by the Hutts and turned into a nature preserve. After they had lost their home, small populations of Huloons resided on many worlds outside the Bootana Hutta and yearned to return. However, those desperate for a glimpse of their stolen home would often suffer ridicule and torment at the hands of the Hutts.",
+  "fetched": "2026-08-24"
  },
  "Hypotria": {
   "title": "Hypotria",
@@ -31525,13 +31759,15 @@
   "fetched": "2026-08-23"
  },
  "Falk": {
-  "title": "Ire Falk",
-  "url": "https://starwars.fandom.com/wiki/Ire_Falk",
+  "title": "Falk (planet)",
+  "url": "https://starwars.fandom.com/wiki/Falk_(planet)",
   "facts": {
-   "affiliation": "Galactic Empire, 224th Imperial Armored Division, Joint Chiefs of the Imperial Military, Tempest Force"
+   "region": "Expansion Region",
+   "sector": "Brak sector",
+   "system": "Genesia system"
   },
-  "lead": "Ire Falk was an individual who served in the armed forces of the Galactic Empire with the military rank of general. In 10 BBY, Falk led the 224th Imperial Armored Division during the long Mimban Campaign. Following the Battle of Yavin and the gaps left in the Joint Chiefs of the Imperial Military as a result of the battle, Falk served in the group. Falk was appointed to lead the Imperial Army forces on the surface of the moon Endor and attended a meeting of senior Imperial officers prior to the Battle of Endor in 4 ABY.",
-  "fetched": "2026-08-23"
+  "lead": "Falk was the last planet in the Genesia system. It was a blue-gray gas giant whose nine moons had been stripped-mined by the Lant Mining Corporation.",
+  "fetched": "2026-08-24"
  },
  "Isis": {
   "title": "Isis/Legends",
@@ -32387,11 +32623,13 @@
   "fetched": "2026-08-23"
  },
  "Jatir": {
-  "title": "Jatir (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Jatir_(disambiguation)",
-  "facts": {},
-  "lead": "Jatir may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Jatir system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Jatir_system/Legends",
+  "facts": {
+   "region": "Colonies, The Slice"
+  },
+  "lead": "The Jatir system was located in the Slice portion of the Colonies. It shared its name with the Corulag-Jatir Hyperroute.",
+  "fetched": "2026-08-24"
  },
  "Javis-12": {
   "title": "Javis-12",
@@ -33298,11 +33536,18 @@
   "fetched": "2026-08-23"
  },
  "Junkfort": {
-  "title": "Junkfort (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Junkfort_(disambiguation)",
-  "facts": {},
-  "lead": "Junkfort may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Junkfort system",
+  "url": "https://starwars.fandom.com/wiki/Junkfort_system",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice, Hutt Space (pre-32 BBY)",
+   "sector": "Tharin sector",
+   "routes": "Cadma Conduit, Lesser Lantillian Route, Triellus Trade Route",
+   "population": "1–10 million (c. 25 ABY)",
+   "language": "Galactic Basic Standard",
+   "affiliation": "Xim's empire, Sith, Galactic Empire, Yuuzhan Vong empire"
+  },
+  "lead": "The Junkfort system, known as the Kossimur system millennia before the Battle of Yavin, was a part of the Outer Rim Territories' Tharin sector. It contained the notable shadowport space station known as Junkfort Station. At one point a part of the empire of the Tionese conqueror Xim, the star system eventually became a part of Hutt Space as well as the territorial holdings of the Sith. By 17 BBY, it fell within the borders of the Galactic Empire.",
+  "fetched": "2026-08-24"
  },
  "Jurio": {
   "title": "Jurio",
@@ -33799,11 +34044,16 @@
   "fetched": "2026-08-23"
  },
  "Kamgeddon": {
-  "title": "Kamgeddon (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Kamgeddon_(disambiguation)",
-  "facts": {},
-  "lead": "Kamgeddon may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Kamgeddon system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Kamgeddon_system/Legends",
+  "facts": {
+   "region": "Expansion Region, The Slice",
+   "sector": "Harron sector",
+   "routes": "Ootmian Pabol",
+   "affiliation": "Galactic Republic"
+  },
+  "lead": "The Kamgeddon system was located in the Harron sector, a part of the Slice portion of the Expansion Region. It was situated on the hyperlane known as the Ootmian Pabol, which connected it to the Belasco system—a part of the eponymous Belasco sector—and the Inner Rim's Prindaar system.",
+  "fetched": "2026-08-24"
  },
  "Kalla asteroid belt": {
   "title": "Kalla asteroid belt",
@@ -34063,11 +34313,14 @@
   "fetched": "2026-08-23"
  },
  "Kareas": {
-  "title": "Kareas (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Kareas_(disambiguation)",
-  "facts": {},
-  "lead": "Kareas may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Kareas system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Kareas_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "Prefsbelt sector"
+  },
+  "lead": "The Kareas system was a part of the Prefsbelt sector in the New Territories portion of the Outer Rim Territories. It was the origin point of the beverage known as Kareas brandy.",
+  "fetched": "2026-08-24"
  },
  "Kanzi": {
   "title": "Kanzi",
@@ -34484,11 +34737,17 @@
   "fetched": "2026-08-23"
  },
  "Kathol": {
-  "title": "Kathol (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Kathol_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "title": "Kathol (planet)",
+  "url": "https://starwars.fandom.com/wiki/Kathol_(planet)",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Kathol sector, Kathol Rift",
+   "system": "Kathol system",
+   "species": "Kathol, Fiery Ones",
+   "affiliation": "Kathol Republic, Dark Jedi"
+  },
+  "lead": "Kathol was a planet in the Kathol system, which gave its name to Kathol sector.",
+  "fetched": "2026-08-24"
  },
  "Katraasii": {
   "title": "Katraasii",
@@ -36877,11 +37136,14 @@
   "fetched": "2026-08-23"
  },
  "Krmar": {
-  "title": "Krmar (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Krmar_(disambiguation)",
-  "facts": {},
-  "lead": "Krmar may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Krmar system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Krmar_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Tolonda sector"
+  },
+  "lead": "The Krmar system was located in the Tolonda sector of the Outer Rim Territories. It shared its name with the epithet \"Champion of Krmar,\" one of the many titles bestowed upon the Jedi Master Sharad Hett by 47 BBY.",
+  "fetched": "2026-08-24"
  },
  "Kronas": {
   "title": "Kronas",
@@ -38096,20 +38358,27 @@
   "fetched": "2026-08-23"
  },
  "Leafar": {
-  "title": "Leafar",
-  "url": "https://starwars.fandom.com/wiki/Leafar",
+  "title": "Leafar (planet)",
+  "url": "https://starwars.fandom.com/wiki/Leafar_(planet)",
   "facts": {
-   "affiliation": "Alliance to Restore the Republic"
+   "region": "Expansion Region, Northern Dependencies",
+   "sector": "Greater Plooriod sector",
+   "system": "Leafar system",
+   "routes": "Hydian Way"
   },
-  "lead": "The Leafar were a group involved in merchant shipping based out of the Leafar system. Shortly after the Battle of Yavin, they began to challenge the Galactic Empire. The Empire responded by sending the Imperial-class Star Destroyer Badi Dea to attack their shipping convoys. The ambush was foiled by the Alliance to Restore the Republic, which, initially, sent five X-wing starfighters to protect Leafar shipping. Three separate groups of Leafar ships were defended by the Alliance, which called in reinforcements as the battle continued.",
-  "fetched": "2026-08-23"
+  "lead": "Leafar was a planet located within the Leafar system of the Expansion Region. It was home to the Leafar.",
+  "fetched": "2026-08-24"
  },
  "Letaki": {
-  "title": "Letaki",
-  "url": "https://starwars.fandom.com/wiki/Letaki",
-  "facts": {},
-  "lead": "The Letaki were a species of sentient beings distinguished by eight tentacles, an egg-shaped head, four eyes, and a sharp beak. Two sets of gills allowed them to breathe in both air and water. They were able to focus their eyes on more than one object at a time, and to use their limbs to manipulate several items independently. As carnivores, Letaki gutted their dinners. The Letaki vocal range was higher than that of most species. The musician Evar Orbus, leader of Evar Orbus and His Galactic Jizz-Wailers, was a Letaki.",
-  "fetched": "2026-08-23"
+  "title": "Letaki (planet)",
+  "url": "https://starwars.fandom.com/wiki/Letaki_(planet)",
+  "facts": {
+   "region": "Outer Rim Territories, Western Reaches",
+   "sector": "Steniplis sector",
+   "system": "Letaki system"
+  },
+  "lead": "Letaki was a planet in the Letaki system of Steniplis sector in the Outer Rim Territories. It was the homeworld of Evar Orbus, a member of the eponymous species.",
+  "fetched": "2026-08-24"
  },
  "Lessuris": {
   "title": "Lessuris",
@@ -38414,13 +38683,15 @@
   "fetched": "2026-08-23"
  },
  "Leviathan": {
-  "title": "Leviathan",
-  "url": "https://starwars.fandom.com/wiki/Leviathan",
+  "title": "Leviathan (planet)",
+  "url": "https://starwars.fandom.com/wiki/Leviathan_(planet)",
   "facts": {
-   "affiliation": "Galactic Empire"
+   "region": "Core Worlds, Southern Core",
+   "sector": "Corellian sector; Outlier systems",
+   "system": "Sacorrian system"
   },
-  "lead": "The Leviathan was an Imperial-class Star Destroyer that served the Imperial Navy during the Imperial Era. At some point, it escorted the Imperial war minister to an Imperial supply moon alongside another Imperial Star Destroyer, although the group was attacked by rebel starfighters. Imperial TIE fighters defeated the rebels, although the war minister was pursued to the supply moon by more rebels in X-wing starfighters.",
-  "fetched": "2026-08-23"
+  "lead": "Leviathan was the sixth planet from the sun in the Sacorrian system. It was a gas giant orbited by 16 moons.",
+  "fetched": "2026-08-24"
  },
  "Lobaoc": {
   "title": "Lobaoc",
@@ -39199,14 +39470,17 @@
   "fetched": "2026-08-23"
  },
  "Shira": {
-  "title": "Lumiya",
-  "url": "https://starwars.fandom.com/wiki/Lumiya",
+  "title": "Shira (planet)",
+  "url": "https://starwars.fandom.com/wiki/Shira_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "Galactic Empire, Emperor's Hands, Alliance to Restore the Republic (Undercover as a spy), Rogue Squadron (Undercover as a spy), Sith …"
+   "region": "Outer Rim Territories",
+   "system": "Shira system",
+   "terrain": "Lush jungle",
+   "species": "K'aargs",
+   "government": "Clanic structures"
   },
-  "lead": "Lumiya, born Shira Elan Colla Brie, was a Force-sensitive Human female who went from being an agent of the Galactic Empire to Dark Lady of the Sith. Born on Imperial Center during the height of Galactic Emperor Palpatine's reign over the majority of the galaxy, Brie dedicated herself to the tenets of the Imperial New Order doctrine. This garnered the interest of Palpatine's chief enforcer, the Sith Lord Darth Vader, who sped the young woman's advancement in various Imperial-sponsored programs, including her enrollment into the Intelligence Academy of Carida.",
-  "fetched": "2026-08-23"
+  "lead": "Shira was a planet in the Outer Rim Territories.",
+  "fetched": "2026-08-24"
  },
  "Lutrillia": {
   "title": "Lutrillia/Legends",
@@ -39795,11 +40069,17 @@
   "fetched": "2026-08-23"
  },
  "Mala": {
-  "title": "Mala (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Mala_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "title": "Mala (planet)",
+  "url": "https://starwars.fandom.com/wiki/Mala_(planet)",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Surd Nebula",
+   "terrain": "Forests, Hills",
+   "species": "Unidentified near-Human species (extinct)",
+   "affiliation": "One Sith"
+  },
+  "lead": "Mala was a remote planet in the Surd Nebula in the Outer Rim Territories of the galaxy. It was home to an unidentified near-Human species with white hair. By the end of the Sith–Imperial War, Mala's inhabitants had developed a primitive iron age civilization consisting of both sedentary communities and a barbarian people known as the Schor-Goya. The One Sith used Mala as a testing ground for a new biological weapon, which exterminated all life on the planet and knocked the planet from its orbit.",
+  "fetched": "2026-08-24"
  },
  "Makksre": {
   "title": "Makksre",
@@ -41020,11 +41300,17 @@
   "fetched": "2026-08-23"
  },
  "Media": {
-  "title": "Media/Legends",
-  "url": "https://starwars.fandom.com/wiki/Media/Legends",
-  "facts": {},
-  "lead": "Media are the channels and tools used for storing and transmitting information.",
-  "fetched": "2026-08-23"
+  "title": "Media (planet)",
+  "url": "https://starwars.fandom.com/wiki/Media_(planet)",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Corporate Sector",
+   "system": "Media system",
+   "routes": "Lucaya Cross",
+   "terrain": "Urban"
+  },
+  "lead": "Media was an urban world located in the Media system, a part of the Outer Rim Territories' Corporate Sector. It was connected to the Lucaya system by the hyperlane known as the Lucaya Cross. Media's economy relied on light industry, and several prominent manufacturers of repulsorlift units and related accessories were based there. A substantial portion of the world's population consisted of immigrants of the Tiss'shar species.",
+  "fetched": "2026-08-24"
  },
  "Melnea's World": {
   "title": "Melnea's World/Legends",
@@ -41587,11 +41873,16 @@
   "fetched": "2026-08-23"
  },
  "Mika": {
-  "title": "Mika (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Mika_(disambiguation)",
-  "facts": {},
-  "lead": "Mika may refer to:, __NOTOC__, ==Canon==, ===Characters===, Mika Grey, a Human archaeologist, Mika, a Nagai connected to Garlev, Mikal",
-  "fetched": "2026-08-23"
+  "title": "Mika system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Mika_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Arkanis sector",
+   "routes": "Vaschean Way",
+   "species": "Mikan"
+  },
+  "lead": "The Mika system was a star system located in the Arkanis sector of the Outer Rim Territories, and contained the planetoid Mika.",
+  "fetched": "2026-08-24"
  },
  "Mindemir": {
   "title": "Mindemir",
@@ -41636,13 +41927,15 @@
   "fetched": "2026-08-23"
  },
  "Mila": {
-  "title": "Mila",
-  "url": "https://starwars.fandom.com/wiki/Mila",
+  "title": "Mila (planet)",
+  "url": "https://starwars.fandom.com/wiki/Mila_(planet)",
   "facts": {
-   "species": "Human"
+   "region": "Expansion Region",
+   "sector": "Brak sector",
+   "system": "Mila system"
   },
-  "lead": "Mila was a human fortune-teller who lived at Takodana Castle on the planet Takodana by the time of the First Order-Resistance War. Mila used the ancient, historically forbidden Bakurat card deck to tell fortunes.",
-  "fetched": "2026-08-23"
+  "lead": "",
+  "fetched": "2026-08-24"
  },
  "Mirial": {
   "title": "Mirial/Legends",
@@ -41663,14 +41956,15 @@
   "fetched": "2026-08-23"
  },
  "Mira": {
-  "title": "Mira",
-  "url": "https://starwars.fandom.com/wiki/Mira",
+  "title": "Mira (planet)",
+  "url": "https://starwars.fandom.com/wiki/Mira_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "Mandalorian Neo-Crusaders, Jedi Order, Lost Jedi, Galactic Republic"
+   "region": "Wild Space",
+   "system": "Kamino system",
+   "terrain": "Barren rock"
   },
-  "lead": "Mira was a human female Mandalorian Neo-Crusader and bounty hunter-turned Jedi Sentinel and one of the Lost Jedi from the moon Nar Shaddaa, serving as one of the followers of Meetra Surik, the Jedi Exile, during her search for lost Jedi Masters in 3951 BBY.",
-  "fetched": "2026-08-23"
+  "lead": "Mira was the sixth planet in the Kamino system.",
+  "fetched": "2026-08-24"
  },
  "Mindor": {
   "title": "Mindor/Legends",
@@ -41880,13 +42174,23 @@
   "fetched": "2026-08-23"
  },
  "Mon Calamari": {
-  "title": "Mon Calamari/Legends",
-  "url": "https://starwars.fandom.com/wiki/Mon_Calamari/Legends",
+  "title": "Dac/Legends",
+  "url": "https://starwars.fandom.com/wiki/Dac/Legends",
   "facts": {
-   "language": "Mon Calamarian, Galactic Basic Standard, Quarrenese"
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Calamari sector",
+   "system": "Calamari system",
+   "routes": "Overic Griplink, Minntooine Spur, Tidal Circuit",
+   "climate": "Temperate",
+   "terrain": "Oceans, Reefs, Islands",
+   "population": "0 (after the Genocide on Dac), 27 billion (before the Genocide on Dac), 60% Quarren, 39% Mon Calamari, 1% Other, Historic: 27.5 billion, 49% Quarren …",
+   "species": "Mon Calamari, Quarren, Whaladon, Amphi-Hydrus, Moappa, Knowledge Bank",
+   "language": "Mon Calamarian, Quarrenese, Galactic Basic Standard",
+   "government": "Representative council, Monarchy",
+   "affiliation": "Mon Calamari Council, Galactic Republic, Quarren Isolation League, Confederacy of Independent Systems, Galactic Empire, Mon Calamari Resistance …"
   },
-  "lead": "The Mon Calamari (also known as Calamari, Calamarians, Mon Cal, Mon Calamarians, or rarely Mon Cala) were one of the sentient species indigenous to the world of Dac.",
-  "fetched": "2026-08-23"
+  "lead": "Dac, as it was called in Mon Calamarian, Quarrenese, and Basic, also known as Mon Calamari, and sometimes simply called Calamari or Mon Cala, was a planet in the Calamari system of the Calamari sector, located in the Outer Rim. It was home to a wealth of sentient species: the Mon Calamari, the Quarren, the Moappa, the Amphi-Hydrus, and the Whaladons. Mon Calamari was the name given to the planet by Human explorers from the Galactic Republic who first discovered and revealed the world to the rest of the galaxy. The native species referred to the planet as Dac.",
+  "fetched": "2026-08-24"
  },
  "Mon Gazza": {
   "title": "Mon Gazza/Legends",
@@ -42036,11 +42340,13 @@
   "fetched": "2026-08-23"
  },
  "Mizra": {
-  "title": "Mizra (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Mizra_(disambiguation)",
-  "facts": {},
-  "lead": "Mizra may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Mizra system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Mizra_system/Legends",
+  "facts": {
+   "region": "Inner Rim"
+  },
+  "lead": "The Mizra system was located in the Inner Rim and shared its name with the Mizra Syndrome, which could be deadly to Humans, as well as the 1466 BBY Battle of Mizra of the New Sith Wars.",
+  "fetched": "2026-08-24"
  },
  "Monhudle": {
   "title": "Monhudle",
@@ -42055,11 +42361,17 @@
   "fetched": "2026-08-23"
  },
  "Moll": {
-  "title": "Moll",
-  "url": "https://starwars.fandom.com/wiki/Moll",
-  "facts": {},
-  "lead": "A moll was a companion of a gangster or a smuggler. Molls found the casinos of the planet Ord Mantell to be entertaining.",
-  "fetched": "2026-08-23"
+  "title": "Moll (planet)",
+  "url": "https://starwars.fandom.com/wiki/Moll_(planet)",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Instrop sector",
+   "system": "Rannon system",
+   "climate": "Hot",
+   "terrain": "Rock"
+  },
+  "lead": "Moll was a hot rock planet with no moons. It was located in the Rannon system, a part of the Instrop sector in the Slice portion of the Outer Rim Territories. The planet occupied the closest orbit to its star, the yellow-white Rannon.",
+  "fetched": "2026-08-24"
  },
  "Mogoshyn": {
   "title": "Mogoshyn",
@@ -42588,14 +42900,15 @@
   "fetched": "2026-08-23"
  },
  "Morton": {
-  "title": "Morton",
-  "url": "https://starwars.fandom.com/wiki/Morton",
+  "title": "Morton (planet)",
+  "url": "https://starwars.fandom.com/wiki/Morton_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "Office of Peace and Security"
+   "region": "Expansion Region, Trailing Sectors",
+   "sector": "Majoor sector",
+   "system": "Morton system"
   },
-  "lead": "Morton was a male Human who lived during the waning years of the Galactic Republic, serving sergeant within the Office of Peace and Security, a law enforcement agency that operated on the planet Cularin. He was a contact of the Thaereian military captain Drom Virbilge and in circa 31 BBY, Virbilge contacted Morton, warning him that there was going to be some trouble at the house of Krol-Pek, a male Cerean who lived in the city Gadrin on Cularin.",
-  "fetched": "2026-08-23"
+  "lead": "Morton was a planet of the Majoor sector in the Expansion Region.",
+  "fetched": "2026-08-24"
  },
  "Moseum": {
   "title": "Moseum",
@@ -42947,13 +43260,15 @@
   "fetched": "2026-08-23"
  },
  "Myl Vlahu": {
-  "title": "Myl Vlahu",
-  "url": "https://starwars.fandom.com/wiki/Myl_Vlahu",
+  "title": "Myl Vlahu (planet)",
+  "url": "https://starwars.fandom.com/wiki/Myl_Vlahu_(planet)",
   "facts": {
-   "affiliation": "Jedi Order, Army of Light, Galactic Republic"
+   "region": "Mid Rim, The Slice",
+   "sector": "Teraab sector",
+   "system": "Ruusan system"
   },
-  "lead": "Myl Vlahu was a Jedi who fought in the Ruusan campaign during the New Sith Wars. She was the sister of Zor Vlahu and died in an assault on the Sith in 1000 BBY. The planet of Myl Vlahu in the Ruusan system was named after her.",
-  "fetched": "2026-08-23"
+  "lead": "Myl Vlahu was a gas giant planet in the Ruusan system. It was the sixth planet orbiting the star Hoth's Brand. It was named after Jedi Myl Vlahu who fought in the Ruusan campaign during the New Sith Wars.",
+  "fetched": "2026-08-24"
  },
  "Mytus VII": {
   "title": "Mytus VII/Legends",
@@ -44441,18 +44756,24 @@
   "fetched": "2026-08-23"
  },
  "Niele": {
-  "title": "Niele (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Niele_(disambiguation)",
-  "facts": {},
-  "lead": "Niele may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Niele system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Niele_system/Legends",
+  "facts": {
+   "region": "Colonies, Southern Core"
+  },
+  "lead": "The Niele system was located in the Southern Core portion of the Colonies. It shared its name with the siege of Niele, a conflict fought in 35 BBY.",
+  "fetched": "2026-08-24"
  },
  "Nicandra": {
-  "title": "Nicandra (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Nicandra_(disambiguation)",
-  "facts": {},
-  "lead": "Nicandra may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Nicandra system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Nicandra_system/Legends",
+  "facts": {
+   "region": "Mid Rim, New Territories",
+   "sector": "Nicandra sector",
+   "affiliation": "New Republic"
+  },
+  "lead": "The Nicandra system was located in the Nicandra sector, a part of the New Territories portion of the Mid Rim. It was linked via hyperlanes to the Ilimardon system as well as the Ylix system in the M'shinni sector and the Mapuzo and Tartaglia systems of the Hollan sector. The Nicandra system shared its name with the Nicandra Plaza and the Nicandra Counterrevolutionary Signalmen's Memorial Building, both located on the Core Worlds planet Coruscant.",
+  "fetched": "2026-08-24"
  },
  "Nim Drovis": {
   "title": "Nim Drovis",
@@ -44942,14 +45263,16 @@
   "fetched": "2026-08-23"
  },
  "Niro": {
-  "title": "Niro",
-  "url": "https://starwars.fandom.com/wiki/Niro",
+  "title": "Niro (planet)",
+  "url": "https://starwars.fandom.com/wiki/Niro_(planet)",
   "facts": {
-   "species": "Duros",
-   "affiliation": "Lazlo's gang (briefly), A police force"
+   "region": "Expansion Region, The Slice",
+   "sector": "Circarpous sector",
+   "system": "Niro system",
+   "affiliation": "InterGalactic Banking Clan"
   },
-  "lead": "Niro was a male Duros who lived during the later Republic Era. Niro grew up as an orphan on the streets of a crime ridden city together with his friend Colby. After the two helped a criminal gang led by a Duros man called Lazlo raid a local grocery store and casino, Niro was captured by the arriving police droids, while Colby was able to flee with the gang. Years later, Niro had become a deputy in the local police force, serving under a human marshal.",
-  "fetched": "2026-08-23"
+  "lead": "Niro was a planet that was owned by the InterGalactic Banking Clan before the end of the Clone Wars.",
+  "fetched": "2026-08-24"
  },
  "Norval II": {
   "title": "Norval II",
@@ -45176,11 +45499,14 @@
   "fetched": "2026-08-23"
  },
  "Noryath": {
-  "title": "Noryath (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Noryath_(disambiguation)",
-  "facts": {},
-  "lead": "Noryath may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Noryath system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Noryath_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Nuiri sector"
+  },
+  "lead": "The Noryath system was located in the Nuiri sector, in the Trans-Hydian portion of the Outer Rim Territories. It was the origin point of the product known as Noryath brown meatbread.",
+  "fetched": "2026-08-24"
  },
  "Nooli": {
   "title": "Nooli",
@@ -45434,14 +45760,16 @@
   "fetched": "2026-08-23"
  },
  "Nox": {
-  "title": "Nox",
-  "url": "https://starwars.fandom.com/wiki/Nox",
+  "title": "Nox (planet)",
+  "url": "https://starwars.fandom.com/wiki/Nox_(planet)",
   "facts": {
-   "species": "Zabrak (Iridonian)",
-   "affiliation": "Order of the Night Wind, Hunters of the Outer Rim"
+   "region": "Deep Core",
+   "sector": "Sector 5",
+   "system": "Tython system",
+   "government": "City-states"
   },
-  "lead": "Nox was an Iridonian Zabrak who participated in the Hunters of the Outer Rim competition. Formerly an assassin for the Order of the Night Wind, the acrobatic archer aimed to use the fame of being a Hunter to generate leads about her long-lost sister.",
-  "fetched": "2026-08-23"
+  "lead": "Nox was a manufacturing planet that was located within the Tython system of the galaxy's Deep Core region. The planet was colonized by the non–Force-sensitive settlers of the planet of Tython more than thirty-four thousand years before the Battle of Yavin. By 25,793 BBY, Nox had become a world dedicated to manufacturing goods whose production was hazardous to the environment, and the planet was polluted to such a level that its inhabitants had to live in domed cities.",
+  "fetched": "2026-08-24"
  },
  "OboRin Comet Cluster": {
   "title": "OboRin Comet Cluster",
@@ -45875,11 +46203,18 @@
   "fetched": "2026-08-23"
  },
  "Ocsin": {
-  "title": "Ocsin",
-  "url": "https://starwars.fandom.com/wiki/Ocsin",
-  "facts": {},
-  "lead": "The Ocsin, also known as the Ocsinin, were a near-Human species with white skin and black, pupilless eyes that hailed from the Wild Space celestial body Farana. Believed to be descended from the Human Tionese culture of the Tion Cluster, the Ocsin established first contact with the Galactic Republic at some point before 4500 BBY. The species' members included merchants and explorers, and it established at least several dozen colonies in Farana's galactic neighborhood, including the worlds Ocsin and Saclas.",
-  "fetched": "2026-08-23"
+  "title": "Ocsin (planet)",
+  "url": "https://starwars.fandom.com/wiki/Ocsin_(planet)",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Farana, Corporate Sector",
+   "system": "Ocsin system",
+   "routes": "Authority Guardian Corridor, Tertiary Etti Route",
+   "climate": "Stormy",
+   "affiliation": "Corporate Sector Authority"
+  },
+  "lead": "Ocsin was a stormy and gloomy world located in the Ocsin system, a part of the Outer Rim Territories' Corporate Sector. It was situated at the intersection of the hyperlanes known as the Authority Guardian Corridor and the Tertiary Etti Route, which connected it to the Fether and Kamar systems and the Farana and Gaurick systems, respectively. Ocsin was a colony of the sentient Ocsin species.",
+  "fetched": "2026-08-24"
  },
  "Odacer-Faustin": {
   "title": "Odacer-Faustin",
@@ -45941,11 +46276,9 @@
   "fetched": "2026-08-23"
  },
  "Ochotl Ag": {
-  "title": "Ochotl Ag",
-  "url": "https://starwars.fandom.com/wiki/Ochotl_Ag",
-  "facts": {},
-  "lead": "Ochotl Ag was an agricultural company based on the Airam sector planet Ochotl.",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Ojom": {
   "title": "Ojom/Legends",
@@ -46579,11 +46912,9 @@
   "fetched": "2026-08-23"
  },
  "Ord": {
-  "title": "Ord (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Ord_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Ord Adinorr": {
   "title": "Ord Adinorr",
@@ -46634,11 +46965,14 @@
   "fetched": "2026-08-23"
  },
  "Opatajji": {
-  "title": "Opatajji (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Opatajji_(disambiguation)",
-  "facts": {},
-  "lead": "Opatajji may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Opatajji system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Opatajji_system/Legends",
+  "facts": {
+   "region": "Core Worlds",
+   "sector": "Alsaka sector"
+  },
+  "lead": "The Opatajji system was a part of the Alsaka sector of the Core Worlds. It shared its name with the title of the Duke of Opatajji as well as the last name of Neera Opatajji-Hirken, who was a daughter of the Duke of Opatajji by the time of the reign of the Galactic Empire.",
+  "fetched": "2026-08-24"
  },
  "Ord Dolsan": {
   "title": "Ord Dolsan",
@@ -47661,11 +47995,13 @@
   "fetched": "2026-08-23"
  },
  "Osara": {
-  "title": "Osara (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Osara_(disambiguation)",
-  "facts": {},
-  "lead": "Osara may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Osara system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Osara_system/Legends",
+  "facts": {
+   "region": "Inner Rim"
+  },
+  "lead": "The Osara system was a part of the Inner Rim. It shared its name with the event known as the Osara Mundicide, which took place after the war of approximately 10,000 BBY between the Galactic Republic and the Kumauri Empire and which involved the use of mass-driver cannons for orbital bombardment.",
+  "fetched": "2026-08-24"
  },
  "Osmani": {
   "title": "Osmani",
@@ -47705,11 +48041,15 @@
   "fetched": "2026-08-23"
  },
  "Oseon": {
-  "title": "Oseon (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Oseon_(disambiguation)",
-  "facts": {},
-  "lead": "",
-  "fetched": "2026-08-23"
+  "title": "Oseon system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Oseon_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Centrality",
+   "routes": "Cadma Conduit, Falko Run"
+  },
+  "lead": "The Oseon system was located within the Centrality. It contained the Oseon belts of asteroids, discovered by Gadfrey Oseon while he was fleeing the Hutts. The star system contained no planets, only seven asteroid belts, and the cause and origin of those asteroids was a mystery to the galaxy, leading to the system becoming famous as a tourist attraction.",
+  "fetched": "2026-08-24"
  },
  "Othone": {
   "title": "Othone",
@@ -48133,11 +48473,14 @@
   "fetched": "2026-08-23"
  },
  "Pa'hir'al": {
-  "title": "Pa'hir'al (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Pa%27hir%27al_(disambiguation)",
-  "facts": {},
-  "lead": "Pa'hir'al could refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Pa'hir'al system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Pa%27hir%27al_system/Legends",
+  "facts": {
+   "region": "Mid Rim, New Territories, Lesser Plooriod Cluster",
+   "sector": "Urce Space"
+  },
+  "lead": "The Pa'hir'al system was a part of Urce Space, which was located in the Lesser Plooriod Cluster and constituted a part of the New Territories portion of the Mid Rim. It contained the settlement known as Pa'hir'al City, in which the Wookiee operative Tirranna of the Rebel Alliance was captured by the Galactic Empire around 1 BBY.",
+  "fetched": "2026-08-24"
  },
  "Paloma": {
   "title": "Paloma",
@@ -48541,11 +48884,14 @@
   "fetched": "2026-08-23"
  },
  "Pelemax": {
-  "title": "Pelemax (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Pelemax_(disambiguation)",
-  "facts": {},
-  "lead": "Pelemax may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Pelemax system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Pelemax_system/Legends",
+  "facts": {
+   "region": "Colonies",
+   "species": "Tentacle bird of Pelemax"
+  },
+  "lead": "The Pelemax system was a part of the Colonies. It was home to the jungle creature known as the tentacle bird of Pelemax as well as the origin point of the Pelemaxian social group.",
+  "fetched": "2026-08-24"
  },
  "Pelgrin": {
   "title": "Pelgrin",
@@ -48985,14 +49331,16 @@
   "fetched": "2026-08-23"
  },
  "Pernicar": {
-  "title": "Pernicar",
-  "url": "https://starwars.fandom.com/wiki/Pernicar",
+  "title": "Pernicar (planet)",
+  "url": "https://starwars.fandom.com/wiki/Pernicar_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "Jedi Order, Army of Light, Galactic Republic"
+   "region": "Mid Rim, The Slice",
+   "sector": "Teraab sector",
+   "system": "Hoth's Brand system",
+   "terrain": "Lava rivers"
   },
-  "lead": "Pernicar was a male Human Jedi Master who fought in the New Sith Wars. The son of a scribe, Pernicar's father sent him to the Jedi Order once he proved himself to be Force-sensitive, something he resented for many years. From 1010 BBY until 1000 BBY, Pernicar fought in the New Sith Wars against the Brotherhood of Darkness, at one point being forced to kill his former Padawan, Wud Mortull, who had fallen to the dark side of the Force. In 1002 BBY, he was called into action to fight on the planet Ruusan in the Army of Light, a Jedi army led by Pernicar's good friend, Lord Hoth.",
-  "fetched": "2026-08-23"
+  "lead": "Pernicar was the first planet orbiting the star Hoth's Brand in the Ruusan system. Located in the Teraab sector of the Mid Rim, it was a scorching rock.",
+  "fetched": "2026-08-24"
  },
  "Perilix": {
   "title": "Perilix",
@@ -49722,11 +50070,17 @@
   "fetched": "2026-08-23"
  },
  "Pine": {
-  "title": "Pine",
-  "url": "https://starwars.fandom.com/wiki/Pine",
-  "facts": {},
-  "lead": "The pine was a tree that could be found in the forests of the planets Chandrila and Shili. The trees had green needles and brown bark, and vines grew up their trunks. As an infant, Jedi Ahsoka Tano and her mother Pav-ti Tano traveled through a dense forest of pines that surrounded their village while hunting kybuck.",
-  "fetched": "2026-08-23"
+  "title": "Pine (planet)",
+  "url": "https://starwars.fandom.com/wiki/Pine_(planet)",
+  "facts": {
+   "region": "Mid Rim, Kashyyyk Region, The Slice",
+   "sector": "Halla sector",
+   "system": "Boz Pity system",
+   "routes": "Ilosian Spur",
+   "population": "0"
+  },
+  "lead": "Pine was the fourth planet in the Boz Pity system.",
+  "fetched": "2026-08-24"
  },
  "Platoril": {
   "title": "Platoril",
@@ -50209,11 +50563,9 @@
   "fetched": "2026-08-23"
  },
  "Plintep": {
-  "title": "Plintep (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Plintep_(disambiguation)",
-  "facts": {},
-  "lead": "Plintep may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Ploo": {
   "title": "Ploo system",
@@ -50301,11 +50653,14 @@
   "fetched": "2026-08-23"
  },
  "Pouffra": {
-  "title": "Pouffra (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Pouffra_(disambiguation)",
-  "facts": {},
-  "lead": "Pouffra may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Pouffra system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Pouffra_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Rolion sector"
+  },
+  "lead": "The Pouffra system was located in the Rolion sector, a part of the Trans-Hydian portion of the Outer Rim Territories. It was the location of the Pouffra Circuit, a relatively safe amateur Podracing course in which the beginner racer Ben Quadinaros at one point participated.",
+  "fetched": "2026-08-24"
  },
  "Polus": {
   "title": "Polus",
@@ -50666,11 +51021,13 @@
   "fetched": "2026-08-23"
  },
  "Prekaz": {
-  "title": "Prekaz (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Prekaz_(disambiguation)",
-  "facts": {},
-  "lead": "Prekaz may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Prekaz system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Prekaz_system/Legends",
+  "facts": {
+   "region": "Core Worlds"
+  },
+  "lead": "The Prekaz system was a part of the Core Worlds. It shared its name with the individual known as the Golden Emperor of Prekaz.",
+  "fetched": "2026-08-24"
  },
  "Prexiar": {
   "title": "Prexiar",
@@ -51198,11 +51555,14 @@
   "fetched": "2026-08-23"
  },
  "Quanducial": {
-  "title": "Quanducial (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Quanducial_(disambiguation)",
-  "facts": {},
-  "lead": "Quanducial may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Quanducial system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Quanducial_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Gordian Reach"
+  },
+  "lead": "The Quanducial system was located in the Gordian Reach sector, in the Trans-Hydian portion of the Outer Rim Territories. It shared its name with the monarch known as the Princess of Quanducial.",
+  "fetched": "2026-08-24"
  },
  "Quockra-4": {
   "title": "Quockra-4",
@@ -51367,11 +51727,14 @@
   "fetched": "2026-08-23"
  },
  "Quesaya": {
-  "title": "Quesaya (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Quesaya_(disambiguation)",
-  "facts": {},
-  "lead": "Quesaya could refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Quesaya system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Quesaya_system/Legends",
+  "facts": {
+   "region": "Expansion Region",
+   "sector": "Andirma sector"
+  },
+  "lead": "The Quesaya system was located in the Expansion Region's Andirma sector. It shared its name with the Quesaya Border Conflict that was fought in 4007 BBY. By 3996 BBY, the system was situated in the \"civilized galaxy,\" an area that was well-explored by the Galactic Republic.",
+  "fetched": "2026-08-24"
  },
  "Quesh": {
   "title": "Quesh",
@@ -51431,14 +51794,15 @@
   "fetched": "2026-08-23"
  },
  "Quint": {
-  "title": "Quint Cresadde",
-  "url": "https://starwars.fandom.com/wiki/Quint_Cresadde",
+  "title": "Quint (planet)",
+  "url": "https://starwars.fandom.com/wiki/Quint_(planet)",
   "facts": {
-   "species": "Weequay",
-   "affiliation": "Gwarm's gang, Ohnaka Gang, Hutt Clan"
+   "region": "Inner Rim, Northern Dependencies",
+   "system": "Quint system",
+   "species": "Quints"
   },
-  "lead": "Quint Cresadde was a Weequay gunslinger who lived during the Imperial Era. A former pirate member of the Ohnaka Gang and Gwarm's gang who later worked for the Hutt Clan, she eventually turned away from her lifestyle to become the sheriff of Wayfar on the planet Tatooine. She wielded a DL-18 blaster pistol.",
-  "fetched": "2026-08-23"
+  "lead": "Quint was a planet located in the Inner Rim that was the homeworld of the Quint species.",
+  "fetched": "2026-08-24"
  },
  "Ragna III": {
   "title": "Ragna III",
@@ -51914,11 +52278,14 @@
   "fetched": "2026-08-23"
  },
  "Ramsir": {
-  "title": "Ramsir (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Ramsir_(disambiguation)",
-  "facts": {},
-  "lead": "Ramsir may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Ramsir system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Ramsir_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Jospro sector"
+  },
+  "lead": "The Ramsir system was a part of the Jospro sector in the Slice portion of the Outer Rim Territories. It shared its name with the conflict known as the Siege of Ramsir, which was fought at some point between 19 BBY and 2 ABY.",
+  "fetched": "2026-08-24"
  },
  "Rajtiri": {
   "title": "Rajtiri",
@@ -52185,11 +52552,14 @@
   "fetched": "2026-08-23"
  },
  "Raquish": {
-  "title": "Raquish (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Raquish_(disambiguation)",
-  "facts": {},
-  "lead": "Raquish may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Raquish system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Raquish_system/Legends",
+  "facts": {
+   "region": "Mid Rim, The Slice",
+   "sector": "Lambda sector"
+  },
+  "lead": "The Raquish system was a part of the Lambda sector in the Slice portion of the Mid Rim. It shared its name with the Battle of Raquish, which was fought in 39 BBY and pitted the Spiverelda, the group of worlds colonized by the Aqualish species and being under the influence of the Aqualish homeworld, Ando, against the fifteen Aqualish-settled planets known as the Andoan Free Colonies.",
+  "fetched": "2026-08-24"
  },
  "Raxus": {
   "title": "Raxus Secundus",
@@ -52685,14 +53055,15 @@
   "fetched": "2026-08-23"
  },
  "Rena": {
-  "title": "Rena",
-  "url": "https://starwars.fandom.com/wiki/Rena",
+  "title": "Rena (planet)",
+  "url": "https://starwars.fandom.com/wiki/Rena_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "Jedi Order"
+   "region": "Colonies, Southern Core",
+   "system": "Rena system",
+   "species": "Pipunt"
   },
-  "lead": "Rena was a Force-sensitive human who was a member of the Jedi Order during the High Republic Era. In 132 BBY, they and six other Padawans attended a lightsaber combat class on a training verandah in the Jedi Temple on the planet Coruscant. Rena and the other students followed a routine using bokken sabers as the class's instructor, Jedi Master Lakshay, moved among them giving advice. A chime sounded just as the routine drew to a close and Lakshay announced the session was over.",
-  "fetched": "2026-08-23"
+  "lead": "Rena was a planet home to the predatory Renan bloodwolves and known for its wine. Imperial Governor Wilek Nereus once visited Rena during his career collecting dental specimens.",
+  "fetched": "2026-08-24"
  },
  "Revisse": {
   "title": "Revisse",
@@ -53136,13 +53507,15 @@
   "fetched": "2026-08-23"
  },
  "Reyna": {
-  "title": "Reyna",
-  "url": "https://starwars.fandom.com/wiki/Reyna",
+  "title": "Reyna system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Reyna_system/Legends",
   "facts": {
-   "affiliation": "Galactic Empire"
+   "region": "Colonies, Southern Core",
+   "sector": "Tapani sector",
+   "routes": "Procopian Shipping Lane"
   },
-  "lead": "The Reyna was an Imperial-class Star Destroyer assigned to the Tapani sector. It was assigned to the planet Mrlsst. The ships assigned to the planets Mrlsst and Achillea, protected by the Leonides, were strategically located to control the only routes in and out sector.",
-  "fetched": "2026-08-23"
+  "lead": "The Reyna system was in the Freeworlds Territory of the Tapani sector, on the Procopian Shipping Lane.",
+  "fetched": "2026-08-24"
  },
  "Rietta": {
   "title": "Rietta",
@@ -53866,11 +54239,16 @@
   "fetched": "2026-08-23"
  },
  "Ruby": {
-  "title": "Ruby/Legends",
-  "url": "https://starwars.fandom.com/wiki/Ruby/Legends",
-  "facts": {},
-  "lead": "Rubies were gemstones valued by pirates. They could be worth anywhere from fifty to twenty thousand credits per Coruscant Standard Carat.",
-  "fetched": "2026-08-23"
+  "title": "Ruby (planet)",
+  "url": "https://starwars.fandom.com/wiki/Ruby_(planet)",
+  "facts": {
+   "region": "Core Worlds, Ringali Shell, The Slice, Arrowhead",
+   "sector": "Darpa sector",
+   "system": "Rhinnal system",
+   "routes": "Perlemian Trade Route"
+  },
+  "lead": "Ruby was the outermost planet in the Rhinnal system. It was a gas giant with 21 moons and one of two such planets in the star system.",
+  "fetched": "2026-08-24"
  },
  "Rosha": {
   "title": "Rosha",
@@ -54228,14 +54606,18 @@
   "fetched": "2026-08-23"
  },
  "Ruul": {
-  "title": "Ruul",
-  "url": "https://starwars.fandom.com/wiki/Ruul",
+  "title": "Ruul (planet)",
+  "url": "https://starwars.fandom.com/wiki/Ruul_(planet)",
   "facts": {
-   "species": "Zabrak (Dathomirian)",
-   "affiliation": "Nightbrothers"
+   "region": "Core Worlds, Arrowhead",
+   "system": "Ruul system",
+   "routes": "Hydian Way",
+   "terrain": "Strip-mined canyons, Craggy hills and valleys, Tundra",
+   "language": "Galactic Basic Standard",
+   "affiliation": "Galactic Empire"
   },
-  "lead": "Ruul was a Dathomirian Zabrak male from the planet Dathomir who was part of a clan of the Nightbrothers during the Clone Wars. Prior to the Second Battle of Dathomir of 19 BBY, Ruul met with a group of hired individuals and Mak Eak, a Nightbrother leader, in a warehouse-like building on a mission for the runaway Nightbrother Arzo Suun to help steal supplies for Eak. The group was eventually caught by a group of Nightsisters, a group of witches who commanded the Nightbrothers, led by Nelsel, who detected the Nightbrothers' presence through the Force.",
-  "fetched": "2026-08-23"
+  "lead": "Ruul was a planet in the Ruul system of the Core Worlds. It fell into the hands of the Galactic Empire, which imported Human prisoners to the planet and strip-mined it.",
+  "fetched": "2026-08-24"
  },
  "Sacorria": {
   "title": "Sacorria",
@@ -54379,11 +54761,16 @@
   "fetched": "2026-08-23"
  },
  "Sagma": {
-  "title": "Sagma (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Sagma_(disambiguation)",
-  "facts": {},
-  "lead": "Sagma may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Sagma system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Sagma_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Illisurevimurasi sector",
+   "routes": "Listehol Run",
+   "affiliation": "Confederacy of Independent Systems, Separatist holdouts"
+  },
+  "lead": "The Sagma system was a part of the Outer Rim Territories' Illisurevimurasi sector. Situated within the borders of the Confederacy of Independent Systems at the beginning of the Clone Wars, by 18 BBY the star system was situated in territory controlled by Separatist holdouts. That year, the Galactic Empire prevailed over a swarm of Sikurdian pirates at the Battle of Sagma there, and the Empire was later also victorious in an engagement of the Galactic Civil War fought in the Sagma system.",
+  "fetched": "2026-08-24"
  },
  "Sab Rufo": {
   "title": "Sab Rufo",
@@ -54536,13 +54923,15 @@
   "fetched": "2026-08-23"
  },
  "Saleeh": {
-  "title": "Saleeh",
-  "url": "https://starwars.fandom.com/wiki/Saleeh",
+  "title": "Saleeh (planet)",
+  "url": "https://starwars.fandom.com/wiki/Saleeh_(planet)",
   "facts": {
-   "affiliation": "Jedi Order, Army of Light, Galactic Republic"
+   "region": "Mid Rim, The Slice",
+   "sector": "Teraab sector",
+   "system": "Ruusan system"
   },
-  "lead": "Saleeh was a Jedi Lord who served in the Army of Light during the Ruusan campaign. Saleeh was killed during the final battles in 1000 BBY, and the eighth planet in the Ruusan system was named in Saleeh's honor following the conflict.",
-  "fetched": "2026-08-23"
+  "lead": "Saleeh was a gas giant planet in the Ruusan system. The seventh planet orbiting the star Hoth's Brand, it was named for Jedi Lord Saleeh who fought in the Ruusan campaign.",
+  "fetched": "2026-08-24"
  },
  "Sakiya": {
   "title": "Sakiya",
@@ -54643,11 +55032,16 @@
   "fetched": "2026-08-23"
  },
  "Salvara": {
-  "title": "Salvara (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Salvara_(disambiguation)",
-  "facts": {},
-  "lead": "Salvara may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Salvara system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Salvara_system/Legends",
+  "facts": {
+   "region": "Mid Rim, Trans-Hydian, The Slice",
+   "sector": "Tennuutta sector",
+   "routes": "Perlemian Trade Route",
+   "affiliation": "Confederacy of Independent Systems"
+  },
+  "lead": "The Salvara system was located in the Tennuutta sector of the Mid Rim. It was situated between the Euceron system of the Eucer sector and the Talcene system of the Talcene sector on the super-hyperroute known as the Perlemian Trade Route, which served as the dividing line between the regions known as the Trans-Hydian and the Slice.",
+  "fetched": "2026-08-24"
  },
  "Sanzen": {
   "title": "Sanzen",
@@ -54957,11 +55351,14 @@
   "fetched": "2026-08-23"
  },
  "Sartoy": {
-  "title": "Sartoy (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Sartoy_(disambiguation)",
-  "facts": {},
-  "lead": "Sartoy may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Sartoy system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Sartoy_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Mieru'kar sector"
+  },
+  "lead": "The Sartoy system was a part of the Outer Rim Territories' Mieru'kar sector. During the Galactic Civil War, it was the site of the Rebel Alliance manufacturing base known as the Sartoy weapons plant.",
+  "fetched": "2026-08-24"
  },
  "Sarrahban": {
   "title": "Sarrahban",
@@ -54997,11 +55394,16 @@
   "fetched": "2026-08-23"
  },
  "Scillal": {
-  "title": "Scillal (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Scillal_(disambiguation)",
-  "facts": {},
-  "lead": "Scillal may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Scillal system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Scillal_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Centrality",
+   "routes": "Cadma Conduit",
+   "affiliation": "Centrality"
+  },
+  "lead": "The Scillal system was located in the Centrality sector, a part of the Slice portion of the Outer Rim Territories. The Cadma Conduit hyperlane connected it to the Erilnar and Lekua systems.",
+  "fetched": "2026-08-24"
  },
  "Seftek": {
   "title": "Seftek",
@@ -55196,11 +55598,14 @@
   "fetched": "2026-08-23"
  },
  "Sedratis": {
-  "title": "Sedratis (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Sedratis_(disambiguation)",
-  "facts": {},
-  "lead": "Sedratis may refer to the following items:",
-  "fetched": "2026-08-23"
+  "title": "Sedratis system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Sedratis_system/Legends",
+  "facts": {
+   "region": "Core Worlds, The Slice, Arrowhead",
+   "routes": "Corellian Run"
+  },
+  "lead": "The Sedratis system was located in the Slice portion of the Core Worlds, specifically in the region known as the Arrowhead. It was situated on the super-hyperroute known as the Corellian Run, between the Rehemsa and Namaryne systems. The Sedratis system contained Sedratis City, which in turn was the site of the Sedratis Coliseum.",
+  "fetched": "2026-08-24"
  },
  "Scarif": {
   "title": "Scarif",
@@ -55745,13 +56150,15 @@
   "fetched": "2026-08-23"
  },
  "Serenity": {
-  "title": "Serenity/Legends",
-  "url": "https://starwars.fandom.com/wiki/Serenity/Legends",
+  "title": "Serenity (planet)",
+  "url": "https://starwars.fandom.com/wiki/Serenity_(planet)",
   "facts": {
-   "affiliation": "Force Priestesses"
+   "region": "Mid Rim",
+   "sector": "Tashtor sector",
+   "system": "Serenity system"
   },
-  "lead": "Serenity was the leader of the Force Priestesses.",
-  "fetched": "2026-08-23"
+  "lead": "Serenity was a planet in the galaxy. In 4 ABY, it was the site of the Battle of Serenity.",
+  "fetched": "2026-08-24"
  },
  "Seoul": {
   "title": "Seoul system",
@@ -56185,11 +56592,14 @@
   "fetched": "2026-08-23"
  },
  "Shella": {
-  "title": "Shella (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Shella_(disambiguation)",
-  "facts": {},
-  "lead": "Shella could refer to any of the following:",
-  "fetched": "2026-08-23"
+  "title": "Shella system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Shella_system/Legends",
+  "facts": {
+   "region": "Colonies, Southern Core",
+   "sector": "Tapani sector"
+  },
+  "lead": "The Shella system was a star system in the Colonies that contained the planet of Shella. It was located in the Tapani sector's Melantha Province, between Bilios and Rianon.",
+  "fetched": "2026-08-24"
  },
  "Shi'kar Straits": {
   "title": "Shi'kar Straits",
@@ -56728,11 +57138,13 @@
   "fetched": "2026-08-23"
  },
  "Silversisi": {
-  "title": "Silversisi (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Silversisi_(disambiguation)",
-  "facts": {},
-  "lead": "Silversisi may refer to:, __NOTOC__, ==Canon==, Silversisi system, a star system located in the Inner Rim Territories",
-  "fetched": "2026-08-23"
+  "title": "Silversisi system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Silversisi_system/Legends",
+  "facts": {
+   "region": "Inner Rim"
+  },
+  "lead": "The Silversisi system was a part of the Inner Rim. It shared its name with the Library of Silversisi.",
+  "fetched": "2026-08-24"
  },
  "Sibensko": {
   "title": "Sibensko",
@@ -56748,13 +57160,16 @@
   "fetched": "2026-08-23"
  },
  "Simoom": {
-  "title": "Simoom/Legends",
-  "url": "https://starwars.fandom.com/wiki/Simoom/Legends",
+  "title": "Simoom (planet)",
+  "url": "https://starwars.fandom.com/wiki/Simoom_(planet)",
   "facts": {
-   "affiliation": "Alliance to Restore the Republic"
+   "region": "Mid Rim",
+   "sector": "Senex sector",
+   "system": "Simoom system",
+   "affiliation": "House Vandron"
   },
-  "lead": "The Simoom was a Maelstrom-class battle cruiser used by the Alliance to Restore the Republic.",
-  "fetched": "2026-08-23"
+  "lead": "Simoom was a planet located in the Simoom system, within the Senex sector of the galaxy's Mid Rim, that was homeworld of the Simoomian sensory hound.",
+  "fetched": "2026-08-24"
  },
  "Sisk": {
   "title": "Sisk/Legends",
@@ -57211,11 +57626,13 @@
   "fetched": "2026-08-23"
  },
  "Slession": {
-  "title": "Slession (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Slession_(disambiguation)",
-  "facts": {},
-  "lead": "Slession may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Slession system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Slession_system/Legends",
+  "facts": {
+   "region": "Inner Rim"
+  },
+  "lead": "The Slession system was located in the Inner Rim. It shared its name with the conflict known as the Sundering of Slession, which was fought at some point between 19 BBY and 0 BBY.",
+  "fetched": "2026-08-24"
  },
  "Slotern": {
   "title": "Slotern",
@@ -57795,11 +58212,17 @@
   "fetched": "2026-08-23"
  },
  "Sronk": {
-  "title": "Sronk",
-  "url": "https://starwars.fandom.com/wiki/Sronk",
-  "facts": {},
-  "lead": "The Sronk were a cultural group who spoke Basic using hand-based metaphors, such as \"seeing things full-left-handed\" for \"seeing things first-hand\" and \"full slamming brunt of the closed right hand\" to describe a large-scale military offensive.",
-  "fetched": "2026-08-23"
+  "title": "Sronk homeworld",
+  "url": "https://starwars.fandom.com/wiki/Sronk_homeworld",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Oplovis sector",
+   "system": "Sronk system",
+   "species": "Sronk",
+   "affiliation": "Galactic Empire, New Republic"
+  },
+  "lead": "Sronk was a planet in the Oplovis sector of the Outer Rim and the Sronk species homeworld.",
+  "fetched": "2026-08-24"
  },
  "Spefik": {
   "title": "Spefik",
@@ -57949,11 +58372,15 @@
   "fetched": "2026-08-23"
  },
  "Sprizen": {
-  "title": "Sprizen (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Sprizen_(disambiguation)",
-  "facts": {},
-  "lead": "Sprizen may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Sprizen system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Sprizen_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "Sprizen sector",
+   "routes": "Sprizen End Run"
+  },
+  "lead": "The Sprizen system was located in the Sprizen sector, a part of the New Territories portion of the Outer Rim Territories. By 3705 BBY, the system was situated at the endpoint of the Sprizen End Run hyperlane, which connected it to the Quelii sector's Vinsoth system. Almost three millennia later, the majority of that hyperspace route had become a part of the Salin Corridor.",
+  "fetched": "2026-08-24"
  },
  "Stalimur": {
   "title": "Stalimur",
@@ -58217,14 +58644,17 @@
   "fetched": "2026-08-23"
  },
  "Stellan": {
-  "title": "Stellan",
-  "url": "https://starwars.fandom.com/wiki/Stellan",
+  "title": "Stellan (planet)",
+  "url": "https://starwars.fandom.com/wiki/Stellan_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "Galactic Empire, Imperial Security Bureau"
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Hunnoverrs sector",
+   "system": "Stellan system",
+   "species": "Stellan",
+   "government": "Theocracy"
   },
-  "lead": "Stellan was a human male case officer at the Imperial Security Bureau for Bracchia, a Koorivar spy for the Galactic Empire. He and Bracchia were interrogated by Emperor Palpatine himself in an attempt to find conspirators within the Imperial security apparatus.",
-  "fetched": "2026-08-23"
+  "lead": "Stellan was an Outer Rim Territories planet located in the Hunnoverrs sector. It was the homeworld of the Stellan species, whose society was governed by a theocracy. Due to the species' religious beliefs, any Stellan deemed overly aggressive or a danger to their society was exiled from their planet and launched into its orbit aboard transport vessels.",
+  "fetched": "2026-08-24"
  },
  "Sterdic IV": {
   "title": "Sterdic IV",
@@ -58294,11 +58724,14 @@
   "fetched": "2026-08-23"
  },
  "Suolriep": {
-  "title": "Suolriep (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Suolriep_(disambiguation)",
-  "facts": {},
-  "lead": "Suolriep may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Suolriep system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Suolriep_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Suolriep sector"
+  },
+  "lead": "The Suolriep system was a star system located within the Outer Rim Territories.",
+  "fetched": "2026-08-24"
  },
  "Sucharme": {
   "title": "Sucharme",
@@ -58478,13 +58911,18 @@
   "fetched": "2026-08-23"
  },
  "Stronghold": {
-  "title": "Stronghold",
-  "url": "https://starwars.fandom.com/wiki/Stronghold",
+  "title": "Stronghold (planet)",
+  "url": "https://starwars.fandom.com/wiki/Stronghold_(planet)",
   "facts": {
-   "affiliation": "Galactic Empire"
+   "region": "Mid Rim",
+   "sector": "Taldot sector",
+   "system": "Taldot system",
+   "terrain": "Rocky mountains",
+   "language": "Basic",
+   "affiliation": "Alliance to Restore the Republic"
   },
-  "lead": "The Stronghold was a Quasar Fire-class cruiser-carrier in service to the Imperial Navy during the Imperial Era. At some point, the cruiser-carrier sustained damage to its hull and lay in a debris field with two TIE/ln space superiority starfighters. The 340-meter-long (1,116 feet) starship was equipped with sublight engines and four hangar bays.",
-  "fetched": "2026-08-23"
+  "lead": "Stronghold was a cold, stormy, remote planet. It was used by the Rebel Alliance as a safe world. Little life survived on the surface. The Alliance created a series of caves and tunnels, where rebel soldiers could hide their families. Approximately 250 non-fighting people could be held in the underground Rebel base.",
+  "fetched": "2026-08-24"
  },
  "Sunspot": {
   "title": "Sunspot",
@@ -59216,11 +59654,14 @@
   "fetched": "2026-08-23"
  },
  "Tandgor": {
-  "title": "Tandgor (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Tandgor_(disambiguation)",
-  "facts": {},
-  "lead": "Tandgor may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Tandgor system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Tandgor_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Sertar sector"
+  },
+  "lead": "The Tandgor system was located in the Sertar sector, a part of the Trans-Hydian portion of the Outer Rim Territories. It was the point of origin of Tandgor gems.",
+  "fetched": "2026-08-24"
  },
  "Tamarena": {
   "title": "Tamarena",
@@ -59267,13 +59708,18 @@
   "fetched": "2026-08-23"
  },
  "Tantive IV": {
-  "title": "Tantive IV/Legends",
-  "url": "https://starwars.fandom.com/wiki/Tantive_IV/Legends",
+  "title": "Tantive IV (planet)",
+  "url": "https://starwars.fandom.com/wiki/Tantive_IV_(planet)",
   "facts": {
-   "affiliation": "Galactic Republic, Galactic Empire, Royal Alderaan Civil Fleet, Alliance to Restore the Republic"
+   "region": "Outer Rim Territories, New Territories, Trans-Hydian",
+   "sector": "Kwymar sector",
+   "system": "Tantive system",
+   "routes": "Hydian Way",
+   "terrain": "Tropical",
+   "affiliation": "Galactic Republic, Galactic Empire"
   },
-  "lead": "The Tantive IV was a CR90 corvette in the service of the Royal House of Alderaan. The ship was a central player in the events following the end of the Clone Wars and the beginning of the Galactic Civil War.",
-  "fetched": "2026-08-23"
+  "lead": "Tantive IV was the fourth planet in the Tantive system of Kwymar sector.",
+  "fetched": "2026-08-24"
  },
  "Tangrene": {
   "title": "Tangrene",
@@ -59766,11 +60212,14 @@
   "fetched": "2026-08-23"
  },
  "Tarshan": {
-  "title": "Tarshan (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Tarshan_(disambiguation)",
-  "facts": {},
-  "lead": "Tarshan may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Tarshan system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Tarshan_system/Legends",
+  "facts": {
+   "region": "Mid Rim, The Slice",
+   "sector": "Maerdocian sector"
+  },
+  "lead": "The Tarshan system was located in the Maerdocian sector, a part of the Slice portion of the Mid Rim. It shared its name with the company Tarshan Ring Excavations.",
+  "fetched": "2026-08-24"
  },
  "Tatooine": {
   "title": "Tatooine/Legends",
@@ -60118,13 +60567,16 @@
   "fetched": "2026-08-23"
  },
  "Teevan": {
-  "title": "Teevan/Legends",
-  "url": "https://starwars.fandom.com/wiki/Teevan/Legends",
+  "title": "Teevan (planet)",
+  "url": "https://starwars.fandom.com/wiki/Teevan_(planet)",
   "facts": {
-   "language": "Teevo"
+   "region": "Outer Rim Territories",
+   "sector": "Kalamith sector",
+   "system": "Teevan system",
+   "species": "Teevan"
   },
-  "lead": "Teevans were a species from Teevan. Their bodies were highly flexible and able to bend in ways most humanoids found difficult to impossible. They also had silver-hued skin. Jedi apprentice Tru Veld was a Teevan.",
-  "fetched": "2026-08-23"
+  "lead": "Teevan was a planet with silvery seas located within the Teevan system of the Outer Rim Territories. It was the homeworld of the Teevan species. Jedi Padawan Tru Veld came from this world.",
+  "fetched": "2026-08-24"
  },
  "Telerath": {
   "title": "Telerath/Legends",
@@ -60517,24 +60969,30 @@
   "fetched": "2026-08-23"
  },
  "Tenek": {
-  "title": "Tenek",
-  "url": "https://starwars.fandom.com/wiki/Tenek",
+  "title": "Tenek (planet)",
+  "url": "https://starwars.fandom.com/wiki/Tenek_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "Hotel Rix"
+   "region": "Mid Rim, The Slice",
+   "sector": "Manda sector",
+   "system": "Mis-Tenek system",
+   "terrain": "Forests, Grasslands"
   },
-  "lead": "Tenek was a human cook who worked at Hotel Rix on the planet Ferrix while the building was used as a base of operation by the Galactic Empire. In 5 BBY, Tenek entered the kitchen with a tray while a funeral procession was taking place outside for the local woman Maarva Andor. Once in the kitchen, Tenek found himself held at blaster point by Maarva's son, Cassian, but the intruder lowered the weapon once he recognized the cook.",
-  "fetched": "2026-08-23"
+  "lead": "Tenek was a forested planet with an electrically charged atmosphere that was located in the Mid Rim's Manda sector. It was home to vinna trees, the metallic bark of which conducted lightning strikes into the ground where the electrical charge was subsequently fed upon by the worms known as Raen sovra. The burrowing of the sovra in the soil surrounding the vinna trees' roots in turn contributed to an increased fertility in Tenek's forests.",
+  "fetched": "2026-08-24"
  },
  "Teta": {
-  "title": "Teta/Legends",
-  "url": "https://starwars.fandom.com/wiki/Teta/Legends",
+  "title": "Empress Teta system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Empress_Teta_system/Legends",
   "facts": {
-   "species": "Human",
-   "affiliation": "Galactic Republic"
+   "region": "Deep Core",
+   "sector": "Koros sector",
+   "routes": "Byss Run, Carbonite Run, Koros Trunk Line, Koros-Tython hyperlane",
+   "species": "Humans",
+   "language": "Basic",
+   "affiliation": "Galactic Republic, Tetan Monarchy, Krath, Brotherhood of the Sith"
   },
-  "lead": "Teta was the Empress of the Koros system in 5000 BBY, the instigator of the Unification Wars of Koros, and a key military commander in the Great Hyperspace War. Born into nobility on the wealthy planet of Koros Major, Teta eventually inherited the Koros empire; she quickly became known as the \"Warrior Empress,\" after leading her army into battle and personally foiling many assassination attempts.",
-  "fetched": "2026-08-23"
+  "lead": "The Empress Teta system or Teta system, named for Empress Teta, contained the planet of Empress Teta (formerly Koros Major). It was formerly known as the Koros system, with Koros Major colonized by Coruscanti explorers on generation ships. One of the places in the galaxy where carbonite could be found, its discovery brought up the technology of sleeper ships.",
+  "fetched": "2026-08-24"
  },
  "Teyr": {
   "title": "Teyr/Legends",
@@ -60773,13 +61231,19 @@
   "fetched": "2026-08-23"
  },
  "Thanta Zilbra": {
-  "title": "Thanta Zilbra",
-  "url": "https://starwars.fandom.com/wiki/Thanta_Zilbra",
+  "title": "Thanta Zilbra (planet)",
+  "url": "https://starwars.fandom.com/wiki/Thanta_Zilbra_(planet)",
   "facts": {
-   "species": "Human"
+   "region": "Outer Rim Territories",
+   "sector": "Xappyh sector",
+   "system": "Thanta Zilbra system",
+   "climate": "Hot",
+   "terrain": "Desert",
+   "population": "13,000",
+   "affiliation": "New Republic"
   },
-  "lead": "Thanta Zilbra was a smuggler who crashed on a planet with a native fungus with tremendous healing properties. Obtaining sponsorship from the New Republic, Zilbra established a colony on the planet, now known as Thanta Zilbra to harvest Zilbra fungus. Zilbra was killed when the planet was destroyed during the Corellian Crisis, but did insist his four sons and two daughters evacuate.",
-  "fetched": "2026-08-23"
+  "lead": "Thanta Zilbra was a barren and sparsely populated planet located within the Thanta Zilbra system of the Outer Rim Territories. In 8 ABY, the planet was first discovered by the smuggler Thanta Zilbra who discovered that the planet's native Zilbra fungi possessed life-saving therapeutic properties. He established an outpost which had grown to 13,000 by 18 ABY.",
+  "fetched": "2026-08-24"
  },
  "The Covey": {
   "title": "The Covey",
@@ -60875,11 +61339,14 @@
   "fetched": "2026-08-23"
  },
  "Thassalia": {
-  "title": "Thassalia (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Thassalia_(disambiguation)",
-  "facts": {},
-  "lead": "Thassalia may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Thassalia system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Thassalia_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Albanin sector"
+  },
+  "lead": "The Thassalia system was located in the Albanin sector within the Slice portion of the Outer Rim Territories. It shared its name with the title of Blood Prince of Thassalia.",
+  "fetched": "2026-08-24"
  },
  "Tharados": {
   "title": "Tharados",
@@ -60961,11 +61428,9 @@
   "fetched": "2026-08-23"
  },
  "Thairwsthis 12": {
-  "title": "The Relevant Farm Act of Thairwsthis 12",
-  "url": "https://starwars.fandom.com/wiki/The_Relevant_Farm_Act_of_Thairwsthis_12",
-  "facts": {},
-  "lead": "The Relevant Farm Act of Thairwsthis 12 was a law that shared its name with the Mid Rim's Thairwsthis system and established crop boundaries on an agricultural planet. However, the incandescent solar flares that periodically etched most of that world's surface excited both adult and young members of the mind eel species, and they ignored the stipulations of the law—a fact that was at one point noted in a weather forecast for the planet's West Fissure region that warned its inhabitants to exercise caution regarding the eels.",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "The Deep": {
   "title": "The Deep",
@@ -61401,11 +61866,14 @@
   "fetched": "2026-08-23"
  },
  "Thovinack": {
-  "title": "Thovinack (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Thovinack_(disambiguation)",
-  "facts": {},
-  "lead": "Thovinack may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Thovinack system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Thovinack_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "Kanz sector"
+  },
+  "lead": "The Thovinack system was located in the Kanz sector, a part of the New Territories portion of the Outer Rim Territories. It shared its name with the Battle of Thovinack, which took place shortly before the Battle of Yavin.",
+  "fetched": "2026-08-24"
  },
  "Thoran": {
   "title": "Thoran",
@@ -61757,13 +62225,18 @@
   "fetched": "2026-08-23"
  },
  "Tof": {
-  "title": "Tof/Legends",
-  "url": "https://starwars.fandom.com/wiki/Tof/Legends",
+  "title": "Tof (planet)",
+  "url": "https://starwars.fandom.com/wiki/Tof_(planet)",
   "facts": {
-   "language": "Tof"
+   "region": "Firefist, Unknown Regions",
+   "system": "Tof system",
+   "terrain": "Island chains",
+   "species": "Tof",
+   "language": "Tof",
+   "affiliation": "Tof Kingdom"
   },
-  "lead": "The Tof were green-skinned near-humans from the planet Tof, located in Firefist, a dwarf satellite galaxy orbiting the main galactic disc, within the wider Unknown Regions. They were ruled by patriarchs who usually had military experience and were in control of their own interstellar empire known as the Tof Kingdom.",
-  "fetched": "2026-08-23"
+  "lead": "Tof was a planet located within the Tof system of the Firefist satellite galaxy on the peripheral halo of the galactic disk and was part of the Unknown Regions. It was the homeworld of the near-Human Tofs, a green-skinned race of space pirates.",
+  "fetched": "2026-08-24"
  },
  "Togoria": {
   "title": "Togoria/Legends",
@@ -61973,11 +62446,14 @@
   "fetched": "2026-08-23"
  },
  "Tinta": {
-  "title": "Tinta",
-  "url": "https://starwars.fandom.com/wiki/Tinta",
-  "facts": {},
-  "lead": "Tinta was a white, fluffy toy tauntaun, known to its owner, Jyn Erso, the daughter of Galen, and Lyra Erso, as a \"snow lizard.\" The toy was one of Jyn's playthings while she lived in her family's homestead on the planet Lah'mu. Jyn generally kept Tinta with her other toys in her toybox, but in the year 13 BBY, it and several other toys were out on her bed when the Galactic Empire arrived at the homestead in search of Galen.",
-  "fetched": "2026-08-23"
+  "title": "Tinta system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Tinta_system/Legends",
+  "facts": {
+   "region": "Inner Rim, The Slice",
+   "sector": "Hapes Cluster, Interior Region"
+  },
+  "lead": "The Tinta system was located in the Interior Region, an area of the Hapes Cluster in the Slice portion of the Inner Rim. It was connected via hyperlanes to the Rbollea and Tumani systems.",
+  "fetched": "2026-08-24"
  },
  "Tiss'Sharl": {
   "title": "Tiss'sharl system",
@@ -62746,13 +63222,18 @@
   "fetched": "2026-08-23"
  },
  "Trellar Yagen": {
-  "title": "Trellar Yagen",
-  "url": "https://starwars.fandom.com/wiki/Trellar_Yagen",
+  "title": "Trellar Yagen (planet)",
+  "url": "https://starwars.fandom.com/wiki/Trellar_Yagen_(planet)",
   "facts": {
-   "species": "Human"
+   "region": "Expansion Region",
+   "sector": "Kailion sector",
+   "system": "Bovo Yagen system",
+   "climate": "Temperate",
+   "terrain": "Jungle",
+   "population": "4 million"
   },
-  "lead": "Trellar Yagen was one of Bovo Yagen's four sons. He settled on Bovo Yagen with his family. The planet Trellar Yagen was named after him.",
-  "fetched": "2026-08-23"
+  "lead": "Trellar Yagen was a planet in the Bovo Yagen system. It was covered in jungles and had a hot climate. It hosted a wide range of flora and fauna, much of it carnivourous. The most famous predator on the planet was the trell.",
+  "fetched": "2026-08-24"
  },
  "Troiken": {
   "title": "Troiken/Legends",
@@ -63277,13 +63758,15 @@
   "fetched": "2026-08-23"
  },
  "Turpimir": {
-  "title": "Turpimir",
-  "url": "https://starwars.fandom.com/wiki/Turpimir",
+  "title": "Turpimir (planet)",
+  "url": "https://starwars.fandom.com/wiki/Turpimir_(planet)",
   "facts": {
-   "affiliation": "Jedi Order, Army of Light, Galactic Republic"
+   "region": "Mid Rim, The Slice",
+   "sector": "Teraab sector",
+   "system": "Ruusan system"
   },
-  "lead": "Turpimir was a Jedi who served in the Army of Light during the Ruusan campaign, and Turpimir died in the final battles in 1000 BBY. The fourth planet of the Hoth's Brand system was later named Turpimir in honor of the fallen Jedi.",
-  "fetched": "2026-08-23"
+  "lead": "Turpimir was the fourth planet orbiting the star Hoth's Brand in the Ruusan system. Located in the Teraab sector of the Mid Rim, it was a barren world.",
+  "fetched": "2026-08-24"
  },
  "Turkana": {
   "title": "Turkana/Legends",
@@ -63436,11 +63919,13 @@
   "fetched": "2026-08-23"
  },
  "Tyberious": {
-  "title": "Tyberious (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Tyberious_(disambiguation)",
-  "facts": {},
-  "lead": "Tyberious may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Tyberious system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Tyberious_system/Legends",
+  "facts": {
+   "region": "Inner Rim, Northern Dependencies"
+  },
+  "lead": "The Tyberious system was a part of the Northern Dependencies portion of the Inner Rim. It shared its name with the Tyberious Institute of Xenobiology.",
+  "fetched": "2026-08-24"
  },
  "Twing": {
   "title": "Twing",
@@ -63454,14 +63939,14 @@
   "fetched": "2026-08-23"
  },
  "Tyria": {
-  "title": "Tyria",
-  "url": "https://starwars.fandom.com/wiki/Tyria",
+  "title": "Tyria system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Tyria_system/Legends",
   "facts": {
-   "species": "Human",
-   "affiliation": "Jedi Order, Galactic Republic"
+   "region": "Mid Rim, Trailing Sectors",
+   "sector": "Hevvrol sector"
   },
-  "lead": "Tyria was a female Human Jedi Master serving the Jedi Order and the Galactic Republic during the Cold War with the resurgent Sith Empire.",
-  "fetched": "2026-08-23"
+  "lead": "The Tyria system was located in the Hevvrol sector, a part of the Trailing Sectors portion of the Mid Rim. It was the origin point of the pieces of technology known as Tyrian hydraulic struts as well as the fabrics known as Tyrian violet cloth and Tyrian shimmersilk.",
+  "fetched": "2026-08-24"
  },
  "Tyne Albamon": {
   "title": "Tyne Albamon",
@@ -63650,11 +64135,13 @@
   "fetched": "2026-08-23"
  },
  "Ucret": {
-  "title": "Ucret (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Ucret_(disambiguation)",
-  "facts": {},
-  "lead": "Ucret may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Ucret system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Ucret_system/Legends",
+  "facts": {
+   "region": "Core Worlds, The Negs"
+  },
+  "lead": "The Ucret system was a part of the Negs portion of the Core Worlds. It shared its name with the individual known as Lanius of Ucret.",
+  "fetched": "2026-08-24"
  },
  "Uden Fen": {
   "title": "Uden Fen",
@@ -64395,11 +64882,17 @@
   "fetched": "2026-08-23"
  },
  "Usk": {
-  "title": "Usk/Legends",
-  "url": "https://starwars.fandom.com/wiki/Usk/Legends",
-  "facts": {},
-  "lead": "The letter was the twenty-first letter of the Aurebesh alphabet. It was pronounced \"usk\", and had the value of /U/.",
-  "fetched": "2026-08-23"
+  "title": "Usk (planet)",
+  "url": "https://starwars.fandom.com/wiki/Usk_(planet)",
+  "facts": {
+   "region": "Hutt Space",
+   "system": "Usk system",
+   "routes": "The Dead Road",
+   "population": "None",
+   "species": "Usk species (historic)"
+  },
+  "lead": "Usk was a planet that was located within the Usk system of the galaxy's Hutt Space region, near The Cairns part of that region, and lay on the hyperlane called the Dead Road, which connected it to the worlds of Elgit and Saqqar. A smaller hyperlane linked the planet to the world of Moralan. Usk was the homeworld of a sentient species that was enslaved at some point in their history, however later the species became extinct, leaving their home planet a derelict world.",
+  "fetched": "2026-08-24"
  },
  "Utaruun": {
   "title": "Utaruun",
@@ -64450,11 +64943,13 @@
   "fetched": "2026-08-23"
  },
  "Utor": {
-  "title": "Utor (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Utor_(disambiguation)",
-  "facts": {},
-  "lead": "Utor could refer to one of the following:, The Utor Shock, The Utor system",
-  "fetched": "2026-08-23"
+  "title": "Utor system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Utor_system/Legends",
+  "facts": {
+   "region": "Inner Rim"
+  },
+  "lead": "The Utor system was located in the Inner Rim. The Utor Shock, a conflict in which the Galactic Republic's Judicial Forces had a key role in that took place in 602 BBY, took place in the vicinity of the star system.",
+  "fetched": "2026-08-24"
  },
  "Useria": {
   "title": "Useria",
@@ -64505,14 +65000,14 @@
   "fetched": "2026-08-23"
  },
  "Farfalla": {
-  "title": "Valenthyne Farfalla",
-  "url": "https://starwars.fandom.com/wiki/Valenthyne_Farfalla",
+  "title": "Farfalla system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Farfalla_system/Legends",
   "facts": {
-   "species": "Half-Bothan",
-   "affiliation": "Jedi Order, Army of Light, Galactic Republic, House Farfalla"
+   "region": "Expansion Region, The Slice",
+   "sector": "Indra-su-Mar sector"
   },
-  "lead": "Valenthyne Farfalla was a noted male half-Bothan Jedi Master who served the Jedi Order during the Golden Age of the Old Republic. Farfalla had a reputation for being foppish and vain and fought for the Army of Light as a Jedi Lord during the New Sith Wars. During the final years of the Ruusan campaign, Farfalla left Ruusan to gather three hundred followers to aid in the struggle for the world.",
-  "fetched": "2026-08-23"
+  "lead": "The Farfalla system was located in the Indra-su-Mar sector, a part of the Slice portion of the Expansion Region. It shared its name with the half-Bothan Jedi Lord Valenthyne Farfalla.",
+  "fetched": "2026-08-24"
  },
  "Vaal": {
   "title": "Vaal/Legends",
@@ -64847,11 +65342,15 @@
   "fetched": "2026-08-23"
  },
  "Vandron": {
-  "title": "Vandron (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Vandron_(disambiguation)",
-  "facts": {},
-  "lead": "Vandron may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Vandron system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Vandron_system/Legends",
+  "facts": {
+   "region": "Mid Rim, Western Reaches",
+   "sector": "D'Aelgoth sector",
+   "affiliation": "Vandronian government, Galactic Empire"
+  },
+  "lead": "The Vandron system lay in the Mid Rim's D'Aelgoth sector. It was run by a Galactic Empire–affiliated government during the Galactic Civil War. Following the Battle of Endor, Riggins Delahrg, the former Imperial governor of the planet Tallaso, became employed at the Imperial Administration building of the Vandron system. Delarhg fled when the Vandronian government collapsed mere months later.",
+  "fetched": "2026-08-24"
  },
  "Varada Five": {
   "title": "Varada Five",
@@ -64959,14 +65458,9 @@
   "fetched": "2026-08-23"
  },
  "Valkorion": {
-  "title": "Valkorion",
-  "url": "https://starwars.fandom.com/wiki/Valkorion",
-  "facts": {
-   "species": "Human (Zakuulan)",
-   "affiliation": "Eternal Empire"
-  },
-  "lead": "Valkorion was a male Human warrior from the planet Zakuul who lived centuries before the Galactic War. When the Force entity known as Vitiate arrived on Zakuul, he chose Valkorion to become his new host body, and took possession of the man's physical form. The mind of the original Valkorion was completely suppressed, and his identity was used by Vitiate to build and rule over the Eternal Empire based on Zakuul.",
-  "fetched": "2026-08-23"
+  "missing": true,
+  "note": "bare title is a different entity; no place article found",
+  "fetched": "2026-08-24"
  },
  "Vandin": {
   "title": "Vandin",
@@ -65041,11 +65535,14 @@
   "fetched": "2026-08-23"
  },
  "Vasuuli": {
-  "title": "Vasuuli (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Vasuuli_(disambiguation)",
-  "facts": {},
-  "lead": "Vasuuli may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Vasuuli system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Vasuuli_system/Legends",
+  "facts": {
+   "region": "Colonies",
+   "sector": "Kliap sector"
+  },
+  "lead": "The Vasuuli system was located in the Colonies' Kliap sector. It was the site of the Vasuuli relay station, a communications center operated by the Rebel Alliance.",
+  "fetched": "2026-08-24"
  },
  "Vasha": {
   "title": "Vasha/Legends",
@@ -65118,11 +65615,13 @@
   "fetched": "2026-08-23"
  },
  "Vaykaaris": {
-  "title": "Vaykaaris (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Vaykaaris_(disambiguation)",
-  "facts": {},
-  "lead": "Vaykaaris may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Vaykaaris system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Vaykaaris_system/Legends",
+  "facts": {
+   "region": "Colonies, Southern Core"
+  },
+  "lead": "The Vaykaaris system was located in the Southern Core portion of the Colonies. In approximately 41 BBY, a terrorist group based in the system threatened more than a hundred worlds in the Colonies in what became known as the Vaykaaris Uprising. To resolve the dispute, twelve members of the Jedi Order were dispatched aboard the corvette Freedom's Messenger.",
+  "fetched": "2026-08-24"
  },
  "Varhus": {
   "title": "Varhus",
@@ -66524,11 +67023,14 @@
   "fetched": "2026-08-23"
  },
  "Vulcusion": {
-  "title": "Vulcusion (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Vulcusion_(disambiguation)",
-  "facts": {},
-  "lead": "Vulcusion may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Vulcusion system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Vulcusion_system/Legends",
+  "facts": {
+   "region": "Expansion Region, Western Reaches",
+   "sector": "Vulcusion sector"
+  },
+  "lead": "The Vulcusion system was located in the Vulcusion sector, a part of the Western Reaches portion of the Expansion Region. It shared its name with the confrontation known as the Battle of Vulcusion.",
+  "fetched": "2026-08-24"
  },
  "Vrogas Vas": {
   "title": "Vrogas Vas",
@@ -66658,11 +67160,15 @@
   "fetched": "2026-08-23"
  },
  "Walin'or": {
-  "title": "Walin'or (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Walin%27or_(disambiguation)",
-  "facts": {},
-  "lead": "Walin'or may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Walin'or system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Walin%27or_system/Legends",
+  "facts": {
+   "region": "Mid Rim, New Territories",
+   "sector": "Shiwal sector",
+   "affiliation": "New Republic"
+  },
+  "lead": "The Walin'or system was located in the Shiwal sector, a part of the New Territories portion of the Mid Rim. A hyperlane connected the star system to the Mapuzo system in the Hollan sector and the Belukat system in the Expansion Region.",
+  "fetched": "2026-08-24"
  },
  "Weerden": {
   "title": "Weerden",
@@ -67451,11 +67957,14 @@
   "fetched": "2026-08-23"
  },
  "Xanas": {
-  "title": "Xanas (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Xanas_(disambiguation)",
-  "facts": {},
-  "lead": "Xanas may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Xanas system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Xanas_system/Legends",
+  "facts": {
+   "region": "Mid Rim, The Slice",
+   "sector": "Xan sector"
+  },
+  "lead": "The Xanas system was a part of the Xan sector in the Slice portion of the Mid Rim. It contained the settlement known as Xanas City as well as the region known as West County.",
+  "fetched": "2026-08-24"
  },
  "Xilxash": {
   "title": "Xilxash",
@@ -67970,11 +68479,14 @@
   "fetched": "2026-08-23"
  },
  "Yhuli": {
-  "title": "Yhuli (disambiguation)",
-  "url": "https://starwars.fandom.com/wiki/Yhuli_(disambiguation)",
-  "facts": {},
-  "lead": "Yhuli may refer to one of the following:",
-  "fetched": "2026-08-23"
+  "title": "Yhuli system/Legends",
+  "url": "https://starwars.fandom.com/wiki/Yhuli_system/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Jospro sector"
+  },
+  "lead": "The Yhuli system was a part of the Jospro sector in the Slice portion of the Outer Rim Territories. At some point by 25,200 BBY, the Kwa, sentients native to the planet Dathomir in the Quelii sector, constructed a Star Temple—one of a series of structures built to house the Infinity Gate devices used by the Kwa for faster-than-light travel—in the Yhuli system. By 2 ABY, the Yhuli system also contained the facility known as Yhuli Docking Port 32.",
+  "fetched": "2026-08-24"
  },
  "Yetnis": {
   "title": "Yetnis",
@@ -68723,14 +69235,14 @@
   "fetched": "2026-08-23"
  },
  "Zender": {
-  "title": "Zender",
-  "url": "https://starwars.fandom.com/wiki/Zender",
+  "title": "Zender (planet)",
+  "url": "https://starwars.fandom.com/wiki/Zender_(planet)",
   "facts": {
-   "species": "Human",
-   "affiliation": "Sith Empire"
+   "system": "Gorach system",
+   "species": "Darga"
   },
-  "lead": "Zender was a Human male captain who served the resurgent Sith Empire during the Galactic War.",
-  "fetched": "2026-08-23"
+  "lead": "Zender was a red desert planet. It was the homeworld of the Darga species, who were mutated via exposure to radioactive Dorium in the planet's crust.",
+  "fetched": "2026-08-24"
  },
  "Zeitooine": {
   "title": "Zeitooine",
@@ -68759,11 +69271,15 @@
   "fetched": "2026-08-23"
  },
  "Zaur": {
-  "title": "Zaur",
-  "url": "https://starwars.fandom.com/wiki/Zaur",
-  "facts": {},
-  "lead": "Zaur were a species of lizard native to the planet Bogano. They had a low stance and an adhesive grip, allowing them to travel quickly across many types of surface, including cavern walls. They thrived in rocky and windy habitats, and their sensitivity to climate meant that they functioned better in colder temperatures than warmer ones.",
-  "fetched": "2026-08-23"
+  "title": "Zaur (planet)",
+  "url": "https://starwars.fandom.com/wiki/Zaur_(planet)",
+  "facts": {
+   "region": "Core Worlds, The Slice, Arrowhead",
+   "system": "Zug system",
+   "terrain": "Methane ocean"
+  },
+  "lead": "Zaur was the second planet in orbit around the star Zug in the Zug system, which was located in the Arrowhead region, where the Core Worlds intersected the Slice. The planet had no moons and was completely covered in a methane ocean.",
+  "fetched": "2026-08-24"
  },
  "Zhar": {
   "title": "Zhar/Legends",
@@ -69034,13 +69550,15 @@
   "fetched": "2026-08-23"
  },
  "Zor Vlahu": {
-  "title": "Zor Vlahu",
-  "url": "https://starwars.fandom.com/wiki/Zor_Vlahu",
+  "title": "Zor Vlahu (planet)",
+  "url": "https://starwars.fandom.com/wiki/Zor_Vlahu_(planet)",
   "facts": {
-   "affiliation": "Jedi Order, Army of Light, Galactic Republic"
+   "region": "Mid Rim, The Slice",
+   "sector": "Teraab sector",
+   "system": "Ruusan system"
   },
-  "lead": "Zor Vlahu was a Jedi who fought in the Ruusan campaign during the New Sith Wars. He had a sister named Myl Vlahu, and the two died in an assault on the Sith in 1000 BBY. Vlahu's lightsaber was claimed by the Sith and used by a Sith minion, attempting to impersonate a Dark Lord, in a later battle. The planet of Zor Vlahu in the Ruusan system bore his name.",
-  "fetched": "2026-08-23"
+  "lead": "Zor Vlahu was a gas giant located in the Ruusan system. It was named for the Jedi Zor Vlahu who fought in the Ruusan campaign during the New Sith Wars. It was the fifth planet in the system.",
+  "fetched": "2026-08-24"
  },
  "Zygerria": {
   "title": "Zygerria/Legends",

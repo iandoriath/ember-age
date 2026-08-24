@@ -112,6 +112,95 @@ def fetch_many(title_by_name):
     return out
 
 
+# ---- entity validation: a chart dot must resolve to a PLACE, not a same-named
+# character/ship/species/object. Facts are the strong signal; otherwise the lead's
+# first sentence must reach a place word before it reaches a non-place word.
+PLACE_FACTS = {"region", "sector", "system", "grid", "suns", "moons", "terrain", "climate",
+               "atmosphere", "population", "government", "capital", "routes", "points",
+               "class", "diameter", "inhabitants", "rotation", "orbit"}
+PLACE_RE = re.compile(
+    r"\b(planet(?:oid)?s?|moons?|worlds?|homeworld|star systems?|astronomical objects?|"
+    r"celestial bod(?:y|ies)|asteroids?|nebulae?|comets?|location|settlements?|colony|city|"
+    r"outposts?|stations?|spaceports?|shipyards?|territory|gas giants?|dwarf planets?)\b", re.I)
+NONPLACE_RE = re.compile(
+    r"\b(species|sentients?|Humans?|male|female|Jedi|Sith|captain|lieutenant|commander|general|"
+    r"hunter|smuggler|pirate|officer|soldier|clone|droid|trees?|plants?|insects?|creatures?|"
+    r"animals?|vehicles?|speeders?|starfighters?|cruisers?|corvettes?|frigates?|carriers?|"
+    r"Star Destroyers?|starships?|gemstones?|letter|toy|painting|company|corporation|law|act|"
+    r"uprising|battle|attack|event|entity|leader|alias|wife|husband|father|mother|son|daughter|"
+    r"sister|brother|queen|king|empress|emperor|commentator|companion|cook|group|organization)\b", re.I)
+
+
+def is_place(entry):
+    """Does this fetched entry describe somewhere a ship could go?"""
+    if entry.get("missing"):
+        return False
+    if entry.get("title", "").endswith("(disambiguation)"):
+        return False
+    if set(entry.get("facts") or {}) & PLACE_FACTS:
+        return True
+    hay = entry.get("title", "") + ". " + (entry.get("lead") or "").split(". ")[0][:220]
+    pm, nm = PLACE_RE.search(hay), NONPLACE_RE.search(hay)
+    return bool(pm) and (not nm or pm.start() < nm.start())
+
+
+VARIANTS = ("{} (planet)/Legends", "{} (planet)", "{} system/Legends", "{} system",
+            "{} (moon)/Legends", "{} (moon)")
+
+
+def resolve_variants(names):
+    """For names whose bare title is a different entity: try the disambiguated place titles."""
+    resolved, remaining = {}, list(names)
+    for pat in VARIANTS:
+        if not remaining:
+            break
+        still = []
+        for group in batches(remaining, 50):
+            r = api(action="query", titles="|".join(pat.format(n) for n in group),
+                    redirects=1, prop="info")
+            q = r["query"]
+            norm = {x["from"]: x["to"] for x in q.get("normalized", [])}
+            redir = {x["from"]: x["to"] for x in q.get("redirects", [])}
+            exists = {pg["title"] for pg in q.get("pages", []) if not pg.get("missing")}
+            for n in group:
+                tt = pat.format(n)
+                tt = norm.get(tt, tt)
+                tt = redir.get(tt, tt)
+                if tt in exists:
+                    resolved[n] = tt
+                else:
+                    still.append(n)
+            time.sleep(SLEEP)
+        remaining = still
+    return resolved, remaining
+
+
+def repair(out):
+    """Sweep every fetched entry; re-point non-place collisions at their (planet)/system
+    articles, and mark the rest missing (the dot keeps its tooltip, loses the wrong panel)."""
+    suspects = [n for n, e in out.items() if not e.get("missing") and not is_place(e)]
+    print(f"{len(suspects)} entries are not places (title collisions / disambiguation pages)")
+    if not suspects:
+        return 0
+    resolved, unresolved = resolve_variants(suspects)
+    print(f"place-variant articles found for {len(resolved)}; no place article for {len(unresolved)}")
+    if resolved:
+        fetched = fetch_many(resolved)
+        for n, e in fetched.items():
+            if is_place(e):
+                e.pop("missing", None)
+                old = out.get(n, {})
+                out[n] = e
+                if "image" in old or old.get("noimage"):
+                    pass  # image belonged to the wrong article: refetch below
+            else:
+                unresolved.append(n)
+    for n in unresolved:
+        out[n] = {"missing": True, "note": "bare title is a different entity; no place article found",
+                  "fetched": date.today().isoformat()}
+    return len(suspects)
+
+
 def slug(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
@@ -179,6 +268,9 @@ def main(argv=None):
     ap.add_argument("--refresh", action="store_true", help="refetch names already in the file")
     ap.add_argument("--limit", type=int, help="cap the number of new fetches this run")
     ap.add_argument("--no-images", action="store_true", help="skip the lead-image pass")
+    ap.add_argument("--repair", action="store_true",
+                    help="re-validate every fetched entry: fix title collisions (character/ship/species "
+                         "articles on planet names), chase (planet)/system variants, drop the rest")
     args = ap.parse_args(argv)
 
     bsm = _load("bsm_for_fetch", ROOT / "tools/build-system-map.py")
@@ -192,6 +284,14 @@ def main(argv=None):
     targets = sorted({t for t in targets if t.lower() not in heroes})
 
     existing = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
+    if args.repair:
+        out = dict(existing)
+        repair(out)
+        OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+        got = sum(1 for e in out.values() if not e.get("missing"))
+        print(f"wrote {OUT.relative_to(ROOT)} — {got} articles, "
+              f"{sum(1 for e in out.values() if e.get('missing'))} missing")
+        return 0
     todo = [t for t in targets if args.refresh or t not in existing]
     if args.limit:
         todo = todo[:args.limit]
@@ -203,6 +303,7 @@ def main(argv=None):
         for n in missing:
             out[n] = {"missing": True, "fetched": date.today().isoformat()}
         out.update(fetch_many(resolved))
+        repair(out)
     if not args.no_images:
         n_img = fill_images(out)
         print(f"lead images saved: {n_img} (in {IMG_DIR.relative_to(ROOT)})")
