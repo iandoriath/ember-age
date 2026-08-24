@@ -143,7 +143,9 @@
     .hb{padding:.4rem .5rem;font-size:.62rem;letter-spacing:.1em}
     #q{width:120px;padding:.28rem .5rem}
   }
-  @media (pointer:coarse){#q{font-size:16px} #panel,#qr,.hb{backdrop-filter:none}}  /* backdrop blur over a moving raster is a per-frame readback on phones */  /* >=16px: mobile browsers don't auto-zoom the page into the field */
+  @media (pointer:coarse){#q{font-size:16px} #panel,#qr,.hb{backdrop-filter:none}
+    .sys .lbl{font-size:16px} .sys .sub{font-size:10px} .sys .hop{font-size:11px}
+    .sys .core{r:4.5px} .sys.beacon .core{r:6.5px} .sys.capital .core{r:8px}}  /* backdrop blur over a moving raster is a per-frame readback on phones */  /* >=16px: mobile browsers don't auto-zoom the page into the field */
 </style>
 </head>
 <body>
@@ -300,6 +302,9 @@ function dotAt(clientX, clientY, radiusPx) {
   return best;
 }
 const DOT_R = {close:[3.5, 5], reach:[3.5, 5], wide:[7, 10], far:[12, 17]}, DOT_A = {close:[.7, .95], reach:[.7, .95], wide:[.7, .95], far:[.85, 1]};
+const IS_TOUCH = matchMedia("(pointer:coarse)").matches;
+const LBL = IS_TOUCH ? 1.5 : 1.25;  // background-name scale; deep-zoom constant = 11*LBL/U0 px (~19px phone, ~16px desktop)
+function labelPx(k, S) { return Math.max(IS_TOUCH ? 11 : 0, 11 * LBL * k * S); }
 const FONT = "\"Rajdhani\",system-ui,\"Segoe UI\",Roboto,sans-serif";
 let drawReq = 0, labelSet = [];
 function requestDraw() { if (!drawReq) drawReq = requestAnimationFrame(drawBg); }
@@ -367,19 +372,21 @@ function drawBg() {
   ctx.globalAlpha = 1;
   // planets, batched by colour (one fill per colour per tier)  — .gdot
   const [r0, r1] = DOT_R[zoom] || DOT_R.wide, [a0, a1] = DOT_A[zoom] || DOT_A.wide, pad = 20 * S;
+  const dotFloor = (zoom === "close" || zoom === "reach") ? (IS_TOUCH ? [3.4, 4.6] : [2.2, 3.2]) : [0, 0];  // dust stays dust at galaxy zoom
+  const dotPx = tier => Math.max(dotFloor[tier], (tier ? r1 : r0) * k * S);
   const byColor = [new Map(), new Map()];
   for (const g of GAL) {
     if (g.x < X0 - pad || g.x > X1 + pad || g.y < Y0 - pad || g.y > Y1 + pad) continue;
     const m = byColor[g.tier]; let path = m.get(g.color); if (!path) m.set(g.color, path = new Path2D());
-    const rad = (g.tier ? r1 : r0) * k * S; path.moveTo(X(g.x) + rad, Y(g.y)); path.arc(X(g.x), Y(g.y), rad, 0, 6.2832);
+    const rad = dotPx(g.tier); path.moveTo(X(g.x) + rad, Y(g.y)); path.arc(X(g.x), Y(g.y), rad, 0, 6.2832);
   }
   for (const tier of [0, 1]) { ctx.globalAlpha = tier ? a1 : a0; for (const [col, path] of byColor[tier]) { ctx.fillStyle = col; ctx.fill(path); } }
   ctx.globalAlpha = 1;
-  if (hover) { ctx.beginPath(); ctx.arc(X(hover.x), Y(hover.y), (hover.tier ? r1 : r0) * k * S + 1.5, 0, 6.2832); ctx.strokeStyle = "#8fd0f4"; ctx.lineWidth = 2; ctx.stroke(); }
+  if (hover) { ctx.beginPath(); ctx.arc(X(hover.x), Y(hover.y), dotPx(hover.tier) + 1.5, 0, 6.2832); ctx.strokeStyle = "#8fd0f4"; ctx.lineWidth = 2; ctx.stroke(); }
   // planet names: the culled set at close zoom; only unsectored outliers at the sector tier  — .gname
   if (labels === "all") {
-    const px = 11 * k * S;
-    for (const l of labelSet) if (l.x > X0 && l.x < X1 && l.y > Y0 && l.y < Y1) txt(ctx, l.n, X(l.x) + 7 * k * S, Y(l.y) + 3 * k * S, px, {fill:l.k === 1 ? "#54809f" : "#3f6a8c", ls:0.06, weight:l.k === 1 ? 600 : 500});
+    const px = labelPx(k, S), off = Math.max(7 * k * S, dotPx(1) + 3);
+    for (const l of labelSet) if (l.x > X0 && l.x < X1 && l.y > Y0 && l.y < Y1) txt(ctx, l.n, X(l.x) + off, Y(l.y) + 0.3 * px, px, {fill:l.k === 1 ? "#54809f" : "#3f6a8c", ls:0.06, weight:l.k === 1 ? 600 : 500});
   } else if (labels === "sector") {
     const px = 11 * S;
     for (const g of GAL) if (!g.sector && g.x > X0 && g.x < X1 && g.y > Y0 && g.y < Y1) txt(ctx, g.name, X(g.x) + 7 * S, Y(g.y) + 3 * S, px, {fill:g.tier ? "#54809f" : "#3f6a8c", ls:0.06});
@@ -407,7 +414,7 @@ function scheduleCull() { clearTimeout(cullTimer); cullTimer = setTimeout(cullLa
 function cullLabels() {
   if (chart.dataset.labels !== "all") { labelSet = []; return; }
   const k = kFor(vb.w, chartRect().width);
-  const [bx, by, bw, bh] = currentBox(), m = 90 * k;
+  const [bx, by, bw, bh] = currentBox(), m = 90 * k, S = chartRect().width / bw, fu = labelPx(k, S) / S;  // font height in chart units
   const X0 = bx - m, Y0 = by - m, X1 = bx + bw + m, Y1 = by + bh + m;
   const CELL = 120 * k, buckets = new Map();
   const cells = b => { const out = []; for (let cx = Math.floor(b[0] / CELL); cx <= Math.floor(b[2] / CELL); cx++) for (let cy = Math.floor(b[1] / CELL); cy <= Math.floor(b[3] / CELL); cy++) out.push(cx + "," + cy); return out; };
@@ -418,7 +425,7 @@ function cullLabels() {
   inView.sort((a, b) => a.k - b.k || (a.n < b.n ? -1 : a.n > b.n ? 1 : 0));
   labelSet = [];
   for (const l of inView) {
-    const b = [l.x + 7 * k, l.y - 9 * k, l.x + (7 + 7.5 * l.n.length) * k, l.y + 5 * k];
+    const b = [l.x + 7 * k, l.y - 0.8 * fu, l.x + 7 * k + 0.62 * fu * l.n.length, l.y + 0.4 * fu];
     if (!hit(b)) { labelSet.push(l); claim(b); }
   }
   requestDraw();
@@ -580,7 +587,7 @@ window.addEventListener("pointerup", endDrag);
 window.addEventListener("pointercancel", endDrag);
 chart.addEventListener("click", e => {
   if ((drag && drag.moved) || e.target !== chart) return;
-  const g = dotAt(e.clientX, e.clientY, e.pointerType === "touch" ? 16 : 10);
+  const g = dotAt(e.clientX, e.clientY, e.pointerType === "touch" ? 20 : 10);
   if (g && g.wp && !plotMode) openGalaxyPanel(g.name, {grid:g.grid, sector:g.sector, region:g.region});  // wpdot
   else closePanel();
 });
