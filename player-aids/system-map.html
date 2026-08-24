@@ -11,8 +11,11 @@
     --ember:#e07b39; --gold:#ffb454; --disp:"Rajdhani",system-ui,"Segoe UI",Roboto,sans-serif;
   }
   *{box-sizing:border-box} html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);font:14px/1.45 var(--disp)}
-  #chart{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none;transform-origin:0 0;will-change:transform}
-  /* gestures move a composited raster of the chart (transform); the viewBox — a full re-layout of ~16k nodes — is committed once per gesture */
+  #stage{position:absolute;inset:0;overflow:hidden;touch-action:none}
+  /* the galaxy (5,400 dots, routes, borders, grid, sector names) is painted on a canvas each frame; the SVG on top holds only the ~40 campaign systems and lanes */
+  #bg{position:absolute;inset:0;width:100%;height:100%;display:block}
+  #chart{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+  #tip{position:absolute;pointer-events:none;display:none;background:rgba(5,10,16,.9);border:1px solid var(--holo-dim);color:var(--holo);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:.25rem .45rem;white-space:nowrap;z-index:30}
   #chart.dragging{cursor:grabbing}
   #chart text{font-family:var(--disp);fill:var(--holo);letter-spacing:.12em;text-transform:uppercase;pointer-events:none;paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
   #chart .sys text{pointer-events:auto}
@@ -20,52 +23,18 @@
   #chart .sub{font-size:9px;fill:var(--dim);letter-spacing:.18em}
   #chart .hop{font-size:9px;fill:var(--dim)}
   #chart .lanelbl{font-size:9px;fill:var(--holo-dim);letter-spacing:.25em}
-  /* region fields */
-  .regionfield{pointer-events:none}
-  .regionfield.core{fill:rgba(255,180,84,.055)}
-  .regionfield.mid{fill:rgba(95,195,255,.04)}
-  .regionfield.hutt{fill:rgba(143,191,111,.05)}
-  .regionfield.nebula{fill:rgba(176,127,214,.10)}
-  .regionfield.nebula2{fill:rgba(214,127,178,.07)}
-  .regionlbl{fill:var(--holo-dim);letter-spacing:.5em;font-weight:600;transition:opacity .3s}
-  .regionlbl.core{fill:#8a6a3a}
-  .regionlbl.hutt{fill:#5d7a4e}
-  .regionlbl.nebula{fill:#7a5d8f;letter-spacing:.3em}
-  #chart[data-zoom=reach] .regionlbl{opacity:.5}
-  #chart[data-zoom=wide] .regionlbl{opacity:.65}
-  #chart[data-zoom=far] .regionlbl{opacity:.8}
-  /* region borders (from the vector map) */
-  .regborder{fill:none;stroke:#1e4260;stroke-width:2.5;opacity:.5;stroke-dasharray:16 10}
-  .regborder.hutt{fill:rgba(143,191,111,.05);stroke:#3f6a5c;stroke-dasharray:none;opacity:.6}
-  /* hyperlane routes */
-  .route{fill:none;stroke:#24435f;stroke-width:2;stroke-linejoin:round;stroke-linecap:round;opacity:.55}
-  .majorroute{stroke:#35597a;stroke-width:4;opacity:.7}
-  #chart[data-zoom=close] .route,#chart[data-zoom=reach] .route{opacity:.25}
   #nav polyline{fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
   #nav .seg-live{stroke:#7fd4ff;filter:url(#glow)}
   #nav .seg-dark{stroke:#ffb454;stroke-dasharray:14 10;filter:url(#glow)}
   #plotbtn.on{background:var(--ember);border-color:var(--ember);color:#1b120a}
   .navhop{margin:.1rem 0}
   .navhop b{color:var(--holo)} .navhop.dark b{color:var(--gold)}
-  /* galaxy layer */
-  .gdot{opacity:.7;r:3.5px}
-  .gdot.t1{opacity:.95;r:5px}
-  #chart[data-zoom=wide] .gdot{r:7px}
-  #chart[data-zoom=wide] .gdot.t1{r:10px}
-  #chart[data-zoom=far] .gdot{r:12px;opacity:.85}
-  #chart[data-zoom=far] .gdot.t1{r:17px;opacity:1}
-  .gname.t1{fill:#54809f;font-weight:600}
-  .gname.cull{display:none !important}
-  #chart[data-scaled] .gz > *,#chart[data-scaled] .sys > *{transform:scale(var(--k,1))}
-  #chart[data-zoom=far] .grid.fine,#chart[data-zoom=wide] .grid.fine{display:none}  /* sub-pixel grid tiles are invisible far out and cost a lot to tile */
-  #chart[data-labels=all] .lane,#chart[data-labels=all] .route,#chart[data-labels=all] .regborder,#chart[data-labels=all] #nav *{vector-effect:non-scaling-stroke}
+  #chart[data-scaled] .sys > *{transform:scale(var(--k,1))}
+  #chart[data-labels=all] .lane,#chart[data-labels=all] #nav *{vector-effect:non-scaling-stroke}
   #chart[data-labels=all] .lane[data-kind=dark]{stroke-width:1.6px}
   #chart[data-labels=all] .lane[data-kind=smuggler]{stroke-width:1.4px}
   #chart[data-labels=all] .lane[data-kind=living]{stroke-width:2.6px}
   #chart[data-labels=all] .lane[data-kind=far],#chart[data-labels=all] .lane[data-kind=fraying]{stroke-width:1.6px}
-  #chart[data-labels=all] .route{stroke-width:1.5px}
-  #chart[data-labels=all] .majorroute{stroke-width:3px}
-  #chart[data-labels=all] .regborder{stroke-width:1.5px}
   #chart[data-labels=all] .lanelbl{font-size:calc(var(--k,1) * 9px)}
   #search{position:relative;display:inline-block}
   #q{background:rgba(5,10,16,.72);border:1px solid var(--holo-dim);color:var(--holo);padding:.32rem .55rem;font:inherit;font-size:.72rem;letter-spacing:.1em;width:130px;transition:width .2s;outline:none}
@@ -80,15 +49,6 @@
   .ping circle{fill:none;stroke:var(--gold);stroke-width:3;transform-box:fill-box;transform-origin:center;animation:pingx 1.4s ease-out forwards}
   .ping .p2{animation-delay:.35s}
   @keyframes pingx{from{transform:scale(.35);opacity:1}to{transform:scale(4.2);opacity:0}}
-  .wpdot{cursor:pointer}
-  .wpdot:hover{stroke:#8fd0f4;stroke-width:2.5;opacity:1}
-  .gname{font-size:11px;fill:#3f6a8c;letter-spacing:.06em;display:none}
-  #chart[data-labels=all] .gname{display:block}
-  #chart[data-labels=sector] .gname.nosect{display:block}
-  .sectlbl{font-size:34px;fill:#4b7290;letter-spacing:.3em;opacity:.55;display:none;text-anchor:middle;pointer-events:none}
-  #chart[data-labels=sector] .sectlbl{display:block}
-  #chart[data-labels=all] .sectlbl{display:block;opacity:.17;font-size:calc(var(--k,1) * 44px)}
-  #chart[data-zoom=close] .regionlbl{opacity:.12}
   #chart[data-zoom=far] .sys text{display:none}
   #chart[data-zoom=far] .sys.major .lbl{display:block;font-size:58px}
   #chart[data-zoom=wide] .sys .lbl{font-size:26px}
@@ -183,7 +143,7 @@
 </style>
 </head>
 <body>
-<svg id="chart" xmlns="http://www.w3.org/2000/svg" data-zoom="reach" aria-label="System map"></svg>
+<div id="stage"><canvas id="bg" aria-hidden="true"></canvas><svg id="chart" xmlns="http://www.w3.org/2000/svg" data-zoom="reach" aria-label="System map"></svg><div id="tip"></div></div>
 <div id="fx"></div>
 <div id="hud">
   <div class="frame"></div>
@@ -246,69 +206,7 @@ function render() {
   const defs = el("defs", {}, chart);
   defs.innerHTML = `
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="soften" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
-    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#0f2030" stroke-width=".6"/></pattern>
-    <pattern id="grid2" width="250" height="250" patternUnits="userSpaceOnUse"><path d="M250 0H0V250" fill="none" stroke="#15304a" stroke-width=".8"/></pattern>`;
-  el("rect", {class:"grid fine", x:-2400, y:-2400, width:12600, height:12600, fill:"url(#grid)"}, chart);
-  el("rect", {class:"grid", x:-2400, y:-2400, width:12600, height:12600, fill:"url(#grid2)"}, chart);
-
-  const gb = el("g", {id:"regionborders"}, chart);
-  for (const rp of (DATA.regionPaths || [])) {
-    el("polyline", {class:"regborder " + rp.kind, points:rp.pts.map(pt => pt.join(",")).join(" ")}, gb);
-  }
-
-  const gr = el("g", {id:"regions"}, chart);
-  for (const r of (DATA.regions || [])) {
-    if (r.cx !== undefined) {
-      el("ellipse", {class:"regionfield " + r.kind, cx:r.cx, cy:r.cy, rx:r.rx, ry:r.ry, transform:`rotate(${r.rot || 0} ${r.cx} ${r.cy})`, filter:"url(#soften)"}, gr);
-      if (r.kind === "nebula") el("ellipse", {class:"regionfield nebula2", cx:r.cx + 25, cy:r.cy - 18, rx:r.rx * 0.55, ry:r.ry * 0.5, transform:`rotate(${(r.rot || 0) + 35} ${r.cx} ${r.cy})`, filter:"url(#soften)"}, gr);
-    }
-    if (r.label) {
-      const lt = el("text", {class:"regionlbl " + r.kind, x:r.label[0], y:r.label[1], "text-anchor":"middle", "font-size":r.size || 24}, gr);
-      if (r.lrot) lt.setAttribute("transform", `rotate(${r.lrot} ${r.label[0]} ${r.label[1]})`);
-      lt.textContent = r.name;
-    }
-  }
-
-  const gg = el("g", {id:"galaxy"}, chart);
-  const RCOLOR = {"Deep Core":"#d9a24a","Core":"#c9843f","Colonies":"#b8767a","Inner Rim":"#9a7cc9","Expansion Region":"#5fa36e","Mid Rim":"#3fa9b5","Outer Rim":"#3d7ec2","Hutt Space":"#9fb04f","Wild Space":"#6a6f8c","Unknown Regions":"#6a6f8c"};
-  {
-    const key = document.getElementById("regkey");
-    const seen = new Set();
-    for (const [name, col] of Object.entries(RCOLOR)) {
-      if (seen.has(col)) continue; seen.add(col);
-      const sp = document.createElement("span"); sp.className = "rk";
-      sp.innerHTML = `<i style="background:${col}"></i>${name === "Wild Space" ? "Wild / Unknown" : name}`;
-      key.appendChild(sp);
-    }
-  }
-  for (const [name, x, y, grid, sector, region, tier] of (DATA.galaxy || [])) {
-    const gz = el("g", {class:"gz", transform:`translate(${x} ${y})`}, gg);
-    const dot = el("circle", {class:"gdot" + (tier ? " t1" : "") + ((DATA.gwp || {})[name] ? " wpdot" : ""), cx:0, cy:0, r:3.2, fill:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55"), "data-n":name}, gz);
-    if ((DATA.gwp || {})[name]) {
-      dot.setAttribute("tabindex", 0);
-      dot.addEventListener("click", ev => { ev.stopPropagation(); if (!(drag && drag.moved) && !plotMode) openGalaxyPanel(name, {grid, sector, region}); });
-    }
-    const tip = el("title", {}, dot);
-    tip.textContent = `${name}${grid ? " · " + grid : ""}${sector ? " · " + sector + " sector" : ""}${region ? " · " + region : ""}`;
-    const nm = el("text", {class:"gname" + (tier ? " t1" : "") + (sector ? "" : " nosect"), x:7, y:3}, gz);
-    nm.textContent = name;
-    gLabels.push({el:nm, x, y, n:name, k:tier ? 1 : 2});
-  }
-  scheduleCull();
-  const gsec = el("g", {id:"sectors"}, chart);
-  gg.parentNode.insertBefore(gsec, gg);  // sector names sit behind every dot and label
-  for (const [name, x, y, count] of (DATA.sectors || [])) {
-    const st = el("text", {class:"sectlbl", x, y}, gsec);
-    st.textContent = name;
-  }
-
-  const gr2 = el("g", {id:"routes"}, chart);
-  for (const r of (DATA.routes || [])) {
-    const pl = el("polyline", {class:"route" + (r.major ? " majorroute" : ""), points:r.pts.map(p => p.join(",")).join(" ")}, gr2);
-    const tt = el("title", {}, pl); tt.textContent = r.n;
-  }
-
+`;
   const gl = el("g", {id:"lanes"}, chart);
   for (const l of (DATA.laneSegs || [])) {
     const a = byId.get(l.from), b = byId.get(l.to);
@@ -369,20 +267,141 @@ function renderStatus() {
     `<span class="pip ${s.alwaysLit ? "always" : lit.has(s.id) ? "lit" : ""}" onclick="openPanel('${s.id}')" title="${esc(s.name)}"><i></i><span>${s.hop === 0 ? "⌂" : s.hop !== undefined ? s.hop : "★"}</span></span>`).join("");
 }
 
+/* ---- galaxy layer: canvas ----
+   5,400 background planets + routes + borders + grid + sector/region names are painted per frame
+   (a few ms even on a phone) instead of living as ~16k SVG nodes that re-layout on every pan. */
+const bg = document.getElementById("bg"), bctx = bg.getContext("2d"), tip = document.getElementById("tip");
+const RCOLOR = {"Deep Core":"#d9a24a","Core":"#c9843f","Colonies":"#b8767a","Inner Rim":"#9a7cc9","Expansion Region":"#5fa36e","Mid Rim":"#3fa9b5","Outer Rim":"#3d7ec2","Hutt Space":"#9fb04f","Wild Space":"#6a6f8c","Unknown Regions":"#6a6f8c"};
+const REGLBL_COLOR = {core:"#8a6a3a", hutt:"#5d7a4e", nebula:"#7a5d8f"};
+const GAL = (DATA.galaxy || []).map(([name, x, y, grid, sector, region, tier]) => ({name, x, y, grid, sector, region, tier:tier ? 1 : 0, wp:!!((DATA.gwp || {})[name]), color:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55")}));
+{  // mega-region key, once
+  const key = document.getElementById("regkey"), seen = new Set();
+  for (const [name, col] of Object.entries(RCOLOR)) {
+    if (seen.has(col)) continue; seen.add(col);
+    const sp = document.createElement("span"); sp.className = "rk";
+    sp.innerHTML = `<i style="background:${col}"></i>${name === "Wild Space" ? "Wild / Unknown" : name}`;
+    key.appendChild(sp);
+  }
+}
+// spatial hash for hit-testing dots under the pointer
+const HCELL = 100, hgrid = new Map();
+for (const g of GAL) { const c = Math.floor(g.x / HCELL) + "," + Math.floor(g.y / HCELL); if (!hgrid.has(c)) hgrid.set(c, []); hgrid.get(c).push(g); }
+function dotAt(clientX, clientY, radiusPx) {
+  const r = chartRect(), D = fitted(vb), S = r.width / D.w;
+  const ux = D.x + (clientX - r.left) / S, uy = D.y + (clientY - r.top) / S, ru = radiusPx / S;
+  let best = null, bd = ru * ru;
+  for (let cx = Math.floor((ux - ru) / HCELL); cx <= Math.floor((ux + ru) / HCELL); cx++)
+    for (let cy = Math.floor((uy - ru) / HCELL); cy <= Math.floor((uy + ru) / HCELL); cy++)
+      for (const g of (hgrid.get(cx + "," + cy) || [])) { const d = (g.x - ux) ** 2 + (g.y - uy) ** 2; if (d < bd) { bd = d; best = g; } }
+  return best;
+}
+const DOT_R = {close:[3.5, 5], reach:[3.5, 5], wide:[7, 10], far:[12, 17]}, DOT_A = {close:[.7, .95], reach:[.7, .95], wide:[.7, .95], far:[.85, 1]};
+const FONT = "\"Rajdhani\",system-ui,\"Segoe UI\",Roboto,sans-serif";
+let drawReq = 0, labelSet = [];
+function requestDraw() { if (!drawReq) drawReq = requestAnimationFrame(drawBg); }
+function txt(ctx, s, x, y, px, opts) {  // outlined uppercase label, like the SVG text style
+  ctx.font = `${opts.weight || 500} ${px}px ${FONT}`;
+  if ("letterSpacing" in ctx) ctx.letterSpacing = (opts.ls || 0.12) * px + "px";
+  ctx.textAlign = opts.align || "left"; ctx.textBaseline = "alphabetic";
+  const u = s.toUpperCase();
+  if (opts.rot) { ctx.save(); ctx.translate(x, y); ctx.rotate(opts.rot * Math.PI / 180); x = 0; y = 0; }
+  ctx.lineWidth = Math.max(1.5, px * 0.27); ctx.strokeStyle = "#050a10"; ctx.lineJoin = "round"; ctx.strokeText(u, x, y);
+  ctx.fillStyle = opts.fill; ctx.fillText(u, x, y);
+  if (opts.rot) ctx.restore();
+}
+function drawBg() {
+  drawReq = 0;
+  const ctx = bctx, r = chartRect(), dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+  const W = Math.round(r.width * dpr), H = Math.round(r.height * dpr);
+  if (bg.width !== W || bg.height !== H) { bg.width = W; bg.height = H; }
+  const D = fitted(vb), S = r.width / D.w, zoom = chart.dataset.zoom, labels = chart.dataset.labels, k = kFor(vb.w, r.width);
+  const X = x => (x - D.x) * S, Y = y => (y - D.y) * S;
+  const X0 = D.x, Y0 = D.y, X1 = D.x + D.w, Y1 = D.y + D.h;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, r.width, r.height);
+  // grid: fine cells only when they are more than a few pixels apart
+  const grid = (step, color, lw) => {
+    ctx.beginPath();
+    for (let x = Math.floor(X0 / step) * step; x <= X1; x += step) { const px = X(x); ctx.moveTo(px, 0); ctx.lineTo(px, r.height); }
+    for (let y = Math.floor(Y0 / step) * step; y <= Y1; y += step) { const py = Y(y); ctx.moveTo(0, py); ctx.lineTo(r.width, py); }
+    ctx.strokeStyle = color; ctx.lineWidth = lw; ctx.stroke();
+  };
+  if (50 * S > 6) grid(50, "#0f2030", Math.max(0.25, 0.6 * S));  // stroke widths in chart units, as the SVG grid had
+  grid(250, "#15304a", Math.max(0.35, 0.8 * S));
+  const inView = (pts, pad) => pts.some(p => p[0] > X0 - pad && p[0] < X1 + pad && p[1] > Y0 - pad && p[1] < Y1 + pad);
+  const poly = pts => { ctx.beginPath(); ctx.moveTo(X(pts[0][0]), Y(pts[0][1])); for (let i = 1; i < pts.length; i++) ctx.lineTo(X(pts[i][0]), Y(pts[i][1])); };
+  // sector names sit behind everything else
+  if (labels === "sector" || labels === "all") {
+    ctx.globalAlpha = labels === "all" ? 0.17 : 0.55;
+    const px = labels === "all" ? 44 * k * S : 34 * S;
+    for (const [name, x, y] of (DATA.sectors || [])) if (x > X0 && x < X1 && y > Y0 && y < Y1) txt(ctx, name, X(x), Y(y), px, {fill:"#4b7290", ls:0.3, align:"center"});  // .sectlbl
+    ctx.globalAlpha = 1;
+  }
+  // region borders (from the vector map)
+  ctx.lineCap = "round"; ctx.lineJoin = "round";
+  for (const rp of (DATA.regionPaths || [])) {
+    if (!inView(rp.pts, 200)) continue;
+    poly(rp.pts);
+    if (rp.kind === "hutt") { ctx.fillStyle = "rgba(143,191,111,.05)"; ctx.fill(); ctx.setLineDash([]); ctx.strokeStyle = "#3f6a5c"; ctx.globalAlpha = 0.6; }
+    else { ctx.setLineDash([16 * S, 10 * S]); ctx.strokeStyle = "#1e4260"; ctx.globalAlpha = 0.5; }
+    ctx.lineWidth = labels === "all" ? 1.5 : 2.5 * S; ctx.stroke();
+  }
+  ctx.setLineDash([]); ctx.globalAlpha = 1;
+  // hyperlane routes
+  const routeA = (zoom === "close" || zoom === "reach") ? 0.25 : 1;
+  for (const rt of (DATA.routes || [])) {
+    if (!inView(rt.pts, 200)) continue;
+    poly(rt.pts);
+    ctx.strokeStyle = rt.major ? "#35597a" : "#24435f"; ctx.globalAlpha = routeA * (rt.major ? 0.7 : 0.55);
+    ctx.lineWidth = labels === "all" ? (rt.major ? 3 : 1.5) : (rt.major ? 4 : 2) * S; ctx.stroke();
+  }
+  ctx.globalAlpha = 1;
+  // region names (THE CORE, OUTER RIM …)
+  const regA = {close:0.12, reach:0.5, wide:0.65, far:0.8}[zoom] || 0.65;
+  ctx.globalAlpha = regA;
+  for (const rg of (DATA.regions || [])) if (rg.label) txt(ctx, rg.name, X(rg.label[0]), Y(rg.label[1]), (rg.size || 24) * S, {fill:REGLBL_COLOR[rg.kind] || "#2a5f80", ls:0.5, weight:600, align:"center", rot:rg.lrot || 0});
+  ctx.globalAlpha = 1;
+  // planets, batched by colour (one fill per colour per tier)  — .gdot
+  const [r0, r1] = DOT_R[zoom] || DOT_R.wide, [a0, a1] = DOT_A[zoom] || DOT_A.wide, pad = 20 * S;
+  const byColor = [new Map(), new Map()];
+  for (const g of GAL) {
+    if (g.x < X0 - pad || g.x > X1 + pad || g.y < Y0 - pad || g.y > Y1 + pad) continue;
+    const m = byColor[g.tier]; let path = m.get(g.color); if (!path) m.set(g.color, path = new Path2D());
+    const rad = (g.tier ? r1 : r0) * k * S; path.moveTo(X(g.x) + rad, Y(g.y)); path.arc(X(g.x), Y(g.y), rad, 0, 6.2832);
+  }
+  for (const tier of [0, 1]) { ctx.globalAlpha = tier ? a1 : a0; for (const [col, path] of byColor[tier]) { ctx.fillStyle = col; ctx.fill(path); } }
+  ctx.globalAlpha = 1;
+  if (hover) { ctx.beginPath(); ctx.arc(X(hover.x), Y(hover.y), (hover.tier ? r1 : r0) * k * S + 1.5, 0, 6.2832); ctx.strokeStyle = "#8fd0f4"; ctx.lineWidth = 2; ctx.stroke(); }
+  // planet names: the culled set at close zoom; only unsectored outliers at the sector tier  — .gname
+  if (labels === "all") {
+    const px = 11 * k * S;
+    for (const l of labelSet) if (l.x > X0 && l.x < X1 && l.y > Y0 && l.y < Y1) txt(ctx, l.n, X(l.x) + 7 * k * S, Y(l.y) + 3 * k * S, px, {fill:l.k === 1 ? "#54809f" : "#3f6a8c", ls:0.06, weight:l.k === 1 ? 600 : 500});
+  } else if (labels === "sector") {
+    const px = 11 * S;
+    for (const g of GAL) if (!g.sector && g.x > X0 && g.x < X1 && g.y > Y0 && g.y < Y1) txt(ctx, g.name, X(g.x) + 7 * S, Y(g.y) + 3 * S, px, {fill:g.tier ? "#54809f" : "#3f6a8c", ls:0.06});
+  }
+}
+// hover tooltips (mouse only) and taps on background planets
+let hover = null;
+chart.addEventListener("pointermove", e => {
+  if (e.pointerType !== "mouse" || drag) return;
+  const g = dotAt(e.clientX, e.clientY, 9), r = chartRect();
+  if (g !== hover) { hover = g; requestDraw(); }
+  chart.style.cursor = g && g.wp ? "pointer" : "";
+  if (g) { tip.textContent = `${g.name}${g.grid ? " · " + g.grid : ""}${g.sector ? " · " + g.sector + " sector" : ""}${g.region ? " · " + g.region : ""}`; tip.style.display = "block"; tip.style.left = (e.clientX - r.left + 14) + "px"; tip.style.top = (e.clientY - r.top + 12) + "px"; }
+  else tip.style.display = "none";
+});
+chart.addEventListener("pointerleave", () => { tip.style.display = "none"; if (hover) { hover = null; requestDraw(); } });
+
 /* ---- deep zoom: below the close threshold everything is screen-constant, and the
    background-label cull is recomputed per viewport so room opens up as you zoom ---- */
 const CLOSE_W = 900, U0 = 0.85;  // units per screen pixel at which chart-unit sizing starts to shrink
 function kFor(w, px) { return Math.min(1, (w / px) / U0); }
-const gLabels = [];
-let cullTimer = null, lastTier = "";
+const gLabels = GAL.map(g => ({x:g.x, y:g.y, n:g.name, k:g.tier ? 1 : 2}));
+let cullTimer = null;
 function scheduleCull() { clearTimeout(cullTimer); cullTimer = setTimeout(cullLabels, 60); }
 function cullLabels() {
-  const tier = chart.dataset.labels;
-  if (tier !== "all") {
-    if (lastTier === "all") for (const l of gLabels) l.el.classList.remove("cull");
-    lastTier = tier; return;
-  }
-  lastTier = tier;
+  if (chart.dataset.labels !== "all") { labelSet = []; return; }
   const k = kFor(vb.w, chartRect().width);
   const [bx, by, bw, bh] = currentBox(), m = 90 * k;
   const X0 = bx - m, Y0 = by - m, X1 = bx + bw + m, Y1 = by + bh + m;
@@ -393,10 +412,12 @@ function cullLabels() {
   for (const s of DATA.systems) if (s.x > X0 && s.x < X1 && s.y > Y0 && s.y < Y1) claim([s.x - 22 * k, s.y - 18 * k, s.x + (24 + s.name.length * 9) * k, s.y + 32 * k]);
   const inView = gLabels.filter(l => l.x > X0 && l.x < X1 && l.y > Y0 && l.y < Y1);
   inView.sort((a, b) => a.k - b.k || (a.n < b.n ? -1 : a.n > b.n ? 1 : 0));
+  labelSet = [];
   for (const l of inView) {
     const b = [l.x + 7 * k, l.y - 9 * k, l.x + (7 + 7.5 * l.n.length) * k, l.y + 5 * k];
-    if (hit(b)) l.el.classList.add("cull"); else { l.el.classList.remove("cull"); claim(b); }
+    if (!hit(b)) { labelSet.push(l); claim(b); }
   }
+  requestDraw();
 }
 
 /* ---- search ---- */
@@ -486,21 +507,16 @@ function qPick(e) {
 function currentBox() { return chart.getAttribute("viewBox").split(" ").map(Number); }
 // the chart's screen rect, measured only while untransformed (a transformed element reports a moved rect)
 let CR = null;
-function chartRect() { return CR || (CR = chart.getBoundingClientRect()); }
+function chartRect() { return CR || (CR = document.body.getBoundingClientRect()); }
 function fitted(v) {  // the box as actually displayed: v widened/heightened to the screen aspect
   const r = chartRect(), aspect = r.width / r.height;
   let {x, y, w, h} = v;
   if (w / h < aspect) { const nw = h * aspect; x -= (nw - w) / 2; w = nw; } else { const nh = w / aspect; y -= (nh - h) / 2; h = nh; }
   return {x, y, w, h};
 }
-let committed = null, commitTimer = null;
-function applyView() {  // commit: the expensive path (viewBox relayout of every node) — once per gesture
-  clearTimeout(commitTimer); commitTimer = null;
-  chart.style.transform = "";
-  CR = null;
+function applyView() {
   const r = chartRect(), D = fitted(vb);
   chart.setAttribute("viewBox", `${D.x} ${D.y} ${D.w} ${D.h}`);
-  committed = D;
   const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx > 3950 && cx < 5350 && cy > 6050;
   chart.dataset.zoom = vb.w < 900 ? "close" : (vb.w < 2700 && inReach) ? "reach" : vb.w < 4800 ? "wide" : "far";
   chart.dataset.labels = vb.w < CLOSE_W ? "all" : vb.w < 2600 ? "sector" : "none";
@@ -508,27 +524,21 @@ function applyView() {  // commit: the expensive path (viewBox relayout of every
   const k = kFor(vb.w, r.width);
   chart.style.setProperty("--k", k);
   if (k < 0.999) chart.dataset.scaled = "1"; else delete chart.dataset.scaled;
+  requestDraw();
   scheduleCull();
 }
-function previewView() {  // cheap path: slide/scale the composited raster of the committed view
-  if (!committed) return applyView();
-  const r = chartRect(), D = fitted(vb), s = committed.w / D.w;
-  const tx = (committed.x - D.x) * r.width / D.w, ty = (committed.y - D.y) * r.height / D.h;
-  chart.style.transform = `translate(${tx}px,${ty}px) scale(${s})`;
-}
-function scheduleCommit(ms) { clearTimeout(commitTimer); commitTimer = setTimeout(applyView, ms); }
 function setView(v) { vb = {...v}; applyView(); }
 function frame(name) { setView(VIEWS[name]); }
-function zoomAt(factor, cx, cy, commit) {
+function zoomAt(factor, cx, cy) {
   const r = chartRect(), {x:x0, y:y0, w:w0, h:h0} = fitted(vb);
   const px = x0 + (cx - r.left) / r.width * w0, py = y0 + (cy - r.top) / r.height * h0;
   const nw = Math.min(Math.max(vb.w / factor, 90), 8600), f = vb.w / nw;
   vb.w = nw; vb.h = vb.h / f;
   vb.x = px - (px - vb.x) / f; vb.y = py - (py - vb.y) / f;
-  if (commit) applyView(); else { previewView(); scheduleCommit(180); }
+  applyView();
   if (drag) { drag.x = cx; drag.y = cy; drag.vx = vb.x; drag.vy = vb.y; }
 }
-function zoomBy(f) { const r = chartRect(); zoomAt(f, r.left + r.width / 2, r.top + r.height / 2, true); }
+function zoomBy(f) { const r = chartRect(); zoomAt(f, r.left + r.width / 2, r.top + r.height / 2); }
 chart.addEventListener("wheel", e => { e.preventDefault(); zoomAt(e.deltaY < 0 ? 1.15 : 1 / 1.15, e.clientX, e.clientY); }, {passive:false});
 let drag = null, pinch = 0;
 const pointers = new Map();
@@ -552,17 +562,23 @@ window.addEventListener("pointermove", e => {
   const r = chartRect(), k = fitted(vb).w / r.width;
   const dx = (e.clientX - drag.x) * k, dy = (e.clientY - drag.y) * k;
   if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) > 3) { drag.moved = true; chart.classList.add("dragging"); }
-  vb.x = drag.vx - dx; vb.y = drag.vy - dy; previewView();
+  vb.x = drag.vx - dx; vb.y = drag.vy - dy; applyView();
 });
 function endDrag(e) {
   if (e) pointers.delete(e.pointerId);
   pinch = pointers.size === 2 ? pinchSpan().d : 0;
   chart.classList.remove("dragging"); setTimeout(() => { drag = null; }, 0);
-  if (pointers.size === 0 && chart.style.transform) applyView();  // gesture over: commit the real viewBox
 }
+// browsers may still start a page pinch-zoom before touch-action regions are known; the stage owns every touch
+for (const ev of ["touchstart", "touchmove"]) document.getElementById("stage").addEventListener(ev, e => e.preventDefault(), {passive:false});
 window.addEventListener("pointerup", endDrag);
 window.addEventListener("pointercancel", endDrag);
-chart.addEventListener("click", e => { if (!(drag && drag.moved) && (e.target === chart || e.target.tagName === "rect")) closePanel(); });
+chart.addEventListener("click", e => {
+  if ((drag && drag.moved) || e.target !== chart) return;
+  const g = dotAt(e.clientX, e.clientY, e.pointerType === "touch" ? 16 : 10);
+  if (g && g.wp && !plotMode) openGalaxyPanel(g.name, {grid:g.grid, sector:g.sector, region:g.region});  // wpdot
+  else closePanel();
+});
 window.addEventListener("keydown", e => { if (e.key === "Escape") closePanel(); });
 window.addEventListener("resize", () => { CR = null; applyView(); });
 
