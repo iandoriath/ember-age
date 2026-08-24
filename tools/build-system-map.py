@@ -196,8 +196,8 @@ def build_network(data: dict) -> None:
     RELATIONAL = [
         # (name, anchorA, anchorB, along, perp)  pos = A + along*(B-A) + perp*rot90(B-A)
         ("Heptooine", "Sanrafsix", "Jutrand", 0.5, 0.0),
-        ("Fostin Nine", "Sanrafsix", "Syned", 0.5, 0.0),
-        ("Veshet", "Sanrafsix", "Syned", 0.72, 0.3),
+        ("Fostin Nine", "Syned", "Sanrafsix", 0.5, 0.0),
+        ("Veshet", "Syned", "Sanrafsix", 0.5, -0.28),
         ("Teraab", None, None, 605.6, 410.0),  # absolute: the Nursery nebula
     ]
     hero_pos = {}
@@ -326,6 +326,24 @@ def build_network(data: dict) -> None:
         if _is_ghost(nm, wx, wy):
             continue
         galaxy.append([nm, wx, wy, pv[2], sector, region, 0])
+    # ---- spread stacked background dots: several systems sharing one coarse vendor
+    # coordinate render as one anonymous dot — fan them into a small ring instead
+    from collections import defaultdict as _dd
+    _stacks = _dd(list)
+    for i, g in enumerate(galaxy):
+        _stacks[(round(g[1], 1), round(g[2], 1))].append(i)
+    import math as _math
+    GA = _math.pi * (3 - 5 ** 0.5)  # golden angle
+    for key, idxs in _stacks.items():
+        if len(idxs) < 2:
+            continue
+        idxs.sort(key=lambda i: galaxy[i][0])
+        for k, i in enumerate(idxs):
+            r = 7.0 + 4.5 * (k ** 0.5)
+            a = k * GA
+            galaxy[i][1] = round(galaxy[i][1] + r * _math.cos(a), 1)
+            galaxy[i][2] = round(galaxy[i][2] + r * _math.sin(a), 1)
+
     # ---- label de-collision: greedy by tier then name; losers keep dot + tooltip only
     from collections import defaultdict
     CELL = 160.0

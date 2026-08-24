@@ -25,7 +25,7 @@ One real lane threads the Reach: the **Duros Space Run**, which once carried tra
 | ★ | **Darkknell** | The lights come back on: a trinary-sun trade city that never stopped, the Hydian Way's local anchor |
 | ★★ | **Eriadu** | One Hydian hop south: the junction of the **Hydian Way** and the **Rimma Trade Route**. See below |
 
-Side-lanes off the chain, for side arcs and episode worlds: the **Sanrafsix Corridor** (Fostin Nine, Syned, Omwat — a notorious smugglers' road), the **Enarc Run**, and the dead local spurs into old principality space (Chelloa, Byllura, Gazzari).
+Side-lanes off the chain, for side arcs and episode worlds: the **Sanrafsix Corridor** (Syned, Fostin Nine, Omwat — a notorious smugglers' road through the Sanrafsix junction), the **Enarc Run**, and the dead local spurs into old principality space (Chelloa, Byllura, Gazzari).
 
 ## The prize: Eriadu
 

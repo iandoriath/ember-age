@@ -867,19 +867,19 @@
    "name": "Enarc Run"
   },
   {
-   "from": "sanrafsix",
+   "from": "syned",
    "to": "fostin-nine",
    "kind": "smuggler",
    "name": "Sanrafsix Corridor"
   },
   {
    "from": "fostin-nine",
-   "to": "syned",
+   "to": "sanrafsix",
    "kind": "smuggler",
    "name": "Sanrafsix Corridor"
   },
   {
-   "from": "syned",
+   "from": "sanrafsix",
    "to": "omwat",
    "kind": "smuggler",
    "name": "Sanrafsix Corridor"

@@ -26,7 +26,7 @@ One beacon per hop, Bannistar Station back to the Hydian. Assign episode seeds p
 | ★ | Darkknell | — | **ALIVE** | **Never withered.** Canonically "an important trading center for millennia," trinary suns; the Hydian's local anchor. Wither *around* it, never through it |
 | ★★ | Eriadu | Act 2 stakes | **ALIVE** | At 910 BBY: modest, ancient, shellwork jewelry — and already on the Hydian (the lane shifted through Eriadu by 1004 BBY). The Quintad (Corulag oligarch families) canonically arrive ~900 BBY and build "the Coruscant of the Outer Rim." **The crew's relit corridor is part of why the money comes** |
 
-Side-lanes: **Sanrafsix Corridor** (Fostin Nine → Syned → Omwat…, smugglers' road — Yenna Sar's Veshet sits off a dead spur of it), **Enarc Run** (toward Naboo/Rimma), dead principality spurs (Chelloa, Byllura, Gazzari — The Scar fits a Knight Errant battlefield like Gazzari or baradium-scarred Chelloa).
+Side-lanes: **Sanrafsix Corridor** (Syned → Fostin Nine → Sanrafsix → Omwat, smugglers' road — Yenna Sar's Veshet sits off a dead spur of it), **Enarc Run** (toward Naboo/Rimma), dead principality spurs (Chelloa, Byllura, Gazzari — The Scar fits a Knight Errant battlefield like Gazzari or baradium-scarred Chelloa).
 
 ## Canon guardrails (Legends, ~910 BBY)
 

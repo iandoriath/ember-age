@@ -66,10 +66,6 @@
   #chart[data-zoom=wide] .sys .sub,#chart[data-zoom=wide] .sys .hop{display:none}
   #chart[data-zoom=wide] .lanelbl{font-size:20px}
   #chart[data-zoom=far] .lanelbl{display:none}
-  /* compass rose */
-  .rose .roseline{stroke:var(--holo-dim);stroke-width:6;fill:none}
-  .rose .rosehead{fill:var(--holo-dim)}
-  .rose .roselbl{font-size:42px;fill:var(--dim);letter-spacing:.22em}
   /* lanes */
   .lane{fill:none;stroke-linecap:round;transition:opacity .25s,stroke .25s}
   .lane[data-kind=dark]{stroke:var(--holo-dim);stroke-width:1.2;stroke-dasharray:6 7}
@@ -307,17 +303,6 @@ function render() {
     g.addEventListener("pointerleave", () => highlight(null));
     g.addEventListener("click", e => { e.stopPropagation(); if (!(drag && drag.moved) && !plotMode) openPanel(s.id); });
     g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openPanel(s.id); } });
-  }
-  const cor = byId.get("coruscant");
-  if (cor) {
-    const rx = 1500, ry = 7300, ang = Math.atan2(cor.y - ry, cor.x - rx);
-    const rose = el("g", {class:"rose"}, chart);
-    const P = (r, a) => [rx + r * Math.cos(a), ry + r * Math.sin(a)];
-    const [hx, hy] = P(150, ang), [tx, ty] = P(130, ang + Math.PI);
-    el("path", {class:"roseline", d:`M${tx},${ty} L${hx},${hy} M${P(130, ang - Math.PI / 2)} L${P(130, ang + Math.PI / 2)}`}, rose);
-    el("path", {class:"rosehead", d:`M${P(190, ang)} L${P(130, ang - 0.16)} L${P(130, ang + 0.16)} z`}, rose);
-    const rl = (r, a, txt) => { const [x, y] = P(r, a); const n = el("text", {class:"roselbl", x, y: y + 3, "text-anchor":"middle"}, rose); n.textContent = txt; };
-    rl(300, ang, "COREWARD"); rl(270, ang + Math.PI, "RIMWARD"); rl(260, ang - Math.PI / 2, "SPINWARD"); rl(260, ang + Math.PI / 2, "TRAILING");
   }
   renderStatus();
   applyView();
