@@ -358,6 +358,19 @@ def build_network(data: dict) -> None:
         if _is_ghost(nm, wx, wy):
             continue
         galaxy.append([nm, wx, wy, pv[2], sector, region, 0])
+    # ---- worlds the atlas doesn't mark but the chart should: placed beside an anchor dot
+    # (name, anchor, dx, dy, tier) — grid/sector/region are inherited from the anchor; the
+    # sibling-gathering pass below then pulls them onto their system like any other moon
+    EXTRA_GALAXY = [
+        ("Nar Shaddaa", "Nal Hutta", 14.0, -12.0, 1),  # the Smugglers' Moon: Nal Hutta's moon, a world in its own right
+    ]
+    _gidx = {g[0].lower(): g for g in galaxy}
+    for nm, anchor, dx, dy, tier in EXTRA_GALAXY:
+        a = _gidx.get(anchor.lower())
+        if not a or nm.lower() in named or nm.lower() in hero_names:
+            continue
+        named.add(nm.lower())
+        galaxy.append([nm, round(a[1] + dx, 1), round(a[2] + dy, 1), a[3], a[4], a[5], tier])
     # ---- sibling planets of one star system sit together: the atlas scatters them across
     # the sector with sub-grid guesses; on a chart a system is one tight cluster. System
     # membership comes from the Wookieepedia pulls ("system" fact); anchor = the hero or

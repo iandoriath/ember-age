@@ -69784,5 +69784,27 @@
   },
   "lead": "Zoh was a isolated junk planet located in the Sarka sector of the Mid Rim Territories where Jek-14 took refuge. R0-GR visited the world and recorded his time there in his autobiography From Trenches to Wrenches: The Roger Story.",
   "fetched": "2026-08-23"
+ },
+ "Nar Shaddaa": {
+  "title": "Nar Shaddaa/Legends",
+  "url": "https://starwars.fandom.com/wiki/Nar_Shaddaa/Legends",
+  "facts": {
+   "region": "Hutt Space",
+   "system": "Y'Toub system",
+   "routes": "Oktos Route, Ootmian Pabol, Pabol Hutta, Rycar's Run, Shag Pabol",
+   "climate": "Temperate",
+   "terrain": "Modern:, Barren, Vongformed, Scattered urban zones, Historic:, Global decaying urban zones, Ancient:, Global urban zones, Deep History:, Mountains, Rain-forest",
+   "population": "85 billion, 79% Various, 20% Humans, 1% other",
+   "language": "Huttese, Ancient Evocii, Ancient Vippit, Galactic Basic Standard, Yuuzhan Vong",
+   "government": "Organized crime",
+   "affiliation": "Hutt Empire, Galactic Republic, Exchange, Hutt Cartel, Galactic Empire, Yuuzhan Vong Empire"
+  },
+  "lead": "Nar Shaddaa was the largest moon of Nal Hutta. More commonly known as the Vertical City, the Smugglers' Moon, Little Coruscant, or derisively as Little Slugland, and in shorthand slang as Narsh, Nar Shaddaa was similar to Coruscant in that its surface was entirely overgrown with city sprawl for millennia. But unlike Coruscant—which was only relatively rundown and dangerous on the lower and under levels of the world city—Nar Shaddaa was filthy, polluted, and infested with crime everywhere. Nevertheless Nar Shaddaa remained the most important financial and trading center of Hutt Space.",
+  "fetched": "2026-08-24",
+  "image": {
+   "file": "nar-shaddaa.webp",
+   "width": 320,
+   "height": 320
+  }
  }
 }
