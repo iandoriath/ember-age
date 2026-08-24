@@ -54,11 +54,22 @@
   #chart[data-zoom=far] .gdot{r:12px;opacity:.85}
   #chart[data-zoom=far] .gdot.t1{r:17px;opacity:1}
   .gname.t1{fill:#54809f;font-weight:600}
+  .gname.cull{display:none !important}
+  .gz > *,.sys > *{transform:scale(var(--k,1))}
+  #chart[data-labels=all] .lane,#chart[data-labels=all] .route,#chart[data-labels=all] .regborder,#chart[data-labels=all] #nav *{vector-effect:non-scaling-stroke}
+  #chart[data-labels=all] .lane[data-kind=dark]{stroke-width:1.6px}
+  #chart[data-labels=all] .lane[data-kind=smuggler]{stroke-width:1.4px}
+  #chart[data-labels=all] .lane[data-kind=living]{stroke-width:2.6px}
+  #chart[data-labels=all] .lane[data-kind=far],#chart[data-labels=all] .lane[data-kind=fraying]{stroke-width:1.6px}
+  #chart[data-labels=all] .route{stroke-width:1.5px}
+  #chart[data-labels=all] .majorroute{stroke-width:3px}
+  #chart[data-labels=all] .regborder{stroke-width:1.5px}
+  #chart[data-labels=all] .lanelbl{font-size:calc(var(--k,1) * 9px)}
   #search{position:relative;display:inline-block}
   #q{background:rgba(5,10,16,.72);border:1px solid var(--holo-dim);color:var(--holo);padding:.32rem .55rem;font:inherit;font-size:.72rem;letter-spacing:.1em;width:130px;transition:width .2s;outline:none}
   #q:focus{width:230px;border-color:var(--holo)}
   #q::placeholder{color:var(--dim)}
-  #qr{position:absolute;top:calc(100% + 4px);right:0;width:330px;max-height:330px;overflow:auto;background:rgba(5,10,16,.94);border:1px solid var(--holo-dim);backdrop-filter:blur(4px);display:none;z-index:40;text-align:left}
+  #qr{position:fixed;width:330px;max-height:330px;overflow:auto;background:rgba(5,10,16,.94);border:1px solid var(--holo-dim);backdrop-filter:blur(4px);display:none;z-index:40;text-align:left}
   #qr.open{display:block}
   .qrow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:.38rem .6rem;cursor:pointer}
   .qrow b{color:var(--holo);font-weight:600;letter-spacing:.1em;font-size:.78rem;white-space:nowrap}
@@ -74,7 +85,7 @@
   #chart[data-labels=sector] .gname.nosect{display:block}
   .sectlbl{font-size:34px;fill:#4b7290;letter-spacing:.3em;opacity:.55;display:none;text-anchor:middle;pointer-events:none}
   #chart[data-labels=sector] .sectlbl{display:block}
-  #chart[data-labels=all] .sectlbl{display:block;opacity:.17;font-size:44px}
+  #chart[data-labels=all] .sectlbl{display:block;opacity:.17;font-size:calc(var(--k,1) * 44px)}
   #chart[data-zoom=close] .regionlbl{opacity:.12}
   #chart[data-zoom=far] .sys text{display:none}
   #chart[data-zoom=far] .sys.major .lbl{display:block;font-size:58px}
@@ -256,19 +267,20 @@ function render() {
 
   const gg = el("g", {id:"galaxy"}, chart);
   const RCOLOR = {"Deep Core":"#8a6f4d","Core":"#7d6a4e","Colonies":"#5f6472","Inner Rim":"#4d6580","Expansion Region":"#42607e","Mid Rim":"#38587c","Outer Rim":"#2c5074","Wild Space":"#254562","Unknown Regions":"#254562","Hutt Space":"#3f6a5c"};
-  for (const [name, x, y, grid, sector, region, tier, show] of (DATA.galaxy || [])) {
-    const dot = el("circle", {class:"gdot" + (tier ? " t1" : "") + ((DATA.gwp || {})[name] ? " wpdot" : ""), cx:x, cy:y, r:3.2, fill:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55"), "data-n":name}, gg);
+  for (const [name, x, y, grid, sector, region, tier] of (DATA.galaxy || [])) {
+    const gz = el("g", {class:"gz", transform:`translate(${x} ${y})`}, gg);
+    const dot = el("circle", {class:"gdot" + (tier ? " t1" : "") + ((DATA.gwp || {})[name] ? " wpdot" : ""), cx:0, cy:0, r:3.2, fill:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55"), "data-n":name}, gz);
     if ((DATA.gwp || {})[name]) {
       dot.setAttribute("tabindex", 0);
       dot.addEventListener("click", ev => { ev.stopPropagation(); if (!(drag && drag.moved) && !plotMode) openGalaxyPanel(name, {grid, sector, region}); });
     }
     const tip = el("title", {}, dot);
     tip.textContent = `${name}${grid ? " · " + grid : ""}${sector ? " · " + sector + " sector" : ""}${region ? " · " + region : ""}`;
-    if (show) {
-      const nm = el("text", {class:"gname" + (tier ? " t1" : "") + (sector ? "" : " nosect"), x:x + 7, y:y + 3}, gg);
-      nm.textContent = name;
-    }
+    const nm = el("text", {class:"gname" + (tier ? " t1" : "") + (sector ? "" : " nosect"), x:7, y:3}, gz);
+    nm.textContent = name;
+    gLabels.push({el:nm, x, y, n:name, k:tier ? 1 : 2});
   }
+  scheduleCull();
   const gsec = el("g", {id:"sectors"}, chart);
   gg.parentNode.insertBefore(gsec, gg);  // sector names sit behind every dot and label
   for (const [name, x, y, count] of (DATA.sectors || [])) {
@@ -347,6 +359,36 @@ function renderStatus() {
     `<span class="pip ${s.alwaysLit ? "always" : lit.has(s.id) ? "lit" : ""}" onclick="openPanel('${s.id}')" title="${esc(s.name)}"><i></i><span>${s.hop === 0 ? "⌂" : s.hop !== undefined ? s.hop : "★"}</span></span>`).join("");
 }
 
+/* ---- deep zoom: below the close threshold everything is screen-constant, and the
+   background-label cull is recomputed per viewport so room opens up as you zoom ---- */
+const CLOSE_W = 900, U0 = 0.85;  // units per screen pixel at which chart-unit sizing starts to shrink
+function kFor(w, px) { return Math.min(1, (w / px) / U0); }
+const gLabels = [];
+let cullTimer = null, lastTier = "";
+function scheduleCull() { clearTimeout(cullTimer); cullTimer = setTimeout(cullLabels, 60); }
+function cullLabels() {
+  const tier = chart.dataset.labels;
+  if (tier !== "all") {
+    if (lastTier === "all") for (const l of gLabels) l.el.classList.remove("cull");
+    lastTier = tier; return;
+  }
+  lastTier = tier;
+  const k = kFor(vb.w, chart.getBoundingClientRect().width);
+  const [bx, by, bw, bh] = currentBox(), m = 90 * k;
+  const X0 = bx - m, Y0 = by - m, X1 = bx + bw + m, Y1 = by + bh + m;
+  const CELL = 120 * k, buckets = new Map();
+  const cells = b => { const out = []; for (let cx = Math.floor(b[0] / CELL); cx <= Math.floor(b[2] / CELL); cx++) for (let cy = Math.floor(b[1] / CELL); cy <= Math.floor(b[3] / CELL); cy++) out.push(cx + "," + cy); return out; };
+  const hit = b => cells(b).some(c => (buckets.get(c) || []).some(o => !(b[2] < o[0] || b[0] > o[2] || b[3] < o[1] || b[1] > o[3])));
+  const claim = b => { for (const c of cells(b)) { if (!buckets.has(c)) buckets.set(c, []); buckets.get(c).push(b); } };
+  for (const s of DATA.systems) if (s.x > X0 && s.x < X1 && s.y > Y0 && s.y < Y1) claim([s.x - 22 * k, s.y - 18 * k, s.x + (24 + s.name.length * 9) * k, s.y + 32 * k]);
+  const inView = gLabels.filter(l => l.x > X0 && l.x < X1 && l.y > Y0 && l.y < Y1);
+  inView.sort((a, b) => a.k - b.k || (a.n < b.n ? -1 : a.n > b.n ? 1 : 0));
+  for (const l of inView) {
+    const b = [l.x + 7 * k, l.y - 9 * k, l.x + (7 + 7.5 * l.n.length) * k, l.y + 5 * k];
+    if (hit(b)) l.el.classList.add("cull"); else { l.el.classList.remove("cull"); claim(b); }
+  }
+}
+
 /* ---- search ---- */
 const REGLBL = {reach:"Grumani Reach", hydian:"living galaxy", far:"far road"};
 let sIndex = null, sSel = 0, sHits = [];
@@ -378,6 +420,11 @@ function renderResults() {
   if (!sHits.length) { box.classList.remove("open"); box.innerHTML = ""; return; }
   box.innerHTML = sHits.map((e, i) =>
     `<div class="qrow${i === sSel ? " active" : ""}" data-i="${i}"><b>${esc(e.n)}${e.k === 0 ? " ◈" : (DATA.gwp || {})[e.n] ? " ·" : ""}</b><small>${esc(qMeta(e))}</small></div>`).join("");
+  const r = document.getElementById("q").getBoundingClientRect(), W = Math.min(330, innerWidth - 16);
+  box.style.width = W + "px";
+  box.style.left = Math.max(8, Math.min(r.left, innerWidth - W - 8)) + "px";
+  box.style.top = (r.bottom + 4) + "px";
+  box.style.maxHeight = Math.max(120, innerHeight - r.bottom - 16) + "px";
   box.classList.add("open");
   for (const row of box.querySelectorAll(".qrow"))
     row.addEventListener("mousedown", ev => { ev.preventDefault(); qPick(sHits[+row.dataset.i]); });
@@ -420,7 +467,10 @@ function applyView() {
   chart.setAttribute("viewBox", `${x} ${y} ${w} ${h}`);
   const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx > 3950 && cx < 5350 && cy > 6050;
   chart.dataset.zoom = vb.w < 900 ? "close" : (vb.w < 2700 && inReach) ? "reach" : vb.w < 4800 ? "wide" : "far";
-  chart.dataset.labels = vb.w < 900 ? "all" : vb.w < 2600 ? "sector" : "none";
+  chart.dataset.labels = vb.w < CLOSE_W ? "all" : vb.w < 2600 ? "sector" : "none";
+  // k<1 shrinks nodes/labels in chart units so they hold ~constant screen size when zoomed past U0 units/px
+  chart.style.setProperty("--k", kFor(vb.w, r.width));
+  scheduleCull();
 }
 function setView(v) { vb = {...v}; applyView(); }
 function frame(name) { setView(VIEWS[name]); }
@@ -428,7 +478,7 @@ function zoomAt(factor, cx, cy) {
   const r = chart.getBoundingClientRect();
   const [x0, y0, w0, h0] = currentBox();
   const px = x0 + (cx - r.left) / r.width * w0, py = y0 + (cy - r.top) / r.height * h0;
-  const nw = Math.min(Math.max(vb.w / factor, 300), 8600), f = vb.w / nw;
+  const nw = Math.min(Math.max(vb.w / factor, 90), 8600), f = vb.w / nw;
   vb.w = nw; vb.h = vb.h / f;
   vb.x = px - (px - vb.x) / f; vb.y = py - (py - vb.y) / f;
   applyView();

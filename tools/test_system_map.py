@@ -248,3 +248,10 @@ def test_search_feature_present_in_both_editions():
         out = bsm.build(ed, d, tpl)
         assert 'id="q"' in out and "doSearch" in out and "qPick" in out
         assert "__WPBASE__" not in out and ('WPBASE = "wp/"' in out if ed == "player" else 'WPBASE = "player-aids/wp/"' in out)
+
+
+def test_deep_zoom_mode():
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    assert "Math.max(vb.w / factor, 90)" in tpl and "function cullLabels" in tpl and "vector-effect:non-scaling-stroke" in tpl
+    d = load_built()
+    assert all(len(g) == 7 for g in d["galaxy"])  # no static show flag any more

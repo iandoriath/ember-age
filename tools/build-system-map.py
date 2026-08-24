@@ -357,6 +357,46 @@ def build_network(data: dict) -> None:
         if _is_ghost(nm, wx, wy):
             continue
         galaxy.append([nm, wx, wy, pv[2], sector, region, 0])
+    # ---- sibling planets of one star system sit together: the atlas scatters them across
+    # the sector with sub-grid guesses; on a chart a system is one tight cluster. System
+    # membership comes from the Wookieepedia pulls ("system" fact); anchor = the hero or
+    # dot bearing the system's name, else a drawn member, else the group's centroid.
+    gwp_all = json.loads(GWP.read_text(encoding="utf-8")) if GWP.exists() else {}
+    _base = lambda s: re.sub(r"\s+system$", "", s.strip(), flags=re.I).strip().lower()
+    groups = {}
+    for i, g in enumerate(galaxy):
+        e = gwp_all.get(g[0])
+        sysn = (e.get("facts") or {}).get("system") if e and not e.get("missing") else None
+        if sysn:
+            groups.setdefault(_base(sysn), []).append(i)
+    name_idx = {g[0].lower(): i for i, g in enumerate(galaxy)}
+    collapsed = 0
+    for sysname, idxs in groups.items():
+        anchor_i = None
+        if sysname in _hpos_w:
+            ax, ay = _hpos_w[sysname]
+        elif sysname in name_idx:
+            anchor_i = name_idx[sysname]
+            ax, ay = galaxy[anchor_i][1], galaxy[anchor_i][2]
+        else:
+            drawn = [i for i in idxs if galaxy[i][6]]
+            if drawn:
+                anchor_i = drawn[0]
+                ax, ay = galaxy[anchor_i][1], galaxy[anchor_i][2]
+            elif len(idxs) > 1:
+                ax = sum(galaxy[i][1] for i in idxs) / len(idxs)
+                ay = sum(galaxy[i][2] for i in idxs) / len(idxs)
+            else:
+                continue
+        for i in idxs:
+            if i == anchor_i:
+                continue
+            if abs(galaxy[i][1] - ax) > 0.5 or abs(galaxy[i][2] - ay) > 0.5:
+                galaxy[i][1], galaxy[i][2] = round(ax, 1), round(ay, 1)
+                collapsed += 1
+    if collapsed:
+        print(f"  {collapsed} sibling planets gathered onto their systems ({len(groups)} systems known)")
+
     # ---- spread stacked background dots: several systems sharing one coarse vendor
     # coordinate render as one anonymous dot — fan them into a small ring instead
     from collections import defaultdict as _dd
@@ -374,41 +414,6 @@ def build_network(data: dict) -> None:
             a = k * GA
             galaxy[i][1] = round(galaxy[i][1] + r * _math.cos(a), 1)
             galaxy[i][2] = round(galaxy[i][2] + r * _math.sin(a), 1)
-
-    # ---- label de-collision: greedy by tier then name; losers keep dot + tooltip only
-    from collections import defaultdict
-    CELL = 160.0
-    _buckets = defaultdict(list)
-
-    def _cells(x0, y0, x1, y1):
-        for cx in range(int(x0 // CELL), int(x1 // CELL) + 1):
-            for cy in range(int(y0 // CELL), int(y1 // CELL) + 1):
-                yield (cx, cy)
-
-    def _collides(box):
-        x0, y0, x1, y1 = box
-        for c in _cells(*box):
-            for bx0, by0, bx1, by1 in _buckets[c]:
-                if not (x1 < bx0 or x0 > bx1 or y1 < by0 or y0 > by1):
-                    return True
-        return False
-
-    def _claim(box):
-        for c in _cells(*box):
-            _buckets[c].append(box)
-
-    for s in data["systems"]:
-        if s["name"] in hero_pos:
-            hx, hy = W(*hero_pos[s["name"]])
-            _claim((hx - 22, hy - 18, hx + 24 + len(s["name"]) * 9.0, hy + 32))
-    for i in sorted(range(len(galaxy)), key=lambda i: (-galaxy[i][6], galaxy[i][0])):
-        g = galaxy[i]
-        box = (g[1] + 7, g[2] - 9, g[1] + 7 + 7.5 * len(g[0]), g[2] + 5)
-        if _collides(box):
-            g.append(0)
-        else:
-            g.append(1)
-            _claim(box)
 
     data["galaxy"] = galaxy
 
