@@ -20,4 +20,4 @@ Every relit beacon registered under Republic charter, the adjourned seats restor
 
 ## The crack
 
-A Republic that rebuilt itself without an army and without the Rim now wants the Rim back, and has only two instruments to take it with: paperwork, and the Jedi. Every charter it signs out here is an admission that the Adjournment was a choice. The senators who remember making it are very old, and very anxious that the Rim not read the minutes.
+A Republic that rebuilt itself without an army and without the Rim now wants the Rim back, and has only two instruments to take it with: paperwork, and the Jedi. Every charter it signs out here is an admission that the Adjournment was a choice — which is why the four worlds relit along the Duros Space Run this past decade, reconnected in exactly the sense the Adjournment's *"until reconnection"* named, have heard nothing about their seats. Restoring one seat means explaining why the rest stayed suspended. The senators who remember making that choice are very old, and very anxious that the Rim not read the minutes.

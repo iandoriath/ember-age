@@ -4,7 +4,11 @@
 
 ## Who they are
 
-Chartkeepers, rutter-brokers, and lane-runners who never stopped maintaining what could be maintained. The natural patron for a wayfinder crew.
+Chartkeepers, rutter-brokers, and lane-runners who never stopped maintaining what could be maintained. After the Ruusan reformations it was the guild, not the Senate, that led the restoration of the **Corellian Run** — a century of certified relights, stretch by stretch, that made a Lamplighter seal the closest thing the recovery has to a currency. The natural patron for a wayfinder crew.
+
+## The pivot
+
+Ten years ago the guild did the one thing nobody could chart a profit in: with the Corellian Run's restoration still short of Ryloth, it turned aside at **New Cov** and began posting first-lighting prizes down the dead **Duros Space Run** instead. The Core was surprised. The guild's own journeymen were surprised. Four beacons later — Kalarba, Kyrska, Glom Tho, Triffis, every prize paid in full and on time, from somewhere — the questions have mostly been drowned out by the payouts, and the stall at Bannistar has given the skeptics nothing to point at but an unclaimed prize.
 
 ## What they want
 

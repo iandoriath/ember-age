@@ -6,8 +6,14 @@
 
 | Beacon | Status | Corridor it opens | Certified by | First-lighting fee | Who followed through? |
 |---|---|---|---|---|---|
-| **Vesta-9** | **LIT** (90 AR — nobody admits to lighting it) | the Grumani Reach (Duros Space Run, toward Enarc) | Chartmistress Bel Nerra (Lamplighters) | pending session one | Vigil, Admiralty, Lamplighters… and one uncounted observer |
+| **Kalarba** | LIT (early 80s AR) | Duros Space Run, first hop off New Cov | Lamplighters | paid in full | Kajidic traders, then everyone |
+| **Kyrska** | LIT (mid 80s AR) | Duros Space Run, Kalarba → Glom Tho | Lamplighters | paid in full | slow — a quiet world, quietly reconnected |
+| **Glom Tho** | LIT (mid 80s AR) | Duros Space Run toward Triffis | Lamplighters | paid in full | trade before flags — no Republic overture yet |
+| **Triffis** | LIT (89 AR) | Duros Space Run to Bannistar | Lamplighters | **paid to the crew of the *Larksong*** | the Bannistar boom — gantries funded on the next prize |
+| **Vesta-9** | **LIT** (90 AR — nobody admits to lighting it; its prize hung unclaimed for years because the beacon could not be *found*) | the Grumani Reach (Duros Space Run, toward Enarc) | Chartmistress Bel Nerra (Lamplighters) | pending session one | Vigil, Admiralty, Lamplighters… and one uncounted observer |
 | *(next beacon)* | dark | | | | |
+
+*The four paid prizes are the decade of public history behind session one: the guild's surprise pivot off the Corellian Run at New Cov (see [the geography page](../../setting/geography.md) — and, GM-side, the Patronage in [Truths](../truths.md)), four beacons relit, then the stall at Bannistar when Vesta-9 beat every survey sent after it.*
 
 ## The chain — the Duros Space Run, hop by hop
 

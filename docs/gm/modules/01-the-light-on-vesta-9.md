@@ -39,7 +39,7 @@
 
 ## Cold Open — Okrent's Drift
 
-The tableau: a fuel-depot port at the frayed end of a living lane. The crew's ship is bolted, their cargo is impounded, and their Obligations have found the address. Let them stew in it for ten minutes of roleplay before the sky changes — offer each player one small vignette of being broke:
+The tableau: a boomtown that bet on the Run reopening and has spent years losing the bet. Bannistar's fuel gantries were raised new to feed the Lamplighters' advance up the Duros Space Run — four beacons relit in a decade, every prize paid — and then the next beacon, Vesta-9, refused to be found, and Okrent's Drift slid from boomtown into recession. The crew's ship is bolted, their cargo is impounded, and their Obligations have found the address. Let them stew in it for ten minutes of roleplay before the sky changes — offer each player one small vignette of being broke:
 
 - Haggling at the commissary over a meal that costs more than it did yesterday, because everything does.
 - Watching the twice-daily lane departure from the fence line, with somebody else's manifest on it.
@@ -92,7 +92,7 @@ Three problems between the crew and the sky: the impound, the fuel, and the fact
 
 **The fuel.** The depot queue is suddenly the longest line on the planet. A lift-and-jump load runs **150 scrip**. Options: **Average Negotiation** with the depot clerk for deferral against the first-lighting fee; **Average Streetwise** for an off-book half-load at 90; or the kindness below.
 
-**The rivals.** Holding the head of the fuel queue: the @@npc:Larksong crew@@, three spacers in patched vac-jackets who finish each other's sentences, and their captain — @@npc:Captain Vess Marrow@@, who waves at the crew from her boarding ramp like an old friend, because by the third race she genuinely will be. Play her fast, warm, and better-prepared: she names the wager (loser buys the winner's table a round, every port, for a season), and if the crew is short on fuel she splits her allocation without being asked — "I want to *beat* you, not lap you." She is the recurring foil; nothing in this scene should make her an enemy.
+**The rivals.** Holding the head of the fuel queue: the @@npc:Larksong crew@@, three spacers in patched vac-jackets who finish each other's sentences, and their captain — @@npc:Captain Vess Marrow@@, who waves at the crew from her boarding ramp like an old friend, because by the third race she genuinely will be. Everyone in the port knows the *Larksong*: hers is the crew that claimed the Triffis prize, the last one the guild paid before the Run stalled, and the wager board has her as the favorite for this one before she finishes waving. Play her fast, warm, and better-prepared: she names the wager (loser buys the winner's table a round, every port, for a season), and if the crew is short on fuel she splits her allocation without being asked — "I want to *beat* you, not lap you." She is the recurring foil; nothing in this scene should make her an enemy.
 
 **Advantage/Threat menu** — tuned to this scene:
 

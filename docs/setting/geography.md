@@ -8,13 +8,17 @@ The crew starts in the withered interior of the **Grumani sector**, Outer Rim �
 
 ## The lane home: the Duros Space Run
 
-One real lane threads the Reach: the **Duros Space Run**, which once carried trade from the Mid Rim all the way to the **Hydian Way** at **Darkknell**. Its Mid Rim end still trickles — **Churba / New Cov** (where it meets the Corellian Run), **Kalarba**, **Glom Tho**, **Triffis** — and that's the "living lane" whose frayed end the crew is grounded on at Bannistar. Everything beyond is beacon-dark.
+One real lane threads the Reach: the **Duros Space Run**, which once carried trade from the Mid Rim all the way to the **Hydian Way** at **Darkknell**. For most of the last century the Lamplighters' great work was elsewhere: after the Ruusan reformations it was the guild, not the Senate, that led the restoration of the **Corellian Run**, relighting that artery stretch by stretch, and everyone assumed the prizes would keep following it rimward toward Ryloth. Instead, ten years ago, the guild surprised the Core — it began posting first-lighting prizes down the old Duros Space Run, from the Corellian Run junction at **Churba / New Cov** into country the recovery had written off.
+
+The prizes were claimed the way prizes are, one beacon and one corridor at a time: **Kalarba**, **Kyrska**, **Glom Tho**, and finally **Triffis**, whose prize the crew of the *Larksong* collected. The guild paid every one in full, and the reconnected worlds have slowly begun pricing themselves back into the galactic economy — though the Senate, whose Adjournment was worded *"until reconnection,"* has made no overture about restoring their seats.
+
+Then the advance stopped. The next beacon up the lane — **Vesta-9**, serving the long hop beyond Bannistar — has beaten every survey sent after it: dark for sixty years and, apparently, not where the old charts say it should be. Its prize has hung unclaimed for years, and **Bannistar Station** — fuel gantries raised new on the momentum of the advance, with **Okrent's Drift** growing up around their footings — has slid from boomtown to recession, the frayed end of the living lane. Everything beyond is beacon-dark.
 
 **The chain — one relit beacon per hop:**
 
 | # | System | What's there at 90 AR |
 |:-:|---|---|
-| ⌂ | **Bannistar Station** | The great fuel gantries, and **Okrent's Drift** — the port that grew on their back. Campaign start; the frayed end of the living Run |
+| ⌂ | **Bannistar Station** | The great fuel gantries — raised new for the advance up the Run, half-idle since it stalled — and **Okrent's Drift**, the port that grew on their back. Campaign start; the frayed end of the living Run |
 | 1 | **Enarc** | A dark crossroads: the **Enarc Run** (toward Naboo and the Rimma) and the Hutt-ringed **Triellus** both once met the Run here |
 | 2 | **Aquilaris** | Drowned resort world — first of the deep-Reach stops |
 | 3 | **Aplooine** | Quiet agrarian survivor |
