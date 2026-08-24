@@ -995,8 +995,8 @@
    "name": "OUTER RIM",
    "kind": "text",
    "label": [
-    3680,
-    5900
+    3300,
+    6950
    ],
    "size": 110
   },
@@ -1004,8 +1004,26 @@
    "name": "TRAILING SECTORS",
    "kind": "text",
    "label": [
-    3695,
-    6015
+    3320,
+    7070
+   ],
+   "size": 44
+  },
+  {
+   "name": "OUTER RIM",
+   "kind": "text",
+   "label": [
+    3950,
+    1350
+   ],
+   "size": 110
+  },
+  {
+   "name": "NEW TERRITORIES",
+   "kind": "text",
+   "label": [
+    3970,
+    1470
    ],
    "size": 44
   },
