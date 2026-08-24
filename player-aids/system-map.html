@@ -92,7 +92,8 @@
   .frame{position:absolute;inset:10px;border:1px solid var(--holo-faint);pointer-events:none}
   .frame:before,.frame:after{content:"";position:absolute;width:22px;height:22px;border:2px solid var(--holo)}
   .frame:before{left:-1px;top:-1px;border-right:0;border-bottom:0}.frame:after{right:-1px;bottom:-1px;border-left:0;border-top:0}
-  #title{position:absolute;left:26px;top:20px;pointer-events:none}
+  #topbar{position:absolute;left:26px;right:26px;top:14px;display:flex;flex-wrap:wrap;align-items:flex-start;gap:.3rem .8rem;pointer-events:none}
+  #title{pointer-events:none;flex:0 1 auto}
   #title h1{margin:0;font-size:1.35rem;font-weight:700;letter-spacing:.18em;color:var(--holo);text-transform:uppercase}
   #title h1 b{color:var(--ember)}
   #title small{display:block;color:var(--dim);letter-spacing:.3em;font-size:.7rem;text-transform:uppercase}
@@ -105,7 +106,7 @@
   #status .pip.always i{background:var(--gold);border-color:var(--gold)}
   #status .pip:hover{color:var(--ink)}
   #status .cap{margin-right:.4rem;color:var(--holo)}
-  #ctl{position:absolute;right:26px;top:20px;display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end}
+  #ctl{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end;margin-left:auto;pointer-events:auto}
   .hb{background:rgba(5,10,16,.7);border:1px solid var(--holo-dim);color:var(--holo);font:600 .75rem/1 var(--disp);letter-spacing:.15em;text-transform:uppercase;padding:.5rem .7rem;cursor:pointer;backdrop-filter:blur(3px)}
   .hb:hover,.hb:focus-visible{border-color:var(--holo);color:var(--ink);outline:none}
   .hb.on{background:var(--ember);border-color:var(--ember);color:#1b120a}
@@ -136,10 +137,10 @@
     #q:focus{width:200px}
     #panel.open{transform:none}
     #regkey{display:none}
-    #title{left:12px;top:10px;right:12px}
+    #topbar{left:12px;right:12px;top:10px}
     #title h1{font-size:.9rem;letter-spacing:.14em;white-space:nowrap}
     #title small{display:none}
-    #ctl{left:12px;right:12px;top:40px;justify-content:flex-start;gap:.25rem}
+    #ctl{justify-content:flex-start;gap:.25rem;margin-left:0}
     .hb{padding:.4rem .5rem;font-size:.62rem;letter-spacing:.1em}
     #q{width:120px;padding:.28rem .5rem}
   }
@@ -153,6 +154,7 @@
 <div id="fx"></div>
 <div id="hud">
   <div class="frame"></div>
+  <div id="topbar">
   <div id="title"><h1>Nav<b>·</b>Chart — The Grumani Reach</h1><small>Duros Space Run · 90 AR · beacon status live · bearings per the Atlas grid</small></div>
   <div id="ctl">
     <span id="search"><input id="q" placeholder="Search…" autocomplete="off" spellcheck="false" aria-label="search the chart"><div id="qr"></div></span>
@@ -163,6 +165,7 @@
     <button class="hb" id="plotbtn" onclick="togglePlot()">Plot Course</button>
     <button class="hb" onclick="share()">Share</button>
     
+  </div>
   </div>
   <div id="toast"></div>
   <div id="panel"><button class="x" onclick="closePanel()" aria-label="close">✕</button><div id="panel-body"></div></div>
