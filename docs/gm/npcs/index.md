@@ -58,8 +58,8 @@
 | Swoop Ace "Kettle" Maro | Rival | the circuit | [The Reaches](reaches.md) |
 | Pirate Captain of the Quiet + Quiet Pirates | Nemesis + Minions | the Quiet | [The Reaches](reaches.md) |
 | Hullmayor Bessa Rin + Hull-City Militia | Rival + Minions | the Mausoleum Yards | [The Reaches](reaches.md) |
-| Master Yenna Sar | Nemesis | hidden Jedi lineage | [Keepers of the Flame](keepers.md) 🔒 |
-| Coll Bren | Rival | hidden Jedi lineage | [Keepers of the Flame](keepers.md) 🔒 |
+| Master N'Kata Del Gormo | Nemesis | the swamp (no faction) | [Keepers of the Flame](keepers.md) 🔒 |
+| Master Seldra Tane | Nemesis | Jedi Order (Temple envoy) | [Keepers of the Flame](keepers.md) 🔒 |
 | The Patient Master | Nemesis | the true Sith line | [Keepers of the Flame](keepers.md) 🔒 |
 | The Patient Apprentice | Nemesis | the true Sith line | [Keepers of the Flame](keepers.md) 🔒 |
 | The Scar's Echo | Hazard | the dark side, pooled | [Keepers of the Flame](keepers.md) 🔒 |

@@ -10,7 +10,7 @@ They have not been in the Grumani Reach since the Adjournment. The last Jedi any
 
 ## What they want
 
-The gifted children of the reconnected Rim, found early and sent to the Temple. The sealed temples reopened under the Council's authority. And no Jedi in the Rim who answer to no Council — the withdrawn are, to Coruscant, a doctrinal problem that has gone unsupervised for eighty years.
+The gifted children of the reconnected Rim, found early and sent to the Temple. The sealed temples reopened under the Council's authority. And no Jedi in the Rim who answer to no Council — the withdrawn lineages are believed extinct, which makes the rumor of a hermit Master somewhere up the Run, answering to nobody and teaching nobody knows what, a doctrinal problem the Temple has not yet admitted to having.
 
 ## What they offer a wayfinder crew
 
@@ -25,4 +25,4 @@ They are peacekeepers now. Police, with a Senate to answer to and a war they are
 
 And the doctrine has no answer for an adult. The Temple takes children; it cannot take a twenty-year-old who dreams true, and it cannot stop watching one.
 
-*(The Order's face in the Reach, and the Jedi who never left it, are in [Keepers of the Flame](../gm/npcs/keepers.md).)*
+*(The Temple's envoy, and the hermit the Temple does not speak of, are in [Keepers of the Flame](../gm/npcs/keepers.md) — GM only.)*

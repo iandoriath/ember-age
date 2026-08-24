@@ -6,7 +6,7 @@
 
 Crisis forces the constitutional moment: the Rim re-chartered under Coruscant, an Admiralty dominion, a concord of independent leagues — or the players' own third way. Their accumulated fragments, favors, and Force-sensitive allies are the votes.
 
-And hanging over the whole chamber is a codicil almost nobody remembers: **three Masters, met in a sealed temple, can reopen it and seat a chapter of the Order there** — outside Coruscant's reach. With one Master from the Temple and one who never left, who counts as the third is a question worth a war.
+And hanging over the whole chamber is a codicil almost nobody remembers: **three Masters, met in a sealed temple, can reopen it and seat a chapter of the Order there** — outside Coruscant's reach. The Reach holds one Master who is unimpeachably the Temple's, one hermit whose standing Coruscant has every doctrinal reason to deny — if the swamp counts, the Temple does not control the count — and an empty third chair. Who fills it is a question worth a war.
 
 ## The Valley of the Jedi
 
