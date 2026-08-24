@@ -16,16 +16,16 @@ One real lane threads the Reach: the **Duros Space Run**, which once carried tra
 |:-:|---|---|
 | ⌂ | **Bannistar Station** | The great fuel gantries, and **Okrent's Drift** — the port that grew on their back. Campaign start; the frayed end of the living Run |
 | 1 | **Enarc** | A dark crossroads: the **Enarc Run** (toward Naboo and the Rimma) and the Hutt-ringed **Triellus** both once met the Run here |
-| 2 | **Alui** | First of the deep-Reach worlds |
-| 3 | **Verdanth** | Jungle world |
-| 4 | **Aplooine** | Quiet agrarian survivor |
+| 2 | **Aquilaris** | Drowned resort world — first of the deep-Reach stops |
+| 3 | **Aplooine** | Quiet agrarian survivor |
+| 4 | **Verdanth** | Jungle world |
 | 5 | **Sanrafsix** | The great dead hub — its bazaars thrived on the last war's economy and died with it. Junction of the smugglers' **Sanrafsix Corridor** |
 | 6 | **Heptooine** | The Run's last waystop |
 | 7 | **Jutrand** | City-planet; capital of a dead Sith principality, haunted by its own grandeur |
 | ★ | **Darkknell** | The lights come back on: a trinary-sun trade city that never stopped, the Hydian Way's local anchor |
 | ★★ | **Eriadu** | One Hydian hop south: the junction of the **Hydian Way** and the **Rimma Trade Route**. See below |
 
-Side-lanes off the chain, for side arcs and episode worlds: the **Sanrafsix Corridor** (Fostin Nine, Syned, Omwat — a notorious smugglers' road), the **Enarc Run**, and the dead local spurs into old principality space (Chelloa, Byllura, Aquilaris, Gazzari).
+Side-lanes off the chain, for side arcs and episode worlds: the **Sanrafsix Corridor** (Fostin Nine, Syned, Omwat — a notorious smugglers' road), the **Enarc Run**, and the dead local spurs into old principality space (Chelloa, Byllura, Gazzari).
 
 ## The prize: Eriadu
 

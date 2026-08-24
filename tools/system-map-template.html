@@ -241,12 +241,14 @@ function render() {
 
   const gg = el("g", {id:"galaxy"}, chart);
   const RCOLOR = {"Deep Core":"#8a6f4d","Core":"#7d6a4e","Colonies":"#5f6472","Inner Rim":"#4d6580","Expansion Region":"#42607e","Mid Rim":"#38587c","Outer Rim":"#2c5074","Wild Space":"#254562","Unknown Regions":"#254562","Hutt Space":"#3f6a5c"};
-  for (const [name, x, y, grid, sector, region, tier] of (DATA.galaxy || [])) {
+  for (const [name, x, y, grid, sector, region, tier, show] of (DATA.galaxy || [])) {
     const dot = el("circle", {class:"gdot" + (tier ? " t1" : ""), cx:x, cy:y, r:3.2, fill:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55"), "data-n":name}, gg);
     const tip = el("title", {}, dot);
     tip.textContent = `${name}${grid ? " · " + grid : ""}${sector ? " · " + sector + " sector" : ""}${region ? " · " + region : ""}`;
-    const nm = el("text", {class:"gname" + (tier ? " t1" : "") + (sector ? "" : " nosect"), x:x + 7, y:y + 3}, gg);
-    nm.textContent = name;
+    if (show) {
+      const nm = el("text", {class:"gname" + (tier ? " t1" : "") + (sector ? "" : " nosect"), x:x + 7, y:y + 3}, gg);
+      nm.textContent = name;
+    }
   }
   const gsec = el("g", {id:"sectors"}, chart);
   for (const [name, x, y, count] of (DATA.sectors || [])) {

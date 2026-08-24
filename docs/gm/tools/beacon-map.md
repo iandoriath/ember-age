@@ -17,16 +17,16 @@ One beacon per hop, Bannistar Station back to the Hydian. Assign episode seeds p
 |:-:|---|---|:-:|---|
 | ⌂ | Bannistar Station / Okrent's Drift | Session One | — | Canonically a massive refueling depot (attested in Clone Wars-era sources, 900 years later — use freely) |
 | 1 | Enarc | *e.g. The Toll* | — | Real junction: Enarc Run + Triellus (Hutt space ring) — natural Kajidic chokepoint |
-| 2 | Alui | | — | Route stop; blank canvas |
-| 3 | Verdanth | *e.g. The Oracle of Brel (Brel = a settlement moon here?)* | — | Jungle world; otherwise blank |
-| 4 | Aplooine | *e.g. The Ration Engine or The Five Systems* | — | Blank canvas |
+| 2 | Aquilaris | *e.g. The Drowned Resort* | — | Legends ocean world (Sanbra sector): resort seas over dead pleasure piers |
+| 3 | Aplooine | *e.g. The Ration Engine or The Five Systems* | — | Blank canvas |
+| 4 | Verdanth | *e.g. The Oracle of Brel (Brel = a settlement moon here?)* | — | Jungle world; otherwise blank |
 | 5 | Sanrafsix | *e.g. The Memory Market* | — | Great dead trade hub of the New Sith Wars economy — provenance bazaars fit perfectly; junction of the Sanrafsix Corridor |
 | 6 | Heptooine | *e.g. The Mausoleum Yards* | — | Route stop |
 | 7 | Jutrand | *e.g. The Sealed Enclave or The Dead Letter* | — | City-planet, ex-Bactranate (Sith principality) capital — haunted grandeur |
 | ★ | Darkknell | — | **ALIVE** | **Never withered.** Canonically "an important trading center for millennia," trinary suns; the Hydian's local anchor. Wither *around* it, never through it |
 | ★★ | Eriadu | Act 2 stakes | **ALIVE** | At 910 BBY: modest, ancient, shellwork jewelry — and already on the Hydian (the lane shifted through Eriadu by 1004 BBY). The Quintad (Corulag oligarch families) canonically arrive ~900 BBY and build "the Coruscant of the Outer Rim." **The crew's relit corridor is part of why the money comes** |
 
-Side-lanes: **Sanrafsix Corridor** (Fostin Nine → Syned → Omwat…, smugglers' road — Yenna Sar's Veshet sits off a dead spur of it), **Enarc Run** (toward Naboo/Rimma), dead principality spurs (Chelloa, Byllura, Aquilaris, Gazzari — The Scar fits a Knight Errant battlefield like Gazzari or baradium-scarred Chelloa).
+Side-lanes: **Sanrafsix Corridor** (Fostin Nine → Syned → Omwat…, smugglers' road — Yenna Sar's Veshet sits off a dead spur of it), **Enarc Run** (toward Naboo/Rimma), dead principality spurs (Chelloa, Byllura, Gazzari — The Scar fits a Knight Errant battlefield like Gazzari or baradium-scarred Chelloa).
 
 ## Canon guardrails (Legends, ~910 BBY)
 

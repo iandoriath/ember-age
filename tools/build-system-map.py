@@ -195,7 +195,6 @@ def build_network(data: dict) -> None:
     ATLAS_WRONG = {"Heptooine"}  # vendor lists a different Heptooine (B-9, Wild Space)
     RELATIONAL = [
         # (name, anchorA, anchorB, along, perp)  pos = A + along*(B-A) + perp*rot90(B-A)
-        ("Alui", "Enarc", "Verdanth", 0.5, 0.0),
         ("Heptooine", "Sanrafsix", "Jutrand", 0.5, 0.0),
         ("Fostin Nine", "Sanrafsix", "Syned", 0.5, 0.0),
         ("Veshet", "Sanrafsix", "Syned", 0.72, 0.3),
@@ -327,6 +326,41 @@ def build_network(data: dict) -> None:
         if _is_ghost(nm, wx, wy):
             continue
         galaxy.append([nm, wx, wy, pv[2], sector, region, 0])
+    # ---- label de-collision: greedy by tier then name; losers keep dot + tooltip only
+    from collections import defaultdict
+    CELL = 160.0
+    _buckets = defaultdict(list)
+
+    def _cells(x0, y0, x1, y1):
+        for cx in range(int(x0 // CELL), int(x1 // CELL) + 1):
+            for cy in range(int(y0 // CELL), int(y1 // CELL) + 1):
+                yield (cx, cy)
+
+    def _collides(box):
+        x0, y0, x1, y1 = box
+        for c in _cells(*box):
+            for bx0, by0, bx1, by1 in _buckets[c]:
+                if not (x1 < bx0 or x0 > bx1 or y1 < by0 or y0 > by1):
+                    return True
+        return False
+
+    def _claim(box):
+        for c in _cells(*box):
+            _buckets[c].append(box)
+
+    for s in data["systems"]:
+        if s["name"] in hero_pos:
+            hx, hy = W(*hero_pos[s["name"]])
+            _claim((hx - 22, hy - 18, hx + 24 + len(s["name"]) * 9.0, hy + 32))
+    for i in sorted(range(len(galaxy)), key=lambda i: (-galaxy[i][6], galaxy[i][0])):
+        g = galaxy[i]
+        box = (g[1] + 7, g[2] - 9, g[1] + 7 + 7.5 * len(g[0]), g[2] + 5)
+        if _collides(box):
+            g.append(0)
+        else:
+            g.append(1)
+            _claim(box)
+
     data["galaxy"] = galaxy
 
     # ---- nav graph: systems snapped to each polyline in arc order

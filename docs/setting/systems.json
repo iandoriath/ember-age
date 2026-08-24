@@ -43,25 +43,6 @@
    "grid": "O-17"
   },
   {
-   "id": "alui",
-   "name": "Alui",
-   "wpTitle": "Alui system/Legends",
-   "x": 4880,
-   "y": 5610,
-   "region": "reach",
-   "beacon": true,
-   "alwaysLit": false,
-   "hop": 2,
-   "blurb": "First of the deep-Reach worlds.",
-   "gm": {
-    "seed": "",
-    "canon": "Route stop; blank canvas.",
-    "factions": []
-   },
-   "grid": "O-17",
-   "la": "above"
-  },
-  {
    "id": "verdanth",
    "name": "Verdanth",
    "x": 4740,
@@ -69,7 +50,7 @@
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
-   "hop": 3,
+   "hop": 4,
    "blurb": "Jungle world.",
    "gm": {
     "seed": "The Oracle of Brel (Brel = a settlement moon here?)",
@@ -87,7 +68,7 @@
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
-   "hop": 4,
+   "hop": 3,
    "blurb": "Quiet agrarian survivor.",
    "gm": {
     "seed": "The Ration Engine or The Five Systems",
@@ -317,16 +298,17 @@
    "x": 4960,
    "y": 5735,
    "region": "reach",
-   "beacon": false,
+   "beacon": true,
    "alwaysLit": false,
-   "blurb": "A dead principality spur.",
+   "blurb": "Drowned resort world — oceans over old pleasure piers; first of the deep-Reach stops.",
    "gm": {
     "seed": "",
-    "canon": "Knight Errant world.",
+    "canon": "Legends: aquatic resort world (Aquilaris, Sanbra sector). Knight Errant-era Grumani neighbour; promoted onto the Run at its atlas position.",
     "factions": []
    },
    "grid": "O-17",
-   "la": "below"
+   "la": "above",
+   "hop": 2
   },
   {
    "id": "gazzari",
@@ -718,24 +700,24 @@
   },
   {
    "from": "enarc",
-   "to": "alui",
+   "to": "aquilaris",
    "kind": "dark",
    "name": "Duros Space Run"
   },
   {
-   "from": "alui",
-   "to": "verdanth",
-   "kind": "dark",
-   "name": "Duros Space Run"
-  },
-  {
-   "from": "verdanth",
+   "from": "aquilaris",
    "to": "aplooine",
    "kind": "dark",
    "name": "Duros Space Run"
   },
   {
    "from": "aplooine",
+   "to": "verdanth",
+   "kind": "dark",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "verdanth",
    "to": "sanrafsix",
    "kind": "dark",
    "name": "Duros Space Run"
@@ -915,14 +897,8 @@
    "name": "dead spur"
   },
   {
-   "from": "verdanth",
+   "from": "jutrand",
    "to": "byllura",
-   "kind": "dark",
-   "name": "dead spur"
-  },
-  {
-   "from": "alui",
-   "to": "aquilaris",
    "kind": "dark",
    "name": "dead spur"
   },

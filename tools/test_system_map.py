@@ -149,13 +149,13 @@ def test_wookieepedia_merge_is_player_safe():
     d = load()
     wp = {"enarc": {"title": "Enarc/Legends", "url": "https://x/Enarc", "facts": {"region": "Outer Rim", "affiliation": "SECRET-EMPIRE"},
                     "lead": "SECRET-LEAD Enarc was a planet.", "image": {"mime": "image/jpeg", "data": "QUJD"}},
-          "alui": {"missing": True}}
+          "veshet": {"missing": True}}
     merged = bsm.merge_wookieepedia(d, wp)
     enarc = next(s for s in merged["systems"] if s["id"] == "enarc")
     assert enarc["wp"] == {"title": "Enarc/Legends", "url": "https://x/Enarc", "facts": {"region": "Outer Rim"}, "image": {"mime": "image/jpeg", "data": "QUJD"}}
     assert enarc["gm"]["wpLead"].startswith("SECRET-LEAD")
     assert enarc["gm"]["wpFacts"] == {"affiliation": "SECRET-EMPIRE"}
-    assert "wp" not in next(s for s in merged["systems"] if s["id"] == "alui")
+    assert "wp" not in next(s for s in merged["systems"] if s["id"] == "veshet")
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
     player, gm = bsm.build("player", merged, tpl), bsm.build("gm", merged, tpl)
     assert "SECRET-LEAD" not in player and "wpLead" not in player and "SECRET-EMPIRE" not in player
