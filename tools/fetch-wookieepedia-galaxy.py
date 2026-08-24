@@ -17,6 +17,7 @@ leads GM-only. Text is CC BY-SA (Wookieepedia contributors).
 import argparse
 import importlib.util
 import json
+import re
 import sys
 import time
 from datetime import date
@@ -24,6 +25,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs/setting/wookieepedia-galaxy.json"
+IMG_DIR = ROOT / "player-aids/wp"
+THUMB = 320
 LEAD_MAX = 600
 SLEEP = 0.6
 
@@ -109,6 +112,63 @@ def fetch_many(title_by_name):
     return out
 
 
+def slug(name):
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+EXT = {"image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "image/gif": "gif"}
+
+
+def fill_images(out):
+    """Lead images for entries that have none yet: pageimages 50 titles/request, thumbs saved
+    under player-aids/wp/<slug>.<ext>; the map references them by file, never base64."""
+    IMG_DIR.mkdir(parents=True, exist_ok=True)
+    todo = {n: e for n, e in out.items() if not e.get("missing") and "image" not in e and not e.get("noimage")}
+    if not todo:
+        return 0
+    by_title = {}
+    for n, e in todo.items():
+        by_title.setdefault(e["title"], []).append(n)
+    got = 0
+    titles = sorted(by_title)
+    for group in batches(titles, 50):
+        r = api(action="query", titles="|".join(group), prop="pageimages", piprop="thumbnail|name",
+                pithumbsize=THUMB, redirects=1)
+        q = r["query"]
+        back = {}
+        for x in q.get("normalized", []) + q.get("redirects", []):
+            back[x["to"]] = back.get(x["from"], x["from"])
+        seen = set()
+        for page in q.get("pages", []):
+            src_title = back.get(page["title"], page["title"])
+            names = by_title.get(src_title) or by_title.get(page["title"]) or []
+            seen.update(names)
+            thumb = page.get("thumbnail")
+            if not thumb or not thumb.get("source"):
+                for n in names:
+                    out[n]["noimage"] = True
+                continue
+            try:
+                data, mime = wp.fetch_bytes(thumb["source"])
+            except Exception as ex:  # keep going; retry next run
+                print(f"  ! {names}: {ex}")
+                continue
+            ext = EXT.get(mime, "jpg")
+            for n in names:
+                fname = f"{slug(n)}.{ext}"
+                (IMG_DIR / fname).write_bytes(data)
+                out[n]["image"] = {"file": fname, "width": thumb.get("width"), "height": thumb.get("height")}
+                got += 1
+            time.sleep(0.25)
+        for tt in group:
+            for n in by_title.get(tt, []):
+                if n not in seen and "image" not in out[n]:
+                    out[n]["noimage"] = True
+        print(f"  ... images {got}/{len(todo)}")
+        time.sleep(SLEEP)
+    return got
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--box", nargs=4, type=float, metavar=("X0", "Y0", "X1", "Y1"),
@@ -118,6 +178,7 @@ def main(argv=None):
     ap.add_argument("--all", action="store_true", help="every named dot on the chart")
     ap.add_argument("--refresh", action="store_true", help="refetch names already in the file")
     ap.add_argument("--limit", type=int, help="cap the number of new fetches this run")
+    ap.add_argument("--no-images", action="store_true", help="skip the lead-image pass")
     args = ap.parse_args(argv)
 
     bsm = _load("bsm_for_fetch", ROOT / "tools/build-system-map.py")
@@ -135,18 +196,16 @@ def main(argv=None):
     if args.limit:
         todo = todo[:args.limit]
     print(f"{len(targets)} targets in scope, {len(todo)} to fetch")
-    if not todo:
-        print("nothing to do")
-        return 0
-
-    resolved, missing = resolve_many(todo)
-    print(f"resolved {len(resolved)} articles; no article for {len(missing)}")
-    entries = fetch_many(resolved)
-
     out = dict(existing)
-    for n in missing:
-        out[n] = {"missing": True, "fetched": date.today().isoformat()}
-    out.update(entries)
+    if todo:
+        resolved, missing = resolve_many(todo)
+        print(f"resolved {len(resolved)} articles; no article for {len(missing)}")
+        for n in missing:
+            out[n] = {"missing": True, "fetched": date.today().isoformat()}
+        out.update(fetch_many(resolved))
+    if not args.no_images:
+        n_img = fill_images(out)
+        print(f"lead images saved: {n_img} (in {IMG_DIR.relative_to(ROOT)})")
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     got = sum(1 for e in out.values() if not e.get("missing"))
     print(f"wrote {OUT.relative_to(ROOT)} — {got} articles, {sum(1 for e in out.values() if e.get('missing'))} missing, "

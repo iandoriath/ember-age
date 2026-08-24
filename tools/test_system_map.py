@@ -247,3 +247,4 @@ def test_search_feature_present_in_both_editions():
     for ed in ("gm", "player"):
         out = bsm.build(ed, d, tpl)
         assert 'id="q"' in out and "doSearch" in out and "qPick" in out
+        assert "__WPBASE__" not in out and ('WPBASE = "wp/"' in out if ed == "player" else 'WPBASE = "player-aids/wp/"' in out)

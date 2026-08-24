@@ -160,7 +160,8 @@
    },
    "grid": "M-17",
    "la": "above",
-   "major": true
+   "major": true,
+   "capital": true
   },
   {
    "id": "eriadu",
@@ -182,7 +183,8 @@
    },
    "grid": "M-18",
    "la": "left",
-   "major": true
+   "major": true,
+   "capital": true
   },
   {
    "id": "fostin-nine",
@@ -343,7 +345,8 @@
     "factions": []
    },
    "grid": "O-17",
-   "la": "below"
+   "la": "below",
+   "capital": true
   },
   {
    "id": "triffis",
@@ -451,7 +454,8 @@
     "canon": "Off-chart context arrow — the Corellian Run's coreward reach.",
     "factions": []
    },
-   "grid": "M-11"
+   "grid": "M-11",
+   "capital": true
   },
   {
    "id": "bonadan",
@@ -469,7 +473,8 @@
     "canon": "Off-chart context arrow — the Hydian's northern end.",
     "factions": []
    },
-   "grid": "S-3"
+   "grid": "S-3",
+   "capital": true
   },
   {
    "id": "fondor",
@@ -505,7 +510,8 @@
     "canon": "Off-chart context arrow — the Rimma's rimward branch.",
     "factions": []
    },
-   "grid": "M-19"
+   "grid": "M-19",
+   "capital": true
   },
   {
    "id": "terminus",
@@ -559,7 +565,8 @@
      "republic"
     ]
    },
-   "grid": "N-16"
+   "grid": "N-16",
+   "capital": true
   },
   {
    "id": "denon",
@@ -575,7 +582,8 @@
     "canon": "Hydian waypoint.",
     "factions": []
    },
-   "grid": "N-13"
+   "grid": "N-13",
+   "capital": true
   },
   {
    "id": "brentaal",
@@ -595,7 +603,8 @@
     ]
    },
    "grid": "L-9",
-   "major": true
+   "major": true,
+   "capital": true
   },
   {
    "id": "lantillies",
@@ -628,7 +637,8 @@
     "factions": []
    },
    "grid": "P-9",
-   "major": true
+   "major": true,
+   "capital": true
   },
   {
    "id": "teraab",
@@ -688,7 +698,8 @@
     ]
    },
    "grid": "L-9",
-   "major": true
+   "major": true,
+   "capital": true
   }
  ],
  "lanes": [
@@ -771,6 +782,12 @@
    "name": "Corellian Run"
   },
   {
+   "from": "coruscant",
+   "to": "corellia",
+   "kind": "living",
+   "name": "Corellian Run"
+  },
+  {
    "from": "churba",
    "to": "corellia",
    "kind": "living",
@@ -781,18 +798,6 @@
    "to": "bonadan",
    "kind": "living",
    "name": "Hydian Way"
-  },
-  {
-   "from": "eriadu",
-   "to": "fondor",
-   "kind": "living",
-   "name": "Rimma Trade Route"
-  },
-  {
-   "from": "eriadu",
-   "to": "sluis-van",
-   "kind": "living",
-   "name": "Rimma Trade Route"
   },
   {
    "from": "eriadu",
@@ -833,7 +838,7 @@
   {
    "from": "brentaal",
    "to": "lantillies",
-   "kind": "far",
+   "kind": "living",
    "name": "Perlemian Trade Route"
   },
   {
