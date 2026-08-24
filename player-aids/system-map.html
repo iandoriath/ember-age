@@ -11,7 +11,8 @@
     --ember:#e07b39; --gold:#ffb454; --disp:"Rajdhani",system-ui,"Segoe UI",Roboto,sans-serif;
   }
   *{box-sizing:border-box} html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);font:14px/1.45 var(--disp)}
-  #chart{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+  #chart{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none;transform-origin:0 0;will-change:transform}
+  /* gestures move a composited raster of the chart (transform); the viewBox — a full re-layout of ~16k nodes — is committed once per gesture */
   #chart.dragging{cursor:grabbing}
   #chart text{font-family:var(--disp);fill:var(--holo);letter-spacing:.12em;text-transform:uppercase;pointer-events:none;paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
   #chart .sys text{pointer-events:auto}
@@ -55,7 +56,8 @@
   #chart[data-zoom=far] .gdot.t1{r:17px;opacity:1}
   .gname.t1{fill:#54809f;font-weight:600}
   .gname.cull{display:none !important}
-  .gz > *,.sys > *{transform:scale(var(--k,1))}
+  #chart[data-scaled] .gz > *,#chart[data-scaled] .sys > *{transform:scale(var(--k,1))}
+  #chart[data-zoom=far] .grid.fine,#chart[data-zoom=wide] .grid.fine{display:none}  /* sub-pixel grid tiles are invisible far out and cost a lot to tile */
   #chart[data-labels=all] .lane,#chart[data-labels=all] .route,#chart[data-labels=all] .regborder,#chart[data-labels=all] #nav *{vector-effect:non-scaling-stroke}
   #chart[data-labels=all] .lane[data-kind=dark]{stroke-width:1.6px}
   #chart[data-labels=all] .lane[data-kind=smuggler]{stroke-width:1.4px}
@@ -177,7 +179,7 @@
     #ctl{flex-wrap:wrap;justify-content:flex-end;gap:.25rem}
     #title small{display:none}
   }
-  @media (pointer:coarse){#q{font-size:16px}}  /* >=16px: mobile browsers don't auto-zoom the page into the field */
+  @media (pointer:coarse){#q{font-size:16px} #panel,#qr,.hb{backdrop-filter:none}}  /* backdrop blur over a moving raster is a per-frame readback on phones */  /* >=16px: mobile browsers don't auto-zoom the page into the field */
 </style>
 </head>
 <body>
@@ -247,8 +249,8 @@ function render() {
     <filter id="soften" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
     <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#0f2030" stroke-width=".6"/></pattern>
     <pattern id="grid2" width="250" height="250" patternUnits="userSpaceOnUse"><path d="M250 0H0V250" fill="none" stroke="#15304a" stroke-width=".8"/></pattern>`;
-  el("rect", {x:-2400, y:-2400, width:12600, height:12600, fill:"url(#grid)"}, chart);
-  el("rect", {x:-2400, y:-2400, width:12600, height:12600, fill:"url(#grid2)"}, chart);
+  el("rect", {class:"grid fine", x:-2400, y:-2400, width:12600, height:12600, fill:"url(#grid)"}, chart);
+  el("rect", {class:"grid", x:-2400, y:-2400, width:12600, height:12600, fill:"url(#grid2)"}, chart);
 
   const gb = el("g", {id:"regionborders"}, chart);
   for (const rp of (DATA.regionPaths || [])) {
@@ -381,7 +383,7 @@ function cullLabels() {
     lastTier = tier; return;
   }
   lastTier = tier;
-  const k = kFor(vb.w, chart.getBoundingClientRect().width);
+  const k = kFor(vb.w, chartRect().width);
   const [bx, by, bw, bh] = currentBox(), m = 90 * k;
   const X0 = bx - m, Y0 = by - m, X1 = bx + bw + m, Y1 = by + bh + m;
   const CELL = 120 * k, buckets = new Map();
@@ -440,9 +442,8 @@ function renderResults() {
 function qHide() { sHits = []; renderResults(); }
 function focusOn(x, y) {
   // recenter without changing zoom; on phones the panel is a bottom sheet, so aim for the top half
-  const r = chart.getBoundingClientRect(), aspect = r.width / r.height;
-  let {w, h} = vb;
-  if (w / h < aspect) w = h * aspect; else h = w / aspect;  // the box as actually displayed
+  const r = chartRect();
+  const {w, h} = fitted(vb);  // the box as actually displayed
   const fy = matchMedia("(max-width:720px)").matches ? 0.27 : 0.5;
   let cx = 0.5, cy = fy;
   const vv = window.visualViewport;
@@ -483,31 +484,51 @@ function qPick(e) {
 
 /* ---- pan / zoom ---- */
 function currentBox() { return chart.getAttribute("viewBox").split(" ").map(Number); }
-function applyView() {
-  const r = chart.getBoundingClientRect(), aspect = r.width / r.height;
-  let {x, y, w, h} = vb;
+// the chart's screen rect, measured only while untransformed (a transformed element reports a moved rect)
+let CR = null;
+function chartRect() { return CR || (CR = chart.getBoundingClientRect()); }
+function fitted(v) {  // the box as actually displayed: v widened/heightened to the screen aspect
+  const r = chartRect(), aspect = r.width / r.height;
+  let {x, y, w, h} = v;
   if (w / h < aspect) { const nw = h * aspect; x -= (nw - w) / 2; w = nw; } else { const nh = w / aspect; y -= (nh - h) / 2; h = nh; }
-  chart.setAttribute("viewBox", `${x} ${y} ${w} ${h}`);
+  return {x, y, w, h};
+}
+let committed = null, commitTimer = null;
+function applyView() {  // commit: the expensive path (viewBox relayout of every node) — once per gesture
+  clearTimeout(commitTimer); commitTimer = null;
+  chart.style.transform = "";
+  CR = null;
+  const r = chartRect(), D = fitted(vb);
+  chart.setAttribute("viewBox", `${D.x} ${D.y} ${D.w} ${D.h}`);
+  committed = D;
   const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx > 3950 && cx < 5350 && cy > 6050;
   chart.dataset.zoom = vb.w < 900 ? "close" : (vb.w < 2700 && inReach) ? "reach" : vb.w < 4800 ? "wide" : "far";
   chart.dataset.labels = vb.w < CLOSE_W ? "all" : vb.w < 2600 ? "sector" : "none";
   // k<1 shrinks nodes/labels in chart units so they hold ~constant screen size when zoomed past U0 units/px
-  chart.style.setProperty("--k", kFor(vb.w, r.width));
+  const k = kFor(vb.w, r.width);
+  chart.style.setProperty("--k", k);
+  if (k < 0.999) chart.dataset.scaled = "1"; else delete chart.dataset.scaled;
   scheduleCull();
 }
+function previewView() {  // cheap path: slide/scale the composited raster of the committed view
+  if (!committed) return applyView();
+  const r = chartRect(), D = fitted(vb), s = committed.w / D.w;
+  const tx = (committed.x - D.x) * r.width / D.w, ty = (committed.y - D.y) * r.height / D.h;
+  chart.style.transform = `translate(${tx}px,${ty}px) scale(${s})`;
+}
+function scheduleCommit(ms) { clearTimeout(commitTimer); commitTimer = setTimeout(applyView, ms); }
 function setView(v) { vb = {...v}; applyView(); }
 function frame(name) { setView(VIEWS[name]); }
-function zoomAt(factor, cx, cy) {
-  const r = chart.getBoundingClientRect();
-  const [x0, y0, w0, h0] = currentBox();
+function zoomAt(factor, cx, cy, commit) {
+  const r = chartRect(), {x:x0, y:y0, w:w0, h:h0} = fitted(vb);
   const px = x0 + (cx - r.left) / r.width * w0, py = y0 + (cy - r.top) / r.height * h0;
   const nw = Math.min(Math.max(vb.w / factor, 90), 8600), f = vb.w / nw;
   vb.w = nw; vb.h = vb.h / f;
   vb.x = px - (px - vb.x) / f; vb.y = py - (py - vb.y) / f;
-  applyView();
+  if (commit) applyView(); else { previewView(); scheduleCommit(180); }
   if (drag) { drag.x = cx; drag.y = cy; drag.vx = vb.x; drag.vy = vb.y; }
 }
-function zoomBy(f) { const r = chart.getBoundingClientRect(); zoomAt(f, r.left + r.width / 2, r.top + r.height / 2); }
+function zoomBy(f) { const r = chartRect(); zoomAt(f, r.left + r.width / 2, r.top + r.height / 2, true); }
 chart.addEventListener("wheel", e => { e.preventDefault(); zoomAt(e.deltaY < 0 ? 1.15 : 1 / 1.15, e.clientX, e.clientY); }, {passive:false});
 let drag = null, pinch = 0;
 const pointers = new Map();
@@ -528,21 +549,22 @@ window.addEventListener("pointermove", e => {
     return;
   }
   if (!drag) return;
-  const r = chart.getBoundingClientRect(), k = currentBox()[2] / r.width;
+  const r = chartRect(), k = fitted(vb).w / r.width;
   const dx = (e.clientX - drag.x) * k, dy = (e.clientY - drag.y) * k;
   if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) > 3) { drag.moved = true; chart.classList.add("dragging"); }
-  vb.x = drag.vx - dx; vb.y = drag.vy - dy; applyView();
+  vb.x = drag.vx - dx; vb.y = drag.vy - dy; previewView();
 });
 function endDrag(e) {
   if (e) pointers.delete(e.pointerId);
   pinch = pointers.size === 2 ? pinchSpan().d : 0;
   chart.classList.remove("dragging"); setTimeout(() => { drag = null; }, 0);
+  if (pointers.size === 0 && chart.style.transform) applyView();  // gesture over: commit the real viewBox
 }
 window.addEventListener("pointerup", endDrag);
 window.addEventListener("pointercancel", endDrag);
 chart.addEventListener("click", e => { if (!(drag && drag.moved) && (e.target === chart || e.target.tagName === "rect")) closePanel(); });
 window.addEventListener("keydown", e => { if (e.key === "Escape") closePanel(); });
-window.addEventListener("resize", applyView);
+window.addEventListener("resize", () => { CR = null; applyView(); });
 
 /* ---- panel / share / GM (Task 4) ---- */
 let panelId = null;
