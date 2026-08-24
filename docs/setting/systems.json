@@ -53,7 +53,7 @@
    "hop": 4,
    "blurb": "Jungle world.",
    "gm": {
-    "seed": "The Oracle of Brel (Brel = a settlement moon here?)",
+    "seed": "The Oracle of Brel (Brel = a settlement moon here?); N'Kata Del Gormo's swamp — the hermit who left the Order at the Reformation lives here (Temple-suppressed rumor player-side; nothing player-visible)",
     "canon": "Jungle world; otherwise blank.",
     "factions": []
    },
@@ -249,8 +249,8 @@
    "alwaysLit": false,
    "blurb": "A settlement off a dead spur of the Corridor.",
    "gm": {
-    "seed": "Yenna Sar's Veshet",
-    "canon": "Off a dead spur of the Sanrafsix Corridor.",
+    "seed": "The Rade graves",
+    "canon": "Off a dead spur of the Sanrafsix Corridor; the dead withdrawn lineage's four unmarked graves are here.",
     "factions": [
      "lamplighters"
     ]
