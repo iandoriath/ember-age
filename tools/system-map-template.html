@@ -134,6 +134,8 @@
   #title h1{margin:0;font-size:1.35rem;font-weight:700;letter-spacing:.18em;color:var(--holo);text-transform:uppercase}
   #title h1 b{color:var(--ember)}
   #title small{display:block;color:var(--dim);letter-spacing:.3em;font-size:.7rem;text-transform:uppercase}
+  #regkey{position:absolute;right:26px;bottom:22px;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.25rem .8rem;max-width:60%;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim)}
+  #regkey .rk i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:.35rem;vertical-align:middle;opacity:.9}
   #status{position:absolute;left:26px;bottom:22px;display:flex;gap:.6rem;align-items:flex-end;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim)}
   #status .pip{display:flex;flex-direction:column;align-items:center;gap:.25rem;cursor:pointer}
   #status .pip i{width:10px;height:10px;border-radius:50%;border:1px solid var(--holo-dim);background:var(--bg)}
@@ -197,6 +199,7 @@
   <div id="toast"></div>
   <div id="panel"><button class="x" onclick="closePanel()" aria-label="close">✕</button><div id="panel-body"></div></div>
   <div id="status"></div>
+  <div id="regkey"></div>
 </div>
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -266,7 +269,17 @@ function render() {
   }
 
   const gg = el("g", {id:"galaxy"}, chart);
-  const RCOLOR = {"Deep Core":"#8a6f4d","Core":"#7d6a4e","Colonies":"#5f6472","Inner Rim":"#4d6580","Expansion Region":"#42607e","Mid Rim":"#38587c","Outer Rim":"#2c5074","Wild Space":"#254562","Unknown Regions":"#254562","Hutt Space":"#3f6a5c"};
+  const RCOLOR = {"Deep Core":"#d9a24a","Core":"#c9843f","Colonies":"#b8767a","Inner Rim":"#9a7cc9","Expansion Region":"#5fa36e","Mid Rim":"#3fa9b5","Outer Rim":"#3d7ec2","Hutt Space":"#9fb04f","Wild Space":"#6a6f8c","Unknown Regions":"#6a6f8c"};
+  {
+    const key = document.getElementById("regkey");
+    const seen = new Set();
+    for (const [name, col] of Object.entries(RCOLOR)) {
+      if (seen.has(col)) continue; seen.add(col);
+      const sp = document.createElement("span"); sp.className = "rk";
+      sp.innerHTML = `<i style="background:${col}"></i>${name === "Wild Space" ? "Wild / Unknown" : name}`;
+      key.appendChild(sp);
+    }
+  }
   for (const [name, x, y, grid, sector, region, tier] of (DATA.galaxy || [])) {
     const gz = el("g", {class:"gz", transform:`translate(${x} ${y})`}, gg);
     const dot = el("circle", {class:"gdot" + (tier ? " t1" : "") + ((DATA.gwp || {})[name] ? " wpdot" : ""), cx:0, cy:0, r:3.2, fill:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55"), "data-n":name}, gz);

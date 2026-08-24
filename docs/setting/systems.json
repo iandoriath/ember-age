@@ -997,20 +997,6 @@
    "size": 90
   },
   {
-   "name": "THE TERAAB NURSERY",
-   "kind": "nebula",
-   "cx": 5450,
-   "cy": 3690,
-   "rx": 210,
-   "ry": 140,
-   "rot": 15,
-   "label": [
-    5180,
-    3830
-   ],
-   "size": 44
-  },
-  {
    "name": "WILD SPACE",
    "kind": "text",
    "label": [
