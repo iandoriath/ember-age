@@ -18,6 +18,7 @@ TEMPLATE = ROOT / "tools/system-map-template.html"
 OUT_GM = ROOT / "system-map.html"
 OUT_PLAYER = ROOT / "player-aids/system-map.html"
 WOOKIEEPEDIA = ROOT / "docs/setting/wookieepedia.json"
+GWP = ROOT / "docs/setting/wookieepedia-galaxy.json"
 GALAXY_CSV = ROOT / "docs/maps/Star Wars Galaxy Map Grid Coordinates - planets.csv"
 VENDOR_PLANETS = ROOT / "docs/maps/vendor/planets.json"
 VENDOR_LANES = ROOT / "docs/maps/vendor/hyperlanes_db.json"
@@ -50,6 +51,34 @@ def merge_wookieepedia(data: dict, wp: dict) -> dict:
             if gm_facts:
                 gm["wpFacts"] = gm_facts
     return d
+
+
+def merge_galaxy_wookieepedia(data: dict, gwp: dict) -> None:
+    """Background-planet pulls: player-safe facts for everyone (`gwp`), era-spanning
+    leads + remaining facts GM-only (`gwpGm`, stripped from the player edition)."""
+    names = {g[0] for g in data.get("galaxy", [])}
+    pub, gm = {}, {}
+    for n, e in gwp.items():
+        if n not in names or e.get("missing"):
+            continue
+        facts = e.get("facts", {})
+        entry = {"t": e["title"], "u": e["url"]}
+        pf = {k: v for k, v in facts.items() if k in PLAYER_FACTS}
+        if pf:
+            entry["f"] = pf
+        pub[n] = entry
+        ge = {}
+        gmf = {k: v for k, v in facts.items() if k not in PLAYER_FACTS}
+        if e.get("lead"):
+            ge["lead"] = e["lead"]
+        if gmf:
+            ge["f"] = gmf
+        if ge:
+            gm[n] = ge
+    if pub:
+        data["gwp"] = pub
+    if gm:
+        data["gwpGm"] = gm
 
 
 def load_galaxy(exclude_names: set) -> list:
@@ -500,6 +529,8 @@ def load_data() -> dict:
     if WOOKIEEPEDIA.exists():
         data = merge_wookieepedia(data, json.loads(WOOKIEEPEDIA.read_text(encoding="utf-8")))
     build_network(data)
+    if GWP.exists():
+        merge_galaxy_wookieepedia(data, json.loads(GWP.read_text(encoding="utf-8")))
     return data
 
 
@@ -507,6 +538,7 @@ def strip_gm(data: dict) -> dict:
     d = copy.deepcopy(data)
     for s in d["systems"]:
         s.pop("gm", None)
+    d.pop("gwpGm", None)
     return d
 
 

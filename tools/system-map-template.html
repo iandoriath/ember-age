@@ -54,6 +54,8 @@
   #chart[data-zoom=far] .gdot{r:12px;opacity:.85}
   #chart[data-zoom=far] .gdot.t1{r:17px;opacity:1}
   .gname.t1{fill:#54809f;font-weight:600}
+  .wpdot{cursor:pointer}
+  .wpdot:hover{stroke:#8fd0f4;stroke-width:2.5;opacity:1}
   .gname{font-size:11px;fill:#3f6a8c;letter-spacing:.06em;display:none}
   #chart[data-labels=all] .gname{display:block}
   #chart[data-labels=sector] .gname.nosect{display:block}
@@ -238,7 +240,11 @@ function render() {
   const gg = el("g", {id:"galaxy"}, chart);
   const RCOLOR = {"Deep Core":"#8a6f4d","Core":"#7d6a4e","Colonies":"#5f6472","Inner Rim":"#4d6580","Expansion Region":"#42607e","Mid Rim":"#38587c","Outer Rim":"#2c5074","Wild Space":"#254562","Unknown Regions":"#254562","Hutt Space":"#3f6a5c"};
   for (const [name, x, y, grid, sector, region, tier, show] of (DATA.galaxy || [])) {
-    const dot = el("circle", {class:"gdot" + (tier ? " t1" : ""), cx:x, cy:y, r:3.2, fill:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55"), "data-n":name}, gg);
+    const dot = el("circle", {class:"gdot" + (tier ? " t1" : "") + ((DATA.gwp || {})[name] ? " wpdot" : ""), cx:x, cy:y, r:3.2, fill:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55"), "data-n":name}, gg);
+    if ((DATA.gwp || {})[name]) {
+      dot.setAttribute("tabindex", 0);
+      dot.addEventListener("click", ev => { ev.stopPropagation(); if (!(drag && drag.moved) && !plotMode) openGalaxyPanel(name, {grid, sector, region}); });
+    }
     const tip = el("title", {}, dot);
     tip.textContent = `${name}${grid ? " · " + grid : ""}${sector ? " · " + sector + " sector" : ""}${region ? " · " + region : ""}`;
     if (show) {
@@ -385,6 +391,34 @@ window.addEventListener("resize", applyView);
 
 /* ---- panel / share / GM (Task 4) ---- */
 let panelId = null;
+const FACT = {region:"Region", sector:"Sector", system:"System", routes:"Lanes", climate:"Climate", terrain:"Terrain", population:"Population", species:"Species", language:"Language", government:"Government", capital:"Capital", affiliation:"Affiliation"};
+
+function factsHtml(f) {
+  const rows = Object.entries(FACT).filter(([k]) => f && f[k]).map(([k, lbl]) => `<b>${lbl}</b><span>${esc(f[k])}</span>`).join("");
+  return rows ? `<div class="facts">${rows}</div>` : "";
+}
+
+function openGalaxyPanel(name, m) {
+  const e = (DATA.gwp || {})[name]; if (!e) return;
+  panelId = null;
+  let h = `<h2>${esc(name)}</h2>`;
+  h += `<div class="k">Chart</div><p>${[m.grid ? "grid " + m.grid : "", m.sector ? m.sector + " sector" : "", m.region].filter(Boolean).map(esc).join(" · ") || "uncharted"}</p>`;
+  h += `<div class="k">Wookieepedia</div>`;
+  h += factsHtml(e.f);
+  h += `<p><a class="wpl" href="${esc(e.u)}" target="_blank" rel="noopener">${esc(e.t)} ↗</a><span class="cc">text CC BY-SA</span></p>`;
+  <!-- GM:start -->
+  const g = (DATA.gwpGm || {})[name];
+  if (g) {
+    h += `<div class="gm">`;
+    if (g.f) h += `<div class="k">GM — era-spanning facts</div>` + factsHtml(g.f);
+    if (g.lead) h += `<div class="k">GM — Wookieepedia lead (era-spanning)</div><p>${esc(g.lead)}</p>`;
+    h += `</div>`;
+  }
+  <!-- GM:end -->
+  document.getElementById("panel-body").innerHTML = h;
+  document.getElementById("panel").classList.add("open");
+}
+
 function openPanel(id) {
   const s = byId.get(id); if (!s) return;
   panelId = id;
@@ -397,11 +431,9 @@ function openPanel(id) {
   h += `<div class="k">Beacon</div><p>${status}${s.beacon && !s.alwaysLit ? ` &nbsp; <button class="hb ${lit.has(id) ? "on" : ""}" onclick="toggleLit('${id}')">${lit.has(id) ? "Darken" : "Relight"}</button>` : ""}</p>`;
   h += `<div class="k">Chart note</div><p>${esc(s.blurb)}</p>`;
   if (s.wp) {
-    const FACT = {region:"Region", sector:"Sector", system:"System", routes:"Lanes", climate:"Climate", terrain:"Terrain", population:"Population", species:"Species", language:"Language", government:"Government", capital:"Capital", affiliation:"Affiliation"};
     h += `<div class="k">Wookieepedia</div>`;
     if (s.wp.image) h += `<img class="wp" alt="${esc(s.wp.title)}" src="data:${esc(s.wp.image.mime)};base64,${s.wp.image.data}">`;
-    const facts = Object.entries(FACT).filter(([k]) => s.wp.facts && s.wp.facts[k]).map(([k, lbl]) => `<b>${lbl}</b><span>${esc(s.wp.facts[k])}</span>`).join("");
-    if (facts) h += `<div class="facts">${facts}</div>`;
+    h += factsHtml(s.wp.facts);
     h += `<p><a class="wpl" href="${esc(s.wp.url)}" target="_blank" rel="noopener">${esc(s.wp.title)} ↗</a><span class="cc">text CC BY-SA</span></p>`;
   }
   <!-- GM:start -->

@@ -225,3 +225,17 @@ def test_sector_label_tier():
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
     out = bsm.build("player", d, tpl)
     assert "sectlbl" in out and "data-labels" in out
+
+
+def test_galaxy_wookieepedia_merge_is_player_safe():
+    d = load_built()
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    assert "openGalaxyPanel" in tpl and "wpdot" in tpl
+    if "gwp" not in d:
+        return  # no background pulls fetched yet
+    names = {g[0] for g in d["galaxy"]}
+    assert set(d["gwp"]) <= names
+    for e in d["gwp"].values():
+        assert set(e.get("f", {})) <= bsm.PLAYER_FACTS
+    player = bsm.build("player", d, tpl)
+    assert '"gwpGm"' not in player
