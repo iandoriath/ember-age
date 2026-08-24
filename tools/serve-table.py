@@ -10,6 +10,7 @@ server only decides which files are reachable. Windows asks once whether Python 
 connections — allow it on private networks. Ctrl+C stops the server.
 """
 import argparse
+import re
 import socket
 import sys
 from functools import partial
@@ -68,11 +69,26 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_header("Location", "/gm/")
             self.end_headers()
             return
-        if path not in self.routes:
+        target = self.routes.get(path) or self.late_route(path)
+        if target is None:
             self.send_error(404, "Not on the table")
             return
-        self.path = "/" + self.routes[path]
+        self.path = "/" + target
         super().do_GET()
+
+    # character sheets and gazetteer images built while the server is running: resolved at
+    # request time (the startup route table only knows files that existed then). Same
+    # allowlist shape — a bare filename under characters/ or wp/, must exist, nothing else.
+    LATE = re.compile(r"^(gm/player-aids/)?((?:characters/[A-Za-z0-9._-]+\.html)|(?:wp/[A-Za-z0-9._-]+\.(?:jpg|png|webp|gif)))$")
+
+    def late_route(self, path: str):
+        m = self.LATE.match(path)
+        if not m:
+            return None
+        if m.group(1) and "gm/" not in self.routes:
+            return None
+        rel = f"player-aids/{m.group(2)}"
+        return rel if (ROOT / rel).is_file() else None
 
     def log_message(self, fmt, *args):
         sys.stderr.write("  %s  %s\n" % (self.client_address[0], fmt % args))
