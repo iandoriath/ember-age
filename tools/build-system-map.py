@@ -507,6 +507,7 @@ def build_network(data: dict) -> None:
             groups.setdefault(_base(sysn), []).append(i)
     name_idx = {g[0].lower(): i for i, g in enumerate(galaxy)}
     collapsed = 0
+    sib_idx = set()  # dots that sit together because they share a star system (moons, co-orbitals)
     for sysname, idxs in groups.items():
         anchor_i = None
         if sysname in _hpos_w:
@@ -524,6 +525,10 @@ def build_network(data: dict) -> None:
                 ay = sum(galaxy[i][2] for i in idxs) / len(idxs)
             else:
                 continue
+        if len(idxs) > 1 or anchor_i is not None:
+            sib_idx.update(idxs)
+            if anchor_i is not None:
+                sib_idx.add(anchor_i)
         for i in idxs:
             if i == anchor_i:
                 continue
@@ -545,8 +550,9 @@ def build_network(data: dict) -> None:
         if len(idxs) < 2:
             continue
         idxs.sort(key=lambda i: galaxy[i][0])
+        tight = all(i in sib_idx for i in idxs)
         for k, i in enumerate(idxs):
-            r = 7.0 + 4.5 * (k ** 0.5)
+            r = (2.5 + 1.6 * (k ** 0.5)) if tight else (7.0 + 4.5 * (k ** 0.5))
             a = k * GA
             galaxy[i][1] = round(galaxy[i][1] + r * _math.cos(a), 1)
             galaxy[i][2] = round(galaxy[i][2] + r * _math.sin(a), 1)
