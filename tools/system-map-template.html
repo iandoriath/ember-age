@@ -110,7 +110,12 @@
   #pres .pn{display:flex;align-items:center;gap:.4rem}
   #pres .pn .cnt{margin-left:auto;font-size:.62rem;letter-spacing:.2em;color:var(--dim)}
   #pres .pn .hb{padding:.35rem .6rem}
-  @media (max-width:720px){#pres{bottom:52px;padding:.7rem .8rem;max-height:44vh;overflow:auto} #pres .px{font-size:.8rem}}
+  #pres.min .px,#pres.min .pl{display:none}
+  #pres .pt .tg{background:none;border:0;color:var(--dim);font-size:1rem;cursor:pointer;padding:0 .2rem;line-height:1}
+  /* phones, portrait: a full-width bottom sheet with readable type */
+  @media (max-width:720px){#pres{left:12px;right:12px;bottom:52px;width:auto;transform:none;padding:.8rem .9rem;max-height:48vh;overflow:auto} #pres .pt{flex-wrap:wrap;gap:.1rem .6rem} #pres h2{font-size:17px;flex:1 1 100%} #pres .pd{white-space:normal} #pres .pt .tg{margin-left:auto} #pres .px{font-size:16px;line-height:1.5} #pres .pd{font-size:.7rem} #pres .pl{font-size:.66rem} #pres .pn .hb{padding:.5rem .9rem;font-size:.8rem}}
+  /* phones, landscape: a side panel so the map stays visible */
+  @media (max-height:520px) and (orientation:landscape){#pres{left:auto;right:12px;top:52px;bottom:auto;width:min(340px,42vw);transform:none;max-height:calc(100vh - 64px);overflow:auto;padding:.6rem .75rem} #pres h2{font-size:14px} #pres .px{font-size:13px;line-height:1.4} #pres .pd{white-space:normal;font-size:.6rem} #pres .pt{flex-wrap:wrap;gap:.2rem .6rem}}
   #status{position:absolute;left:26px;bottom:22px;display:flex;gap:.6rem;align-items:flex-end;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim)}
   #status .pip{display:flex;flex-direction:column;align-items:center;gap:.25rem;cursor:pointer}
   #status .pip i{width:10px;height:10px;border-radius:50%;border:1px solid var(--holo-dim);background:var(--bg)}
@@ -192,7 +197,7 @@
   </div>
   <div id="toast"></div>
   <div id="panel"><button class="x" onclick="closePanel()" aria-label="close">✕</button><div id="panel-body"></div></div>
-  <div id="pres"><div class="pt"><h2 id="pres-title"></h2><span class="pd" id="pres-date"></span></div><div class="px" id="pres-text"></div><div class="pl" id="pres-legend"></div>
+  <div id="pres"><div class="pt"><h2 id="pres-title"></h2><span class="pd" id="pres-date"></span><button class="tg" onclick="document.getElementById('pres').classList.toggle('min')" aria-label="collapse narration" title="collapse / expand">▾</button></div><div class="px" id="pres-text"></div><div class="pl" id="pres-legend"></div>
     <div class="pn"><button class="hb" onclick="presStep(-1)">◀</button><button class="hb" onclick="presStep(1)">▶</button><span class="cnt" id="pres-cnt"></span><button class="hb" onclick="endPres()">✕</button></div></div>
   <div id="status"></div>
   <div id="regkey"></div>
