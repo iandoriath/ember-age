@@ -1,5 +1,5 @@
 {
- "_doc": "Worlds the atlas doesn't mark but the chart should. anchor: {dot:<existing or earlier extra name>} | {xy:[x,y]} (world units); dx/dy offset; grid/sector/region override the anchor's when given; tier 1 = bright named class. The builder's sibling pass gathers same-system worlds like any moon.",
+ "_doc": "Worlds the atlas doesn't mark but the chart should. anchor: {dot:<existing or earlier extra name>} | {xy:[x,y]} (world units); dx/dy offset; grid/sector/region override the anchor's when given; tier 1 = bright named class. The builder's sibling pass gathers same-system worlds like any moon. promote: names of existing dots raised to tier 1 (bright, always labelled) — worlds players recognise from films and games.",
  "worlds": [
   {
    "name": "Nar Shaddaa",
@@ -802,6 +802,108 @@
    },
    "dx": 21.0,
    "dy": -6.6
+  },
+  {
+   "name": "Bogano",
+   "canon": true,
+   "tier": 1,
+   "grid": "N-3",
+   "sector": "Mieru'kar",
+   "region": "Outer Rim",
+   "note": "player-recognisable world (games)",
+   "anchor": {
+    "xy": [
+     4478,
+     975
+    ]
+   },
+   "dx": -16.0,
+   "dy": 12.0
+  },
+  {
+   "name": "Dxun",
+   "canon": false,
+   "tier": 1,
+   "grid": "O-9",
+   "sector": "Japrael",
+   "region": "Inner Rim",
+   "note": "the Demon Moon of Onderon (KOTOR II)",
+   "anchor": {
+    "dot": "Onderon"
+   },
+   "dx": 16.0,
+   "dy": -12.0
+  },
+  {
+   "name": "Toshara",
+   "canon": true,
+   "tier": 1,
+   "grid": "T-8",
+   "sector": "Cadma",
+   "region": "Outer Rim",
+   "note": "player-recognisable world (games)",
+   "anchor": {
+    "xy": [
+     6817,
+     2908
+    ]
+   },
+   "dx": -16.0,
+   "dy": 12.0
+  },
+  {
+   "name": "Sulon",
+   "canon": false,
+   "tier": 1,
+   "grid": "M-17",
+   "sector": "Sullust",
+   "region": "Outer Rim",
+   "note": "player-recognisable world (games)",
+   "anchor": {
+    "dot": "Sullust"
+   },
+   "dx": 18.0,
+   "dy": 14.0
   }
+ ],
+ "promote": [
+  "Kamino",
+  "Ahch-To",
+  "Crait",
+  "Cantonica",
+  "Kef Bir",
+  "Ajan Kloss",
+  "Hosnian Prime",
+  "Lah'mu",
+  "Wobani",
+  "Mimban",
+  "Vandor",
+  "Savareen",
+  "Malachor V",
+  "Telos IV",
+  "Dxun",
+  "Bracca",
+  "Bogano",
+  "Zeffo",
+  "Nur",
+  "Tanalorr",
+  "Vardos",
+  "Pillio",
+  "Dromund Kaas",
+  "Balmorra",
+  "Voss",
+  "Zakuul",
+  "Odessen",
+  "Makeb",
+  "Akiva",
+  "Toshara",
+  "Sulon",
+  "Mon Cala",
+  "Christophsis",
+  "Sorgan",
+  "Concordia",
+  "Atollon",
+  "Batuu",
+  "Seelos"
  ]
 }

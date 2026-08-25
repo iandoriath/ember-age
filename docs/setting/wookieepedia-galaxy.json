@@ -70723,5 +70723,81 @@
    "width": 320,
    "height": 148
   }
+ },
+ "Dxun": {
+  "title": "Dxun/Legends",
+  "url": "https://starwars.fandom.com/wiki/Dxun/Legends",
+  "facts": {
+   "region": "Inner Rim, The Slice",
+   "sector": "Japrael sector",
+   "system": "Japrael system",
+   "climate": "Temperate",
+   "terrain": "Jungles",
+   "language": "None; formerly: Mando'a",
+   "government": "None",
+   "affiliation": "Mandalorians, Darth Revan's Sith Empire, Galactic Republic, Galactic Empire, New Republic, Galactic Federation of Free Alliances"
+  },
+  "lead": "Dxun , also known as the Demon Moon, was the largest of four moons that orbited the Inner Rim world of Onderon. Like its parent planet, it was covered almost entirely by dense jungles that were populated by many species of fierce, predatory animals.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "dxun.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Sulon": {
+  "title": "Sulon/Legends",
+  "url": "https://starwars.fandom.com/wiki/Sulon/Legends",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Brema sector",
+   "system": "Sullust system",
+   "terrain": "Plains",
+   "population": "200 million",
+   "language": "Sullustese",
+   "affiliation": "Galactic Empire"
+  },
+  "lead": "Sulon was a moon of Sullust with a thriving agricultural program. The surface of the moon was covered with droid-tended fields. The moon was also the homeworld of Jedi Master Kyle Katarn.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "sulon.webp",
+   "width": 318,
+   "height": 320
+  }
+ },
+ "Bogano": {
+  "title": "Bogano",
+  "url": "https://starwars.fandom.com/wiki/Bogano",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Mieru'kar sector",
+   "system": "Bogano system",
+   "terrain": "Mesas, Wetlands"
+  },
+  "lead": "Bogano was a grassy planet in the Outer Rim Territories. It was largely unexplored during the time of the Imperial Era and could not be found on any maps. Its surface was covered in mesas and wetlands. The planet was home to a great Vault built by the ancient Zeffonian civilization. Bogano was important to the Zeffo due the presence of the Binog, a large creature important to Zeffo art and culture. Another reason for the Vault's location was theorized by Jedi Master Eno Cordova to be because of the light electromagnetic winds, although in much smaller conditions than Zeffo.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "bogano.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Toshara": {
+  "title": "Toshara",
+  "url": "https://starwars.fandom.com/wiki/Toshara",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Cadma sector",
+   "system": "Toshaal system",
+   "terrain": "Savanna",
+   "affiliation": "Galactic Empire"
+  },
+  "lead": "Toshara was an arid moon that orbited the planet Toshaal in the Toshaal system located in the Outer Rim Territories covered in windswept plains and canyons with veins of amberine. The native human population, the Tosharans, lived in isolation until the Clone Wars, when a Galactic Republic officer named Sefin Garoby crash-landed on the moon.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "toshara.webp",
+   "width": 320,
+   "height": 320
+  }
  }
 }

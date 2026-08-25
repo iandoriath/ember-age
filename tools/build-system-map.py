@@ -389,6 +389,15 @@ def build_network(data: dict) -> None:
         galaxy.append(row); named.add(nm.lower()); _gidx[nm.lower()] = row; n_extra += 1
     if n_extra:
         print(f"  {n_extra} extra worlds placed from {EXTRA.name}")
+    promote = json.loads(EXTRA.read_text(encoding="utf-8")).get("promote", []) if EXTRA.exists() else []
+    if promote:
+        want = {n.lower() for n in promote}; hit = set()
+        for g in galaxy:
+            if g[0].lower() in want and not g[6]:
+                g[6] = 1; hit.add(g[0].lower())
+        already = {g[0].lower() for g in galaxy if g[0].lower() in want} - hit
+        unknown = want - hit - already
+        print(f"  {len(hit)} worlds promoted to the bright tier" + (f"; not on chart: {sorted(unknown)}" if unknown else ""))
     # ---- sibling planets of one star system sit together: the atlas scatters them across
     # the sector with sub-grid guesses; on a chart a system is one tight cluster. System
     # membership comes from the Wookieepedia pulls ("system" fact); anchor = the hero or
