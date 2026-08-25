@@ -509,8 +509,10 @@ function qPick(e) {
   const q = document.getElementById("q");
   q.value = e.n; q.blur(); qHide();
   focusOn(e.x, e.y);
-  const g = el("g", {class:"ping", transform:`translate(${e.x} ${e.y})`}, chart);
-  el("circle", {r:14}, g); el("circle", {r:14, class:"p2"}, g);
+  // screen-constant locator: the group is scaled by units-per-pixel so the rings are the same size at any zoom
+  const upp = fitted(vb).w / chartRect().width;
+  const g = el("g", {class:"ping", transform:`translate(${e.x} ${e.y}) scale(${upp})`}, chart);
+  el("circle", {r:18}, g); el("circle", {r:18, class:"p2"}, g);
   setTimeout(() => g.remove(), 1900);
   if (e.k === 0) openPanel(e.id);
   else if ((DATA.gwp || {})[e.n]) openGalaxyPanel(e.n, {grid:e.grid, sector:e.sector, region:e.region});
