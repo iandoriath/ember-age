@@ -324,7 +324,7 @@ SEED = {
     ],
     "clocks": [
         {"faction": "Republic", "crack": "Recovered by adjourning the Rim; wants it back on its terms", "value": 0, "notes": ""},
-        {"faction": "Admiralty", "crack": "The founding story requires an enemy → the Annexation", "value": 0, "notes": ""},
+        {"faction": "Admiralty", "crack": "Treaty wing vs the Founding cadre — and the Founding needs an enemy → the Annexation", "value": 0, "notes": ""},
         {"faction": "Vigil", "crack": "Sacrilege vs. Order-reborn — custody of the Awakened → the Vigil breaks", "value": 0, "notes": ""},
         {"faction": "Inheritors", "crack": "Nobody knows whose hand is at the top → the Unveiling", "value": 0, "notes": "Hold the Vesta-9 file on the crew — and its gifted (Dial 3)."},
         {"faction": "Lamplighters", "crack": "The relighting order is for sale → Conclave of Charts (rigged: Denno Pike)", "value": 0, "notes": ""},

@@ -5,7 +5,7 @@
 | Faction | The crack | Clock (0–6) | Feeds the hinge |
 |---|---|:-:|---|
 | Republic | Recovered by adjourning the Rim; wants it back on its terms | 0 | The Founding Conclave's legitimacy fight |
-| Admiralty | The founding story requires an enemy | 0 | **The Annexation** |
+| Admiralty | Treaty wing vs the Founding cadre — and the Founding needs an enemy | 0 | **The Annexation** |
 | Vigil | Sacrilege vs. Order-reborn — custody of the Awakened | 0 | **The Vigil breaks** |
 | Inheritors | Nobody knows whose hand is at the top | 0 | **The Unveiling** → (Dial 1: the culling) |
 | Lamplighters | The relighting order is for sale, price very high | 0 | **The Conclave of Charts** (rigged twice — the patron bought the order, the Inheritors' mole stole it; Dial 3) |

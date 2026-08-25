@@ -28,7 +28,7 @@
 | Envoy-Archivist Calla Merion | Rival | Republic | [Republic & Admiralty](republic-admiralty.md) |
 | Archive Wardens | Minions | Republic | [Republic & Admiralty](republic-admiralty.md) |
 | Lady Admiral Maren Voss | Nemesis | Admiralty | [Republic & Admiralty](republic-admiralty.md) |
-| Bastion Marines | Minions | Admiralty | [Republic & Admiralty](republic-admiralty.md) (also with the *Steadfast* boarding party in [Vesta-9](session-one.md)) |
+| Breakwater Marines | Minions | Admiralty | [Republic & Admiralty](republic-admiralty.md) (also with the *Steadfast* boarding party in [Vesta-9](session-one.md)) |
 | Lieutenant-at-Writs Enna Calloway | Rival | Admiralty | [Republic & Admiralty](republic-admiralty.md) |
 | First Keeper Odran Su | Nemesis | Vigil (hardline) | [Vigil & Inheritors](vigil-inheritors.md) |
 | Keeper Tessa Marn | Rival | Vigil (reform) | [Vigil & Inheritors](vigil-inheritors.md) |

@@ -124,13 +124,13 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
 
 - **Skills:** Athletics 2, Brawl 2, Coercion 3, Cool 2, Discipline 4, Leadership 4, Ranged (Light) 3, Vigilance 3
 - **Talents:** Adversary 1 (*upgrade the difficulty of all combat checks targeting him once*), Tactical Direction (*may spend a maneuver to direct one allied minion group within medium range: that group may immediately perform a free maneuver or add a boost die to its next check*)
-- **Abilities:** Imperial Valour — Bastion doctrine, in this era (*may spend a maneuver so that, until the start of his next turn, any ranged attack that would hit him strikes one ally or helpless enemy engaged with him instead*)
-- **Equipment:** Bastion-forged service pistol (Ranged [Light]; Damage 6; Critical 3; Range [Medium]; Stun setting), reinforced Admiralty dress greatcoat (+1 soak), fleet comlink.
+- **Abilities:** Imperial Valour — Breakwater doctrine, in this era (*may spend a maneuver so that, until the start of his next turn, any ranged attack that would hit him strikes one ally or helpless enemy engaged with him instead*)
+- **Equipment:** Breakwater-forged service pistol (Ranged [Light]; Damage 6; Critical 3; Range [Medium]; Stun setting), reinforced Admiralty dress greatcoat (+1 soak), fleet comlink.
 
 **Chassis:** Lt. Commander Jilan Noor, Age of Rebellion Core Rulebook ("Perlemian Haul") (adjustments: none).
-**Using him:** Reike is ambition wearing the uniform of safety, and the terrifying part is that his pitch is half true — the Republic's weakness did invite the wars. He opens every encounter with procedure (stand to, manifests, inspection) and escalates only when defied, always through his troopers, never his own temper; Tactical Direction means he is most dangerous standing behind a minion group — his boarding party is statted directly below as the Bastion Marines. He wants any gifted crew member entered on the fleet's rolls, which he genuinely believes is protection. Let the party beat him lawfully and he salutes; humiliate him and the *Steadfast* becomes Act 2's Annexation problem with the crew's name in its log.
+**Using him:** Reike is ambition wearing the uniform of safety, and the terrifying part is that his pitch is half true — the Republic's weakness did invite the wars. He opens every encounter with procedure (stand to, manifests, inspection) and escalates only when defied, always through his troopers, never his own temper; Tactical Direction means he is most dangerous standing behind a minion group — his boarding party is statted directly below as the Breakwater Marines. He wants any gifted crew member entered on the fleet's rolls, which he genuinely believes is protection. Let the party beat him lawfully and he salutes; humiliate him and the *Steadfast* becomes Act 2's Annexation problem with the crew's name in its log.
 
-### Bastion Marines (Steadfast boarding party)
+### Breakwater Marines (Steadfast boarding party)
 *Minion — The Admiralty — Reike's naval infantry, the muscle behind his procedure*
 
 > The airlock cycles, the white relic plate comes through in bounds, and the standoff acquires a chain of command.
@@ -147,9 +147,9 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
 
 **Chassis:** Stormtrooper, Age of Rebellion Core Rulebook (also in the Edge of the Empire and Force and Destiny Core Rulebooks and Allies and Adversaries) (adjustments: none).
 **Group math:** Typically deployed in groups of 4. A group of 4 has Wounds 20 (4 × WT 5) and 3 ranks in its group skills (members − 1); one marine is incapacitated each time total damage passes a multiple of 5. As minions they have no strain threshold — strain they suffer is applied as wounds.
-**Using them:** This is Reike's escalation made flesh — he directs them with Tactical Direction from behind cover, so the party's real fight is the group, never the man. In the standoff they hold the airlock ring, set weapons to stun for a registered boarding, and take prisoners cleanly; they stand down the instant Reike orders it, and a marine hesitating at an unlawful order is the crew's best lever. This is the same block as **Bastion Marines** in the Republic & Admiralty file (republic-admiralty.md) — one canonical print; if either copy is ever adjusted, keep the two in sync.
+**Using them:** This is Reike's escalation made flesh — he directs them with Tactical Direction from behind cover, so the party's real fight is the group, never the man. In the standoff they hold the airlock ring, set weapons to stun for a registered boarding, and take prisoners cleanly; they stand down the instant Reike orders it, and a marine hesitating at an unlawful order is the crew's best lever. This is the same block as **Breakwater Marines** in the Republic & Admiralty file (republic-admiralty.md) — one canonical print; if either copy is ever adjusted, keep the two in sync.
 
-### BNS Steadfast, Bastion-pattern Patrol Sloop
+### BNS Steadfast, Breakwater-pattern Patrol Sloop
 *Vehicle — the Admiralty — Commander Joss Reike's inspection sloop*
 
 > The Steadfast does not hail you so much as inform you: a wall of pre-Ruusan naval steel that was keeping this watch before your grandmother was born, crewed by people who never stopped believing in uniforms.
@@ -171,8 +171,8 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
   - Forward-mounted concussion missile launcher (Fire Arc Forward; Damage 7; Critical 3; Range [Short]; Blast 4, Breach 4, Guided 3, Slow-Firing 1)
 
 **Chassis:** Imperial System Patrol Craft (IPV-1), Beyond the Rim (adjustments: none).
-**Era notes:** No hyperdrive, no navicomputer — Bastion-pattern sloops travel clamped to fleet tenders, which is why one can "drop in" on a beacon relight and why, once the tender casts off, it can hold the station but never chase anyone up the lane. It carries no ion weapons: a "disabled" quarry is throttled turbolaser fire, narrated, never a dice-off.
-**Using it:** The Steadfast is a wall, not a duel — its turbolasers outrange and outhit anything a wayfinder crew owns, so the scene it creates is procedural: stand to, present manifests, submit to boarding (those ten passenger berths are Reike's inspection party, or your cell). Let the players win against the paperwork, the commander's rigidity, or the tender schedule, never the guns. This is the same block as **BNS Steadfast, Bastion-pattern Patrol Sloop** in the ships file ([ships.md](../../mechanics/ships.md)) — one canonical print; if either copy is ever adjusted, keep the two in sync.
+**Era notes:** No hyperdrive, no navicomputer — Breakwater-pattern sloops travel clamped to fleet tenders, which is why one can "drop in" on a beacon relight and why, once the tender casts off, it can hold the station but never chase anyone up the lane. It carries no ion weapons: a "disabled" quarry is throttled turbolaser fire, narrated, never a dice-off.
+**Using it:** The Steadfast is a wall, not a duel — its turbolasers outrange and outhit anything a wayfinder crew owns, so the scene it creates is procedural: stand to, present manifests, submit to boarding (those ten passenger berths are Reike's inspection party, or your cell). Let the players win against the paperwork, the commander's rigidity, or the tender schedule, never the guns. This is the same block as **BNS Steadfast, Breakwater-pattern Patrol Sloop** in the ships file ([ships.md](../../mechanics/ships.md)) — one canonical print; if either copy is ever adjusted, keep the two in sync.
 
 ### Chartmistress Bel Nerra
 *Rival — The Lamplighters — certifier of the relight, recruiter of witnesses*

@@ -21,7 +21,7 @@ A few Jedi refuse the recall. They stay where the anger is thickest and do the o
 
 ## 12–35 AR — The Long Exhale
 
-The fleets are decommissioned faster than anything replaces them, and sector defense devolves to local squadrons. Around 20 AR, one admiral over the shipyard worlds of the Bastion cluster simply declines the recall order, citing piracy — and is quietly ignored. [Her heirs never leave.](../factions/admiralty.md)
+The fleets are decommissioned faster than anything replaces them, and sector defense devolves to local squadrons. Around 20 AR, one admiral simply declines the recall order, citing piracy — and instead of sailing coreward to be scrapped, takes her squadron, tenders and yard-ships rimward down the Enarc Run, past the last living relay, to quiet, half-charted Naboo. She is quietly ignored, then quietly forgotten. [Her heirs never leave.](../factions/admiralty.md) The pocket they fortify — fed by the plasma seams their engineers open — they come to call **the Breakwater**, and the living galaxy will not hear from it again for seventy years.
 
 ## 35–58 AR — The Quiet Ledger
 
