@@ -69806,5 +69806,922 @@
    "width": 320,
    "height": 320
   }
+ },
+ "Bracca": {
+  "title": "Bracca",
+  "url": "https://starwars.fandom.com/wiki/Bracca",
+  "facts": {
+   "region": "Mid Rim Territories, The Slice",
+   "sector": "Lantillian sector",
+   "system": "Bracca system",
+   "routes": "Randon Run",
+   "climate": "Temperate",
+   "terrain": "Junkyards, Plains",
+   "affiliation": "Galactic Republic, Scrapper Guild, Galactic Empire, New Republic, First Order"
+  },
+  "lead": "Bracca was an inhospitable junkyard planet located in the galaxy's Mid Rim. Located close to various hyperspace routes, Bracca's strategic importance made it the site of a campaign during the Clone Wars. During the reign of the Galactic Empire, the Scrapper Guild operated on the planet, breaking down starship wreckage and selling the components to the Empire.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "bracca.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Concordia": {
+  "title": "Concordia/Legends",
+  "url": "https://starwars.fandom.com/wiki/Concordia/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Mandalore sector",
+   "system": "Mandalore system",
+   "climate": "Temperate",
+   "terrain": "Forests, Mountains",
+   "language": "Mando'a (Concordian)",
+   "government": "Clan-appointed governor",
+   "affiliation": "Mandalorians, Death Watch"
+  },
+  "lead": "Concordia was one of two moons orbiting the Outer Rim world of Mandalore. A verdant moon possessing dense forests, the Mandalorians originally settled Concordia as an agricultural colony. However, during the time of war, the Mandalorians established a vast number of mining camps on the moon in search of beskar iron, a nearly indestructible metal ore unique to Mandalore and its orbiting satellite. The excessive strip-mining operation almost destroyed Concordia's forests, though by 22 BBY, they were making a recovery.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "concordia.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Cademimu": {
+  "title": "Cademimu V",
+  "url": "https://starwars.fandom.com/wiki/Cademimu_V",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Cademimu sector",
+   "system": "Cademimu system",
+   "routes": "Celanon Spur",
+   "terrain": "Urban",
+   "population": "10 billion",
+   "affiliation": "Galactic Republic"
+  },
+  "lead": "Cademimu V, also simply referred to as Cademimu, was a planet in the Cademimu sector along the Celanon Spur.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "cademimu.webp",
+   "width": 320,
+   "height": 198
+  }
+ },
+ "Garel": {
+  "title": "Garel",
+  "url": "https://starwars.fandom.com/wiki/Garel",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Lothal sector",
+   "system": "Garel system",
+   "routes": "Outer Rim trade route",
+   "climate": "Temperate",
+   "terrain": "Deserts, Mountains, Urban",
+   "government": "Governorship",
+   "affiliation": "Galactic Empire, Garel City cell, First Order"
+  },
+  "lead": "Garel was a planet located in the Garel system of the Outer Rim Territories' Lothal sector that was controlled by the Galactic Empire. It was the homeworld of Imperial Supply Master Yogar Lyste. Garel was several minutes away from the planet Lothal via hyperspace travel. Several years before the Battle of Yavin, the rebel Phoenix Cell established a temporary hiding place on Garel. The rebels were forced to move after the Empire discovered their presence and assembled a fleet to attack them. Many years later, individuals such as Ushos O.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "garel.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Bahryn": {
+  "title": "Bahryn",
+  "url": "https://starwars.fandom.com/wiki/Bahryn",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Arkanis sector",
+   "system": "Geonosis system",
+   "climate": "Cold",
+   "terrain": "Glaciers"
+  },
+  "lead": "Bahryn was one of fifteen moons that orbited the Outer Rim planet Geonosis. In stark contrast to Geonosis' arid climate, Bahryn was a frigid world, reaching temperatures that only those who were adapted to the intense cold, such as the moon's native bonzami, were capable of surviving. In 3 BBY, the Lasat Garazeb Orrelios of the Spectres and Agent Alexsandr Kallus of the Galactic Empire crashed on Bahryn after an ambush on an ICM-092792 and became trapped on the moon, but both were eventually rescued.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "bahryn.webp",
+   "width": 320,
+   "height": 210
+  }
+ },
+ "Castilon": {
+  "title": "Castilon",
+  "url": "https://starwars.fandom.com/wiki/Castilon",
+  "facts": {
+   "region": "Mid Rim Territories, Western Reaches",
+   "sector": "Tashtor sector",
+   "system": "Castilon system",
+   "terrain": "Islands",
+   "species": "Chelidae",
+   "language": "Chelidae language, Galactic Basic Standard"
+  },
+  "lead": "Castilon was an ocean planet located in the galaxy's Mid Rim, and was located close to the borders of Wild Space. It was the homeworld of the Chelidae species and the Colossus—an aircraft refueling station, as well as a destination for racers—was located on Castilon, along with several other inhabited structures. During the Cold War between the New Republic and the First Order, Resistance Commander Poe Dameron sent the pilot-turned-spy Kazuda Xiono on a mission to Castilon.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "castilon.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Dalna": {
+  "title": "Dalna",
+  "url": "https://starwars.fandom.com/wiki/Dalna",
+  "facts": {
+   "region": "Outer Rim Territories, Galactic Frontier, Occlusion Zone",
+   "sector": "Dalnan sector",
+   "system": "Dalnan system",
+   "routes": "Dalna—Sump hyperlane",
+   "population": "About a million",
+   "government": "Dalnan government"
+  },
+  "lead": "Dalna was a small planet located in the Dalnan sector of the Outer Rim Territories. Known for its agriculture, Dalna was inhabited by a settler population known as the Dalnans, who distrusted outsiders and rarely traveled offworld. During the High Republic Era, it was home to the Path of the Open Hand cult, who believed that using the Force would cause death and destruction and therefore hated the Jedi Order.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "dalna.webp",
+   "width": 320,
+   "height": 255
+  }
+ },
+ "Ajan Kloss": {
+  "title": "Ajan Kloss",
+  "url": "https://starwars.fandom.com/wiki/Ajan_Kloss",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "Cademimu sector",
+   "system": "Ajara system",
+   "climate": "Humid",
+   "terrain": "Forests, Cliffs and valleys, Grottos, Oceans",
+   "affiliation": "Kloss, New Republic, Resistance"
+  },
+  "lead": "Ajan Kloss was a jungle moon located in the Cademimu sector of the Outer Rim Territories, in grid square L-5 on the Standard Galactic Grid, orbiting the gas giant Ajara. It was notably used by Luke Skywalker to train Leia Organa in the way of the Jedi Order as his first student of a new generation of Jedi and later the Resistance during the war against the First Order, who established a base there.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "ajan-kloss.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Arvala-7": {
+  "title": "Arvala-7",
+  "url": "https://starwars.fandom.com/wiki/Arvala-7",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Sevetta sector",
+   "system": "Arvala system",
+   "terrain": "Desert, hardened mud",
+   "population": "Less than 1 million"
+  },
+  "lead": "Arvala-7 was a remote desert planet with a barren, rocky surface and breathable atmosphere in the Arvala system in the Sevetta sector of the Outer Rim Territories. During the New Republic Era, it was home to the Ugnaught Kuiil, who lived on a moisture farm with his blurrg. Sometime after Kuiil moved to the world, a group of Nikto mercenaries built an encampment, inside which they kept captive a youngling of the same species as the late Jedi Master Yoda.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "arvala-7.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Exegol": {
+  "title": "Exegol",
+  "url": "https://starwars.fandom.com/wiki/Exegol",
+  "facts": {
+   "region": "Unknown Regions",
+   "sector": "None",
+   "system": "Exegol system",
+   "climate": "Hot and dry, stormy",
+   "terrain": "Rocky, Desert",
+   "language": "Galactic Basic Standard, ur-Kittât",
+   "affiliation": "Sith, Sith Eternal, Galactic Empire, First Order"
+  },
+  "lead": "Exegol (also spelled Ixigul in ancient texts) was a dark desert planet located within the Unknown Regions that, according to legend, was the hidden redoubt world of the Sith. It was the throneworld of the Sith Lord Darth Sidious, publicly known as Emperor Palpatine, and the Sith Eternal by 35 ABY. It was also the birthplace of Supreme Leader Snoke, whom Sidious created to rule the First Order while concealing himself in the shadows.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "exegol.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Corvus": {
+  "title": "Corvus",
+  "url": "https://starwars.fandom.com/wiki/Corvus",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Tion Cluster, Cronese Mandate",
+   "system": "Corvus system",
+   "terrain": "Forest, Foothills, Cracked crust",
+   "population": "3.7 million",
+   "language": "Galactic Basic Standard",
+   "government": "Governorship",
+   "affiliation": "Galactic Empire, Elsbeth's regime"
+  },
+  "lead": "Corvus was a forest planet in the Outer Rim Territories that was home to the fortified city of Calodan.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "corvus.webp",
+   "width": 320,
+   "height": 146
+  }
+ },
+ "Eiram": {
+  "title": "Eiram",
+  "url": "https://starwars.fandom.com/wiki/Eiram",
+  "facts": {
+   "region": "Outer Rim Territories, Galactic Frontier",
+   "sector": "Tunka sector, Dalnan sector",
+   "system": "Eiram system",
+   "routes": "Dalna—Sump hyperlane",
+   "terrain": "Oceans",
+   "government": "Monarchy",
+   "affiliation": "Galactic Republic"
+  },
+  "lead": "Eiram was a terrestrial planet located in the Eiram system, alongside its twin planet E'ronoh. It had a vast array of oceans, with a society based on their vast seas.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "eiram.webp",
+   "width": 320,
+   "height": 119
+  }
+ },
+ "E'ronoh": {
+  "title": "E'ronoh",
+  "url": "https://starwars.fandom.com/wiki/E%27ronoh",
+  "facts": {
+   "region": "Outer Rim Territories, Galactic Frontier",
+   "sector": "Dalnan sector",
+   "system": "Eiram system",
+   "routes": "Dalna—Sump hyperlane",
+   "terrain": "Rocky",
+   "government": "Monarchy"
+  },
+  "lead": "E'ronoh was a planet in the Eiram system that was the twin world of Eiram. E'ronoh was a dusty and rocky desert world. The world once had rivers, but they dried away, leaving marks of where they once flowed. As the star system was a waypoint in hyperspace, E'ronoh competed with its twin for control of the area, with both planets entering into war at many times over their histories.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "e-ronoh.webp",
+   "width": 320,
+   "height": 302
+  }
+ },
+ "Glavis": {
+  "title": "Glavis Ringworld",
+  "url": "https://starwars.fandom.com/wiki/Glavis_Ringworld",
+  "facts": {
+   "region": "Core Worlds",
+   "sector": "Caisra sector",
+   "system": "Glavis system",
+   "routes": "Hydian Way",
+   "population": "1.63 million"
+  },
+  "lead": "The Glavis Ringworld, also known simply as Glavis, was a space station that encircled a small star in the Glavis system of the Core Worlds. It was located in grid quare M-11 of the Standard Galactic Grid and lay on the Hydian Way between Exodeen and the Trellen system. The station's surface was constantly bathed in sunlight. Day and night cycles artificially occurred due to the sunlight that passed through the open loop. Eclipse plates slid over its sunward face, providing an artificial night cycle. The ring featured areas open to space on both surfaces, although there was atmosphere.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "glavis.webp",
+   "width": 320,
+   "height": 135
+  }
+ },
+ "Daiyu": {
+  "title": "Daiyu",
+  "url": "https://starwars.fandom.com/wiki/Daiyu",
+  "facts": {
+   "region": "Expansion Region, The Slice",
+   "sector": "Hocatar sector",
+   "system": "Daiyu system",
+   "routes": "Nanth'ri Trade Route",
+   "climate": "Temperate, rainy",
+   "terrain": "City-scape",
+   "language": "Galactic Basic Standard",
+   "affiliation": "Galactic Empire"
+  },
+  "lead": "Daiyu was a temperate planet located in the Hocatar sector of the galaxy's Expansion Region. It was under the control of the Galactic Empire during its reign.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "daiyu.webp",
+   "width": 320,
+   "height": 254
+  }
+ },
+ "Ferrix": {
+  "title": "Ferrix",
+  "url": "https://starwars.fandom.com/wiki/Ferrix",
+  "facts": {
+   "region": "New Territories, Outer Rim Territories",
+   "sector": "Xappyh sector, Free Trade sector",
+   "system": "Morlani system",
+   "routes": "Hydian Way",
+   "climate": "Cold",
+   "terrain": "Mountains, Mesas, Wastelands, Farmlands, Junkyards, Cities",
+   "population": "1.5 million",
+   "affiliation": "Galactic Republic, Daughters of Ferrix, Sons of Ferrix, Galactic Empire, Consolidated Holdings of Preox-Morlana Corporation, Ferrix resistance movement"
+  },
+  "lead": "Ferrix was a sparsely populated reddish, barren, rocky planet with very little plant life located in the Morlani system of the Free Trade sector, a formerly corporate-run subsector of the Xappyh sector at an intersecting portion of the Outer Rim Territories and the New Territories. Located at the coordinates Q-3 of the Standard Galactic Grid, the planet was situated at a junction between multiple important Hyperspace lanes including the Hydian Way.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "ferrix.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Aldhani": {
+  "title": "Aldhani",
+  "url": "https://starwars.fandom.com/wiki/Aldhani",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "Cademimu sector",
+   "system": "Aldhani system",
+   "routes": "Celanon Spur",
+   "climate": "Temperate",
+   "terrain": "Grassy highlands, Mountains, Valleys",
+   "language": "Aldhani",
+   "affiliation": "Galactic Empire"
+  },
+  "lead": "Aldhani was a planet located in the Cademimu sector in the Outer Rim Territories of the galaxy. During the Imperial Era, Cassian Andor joined the Aldhani rebel infiltration team for a mission to rob the Imperial base there.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "aldhani.webp",
+   "width": 320,
+   "height": 135
+  }
+ },
+ "At Attin": {
+  "title": "At Attin",
+  "url": "https://starwars.fandom.com/wiki/At_Attin",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Quelii sector, A113",
+   "system": "At Attin system",
+   "terrain": "Forests, Hills",
+   "language": "Galactic Basic StandardIthorese",
+   "government": "At Attin's government",
+   "affiliation": "Galactic Republic"
+  },
+  "lead": "At Attin was a forested planet in the Outer Rim Territories with an orderly population that was isolated from the wider galaxy as part of the Great Work of the Old Republic. Citizens worked diligently as analysts with the help of service droids of various types on the world beneath the Barrier, which hid the world and blocked any view of the stars from the surface. By the New Republic Era, At Attin was known to the wider galaxy as a legendary treasure planet among the Jewels of the Old Republic.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "at-attin.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Brendok": {
+  "title": "Brendok",
+  "url": "https://starwars.fandom.com/wiki/Brendok",
+  "facts": {
+   "region": "Wild Space",
+   "system": "Brendok system",
+   "terrain": "Mountains, Forests",
+   "affiliation": "Brendok coven"
+  },
+  "lead": "Brendok was a mysterious planet located in Wild Space. During the Emergences in 232 BBY, the planet was rendered lifeless but life had mysteriously returned to the planet by 148 BBY. A Jedi expedition led by Jedi Master Indara was sent to investigate the cause of this mysterious rejuvenation, which was attributed to a vergence in the Force. The Jedi encountered Mother Aniseya and her coven, leading to a conflict that destroyed the coven and the adoption of survivor Verosha Aniseya by the Jedi Order. Osha's sister Mae-ho Aniseya vowed revenge on the Jedi involved in her coven's demise.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "brendok.webp",
+   "width": 320,
+   "height": 180
+  }
+ },
+ "At Achrann": {
+  "title": "At Achrann",
+  "url": "https://starwars.fandom.com/wiki/At_Achrann",
+  "facts": {
+   "terrain": "Forests"
+  },
+  "lead": "At Achrann was a planet within the galaxy that was one of the nine Jewels of the Old Republic. During the New Republic Era, At Achrann was a war-torn world that greatly resembled At Attin, with two tribes—the Troik and Hattan—fighting each other. The Myykian Neel encountered the human Hayna on At Achrann.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "at-achrann.webp",
+   "width": 320,
+   "height": 156
+  }
+ },
+ "Raada": {
+  "title": "Raada",
+  "url": "https://starwars.fandom.com/wiki/Raada",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "D'Astan sector",
+   "system": "Raada system",
+   "terrain": "Crop fields, Rocky outcrops, Desolate hills, Caves",
+   "population": "Several hundred",
+   "language": "Galactic Basic Standard",
+   "affiliation": "Galactic Empire"
+  },
+  "lead": "Raada was a remote farming moon in the Outer Rim Territories. The moon was originally controlled by farmers, but the Galactic Empire eventually took control of the moon for their own propagation of nutrient-rich plants to be used in rations.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "raada.webp",
+   "width": 320,
+   "height": 181
+  }
+ },
+ "Numidian Prime": {
+  "title": "Numidian Prime",
+  "url": "https://starwars.fandom.com/wiki/Numidian_Prime",
+  "facts": {
+   "region": "Mid Rim Territories",
+   "sector": "Bright Jewel sector",
+   "system": "Numidian system",
+   "routes": "Celanon Spur",
+   "climate": "Warm",
+   "terrain": "Jungles, Rivers, Seas, Swamps"
+  },
+  "lead": "Numidian Prime was a jungle planet on the edge of the galaxy's Mid Rim, known for being a haven for smugglers and thieves, such as the bounty hunter Shenda Mol, who operated a stronghold on the planet. During the Imperial Era, the future smuggler Han Solo won the Millennium Falcon from the gambler Lando Calrissian on Numidian Prime.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "numidian-prime.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Kijimi": {
+  "title": "Kijimi",
+  "url": "https://starwars.fandom.com/wiki/Kijimi",
+  "facts": {
+   "region": "Mid Rim Territories, The Slice",
+   "sector": "Bryx sector",
+   "system": "Kijimi system",
+   "climate": "Frigid",
+   "terrain": "Mountains",
+   "population": "310,000,000 (estimated)",
+   "affiliation": "Dai Bendu, Ashiga Clan, Galactic Empire, First Order (occupation)"
+  },
+  "lead": "Kijimi was a frigid mountainous planet located in the Bryx sector of the galaxy's Mid Rim, in grid square R-8 on the Standard Galactic Grid. Once famed for its marked spirituality, the planet became known as a haven for criminals and lawlessness. It was the homeworld of Zorii Bliss, leader of the smuggling gang known as the Spice Runners of Kijimi. During their journey around the galaxy to uncover Jedi artifacts, Karr Nuq Sin and RZ-7 briefly stopped at Kijimi City to refuel the yacht Avadora.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "kijimi.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Pasaana": {
+  "title": "Pasaana",
+  "url": "https://starwars.fandom.com/wiki/Pasaana",
+  "facts": {
+   "region": "Expansion Region",
+   "sector": "Ombakond sector",
+   "system": "Middian system",
+   "climate": "Arid",
+   "terrain": "Desert, Dunes, Shrubland, Mountains",
+   "population": "500,000 (approx.)",
+   "species": "Aki-Aki",
+   "language": "Aki-Aki language"
+  },
+  "lead": "Pasaana was a desert planet located in the Expansion Region's Ombakond sector that was the homeworld of the Aki-Aki species. Although the world was home to a great many dangers, the planet was famous for its joyous Festival of the Ancestors that attracted visitors from surrounding sectors.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "pasaana.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Kef Bir": {
+  "title": "Kef Bir",
+  "url": "https://starwars.fandom.com/wiki/Kef_Bir",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Zuma sector, Moddell sector",
+   "system": "Endor system",
+   "terrain": "Grassland islands, Ocean",
+   "population": "40",
+   "language": "Galactic Basic Standard"
+  },
+  "lead": "Kef Bir, designated IX3244-C and known as the Ocean Moon of Endor, was an ocean moon orbiting the gas giant Endor in the Endor system. Jannah, a human female and freedom fighter who (by the time of the First Order-Resistance War) had led a tribe of brave and noble warriors, lived on the moon after the tribe mutinied at the Battle of Ansett Island. Some of the debris and wreckage of the second Death Star fell onto Kef Bir.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "kef-bir.webp",
+   "width": 320,
+   "height": 316
+  }
+ },
+ "Ordo Eris": {
+  "title": "Ordo Eris",
+  "url": "https://starwars.fandom.com/wiki/Ordo_Eris",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Chorlian sector",
+   "system": "Ordo Eris system",
+   "affiliation": "Haxion Brood"
+  },
+  "lead": "Ordo Eris was an asteroid space station that served as the stronghold of the Haxion Brood criminal syndicate. Located on the edge of the Outer Rim Territories in the Chorlian sector, Ordo Eris was constructed in an asteroid remnant of a planet which had once been destroyed by ancient superweapons.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "ordo-eris.webp",
+   "width": 320,
+   "height": 142
+  }
+ },
+ "Nevarro": {
+  "title": "Nevarro",
+  "url": "https://starwars.fandom.com/wiki/Nevarro",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Dalicron sector",
+   "system": "Nevarro system",
+   "terrain": "Ashen, Rocky, Volcanic",
+   "population": "4 million",
+   "language": "Galactic Basic Standard, Jawaese, Aqualish, Anzellan",
+   "government": "High Magistrate",
+   "affiliation": "Galactic Empire, Bounty Hunters' Guild, Imperial Remnant, Gideon's Imperial remnant"
+  },
+  "lead": "Nevarro was a volcanic planet located in the Dalicron sector of the Outer Rim Territories connected to the Hydian Way. It was covered with vast regions of lava fields as well as volcanic rivers, and had a capital city which became a port and a trading hub in the Outer Rim.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "nevarro.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Hetzal Prime": {
+  "title": "Hetzal Prime",
+  "url": "https://starwars.fandom.com/wiki/Hetzal_Prime",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Savareen sector",
+   "system": "Hetzal system",
+   "routes": "Corellian Run",
+   "population": "Billions",
+   "government": "Hetzalian government",
+   "affiliation": "Galactic Republic, Nihil, First Order"
+  },
+  "lead": "Hetzal Prime, also known simply as Hetzal, was a planet located in the Savareen sector of the Outer Rim Territories. The planet and its system were within the territory of the Galactic Republic during the High Republic Era, containing a total population of forty billion. It was also said that every crop in the galaxy could grow somewhere on the worlds of Hetzal. During that time, Hetzal Prime and the rest of its system were threatened by anomalies from hyperspace, which became known as the Great Hyperspace Disaster.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "hetzal-prime.webp",
+   "width": 320,
+   "height": 303
+  }
+ },
+ "Morak": {
+  "title": "Morak",
+  "url": "https://starwars.fandom.com/wiki/Morak",
+  "facts": {
+   "region": "Wild Space",
+   "sector": "Unincorporated",
+   "system": "Morak system",
+   "climate": "Warm",
+   "terrain": "Mountains, Rainforests, Freshwater archipelagos",
+   "population": "Less than 5 million",
+   "affiliation": "Imperial Remnant, Morak Imperial remnants"
+  },
+  "lead": "Morak was a jungle planet located in Wild Space inhabited by humans as well as members of the Shydopp species. The planet served as a secret mining hub for the Imperial Remnant, which processed rhydonium in a secret refinery, which was tightly guarded by remnants composed by shoretroopers and stormtroopers.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "morak.webp",
+   "width": 320,
+   "height": 136
+  }
+ },
+ "Niamos": {
+  "title": "Niamos",
+  "url": "https://starwars.fandom.com/wiki/Niamos",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Vorzyd sector",
+   "system": "Niamos system",
+   "routes": "Salin Corridor",
+   "terrain": "Beach, Oceans",
+   "affiliation": "Galactic Empire"
+  },
+  "lead": "Niamos was a world in the Vorzyd sector of the Outer Rim Territories dominated by oceans and beaches. Initially a place for those lying low to gravitate to, it soon fell under the occupation of the Galactic Empire, which laid down new laws. The fugitive Cassian Andor traveled there in 5 BBY, posing as the tourist \"Keef Girgo,\" but soon found himself in trouble when he was falsely accused and arrested by Imperials and processed at the Niamos Courthouse.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "niamos.webp",
+   "width": 320,
+   "height": 134
+  }
+ },
+ "Narkina 5": {
+  "title": "Narkina 5",
+  "url": "https://starwars.fandom.com/wiki/Narkina_5",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Abrion sector",
+   "system": "Narkina system",
+   "terrain": "Water and rocky islands",
+   "affiliation": "Galactic Empire"
+  },
+  "lead": "Narkina 5, also known as Narkina, was a small water moon that orbited the gas giant Narkina. The Galactic Empire maintained a prison complex there.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "narkina-5.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Koboh": {
+  "title": "Koboh",
+  "url": "https://starwars.fandom.com/wiki/Koboh",
+  "facts": {
+   "region": "Outer Rim Territories, Galactic Frontier",
+   "sector": "Varada sector",
+   "system": "Koboh system",
+   "terrain": "Rugged cliffs",
+   "affiliation": "Jedi Order, Galactic Republic, Galactic Empire"
+  },
+  "lead": "Koboh was a planet in the Outer Rim Territories with a breathable atmosphere and a rugged, rocky cliff environment. The planet was adjacent to the nebula Koboh Abyss, as well as a planet hidden within the abyss, known as Tanalorr.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "koboh.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Pabu": {
+  "title": "Pabu",
+  "url": "https://starwars.fandom.com/wiki/Pabu",
+  "facts": {
+   "region": "New Territories, Outer Rim Territories",
+   "sector": "Chopani sector",
+   "system": "Pabu system",
+   "terrain": "Islands",
+   "language": "Galactic Basic Standard"
+  },
+  "lead": "Pabu was a small planet dotted with small islands, including a remote island that was a haven for refugees displaced during the Clone Wars and others after. During or after 18 BBY, Clone Force 99 traveled to the location to reach Pabu, which was recommended by Phee Genoa as a place where Cid could not find them and where they could settle down with Omega. Genoa described the location as her \"home away from home.\" It had no spaceports or major industries, and most of the residents were refugees seeking safety from other worlds.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "pabu.webp",
+   "width": 320,
+   "height": 191
+  }
+ },
+ "Plazir-15": {
+  "title": "Plazir-15",
+  "url": "https://starwars.fandom.com/wiki/Plazir-15",
+  "facts": {
+   "region": "New Territories, Outer Rim Territories",
+   "sector": "N/A",
+   "system": "Plazir system",
+   "terrain": "Freshwater marshes, Grass plains",
+   "government": "Elective monarchy",
+   "affiliation": "Galactic Empire, Plazir-15 government"
+  },
+  "lead": "Plazir-15 was a planet located in the Outer Rim Territories. During the New Republic Era, the planet was an independent world under a elective monarchy with direct democracy.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "plazir-15.webp",
+   "width": 320,
+   "height": 298
+  }
+ },
+ "Peridea": {
+  "title": "Peridea",
+  "url": "https://starwars.fandom.com/wiki/Peridea",
+  "facts": {
+   "region": "Far galaxy",
+   "terrain": "Barren wastelands:, Grasslands, Plains, Meadows, Mountains",
+   "species": "Dathomiri, Noti, Zabrak",
+   "language": "Ur-Kittât, Dathomirian language, Noti language, Galactic Basic Standard",
+   "affiliation": "The Ones, Witch Kingdom of the Dathmiri, Nightsisters, Great Mothers, Zeffo Sage Kujet, Bandits of Peridea, Thrawn's forces (whilst exiled)"
+  },
+  "lead": "Peridea was an extragalactic planet located in the far galaxy. It was the homeworld of the Noti and once the center of the Witch Kingdom of the Dathmiri, which eventually collapsed. Imperial Grand Admiral Thrawn and Bokken Jedi Ezra Bridger were banished to Peridea from the known galaxy by a pod of purrgil following the Liberation of Lothal, on Bridger's request. The Arcana Star Map of the Witches of Dathomir depicted a Pathway to Peridea from the main galaxy.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "peridea.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Seatos": {
+  "title": "Seatos",
+  "url": "https://starwars.fandom.com/wiki/Seatos",
+  "facts": {
+   "region": "Outer Rim Territories, Western Reaches",
+   "sector": "Sluis sector",
+   "system": "Denab system",
+   "routes": "Rimma Trade Route",
+   "terrain": "Forests, Oceans",
+   "affiliation": "Imperial Remnant, Morgan Elsbeth's forces"
+  },
+  "lead": "Seatos was a planet in the Denab system in the Outer Rim Territories that was inhabited in the past by a species from a different galaxy. They constructed a mechanism on it to locate their galaxy powered by a spherical star map.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "seatos.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Khofar": {
+  "title": "Khofar",
+  "url": "https://starwars.fandom.com/wiki/Khofar",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Lahara sector",
+   "system": "Khofar system",
+   "terrain": "Forest, Jungle, Mountains, Ravines, Steppes",
+   "population": "Less than 1 million"
+  },
+  "lead": "Khofar was a planet in the Outer Rim Territories that featured forest and jungle terrain. During the High Republic Era, the Wookiee Jedi Master Kelnacca lived a solitary life in the jungles of Khofar.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "khofar.webp",
+   "width": 320,
+   "height": 133
+  }
+ },
+ "Olega": {
+  "title": "Olega",
+  "url": "https://starwars.fandom.com/wiki/Olega",
+  "facts": {
+   "region": "Mid Rim Territories",
+   "sector": "Esuain sector",
+   "system": "Olega system",
+   "terrain": "Island chains",
+   "population": "265.4 million",
+   "affiliation": "Jedi Order, Galactic Republic"
+  },
+  "lead": "Olega was a planet located far from the Core World Coruscant that was home to Olega City where the Jedi Order operated a Jedi temple during the High Republic Era. The Force-sensitive assassin Mae Aniseya visited Olega to kill Jedi Master Torbin, who had taken the Barash Vow at the Olega Jedi temple. Jedi Master Sol, his Padawan, Jecki Lon, Jedi Knight Yord Fandar, and Mae's sister, Osha, confronted her on Olega, although she managed to escape.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "olega.webp",
+   "width": 320,
+   "height": 135
+  }
+ },
+ "Lanupa": {
+  "title": "Lanupa",
+  "url": "https://starwars.fandom.com/wiki/Lanupa",
+  "facts": {
+   "climate": "Frigid",
+   "terrain": "Mountains"
+  },
+  "lead": "Lanupa, once known as The Demon's Rest or Battle World, was a mountainous neutral planet located in the galaxy. It was home of the Skull Ridge Mountain, atop which was located the Skull Ridge Mountain Hotel & Spa, formerly a fearsome pirate stronghold that boasted torturous execution acid baths and fighting pits. SM-33 was outraged at how they had \"ruined it!\" with visiting pleasure yachts, spa, mud baths (fed by natural hot springs), bacta soaks and buffets (\"food for weaklings!\").",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "lanupa.webp",
+   "width": 320,
+   "height": 147
+  }
+ },
+ "Mina-Rau": {
+  "title": "Mina-Rau",
+  "url": "https://starwars.fandom.com/wiki/Mina-Rau",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "D'Astan sector",
+   "system": "Mina-Rau system",
+   "routes": "Celanon Spur",
+   "terrain": "Fields, Grasslands, Hills, Lakes",
+   "affiliation": "Galactic Empire"
+  },
+  "lead": "Mina-Rau, or Xuretria, was an agricultural planet located in the Outer Rim Territories' D'Astan sector. It was home to an expansive farming industry with councils and settlements dotted among it. During the days of the Galactic Republic, the world was victim to raids from the Quillian bandits, which were driven off by Jedi Master Fondar Etzis. However, the assassin Corlis Rath murdered with a poison Etzis to draw out Jedi Master Qui-Gon Jinn. Jinn went to Mina-Rau with fellow Jedi Mace Windu and Aayla Secura, finding evidence that Etzis was poisoned.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "mina-rau.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Zanbar": {
+  "title": "Zanbar/Legends",
+  "url": "https://starwars.fandom.com/wiki/Zanbar/Legends",
+  "facts": {
+   "region": "Outer Rim Territories, Trans-Hydian",
+   "sector": "Mandalore sector",
+   "system": "Zanbar system",
+   "climate": "Temperate",
+   "terrain": "Swamps, Plateau",
+   "affiliation": "Death Watch, Shadow Collective, Confederacy of Independent Systems"
+  },
+  "lead": "Zanbar was a swamp moon in the Outer Rim Territories' Mandalore sector. The Mandalorian Death Watch relocated to Zanbar and established a camp there shortly after leaving Carlac.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "zanbar.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Vandor": {
+  "title": "Vandor",
+  "url": "https://starwars.fandom.com/wiki/Vandor",
+  "facts": {
+   "region": "Mid Rim Territories",
+   "sector": "Sloo sector",
+   "system": "Vandor system",
+   "climate": "Frigid",
+   "terrain": "Mountains, Plains, Fast-flowing rivers",
+   "population": "25,000",
+   "affiliation": "InterGalactic Banking Clan, Galactic Empire"
+  },
+  "lead": "Vandor, also known as Vandor-1 or ID 53-80, was a cold frontier planet in the Sloo sector of the galaxy's Mid Rim. Despite being sparsely settled, the Galactic Empire had a growing presence on the planet. Fort Ypso was a snowy mountain village located on Vandor.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "vandor.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Zeffo": {
+  "title": "Zeffo",
+  "url": "https://starwars.fandom.com/wiki/Zeffo",
+  "facts": {
+   "region": "Outer Rim Territories, New Territories",
+   "sector": "Kanz sector",
+   "system": "Zeffo system",
+   "terrain": "Cliffs, Ice Caves, Mountains",
+   "species": "Zeffonian",
+   "affiliation": "Galactic Empire"
+  },
+  "lead": "Zeffo was an electromagnetic wind-swept planet located in the Outer Rim Territories. A water-rich world, its terrain consisted of rocky mountains and cliffs, and its surface was covered in grass. The planet featured a number of ruins and crypts that were protected by the Tomb Guardians. Zeffo was home to a number of creatures, including the Phillak and the Scazz.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "zeffo.webp",
+   "width": 320,
+   "height": 320
+  }
+ },
+ "Sorgan": {
+  "title": "Sorgan",
+  "url": "https://starwars.fandom.com/wiki/Sorgan",
+  "facts": {
+   "region": "Outer Rim Territories, Trailing Sectors",
+   "sector": "Karthakk sector",
+   "system": "Sorgan system",
+   "terrain": "Coniferous forests, Meadows; grasslands, Swamps, Wetlands",
+   "population": "Less than 10,000 (estimated)",
+   "government": "Minimal"
+  },
+  "lead": "Sorgan was a breathable, forested swamp planet located in the Outer Rim Territories. With a small native population, it was the only inhabitable object in its system. In 9 ABY, it was home to a Klatooinian tribe, which frequently raided a small krill farming village. The raids were eventually put to a stop by the combined efforts of mercenaries Din Djarin and Carasynthia Dune, along with the villagers.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "sorgan.webp",
+   "width": 320,
+   "height": 237
+  }
+ },
+ "Trask": {
+  "title": "Trask",
+  "url": "https://starwars.fandom.com/wiki/Trask",
+  "facts": {
+   "region": "Outer Rim Territories, The Slice",
+   "sector": "Arkanis sector",
+   "system": "Kol Iben system",
+   "terrain": "Oceans",
+   "population": "35.8 million"
+  },
+  "lead": "Trask was an estuary moon orbiting the gas giant Kol Iben. Din Djarin once ferried the Querm Rybet \"Frog Lady\" and her spawn to the moon from Tatooine and later encountered Bo-Katan Kryze and her Nite Owls there.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "trask.webp",
+   "width": 320,
+   "height": 257
+  }
+ },
+ "Valo": {
+  "title": "Valo",
+  "url": "https://starwars.fandom.com/wiki/Valo",
+  "facts": {
+   "region": "Outer Rim Territories, Galactic Frontier, Occlusion Zone",
+   "sector": "Rseik sector",
+   "system": "Valo system",
+   "routes": "Sanrafsix–Cotellier hyperlane",
+   "climate": "Hot",
+   "terrain": "Forests, Mountains",
+   "species": "Alcedian",
+   "affiliation": "Galactic Republic, Nihil (during occupation), Jedi Order"
+  },
+  "lead": "Valo was a forested planet in the Valo system on the edge of the Rseik sector. It was where the sentient avian Alcedian species originated. During the time of the High Republic Era, the Galactic Republic hosted the Republic Fair on Valo, with dignitaries and visitors from across the galaxy visiting the planet to attend. Around this time, Jedi Master Elzar Mann was intended to take up the position as the marshal of Valo's Jedi Temple, however, a Nihil attack on Valo left much of the planet's capital city—Lonisa City—destroyed and hundreds of thousands dead.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "valo.webp",
+   "width": 315,
+   "height": 320
+  }
+ },
+ "Tanalorr": {
+  "title": "Tanalorr",
+  "url": "https://starwars.fandom.com/wiki/Tanalorr",
+  "facts": {
+   "region": "Outer Rim Territories, Galactic Frontier",
+   "sector": "Varada sector",
+   "system": "Koboh system",
+   "terrain": "Terrestrial",
+   "affiliation": "Jedi Order, Galactic Republic, Hidden Path"
+  },
+  "lead": "Tanalorr was a peaceful and paradisiacal planet, strong in the Force that was located inside the nebula Koboh Abyss in the Outer Rim Territories and the planet was on the Galactic Frontier.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "tanalorr.webp",
+   "width": 301,
+   "height": 320
+  }
+ },
+ "Ueda": {
+  "title": "Ueda",
+  "url": "https://starwars.fandom.com/wiki/Ueda",
+  "facts": {
+   "region": "Outer Rim Territories",
+   "sector": "Unincorporated Bosphian provinces, Xappyh sector",
+   "system": "Ueda system",
+   "terrain": "Forested island chains",
+   "population": "24.3 million",
+   "affiliation": "Galactic Republic"
+  },
+  "lead": "Ueda was a remote planet located in Xappyh sector of the Outer Rim Territories. Ueda was home to Point Ueda, located on a small green island connected via a landbridge to further land, where a landing pad was located. Within Point Ueda was the Lomi Usqi Noodle Shop by the late High Republic Era. Ueda was considered a haven for wanderers, many of whom would frequent the village of Point Ueda. It was inhabited by a diverse range of sentient species, such as humans and aliens including Duraceph, Clarodians, and Drezar.",
+  "fetched": "2026-08-25",
+  "image": {
+   "file": "ueda.webp",
+   "width": 320,
+   "height": 148
+  }
  }
 }

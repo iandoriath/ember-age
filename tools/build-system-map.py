@@ -358,19 +358,37 @@ def build_network(data: dict) -> None:
         if _is_ghost(nm, wx, wy):
             continue
         galaxy.append([nm, wx, wy, pv[2], sector, region, 0])
-    # ---- worlds the atlas doesn't mark but the chart should: placed beside an anchor dot
-    # (name, anchor, dx, dy, tier) — grid/sector/region are inherited from the anchor; the
-    # sibling-gathering pass below then pulls them onto their system like any other moon
-    EXTRA_GALAXY = [
-        ("Nar Shaddaa", "Nal Hutta", 14.0, -12.0, 1),  # the Smugglers' Moon: Nal Hutta's moon, a world in its own right
-    ]
+    # ---- worlds the atlas doesn't mark but the chart should (docs/setting/extra-worlds.json):
+    # canon-era worlds, notable moons, stations. Each anchors to an existing dot/hero (or an
+    # earlier extra) or to raw xy, plus an offset; grid/sector/region override the anchor's.
+    # The sibling-gathering pass below then pulls same-system worlds together like any moon.
+    EXTRA = ROOT / "docs/setting/extra-worlds.json"
+    extras = json.loads(EXTRA.read_text(encoding="utf-8"))["worlds"] if EXTRA.exists() else []
     _gidx = {g[0].lower(): g for g in galaxy}
-    for nm, anchor, dx, dy, tier in EXTRA_GALAXY:
-        a = _gidx.get(anchor.lower())
-        if not a or nm.lower() in named or nm.lower() in hero_names:
+    for s in data["systems"]:
+        _gidx.setdefault(s["name"].lower(), [s["name"], s["x"], s["y"], s.get("grid", ""), "", ""])
+    n_extra = 0
+    for e in extras:
+        nm = e["name"]
+        if nm.lower() in named or nm.lower() in hero_names:
             continue
-        named.add(nm.lower())
-        galaxy.append([nm, round(a[1] + dx, 1), round(a[2] + dy, 1), a[3], a[4], a[5], tier])
+        anc = e.get("anchor") or {}
+        if "dot" in anc:
+            a = _gidx.get(anc["dot"].lower())
+            if not a:
+                print(f"  ! extra world {nm}: anchor {anc['dot']!r} not on the chart — skipped")
+                continue
+            ax, ay, agrid, asec, areg = a[1], a[2], a[3], a[4], a[5]
+        elif "xy" in anc:
+            ax, ay = anc["xy"]; agrid = asec = areg = ""
+        else:
+            print(f"  ! extra world {nm}: no anchor — skipped")
+            continue
+        row = [nm, round(ax + e.get("dx", 0), 1), round(ay + e.get("dy", 0), 1),
+               e.get("grid") or agrid, e.get("sector") or asec, e.get("region") or areg, 1 if e.get("tier") else 0]
+        galaxy.append(row); named.add(nm.lower()); _gidx[nm.lower()] = row; n_extra += 1
+    if n_extra:
+        print(f"  {n_extra} extra worlds placed from {EXTRA.name}")
     # ---- sibling planets of one star system sit together: the atlas scatters them across
     # the sector with sub-grid guesses; on a chart a system is one tight cluster. System
     # membership comes from the Wookieepedia pulls ("system" fact); anchor = the hero or

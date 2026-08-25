@@ -1,0 +1,807 @@
+{
+ "_doc": "Worlds the atlas doesn't mark but the chart should. anchor: {dot:<existing or earlier extra name>} | {xy:[x,y]} (world units); dx/dy offset; grid/sector/region override the anchor's when given; tier 1 = bright named class. The builder's sibling pass gathers same-system worlds like any moon.",
+ "worlds": [
+  {
+   "name": "Nar Shaddaa",
+   "tier": 1,
+   "anchor": {
+    "dot": "Nal Hutta"
+   },
+   "dx": 14.0,
+   "dy": -12.0,
+   "note": "the Smugglers' Moon: Nal Hutta's moon, a world in its own right"
+  },
+  {
+   "name": "Brendok",
+   "canon": true,
+   "tier": 1,
+   "grid": "Q-2",
+   "sector": "",
+   "region": "Wild Space",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     5544,
+     492
+    ]
+   },
+   "dx": 22.0,
+   "dy": 0.0
+  },
+  {
+   "name": "Olega",
+   "canon": true,
+   "tier": 0,
+   "grid": "P-7",
+   "sector": "Esuain",
+   "region": "Mid Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     5326,
+     2558
+    ]
+   },
+   "dx": -16.2,
+   "dy": 14.9
+  },
+  {
+   "name": "Ueda",
+   "canon": true,
+   "tier": 0,
+   "grid": "Q-3",
+   "sector": "Unincorporated Bosphian provinces",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     5615,
+     1042
+    ]
+   },
+   "dx": 1.9,
+   "dy": -21.9
+  },
+  {
+   "name": "Khofar",
+   "canon": true,
+   "tier": 0,
+   "grid": "M-5",
+   "sector": "Lahara",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4171,
+     1750
+    ]
+   },
+   "dx": 13.4,
+   "dy": 17.5
+  },
+  {
+   "name": "Pasaana",
+   "canon": true,
+   "tier": 1,
+   "grid": "O-13",
+   "sector": "Ombakond",
+   "region": "Expansion Region",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4842,
+     4902
+    ]
+   },
+   "dx": -21.7,
+   "dy": -3.8
+  },
+  {
+   "name": "Kijimi",
+   "canon": true,
+   "tier": 1,
+   "grid": "R-8",
+   "sector": "Bryx",
+   "region": "Mid Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     6015,
+     2916
+    ]
+   },
+   "dx": 18.6,
+   "dy": -11.8
+  },
+  {
+   "name": "Kef Bir",
+   "canon": true,
+   "tier": 0,
+   "grid": "H-16",
+   "sector": "Zuma",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "dot": "Endor"
+   },
+   "dx": -5.7,
+   "dy": 21.3
+  },
+  {
+   "name": "Exegol",
+   "canon": true,
+   "tier": 1,
+   "grid": "F-7",
+   "sector": "None",
+   "region": "Unknown Regions",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     1350,
+     4750
+    ]
+   },
+   "dx": 0,
+   "dy": 0
+  },
+  {
+   "name": "Ajan Kloss",
+   "canon": true,
+   "tier": 0,
+   "grid": "L-5",
+   "sector": "Cademimu",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     3795,
+     1752
+    ]
+   },
+   "dx": 20.7,
+   "dy": 7.5
+  },
+  {
+   "name": "Ferrix",
+   "canon": true,
+   "tier": 1,
+   "grid": "Q-3",
+   "sector": "Xappyh",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     5615,
+     1042
+    ]
+   },
+   "dx": -20.3,
+   "dy": 8.4
+  },
+  {
+   "name": "Aldhani",
+   "canon": true,
+   "tier": 0,
+   "grid": "M-6",
+   "sector": "Cademimu",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4207,
+     2192
+    ]
+   },
+   "dx": 9.3,
+   "dy": -19.9
+  },
+  {
+   "name": "Narkina 5",
+   "canon": true,
+   "tier": 0,
+   "grid": "S-15",
+   "sector": "Abrion",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     6393,
+     5804
+    ]
+   },
+   "dx": 6.6,
+   "dy": 21.0
+  },
+  {
+   "name": "Niamos",
+   "canon": true,
+   "tier": 0,
+   "grid": "R-6",
+   "sector": "Vorzyd",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     6039,
+     2501
+    ]
+   },
+   "dx": -19.1,
+   "dy": -11.0
+  },
+  {
+   "name": "Vandor",
+   "canon": true,
+   "tier": 0,
+   "grid": "P-14",
+   "sector": "Sloo",
+   "region": "Mid Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     5223,
+     5303
+    ]
+   },
+   "dx": 21.5,
+   "dy": -4.8
+  },
+  {
+   "name": "Numidian Prime",
+   "canon": true,
+   "tier": 0,
+   "grid": "L-7",
+   "sector": "Bright Jewel",
+   "region": "Mid Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     3716,
+     2502
+    ]
+   },
+   "dx": -12.6,
+   "dy": 18.0
+  },
+  {
+   "name": "Mina-Rau",
+   "canon": true,
+   "tier": 0,
+   "grid": "O-6",
+   "sector": "D'Astan",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4875,
+     2095
+    ]
+   },
+   "dx": -2.9,
+   "dy": -21.8
+  },
+  {
+   "name": "Nevarro",
+   "canon": true,
+   "tier": 1,
+   "grid": "K-20",
+   "sector": "Dalicron",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     3370,
+     7682
+    ]
+   },
+   "dx": 16.9,
+   "dy": 14.1
+  },
+  {
+   "name": "Arvala-7",
+   "canon": true,
+   "tier": 0,
+   "grid": "S-15",
+   "sector": "Sevetta",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     6393,
+     5804
+    ]
+   },
+   "dx": -22.0,
+   "dy": 1.0
+  },
+  {
+   "name": "Sorgan",
+   "canon": true,
+   "tier": 0,
+   "grid": "Q-17",
+   "sector": "Karthakk",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     5659,
+     6529
+    ]
+   },
+   "dx": 15.6,
+   "dy": -15.6
+  },
+  {
+   "name": "Morak",
+   "canon": true,
+   "tier": 0,
+   "grid": "H-18",
+   "sector": "Unincorporated",
+   "region": "Wild Space",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     2324,
+     6952
+    ]
+   },
+   "dx": -1.0,
+   "dy": 22.0
+  },
+  {
+   "name": "Corvus",
+   "canon": true,
+   "tier": 0,
+   "grid": "S-6",
+   "sector": "Tion Cluster",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     6402,
+     2108
+    ]
+   },
+   "dx": -14.1,
+   "dy": -16.9
+  },
+  {
+   "name": "Trask",
+   "canon": true,
+   "tier": 0,
+   "grid": "R-16",
+   "sector": "Arkanis",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     5376,
+     5987
+    ]
+   },
+   "dx": 21.8,
+   "dy": 2.9
+  },
+  {
+   "name": "Plazir-15",
+   "canon": true,
+   "tier": 0,
+   "grid": "N-2",
+   "sector": "N/A",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4475,
+     514
+    ]
+   },
+   "dx": -18.0,
+   "dy": 12.6
+  },
+  {
+   "name": "Peridea",
+   "canon": true,
+   "tier": 1,
+   "grid": "",
+   "sector": "",
+   "region": "Wild Space",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     650,
+     1450
+    ]
+   },
+   "dx": 0,
+   "dy": 0
+  },
+  {
+   "name": "Seatos",
+   "canon": true,
+   "tier": 0,
+   "grid": "M-19",
+   "sector": "Sluis",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "dot": "Denab"
+   },
+   "dx": 11.0,
+   "dy": 19.1
+  },
+  {
+   "name": "Garel",
+   "canon": true,
+   "tier": 1,
+   "grid": "U-7",
+   "sector": "Lothal",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     7218,
+     2581
+    ]
+   },
+   "dx": -21.0,
+   "dy": -6.6
+  },
+  {
+   "name": "Bahryn",
+   "canon": true,
+   "tier": 0,
+   "grid": "R-16",
+   "sector": "Arkanis",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "dot": "Geonosis"
+   },
+   "dx": 19.9,
+   "dy": -9.3
+  },
+  {
+   "name": "Glavis",
+   "canon": true,
+   "tier": 1,
+   "grid": "M-11",
+   "sector": "Caisra",
+   "region": "Core",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4155,
+     4168
+    ]
+   },
+   "dx": -8.4,
+   "dy": 20.3
+  },
+  {
+   "name": "Pabu",
+   "canon": true,
+   "tier": 0,
+   "grid": "L-3",
+   "sector": "Chopani",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     3794,
+     894
+    ]
+   },
+   "dx": -7.5,
+   "dy": -20.7
+  },
+  {
+   "name": "Bracca",
+   "canon": true,
+   "tier": 0,
+   "grid": "P-9",
+   "sector": "Lantillian",
+   "region": "Mid Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     5308,
+     3325
+    ]
+   },
+   "dx": 19.5,
+   "dy": 10.2
+  },
+  {
+   "name": "Zeffo",
+   "canon": true,
+   "tier": 0,
+   "grid": "M-3",
+   "sector": "Kanz",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4198,
+     898
+    ]
+   },
+   "dx": -21.3,
+   "dy": 5.7
+  },
+  {
+   "name": "Koboh",
+   "canon": true,
+   "tier": 1,
+   "grid": "H-19",
+   "sector": "Varada",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     2347,
+     6473
+    ]
+   },
+   "dx": 11.8,
+   "dy": -18.6
+  },
+  {
+   "name": "Tanalorr",
+   "canon": true,
+   "tier": 0,
+   "grid": "H-19",
+   "sector": "Varada",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "dot": "Koboh"
+   },
+   "dx": 3.8,
+   "dy": 21.7
+  },
+  {
+   "name": "Daiyu",
+   "canon": true,
+   "tier": 0,
+   "grid": "P-12",
+   "sector": "Hocatar",
+   "region": "Expansion Region",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     5256,
+     4551
+    ]
+   },
+   "dx": -17.5,
+   "dy": -13.4
+  },
+  {
+   "name": "At Attin",
+   "canon": true,
+   "tier": 1,
+   "grid": "N-6",
+   "sector": "Quelii",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4587,
+     2180
+    ]
+   },
+   "dx": 21.9,
+   "dy": -1.9
+  },
+  {
+   "name": "Lanupa",
+   "canon": true,
+   "tier": 0,
+   "grid": "",
+   "sector": "",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "dot": "At Attin"
+   },
+   "dx": -14.9,
+   "dy": 16.2
+  },
+  {
+   "name": "At Achrann",
+   "canon": true,
+   "tier": 0,
+   "grid": "",
+   "sector": "",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "dot": "At Attin"
+   },
+   "dx": -0.0,
+   "dy": -22.0
+  },
+  {
+   "name": "Castilon",
+   "canon": true,
+   "tier": 0,
+   "grid": "I-16",
+   "sector": "Tashtor",
+   "region": "Mid Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     2638,
+     6120
+    ]
+   },
+   "dx": 14.9,
+   "dy": 16.2
+  },
+  {
+   "name": "Eiram",
+   "canon": true,
+   "tier": 0,
+   "grid": "I-19",
+   "sector": "Tunka",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     2661,
+     7240
+    ]
+   },
+   "dx": -21.9,
+   "dy": -1.9
+  },
+  {
+   "name": "E'ronoh",
+   "canon": true,
+   "tier": 0,
+   "grid": "I-19",
+   "sector": "Dalnan",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "dot": "Eiram"
+   },
+   "dx": 17.5,
+   "dy": -13.4
+  },
+  {
+   "name": "Dalna",
+   "canon": true,
+   "tier": 0,
+   "grid": "I-19",
+   "sector": "Dalnan",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     2661,
+     7240
+    ]
+   },
+   "dx": -3.8,
+   "dy": 21.7
+  },
+  {
+   "name": "Valo",
+   "canon": true,
+   "tier": 0,
+   "grid": "N-19",
+   "sector": "Rseik",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4432,
+     7354
+    ]
+   },
+   "dx": -11.8,
+   "dy": -18.6
+  },
+  {
+   "name": "Hetzal Prime",
+   "canon": true,
+   "tier": 0,
+   "grid": "Q-16",
+   "sector": "Savareen",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     5680,
+     6104
+    ]
+   },
+   "dx": 21.3,
+   "dy": 5.7
+  },
+  {
+   "name": "Raada",
+   "canon": true,
+   "tier": 0,
+   "grid": "O-5",
+   "sector": "D'Astan",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4952,
+     1804
+    ]
+   },
+   "dx": -19.5,
+   "dy": 10.2
+  },
+  {
+   "name": "Ordo Eris",
+   "canon": true,
+   "tier": 0,
+   "grid": "S-4",
+   "sector": "Chorlian",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     6203,
+     1844
+    ]
+   },
+   "dx": 7.5,
+   "dy": -20.7
+  },
+  {
+   "name": "Concordia",
+   "canon": true,
+   "tier": 0,
+   "grid": "O-7",
+   "sector": "Mandalore",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "dot": "Mandalore"
+   },
+   "dx": 8.4,
+   "dy": 20.3
+  },
+  {
+   "name": "Cademimu",
+   "canon": true,
+   "tier": 0,
+   "grid": "M-6",
+   "sector": "Cademimu",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4207,
+     2192
+    ]
+   },
+   "dx": -19.9,
+   "dy": -9.3
+  },
+  {
+   "name": "Zanbar",
+   "canon": true,
+   "tier": 0,
+   "grid": "O-7",
+   "sector": "Mandalore",
+   "region": "Outer Rim",
+   "note": "Canon-era world (not in the Legends atlas)",
+   "anchor": {
+    "xy": [
+     4925,
+     2490
+    ]
+   },
+   "dx": 21.0,
+   "dy": -6.6
+  }
+ ]
+}
