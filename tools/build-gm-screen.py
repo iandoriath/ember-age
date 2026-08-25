@@ -203,6 +203,7 @@ def parse_npcs():
 # ---------------------------------------------------------------- run modules
 MODULE_FILES = [
     ("01", "gm/modules/01-the-light-on-vesta-9.md"),
+    ("02", "gm/modules/02-the-toll-at-enarc.md"),
 ]
 
 CLOCK_FACTIONS = {"Republic", "Admiralty", "Vigil", "Inheritors",
