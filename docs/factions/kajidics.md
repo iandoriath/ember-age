@@ -4,7 +4,7 @@
 
 ## Who they are
 
-They never needed the Republic; **scarcity is margin.** They run the black lanes (the unregistered routes that never went dark), the fuel and scrap monopolies, and the protection rackets that pass for civic order on a hundred worlds.
+They never needed the Republic; **scarcity is margin.** Their lanes went dark like everyone else's — but Hutts hold rutters older than the Withering and lifespans long enough to remember every route, so the Kajidics simply never stopped flying. They run the black lanes (the dark, unregistered routes that stayed *theirs*), the fuel and scrap monopolies, and the protection rackets that pass for civic order on a hundred worlds.
 
 ## What they want
 
