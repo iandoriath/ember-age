@@ -78,6 +78,39 @@ def resolve_many(names):
     return resolved, remaining
 
 
+GRID_RE = re.compile(r"(?:coordinates|grid)\s*=[^\n]*?([A-Z]-\d{1,2})")
+
+
+def backfill_grids(out):
+    """Add facts.grid (Standard Galactic Grid square) to entries fetched before it was parsed."""
+    todo = {n: e for n, e in out.items() if not e.get("missing") and "grid" not in (e.get("facts") or {}) and not e.get("nogrid")}
+    inv = {}
+    for n, e in todo.items():
+        inv.setdefault(e["title"], []).append(n)
+    got = 0
+    titles = sorted(inv)
+    for i, group in enumerate(batches(titles, 20)):
+        r = api(action="query", titles="|".join(group), prop="revisions", rvprop="content", rvslots="main", redirects=1)
+        q = r["query"]
+        back = {}
+        for x in q.get("normalized", []) + q.get("redirects", []):
+            back[x["to"]] = back.get(x["from"], x["from"])
+        for page in q.get("pages", []):
+            if page.get("missing") or not page.get("revisions"):
+                continue
+            src = back.get(page["title"], page["title"])
+            gm = GRID_RE.search(page["revisions"][0]["slots"]["main"]["content"])
+            for n in inv.get(src, inv.get(page["title"], [])):
+                if gm:
+                    out[n].setdefault("facts", {})["grid"] = gm.group(1); got += 1
+                else:
+                    out[n]["nogrid"] = True
+        if i % 20 == 0:
+            print(f"  … grids {got} ({(i + 1) * 20}/{len(titles)} titles)")
+        time.sleep(SLEEP)
+    return got
+
+
 def fetch_many(title_by_name):
     """Fetch + parse wikitext for every resolved title, 20 pages per request."""
     inv = {}
@@ -101,8 +134,12 @@ def fetch_many(title_by_name):
             if len(lead) > LEAD_MAX:
                 cut = lead.rfind(". ", 0, LEAD_MAX)
                 lead = lead[:cut + 1] if cut > 200 else lead[:LEAD_MAX].rstrip() + "…"
+            facts = wp.parse_facts(wt)
+            gm = GRID_RE.search(wt)
+            if gm:
+                facts["grid"] = gm.group(1)
             entry = {"title": page["title"], "url": page["fullurl"],
-                     "facts": wp.parse_facts(wt), "lead": lead,
+                     "facts": facts, "lead": lead,
                      "fetched": date.today().isoformat()}
             for n in inv.get(src_title, inv.get(page["title"], [])):
                 out[n] = entry
@@ -268,6 +305,7 @@ def main(argv=None):
     ap.add_argument("--refresh", action="store_true", help="refetch names already in the file")
     ap.add_argument("--limit", type=int, help="cap the number of new fetches this run")
     ap.add_argument("--no-images", action="store_true", help="skip the lead-image pass")
+    ap.add_argument("--grids", action="store_true", help="backfill facts.grid for entries fetched before grids were parsed")
     ap.add_argument("--repair", action="store_true",
                     help="re-validate every fetched entry: fix title collisions (character/ship/species "
                          "articles on planet names), chase (planet)/system variants, drop the rest")
@@ -284,6 +322,12 @@ def main(argv=None):
     targets = sorted({t for t in targets if t.lower() not in heroes})
 
     existing = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
+    if args.grids:
+        out = dict(existing)
+        n = backfill_grids(out)
+        OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"wrote {OUT.relative_to(ROOT)} — {n} grid squares added")
+        return 0
     if args.repair:
         out = dict(existing)
         repair(out)

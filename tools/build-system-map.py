@@ -404,26 +404,105 @@ def build_network(data: dict) -> None:
     gwp_all = json.loads(GWP.read_text(encoding="utf-8")) if GWP.exists() else {}
     # ---- region from the world's own article when it has one: the atlas's region column is
     # wrong for ~900 of 5,500 dots (Lothal "Inner Rim", Nal Hutta "Mid Rim", Csilla "Wild Space")
-    REGION_WP = {"Outer Rim Territories": "Outer Rim", "Mid Rim Territories": "Mid Rim", "Core Worlds": "Core",
-                 "Inner Rim Territories": "Inner Rim", "Expansion Region": "Expansion Region", "Colonies": "Colonies",
-                 "Deep Core": "Deep Core", "Unknown Regions": "Unknown Regions", "Wild Space": "Wild Space",
-                 "Hutt Space": "Hutt Space", "New Territories": "Outer Rim"}
+    REGION_WP = [("Deep Core", "Deep Core"), ("Outer Rim", "Outer Rim"), ("Mid Rim", "Mid Rim"), ("Inner Rim", "Inner Rim"),
+                 ("Expansion Region", "Expansion Region"), ("Colonies", "Colonies"), ("Core", "Core"),
+                 ("Unknown Regions", "Unknown Regions"), ("Wild Space", "Wild Space"), ("Hutt Space", "Hutt Space"),
+                 ("New Territories", "Outer Rim"), ("Western Reaches", "Outer Rim"), ("The Slice", None)]
     fixed = 0
     for g in galaxy:
         e = gwp_all.get(g[0])
         if not e or e.get("missing"):
             continue
         first = re.split(r"[,;]|\n", (e.get("facts") or {}).get("region", ""))[0].strip()
-        reg = next((v for k, v in REGION_WP.items() if first.startswith(k)), None)
+        reg = next((v for k, v in REGION_WP if first.startswith(k)), None)
         if reg and reg != g[5]:
             g[5] = reg; fixed += 1
     if fixed:
         print(f"  {fixed} dot regions corrected from their Wookieepedia articles")
+    # ---- placement audit: the atlas drops some worlds thousands of units from their Standard
+    # Galactic Grid square (Core worlds out past the Unknown Regions). Cell centroids are built
+    # from dots whose atlas grid agrees with their article; any dot farther than ~1.2 cells from
+    # its article's cell is moved into that cell (deterministic jitter so they don't stack).
+    import hashlib
+    def _agrid(g):
+        e = gwp_all.get(g[0])
+        return (e.get("facts") or {}).get("grid", "") if e and not e.get("missing") else ""
+    cells = {}
+    for g in galaxy:
+        ag = _agrid(g)
+        if ag and ag == g[3]:
+            cells.setdefault(ag, []).append((g[1], g[2]))
+    for g in galaxy:  # fallback: cells with no agreeing dots use every dot the atlas put there
+        if g[3] and g[3] not in cells:
+            cells.setdefault("~" + g[3], []).append((g[1], g[2]))
+    cent = {k: (sum(p[0] for p in v) / len(v), sum(p[1] for p in v) / len(v)) for k, v in cells.items()}
+    cent.update({k[1:]: v for k, v in cent.items() if k.startswith("~") and k[1:] not in cent})
+    # cell size: median x-gap between horizontally adjacent lettered columns
+    cols = {}
+    for k, (cx, cy) in cent.items():
+        if k[0] != "~" and "-" in k:
+            cols.setdefault(k.split("-")[0], []).append(cx)
+    colx = sorted((sum(v) / len(v), L) for L, v in cols.items() if len(v) >= 3)
+    gaps = sorted(colx[i + 1][0] - colx[i][0] for i in range(len(colx) - 1))
+    cell = gaps[len(gaps) // 2] if gaps else 380.0
+    moved = 0
+    for g in galaxy:
+        ag = _agrid(g)
+        if not ag or ag not in cent or ag == g[3]:
+            continue
+        cx, cy = cent[ag]
+        if ((g[1] - cx) ** 2 + (g[2] - cy) ** 2) ** 0.5 <= 1.2 * cell:
+            continue
+        h = int(hashlib.md5(g[0].encode("utf-8")).hexdigest()[:8], 16)
+        jx, jy = ((h & 0xffff) / 0xffff - 0.5) * 0.6 * cell, ((h >> 16) / 0xffff - 0.5) * 0.6 * cell
+        g[1], g[2], g[3] = round(cx + jx, 1), round(cy + jy, 1), ag
+        moved += 1
+    if moved:
+        print(f"  {moved} dots relocated into their article's grid square (cell ~{cell:.0f} units)")
+    def _asec(g):
+        e = gwp_all.get(g[0])
+        s = (e.get("facts") or {}).get("sector", "") if e and not e.get("missing") else ""
+        return re.sub(r"\s+sector$", "", s.split(",")[0].strip(), flags=re.I).lower()
+    secs, regs = {}, {}
+    for g in galaxy:
+        ag = _agrid(g)
+        if ag and ag == g[3]:  # only dots we trust
+            s = _asec(g)
+            if s:
+                secs.setdefault(s, []).append((g[1], g[2]))
+            if g[5]:
+                regs.setdefault(g[5], []).append((g[1], g[2]))
+    secc = {k: (sum(p[0] for p in v) / len(v), sum(p[1] for p in v) / len(v)) for k, v in secs.items() if len(v) >= 3}
+    regc = {k: (sum(p[0] for p in v) / len(v), sum(p[1] for p in v) / len(v)) for k, v in regs.items() if len(v) >= 20}
+    moved2 = 0
+    for g in galaxy:
+        if _agrid(g):
+            continue  # handled above
+        e = gwp_all.get(g[0])
+        if not e or e.get("missing"):
+            continue
+        s = _asec(g)
+        if s in secc:
+            cx, cy = secc[s]; lim = 1.5 * cell
+        elif g[5] in regc:
+            cx, cy = regc[g[5]]; lim = 4.0 * cell  # regions are big; only rescue the absurd
+        else:
+            continue
+        if ((g[1] - cx) ** 2 + (g[2] - cy) ** 2) ** 0.5 <= lim:
+            continue
+        h = int(hashlib.md5(g[0].encode("utf-8")).hexdigest()[:8], 16)
+        jx, jy = ((h & 0xffff) / 0xffff - 0.5) * 0.8 * cell, ((h >> 16) / 0xffff - 0.5) * 0.8 * cell
+        g[1], g[2], g[3] = round(cx + jx, 1), round(cy + jy, 1), ""
+        moved2 += 1
+    if moved2:
+        print(f"  {moved2} gridless dots relocated by article sector/region")
     _base = lambda s: re.sub(r"\s+system$", "", s.strip(), flags=re.I).strip().lower()
     groups = {}
     for i, g in enumerate(galaxy):
         e = gwp_all.get(g[0])
         sysn = (e.get("facts") or {}).get("system") if e and not e.get("missing") else None
+        if sysn and (sysn.lower().endswith("systems") or "," in sysn or "outlier" in sysn.lower()):
+            sysn = None  # not a single star system
         if sysn:
             groups.setdefault(_base(sysn), []).append(i)
     name_idx = {g[0].lower(): i for i, g in enumerate(galaxy)}
