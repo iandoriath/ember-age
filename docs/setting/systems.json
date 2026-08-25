@@ -152,7 +152,7 @@
    "blurb": "The lights come back on: a trinary-sun trade city that never stopped, the Hydian Way's local anchor.",
    "gm": {
     "seed": "Act 1 finish line",
-    "canon": "Never withered. 'An important trading center for millennia,' trinary suns. Wither around it, never through it.",
+    "canon": "Never went dark. 'An important trading center for millennia,' trinary suns. The dark closes around it, never through it.",
     "factions": [
      "admiralty",
      "republic"
@@ -447,7 +447,7 @@
    "blurb": "Churba's twin at the Run's Mid Rim end; the Corellian Run carries on coreward from here.",
    "gm": {
     "seed": "",
-    "canon": "Named with Churba as the Run's endpoint. Alive in later-era sources — wither, don't crater.",
+    "canon": "Named with Churba as the Run's endpoint. Alive in later-era sources — goes quiet, doesn't crater.",
     "factions": [
      "kajidics"
     ]
@@ -573,7 +573,7 @@
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
-   "blurb": "A raw colony barely older than the Withering, coreward on the Hydian.",
+   "blurb": "A raw colony barely older than the dark years, coreward on the Hydian.",
    "gm": {
     "seed": "",
     "canon": "~90-year-old Gran colony among Dug natives — a mirror of the era, not an established power.",
@@ -707,7 +707,7 @@
    "blurb": "The capital, a hop or two coreward of Brentaal on the Perlemian. When the Republic's recovery money finally comes back out to the Rim, this is the road it takes.",
    "gm": {
     "seed": "",
-    "canon": "Coruscant is on the Perlemian Trade Route, not the Hydian; Brentaal is the junction. The Reformation's appropriations stopped here — the Withering is this road going quiet.",
+    "canon": "Coruscant is on the Perlemian Trade Route, not the Hydian; Brentaal is the junction. The Reformation's appropriations stopped here — the dark years are this road going quiet.",
     "factions": [
      "republic",
      "admiralty"

@@ -1,7 +1,7 @@
 {
  "id": "new-sith-wars",
  "title": "The New Sith Wars",
- "subtitle": "2000–1000 BBY · a thousand years of war, and the peace the Reach never felt",
+ "subtitle": "2000–1000 BBY · a thousand years of war, and the peace the Run never felt",
  "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds.",
  "colors": {
   "Galactic Republic": "#5fc3ff",
@@ -11,7 +11,7 @@
   "Hutt Space": "#9fb04f",
   "Mandalorians": "#b9bfcc",
   "Chiss Ascendancy": "#7f86b3",
-  "The withered Reach": "#e07b39"
+  "The Duros Run": "#e07b39"
  },
  "steps": [
   {
@@ -214,7 +214,7 @@
     "focus": "Almas",
     "w": 1500
    },
-   "text": "In the Cularin system the Sith Lord Darth Rivan terraforms the world of Almas and raises a fortress there — a Sith foothold in the Expansion Region, uncomfortably close to the Reach's coreward neighbours. The fortress outlives him by a thousand years.",
+   "text": "In the Cularin system the Sith Lord Darth Rivan terraforms the world of Almas and raises a fortress there — a Sith foothold in the Expansion Region, uncomfortably close to the Duros Run's coreward neighbours. The fortress outlives him by a thousand years.",
    "polities": [
     {
      "name": "Galactic Republic",
@@ -284,7 +284,7 @@
    "title": "The Republic Dark Age",
    "date": "c. 1100–1000 BBY · the Draggulch Period",
    "view": "galaxy",
-   "text": "The Republic contracts to the Core. Its currency collapses, its Senate meets and decides nothing, and the Jedi become Jedi Lords ruling worlds in its name. Hyperlanes beyond the Core go unmaintained; whole regions — the Reach among them — drop off the charts. This is the age the Grumani Reach never climbed out of.",
+   "text": "The Republic contracts to the Core. Its currency collapses, its Senate meets and decides nothing, and the Jedi become Jedi Lords ruling worlds in its name. Hyperlanes beyond the Core go unmaintained; whole regions — the Duros Run among them — drop off the charts. This is the age the Duros Run never climbed out of.",
    "polities": [
     {
      "name": "Galactic Republic",
@@ -355,7 +355,7 @@
      ]
     },
     {
-     "name": "The withered Reach",
+     "name": "The Duros Run",
      "buffer": 140,
      "worlds": [
       "Darkknell",
@@ -578,7 +578,7 @@
      ]
     },
     {
-     "name": "The withered Reach",
+     "name": "The Duros Run",
      "buffer": 140,
      "worlds": [
       "Darkknell",
@@ -648,7 +648,7 @@
      ]
     },
     {
-     "name": "The withered Reach",
+     "name": "The Duros Run",
      "buffer": 140,
      "worlds": [
       "Darkknell",

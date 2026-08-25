@@ -178,7 +178,7 @@
   <div id="ctl">
     <span id="search"><input id="q" placeholder="Search…" autocomplete="off" spellcheck="false" aria-label="search the chart"><div id="qr"></div></span>
     <button class="hb" onclick="zoomBy(1.3)">+</button><button class="hb" onclick="zoomBy(1/1.3)">−</button>
-    <button class="hb" onclick="frame('reach')">Frame the Reach</button>
+    <button class="hb" onclick="frame('reach')">Frame the Run</button>
     <button class="hb" onclick="frame('road')">Frame the Road</button>
     <button class="hb" onclick="frame('galaxy')">Galaxy</button>
     <button class="hb" id="plotbtn" onclick="togglePlot()">Plot Course</button>
@@ -468,7 +468,7 @@ function cullLabels() {
 }
 
 /* ---- search ---- */
-const REGLBL = {reach:"Grumani Reach", hydian:"living galaxy", far:"far road"};
+const REGLBL = {reach:"the Duros Run", hydian:"living galaxy", far:"far road"};
 let sIndex = null, sSel = 0, sHits = [];
 function buildIndex() {
   sIndex = [];
@@ -806,8 +806,8 @@ function openPanel(id) {
   const s = byId.get(id); if (!s) return;
   panelId = id;
   const lanes = [...new Set(DATA.lanes.filter(l => l.from === id || l.to === id).map(l => l.name || "dead spur"))];
-  const status = s.alwaysLit ? "ALIVE — never withered" : s.beacon ? (lit.has(id) ? "LIT" : "DARK") : "no beacon";
-  const region = {reach:"The Grumani Reach", hydian:"The living galaxy", far:"The far road"}[s.region];
+  const status = s.alwaysLit ? "ALIVE — never went dark" : s.beacon ? (lit.has(id) ? "LIT" : "DARK") : "no beacon";
+  const region = {reach:"The Duros Run", hydian:"The living galaxy", far:"The far road"}[s.region];
   let h = `<h2 class="${isLit(s) ? "lit" : ""}">${esc(s.name)}</h2>` + (s.sub ? `<div class="k">${esc(s.sub)}</div>` : "");
   h += `<div class="k">Region</div><p>${region}${s.grid ? ` · grid ${esc(s.grid)}` : ""}${s.hop !== undefined ? ` · hop ${s.hop}` : ""}</p>`;
   h += `<div class="k">Lanes</div><p>${lanes.map(esc).join(" · ") || "—"}</p>`;
