@@ -1,0 +1,705 @@
+{
+ "id": "new-sith-wars",
+ "title": "The New Sith Wars",
+ "subtitle": "2000–1000 BBY · a thousand years of war, and the peace the Reach never felt",
+ "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds.",
+ "colors": {
+  "Galactic Republic": "#5fc3ff",
+  "The Sith": "#d24a3a",
+  "Brotherhood of Darkness": "#d24a3a",
+  "Army of Light": "#ffd27a",
+  "Hutt Space": "#9fb04f",
+  "Mandalorians": "#b9bfcc",
+  "Chiss Ascendancy": "#7f86b3",
+  "The withered Reach": "#e07b39"
+ },
+ "steps": [
+  {
+   "title": "A thousand years of war",
+   "date": "2000 BBY · one thousand years before Ruusan",
+   "view": "galaxy",
+   "text": "The Jedi Master Phanius walks out of the Order with fifty followers and takes the name Darth Ruin. On the old Sith worlds of the Stygian Caldera his New Sith raise an order the Republic believes it buried a millennium earlier. The New Sith Wars have begun; they will not end for a thousand years.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 260,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Fondor",
+      "Byss",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan"
+     ]
+    },
+    {
+     "name": "The Sith",
+     "buffer": 170,
+     "worlds": [
+      "Korriban",
+      "Ziost",
+      "Rhelg",
+      "Khar Delba",
+      "Jaguada",
+      "Bosthirda",
+      "Thule",
+      "Dromund Kaas"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Sith spread rimward",
+   "date": "c. 1750–1500 BBY",
+   "view": {
+    "focus": "Korriban",
+    "w": 3200
+   },
+   "text": "Ruin's successors fracture into warlords, each a Dark Lord in their own fief. From Korriban and Ziost the Sith push down the Rim — Vjun, Roon, the Tion worlds — while the Republic, drained by centuries of campaigning, holds the Core and the great trade routes and little else.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 260,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Fondor",
+      "Byss",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan"
+     ]
+    },
+    {
+     "name": "The Sith",
+     "buffer": 190,
+     "worlds": [
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda",
+       "Thule",
+       "Dromund Kaas",
+       "Vjun"
+      ],
+      [
+       "Tund",
+       "Lianna",
+       "Tion"
+      ],
+      [
+       "Roon"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Sictis Wars",
+   "date": "1466–1230 BBY",
+   "view": {
+    "focus": "Tund",
+    "w": 2600
+   },
+   "text": "The Shi'ido shapeshifter Belia Darzu unites the Sith and rules from a fortress on Tund, breeding armies of technobeasts to throw at the Republic. Two centuries of the Sictis Wars end only when her own lieutenants poison her; the Sith fall back into rival courts.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 260,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Fondor",
+      "Byss",
+      "Bothawui",
+      "Taris",
+      "Gyndine"
+     ]
+    },
+    {
+     "name": "The Sith",
+     "buffer": 210,
+     "worlds": [
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda",
+       "Thule",
+       "Dromund Kaas",
+       "Vjun"
+      ],
+      [
+       "Tund",
+       "Lianna",
+       "Tion",
+       "Kalsunor"
+      ],
+      [
+       "Roon"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "Darth Rivan's Almas",
+   "date": "c. 1250–1230 BBY",
+   "view": {
+    "focus": "Almas",
+    "w": 1500
+   },
+   "text": "In the Cularin system the Sith Lord Darth Rivan terraforms the world of Almas and raises a fortress there — a Sith foothold in the Expansion Region, uncomfortably close to the Reach's coreward neighbours. The fortress outlives him by a thousand years.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 260,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Fondor",
+      "Byss",
+      "Bothawui",
+      "Taris",
+      "Gyndine"
+     ]
+    },
+    {
+     "name": "The Sith",
+     "buffer": 210,
+     "worlds": [
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda",
+       "Thule",
+       "Dromund Kaas",
+       "Vjun"
+      ],
+      [
+       "Tund",
+       "Lianna",
+       "Tion",
+       "Kalsunor"
+      ],
+      [
+       "Almas",
+       "Cularin"
+      ],
+      [
+       "Roon"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Republic Dark Age",
+   "date": "c. 1100–1000 BBY · the Draggulch Period",
+   "view": "galaxy",
+   "text": "The Republic contracts to the Core. Its currency collapses, its Senate meets and decides nothing, and the Jedi become Jedi Lords ruling worlds in its name. Hyperlanes beyond the Core go unmaintained; whole regions — the Reach among them — drop off the charts. This is the age the Grumani Reach never climbed out of.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 230,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss"
+     ]
+    },
+    {
+     "name": "The Sith",
+     "buffer": 230,
+     "worlds": [
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda",
+       "Thule",
+       "Dromund Kaas",
+       "Vjun",
+       "Ambria"
+      ],
+      [
+       "Tund",
+       "Lianna",
+       "Tion",
+       "Kalsunor"
+      ],
+      [
+       "Almas",
+       "Cularin"
+      ],
+      [
+       "Roon",
+       "Apatros"
+      ],
+      [
+       "Malrev IV"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    },
+    {
+     "name": "Mandalorians",
+     "buffer": 170,
+     "worlds": [
+      "Mandalore",
+      "Concord Dawn"
+     ]
+    },
+    {
+     "name": "The withered Reach",
+     "buffer": 140,
+     "worlds": [
+      "Darkknell",
+      "Sanrafsix",
+      "Enarc",
+      "Jutrand",
+      "Syned",
+      "Verdanth",
+      "Aquilaris",
+      "Bannistar Station"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Brotherhood of Darkness",
+   "date": "1010–1003 BBY · the Light and Darkness War",
+   "view": {
+    "center": [
+     5400,
+     2900
+    ],
+    "w": 3600
+   },
+   "text": "Lord Kaan reforges the warring Sith courts into the Brotherhood of Darkness — every Sith Lord an equal, all sworn to him. Against them Lord Hoth raises the Army of Light. The war turns at the Battle of Kashyyyk, and a miner named Dessel, blooded with the Gloom Walkers at Phaseera, goes to Korriban to become Darth Bane.",
+   "polities": [
+    {
+     "name": "Army of Light",
+     "buffer": 230,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Kashyyyk",
+      "Bothawui"
+     ]
+    },
+    {
+     "name": "Brotherhood of Darkness",
+     "buffer": 240,
+     "worlds": [
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda",
+       "Thule",
+       "Dromund Kaas",
+       "Vjun",
+       "Ambria",
+       "Ruusan",
+       "Phaseera",
+       "Corphelion"
+      ],
+      [
+       "Tund",
+       "Lianna",
+       "Tion"
+      ],
+      [
+       "Almas",
+       "Cularin"
+      ],
+      [
+       "Roon",
+       "Apatros"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    },
+    {
+     "name": "Mandalorians",
+     "buffer": 170,
+     "worlds": [
+      "Mandalore",
+      "Concord Dawn"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ruusan",
+   "date": "1000 BBY · the seven battles",
+   "view": {
+    "focus": "Ruusan",
+    "w": 1100
+   },
+   "text": "Seven battles are fought on and above Ruusan. When the last goes against him, Kaan leads the Brotherhood into a cave and detonates the thought bomb: every Sith Lord present and every Jedi near enough dies with him, Lord Hoth among them. Darth Bane, who had already judged the Brotherhood a corruption, is not present. He leaves Ruusan with an apprentice and the Rule of Two.",
+   "polities": [
+    {
+     "name": "Army of Light",
+     "buffer": 230,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Kashyyyk",
+      "Bothawui",
+      "Ambria"
+     ]
+    },
+    {
+     "name": "Brotherhood of Darkness",
+     "buffer": 200,
+     "worlds": [
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda",
+       "Thule",
+       "Dromund Kaas",
+       "Vjun"
+      ],
+      [
+       "Ruusan"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    },
+    {
+     "name": "Mandalorians",
+     "buffer": 170,
+     "worlds": [
+      "Mandalore",
+      "Concord Dawn"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Ruusan Reformation",
+   "date": "1000 BBY · Year 0 AR",
+   "view": "galaxy",
+   "text": "With the Sith believed extinct, Chancellor Tarsus Valorum remakes the Republic: the army and navy are disbanded, the Jedi Lords give up their worlds and place the Order under the Senate, and the galaxy is redrawn into sectors that send senators to Coruscant. On paper the Republic is whole again. The paper does not reach the Reach.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 300,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Kashyyyk",
+      "Bothawui",
+      "Malastare",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Ord Mantell",
+      "Taris",
+      "Naboo",
+      "Manaan",
+      "Muunilinst",
+      "Mygeeto",
+      "Cato Neimoidia",
+      "Gyndine",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Ambria",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Dantooine",
+      "Onderon",
+      "Lianna",
+      "Tion"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    },
+    {
+     "name": "Mandalorians",
+     "buffer": 170,
+     "worlds": [
+      "Mandalore",
+      "Concord Dawn"
+     ]
+    },
+    {
+     "name": "Chiss Ascendancy",
+     "buffer": 260,
+     "worlds": [
+      "Csilla"
+     ]
+    },
+    {
+     "name": "The withered Reach",
+     "buffer": 140,
+     "worlds": [
+      "Darkknell",
+      "Sanrafsix",
+      "Enarc",
+      "Jutrand",
+      "Syned",
+      "Verdanth",
+      "Aquilaris",
+      "Bannistar Station"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ninety years on",
+   "date": "90 AR · the present",
+   "view": "reach",
+   "text": "The Republic of the Reformation has senators for every sector and a navy for none. The lanes that went dark in the Dark Age are still dark; the Duros Space Run has been relit one beacon at a time by prize money, not policy, and Bannistar Station is where the money ran out. Somewhere beyond the last lit beacon, the Rule of Two has been keeping its own history for ninety years.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 300,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Kashyyyk",
+      "Bothawui",
+      "Malastare",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Ord Mantell",
+      "Taris",
+      "Naboo",
+      "Manaan",
+      "Muunilinst",
+      "Mygeeto",
+      "Cato Neimoidia",
+      "Gyndine",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Ambria",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Dantooine",
+      "Onderon",
+      "Lianna",
+      "Tion",
+      "Kalarba",
+      "Kyrska",
+      "Glom Tho",
+      "Triffis"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    },
+    {
+     "name": "Mandalorians",
+     "buffer": 170,
+     "worlds": [
+      "Mandalore",
+      "Concord Dawn"
+     ]
+    },
+    {
+     "name": "Chiss Ascendancy",
+     "buffer": 260,
+     "worlds": [
+      "Csilla"
+     ]
+    },
+    {
+     "name": "The withered Reach",
+     "buffer": 140,
+     "worlds": [
+      "Darkknell",
+      "Sanrafsix",
+      "Enarc",
+      "Jutrand",
+      "Syned",
+      "Verdanth",
+      "Aquilaris",
+      "Heptooine",
+      "Byllura",
+      "Fostin Nine",
+      "Veshet"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -99,6 +99,18 @@
   #title small{display:block;color:var(--dim);letter-spacing:.3em;font-size:.7rem;text-transform:uppercase}
   #regkey{position:absolute;right:26px;bottom:22px;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.25rem .8rem;max-width:60%;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim)}
   #regkey .rk i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:.35rem;vertical-align:middle;opacity:.9}
+  #pres{position:absolute;left:50%;bottom:64px;transform:translateX(-50%);width:min(640px,calc(100% - 40px));background:rgba(5,10,16,.9);border:1px solid var(--holo-dim);padding:.9rem 1.1rem .8rem;display:none;z-index:25;backdrop-filter:blur(4px)}
+  #pres.open{display:block}
+  #pres .pt{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+  #pres h2{margin:0;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;color:var(--holo)}
+  #pres .pd{color:var(--gold);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap}
+  #pres .px{margin:.45rem 0 .5rem;font-size:.86rem;line-height:1.5;color:var(--ink)}
+  #pres .pl{display:flex;flex-wrap:wrap;gap:.25rem .9rem;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.5rem}
+  #pres .pl i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:.35rem;vertical-align:middle;opacity:.85}
+  #pres .pn{display:flex;align-items:center;gap:.4rem}
+  #pres .pn .cnt{margin-left:auto;font-size:.62rem;letter-spacing:.2em;color:var(--dim)}
+  #pres .pn .hb{padding:.35rem .6rem}
+  @media (max-width:720px){#pres{bottom:52px;padding:.7rem .8rem;max-height:44vh;overflow:auto} #pres .px{font-size:.8rem}}
   #status{position:absolute;left:26px;bottom:22px;display:flex;gap:.6rem;align-items:flex-end;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim)}
   #status .pip{display:flex;flex-direction:column;align-items:center;gap:.25rem;cursor:pointer}
   #status .pip i{width:10px;height:10px;border-radius:50%;border:1px solid var(--holo-dim);background:var(--bg)}
@@ -171,6 +183,7 @@
     <button class="hb" onclick="frame('galaxy')">Galaxy</button>
     <button class="hb" id="plotbtn" onclick="togglePlot()">Plot Course</button>
     <button class="hb" onclick="share()">Share</button>
+    <button class="hb" id="histbtn" onclick="openPresPicker()">History</button>
     <!-- GM:start -->
     <button class="hb" id="gm-switch" onclick="toggleGM()">GM</button>
     <label class="hb">Import save<input type="file" accept="application/json" style="display:none" onchange="importSave(this.files[0]);this.value=''"></label>
@@ -179,6 +192,8 @@
   </div>
   <div id="toast"></div>
   <div id="panel"><button class="x" onclick="closePanel()" aria-label="close">✕</button><div id="panel-body"></div></div>
+  <div id="pres"><div class="pt"><h2 id="pres-title"></h2><span class="pd" id="pres-date"></span></div><div class="px" id="pres-text"></div><div class="pl" id="pres-legend"></div>
+    <div class="pn"><button class="hb" onclick="presStep(-1)">◀</button><button class="hb" onclick="presStep(1)">▶</button><span class="cnt" id="pres-cnt"></span><button class="hb" onclick="endPres()">✕</button></div></div>
   <div id="status"></div>
   <div id="regkey"></div>
 </div>
@@ -374,6 +389,8 @@ function drawBg() {
     ctx.lineWidth = labels === "all" ? 1.5 : 2.5 * S; ctx.stroke();
   }
   ctx.setLineDash([]); ctx.globalAlpha = 1;
+  // political painting (presentations): buffered hulls around each polity's member worlds
+  if (pres) drawPolities(ctx, X, Y, S);
   // hyperlane routes
   const routeA = (zoom === "close" || zoom === "reach") ? 0.25 : 1;
   for (const rt of (DATA.routes || [])) {
@@ -534,6 +551,125 @@ function qPick(e) {
     if (ev.key === "/" || ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === "k")) { ev.preventDefault(); q.focus(); q.select(); }
   });
 }
+
+/* ---- presentations: scripted history tours — camera moves, narration, political painting ---- */
+const PRES = DATA.presentations || [];
+const GAL_BY = new Map(GAL.map(g => [g.name.toLowerCase(), g]));
+const SYS_BY = new Map(DATA.systems.map(s => [s.name.toLowerCase(), s]));
+function posOf(name) { const k = name.toLowerCase(); const g = GAL_BY.get(k); if (g) return [g.x, g.y]; const s = SYS_BY.get(k); return s ? [s.x, s.y] : null; }
+function hull(pts) {  // Andrew monotone chain; 1–2 points pass through
+  pts = pts.slice().sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  if (pts.length < 3) return pts;
+  const cross = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+  const lo = [], up = [];
+  for (const p of pts) { while (lo.length >= 2 && cross(lo[lo.length - 2], lo[lo.length - 1], p) <= 0) lo.pop(); lo.push(p); }
+  for (const p of pts.reverse()) { while (up.length >= 2 && cross(up[up.length - 2], up[up.length - 1], p) <= 0) up.pop(); up.push(p); }
+  return lo.slice(0, -1).concat(up.slice(0, -1));
+}
+let pres = null;  // {p, i, pol: Map name -> {color, lobes, buffer, a, target}, cam}
+function buffered(pts, B) {  // rounded offset of a convex hull = hull of circles around its vertices
+  const out = [];
+  for (const [x, y] of pts) for (let k = 0; k < 28; k++) { const a = k / 28 * 2 * Math.PI; out.push([x + B * Math.cos(a), y + B * Math.sin(a)]); }
+  return hull(out);
+}
+function polLobes(pol) {
+  if (pol.path) { const rp = (DATA.regionPaths || []).find(r => r.kind === pol.path); return rp ? [rp.pts] : []; }
+  const lobes = Array.isArray(pol.worlds[0]) ? pol.worlds : [pol.worlds];
+  return lobes.map(l => hull(l.map(posOf).filter(Boolean))).filter(h => h.length).map(h => buffered(h, pol.buffer || 180));
+}
+function drawPolities(ctx, X, Y, S) {  // same treatment as the drawn Hutt Space region: light fill, thin solid border
+  ctx.lineJoin = "round"; ctx.lineCap = "round"; ctx.setLineDash([]);
+  for (const [name, q] of pres.pol) {
+    if (q.a <= 0.01) continue;
+    for (const lobe of q.lobes) {
+      ctx.beginPath(); ctx.moveTo(X(lobe[0][0]), Y(lobe[0][1]));
+      for (let i = 1; i < lobe.length; i++) ctx.lineTo(X(lobe[i][0]), Y(lobe[i][1]));
+      ctx.closePath();
+      ctx.fillStyle = q.color; ctx.globalAlpha = 0.09 * q.a; ctx.fill();
+      ctx.strokeStyle = q.color; ctx.globalAlpha = 0.8 * q.a; ctx.lineWidth = 1.8; ctx.stroke();
+    }
+    const big = q.lobes.reduce((m, l) => l.length >= m.length ? l : m, q.lobes[0]);
+    const cx = big.reduce((s, p) => s + p[0], 0) / big.length, cy = big.reduce((s, p) => s + p[1], 0) / big.length;
+    ctx.globalAlpha = 0.85 * q.a;
+    txt(ctx, name, X(cx), Y(cy), Math.max(12, Math.min(30, 110 * S)), {fill:q.color, ls:0.3, weight:600, align:"center"});
+  }
+  ctx.globalAlpha = 1;
+}
+function presTarget(view) {
+  const r = chartRect(), asp = r.height / r.width;
+  if (typeof view === "string") return VIEWS[view] || VIEWS.galaxy;
+  let c = view.center || (view.focus ? posOf(view.focus) : null);
+  if (!c) return VIEWS.galaxy;
+  const w = view.w || 1500, h = w * asp;
+  return {x:c[0] - w / 2, y:c[1] - h / 2, w, h};
+}
+function startPres(id) {
+  const p = PRES.find(x => x.id === id) || PRES[0]; if (!p) return;
+  closePanel();
+  pres = {p, i:-1, pol:new Map(), cam:null};
+  for (const st of p.steps) for (const pol of st.polities || []) if (!pres.pol.has(pol.name))
+    pres.pol.set(pol.name, {color:(p.colors || {})[pol.name] || "#9fb0c0", lobes:polLobes(pol), buffer:pol.buffer || 180, a:0, target:0});
+  document.getElementById("pres").classList.add("open");
+  presStep(1);
+}
+function presStep(d) {
+  if (!pres) return;
+  const p = pres.p, i = Math.max(0, Math.min(p.steps.length - 1, pres.i + d));
+  if (i === pres.i && p.steps.length) return;
+  pres.i = i;
+  const st = p.steps[i];
+  document.getElementById("pres-title").textContent = st.title;
+  document.getElementById("pres-date").textContent = st.date || "";
+  document.getElementById("pres-text").textContent = st.text || "";
+  document.getElementById("pres-cnt").textContent = `${i + 1} / ${p.steps.length}`;
+  const active = new Map((st.polities || []).map(pol => [pol.name, pol]));
+  for (const [name, q] of pres.pol) {
+    const pol = active.get(name);
+    q.target = pol ? 1 : 0;
+    if (pol) { q.lobes = polLobes(pol); q.buffer = pol.buffer || q.buffer; }  // borders change with the step
+  }
+  document.getElementById("pres-legend").innerHTML = [...active.keys()].map(n => `<span><i style="background:${pres.pol.get(n).color}"></i>${esc(n)}</span>`).join("");
+  const from = {...vb}, to = presTarget(st.view), t0 = performance.now(), D = 1500;
+  pres.cam = {from, to, t0, D};
+  requestAnimationFrame(presTick);
+}
+function presTick(now) {
+  if (!pres) return;
+  let busy = false;
+  if (pres.cam) {
+    const {from, to, t0, D} = pres.cam, u = Math.min(1, (now - t0) / D), e = u < .5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2;
+    // zoom in log space so the motion reads evenly
+    const w = Math.exp(Math.log(from.w) + (Math.log(to.w) - Math.log(from.w)) * e), f = w / from.w;
+    vb = {x:from.x + (to.x - from.x) * e, y:from.y + (to.y - from.y) * e, w, h:from.h + (to.h - from.h) * e};
+    applyView();
+    if (u < 1) busy = true; else pres.cam = null;
+  }
+  for (const q of pres.pol.values()) {
+    if (Math.abs(q.a - q.target) > 0.01) { q.a += (q.target - q.a) * 0.12; busy = true; } else q.a = q.target;
+  }
+  requestDraw();
+  if (busy) requestAnimationFrame(presTick);
+}
+function endPres() {
+  if (!pres) return;
+  for (const q of pres.pol.values()) q.target = 0;
+  const p = pres; pres = null;
+  document.getElementById("pres").classList.remove("open");
+  requestDraw();
+}
+function openPresPicker() {
+  if (!PRES.length) { toast("No presentations built"); return; }
+  if (PRES.length === 1) { startPres(PRES[0].id); return; }
+  const body = document.getElementById("panel-body");
+  body.innerHTML = `<h2>History</h2>` + PRES.map(p => `<p><a href="#" onclick="startPres('${esc(p.id)}');return false"><b>${esc(p.title)}</b></a><br><small>${esc(p.subtitle || "")}</small></p>`).join("");
+  document.getElementById("panel").classList.add("open");
+}
+window.addEventListener("keydown", e => {
+  if (!pres || e.target.tagName === "INPUT") return;
+  if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); presStep(1); }
+  else if (e.key === "ArrowLeft") { e.preventDefault(); presStep(-1); }
+  else if (e.key === "Escape") endPres();
+});
 
 /* ---- pan / zoom ---- */
 function currentBox() { return chart.getAttribute("viewBox").split(" ").map(Number); }
