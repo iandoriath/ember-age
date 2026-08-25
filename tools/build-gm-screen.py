@@ -311,7 +311,6 @@ PAGES_SPEC = [
     ("setting", "act-1", "Act 1 — Reconnection", "campaign/act-1.md"),
     ("setting", "act-2", "Act 2 — Convergence", "campaign/act-2.md"),
     ("setting", "act-3", "Act 3 — The Founding", "campaign/act-3.md"),
-    ("setting", "session-one", "Session One — Vesta-9", "campaign/session-one.md"),
     ("truths", "truths", "GM Truths (Part V)", "gm/truths.md"),
 ]
 
