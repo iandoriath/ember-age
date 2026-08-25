@@ -680,6 +680,9 @@ def load_data() -> dict:
     build_network(data)
     if GWP.exists():
         merge_galaxy_wookieepedia(data, json.loads(GWP.read_text(encoding="utf-8")))
+    # history presentations (player-safe): every JSON in docs/setting/presentations
+    pdir = ROOT / "docs/setting/presentations"
+    data["presentations"] = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(pdir.glob("*.json"))] if pdir.exists() else []
     return data
 
 
@@ -711,8 +714,6 @@ def build(edition: str, data: dict, template: str) -> str:
 
 def main():
     data = load_data()
-    pdir = ROOT / "docs/setting/presentations"
-    data["presentations"] = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(pdir.glob("*.json"))] if pdir.exists() else []
     template = TEMPLATE.read_text(encoding="utf-8")
     OUT_GM.write_text(build("gm", data, template), encoding="utf-8")
     OUT_PLAYER.write_text(build("player", data, template), encoding="utf-8")

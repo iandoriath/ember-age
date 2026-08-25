@@ -98,7 +98,7 @@ def test_unbalanced_gm_markers_are_rejected():
 def test_template_has_hud_controls_and_edition_split():
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
     out = bsm.build("player", load(), tpl)
-    for token in ('id="chart"', 'id="hud"', 'id="status"', 'id="panel"', "Frame the Reach", "Frame the Road", "fonts.googleapis.com/css2?family=Rajdhani"):
+    for token in ('id="chart"', 'id="hud"', 'id="status"', 'id="panel"', "Frame the Run", "Frame the Road", "fonts.googleapis.com/css2?family=Rajdhani"):
         assert token in out, token
     assert "gm-switch" not in out and "Import save" not in out
     gm = bsm.build("gm", load(), tpl)
