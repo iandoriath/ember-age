@@ -16,7 +16,7 @@ Collect what the table actually did; each row keys an adjustment tonight. Use ev
 
 | If, at Vesta-9, the crew… | Then, at Enarc |
 |---|---|
-| Named the stranger on the record | Reike's finding makes a three-lane junction the poster child for "corridors require protection" — and Enarc sits at the mouth of the fleet's own road: the Enarc Run comes down from the Breakwater. A tender is scheduled within weeks; Sorulba hears about it before the crew arrives, blames the paper with their names on it, and opens negotiations accordingly. |
+| Named the stranger on the record | Reike's finding makes a three-lane junction the poster child for "corridors require protection" — and Enarc sits at the mouth of the fleet's own road: the Enarc Run comes down from the Greywatch. A tender is scheduled within weeks; Sorulba hears about it before the crew arrives, blames the paper with their names on it, and opens negotiations accordingly. |
 | Certified it clean — "unknown hand, lane clear" | Guild doors are warm — and if Nerra's fine print named the guild *charting authority for the corridor*, the crew is now carrying the guild's sovereignty claim into a Hutt court whether they like it or not. Sorulba has read the certificate. He quotes it. |
 | Handed the evidence to Vhail | Quiet, for now: a Vigil circuit ship shadows the crew's transponder a day behind. It does not hail. It is taking notes. |
 | Sold Osk's page — or the book's address | The Scrub is ahead of them: the Weighbridge berth log shows a hull that paid in old coin and asked no receipt, three days ago, outbound up the Run. The crew is no longer opening doors; they are following someone through them. |
