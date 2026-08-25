@@ -402,6 +402,23 @@ def build_network(data: dict) -> None:
     # membership comes from the Wookieepedia pulls ("system" fact); anchor = the hero or
     # dot bearing the system's name, else a drawn member, else the group's centroid.
     gwp_all = json.loads(GWP.read_text(encoding="utf-8")) if GWP.exists() else {}
+    # ---- region from the world's own article when it has one: the atlas's region column is
+    # wrong for ~900 of 5,500 dots (Lothal "Inner Rim", Nal Hutta "Mid Rim", Csilla "Wild Space")
+    REGION_WP = {"Outer Rim Territories": "Outer Rim", "Mid Rim Territories": "Mid Rim", "Core Worlds": "Core",
+                 "Inner Rim Territories": "Inner Rim", "Expansion Region": "Expansion Region", "Colonies": "Colonies",
+                 "Deep Core": "Deep Core", "Unknown Regions": "Unknown Regions", "Wild Space": "Wild Space",
+                 "Hutt Space": "Hutt Space", "New Territories": "Outer Rim"}
+    fixed = 0
+    for g in galaxy:
+        e = gwp_all.get(g[0])
+        if not e or e.get("missing"):
+            continue
+        first = re.split(r"[,;]|\n", (e.get("facts") or {}).get("region", ""))[0].strip()
+        reg = next((v for k, v in REGION_WP.items() if first.startswith(k)), None)
+        if reg and reg != g[5]:
+            g[5] = reg; fixed += 1
+    if fixed:
+        print(f"  {fixed} dot regions corrected from their Wookieepedia articles")
     _base = lambda s: re.sub(r"\s+system$", "", s.strip(), flags=re.I).strip().lower()
     groups = {}
     for i, g in enumerate(galaxy):
