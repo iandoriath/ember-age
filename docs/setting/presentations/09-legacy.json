@@ -1,0 +1,358 @@
+{
+ "id": "09-legacy",
+ "title": "Legacy of the Force, and after",
+ "subtitle": "40–137 ABY · the Second Galactic Civil War and Darth Krayt's Empire",
+ "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds.",
+ "colors": {
+  "Galactic Alliance": "#5fc3ff",
+  "Corellian Confederation": "#c9843f",
+  "Hapes Consortium": "#e39ac9",
+  "Imperial Remnant": "#9aa3ad",
+  "Fel Empire": "#9aa3ad",
+  "Sith Empire": "#d24a3a",
+  "Empire-in-exile": "#c8ccd4",
+  "Hutt Space": "#9fb04f"
+ },
+ "steps": [
+  {
+   "title": "The Second Galactic Civil War",
+   "date": "40–41 ABY",
+   "view": {
+    "focus": "Corellia",
+    "w": 2400
+   },
+   "text": "Corellia's Five Brothers — Corellia, Selonia, Drall, Talus and Tralus — refuse the Alliance's military levies and Centerpoint Station is reactivated. Bothawui and Commenor join them; Hapes wavers; and Jacen Solo, chief of state security, becomes Darth Caedus before it ends.",
+   "polities": [
+    {
+     "name": "Galactic Alliance",
+     "buffer": 300,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Naboo",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Onderon",
+      "Lianna",
+      "Tion",
+      "Kashyyyk",
+      "Dantooine",
+      "Ryloth",
+      "Tatooine",
+      "Geonosis",
+      "Rodia",
+      "Kessel",
+      "Bespin",
+      "Endor",
+      "Hoth",
+      "Dagobah",
+      "Ithor",
+      "Obroa-skai",
+      "Bilbringi",
+      "Yaga Minor",
+      "Bastion",
+      "Ord Trasi",
+      "Borosk",
+      "Muunilinst",
+      "Bakura",
+      "Corulag",
+      "Thyferra",
+      "Vendaxa",
+      "Sernpidal",
+      "Belkadan",
+      "Helska",
+      "Dubrillion",
+      "Garqi",
+      "Lothal",
+      "Jedha",
+      "Scarif",
+      "Felucia",
+      "Utapau",
+      "Saleucami",
+      "Christophsis",
+      "Umbara",
+      "Jabiim",
+      "Kamino",
+      "Mimban",
+      "Rothana",
+      "Yavin",
+      "Iego",
+      "Kalist",
+      "Adumar",
+      "Nirauan",
+      "Ciutric",
+      "Sleheyron"
+     ]
+    },
+    {
+     "name": "Corellian Confederation",
+     "buffer": 160,
+     "worlds": [
+      [
+       "Corellia",
+       "Selonia",
+       "Drall",
+       "Talus",
+       "Tralus"
+      ],
+      [
+       "Bothawui"
+      ],
+      [
+       "Commenor"
+      ]
+     ]
+    },
+    {
+     "name": "Hapes Consortium",
+     "buffer": 240,
+     "worlds": [
+      "Hapes"
+     ]
+    },
+    {
+     "name": "Imperial Remnant",
+     "buffer": 220,
+     "worlds": [
+      "Bastion",
+      "Yaga Minor",
+      "Muunilinst",
+      "Borosk"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Sith–Imperial War",
+   "date": "127–130 ABY",
+   "view": "galaxy",
+   "text": "The Fel Empire, grown from the Remnant into the galaxy's second power, goes to war with the Alliance — and the One Sith of Korriban, hidden for a century, ride the victory in. Ossus is massacred, Coruscant falls, and Darth Krayt takes the throne from the Emperor he had used. Roan Fel keeps a court in exile at Bastion; the Alliance keeps a fleet.",
+   "polities": [
+    {
+     "name": "Sith Empire",
+     "buffer": 300,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Ossus",
+      "Korriban",
+      "Ziost",
+      "Bilbringi",
+      "Kuat",
+      "Bothawui"
+     ]
+    },
+    {
+     "name": "Empire-in-exile",
+     "buffer": 200,
+     "worlds": [
+      "Bastion",
+      "Yaga Minor",
+      "Borosk"
+     ]
+    },
+    {
+     "name": "Galactic Alliance",
+     "buffer": 230,
+     "worlds": [
+      "Dac",
+      "Sullust",
+      "Kashyyyk"
+     ]
+    },
+    {
+     "name": "Hapes Consortium",
+     "buffer": 240,
+     "worlds": [
+      "Hapes"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "Krayt falls",
+   "date": "137 ABY",
+   "view": {
+    "focus": "Coruscant",
+    "w": 3400
+   },
+   "text": "Seven years of Sith rule end with Dac's oceans poisoned, the Jedi hunted from Ossus, and an alliance of the Galactic Alliance Remnant, the Empire-in-exile and the Jedi retaking Coruscant. Krayt dies on his own throne. What follows is a Galactic Federation Triumvirate — three governments, one map, and the oldest question in the galaxy: who keeps the lanes lit.",
+   "polities": [
+    {
+     "name": "Galactic Alliance",
+     "buffer": 300,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Naboo",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Onderon",
+      "Lianna",
+      "Tion",
+      "Kashyyyk",
+      "Dantooine",
+      "Ryloth",
+      "Tatooine",
+      "Geonosis",
+      "Rodia",
+      "Kessel",
+      "Bespin",
+      "Endor",
+      "Hoth",
+      "Dagobah",
+      "Ithor",
+      "Obroa-skai",
+      "Bilbringi",
+      "Yaga Minor",
+      "Bastion",
+      "Ord Trasi",
+      "Borosk",
+      "Muunilinst",
+      "Bakura",
+      "Corulag",
+      "Thyferra",
+      "Vendaxa",
+      "Sernpidal",
+      "Belkadan",
+      "Helska",
+      "Dubrillion",
+      "Garqi",
+      "Lothal",
+      "Jedha",
+      "Scarif",
+      "Felucia",
+      "Utapau",
+      "Saleucami",
+      "Christophsis",
+      "Umbara",
+      "Jabiim",
+      "Kamino",
+      "Mimban",
+      "Rothana",
+      "Yavin",
+      "Iego",
+      "Kalist",
+      "Adumar",
+      "Nirauan",
+      "Ciutric",
+      "Sleheyron"
+     ]
+    },
+    {
+     "name": "Empire-in-exile",
+     "buffer": 200,
+     "worlds": [
+      "Bastion",
+      "Yaga Minor",
+      "Borosk"
+     ]
+    },
+    {
+     "name": "Sith Empire",
+     "buffer": 170,
+     "worlds": [
+      "Korriban",
+      "Ziost"
+     ]
+    },
+    {
+     "name": "Hapes Consortium",
+     "buffer": 240,
+     "worlds": [
+      "Hapes"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  }
+ ]
+}

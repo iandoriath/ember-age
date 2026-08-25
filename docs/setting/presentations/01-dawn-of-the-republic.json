@@ -1,0 +1,330 @@
+{
+ "id": "01-dawn-of-the-republic",
+ "title": "Dawn of the Republic",
+ "subtitle": "c. 30,000–5,000 BBY · the Infinite Empire, Xim, the Hutts, and the Republic's first war with the Sith",
+ "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds.",
+ "colors": {
+  "Infinite Empire": "#8f6bd6",
+  "Tion Hegemony": "#e0b04a",
+  "Hutt Empire": "#9fb04f",
+  "Galactic Republic": "#5fc3ff",
+  "Sith Empire": "#d24a3a",
+  "Hutt Space": "#9fb04f"
+ },
+ "steps": [
+  {
+   "title": "The Infinite Empire",
+   "date": "c. 30,000–25,200 BBY",
+   "view": "galaxy",
+   "text": "Before hyperdrives, there were the Rakata: Force-wielding conquerors from Lehon whose ships steered by the dark side and whose Star Forge fed on a captive sun. Their Infinite Empire held Kashyyyk, Tatooine, Dantooine, Manaan, Korriban and hundreds of worlds in slavery — until plague and the loss of their gift broke it, and their slaves inherited the stars.",
+   "polities": [
+    {
+     "name": "Infinite Empire",
+     "buffer": 200,
+     "worlds": [
+      [
+       "Rakata Prime",
+       "Lehon"
+      ],
+      [
+       "Kashyyyk",
+       "Manaan"
+      ],
+      [
+       "Tatooine"
+      ],
+      [
+       "Dantooine"
+      ],
+      [
+       "Korriban"
+      ],
+      [
+       "Honoghr"
+      ],
+      [
+       "Byss"
+      ],
+      [
+       "Belsavis"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Xim the Despot",
+   "date": "c. 25,130 BBY",
+   "view": {
+    "focus": "Tion",
+    "w": 2800
+   },
+   "text": "In the Tion Cluster the warlord Xim builds the first human empire on the Rakata's ruins — war-droids, treasure fleets, a capital at Argai — and marches on Hutt space. At the third battle of Vontor the Hutts break him. The Tion keeps his legend; the Hutts keep everything else.",
+   "polities": [
+    {
+     "name": "Tion Hegemony",
+     "buffer": 210,
+     "worlds": [
+      "Xo",
+      "Tion",
+      "Lianna",
+      "Desevro",
+      "Raxus",
+      "Dellalt",
+      "Argai"
+     ]
+    },
+    {
+     "name": "Hutt Empire",
+     "buffer": 260,
+     "worlds": [
+      "Varl",
+      "Nal Hutta",
+      "Nar Shaddaa",
+      "Sleheyron"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Republic is founded",
+   "date": "25,053 BBY",
+   "view": {
+    "center": [
+     4000,
+     3900
+    ],
+    "w": 3400
+   },
+   "text": "The Core Founders — Coruscant, Corellia, Alderaan, Duro, Kuat and their neighbours — sign the Galactic Constitution. The Perlemian Trade Route and the Corellian Run are the Republic's first two limbs, and the Jedi, newly arrived from Tython and Ossus, are its conscience rather than its army.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 240,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Ossus"
+     ]
+    },
+    {
+     "name": "Tion Hegemony",
+     "buffer": 200,
+     "worlds": [
+      "Xo",
+      "Tion",
+      "Lianna",
+      "Desevro",
+      "Raxus"
+     ]
+    },
+    {
+     "name": "Hutt Empire",
+     "buffer": 260,
+     "worlds": [
+      "Varl",
+      "Nal Hutta",
+      "Nar Shaddaa",
+      "Sleheyron"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Tionese War",
+   "date": "c. 24,000 BBY",
+   "view": "galaxy",
+   "text": "The Tion's heirs strike down the Perlemian with alchemical fire; the Republic answers with the Hutts as allies of convenience and burns the Tion's worlds in turn. The Hegemony is absorbed. For the first time the Republic is a power that extends past the Core.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 250,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Ossus",
+      "Tion",
+      "Lianna",
+      "Raxus",
+      "Desevro"
+     ]
+    },
+    {
+     "name": "Hutt Empire",
+     "buffer": 260,
+     "worlds": [
+      "Varl",
+      "Nal Hutta",
+      "Nar Shaddaa",
+      "Sleheyron"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Hundred-Year Darkness",
+   "date": "7,003–6,900 BBY",
+   "view": {
+    "focus": "Korriban",
+    "w": 2600
+   },
+   "text": "A schism in the Jedi Order ends at Corbos with the Dark Jedi exiled beyond the Republic's edge. They find the Sith species on Korriban, are worshipped as gods, and found an empire in the Stygian Caldera — Korriban, Ziost, Khar Delba, Rhelg — that the Republic will forget for two thousand years.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 260,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Ossus",
+      "Tion",
+      "Lianna"
+     ]
+    },
+    {
+     "name": "Sith Empire",
+     "buffer": 170,
+     "worlds": [
+      "Korriban",
+      "Ziost",
+      "Rhelg",
+      "Khar Delba",
+      "Jaguada",
+      "Bosthirda",
+      "Thule",
+      "Dromund Kaas"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Great Hyperspace War",
+   "date": "5,000 BBY",
+   "view": "galaxy",
+   "text": "Two hyperspace explorers stumble into Sith space and Naga Sadow follows them home. His fleets strike Koros, Kirrek and Coruscant itself in a single campaign; Empress Teta and the Jedi throw them back, and the Republic's reprisal razes the Caldera. The Sith survive only in hiding — Sadow on Yavin's fourth moon, others in the Unknown Regions.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 260,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Ossus",
+      "Tion",
+      "Lianna",
+      "Kirrek"
+     ]
+    },
+    {
+     "name": "Sith Empire",
+     "buffer": 190,
+     "worlds": [
+      "Korriban",
+      "Ziost",
+      "Rhelg",
+      "Khar Delba",
+      "Jaguada",
+      "Bosthirda",
+      "Thule",
+      "Dromund Kaas",
+      "Rhen Var"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,429 @@
+{
+ "id": "05-rise-of-the-empire",
+ "title": "The Rise of the Empire",
+ "subtitle": "32–19 BBY · the blockade of Naboo, the Separatist Confederacy, the Clone Wars, Order 66",
+ "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds.",
+ "colors": {
+  "Galactic Republic": "#5fc3ff",
+  "Trade Federation": "#c77dff",
+  "Confederacy of Independent Systems": "#c77dff",
+  "Hutt Space": "#9fb04f",
+  "Galactic Empire": "#9aa3ad",
+  "Corporate Sector": "#d9a24a"
+ },
+ "steps": [
+  {
+   "title": "The Blockade of Naboo",
+   "date": "32 BBY",
+   "view": {
+    "focus": "Naboo",
+    "w": 2200
+   },
+   "text": "The Trade Federation blockades Naboo over a tax on trade routes; behind it, a Sith Lord tests a Republic that has not fought a war in a thousand years. The crisis makes Palpatine Chancellor. Nobody notices that this is the point of it.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 270,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Naboo",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Onderon",
+      "Lianna",
+      "Tion",
+      "Kashyyyk",
+      "Dantooine",
+      "Ryloth",
+      "Tatooine",
+      "Geonosis",
+      "Rodia",
+      "Kessel",
+      "Bespin",
+      "Endor",
+      "Hoth",
+      "Dagobah",
+      "Ithor",
+      "Obroa-skai",
+      "Bilbringi",
+      "Yaga Minor",
+      "Bastion",
+      "Ord Trasi",
+      "Borosk",
+      "Muunilinst",
+      "Bakura",
+      "Corulag",
+      "Thyferra",
+      "Vendaxa",
+      "Sernpidal",
+      "Belkadan",
+      "Helska",
+      "Dubrillion",
+      "Garqi",
+      "Lothal",
+      "Jedha",
+      "Scarif",
+      "Felucia",
+      "Utapau",
+      "Saleucami",
+      "Christophsis",
+      "Umbara",
+      "Jabiim",
+      "Kamino",
+      "Mimban",
+      "Rothana",
+      "Yavin",
+      "Iego",
+      "Kalist",
+      "Adumar",
+      "Nirauan",
+      "Ciutric",
+      "Sleheyron"
+     ]
+    },
+    {
+     "name": "Trade Federation",
+     "buffer": 180,
+     "worlds": [
+      [
+       "Cato Neimoidia"
+      ],
+      [
+       "Naboo"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Separatist Crisis",
+   "date": "24–22 BBY",
+   "view": "galaxy",
+   "text": "Count Dooku's Confederacy of Independent Systems draws thousands of worlds out of the Republic — the Trade Federation, the Banking Clan of Muunilinst, the Techno Union, Geonosis's foundries, a capital at Raxus. The Republic discovers it has an army waiting on Kamino that it never ordered.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 260,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Kamino",
+      "Naboo",
+      "Eriadu",
+      "Christophsis",
+      "Ryloth",
+      "Kashyyyk",
+      "Dac",
+      "Rothana"
+     ]
+    },
+    {
+     "name": "Confederacy of Independent Systems",
+     "buffer": 210,
+     "worlds": [
+      [
+       "Geonosis",
+       "Tatooine"
+      ],
+      [
+       "Cato Neimoidia",
+       "Muunilinst",
+       "Mygeeto"
+      ],
+      [
+       "Raxus",
+       "Lianna",
+       "Tion"
+      ],
+      [
+       "Mustafar",
+       "Sullust"
+      ],
+      [
+       "Felucia",
+       "Saleucami"
+      ],
+      [
+       "Utapau"
+      ],
+      [
+       "Umbara"
+      ],
+      [
+       "Jabiim"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Clone Wars",
+   "date": "22–19 BBY",
+   "view": {
+    "center": [
+     5200,
+     5200
+    ],
+    "w": 4600
+   },
+   "text": "Three years of war on a thousand fronts — Christophsis, Ryloth, Umbara, Jabiim, Kashyyyk — ending in the Outer Rim Sieges at Felucia, Mygeeto, Saleucami and Utapau. The Republic wins every campaign and loses the Republic.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 270,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Kamino",
+      "Naboo",
+      "Eriadu",
+      "Christophsis",
+      "Ryloth",
+      "Kashyyyk",
+      "Dac",
+      "Rothana",
+      "Umbara",
+      "Jabiim",
+      "Malastare",
+      "Bothawui"
+     ]
+    },
+    {
+     "name": "Confederacy of Independent Systems",
+     "buffer": 200,
+     "worlds": [
+      [
+       "Geonosis"
+      ],
+      [
+       "Raxus",
+       "Lianna",
+       "Tion"
+      ],
+      [
+       "Mustafar"
+      ],
+      [
+       "Felucia",
+       "Saleucami"
+      ],
+      [
+       "Utapau"
+      ],
+      [
+       "Mygeeto"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "Order 66",
+   "date": "19 BBY",
+   "view": "galaxy",
+   "text": "The Jedi are shot by their own troops on every front in the same hour; the Separatist leaders are murdered on Mustafar; the Senate votes the Republic into a Galactic Empire to thunderous applause. Only the Hutts and the Corporate Sector keep their charters — because they are useful.",
+   "polities": [
+    {
+     "name": "Galactic Empire",
+     "buffer": 300,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Naboo",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Onderon",
+      "Lianna",
+      "Tion",
+      "Kashyyyk",
+      "Dantooine",
+      "Ryloth",
+      "Tatooine",
+      "Geonosis",
+      "Rodia",
+      "Kessel",
+      "Bespin",
+      "Endor",
+      "Hoth",
+      "Dagobah",
+      "Ithor",
+      "Obroa-skai",
+      "Bilbringi",
+      "Yaga Minor",
+      "Bastion",
+      "Ord Trasi",
+      "Borosk",
+      "Muunilinst",
+      "Bakura",
+      "Corulag",
+      "Thyferra",
+      "Vendaxa",
+      "Sernpidal",
+      "Belkadan",
+      "Helska",
+      "Dubrillion",
+      "Garqi",
+      "Lothal",
+      "Jedha",
+      "Scarif",
+      "Felucia",
+      "Utapau",
+      "Saleucami",
+      "Christophsis",
+      "Umbara",
+      "Jabiim",
+      "Kamino",
+      "Mimban",
+      "Rothana",
+      "Yavin",
+      "Iego",
+      "Kalist",
+      "Adumar",
+      "Nirauan",
+      "Ciutric",
+      "Sleheyron",
+      "Geonosis",
+      "Mustafar",
+      "Raxus"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    },
+    {
+     "name": "Corporate Sector",
+     "buffer": 260,
+     "worlds": [
+      "Bonadan"
+     ]
+    }
+   ]
+  }
+ ]
+}

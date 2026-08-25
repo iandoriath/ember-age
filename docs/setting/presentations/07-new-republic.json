@@ -1,0 +1,375 @@
+{
+ "id": "07-new-republic",
+ "title": "The New Republic",
+ "subtitle": "4–19 ABY · warlords, Thrawn, the reborn Emperor, and the Imperial Remnant",
+ "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds.",
+ "colors": {
+  "New Republic": "#5fc3ff",
+  "Galactic Empire": "#9aa3ad",
+  "Imperial Remnant": "#9aa3ad",
+  "Warlords": "#7a7f88",
+  "Hapes Consortium": "#e39ac9",
+  "Hutt Space": "#9fb04f",
+  "Corporate Sector": "#d9a24a",
+  "Chiss Ascendancy": "#7f86b3"
+ },
+ "steps": [
+  {
+   "title": "The Empire fragments",
+   "date": "4–6 ABY",
+   "view": "galaxy",
+   "text": "Without Palpatine the Moffs become warlords — Zsinj in the Quelii oversector, Isard on Coruscant, a dozen admirals with a dozen fleets. The New Republic grows from Endor along the trade routes: Bothawui, Sullust, Mon Calamari, Kashyyyk, and every world that was waiting for permission to leave.",
+   "polities": [
+    {
+     "name": "New Republic",
+     "buffer": 230,
+     "worlds": [
+      "Endor",
+      "Sullust",
+      "Dac",
+      "Bothawui",
+      "Kashyyyk",
+      "Bakura",
+      "Kessel"
+     ]
+    },
+    {
+     "name": "Galactic Empire",
+     "buffer": 270,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Corulag",
+      "Bilbringi",
+      "Yaga Minor",
+      "Bastion"
+     ]
+    },
+    {
+     "name": "Warlords",
+     "buffer": 200,
+     "worlds": [
+      [
+       "Ord Mantell",
+       "Serenno"
+      ],
+      [
+       "Ciutric"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    },
+    {
+     "name": "Corporate Sector",
+     "buffer": 260,
+     "worlds": [
+      "Bonadan"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Coruscant, and Thrawn",
+   "date": "7–9 ABY",
+   "view": {
+    "focus": "Coruscant",
+    "w": 3200
+   },
+   "text": "Rogue Squadron takes Coruscant; the bacta war over Thyferra follows. Then Grand Admiral Thrawn returns from the Unknown Regions with clones from Wayland and a fleet raised at Sluis Van and Bilbringi, and for a year the New Republic loses every engagement it fights — until a Noghri bodyguard ends him.",
+   "polities": [
+    {
+     "name": "New Republic",
+     "buffer": 280,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Endor",
+      "Sullust",
+      "Dac",
+      "Bothawui",
+      "Kashyyyk",
+      "Bakura",
+      "Thyferra",
+      "Bespin"
+     ]
+    },
+    {
+     "name": "Galactic Empire",
+     "buffer": 220,
+     "worlds": [
+      [
+       "Bilbringi",
+       "Yaga Minor",
+       "Bastion",
+       "Muunilinst",
+       "Borosk"
+      ],
+      [
+       "Wayland"
+      ],
+      [
+       "Sluis Van"
+      ],
+      [
+       "Nirauan"
+      ]
+     ]
+    },
+    {
+     "name": "Hapes Consortium",
+     "buffer": 260,
+     "worlds": [
+      "Hapes"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    },
+    {
+     "name": "Corporate Sector",
+     "buffer": 260,
+     "worlds": [
+      "Bonadan"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Dark Empire",
+   "date": "10–11 ABY",
+   "view": {
+    "focus": "Byss",
+    "w": 2600
+   },
+   "text": "Palpatine returns in a clone body from the Deep Core fortress of Byss with World Devastators and the Galaxy Gun, retakes Coruscant, and loses it again to his own generals. When the last clone dies, the Empire that remains is a rump in the Outer Rim.",
+   "polities": [
+    {
+     "name": "New Republic",
+     "buffer": 260,
+     "worlds": [
+      "Dac",
+      "Sullust",
+      "Bothawui",
+      "Kashyyyk",
+      "Bakura",
+      "Corellia",
+      "Chandrila",
+      "Bespin"
+     ]
+    },
+    {
+     "name": "Galactic Empire",
+     "buffer": 200,
+     "worlds": [
+      [
+       "Byss"
+      ],
+      [
+       "Coruscant",
+       "Kuat"
+      ],
+      [
+       "Bilbringi",
+       "Yaga Minor",
+       "Bastion",
+       "Muunilinst"
+      ]
+     ]
+    },
+    {
+     "name": "Hapes Consortium",
+     "buffer": 260,
+     "worlds": [
+      "Hapes"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Pellaeon–Gavrisom Treaty",
+   "date": "19 ABY",
+   "view": "galaxy",
+   "text": "After Daala's warlord purge and the Caamas crisis, Admiral Pellaeon signs the peace at Bastion: the Imperial Remnant keeps eight sectors in the Outer Rim, and the New Republic keeps everything else. Beyond the map's edge the Chiss keep their own counsel, as they have since Thrawn.",
+   "polities": [
+    {
+     "name": "New Republic",
+     "buffer": 300,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Naboo",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Onderon",
+      "Lianna",
+      "Tion",
+      "Kashyyyk",
+      "Dantooine",
+      "Ryloth",
+      "Tatooine",
+      "Geonosis",
+      "Rodia",
+      "Kessel",
+      "Bespin",
+      "Endor",
+      "Hoth",
+      "Dagobah",
+      "Ithor",
+      "Obroa-skai",
+      "Bilbringi",
+      "Yaga Minor",
+      "Bastion",
+      "Ord Trasi",
+      "Borosk",
+      "Muunilinst",
+      "Bakura",
+      "Corulag",
+      "Thyferra",
+      "Vendaxa",
+      "Sernpidal",
+      "Belkadan",
+      "Helska",
+      "Dubrillion",
+      "Garqi",
+      "Lothal",
+      "Jedha",
+      "Scarif",
+      "Felucia",
+      "Utapau",
+      "Saleucami",
+      "Christophsis",
+      "Umbara",
+      "Jabiim",
+      "Kamino",
+      "Mimban",
+      "Rothana",
+      "Yavin",
+      "Iego",
+      "Kalist",
+      "Adumar",
+      "Nirauan",
+      "Ciutric",
+      "Sleheyron"
+     ]
+    },
+    {
+     "name": "Imperial Remnant",
+     "buffer": 220,
+     "worlds": [
+      "Bastion",
+      "Yaga Minor",
+      "Muunilinst",
+      "Borosk",
+      "Ord Trasi"
+     ]
+    },
+    {
+     "name": "Hapes Consortium",
+     "buffer": 260,
+     "worlds": [
+      "Hapes"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    },
+    {
+     "name": "Corporate Sector",
+     "buffer": 260,
+     "worlds": [
+      "Bonadan"
+     ]
+    },
+    {
+     "name": "Chiss Ascendancy",
+     "buffer": 260,
+     "worlds": [
+      "Csilla"
+     ]
+    }
+   ]
+  }
+ ]
+}

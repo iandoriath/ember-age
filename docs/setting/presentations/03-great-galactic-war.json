@@ -1,0 +1,502 @@
+{
+ "id": "03-great-galactic-war",
+ "title": "The Great Galactic War",
+ "subtitle": "3,681–3,630 BBY · the Sith Empire returns, the Treaty of Coruscant, the Cold War, and Zakuul",
+ "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds.",
+ "colors": {
+  "Galactic Republic": "#5fc3ff",
+  "Sith Empire": "#d24a3a",
+  "Mandalorians": "#b9bfcc",
+  "Hutt Cartel": "#9fb04f",
+  "Eternal Empire": "#e6d27a",
+  "Eternal Alliance": "#7fd4ff"
+ },
+ "steps": [
+  {
+   "title": "The Empire returns",
+   "date": "3,681 BBY",
+   "view": {
+    "focus": "Korriban",
+    "w": 3200
+   },
+   "text": "After thirteen centuries in the dark the Sith Emperor's fleets come out of the Unknown Regions. Korriban is retaken in a day, the Aparo and Tingel Arm sectors fall in a season, and the Republic learns its Outer Rim was never really its own.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 260,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Naboo",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Onderon",
+      "Lianna",
+      "Tion",
+      "Kashyyyk",
+      "Dantooine",
+      "Ryloth",
+      "Tatooine",
+      "Geonosis",
+      "Rodia",
+      "Kessel",
+      "Bespin",
+      "Endor",
+      "Hoth",
+      "Dagobah",
+      "Ithor",
+      "Obroa-skai",
+      "Bilbringi",
+      "Yaga Minor",
+      "Bastion",
+      "Ord Trasi",
+      "Borosk",
+      "Muunilinst",
+      "Bakura",
+      "Corulag",
+      "Thyferra",
+      "Vendaxa",
+      "Sernpidal",
+      "Belkadan",
+      "Helska",
+      "Dubrillion",
+      "Garqi",
+      "Lothal",
+      "Jedha",
+      "Scarif",
+      "Felucia",
+      "Utapau",
+      "Saleucami",
+      "Christophsis",
+      "Umbara",
+      "Jabiim",
+      "Kamino",
+      "Mimban",
+      "Rothana",
+      "Yavin",
+      "Iego",
+      "Kalist",
+      "Adumar",
+      "Nirauan",
+      "Ciutric",
+      "Sleheyron"
+     ]
+    },
+    {
+     "name": "Sith Empire",
+     "buffer": 220,
+     "worlds": [
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda",
+       "Thule",
+       "Dromund Kaas"
+      ],
+      [
+       "Ord Radama"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "Blockade of the Hydian Way",
+   "date": "c. 3,660 BBY",
+   "view": {
+    "focus": "Mandalore",
+    "w": 3000
+   },
+   "text": "A new Mandalore, raised up by the Sith, closes the Hydian Way with the clans' fleets and the Core begins to starve. It takes a smuggler — Hylo Visz — and a convoy of privateers to break the blockade. The Republic is saved by the people it taxes.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 260,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Naboo",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Onderon",
+      "Lianna",
+      "Tion",
+      "Kashyyyk",
+      "Dantooine",
+      "Ryloth",
+      "Tatooine",
+      "Geonosis",
+      "Rodia",
+      "Kessel",
+      "Bespin",
+      "Endor",
+      "Hoth",
+      "Dagobah",
+      "Ithor",
+      "Obroa-skai",
+      "Bilbringi",
+      "Yaga Minor",
+      "Bastion",
+      "Ord Trasi",
+      "Borosk",
+      "Muunilinst",
+      "Bakura",
+      "Corulag",
+      "Thyferra",
+      "Vendaxa",
+      "Sernpidal",
+      "Belkadan",
+      "Helska",
+      "Dubrillion",
+      "Garqi",
+      "Lothal",
+      "Jedha",
+      "Scarif",
+      "Felucia",
+      "Utapau",
+      "Saleucami",
+      "Christophsis",
+      "Umbara",
+      "Jabiim",
+      "Kamino",
+      "Mimban",
+      "Rothana",
+      "Yavin",
+      "Iego",
+      "Kalist",
+      "Adumar",
+      "Nirauan",
+      "Ciutric",
+      "Sleheyron"
+     ]
+    },
+    {
+     "name": "Sith Empire",
+     "buffer": 230,
+     "worlds": [
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda",
+       "Thule",
+       "Dromund Kaas"
+      ],
+      [
+       "Ord Radama"
+      ],
+      [
+       "Balmorra"
+      ]
+     ]
+    },
+    {
+     "name": "Mandalorians",
+     "buffer": 170,
+     "worlds": [
+      "Mandalore",
+      "Concord Dawn"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Sacking of Coruscant",
+   "date": "3,653 BBY",
+   "view": "galaxy",
+   "text": "While the Republic's delegates negotiate on Alderaan, Darth Malgus's strike team burns the Jedi Temple and the Empire holds Coruscant hostage. The Treaty of Coruscant cedes the Outer Rim: Balmorra, Taris's ruins, a dozen sectors. Peace, on paper, for a decade.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 250,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Ord Mantell",
+      "Alderaan",
+      "Corellia",
+      "Manaan",
+      "Onderon",
+      "Dantooine"
+     ]
+    },
+    {
+     "name": "Sith Empire",
+     "buffer": 240,
+     "worlds": [
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda",
+       "Thule",
+       "Dromund Kaas"
+      ],
+      [
+       "Balmorra",
+       "Taris"
+      ],
+      [
+       "Ord Radama"
+      ],
+      [
+       "Ilum"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Cartel",
+     "buffer": 240,
+     "worlds": [
+      "Nal Hutta",
+      "Nar Shaddaa",
+      "Makeb",
+      "Sleheyron"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Cold War",
+   "date": "3,653–3,642 BBY",
+   "view": {
+    "center": [
+     4800,
+     3600
+    ],
+    "w": 4200
+   },
+   "text": "A war fought by proxy: resistance on Balmorra, civil war on Alderaan, salvage crews on Hoth, gangs on Nar Shaddaa, and the Emperor's secrets buried under Belsavis and Voss. Both sides train the generation that will tear the treaty up.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 250,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Ord Mantell",
+      "Manaan",
+      "Onderon",
+      "Dantooine",
+      "Belsavis"
+     ]
+    },
+    {
+     "name": "Sith Empire",
+     "buffer": 240,
+     "worlds": [
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda",
+       "Thule",
+       "Dromund Kaas"
+      ],
+      [
+       "Balmorra",
+       "Taris"
+      ],
+      [
+       "Ord Radama"
+      ],
+      [
+       "Ilum"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Cartel",
+     "buffer": 240,
+     "worlds": [
+      "Nal Hutta",
+      "Nar Shaddaa",
+      "Makeb",
+      "Sleheyron"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Eternal Empire",
+   "date": "3,637–3,630 BBY",
+   "view": {
+    "focus": "Zakuul",
+    "w": 3600
+   },
+   "text": "From Wild Space comes Zakuul and its Eternal Fleet, and in a single year both Republic and Empire kneel to Valkorion's children. The resistance that finally breaks the Eternal Throne — the Eternal Alliance at Odessen — is built from the defectors of both.",
+   "polities": [
+    {
+     "name": "Eternal Empire",
+     "buffer": 260,
+     "worlds": [
+      [
+       "Zakuul"
+      ],
+      [
+       "Coruscant",
+       "Corellia",
+       "Kuat",
+       "Alderaan",
+       "Chandrila",
+       "Brentaal",
+       "Duro",
+       "Anaxes"
+      ],
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba"
+      ]
+     ]
+    },
+    {
+     "name": "Eternal Alliance",
+     "buffer": 240,
+     "worlds": [
+      "Odessen"
+     ]
+    },
+    {
+     "name": "Hutt Cartel",
+     "buffer": 240,
+     "worlds": [
+      "Nal Hutta",
+      "Nar Shaddaa",
+      "Makeb"
+     ]
+    }
+   ]
+  }
+ ]
+}

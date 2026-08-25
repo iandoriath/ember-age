@@ -1,0 +1,438 @@
+{
+ "id": "08-yuuzhan-vong-war",
+ "title": "The Yuuzhan Vong War",
+ "subtitle": "25–29 ABY · an invasion from outside the galaxy",
+ "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds.",
+ "colors": {
+  "New Republic": "#5fc3ff",
+  "Galactic Alliance": "#5fc3ff",
+  "Yuuzhan Vong": "#7fbf7f",
+  "Imperial Remnant": "#9aa3ad",
+  "Hapes Consortium": "#e39ac9",
+  "Hutt Space": "#9fb04f",
+  "Chiss Ascendancy": "#7f86b3"
+ },
+ "steps": [
+  {
+   "title": "Vector Prime",
+   "date": "25 ABY",
+   "view": {
+    "focus": "Sernpidal",
+    "w": 3000
+   },
+   "text": "A living fleet enters the galaxy at the far end of the Perlemian. Helska falls, Belkadan is terraformed into a shipyard, and Sernpidal is crushed by its own moon. The New Republic's Senate debates whether it is happening.",
+   "polities": [
+    {
+     "name": "New Republic",
+     "buffer": 300,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Naboo",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Onderon",
+      "Lianna",
+      "Tion",
+      "Kashyyyk",
+      "Dantooine",
+      "Ryloth",
+      "Tatooine",
+      "Geonosis",
+      "Rodia",
+      "Kessel",
+      "Bespin",
+      "Endor",
+      "Hoth",
+      "Dagobah",
+      "Ithor",
+      "Obroa-skai",
+      "Bilbringi",
+      "Yaga Minor",
+      "Bastion",
+      "Ord Trasi",
+      "Borosk",
+      "Muunilinst",
+      "Bakura",
+      "Corulag",
+      "Thyferra",
+      "Vendaxa",
+      "Sernpidal",
+      "Belkadan",
+      "Helska",
+      "Dubrillion",
+      "Garqi",
+      "Lothal",
+      "Jedha",
+      "Scarif",
+      "Felucia",
+      "Utapau",
+      "Saleucami",
+      "Christophsis",
+      "Umbara",
+      "Jabiim",
+      "Kamino",
+      "Mimban",
+      "Rothana",
+      "Yavin",
+      "Iego",
+      "Kalist",
+      "Adumar",
+      "Nirauan",
+      "Ciutric",
+      "Sleheyron"
+     ]
+    },
+    {
+     "name": "Yuuzhan Vong",
+     "buffer": 220,
+     "worlds": [
+      "Helska",
+      "Belkadan",
+      "Sernpidal",
+      "Dubrillion"
+     ]
+    },
+    {
+     "name": "Imperial Remnant",
+     "buffer": 220,
+     "worlds": [
+      "Bastion",
+      "Yaga Minor",
+      "Muunilinst",
+      "Borosk"
+     ]
+    },
+    {
+     "name": "Hapes Consortium",
+     "buffer": 240,
+     "worlds": [
+      "Hapes"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Rim falls",
+   "date": "25–26 ABY",
+   "view": "galaxy",
+   "text": "Ithor is burned, Obroa-skai's libraries taken, Garqi and Duro overrun; the Hutts bargain and are conquered anyway. The invasion comes down the Perlemian and the Hydian like water through a broken dam, and the refugees arrive on Coruscant before the news does.",
+   "polities": [
+    {
+     "name": "New Republic",
+     "buffer": 280,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Dac",
+      "Sullust",
+      "Kashyyyk",
+      "Corellia",
+      "Bilbringi"
+     ]
+    },
+    {
+     "name": "Yuuzhan Vong",
+     "buffer": 240,
+     "worlds": [
+      [
+       "Helska",
+       "Belkadan",
+       "Sernpidal",
+       "Dubrillion",
+       "Garqi",
+       "Ithor",
+       "Obroa-skai"
+      ],
+      [
+       "Duro"
+      ],
+      [
+       "Nal Hutta",
+       "Nar Shaddaa"
+      ]
+     ]
+    },
+    {
+     "name": "Imperial Remnant",
+     "buffer": 220,
+     "worlds": [
+      "Bastion",
+      "Yaga Minor",
+      "Muunilinst",
+      "Borosk"
+     ]
+    },
+    {
+     "name": "Hapes Consortium",
+     "buffer": 240,
+     "worlds": [
+      "Hapes"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The fall of Coruscant",
+   "date": "27 ABY",
+   "view": {
+    "focus": "Coruscant",
+    "w": 3400
+   },
+   "text": "Coruscant falls and is reshaped into Yuuzhan'tar, the Vong's new homeworld. What is left of the government gathers at Mon Calamari and, with the Imperial Remnant and the Hapans, becomes the Galactic Federation of Free Alliances. The New Republic ends here; the Galactic Alliance begins.",
+   "polities": [
+    {
+     "name": "Galactic Alliance",
+     "buffer": 260,
+     "worlds": [
+      "Dac",
+      "Sullust",
+      "Kashyyyk",
+      "Bothawui",
+      "Bilbringi",
+      "Bakura"
+     ]
+    },
+    {
+     "name": "Yuuzhan Vong",
+     "buffer": 260,
+     "worlds": [
+      [
+       "Coruscant",
+       "Corellia",
+       "Kuat",
+       "Alderaan",
+       "Chandrila",
+       "Brentaal",
+       "Duro",
+       "Anaxes",
+       "Commenor",
+       "Ralltiir",
+       "Esseles",
+       "Rendili",
+       "Empress Teta",
+       "Abregado-rae",
+       "Byss",
+       "Fondor",
+       "Balmorra",
+       "Arkania",
+       "Denon",
+       "Duro",
+       "Ithor",
+       "Obroa-skai",
+       "Garqi",
+       "Helska",
+       "Belkadan",
+       "Sernpidal",
+       "Dubrillion"
+      ],
+      [
+       "Nal Hutta",
+       "Nar Shaddaa"
+      ]
+     ]
+    },
+    {
+     "name": "Imperial Remnant",
+     "buffer": 220,
+     "worlds": [
+      "Bastion",
+      "Yaga Minor",
+      "Muunilinst",
+      "Borosk"
+     ]
+    },
+    {
+     "name": "Hapes Consortium",
+     "buffer": 240,
+     "worlds": [
+      "Hapes"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ebaq 9, and the end",
+   "date": "28–29 ABY",
+   "view": "galaxy",
+   "text": "The Vong warmaster is lured into the Deep Core and destroyed at Ebaq 9; Bilbringi and the Remnant hold; the living world Zonama Sekot arrives over Coruscant. The recapture of Coruscant ends the war with the galaxy's map redrawn — hundreds of worlds gone, and the Alliance ruling what remains.",
+   "polities": [
+    {
+     "name": "Galactic Alliance",
+     "buffer": 300,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Eriadu",
+      "Sullust",
+      "Dac",
+      "Naboo",
+      "Bonadan",
+      "Sluis Van",
+      "Ruusan",
+      "Onderon",
+      "Lianna",
+      "Tion",
+      "Kashyyyk",
+      "Dantooine",
+      "Ryloth",
+      "Tatooine",
+      "Geonosis",
+      "Rodia",
+      "Kessel",
+      "Bespin",
+      "Endor",
+      "Hoth",
+      "Dagobah",
+      "Ithor",
+      "Obroa-skai",
+      "Bilbringi",
+      "Yaga Minor",
+      "Bastion",
+      "Ord Trasi",
+      "Borosk",
+      "Muunilinst",
+      "Bakura",
+      "Corulag",
+      "Thyferra",
+      "Vendaxa",
+      "Sernpidal",
+      "Belkadan",
+      "Helska",
+      "Dubrillion",
+      "Garqi",
+      "Lothal",
+      "Jedha",
+      "Scarif",
+      "Felucia",
+      "Utapau",
+      "Saleucami",
+      "Christophsis",
+      "Umbara",
+      "Jabiim",
+      "Kamino",
+      "Mimban",
+      "Rothana",
+      "Yavin",
+      "Iego",
+      "Kalist",
+      "Adumar",
+      "Nirauan",
+      "Ciutric",
+      "Sleheyron",
+      "Ebaq"
+     ]
+    },
+    {
+     "name": "Yuuzhan Vong",
+     "buffer": 180,
+     "worlds": [
+      "Coruscant"
+     ]
+    },
+    {
+     "name": "Imperial Remnant",
+     "buffer": 220,
+     "worlds": [
+      "Bastion",
+      "Yaga Minor",
+      "Muunilinst",
+      "Borosk"
+     ]
+    },
+    {
+     "name": "Hapes Consortium",
+     "buffer": 240,
+     "worlds": [
+      "Hapes"
+     ]
+    },
+    {
+     "name": "Chiss Ascendancy",
+     "buffer": 260,
+     "worlds": [
+      "Csilla"
+     ]
+    }
+   ]
+  }
+ ]
+}

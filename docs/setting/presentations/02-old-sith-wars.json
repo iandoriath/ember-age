@@ -1,0 +1,378 @@
+{
+ "id": "02-old-sith-wars",
+ "title": "The Old Sith Wars",
+ "subtitle": "4,000–3,950 BBY · Exar Kun, the Mandalorian Wars, Revan, and the Dark Wars",
+ "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds.",
+ "colors": {
+  "Galactic Republic": "#5fc3ff",
+  "Krath": "#c9843f",
+  "Sith Brotherhood": "#d24a3a",
+  "Mandalorians": "#b9bfcc",
+  "Revan's Sith Empire": "#d24a3a",
+  "Sith Triumvirate": "#d24a3a",
+  "Hutt Space": "#9fb04f",
+  "True Sith Empire": "#8a2f2f"
+ },
+ "steps": [
+  {
+   "title": "The Great Sith War",
+   "date": "3,996 BBY",
+   "view": {
+    "focus": "Yavin",
+    "w": 2600
+   },
+   "text": "The Krath seize the Empress Teta system from Cinnagar's throne; Ulic Qel-Droma falls to them and Exar Kun raises a Sith Brotherhood on Yavin's fourth moon. Together they raid Coruscant, turn Mandalore the Indomitable's clans loose, and burn the Jedi library at Ossus. Kun's spirit is sealed on Yavin; the Republic wins, at the price of a generation of Jedi.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 250,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Ossus",
+      "Onderon",
+      "Tion",
+      "Lianna"
+     ]
+    },
+    {
+     "name": "Krath",
+     "buffer": 150,
+     "worlds": [
+      "Empress Teta"
+     ]
+    },
+    {
+     "name": "Sith Brotherhood",
+     "buffer": 160,
+     "worlds": [
+      [
+       "Yavin"
+      ],
+      [
+       "Korriban"
+      ]
+     ]
+    },
+    {
+     "name": "Mandalorians",
+     "buffer": 170,
+     "worlds": [
+      "Mandalore",
+      "Concord Dawn",
+      "Dxun",
+      "Onderon"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Mandalorian Wars",
+   "date": "3,976–3,960 BBY",
+   "view": {
+    "center": [
+     5300,
+     2900
+    ],
+    "w": 3800
+   },
+   "text": "Mandalore the Ultimate's Neo-Crusaders burn Cathar and take the Outer Rim world by world — Serroco, Taris, Dxun — while the Jedi Council counsels patience. Revan and Malak lead the Jedi who refuse to wait. The war ends at Malachor V under the Mass Shadow Generator, with Mandalore dead and the Republic's saviours already half in the dark.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 250,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Ossus",
+      "Onderon",
+      "Tion",
+      "Lianna",
+      "Cathar"
+     ]
+    },
+    {
+     "name": "Mandalorians",
+     "buffer": 190,
+     "worlds": [
+      [
+       "Mandalore",
+       "Concord Dawn",
+       "Dxun",
+       "Onderon"
+      ],
+      [
+       "Taris",
+       "Serroco"
+      ],
+      [
+       "Malachor V"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Jedi Civil War",
+   "date": "3,959–3,956 BBY",
+   "view": "galaxy",
+   "text": "Revan and Malak return from the Unknown Regions as Dark Lords with a fleet the Republic cannot match: the Star Forge over Lehon, feeding on a Rakata sun. Taris is levelled, the Dantooine enclave bombed, Korriban's academy reopened, Manaan bought with kolto. It ends when a redeemed Revan destroys the Forge; Malak dies aboard it.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 240,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Ossus",
+      "Onderon",
+      "Cathar",
+      "Dantooine"
+     ]
+    },
+    {
+     "name": "Revan's Sith Empire",
+     "buffer": 190,
+     "worlds": [
+      [
+       "Rakata Prime",
+       "Lehon"
+      ],
+      [
+       "Korriban",
+       "Ziost",
+       "Rhelg",
+       "Khar Delba",
+       "Jaguada",
+       "Bosthirda"
+      ],
+      [
+       "Taris"
+      ],
+      [
+       "Kashyyyk"
+      ],
+      [
+       "Tatooine"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Dark Wars",
+   "date": "3,955–3,951 BBY",
+   "view": {
+    "focus": "Telos",
+    "w": 3200
+   },
+   "text": "The Sith Triumvirate — Nihilus, Sion, Traya — hunts the surviving Jedi to extinction from Malachor V and Korriban while the Republic rebuilds Telos and lets Peragus mine its fuel. A Jedi exile from Malachor gathers what is left at Dxun, Nar Shaddaa and Onderon; Malachor V is finally destroyed, and the Sith with it — or so it seems.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 240,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Telos",
+      "Peragus II",
+      "Onderon",
+      "Dantooine"
+     ]
+    },
+    {
+     "name": "Sith Triumvirate",
+     "buffer": 170,
+     "worlds": [
+      [
+       "Malachor V"
+      ],
+      [
+       "Korriban",
+       "Ziost"
+      ]
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "What Revan found",
+   "date": "c. 3,950 BBY",
+   "view": {
+    "focus": "Dromund Kaas",
+    "w": 2400
+   },
+   "text": "The Republic is exhausted, its Jedi reduced to a handful. Revan has gone into the Unknown Regions after the thing that turned him: a true Sith Empire, intact since the Great Hyperspace War, ruling from Dromund Kaas under an Emperor who does not die. It is not ready yet. It can wait.",
+   "polities": [
+    {
+     "name": "Galactic Republic",
+     "buffer": 230,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss",
+      "Fondor",
+      "Balmorra",
+      "Arkania",
+      "Denon",
+      "Bothawui",
+      "Malastare",
+      "Taris",
+      "Ord Mantell",
+      "Gyndine",
+      "Manaan",
+      "Cato Neimoidia",
+      "Muunilinst",
+      "Mygeeto",
+      "Telos",
+      "Onderon",
+      "Dantooine"
+     ]
+    },
+    {
+     "name": "True Sith Empire",
+     "buffer": 260,
+     "worlds": [
+      "Dromund Kaas"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  }
+ ]
+}
