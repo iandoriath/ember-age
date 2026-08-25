@@ -6,7 +6,7 @@
 
 **The session's jobs:** dramatize the Kajidic crack — @@npc:Sorulba the Anchor@@ versus @@npc:Jeeda the Younger@@, scarcity rents versus growth, with the crew's guild paper as the tiebreaker neither Hutt can print; turn the [beacon-relighting set piece](../../mechanics/beacon-relighting.md) political — at Enarc the beacon is *maintained, functional, and deliberately dark*, because somebody owns it; pay off Osk's claim with a second, independent source that disagrees on exactly one load-bearing fact (the Weighbridge ledger — the [fragment system](../../mechanics/lore-fragments.md) doing its job); and let the players notice, on their own, how *fast* the guild posted the Enarc prize — the order was already written.
 
-**The situation in three sentences.** Enarc was never empty. It is the dark crossroads where the Duros Space Run met the **Enarc Run** (toward Naboo and the living Rimma) and the Hutt-ringed **Triellus** — and the Triellus never died, because Hutt space never withered. Sorulba's kajidic has held the junction for forty years from **the Weighbridge** — a toll station built into a pre-Ruusan customs hulk — taxing the dark traffic, running the fuel monopoly, and keeping the beacon mast on its spine polished, oiled, and *off*: the Anchor knows an asset when he owns one, and the light is worth more unlit.
+**The situation in three sentences.** Enarc was never empty. It is the dark crossroads where the Duros Space Run met the **Enarc Run** (toward Naboo and the living Rimma) and the Hutt-ringed **Triellus** — and the Triellus never died, because Hutt space never went dark. Sorulba's kajidic has held the junction for forty years from **the Weighbridge** — a toll station built into a pre-Ruusan customs hulk — taxing the dark traffic, running the fuel monopoly, and keeping the beacon mast on its spine polished, oiled, and *off*: the Anchor knows an asset when he owns one, and the light is worth more unlit.
 
 **Why this is the episode:** a relit Enarc doesn't just extend the Run one hop — it reconnects a three-way junction, which means charters, inspections, certified rates, and the end of the toll as a private arrangement. Sorulba wants it dark forever. Jeeda has run the numbers — more traffic at a lower legal rate beats scarcity rents over three Hutt lifetimes — and wants it lit *with the kajidic's name on the certificate as port authority*. Both of them need what only the crew carries: guild standing, witness signatures, and the pen that writes the corridor's founding paper. The diplomats and traders get their spotlight tonight; the smart play against kajidic power has always been the ledger, not the knife.
 
@@ -37,7 +37,7 @@ The dues math is real and the guns are real; pay, talk your way to a waiver (**H
 
 ## Scene 2 — The Weighbridge
 
-A customs hulk with a town grown through it: fuel bowsers like temple columns, a bazaar of black-lane goods, gun tugs on lazy patrol, and the beacon mast rising off the station's spine — polished, maintained, dark. Give the players a beat to notice that last part: sixty years of Withering, and *this* beacon has no rust on it.
+A customs hulk with a town grown through it: fuel bowsers like temple columns, a bazaar of black-lane goods, gun tugs on lazy patrol, and the beacon mast rising off the station's spine — polished, maintained, dark. Give the players a beat to notice that last part: sixty dark years, and *this* beacon has no rust on it.
 
 **The two courts.** @@npc:Sorulba the Anchor@@ holds the throne room he has not left in forty years — stage him as terrain, never combat: he pays promptly, keeps his word to the letter, prices the letter, and can contradict any human myth about the old Republic with an eyewitness sneer. @@npc:Jeeda the Younger@@ keeps a small office near the scales, styled as the clan's auditor, which is technically true. Both will see the crew the same day; the order they choose is itself information the Hutts trade. @@npc:Kajidic Enforcers@@ are everywhere, commercial and unhurried — stun settings first, because a dead debtor pays nothing.
 
@@ -50,13 +50,13 @@ A customs hulk with a town grown through it: fuel bowsers like temple columns, a
 
 ## Scene 3 — The Ledger
 
-The Weighbridge has logged the dark years — every hull it stopped, taxed, and fueled for four decades. For anyone chasing *Who lit Vesta-9?*, it is the only independent witness in the Reach, and it can be bought, stolen, or traded for — Sorulba sells anything except cheaply, and what he wants most is the crew's honest account of the beacon that lit itself.
+The Weighbridge has logged the dark years — every hull it stopped, taxed, and fueled for four decades. For anyone chasing *Who lit Vesta-9?*, it is the only independent witness on the Run, and it can be bought, stolen, or traded for — Sorulba sells anything except cheaply, and what he wants most is the crew's honest account of the beacon that lit itself.
 
 The page that matters says this: **six years ago, Run-lane entries stop.** Not because traffic stopped — because the Weighbridge stopped *hailing* certain hulls, by standing order, after a boarding crew failed to report back and was never found. There are ships you do not stop. The order is in Sorulba's own hand.
 
 @@action:fragment {"name":"The Weighbridge ledger, dark years","form":"ledger","tag":"Civic","question":"Who lit Vesta-9?","claim":"six years ago the toll stopped hailing certain hulls — by standing order","holder":"crew","status":"trusted"}@@
 
-Note the built-in contradiction, and let the players find it: Osk says somebody has been flying the lane *for ten years*; the ledger shows nothing *for six*. Both are true — the gap is the fact in dispute, and reconciling it (they didn't stop flying; they stopped being *seen*, and a Hutt patriarch decided not to look) is worth a Reconstruction and a very cold feeling at the table. (GM only: the lost boarding crew is the Weeding's work — Dial 3 — and Sorulba's standing order is the most honest risk assessment anyone in the Reach has ever made.)
+Note the built-in contradiction, and let the players find it: Osk says somebody has been flying the lane *for ten years*; the ledger shows nothing *for six*. Both are true — the gap is the fact in dispute, and reconciling it (they didn't stop flying; they stopped being *seen*, and a Hutt patriarch decided not to look) is worth a Reconstruction and a very cold feeling at the table. (GM only: the lost boarding crew is the Weeding's work — Dial 3 — and Sorulba's standing order is the most honest risk assessment anyone on the Run has ever made.)
 
 ## Scene 4 — The Relight
 
@@ -81,7 +81,7 @@ The set piece, run as politics. **Chart it** was the approach. **Wake it** is me
 
 **Doors onward:**
 
-- **Aquilaris, hop 2** — the drowned resort world, and the first true deep-Reach stop: dead pleasure piers under warm seas. The next prize posts immediately (of course it does).
+- **Aquilaris, hop 2** — the drowned resort world, and the first true deep-Run stop: dead pleasure piers under warm seas. The next prize posts immediately (of course it does).
 - **The clan argument travels.** Whichever Hutt lost tonight writes letters; expect the winner's rivals — or the loser's collectors — at the crew's next port.
 - **If the Admiralty finding exists:** the tender arrives at Enarc on schedule, and the junction becomes the Annexation's first test case with the crew's names in its founding file.
 - **The wager stands.** Marrow pays or collects at the Weighbridge cantina, loudly, and the season's round-buying begins — the port watches who laughs.

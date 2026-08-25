@@ -10,7 +10,7 @@
 | **Kyrska** | LIT (mid 80s AR) | Duros Space Run, Kalarba → Glom Tho | Lamplighters | paid in full | slow — a quiet world, quietly reconnected |
 | **Glom Tho** | LIT (late 80s AR) | Duros Space Run toward Triffis | Lamplighters | paid in full | trade before flags — no Republic overture yet |
 | **Triffis** | LIT (89 AR) | Duros Space Run to Bannistar | Lamplighters | **paid to the crew of the *Larksong*** | the Bannistar boom — gantries funded on the next prize |
-| **Vesta-9** | **LIT** (90 AR — nobody admits to lighting it; its prize hung unclaimed for years because the beacon could not be *found*) | the Grumani Reach (Duros Space Run, toward Enarc) | Chartmistress Bel Nerra (Lamplighters) | pending session one | Vigil, Admiralty, Lamplighters… and one uncounted observer |
+| **Vesta-9** | **LIT** (90 AR — nobody admits to lighting it; its prize hung unclaimed for years because the beacon could not be *found*) | the Run past Vesta-9 (toward Enarc) | Chartmistress Bel Nerra (Lamplighters) | pending session one | Vigil, Admiralty, Lamplighters… and one uncounted observer |
 | *(next beacon)* | dark | | | | |
 
 *The four paid prizes are the decade of public history behind session one: the guild's surprise pivot off the Corellian Run at New Cov (see [the geography page](../../setting/geography.md) — and, GM-side, the Patronage in [Truths](../truths.md)), four beacons relit, then the stall at Bannistar when Vesta-9 beat every survey sent after it.*
@@ -29,7 +29,7 @@ One beacon per hop, Bannistar Station back to the Hydian. Assign episode seeds p
 | 5 | Sanrafsix | *e.g. The Memory Market* | — | Great dead trade hub of the New Sith Wars economy — provenance bazaars fit perfectly; junction of the Sanrafsix Corridor |
 | 6 | Heptooine | *e.g. The Mausoleum Yards* | — | Route stop |
 | 7 | Jutrand | *e.g. The Sealed Enclave or The Dead Letter* | — | City-planet, ex-Bactranate (Sith principality) capital — haunted grandeur |
-| ★ | Darkknell | — | **ALIVE** | **Never withered.** Canonically "an important trading center for millennia," trinary suns; the Hydian's local anchor. Wither *around* it, never through it |
+| ★ | Darkknell | — | **ALIVE** | **Never went dark.** Canonically "an important trading center for millennia," trinary suns; the Hydian's local anchor. Darken *around* it, never through it |
 | ★★ | Eriadu | Act 2 stakes | **ALIVE** | At 910 BBY: modest, ancient, shellwork jewelry — and already on the Hydian (the lane shifted through Eriadu by 1004 BBY). The Quintad (Corulag oligarch families) canonically arrive ~900 BBY and build "the Coruscant of the Outer Rim." **The crew's relit corridor is part of why the money comes** |
 
 Side-lanes: **Sanrafsix Corridor** (Syned → Fostin Nine → Sanrafsix → Omwat, smugglers' road — Veshet, with the Rade lineage's graves, sits off a dead spur of it), **Enarc Run** (toward Naboo/Rimma), dead principality spurs (Chelloa, Byllura, Gazzari — The Scar fits a Knight Errant battlefield like Gazzari or baradium-scarred Chelloa).
@@ -37,7 +37,7 @@ Side-lanes: **Sanrafsix Corridor** (Syned → Fostin Nine → Sanrafsix → Omwa
 ## Canon guardrails (Legends, ~910 BBY)
 
 - **Malastare** (Hydian, coreward of Darkknell) is a raw ~90-year-old Gran colony among Dug natives — a mirror of the era, not an established power.
-- **Don't permanently destroy chain worlds** — Sanrafsix, Enarc, New Cov and company are alive in later-era sources. Wither, don't crater.
+- **Don't permanently destroy chain worlds** — Sanrafsix, Enarc, New Cov and company are alive in later-era sources. Darken, don't crater.
 - **Inherit, don't rewind, Knight Errant**: the 1032 BBY state of the Grumani worlds (Chelloa devastated, Byllura's Dyarchy fallen, the principalities dead) is the floor this campaign builds on.
 - **The road to Ruusan** (Act 3): Hydian coreward the whole way → Brentaal (junction with the Perlemian) → Perlemian rimward to Lantillies → Randon Run past Kashyyyk → off the charts into the **Teraab stellar nursery**, whose shifting nebulae are canonically erasing the last lanes to Ruusan (the Valley is a "lost world" by 11 BBY). The endgame is navigating a road the sky itself is closing — schedule it as the campaign's hardest astrogation, with fragments as the only charts.
 

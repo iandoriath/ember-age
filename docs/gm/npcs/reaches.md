@@ -1,6 +1,6 @@
-# The Reaches — Episode NPCs
+# Out on the Run — Episode NPCs
 
-Beyond the Vesta-9 corridor lies the Grumani Reach — the withered interior of the Grumani sector, where the last war's Sith principalities died and the Republic's recovery never returned: ten thousand islands ninety years into the Withering, each one grown strange in its own direction. The people and machines below are what the crew finds when a lane relights — caretakers still keeping faith with vanished masters, economies built on scrap and provenance, and one very polite droid still working a dead government's kill-list. Every stat block here but one is an official published FFG adversary pulled verbatim and re-skinned for 90 AR — the single exception (Anwei, an original build) is declared on her block; chassis and adjustments are cited on each block.
+Beyond the Vesta-9 corridor lies the deep Run — the dark country where the last war's Sith principalities died and the Republic's recovery never returned: ten thousand islands, each one grown strange in its own direction across ninety unlit years. The people and machines below are what the crew finds when a lane relights — caretakers still keeping faith with vanished masters, economies built on scrap and provenance, and one very polite droid still working a dead government's kill-list. Every stat block here but one is an official published FFG adversary pulled verbatim and re-skinned for 90 AR — the single exception (Anwei, an original build) is declared on her block; chassis and adjustments are cited on each block.
 
 *GM eyes only — this file spoils episode reveals for The Dead Letter, The Sealed Enclave, The Ration Engine, The Oracle of Brel, The Memory Market, The Chop-Yards, The Circuit, The Relit Lanes, and The Mausoleum Yards.*
 
@@ -94,7 +94,7 @@ Beyond the Vesta-9 corridor lies the Grumani Reach — the withered interior of 
 - **Equipment:** None — a knotted dream-cord her mother tied, which does nothing but matter.
 
 **Chassis:** original build (core adversary guidelines) — no official FFG adversary exists for an untrained Force-sensitive child; verified against the three core rulebooks and Allies and Adversaries (adjustments: n/a — values built inside core guidelines; FR 2 justified below).
-**Using her:** Force Rating 2 in an era of FR 1 children needs justifying, so here it is: Anwei is the Awakening's high-water mark in the Reach — raw aptitude two generations deep arriving all at once, with no training, no shutter, and no off switch. The rating measures the flood, not mastery; she cannot direct a single point of it, which is exactly why the dreams are eating her sleep. She is a non-combatant: violence around her is resolved through the settlement's armed faithful (re-use the Hull-City Militia block, re-skinned as shrine wardens). Her true dreams should be right, unwelcome, and getting louder — and every faction envoy arriving this week has a different plan for her. The witness rule cuts hard here: the settlement has already answered the question "awe or fear," and the party's open Force use will be read as rival prophecy. She is not a Wellspring. She is a child, and the campaign is watching what the players do about the difference.
+**Using her:** Force Rating 2 in an era of FR 1 children needs justifying, so here it is: Anwei is the Awakening's high-water mark on the Run — raw aptitude two generations deep arriving all at once, with no training, no shutter, and no off switch. The rating measures the flood, not mastery; she cannot direct a single point of it, which is exactly why the dreams are eating her sleep. She is a non-combatant: violence around her is resolved through the settlement's armed faithful (re-use the Hull-City Militia block, re-skinned as shrine wardens). Her true dreams should be right, unwelcome, and getting louder — and every faction envoy arriving this week has a different plan for her. The witness rule cuts hard here: the settlement has already answered the question "awe or fear," and the party's open Force use will be read as rival prophecy. She is not a Wellspring. She is a child, and the campaign is watching what the players do about the difference.
 
 ---
 
@@ -103,7 +103,7 @@ Beyond the Vesta-9 corridor lies the Grumani Reach — the withered interior of 
 ### Provenance-Broker Halla Wex
 *Rival — Memory Market underworld — forger poisoning the lore-fragment economy*
 
-> Half the provenance seals in the Reach pass through her back room, and the frightening part is how few of them leave it unimproved.
+> Half the provenance seals on the Run pass through her back room, and the frightening part is how few of them leave it unimproved.
 
 | Brawn | Agility | Intellect | Cunning | Willpower | Presence |
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -137,7 +137,7 @@ Beyond the Vesta-9 corridor lies the Grumani Reach — the withered interior of 
 
 **Chassis:** Analysis Droid, Force and Destiny Core Rulebook (adjustments: none).
 **Group math:** Deployed in scriptorium rows of four: group Wounds 12, group skills at 3 ranks (Computers 3, Knowledge [Education] 3); one scribe is incapacitated each time total damage passes a multiple of 3.
-**Using them:** Total non-combatants — Wounds 3 means a raised voice nearly disperses a row. Their menace is throughput: a four-droid row at Computers 3 with Technical Aptitude fabricates sealed provenance faster than any human atelier, which is how the poison spread Reach-wide in two seasons. Wex bought them from Okkam Dree's yard *because* their cores were never wiped — meaning each captured Scribe is simultaneously evidence, a Civic-tag lore fragment, and a victim. The era's droid-heirloom sentiment cuts both ways: wiping them solves Wex's problem, not the party's.
+**Using them:** Total non-combatants — Wounds 3 means a raised voice nearly disperses a row. Their menace is throughput: a four-droid row at Computers 3 with Technical Aptitude fabricates sealed provenance faster than any human atelier, which is how the poison spread Run-wide in two seasons. Wex bought them from Okkam Dree's yard *because* their cores were never wiped — meaning each captured Scribe is simultaneously evidence, a Civic-tag lore fragment, and a victim. The era's droid-heirloom sentiment cuts both ways: wiping them solves Wex's problem, not the party's.
 
 ---
 
@@ -178,16 +178,16 @@ Beyond the Vesta-9 corridor lies the Grumani Reach — the withered interior of 
 - **Abilities:** Hasty Repairs (*when making a check to repair a weapon, item, vehicle, or droid, may reduce the difficulty one step, to a minimum of Simple; if a later check involving the patched object generates a despair, the object — or its user — suffers an immediate critical hit or critical injury*).
 - **Equipment:** Salvaged ion cutter (ionization blaster: Ranged [Light]; Damage 10; Critical 5; Range [Short]; Disorient 5, Stun Damage [droids only]), scrap-cloth wraps (robes, +1 soak), rigger's belt (utility belt — torches, prybars, and line, used as tools, not weapons).
 
-**Chassis:** Jawa Scavenger, Allies and Adversaries (adjustments: none — species re-skinned cosmetically to the Reach's hooded clan-folk; all mechanics as printed).
+**Chassis:** Jawa Scavenger, Allies and Adversaries (adjustments: none — species re-skinned cosmetically to the Run's hooded clan-folk; all mechanics as printed).
 **Group math:** Deployed in cutting crews of four: group Wounds 20, group skills at 3 ranks (e.g., Mechanics 3); one cutter is incapacitated each time total damage passes a multiple of 5.
-**Using them:** They would always rather strip a ship than fight its crew, and their opening move in any standoff is to keep cutting. Note the armament: ion weapons that barely scratch flesh but drop droids cold — a cutting crew is accidentally the most dangerous thing in the Reach to Docent-7, and a genuinely useful ally against Dead Letter, if the party can afford the finder's fee. Their Hasty Repairs patch-jobs are cheap, fast, and cursed; let the players buy one anyway.
+**Using them:** They would always rather strip a ship than fight its crew, and their opening move in any standoff is to keep cutting. Note the armament: ion weapons that barely scratch flesh but drop droids cold — a cutting crew is accidentally the most dangerous thing on the Run to Docent-7, and a genuinely useful ally against Dead Letter, if the party can afford the finder's fee. Their Hasty Repairs patch-jobs are cheap, fast, and cursed; let the players buy one anyway.
 
 ---
 
 ## The Circuit
 
 ### Swoop Ace "Kettle" Maro
-*Rival — the swoop circuit — racer-courier carrying the Reach's mail, gossip, and standings*
+*Rival — the swoop circuit — racer-courier carrying the Run's mail, gossip, and standings*
 
 > If it fits in a pannier, she hauls it; if it doesn't, she memorizes it. The season standings arrive when Kettle does.
 
@@ -203,7 +203,7 @@ Beyond the Vesta-9 corridor lies the Grumani Reach — the withered interior of 
 - **Equipment:** Patched racing leathers (racing suit, +1 soak). Her swoop, the *Kettle*, uses the standard swoop bike vehicle profile from any core rulebook.
 
 **Chassis:** Swoop Ace, Allies and Adversaries (adjustments: none).
-**Using her:** Kettle carries no weapon because her weapon is departure: Agility 4, Piloting 3, and Full Throttle mean nothing in the Reach catches her on the deck. She is the closest thing the era has to a broadcast network — Knowledge (Outer Rim) 3 is ninety settlements' worth of gossip, grudges, and route conditions, priced at a drink per rumor and payable in kind. Run her as the party's fastest way to move a message, a bribe, or a warning — and remember that anything they hand her rides next to everyone else's secrets. If the crew impresses her, the circuit's standings start mentioning their ship by name, which is reputation, which is Obligation bait.
+**Using her:** Kettle carries no weapon because her weapon is departure: Agility 4, Piloting 3, and Full Throttle mean nothing on the Run catches her on the deck. She is the closest thing the era has to a broadcast network — Knowledge (Outer Rim) 3 is ninety settlements' worth of gossip, grudges, and route conditions, priced at a drink per rumor and payable in kind. Run her as the party's fastest way to move a message, a bribe, or a warning — and remember that anything they hand her rides next to everyone else's secrets. If the crew impresses her, the circuit's standings start mentioning their ship by name, which is reputation, which is Obligation bait.
 
 ---
 
@@ -246,7 +246,7 @@ Beyond the Vesta-9 corridor lies the Grumani Reach — the withered interior of 
 
 **Chassis:** Pirate Crew, Edge of the Empire Core Rulebook (also printed in the Age of Rebellion Core Rulebook; reprinted in Allies and Adversaries) (adjustments: none).
 **Group math:** Deployed in boarding teams of four: group Wounds 20, group skills at 3 ranks (e.g., Ranged [Heavy] 3); one pirate is incapacitated each time total damage passes a multiple of 5.
-**Using them:** They fight for shares, not glory: break the Captain's Pirate Leader chain — or drop a full group — and the rest start negotiating. Off the Captain's leash they turn up independently anywhere a relit lane funnels fat, slow traffic, which makes them the Reach's default "trouble on the scanner."
+**Using them:** They fight for shares, not glory: break the Captain's Pirate Leader chain — or drop a full group — and the rest start negotiating. Off the Captain's leash they turn up independently anywhere a relit lane funnels fat, slow traffic, which makes them the Run's default "trouble on the scanner."
 
 ---
 

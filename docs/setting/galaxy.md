@@ -10,7 +10,7 @@ News moves by courier packet and arrives months old, already halfway to myth. Th
 
 ## The Force, remembered wrong
 
-In the Core the Jedi are an institution: the Chancellor's peacekeepers, a Temple that sends for your gifted child at three, a word in the newsfeeds. Out here no one has seen a Jedi in a lifetime, and where the Force is remembered at all, it is remembered as the thing that burned the old galaxy down — the Reach was Sith country, and the principalities told their subjects for a century who the invaders were. The grudge is generational — a ledger of war dead read out at funerals, with Jedi and Sith entered in the same column. Reactions to the gift run superstitious: awe, terror, and, under both, blame.
+In the Core the Jedi are an institution: the Chancellor's peacekeepers, a Temple that sends for your gifted child at three, a word in the newsfeeds. Out here no one has seen a Jedi in a lifetime, and where the Force is remembered at all, it is remembered as the thing that burned the old galaxy down — the Run was Sith country, and the principalities told their subjects for a century who the invaders were. The grudge is generational — a ledger of war dead read out at funerals, with Jedi and Sith entered in the same column. Reactions to the gift run superstitious: awe, terror, and, under both, blame.
 
 *(Mechanically, this is the [witness rule](../mechanics/force.md): in this era the Force is not a skill; it is an event.)*
 

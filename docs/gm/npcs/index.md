@@ -49,15 +49,15 @@
 | Captain Tal Ordo | Nemesis | Mandalorian Clans | [Lanes & Ledgers](lanes-ledgers.md) |
 | Clan Ordo Soldiers | Minions | Mandalorian Clans | [Lanes & Ledgers](lanes-ledgers.md) |
 | Runi Ordo | Rival | Mandalorian Clans (Awakened foundling) | [Lanes & Ledgers](lanes-ledgers.md) |
-| "Dead Letter" | Nemesis | a ninety-year-old contract | [The Reaches](reaches.md) |
-| Docent-7 | Rival | the Sealed Enclave | [The Reaches](reaches.md) |
-| The Quartermaster | Rival (social) | the Ration Engine | [The Reaches](reaches.md) |
-| Anwei, the Oracle of Brel | Rival | Brel | [The Reaches](reaches.md) |
-| Provenance-Broker Halla Wex + Scribes | Rival + Minions | the Memory Market | [The Reaches](reaches.md) |
-| Junk Baron Okkam Dree + Clan Cutters | Rival + Minions | salvage economy | [The Reaches](reaches.md) |
-| Swoop Ace "Kettle" Maro | Rival | the circuit | [The Reaches](reaches.md) |
-| Pirate Captain of the Quiet + Quiet Pirates | Nemesis + Minions | the Quiet | [The Reaches](reaches.md) |
-| Hullmayor Bessa Rin + Hull-City Militia | Rival + Minions | the Mausoleum Yards | [The Reaches](reaches.md) |
+| "Dead Letter" | Nemesis | a ninety-year-old contract | [Out on the Run](reaches.md) |
+| Docent-7 | Rival | the Sealed Enclave | [Out on the Run](reaches.md) |
+| The Quartermaster | Rival (social) | the Ration Engine | [Out on the Run](reaches.md) |
+| Anwei, the Oracle of Brel | Rival | Brel | [Out on the Run](reaches.md) |
+| Provenance-Broker Halla Wex + Scribes | Rival + Minions | the Memory Market | [Out on the Run](reaches.md) |
+| Junk Baron Okkam Dree + Clan Cutters | Rival + Minions | salvage economy | [Out on the Run](reaches.md) |
+| Swoop Ace "Kettle" Maro | Rival | the circuit | [Out on the Run](reaches.md) |
+| Pirate Captain of the Quiet + Quiet Pirates | Nemesis + Minions | the Quiet | [Out on the Run](reaches.md) |
+| Hullmayor Bessa Rin + Hull-City Militia | Rival + Minions | the Mausoleum Yards | [Out on the Run](reaches.md) |
 | Master N'Kata Del Gormo | Nemesis | the swamp (no faction) | [Keepers of the Flame](keepers.md) 🔒 |
 | Master Seldra Tane | Nemesis | Jedi Order (Temple envoy) | [Keepers of the Flame](keepers.md) 🔒 |
 | The Patient Master | Nemesis | the true Sith line | [Keepers of the Flame](keepers.md) 🔒 |

@@ -6,7 +6,7 @@
 
 The Galactic Republic of the Reformation: a working Senate on Coruscant, a Chancellor with Jedi peacekeepers at his call, no army by law, and a writ that has stopped, for eighty years, exactly where the relays did. It does not think of itself as provisional. It thinks of itself as *recovered* — and it recovered by adjourning the Rim.
 
-Out here it arrives as charter ships: an envoy-archivist, a cargo of forms, a Jedi, and the quiet assumption that the Reach has been waiting.
+Out here it arrives as charter ships: an envoy-archivist, a cargo of forms, a Jedi, and the quiet assumption that the Run has been waiting.
 
 ## What they want
 

@@ -2,13 +2,13 @@
 
 *Where the campaign happens: real charts, dead lanes. Player-safe — this is the geography any spacer at Okrent's Drift could sketch on a napkin.*
 
-## The pocket: the Grumani Reach
+## The country: the Duros Run
 
-The crew starts in the withered interior of the **Grumani sector**, Outer Rim — spacers call it **the Grumani Reach**. A century ago this was Sith country: during the Republic Dark Age the sector shattered into warlord principalities — the Daimanate, the Bactranate, the Arkadianate, the Dyarchy — and the last war burned through it on the way to Ruusan. The Republic's recovery never reached this far back out. The principalities are dust; their worlds are still here, grown strange in the dark.
+The crew starts in the dark interior of the Outer Rim, in the country spacers name for the lane that threads it: **the Duros Run**. You are *out on the Run*, and everything on it shares the name. Its deep half crosses the old **Grumani sector**, and a century ago that was Sith country: during the Republic Dark Age the sector shattered into warlord principalities — the Daimanate, the Bactranate, the Arkadianate, the Dyarchy — and the last war burned through it on the way to Ruusan. The Republic's recovery never reached this far back out. The principalities are dust; their worlds are still here, grown strange in the dark.
 
 ## The lane home: the Duros Space Run
 
-One real lane threads the Reach: the **Duros Space Run**, which once carried trade from the Mid Rim all the way to the **Hydian Way** at **Darkknell**. For most of the last century the Lamplighters' great work was elsewhere: after the Ruusan reformations it was the guild, not the Senate, that led the restoration of the **Corellian Run**, relighting that artery stretch by stretch, and everyone assumed the prizes would keep following it rimward toward Ryloth. Instead, ten years ago, the guild surprised the Core — it began posting first-lighting prizes down the old Duros Space Run, from the Corellian Run junction at **Churba / New Cov** into country the recovery had written off.
+The country's one real lane is the **Duros Space Run**, which once carried trade from the Mid Rim all the way to the **Hydian Way** at **Darkknell**. For most of the last century the Lamplighters' great work was elsewhere: after the Ruusan reformations it was the guild, not the Senate, that led the restoration of the **Corellian Run**, relighting that artery stretch by stretch, and everyone assumed the prizes would keep following it rimward toward Ryloth. Instead, ten years ago, the guild surprised the Core — it began posting first-lighting prizes down the old Duros Space Run, from the Corellian Run junction at **Churba / New Cov** into country the recovery had written off.
 
 The prizes were claimed the way prizes are, one beacon and one corridor at a time: **Kalarba**, **Kyrska**, **Glom Tho**, and finally **Triffis**, whose prize the crew of the *Larksong* collected. The guild paid every one in full, and the reconnected worlds have slowly begun pricing themselves back into the galactic economy — though the Senate, whose Adjournment was worded *"until reconnection,"* has made no overture about restoring their seats.
 
@@ -20,7 +20,7 @@ Then the advance stopped. The next beacon up the lane — **Vesta-9**, serving t
 |:-:|---|---|
 | ⌂ | **Bannistar Station** | The great fuel gantries — raised new for the advance up the Run, half-idle since it stalled — and **Okrent's Drift**, the port that grew on their back. Campaign start; the frayed end of the living Run |
 | 1 | **Enarc** | A dark crossroads: the **Enarc Run** (toward Naboo and the Rimma) and the Hutt-ringed **Triellus** both once met the Run here |
-| 2 | **Aquilaris** | Drowned resort world — first of the deep-Reach stops |
+| 2 | **Aquilaris** | Drowned resort world — first of the deep-Run stops |
 | 3 | **Aplooine** | Quiet agrarian survivor |
 | 4 | **Verdanth** | Jungle world |
 | 5 | **Sanrafsix** | The great dead hub — its bazaars thrived on the last war's economy and died with it. Junction of the smugglers' **Sanrafsix Corridor** |
@@ -37,7 +37,7 @@ At the far end of the chain, where the Run meets the living galaxy, sits **Eriad
 
 ## Why the lanes are dark: the two darkenings
 
-The Reach's beacons died **twice**, and the distinction matters to anyone reading old rutters:
+The Run's beacons died **twice**, and the distinction matters to anyone reading old rutters:
 
 1. **The first darkening (before Ruusan).** In the depths of the Dark Age, the old Republic — bankrupt and losing — *deliberately shut down* its hyperspace relays beyond the Core, to deny the Sith the network. Thousands of systems went dark by policy. Out here, most beacons never came back: the oldest rutter pages describe lanes no living pilot has run.
 2. **The second darkening (the Withering).** After Ruusan the recovery relit beacons Core-outward — slowly, and only so far. Vesta-9's sixty dark years date from this lapse: it was revived in the early Reformation and abandoned again when the appropriations stopped. The Withering is not the war's darkness; it is the recovery giving up.

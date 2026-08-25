@@ -32,7 +32,7 @@ CI rebuilds it on every push and attaches it as a workflow artifact.
 
 ## The System Map — the chart you put on the table screen
 
-**`system-map.html`** (GM edition) and **`player-aids/system-map.html`** (player edition) — a zoomable holo-chart of the Reach, the Hydian and the road to Ruusan. Click a system for its note; beacons toggle **Relight / Darken** and the lit set lives in the URL (`?lit=bannistar,enarc`), so **Share** copies a link that opens in the same state for the players.
+**`system-map.html`** (GM edition) and **`player-aids/system-map.html`** (player edition) — a zoomable holo-chart of the Run, the Hydian and the road to Ruusan. Click a system for its note; beacons toggle **Relight / Darken** and the lit set lives in the URL (`?lit=bannistar,enarc`), so **Share** copies a link that opens in the same state for the players.
 
 The GM edition adds a **GM** switch (episode seeds, canon notes, faction presence) and **Import save**, which reads a GM-screen export and syncs beacon status. The player edition is built with all GM data removed from the file — send that one to the table.
 

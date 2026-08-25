@@ -1,6 +1,6 @@
 # Ships of the Ember Age
 
-Ninety years after Ruusan, nothing flies new. Every hull in this file is an inheritance — a pre-Withering pattern kept alive by devotion, cannibalized cousins, and a family's whole savings — and the handful of yards that could lay a fresh keel are strategic prizes worth wars. Book prices are quoted in old Republic credits as printed; in 90 AR a working ship is beyond price and a dead one becomes a neighborhood. Every stat block below is an official FFG vehicle block reproduced as printed; only the names and the rust are ours.
+Ninety years after Ruusan, nothing flies new. Every hull in this file is an inheritance — a pre-Ruusan pattern kept alive by devotion, cannibalized cousins, and a family's whole savings — and the handful of yards that could lay a fresh keel are strategic prizes worth wars. Book prices are quoted in old Republic credits as printed; in 90 AR a working ship is beyond price and a dead one becomes a neighborhood. Every stat block below is an official FFG vehicle block reproduced as printed; only the names and the rust are ours.
 
 *This file is player-safe: no campaign secrets appear anywhere in it.*
 
@@ -54,7 +54,7 @@ Ninety years after Ruusan, nothing flies new. Every hull in this file is an inhe
 - **Weapons:** Dorsal turret-mounted twin light laser cannon "Grandmother's Argument" (Fire Arc All; Damage 5; Critical 3; Range [Close]; Linked 1)
 
 **Chassis:** Ghtroc 720 Light Freighter, Edge of the Empire Core Rulebook (adjustments: none).
-**Era notes:** Ghtroc Industries died before the Withering did; every 720 alive is a hand-me-down, and its printed rarity is the era in one number. Flavor only; the block is stock.
+**Era notes:** Ghtroc Industries died before the lights did; every 720 alive is a hand-me-down, and its printed rarity is the era in one number. Flavor only; the block is stock.
 **Using it:** The 720 is the ship for crews who expect to be shot at and plan to be boring about it: armor 5 and twenty-eight hull make it the closest thing a wayfinder can own to a bunker. Ten passenger berths make it the natural refugee boat, pilgrim carrier, or mobile village — which is its own kind of plot hook.
 
 ### YT-1300 Light Freighter
@@ -189,5 +189,5 @@ Ninety years after Ruusan, nothing flies new. Every hull in this file is an inhe
 - **Weapons:** None
 
 **Chassis:** Action VI Bulk Transport, Edge of the Empire Core Rulebook (adjustments: none).
-**Era notes:** The tanks are the newest thing aboard; the keel predates the Withering and the clan bought it as salvage for less than one hold's worth of fuel now sells for. Its real armor is economics — burn a Kajidic barge and your world goes dark next quarter.
+**Era notes:** The tanks are the newest thing aboard; the keel predates Ruusan and the clan bought it as salvage for less than one hold's worth of fuel now sells for. Its real armor is economics — burn a Kajidic barge and your world goes dark next quarter.
 **Using it:** The barge is a set, not a combatant: escort jobs, tollgate standoffs, a heist through 10,000 encumbrance of tank maze, or a negotiation where the cargo is the hostage. It cannot fight and barely steers, so every threat to it immediately becomes a social and logistical problem — exactly the kind the Kajidics pay wayfinder crews, no questions attached, to solve. If the clan expects trouble, trouble arrives as a hired escort ship, not a gun bolted to the barge.

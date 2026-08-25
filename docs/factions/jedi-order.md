@@ -1,12 +1,12 @@
 # The Jedi Order
 
-*The Temple's peacekeepers — rare, reformed, and a century absent from the Reach.*
+*The Temple's peacekeepers — rare, reformed, and a century absent from the Run.*
 
 ## Who they are
 
 The Order the Reformation made: no Lords, no armies, one Temple on Coruscant, and a doctrine written in grief. The Jedi of 90 AR are found young, taken from their families, raised without attachment, and sworn to a peace they keep on the Chancellor's behalf — investigators, mediators, the Senate's conscience with a lightsaber. There are fewer of them than there are sectors. They believe the Sith extinct, and they are the reason the Sith are careful.
 
-They have not been in the Grumani Reach since the Adjournment. The last Jedi anyone here remembers were Knight Errant–era warriors fighting Sith Lords through these systems — and the principalities spent the century after telling their subjects who the invaders had been.
+They have not been out on the Run since the Adjournment. The last Jedi anyone here remembers were Knight Errant–era warriors fighting Sith Lords through these systems — and the principalities spent the century after telling their subjects who the invaders had been.
 
 ## What they want
 
@@ -21,7 +21,7 @@ The gifted children of the reconnected Rim, found early and sent to the Temple. 
 
 ## The crack
 
-They are peacekeepers now. Police, with a Senate to answer to and a war they are forbidden to fight. Half the Order has made its peace with that; the other half remembers, or has read, what the Force was before Ruusan turned it into a civic service — and the Reach is full of people who will ask them, to their faces, *is that really what the Force is about?*
+They are peacekeepers now. Police, with a Senate to answer to and a war they are forbidden to fight. Half the Order has made its peace with that; the other half remembers, or has read, what the Force was before Ruusan turned it into a civic service — and the Run is full of people who will ask them, to their faces, *is that really what the Force is about?*
 
 And the doctrine has no answer for an adult. The Temple takes children; it cannot take a twenty-year-old who dreams true, and it cannot stop watching one.
 

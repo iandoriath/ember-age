@@ -140,7 +140,7 @@ NPC_FILES = [
     ("republic-admiralty", "Republic & Admiralty", "gm/npcs/republic-admiralty.md"),
     ("vigil-inheritors", "Vigil & Inheritors", "gm/npcs/vigil-inheritors.md"),
     ("lanes-ledgers", "Lanes & Ledgers", "gm/npcs/lanes-ledgers.md"),
-    ("reaches", "The Reaches", "gm/npcs/reaches.md"),
+    ("reaches", "Out on the Run", "gm/npcs/reaches.md"),
     ("keepers", "Keepers of the Flame 🔒", "gm/npcs/keepers.md"),
     ("ships", "Ships of the Ember Age", "mechanics/ships.md"),
 ]
@@ -332,7 +332,7 @@ SEED = {
         {"faction": "The Awakening", "crack": "Every public display raises the temperature → it goes public", "value": 0, "notes": ""},
     ],
     "beacons": [
-        {"name": "Vesta-9", "status": "lit", "corridor": "the Grumani Reach (Duros Space Run, toward Enarc)",
+        {"name": "Vesta-9", "status": "lit", "corridor": "the Run past Vesta-9 (toward Enarc)",
          "certified": "Chartmistress Bel Nerra (Lamplighters)", "fee": "pending session one",
          "followed": "Vigil, Admiralty, Lamplighters — and one Inheritor observer (Dial 3)"},
     ],

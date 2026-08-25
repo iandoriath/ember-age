@@ -12,7 +12,7 @@ In the Core there is an answer for it: the **Temple** on Coruscant, which has be
 
 ## The ask
 
-The Republic's charter ships carry a Jedi, and the Jedi carries the Temple's rule: *send us your gifted children.* Young — three, four, five — and to Coruscant, and not back. The Reach hears that sentence through a century of principality propaganda and its own war dead, and what it hears is the invader, the child-taker, and, faintly, the old liberator. Every relit beacon makes the ask reachable for another world. Every answer is a scene.
+The Republic's charter ships carry a Jedi, and the Jedi carries the Temple's rule: *send us your gifted children.* Young — three, four, five — and to Coruscant, and not back. The Run hears that sentence through a century of principality propaganda and its own war dead, and what it hears is the invader, the child-taker, and, faintly, the old liberator. Every relit beacon makes the ask reachable for another world. Every answer is a scene.
 
 And the Temple has no rule for an adult. A twenty-year-old who dreams true is, by doctrine, too old to train and too dangerous to ignore — so the Order watches, which the watched can feel.
 

@@ -7,7 +7,7 @@
 | | |
 |---|---|
 | **When** | ~910 BBY. In-world, the year **90 AR** — After Ruusan. |
-| **What** | Ninety years after the Jedi and Sith annihilated each other at Ruusan, the galaxy has withered into ten thousand islands — and the war is passing out of human living memory. Now the Force is returning, the beacons are relighting, and what comes next has not been decided. |
+| **What** | Ninety years after the Jedi and Sith annihilated each other at Ruusan, the galaxy has gone dark, ten thousand islands — and the war is passing out of human living memory. Now the Force is returning, the beacons are relighting, and what comes next has not been decided. |
 | **Who** | The player characters are **wayfinders** — a crew of seekers, traders, diplomats, and perhaps one of the newly Force-sensitive — reopening the galaxy one lane at a time. |
 | **Tone** | Hope with rust on it. Rebuilding and discovery. Light and dark finding a way forward together — or the old dogmas returning wearing new faces. |
 
