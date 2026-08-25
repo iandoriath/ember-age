@@ -332,16 +332,16 @@
   {
    "id": "naboo",
    "name": "Naboo",
-   "sub": "The Breakwater",
+   "sub": "The Greywatch",
    "x": 5095,
    "y": 5700,
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
-   "blurb": "Quiet, half-charted world at the far end of the Enarc Run; home anchorage of the Admiralty's Breakwater — the fleet that never demobilized.",
+   "blurb": "Quiet, half-charted world at the far end of the Enarc Run; home anchorage of the Admiralty's Greywatch — the fleet that never demobilized.",
    "gm": {
-    "seed": "The Breakwater — the fleet that refused the Ruusan demobilization sailed rimward down the Enarc Run (~20 AR) and fortified this pocket. Revealed only when Vesta-9 lights; the Steadfast arrives at Vesta-9 from INSIDE the dark Run, not the Bannistar side.",
-    "canon": "Legends Naboo (Chommell sector, Mid Rim), the Enarc Run's rimward endpoint. Plasma seams underwrite the Breakwater's yards. Faction crack: treaty-keepers vs the Founding.",
+    "seed": "The Greywatch — the fleet that refused the Ruusan demobilization sailed rimward down the Enarc Run (~20 AR) and fortified this pocket. Revealed only when Vesta-9 lights; GNS Steadfast arrives at Vesta-9 from INSIDE the dark Run, not the Bannistar side.",
+    "canon": "Legends Naboo (Chommell sector, Mid Rim), the Enarc Run's rimward endpoint. Plasma seams underwrite the Greywatch's yards. Faction crack: treaty-keepers vs the Founding.",
     "factions": [
      "admiralty"
     ]
