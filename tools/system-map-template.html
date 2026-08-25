@@ -425,7 +425,9 @@ chart.addEventListener("pointerleave", () => { tip.style.display = "none"; if (h
 /* ---- deep zoom: below the close threshold everything is screen-constant, and the
    background-label cull is recomputed per viewport so room opens up as you zoom ---- */
 const CLOSE_W = 900, U0 = 0.85;  // units per screen pixel at which chart-unit sizing starts to shrink
-function kFor(w, px) { return Math.min(1, (w / px) / U0); }
+// past the threshold, sizes no longer freeze: they keep growing as z^0.3 (capped at 2.2x), so
+// deep zoom reads bigger instead of merely showing more names
+function kFor(w, px) { const z = (px / w) * U0; return z <= 1 ? 1 : Math.min(2.2, Math.pow(z, 0.3)) / z; }
 const gLabels = GAL.map(g => ({x:g.x, y:g.y, n:g.name, k:g.tier ? 1 : 2}));
 let cullTimer = null;
 function scheduleCull() { clearTimeout(cullTimer); cullTimer = setTimeout(cullLabels, 60); }
