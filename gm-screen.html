@@ -31,6 +31,35 @@
   #syncbanner button{margin-left:.6rem}
   main{max-width:1200px;margin:0 auto;padding:1rem .9rem 4rem}
   .tab{display:none} .tab.on{display:block}
+  .sub{display:none} .sub.on{display:block}
+  .subnav{display:flex;gap:.4rem;flex-wrap:wrap;margin:0 0 .8rem}
+  .subnav button{background:none;border:1px solid var(--line);color:var(--dim);padding:.3rem .7rem;border-radius:.5rem;cursor:pointer;font:inherit;font-family:var(--disp);font-weight:600}
+  .subnav button.on{color:var(--gold);background:var(--panel)}
+  /* Run cockpit: scene list · the scene · at-hand rail */
+  .cockpit{display:grid;grid-template-columns:210px minmax(0,1fr) 330px;gap:.8rem;align-items:start}
+  .cockpit .rail{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto}
+  .scenelist{display:flex;flex-direction:column;gap:.25rem}
+  .scenelist button{text-align:left;background:none;border:1px solid transparent;color:var(--dim);padding:.4rem .55rem;border-radius:.45rem;cursor:pointer;font:inherit;display:flex;gap:.45rem;align-items:baseline}
+  .scenelist button.on{color:var(--gold);border-color:var(--line);background:var(--panel)}
+  .scenelist button.done{opacity:.55;text-decoration:line-through}
+  .scenelist .n{font-family:var(--disp);font-weight:700;min-width:1.2em;color:var(--ember)}
+  .scenenav{display:flex;justify-content:space-between;align-items:center;gap:.6rem;margin:.2rem 0 .6rem}
+  .athand h3{margin:.2rem 0 .4rem;color:var(--ember);font-size:.95rem}
+  .athand details.npc{margin:0 0 .4rem}
+  .athand .mini{display:flex;justify-content:space-between;align-items:center;gap:.5rem;padding:.25rem 0;border-bottom:1px solid var(--line);font-size:.9rem}
+  .athand .mini .segs{display:flex;gap:2px}
+  .athand .mini .seg{width:14px;height:12px;border:1px solid var(--line);border-radius:2px;cursor:pointer}
+  .athand .mini .seg.f{background:var(--ember);border-color:var(--ember)}
+  .athand .b-lit{color:var(--gold)} .athand .b-dark{color:var(--dim)}
+  #qs{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:50;display:flex;justify-content:center;align-items:flex-start;padding-top:12vh}
+  #qs[hidden]{display:none}
+  .qsbox{width:min(640px,92vw);background:var(--panel);border:1px solid var(--line);border-radius:.6rem;padding:.6rem}
+  .qsbox input{width:100%;font:inherit;font-size:1.05rem;padding:.5rem .7rem;background:#1a140f;color:var(--ink);border:1px solid var(--line);border-radius:.4rem}
+  #qs-out{max-height:50vh;overflow:auto;margin-top:.4rem}
+  #qs-out button{display:flex;gap:.6rem;width:100%;text-align:left;background:none;border:0;color:var(--ink);padding:.4rem .5rem;border-radius:.4rem;cursor:pointer;font:inherit}
+  #qs-out button.on,#qs-out button:hover{background:#2a211a}
+  #qs-out .k{color:var(--dim);font-size:.8rem;min-width:4.5em}
+  @media(max-width:1000px){.cockpit{grid-template-columns:1fr} .cockpit .rail{position:static;max-height:none;padding:.5rem .6rem} .scenelist{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:.3rem;padding-bottom:.2rem} .scenelist button{white-space:nowrap;flex:0 0 auto} .cockpit .rail .small{display:none} .toolbar{flex-wrap:nowrap;overflow-x:auto} .toolbar .chip{white-space:nowrap;flex:0 0 auto}}
 
   .doc h1{font-family:var(--disp);color:var(--gold);font-size:1.5rem;margin:.4rem 0 .6rem}
   .doc h2{font-family:var(--disp);color:var(--gold);font-size:1.2rem;margin:1.2rem 0 .4rem}
@@ -148,7 +177,8 @@
     .doc th,.doc td,table.tr th,table.tr td{padding:.4rem .5rem}
     .side{position:static;max-height:40vh}
     .side button{font-size:1rem;padding:.4rem .5rem} .side .grp{font-size:.8rem}
-    .badge,.tag{font-size:.8rem} label,.sess dt{font-size:.85rem}
+    .badge,.tag{font-size:.85rem} label,.sess dt{font-size:.95rem}
+    .doc,.npc .body{font-size:1.05rem;line-height:1.55} .athand .mini{font-size:1rem} .scenelist button{font-size:1rem;padding:.5rem .7rem} .scenenav .btn{font-size:1rem}
     .small,.muted.small,.npc .fac,.npc .drv,.qcard,.chip,.runact .runact-desc,.clock textarea{font-size:.95rem}
     .crewstats div span{font-size:.72rem} .crewgrid .k{font-size:.8rem}
     .chip{padding:.4rem .85rem} .btn{padding:.5rem .9rem}
@@ -175,9 +205,13 @@
   <div id="tab-npcs" class="tab"></div>
   <div id="tab-trackers" class="tab"></div>
   <div id="tab-log" class="tab"></div>
-  <div id="tab-reference" class="tab"></div>
-  <div id="tab-setting" class="tab"></div>
-  <div id="tab-truths" class="tab"></div>
+  <div id="tab-book" class="tab">
+    <div class="subnav" id="booknav"></div>
+    <div id="tab-reference" class="sub"></div>
+    <div id="tab-setting" class="sub"></div>
+    <div id="tab-truths" class="sub"></div>
+  </div>
+  <div id="qs" hidden><div class="qsbox"><input id="qs-in" placeholder="Jump to an NPC, page, or scene…  (Esc closes)" autocomplete="off"><div id="qs-out"></div></div></div>
 </main>
 <footer>The Ember Age — homebrew campaign GM screen · built 2026-08-25 · state autosaves locally; Sync publishes it to this page's live copy</footer>
 <script id="gm-state" type="application/json">{"questions": ["Why did the Jedi leave the Rim?", "What is the Valley?", "Who lit Vesta-9?", "What did the Adjournment actually adjourn?"], "clocks": [{"faction": "Republic", "crack": "Recovered by adjourning the Rim; wants it back on its terms", "value": 0, "notes": ""}, {"faction": "Admiralty", "crack": "Treaty wing vs the Founding cadre — and the Founding needs an enemy → the Annexation", "value": 0, "notes": ""}, {"faction": "Vigil", "crack": "Sacrilege vs. Order-reborn — custody of the Awakened → the Vigil breaks", "value": 0, "notes": ""}, {"faction": "Inheritors", "crack": "Nobody knows whose hand is at the top → the Unveiling", "value": 0, "notes": "Hold the Vesta-9 file on the crew — and its gifted (Dial 3)."}, {"faction": "Lamplighters", "crack": "The relighting order is for sale → Conclave of Charts (rigged: Denno Pike)", "value": 0, "notes": ""}, {"faction": "Kajidics", "crack": "The young Hutts have run the numbers → clan war", "value": 0, "notes": ""}, {"faction": "The Awakening", "crack": "Every public display raises the temperature → it goes public", "value": 0, "notes": ""}], "beacons": [{"name": "Vesta-9", "status": "lit", "corridor": "the Run past Vesta-9 (toward Enarc)", "certified": "Chartmistress Bel Nerra (Lamplighters)", "fee": "pending session one", "followed": "Vigil, Admiralty, Lamplighters — and one Inheritor observer (Dial 3)"}], "fragments": [], "truthsFound": [], "corrupted": [], "sessions": [], "run": {}, "rev": 0}</script>
@@ -189,7 +223,7 @@ const MODULES= [{"id": "01", "title": "Session One — The Light on Vesta-9", "i
 const SEED   = {"questions": ["Why did the Jedi leave the Rim?", "What is the Valley?", "Who lit Vesta-9?", "What did the Adjournment actually adjourn?"], "clocks": [{"faction": "Republic", "crack": "Recovered by adjourning the Rim; wants it back on its terms", "value": 0, "notes": ""}, {"faction": "Admiralty", "crack": "Treaty wing vs the Founding cadre — and the Founding needs an enemy → the Annexation", "value": 0, "notes": ""}, {"faction": "Vigil", "crack": "Sacrilege vs. Order-reborn — custody of the Awakened → the Vigil breaks", "value": 0, "notes": ""}, {"faction": "Inheritors", "crack": "Nobody knows whose hand is at the top → the Unveiling", "value": 0, "notes": "Hold the Vesta-9 file on the crew — and its gifted (Dial 3)."}, {"faction": "Lamplighters", "crack": "The relighting order is for sale → Conclave of Charts (rigged: Denno Pike)", "value": 0, "notes": ""}, {"faction": "Kajidics", "crack": "The young Hutts have run the numbers → clan war", "value": 0, "notes": ""}, {"faction": "The Awakening", "crack": "Every public display raises the temperature → it goes public", "value": 0, "notes": ""}], "beacons": [{"name": "Vesta-9", "status": "lit", "corridor": "the Run past Vesta-9 (toward Enarc)", "certified": "Chartmistress Bel Nerra (Lamplighters)", "fee": "pending session one", "followed": "Vigil, Admiralty, Lamplighters — and one Inheritor observer (Dial 3)"}], "fragments": [], "truthsFound": [], "corrupted": [], "sessions": [], "run": {}, "rev": 0};
 const CREW   = [{"slug": "mikres-kyries", "name": "Mikrés Kyríes", "species": "Chadra-Fan", "species_abilities": [{"name": "Acute Senses", "description": "Chandra-Fan remove up to [SE][SE] from Perception checks due to superior senses."}, {"name": "Reduced Silouette", "description": "Chadra-Fan have a Silhouette of 0."}], "career": "Technician", "specializations": ["Mechanic"], "characteristics": {"Brawn": 1, "Agility": 3, "Intellect": 3, "Cunning": 2, "Willpower": 1, "Presence": 2}, "wounds": 12, "strain": 13, "soak": 3, "defense": {"ranged": 0, "melee": 0}, "encumbrance": {"threshold": 6, "current": 4}, "force_rating": 0, "morality": null, "credits": 60, "skills": [{"name": "Astrogation", "characteristic": "Intellect", "rank": 1, "career": true, "proficiency": 1, "ability": 2, "type": "General"}, {"name": "Athletics", "characteristic": "Brawn", "rank": 0, "career": false, "proficiency": 0, "ability": 1, "type": "General"}, {"name": "Brawl", "characteristic": "Brawn", "rank": 0, "career": true, "proficiency": 0, "ability": 1, "type": "Combat"}, {"name": "Charm", "characteristic": "Presence", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Coercion", "characteristic": "Willpower", "rank": 0, "career": false, "proficiency": 0, "ability": 1, "type": "General"}, {"name": "Computers", "characteristic": "Intellect", "rank": 1, "career": true, "proficiency": 1, "ability": 2, "type": "General"}, {"name": "Cool", "characteristic": "Presence", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Coordination", "characteristic": "Agility", "rank": 0, "career": true, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Knowledge (Core Worlds)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Knowledge"}, {"name": "Deception", "characteristic": "Cunning", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Discipline", "characteristic": "Willpower", "rank": 1, "career": true, "proficiency": 1, "ability": 0, "type": "General"}, {"name": "Knowledge (Education)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Knowledge"}, {"name": "Gunnery", "characteristic": "Agility", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Combat"}, {"name": "Leadership", "characteristic": "Presence", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Lightsaber", "characteristic": "Brawn", "rank": 0, "career": false, "proficiency": 0, "ability": 1, "type": "Combat"}, {"name": "Knowledge (Lore)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Knowledge"}, {"name": "Mechanics", "characteristic": "Intellect", "rank": 3, "career": true, "proficiency": 3, "ability": 0, "type": "General"}, {"name": "Medicine", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Melee", "characteristic": "Brawn", "rank": 0, "career": false, "proficiency": 0, "ability": 1, "type": "Combat"}, {"name": "Negotiation", "characteristic": "Presence", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Knowledge (Outer Rim)", "characteristic": "Intellect", "rank": 0, "career": true, "proficiency": 0, "ability": 3, "type": "Knowledge"}, {"name": "Perception", "characteristic": "Cunning", "rank": 0, "career": true, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Piloting (Planetary)", "characteristic": "Agility", "rank": 0, "career": true, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Piloting (Space)", "characteristic": "Agility", "rank": 0, "career": true, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Ranged (Heavy)", "characteristic": "Agility", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Combat"}, {"name": "Ranged (Light)", "characteristic": "Agility", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Combat"}, {"name": "Resilience", "characteristic": "Brawn", "rank": 0, "career": false, "proficiency": 0, "ability": 1, "type": "General"}, {"name": "Skulduggery", "characteristic": "Cunning", "rank": 1, "career": true, "proficiency": 1, "ability": 1, "type": "General"}, {"name": "Stealth", "characteristic": "Agility", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Streetwise", "characteristic": "Cunning", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Survival", "characteristic": "Cunning", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Knowledge (Underworld)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Knowledge"}, {"name": "Vigilance", "characteristic": "Willpower", "rank": 0, "career": false, "proficiency": 0, "ability": 1, "type": "General"}, {"name": "Knowledge (Warfare)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Knowledge"}, {"name": "Knowledge (Xenology)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Knowledge"}], "talents": [{"name": "Solid Repairs", "count": 2, "activation": "Passive", "description": "The character repairs +1 hull trauma per rank of Solid Repairs whenever he repairs a starship or vehicle."}, {"name": "Grit", "count": 1, "activation": "Passive", "description": "Gain +1 strain threshold"}, {"name": "Enduring", "count": 1, "activation": "Passive", "description": "Gain +1 soak value."}, {"name": "Bad Motivator", "count": 1, "activation": "Active", "description": "Once per game session, may take a Bad Motivator action; make a [B]Hard ([DI][DI][DI]) Mechanics check[b] to cause one targeted device to spontaneously fail."}, {"name": "Toughened", "count": 1, "activation": "Passive", "description": "Gain +2 wound threshold."}, {"name": "Contraption", "count": 1, "activation": "Active", "description": "Once per session, take Contraption action; make a [B] Hard ([DI][DI][DI]) Mechanics check[b] to fashion a device to solve a current problem using just the tools and parts on hand."}], "weapons": [{"name": "Energy Slingshot", "skill": "Ranged (Light)", "damage": "3", "crit": "—", "range": "Short", "qualities": ["Disorient 2", "Stun Setting"], "notes": "Triggering the Disorient quality requires [AD] instead of [AD][AD].", "equipped": true}, {"name": "Unarmed", "skill": "Brawl", "damage": "1", "crit": "5", "range": "Engaged", "qualities": ["Knockdown", "Stun Setting"], "notes": "", "equipped": true}], "armor": [{"name": "Heavy Clothing", "soak": 1, "defense": 0, "encumbrance": 1, "equipped": true}], "gear": [{"name": "Dataspike", "quantity": 1, "type": "Slicing Tools", "encumbrance": 1, "notes": "Once per round, a character with a dataspike may expend it to attempt to disable a security program as a maneuver (rather than as an action). Reduce the difficulty of the Computers check to disable the program by 2, to a minimum of Simple (-). After one use, the dataspike burns out and becomes useless."}, {"name": "Signature Modulation Pad", "quantity": 1, "type": "Slicing Tools", "encumbrance": 2, "notes": "Add [SE][SE] on attempts to acquire user's slicing signature (e.g., Trace User action)."}], "vehicles": [{"name": "YT-1300 Light Freighter", "type": "Freighter", "silhouette": 4, "speed": 3, "handling": -1, "def_fore": 1, "def_aft": 1, "armor": 3, "hull": 22, "strain": 15, "hyperdrive": "Class 2 (backup 12)", "crew": "One Pilot, One Co-Pilot, One Engineer", "passengers": 6, "encumbrance": 165, "consumables": "Two Months", "weapons": ["2× Medium laser cannon (turret)"]}], "obligations": [{"type": "Debt", "text": "Predatory Lease on freighter", "total": 20}], "duties": [], "motivation": "Pursuit: Wealth", "background": ""}, {"slug": "republic-trooper", "name": "Republic Trooper", "species": "Human", "species_abilities": [{"name": "Additional Non-Career Skills", "description": "Humans start the game with one rank in two different non-career skills of their choice."}], "career": "Soldier", "specializations": ["Vanguard"], "characteristics": {"Brawn": 3, "Agility": 3, "Intellect": 2, "Cunning": 2, "Willpower": 3, "Presence": 2}, "wounds": 17, "strain": 13, "soak": 4, "defense": {"ranged": 0, "melee": 0}, "encumbrance": {"threshold": 8, "current": 2}, "force_rating": 0, "morality": null, "credits": 0, "skills": [{"name": "Astrogation", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Athletics", "characteristic": "Brawn", "rank": 1, "career": true, "proficiency": 1, "ability": 2, "type": "General"}, {"name": "Brawl", "characteristic": "Brawn", "rank": 1, "career": true, "proficiency": 1, "ability": 2, "type": "Combat"}, {"name": "Charm", "characteristic": "Presence", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Coercion", "characteristic": "Willpower", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Computers", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Cool", "characteristic": "Presence", "rank": 0, "career": true, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Coordination", "characteristic": "Agility", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Knowledge (Core Worlds)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "Knowledge"}, {"name": "Deception", "characteristic": "Cunning", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Discipline", "characteristic": "Willpower", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Knowledge (Education)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "Knowledge"}, {"name": "Gunnery", "characteristic": "Agility", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Combat"}, {"name": "Leadership", "characteristic": "Presence", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Lightsaber", "characteristic": "Brawn", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "Combat"}, {"name": "Knowledge (Lore)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "Knowledge"}, {"name": "Mechanics", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Medicine", "characteristic": "Intellect", "rank": 0, "career": true, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Melee", "characteristic": "Brawn", "rank": 0, "career": true, "proficiency": 0, "ability": 3, "type": "Combat"}, {"name": "Negotiation", "characteristic": "Presence", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Knowledge (Outer Rim)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "Knowledge"}, {"name": "Perception", "characteristic": "Cunning", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Piloting (Planetary)", "characteristic": "Agility", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Piloting (Space)", "characteristic": "Agility", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Ranged (Heavy)", "characteristic": "Agility", "rank": 1, "career": true, "proficiency": 1, "ability": 2, "type": "Combat"}, {"name": "Ranged (Light)", "characteristic": "Agility", "rank": 0, "career": true, "proficiency": 0, "ability": 3, "type": "Combat"}, {"name": "Resilience", "characteristic": "Brawn", "rank": 0, "career": true, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Skulduggery", "characteristic": "Cunning", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Stealth", "characteristic": "Agility", "rank": 0, "career": false, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Streetwise", "characteristic": "Cunning", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Survival", "characteristic": "Cunning", "rank": 0, "career": true, "proficiency": 0, "ability": 2, "type": "General"}, {"name": "Knowledge (Underworld)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "Knowledge"}, {"name": "Vigilance", "characteristic": "Willpower", "rank": 0, "career": true, "proficiency": 0, "ability": 3, "type": "General"}, {"name": "Knowledge (Warfare)", "characteristic": "Intellect", "rank": 1, "career": true, "proficiency": 1, "ability": 1, "type": "Knowledge"}, {"name": "Knowledge (Xenology)", "characteristic": "Intellect", "rank": 0, "career": false, "proficiency": 0, "ability": 2, "type": "Knowledge"}], "talents": [{"name": "Body Guard", "count": 1, "activation": "Active", "description": "Once per round, perform the Body Guard maneuver to guard an engaged character. Suffer a number of strain no greater than ranks of Body Guard, then until the beginning of the next turn upgrade the difficulty of combat checks targeting the character by that number."}, {"name": "Toughened", "count": 2, "activation": "Passive", "description": "Gain +2 wound threshold."}], "weapons": [{"name": "FYR Assault Carbine", "skill": "Ranged (Heavy)", "damage": "6", "crit": "5", "range": "Short", "qualities": ["Auto-Fire", "Inaccurate 1"], "notes": "[THREAT][THREAT] may cause weapon to run out of ammo.", "equipped": true}, {"name": "Sap Gloves", "skill": "Brawl", "damage": "5", "crit": "5", "range": "Engaged", "qualities": ["Concussive 1", "Knockdown", "Stun Setting"], "notes": "Spotting sap gloves on an individual requires a Daunting ([DI][DI][DI][DI]) Perception check.", "equipped": true}, {"name": "Unarmed", "skill": "Brawl", "damage": "3", "crit": "5", "range": "Engaged", "qualities": ["Knockdown", "Stun Setting"], "notes": "", "equipped": true}], "armor": [{"name": "Heavy Clothing", "soak": 1, "defense": 0, "encumbrance": 1, "equipped": true}], "gear": [{"name": "Backpack", "quantity": 1, "type": "Carrying/Storage", "encumbrance": 0, "notes": ""}, {"name": "Climbing Gear", "quantity": 1, "type": "Tools/Electronics", "encumbrance": 1, "notes": ""}, {"name": "Comlink (handheld)", "quantity": 1, "type": "Communications", "encumbrance": 0, "notes": ""}, {"name": "Breath Mask", "quantity": 1, "type": "Survival", "encumbrance": 1, "notes": ""}], "vehicles": [], "obligations": [{"type": "Dutybound", "text": "", "total": 20}], "duties": [], "motivation": "Oath: The Republic", "background": ""}];
 const HEAD_STATIC = "<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>Ember Age GM Screen</title>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap\">";
-const SKELETON = "<header>\n  <h1><span class=\"flame\">◆</span> THE EMBER AGE <span class=\"small muted\">GM screen</span></h1>\n  <nav id=\"nav\"></nav>\n  <div class=\"spacer\"></div>\n  <button class=\"hbtn\" id=\"syncchip\" style=\"display:none\" onclick=\"syncNow()\">Sync</button>\n  <button class=\"hbtn\" onclick=\"exportState()\">Export save</button>\n  <button class=\"hbtn\" onclick=\"document.getElementById('importfile').click()\">Import</button>\n  <input type=\"file\" id=\"importfile\" accept=\".json\" style=\"display:none\" onchange=\"importState(this)\">\n  <button class=\"hbtn\" onclick=\"resetState()\">Reset</button>\n</header>\n<div id=\"syncbanner\"></div>\n<main>\n  <div id=\"tab-run\" class=\"tab\"></div>\n  <div id=\"tab-crew\" class=\"tab\"></div>\n  <div id=\"tab-npcs\" class=\"tab\"></div>\n  <div id=\"tab-trackers\" class=\"tab\"></div>\n  <div id=\"tab-log\" class=\"tab\"></div>\n  <div id=\"tab-reference\" class=\"tab\"></div>\n  <div id=\"tab-setting\" class=\"tab\"></div>\n  <div id=\"tab-truths\" class=\"tab\"></div>\n</main>\n<footer>The Ember Age — homebrew campaign GM screen · built 2026-08-25 · state autosaves locally; Sync publishes it to this page's live copy</footer>";
+const SKELETON = "<header>\n  <h1><span class=\"flame\">◆</span> THE EMBER AGE <span class=\"small muted\">GM screen</span></h1>\n  <nav id=\"nav\"></nav>\n  <div class=\"spacer\"></div>\n  <button class=\"hbtn\" id=\"syncchip\" style=\"display:none\" onclick=\"syncNow()\">Sync</button>\n  <button class=\"hbtn\" onclick=\"exportState()\">Export save</button>\n  <button class=\"hbtn\" onclick=\"document.getElementById('importfile').click()\">Import</button>\n  <input type=\"file\" id=\"importfile\" accept=\".json\" style=\"display:none\" onchange=\"importState(this)\">\n  <button class=\"hbtn\" onclick=\"resetState()\">Reset</button>\n</header>\n<div id=\"syncbanner\"></div>\n<main>\n  <div id=\"tab-run\" class=\"tab\"></div>\n  <div id=\"tab-crew\" class=\"tab\"></div>\n  <div id=\"tab-npcs\" class=\"tab\"></div>\n  <div id=\"tab-trackers\" class=\"tab\"></div>\n  <div id=\"tab-log\" class=\"tab\"></div>\n  <div id=\"tab-book\" class=\"tab\">\n    <div class=\"subnav\" id=\"booknav\"></div>\n    <div id=\"tab-reference\" class=\"sub\"></div>\n    <div id=\"tab-setting\" class=\"sub\"></div>\n    <div id=\"tab-truths\" class=\"sub\"></div>\n  </div>\n  <div id=\"qs\" hidden><div class=\"qsbox\"><input id=\"qs-in\" placeholder=\"Jump to an NPC, page, or scene…  (Esc closes)\" autocomplete=\"off\"><div id=\"qs-out\"></div></div></div>\n</main>\n<footer>The Ember Age — homebrew campaign GM screen · built 2026-08-25 · state autosaves locally; Sync publishes it to this page's live copy</footer>";
 
 /* ------------------------------------------------ state & sync */
 const KEY = "emberAgeGM.v1";
@@ -291,16 +325,21 @@ function resetState(){
 }
 
 /* ------------------------------------------------ tabs & in-app links */
-const TABS = [["run","Run"],["crew","Crew"],["npcs","NPCs"],["trackers","Trackers"],["log","Session Log"],["reference","Reference"],["setting","Setting"],["truths","GM Truths"]];
-let cur = "npcs";
+const TABS = [["run","Run"],["npcs","NPCs"],["crew","Crew"],["trackers","Trackers"],["log","Session Log"],["book","Book"]];
+const BOOK = [["reference","Reference"],["setting","Setting"],["truths","GM Truths"]];
+const SUB = {reference:"book", setting:"book", truths:"book"};
+let cur = "run", bookSel = "reference";
 try{ const r = JSON.parse(sessionStorage.getItem("ea.resume")); if(r && r.tab){ cur = r.tab; sessionStorage.removeItem("ea.resume"); } }catch(e){}
-if(location.hash && TABS.some(t=>t[0]===location.hash.slice(1))) cur = location.hash.slice(1);
+{ const h = location.hash.slice(1); if(h && TABS.some(t=>t[0]===h)) cur = h; else if(SUB[h]){ cur = "book"; bookSel = h; } }
 function nav(){
   document.getElementById("nav").innerHTML = TABS.map(([id,lbl])=>
-    `<button class="${cur===id?'on':''}" onclick="go('${id}')">${lbl}</button>`).join("");
+    `<button class="${cur===id?'on':''}" onclick="go('${id}')">${lbl}</button>`).join("") +
+    `<button title="quick search  ( / )" onclick="qsOpen()">⌕</button>`;
   TABS.forEach(([id])=>document.getElementById("tab-"+id).classList.toggle("on", cur===id));
+  document.getElementById("booknav").innerHTML = BOOK.map(([id,lbl])=>`<button class="${bookSel===id?'on':''}" onclick="go('${id}')">${lbl}</button>`).join("");
+  BOOK.forEach(([id])=>document.getElementById("tab-"+id).classList.toggle("on", bookSel===id));
 }
-function go(id){ cur=id; try{history.replaceState(null,"","#"+id);}catch(e){} nav(); window.scrollTo(0,0); }
+function go(id){ if(SUB[id]){ bookSel = id; id = "book"; } cur=id; try{history.replaceState(null,"","#"+(cur==="book"?bookSel:cur));}catch(e){} nav(); window.scrollTo(0,0); }
 let npcFocus = null;
 function navTo(spec){
   const p = spec.split(":");
@@ -333,29 +372,90 @@ function runState(mid){
 function runTab(){
   const el = document.getElementById("tab-run");
   if(!MODULES.length){ el.innerHTML = `<p class="muted">No run modules built yet.</p>`; return; }
-  const m = MODULES[0];
+  if(!S.run) S.run = {};
+  const m = MODULES.find(x=>x.id===S.run.cur) || MODULES[0];
   const rs = runState(m.id);
+  const n = m.scenes.length, cur_i = Math.max(-1, Math.min(n-1, rs.at ?? -1));   // -1 = the module's overview
+  const scene = cur_i >= 0 ? m.scenes[cur_i] : null;
+  const npcIds = [...new Set([...(scene ? scene.html : m.intro).matchAll(/data-nav="npc:([^"]+)"/g)].map(x=>x[1]))];
+  const npcs = npcIds.map(id=>NPCS.find(x=>x.id===id)).filter(Boolean);
   el.innerHTML = `
-    <div class="card">
-      <h2 style="margin:.1rem 0;font-family:var(--disp);color:var(--gold)">${esc(m.title)}</h2>
-      <div class="scenepills">${m.scenes.map(s=>`
-        <button class="chip ${rs.scenes[s.sid]?'on':''}" onclick="document.getElementById('scene-${s.sid}').scrollIntoView({block:'start'})"
-          title="jump to scene">${esc(s.title)}</button>`).join("")}
-      </div>
-      <p class="muted small" style="margin:.4rem 0 0">Pills jump to a scene; tick a scene done with the checkbox on its header. Action buttons write straight into your Trackers.</p>
-    </div>
-    <div class="card doc">${m.intro}</div>
-    ${m.scenes.map(s=>`
-      <div class="card doc" id="scene-${s.sid}">
-        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:.6rem">
-          <h2 style="margin:.1rem 0">${esc(s.title)}</h2>
-          <label class="small muted" style="white-space:nowrap"><input type="checkbox" ${rs.scenes[s.sid]?"checked":""}
-            onchange="runState('${m.id}').scenes['${s.sid}']=this.checked;save();runTab()"> done</label>
+    ${MODULES.length>1 ? `<div class="toolbar" style="margin-bottom:.6rem">${MODULES.map(x=>`<button class="chip ${x.id===m.id?'on':''}" onclick="S.run.cur='${x.id}';save();runTab()">${esc(x.title)}</button>`).join("")}</div>` : ""}
+    <div class="cockpit">
+      <div class="rail card">
+        <div class="scenelist">
+          <button class="${cur_i<0?'on':''}" onclick="runGo('${m.id}',-1)"><span class="n">◆</span><span>Preface</span></button>
+          ${m.scenes.map((s,i)=>`<button class="${i===cur_i?'on':''} ${rs.scenes[s.sid]?'done':''}" onclick="runGo('${m.id}',${i})"><span class="n">${i+1}</span><span>${esc(s.title.replace(/^Scene \d+\s*[—–-]\s*/,""))}</span></button>`).join("")}
         </div>
-        ${s.html}
-      </div>`).join("")}`;
+        <p class="muted small" style="margin:.6rem 0 0">[ and ] step scenes · / searches</p>
+      </div>
+      <div>
+        <div class="scenenav">
+          <button class="btn ghost" ${cur_i<0?"disabled":""} onclick="runGo('${m.id}',${cur_i-1})">◀ prev</button>
+          <div class="small muted">${esc(m.title)} · ${cur_i<0?"preface":`${cur_i+1} of ${n}`}</div>
+          ${scene ? `<label class="small muted" style="white-space:nowrap"><input type="checkbox" ${rs.scenes[scene.sid]?"checked":""} onchange="runState('${m.id}').scenes['${scene.sid}']=this.checked;save();runTab()"> done</label>` : ""}
+          <button class="btn ghost" ${cur_i>=n-1?"disabled":""} onclick="runGo('${m.id}',${cur_i+1})">next ▶</button>
+        </div>
+        <div class="card doc" id="scene-${scene?scene.sid:'intro'}">
+          ${scene ? `<h2 style="margin:.1rem 0">${esc(scene.title)}</h2>${scene.html}` : `<h2 style="margin:.1rem 0;color:var(--gold)">${esc(m.title)}</h2>${m.intro}`}
+        </div>
+        <div class="scenenav"><button class="btn ghost" ${cur_i<0?"disabled":""} onclick="runGo('${m.id}',${cur_i-1})">◀ prev</button><span></span><button class="btn ghost" ${cur_i>=n-1?"disabled":""} onclick="runGo('${m.id}',${cur_i+1})">next ▶</button></div>
+      </div>
+      <div class="rail card athand">
+        <h3>Stat blocks in this scene</h3>
+        ${npcs.length ? npcs.map(x=>`<details class="npc" id="run-npc-${x.id}"><summary><span class="nm">${esc(x.name)}</span> <span class="badge ${x.kind}">${x.kind}</span>${x.derived?`<span class="drv">${esc(x.derived)}</span>`:""}</summary><div class="body doc">${x.html}</div></details>`).join("") : `<p class="muted small">None referenced here.</p>`}
+        <h3>Clocks</h3>
+        ${S.clocks.map((c,i)=>`<div class="mini"><span>${esc(c.faction)}</span><span class="segs">${[1,2,3,4,5,6].map(v=>`<span class="seg ${c.value>=v?'f':''}" onclick="clockSet(${i},${v})"></span>`).join("")}</span></div>`).join("")}
+        <h3>Beacons</h3>
+        ${S.beacons.map(b=>`<div class="mini"><span>${esc(b.name)}</span><span class="b-${b.status==='lit'?'lit':'dark'}">${esc(b.status)}</span></div>`).join("") || `<p class="muted small">none yet</p>`}
+        <h3>Fragments</h3>
+        <div class="small">${questionSummary()}</div>
+        <p style="margin:.6rem 0 0"><button class="btn ghost" onclick="go('trackers')">Open trackers</button> <button class="btn ghost" onclick="go('npcs')">All NPCs</button></p>
+      </div>
+    </div>`;
   markDoneActions(m.id);
 }
+function runGo(mid, i){ runState(mid).at = i; S.run.cur = mid; save(); runTab(); window.scrollTo(0,0); }
+
+/* ------------------------------------------------ quick search (/) */
+let qsSel = 0, qsHits = [];
+function qsIndex(){
+  const out = [];
+  for(const n of NPCS) out.push({k:"NPC", t:n.name, s:(n.name+" "+n.faction+" "+(n.role||"")).toLowerCase(), go:()=>navTo("npc:"+n.id)});
+  for(const pg of PAGES) out.push({k:pg.section, t:pg.title, s:pg.title.toLowerCase(), go:()=>navTo("page:"+pg.section+":"+pg.id)});
+  for(const m of MODULES) m.scenes.forEach((sc,i)=>out.push({k:"scene", t:m.title+" · "+sc.title, s:(m.title+" "+sc.title).toLowerCase(), go:()=>{ runGo(m.id,i); go("run"); }}));
+  return out;
+}
+let QS = null;
+function qsOpen(){ QS = QS || qsIndex(); const q = document.getElementById("qs"); q.hidden = false; const i = document.getElementById("qs-in"); i.value = ""; qsRender(""); i.focus(); }
+function qsClose(){ document.getElementById("qs").hidden = true; }
+function qsRender(v){
+  const q = v.trim().toLowerCase();
+  qsHits = q ? QS.filter(x=>x.s.includes(q)).slice(0,14) : [];
+  qsSel = 0;
+  document.getElementById("qs-out").innerHTML = qsHits.map((h,i)=>`<button class="${i===qsSel?'on':''}" onclick="qsPick(${i})"><span class="k">${esc(h.k)}</span><span>${esc(h.t)}</span></button>`).join("");
+}
+function qsPick(i){ const h = qsHits[i]; if(!h) return; qsClose(); h.go(); }
+document.addEventListener("keydown", e=>{
+  const inField = ["INPUT","TEXTAREA","SELECT"].includes(e.target.tagName);
+  const qs = document.getElementById("qs");
+  if(!qs.hidden){
+    if(e.key==="Escape"){ qsClose(); }
+    else if(e.key==="ArrowDown"){ e.preventDefault(); qsSel = Math.min(qsHits.length-1, qsSel+1); qsRender(document.getElementById("qs-in").value); }
+    else if(e.key==="ArrowUp"){ e.preventDefault(); qsSel = Math.max(0, qsSel-1); qsRender(document.getElementById("qs-in").value); }
+    else if(e.key==="Enter"){ qsPick(qsSel); }
+    return;
+  }
+  if(inField) return;
+  if(e.key==="/"){ e.preventDefault(); qsOpen(); }
+  else if(cur==="run" && (e.key==="]"||e.key==="[")){
+    const m = MODULES.find(x=>x.id===(S.run||{}).cur) || MODULES[0]; if(!m) return;
+    const at = runState(m.id).at ?? -1; runGo(m.id, Math.max(-1, Math.min(m.scenes.length-1, at + (e.key==="]"?1:-1))));
+  }
+});
+document.addEventListener("input", e=>{ if(e.target.id==="qs-in") qsRender(e.target.value); });
+document.addEventListener("click", e=>{ if(e.target.id==="qs") qsClose(); });
+
 function markDoneActions(mid){
   const rs = runState(mid);
   document.querySelectorAll("#tab-run .runact").forEach(d=>{
@@ -545,7 +645,7 @@ function trackersTab(){
       <div><button class="btn" onclick="pushItem('corrupted','c-new')">Add</button></div></div>
     </div>`;
 }
-function clockSet(i,v){ S.clocks[i].value = (S.clocks[i].value===v? v-1 : v); save(); trackersTab(); }
+function clockSet(i,v){ S.clocks[i].value = (S.clocks[i].value===v? v-1 : v); save(); trackersTab(); if(cur==="run") runTab(); }
 function pushItem(key,inputId){ const el=document.getElementById(inputId); if(el.value.trim()){ S[key].push(el.value.trim()); save(); trackersTab(); } }
 function addFragment(){
   const g=id=>document.getElementById(id).value;
@@ -656,7 +756,7 @@ function truthsTab(){
 /* ------------------------------------------------ boot */
 function renderAll(){ nav(); runTab(); crewTab(); npcTab(); trackersTab(); logTab(); pagesTab("reference"); pagesTab("setting"); truthsTab();
   if(document.getElementById("mc-out")) mcOut(); updateSyncUI(); }
-window.addEventListener("hashchange",()=>{ const h=location.hash.replace("#",""); if(TABS.some(t=>t[0]===h)){ cur=h; nav(); } });
+window.addEventListener("hashchange",()=>{ const h=location.hash.replace("#",""); if(TABS.some(t=>t[0]===h)||SUB[h]){ go(h); } });
 renderAll();
 </script>
 </body>
