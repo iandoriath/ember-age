@@ -574,20 +574,40 @@ function buffered(pts, B) {  // rounded offset of a convex hull = hull of circle
 }
 function polLobes(pol) {
   if (pol.path) { const rp = (DATA.regionPaths || []).find(r => r.kind === pol.path); return rp ? [rp.pts] : []; }
-  const lobes = Array.isArray(pol.worlds[0]) ? pol.worlds : [pol.worlds];
-  return lobes.map(l => hull(l.map(posOf).filter(Boolean))).filter(h => h.length).map(h => buffered(h, pol.buffer || 180));
+  const out = [];
+  if (pol.worlds && pol.worlds.length) {
+    const lobes = Array.isArray(pol.worlds[0]) ? pol.worlds : [pol.worlds];
+    for (const l of lobes) { const h = hull(l.map(posOf).filter(Boolean)); if (h.length) out.push(buffered(h, pol.buffer || 180)); }
+  }
+  if (pol.lanes) {  // arms along the drawn lanes: one capsule per polyline segment (unioned when painted)
+    const L = typeof pol.lanes === "string" ? {kind:pol.lanes} : pol.lanes, B = L.buffer || 90, ex = new Set(L.exclude || []), only = L.only ? new Set(L.only) : null;
+    for (const seg of (DATA.laneSegs || [])) {
+      if (L.kind && seg.kind !== L.kind) continue;
+      if (ex.has(seg.name) || (only && !only.has(seg.name))) continue;
+      for (let i = 1; i < seg.pts.length; i++) out.push(buffered([seg.pts[i - 1], seg.pts[i]], B));
+    }
+  }
+  return out;
 }
+const offc = document.createElement("canvas");
 function drawPolities(ctx, X, Y, S) {  // same treatment as the drawn Hutt Space region: light fill, thin solid border
   ctx.lineJoin = "round"; ctx.lineCap = "round"; ctx.setLineDash([]);
+  if (offc.width !== bg.width || offc.height !== bg.height) { offc.width = bg.width; offc.height = bg.height; }
+  const o = offc.getContext("2d"); o.setTransform(ctx.getTransform()); o.lineJoin = "round"; o.lineCap = "round";
   for (const [name, q] of pres.pol) {
     if (q.a <= 0.01) continue;
+    const path = new Path2D();
     for (const lobe of q.lobes) {
-      ctx.beginPath(); ctx.moveTo(X(lobe[0][0]), Y(lobe[0][1]));
-      for (let i = 1; i < lobe.length; i++) ctx.lineTo(X(lobe[i][0]), Y(lobe[i][1]));
-      ctx.closePath();
-      ctx.fillStyle = q.color; ctx.globalAlpha = 0.09 * q.a; ctx.fill();
-      ctx.strokeStyle = q.color; ctx.globalAlpha = 0.8 * q.a; ctx.lineWidth = 1.8; ctx.stroke();
+      path.moveTo(X(lobe[0][0]), Y(lobe[0][1]));
+      for (let i = 1; i < lobe.length; i++) path.lineTo(X(lobe[i][0]), Y(lobe[i][1]));
+      path.closePath();
     }
+    ctx.fillStyle = q.color; ctx.globalAlpha = 0.09 * q.a; ctx.fill(path, "nonzero");
+    o.save(); o.setTransform(1, 0, 0, 1, 0, 0); o.clearRect(0, 0, offc.width, offc.height); o.restore();
+    o.globalCompositeOperation = "source-over"; o.strokeStyle = q.color; o.lineWidth = 3.6; o.stroke(path);
+    o.globalCompositeOperation = "destination-out"; o.fill(path, "nonzero");  // keep only the outer half of the stroke
+    o.globalCompositeOperation = "source-over";
+    ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 0.8 * q.a; ctx.drawImage(offc, 0, 0); ctx.restore();
     const big = q.lobes.reduce((m, l) => l.length >= m.length ? l : m, q.lobes[0]);
     const cx = big.reduce((s, p) => s + p[0], 0) / big.length, cy = big.reduce((s, p) => s + p[1], 0) / big.length;
     ctx.globalAlpha = 0.85 * q.a;

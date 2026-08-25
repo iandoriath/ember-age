@@ -524,11 +524,11 @@
    "title": "The Ruusan Reformation",
    "date": "1000 BBY · Year 0 AR",
    "view": "galaxy",
-   "text": "With the Sith believed extinct, Chancellor Tarsus Valorum remakes the Republic: the army and navy are disbanded, the Jedi Lords give up their worlds and place the Order under the Senate, and the galaxy is redrawn into sectors that send senators to Coruscant. On paper the Republic is whole again. The paper does not reach the Reach.",
+   "text": "With the Sith believed extinct, Chancellor Tarsus Valorum remakes the Republic: the army and navy are disbanded, the Jedi Lords give up their worlds and place the Order under the Senate, and the galaxy is redrawn into sectors. But the Republic that survives is the Core and the lanes it can still keep lit — the Perlemian, the Corellian Run, a rebuilt stretch of the Hydian Way. Everything else is a senator's seat and a line on an old chart.",
    "polities": [
     {
      "name": "Galactic Republic",
-     "buffer": 300,
+     "buffer": 220,
      "worlds": [
       "Coruscant",
       "Corellia",
@@ -545,32 +545,18 @@
       "Empress Teta",
       "Abregado-rae",
       "Byss",
-      "Kashyyyk",
-      "Bothawui",
-      "Malastare",
-      "Eriadu",
-      "Sullust",
-      "Dac",
-      "Ord Mantell",
-      "Taris",
-      "Naboo",
-      "Manaan",
-      "Muunilinst",
-      "Mygeeto",
-      "Cato Neimoidia",
-      "Gyndine",
-      "Bonadan",
-      "Sluis Van",
-      "Ruusan",
-      "Ambria",
       "Fondor",
       "Balmorra",
       "Arkania",
-      "Dantooine",
-      "Onderon",
-      "Lianna",
-      "Tion"
-     ]
+      "Denon"
+     ],
+     "lanes": {
+      "kind": "living",
+      "exclude": [
+       "Duros Space Run"
+      ],
+      "buffer": 95
+     }
     },
     {
      "name": "Hutt Space",
@@ -615,7 +601,7 @@
    "polities": [
     {
      "name": "Galactic Republic",
-     "buffer": 300,
+     "buffer": 220,
      "worlds": [
       "Coruscant",
       "Corellia",
@@ -632,36 +618,15 @@
       "Empress Teta",
       "Abregado-rae",
       "Byss",
-      "Kashyyyk",
-      "Bothawui",
-      "Malastare",
-      "Eriadu",
-      "Sullust",
-      "Dac",
-      "Ord Mantell",
-      "Taris",
-      "Naboo",
-      "Manaan",
-      "Muunilinst",
-      "Mygeeto",
-      "Cato Neimoidia",
-      "Gyndine",
-      "Bonadan",
-      "Sluis Van",
-      "Ruusan",
-      "Ambria",
       "Fondor",
       "Balmorra",
       "Arkania",
-      "Dantooine",
-      "Onderon",
-      "Lianna",
-      "Tion",
-      "Kalarba",
-      "Kyrska",
-      "Glom Tho",
-      "Triffis"
-     ]
+      "Denon"
+     ],
+     "lanes": {
+      "kind": "living",
+      "buffer": 95
+     }
     },
     {
      "name": "Hutt Space",
