@@ -1,5 +1,7 @@
 # Session One — "The Light on Vesta-9"
 
+*Player-safe summary. The GM runs the session from the [full module](../gm/modules/01-the-light-on-vesta-9.md).*
+
 ## Cold open
 
 The crew is grounded at **Okrent's Drift** — the boomtown port on the back of **Bannistar Station**'s new fuel gantries, built for the Lamplighters' advance up the **Duros Space Run** and in recession since the advance stalled — cargo impounded, Obligations circling — when the sky changes. **Vesta-9 — the beacon nobody could find for five years — is broadcasting.** Every ship that can lift is lifting, and nobody has stopped to ask who lit it.
