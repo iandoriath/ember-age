@@ -300,7 +300,7 @@ PAGES_SPEC = [
     ("setting", "factions", "Factions Overview", "factions/index.md"),
     ("setting", "republic", "The Republic", "factions/republic.md"),
     ("setting", "jedi", "The Jedi Order", "factions/jedi-order.md"),
-    ("setting", "admiralty", "The Admiralty", "factions/admiralty.md"),
+    ("setting", "admiralty", "The Naboo Admiralty", "factions/admiralty.md"),
     ("setting", "vigil", "The Vigil", "factions/vigil.md"),
     ("setting", "inheritors", "The Inheritors", "factions/inheritors.md"),
     ("setting", "lamplighters", "The Lamplighters", "factions/lamplighters.md"),

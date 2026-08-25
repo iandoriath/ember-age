@@ -14,7 +14,7 @@
 | **the Adjournment** | The Senate's vote of 12 AR suspending the dark sectors' seats, charters and obligations sine die — the Rim was adjourned, not the Republic; the Order withdrew with it |
 | **the Temple** | The Jedi Order's one house, on Coruscant — where the gifted are sent, young, and not sent back |
 | **the withdrawn** | The Temple's word for the Jedi who refused the recall and stayed in the Rim. They call themselves Jedi |
-| **the Greywatch** | The Admiralty's fortified pocket beyond the Enarc Run — Naboo and its neighbors, named for the grey hulls that stood ninety years of watch in the dark |
+| **the Naboo Admiralty** | The fleet that refused demobilization, anchored at Naboo beyond the Enarc Run — the last state navy in the galaxy, and now its own state |
 | **the black lanes** | The unregistered routes that never went dark |
 | **a posting** | A Guild bounty, the one writ that still travels |
 | **the Quiet** | Deep-rim slang for dead space |

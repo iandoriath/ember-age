@@ -111,7 +111,7 @@ Ninety years after Ruusan, nothing flies new. Every hull in this file is an inhe
 
 ## The Admiralty
 
-### GNS Steadfast, Greywatch-pattern Patrol Sloop
+### NAS Steadfast, Naboo-pattern Patrol Sloop
 *Vehicle — the Admiralty — Commander Joss Reike's inspection sloop*
 
 > The Steadfast does not hail you so much as inform you: a wall of pre-Ruusan naval steel that was keeping this watch before your grandmother was born, crewed by people who never stopped believing in uniforms.
@@ -134,7 +134,7 @@ Ninety years after Ruusan, nothing flies new. Every hull in this file is an inhe
 
 **Chassis:** Imperial System Patrol Craft (IPV-1), Beyond the Rim (adjustments: none — the printed block lists no encumbrance capacity; the line above reports that fact rather than inventing a number).
 *(stats unverified against print — scope: every other line of this block verified against the printed IPV-1; the one unverified field is **Price/Rarity** — check the printed block for the figure and restore the "(R)" restricted marker if the print carries one, as a military hull likely does)*
-**Era notes:** Greywatch-pattern sloops carry no hyperdrive as printed — the Admiralty ferries them between systems clamped to fleet tenders, which is why one can "drop in" on a beacon relight and why, once on station, it is never leaving until the tender comes back. The GNS prefix is *Greywatch Naval Ship* — a registry no chart on this side of the dark lists. Maintenance is the one thing the Greywatch yards still do perfectly; this is the rare hull in the era with nothing patched.
+**Era notes:** Naboo-pattern sloops carry no hyperdrive as printed — the Admiralty ferries them between systems clamped to fleet tenders, which is why one can "drop in" on a beacon relight and why, once on station, it is never leaving until the tender comes back. The NAS prefix is *Naboo Admiralty Ship* — a registry no chart on this side of the dark lists. Maintenance is the one thing the Naboo yards still do perfectly; this is the rare hull in the era with nothing patched.
 **Using it:** The Steadfast is a wall, not a duel — its turbolasers outrange and outhit anything a wayfinder crew owns, so the scene it creates is procedural: stand to, present manifests, submit to boarding (those ten passenger berths are Reike's inspection party, or your cell). Let the players win against the paperwork, the commander's rigidity, or the tender schedule, never the guns. If they run, Speed 3 and Handling −1 give a bold pilot honest odds; being *remembered* by the Admiralty is the real cost. This block is mirrored in the session-one NPC file ([session-one.md](../gm/npcs/session-one.md)) so the GM-screen markers resolve — one canonical print; if either copy is ever adjusted, keep the two in sync.
 
 ---
