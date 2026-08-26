@@ -32,10 +32,10 @@
    "beacon": true,
    "alwaysLit": false,
    "hop": 1,
-   "blurb": "A dark crossroads: the Enarc Run (toward Naboo and the Rimma) and the Hutt-ringed Triellus both once met the Run here.",
+   "blurb": "A sealed junction — the Enarc Run (toward Naboo and the Rimma) and the Hutt-ringed Triellus once met the Run here — now the Anchorage of Sorulba, a closed Hutt kingdom that taxes nothing because it admits no one.",
    "gm": {
-    "seed": "The Toll",
-    "canon": "Real junction: Enarc Run + Triellus (Hutt space ring) — natural Kajidic chokepoint.",
+    "seed": "Session Two — the Anchorage's opening crisis: the King's Circuit swoop race and the campaign's first hand-lit beacon",
+    "canon": "Real junction: Enarc Run + Triellus (Hutt space ring). Campaign frame: the closed hermit kingdom of Sorulba's kajidic — no Run contact in decades, no toll on the lane because no traffic; its one quiet foreign relationship runs down the Enarc Run to Naboo (the Admiralty). The opening crisis begins when the guild posts the Enarc prize.",
     "factions": [
      "kajidics"
     ]
@@ -358,7 +358,7 @@
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
-   "blurb": "First living stop behind Bannistar on the Mid Rim stretch of the Run — the last prize the guild paid (89 AR), claimed by the crew of the Larksong.",
+   "blurb": "First living stop behind Bannistar on the Mid Rim stretch of the Run — the last prize the guild paid (85 AR), claimed by the crew of the Larksong — five years before Vesta-9 lit.",
    "gm": {
     "seed": "",
     "canon": "Transit point on the Run (The Essential Atlas).",
@@ -374,7 +374,7 @@
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
-   "blurb": "Quiet world on the living Run, relit mid-decade by a Lamplighter prize; reconnection has been slower to change it than its neighbors.",
+   "blurb": "Quiet world on the living Run, relit by a Lamplighter prize over 82–83 AR; reconnection has been slower to change it than its neighbors.",
    "gm": {
     "seed": "",
     "canon": "User-invented: no Legends source. Keep it a quiet foil to the boomtown stops.",
@@ -390,7 +390,7 @@
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
-   "blurb": "Mid Rim waystop on the living stretch of the Run, relit by a Lamplighter prize late in the 80s AR.",
+   "blurb": "Mid Rim waystop on the living stretch of the Run, relit by a Lamplighter prize in 84 AR.",
    "gm": {
     "seed": "",
     "canon": "Transit point on the Run (The Essential Atlas).",
@@ -406,7 +406,7 @@
    "region": "hydian",
    "beacon": false,
    "alwaysLit": true,
-   "blurb": "Mid Rim world on the living stretch of the Run, relit by a Lamplighter first-lighting prize early in the 80s AR.",
+   "blurb": "Mid Rim world on the living stretch of the Run, relit by a Lamplighter first-lighting prize in 81 AR — the first paid on the Run.",
    "gm": {
     "seed": "",
     "canon": "Transit point on the Run (The Essential Atlas).",
