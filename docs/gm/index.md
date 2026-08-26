@@ -11,7 +11,7 @@
 
 ## Running the era — one-paragraph reminders
 
-- **Nobody broke the galaxy** — everyone just stopped holding it up. No villain behind the Withering; keep it that way.
+- **Nobody broke the galaxy** — everyone just stopped holding it up. No villain behind the Withering galaxy-wide; keep it that way. The one exception is local and locked: **this region withered because the Sith required time for their searches** — its lights were helped out under the Ebb's cover and kept out ([Keepers of the Flame](npcs/keepers.md)). The era is nobody's fault; this country was somebody's project.
 - **History can still be interviewed** — and the interviews disagree. Every big fact should arrive twice, contradicting itself once.
 - **The Force is an event, not a skill.** Every open use has witnesses, and witnesses have funerals behind them.
 - **Hope with rust on it.** The era rewards repair, not conquest. Let things be fixable — at a price.

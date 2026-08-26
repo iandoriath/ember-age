@@ -317,6 +317,8 @@ SEED = {
         "Why did the Jedi leave the Rim?",
         "What is the Valley?",
         "Who lit Vesta-9?",
+        "Why did the Run stay dark?",
+        "What is calling the gifted up the Run?",
         "What did the Adjournment actually adjourn?",
     ],
     "clocks": [
