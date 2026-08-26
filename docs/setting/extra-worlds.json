@@ -864,6 +864,22 @@
    },
    "dx": 18.0,
    "dy": 14.0
+  },
+  {
+   "name": "Vanahame",
+   "tier": 0,
+   "grid": "N-17",
+   "sector": "Grumani",
+   "region": "Outer Rim Territories",
+   "note": "Odionate cloister world — Odion's planet-sized orphanage, where he died at the Battle of Vanahame (1032 BBY, Knight Errant). Legends world absent from the atlas. Anchored by raw xy beside Whinndor's AUDITED position (N-17): Whinndor itself is an atlas dot the placement audit relocates, so it cannot serve as a dot anchor (anchors read pre-audit positions).",
+   "anchor": {
+    "xy": [
+     4641,
+     6553
+    ]
+   },
+   "dx": 26.0,
+   "dy": 22.0
   }
  ],
  "bright": {

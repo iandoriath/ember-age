@@ -599,6 +599,7 @@ function drawPolities(ctx, X, Y, S) {  // same treatment as the drawn Hutt Space
   ctx.lineJoin = "round"; ctx.lineCap = "round"; ctx.setLineDash([]);
   if (offc.width !== bg.width || offc.height !== bg.height) { offc.width = bg.width; offc.height = bg.height; }
   const o = offc.getContext("2d"); o.setTransform(ctx.getTransform()); o.lineJoin = "round"; o.lineCap = "round";
+  const labels = [];
   for (const [name, q] of pres.pol) {
     if (q.a <= 0.01) continue;
     const path = new Path2D();
@@ -615,8 +616,22 @@ function drawPolities(ctx, X, Y, S) {  // same treatment as the drawn Hutt Space
     ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 0.8 * q.a; ctx.drawImage(offc, 0, 0); ctx.restore();
     const big = q.lobes.reduce((m, l) => l.length >= m.length ? l : m, q.lobes[0]);
     const cx = big.reduce((s, p) => s + p[0], 0) / big.length, cy = big.reduce((s, p) => s + p[1], 0) / big.length;
-    ctx.globalAlpha = 0.85 * q.a;
-    txt(ctx, name, X(cx), Y(cy), Math.max(12, Math.min(30, 110 * S)), {fill:q.color, ls:0.3, weight:600, align:"center"});
+    labels.push({name, x:X(cx), y:Y(cy), size:Math.max(12, Math.min(30, 110 * S)), color:q.color, a:q.a});
+  }
+  // labels last, nudged apart: neighbouring princedoms (Jutrand's Bactranate beside Byllura's Dyarchy) would
+  // otherwise print on top of each other — try below, above, then further, until the box is clear
+  const placed = [];
+  for (const L of labels) {
+    const w = L.name.length * L.size * 1.45, h = L.size * 1.3;
+    let dy = 0;
+    for (let k = 0; k < 7; k++) {
+      const y = L.y + dy;
+      if (!placed.some(b => Math.abs(b.x - L.x) * 2 < b.w + w && Math.abs(b.y - y) * 2 < b.h + h)) { L.y = y; break; }
+      dy = ((k % 2 === 0) ? 1 : -1) * (Math.floor(k / 2) + 1) * (h + 2);
+    }
+    placed.push({x:L.x, y:L.y, w, h});
+    ctx.globalAlpha = 0.85 * L.a;
+    txt(ctx, L.name, L.x, L.y, L.size, {fill:L.color, ls:0.3, weight:600, align:"center"});
   }
   ctx.globalAlpha = 1;
 }

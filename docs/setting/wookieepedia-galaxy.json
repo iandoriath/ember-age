@@ -76246,5 +76246,19 @@
    "width": 320,
    "height": 320
   }
+ },
+ "Vanahame": {
+  "title": "Vanahame",
+  "url": "https://starwars.fandom.com/wiki/Vanahame",
+  "facts": {
+   "region": "Outer Rim Territories, Trailing Sectors",
+   "sector": "Grumani sector",
+   "system": "Vanahame system",
+   "language": "Galactic Basic Standard",
+   "affiliation": "Odionate",
+   "grid": "N-17"
+  },
+  "lead": "Vanahame was a moon in the Grumani sector in the Outer Rim Territories. During the Republic Dark Age, Vanahame was part of the Odionate, a Sith rump state ruled by the Sith Lord Odion. The moon also housed a Cloister, a large planet-sized orphanage where children throughout the Odionate were indoctrinated into slaves and warriors for Odion's war effort. There were twelve such other facilities scattered throughout the Odionate. The moon had no atmosphere, but consisted of a large spaceport which housed the Cloister underneath.",
+  "fetched": "2026-08-26"
  }
 }

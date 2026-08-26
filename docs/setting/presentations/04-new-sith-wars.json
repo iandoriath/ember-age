@@ -2,7 +2,7 @@
  "id": "new-sith-wars",
  "title": "The New Sith Wars",
  "subtitle": "2000–1000 BBY · a thousand years of war, and the peace that followed",
- "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds.",
+ "note": "Political painting is a best guess: Legends sources name battles and capitals, not borders. Lobes are drawn around attested member worlds — the Grumani sector's princedoms follow the memberships Knight Errant states.",
  "colors": {
   "Galactic Republic": "#5fc3ff",
   "The Sith": "#d24a3a",
@@ -11,7 +11,15 @@
   "Hutt Space": "#9fb04f",
   "Mandalorians": "#b9bfcc",
   "Chiss Ascendancy": "#7f86b3",
-  "The Duros Run (dark)": "#e07b39"
+  "The Duros Run (dark)": "#e07b39",
+  "Chagras Hegemony": "#b8475f",
+  "Daimanate": "#d24a3a",
+  "Odionate": "#7d55b8",
+  "Bactranate": "#d1a44a",
+  "Arkadianate": "#6cc2d8",
+  "Dyarchy": "#4fae8f",
+  "Buruun's Brema": "#a9825a",
+  "The bequests": "#8a8f9a"
  },
  "steps": [
   {
@@ -367,6 +375,251 @@
    ]
   },
   {
+   "title": "The Charge Matrica",
+   "date": "1066–1040 BBY · the Calimondra inheritance",
+   "view": {
+    "center": [
+     4435,
+     6600
+    ],
+    "w": 1250
+   },
+   "text": "The Grumani sector belongs to one family. Vilia Calimondra — a Sith Lord with many husbands and seven children — sets her heirs to war for her inheritance in 1066 BBY: the Charge Matrica, whoever conquers most inherits all. Sixteen years later her son Chagras is the only child left alive. His Chagras Hegemony holds the sector from Darkknell to Syned, and by 1042 BBY it reaches for the Republic beyond — the University of Sanbra sacked, Aquilaris Minor taken and its people massacred by his nephew Odion. Two years on, Chagras dies of a nerve toxin nobody admits to administering.",
+   "polities": [
+    {
+     "name": "Chagras Hegemony",
+     "buffer": 100,
+     "worlds": [
+      "Darkknell",
+      "Chelloa",
+      "Nilash III",
+      "Oranessan",
+      "Tergamenion",
+      "Vellas Pavo",
+      "Alphoresis",
+      "Aquilaris Minor",
+      "Gazzari",
+      "Jutrand",
+      "Sarrassia",
+      "Byllura",
+      "Syned",
+      "Skarpos",
+      "Jubalene",
+      "Whinndor",
+      "Vanahame",
+      "Sanrafsix",
+      "Heptooine"
+     ]
+    },
+    {
+     "name": "Galactic Republic",
+     "buffer": 230,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "The Hegemony breaks",
+   "date": "1040–1033 BBY · the Second Charge Matrica",
+   "view": {
+    "center": [
+     4435,
+     6600
+    ],
+    "w": 1250
+   },
+   "text": "Vilia sets the contest running again among her grandchildren, and the Hegemony shatters into princedoms. Daiman rules from Darkknell as the self-declared Creator of the Universe; his brother Odion, the Destroyer, raises a cult of annihilation in the east and fills a cloister world with orphans. Between them the family's old Quermian friend Ayanos Bactra runs the Bactranate from Jutrand as a business. Chagras's daughter Arkadia keeps a tidy, remote dictatorship under the ice of Syned; her infant siblings Dromika and Quillan hold Byllura as the Dyarchy, a whole population kept by mind control. Malakite fights with engineered beasts, a Sullustan warlord holds the Brema sector, and from Hutt Space, Zodoh watches.",
+   "polities": [
+    {
+     "name": "Daimanate",
+     "buffer": 95,
+     "worlds": [
+      [
+       "Darkknell",
+       "Chelloa",
+       "Nilash III",
+       "Oranessan",
+       "Tergamenion",
+       "Vellas Pavo",
+       "Alphoresis",
+       "Aquilaris Minor"
+      ],
+      [
+       "Gazzari"
+      ]
+     ]
+    },
+    {
+     "name": "Odionate",
+     "buffer": 90,
+     "worlds": [
+      "Jubalene",
+      "Whinndor",
+      "Vanahame"
+     ]
+    },
+    {
+     "name": "Bactranate",
+     "buffer": 80,
+     "worlds": [
+      "Jutrand",
+      "Sarrassia"
+     ]
+    },
+    {
+     "name": "Arkadianate",
+     "buffer": 90,
+     "worlds": [
+      "Syned"
+     ]
+    },
+    {
+     "name": "Dyarchy",
+     "buffer": 70,
+     "worlds": [
+      "Byllura"
+     ]
+    },
+    {
+     "name": "Buruun's Brema",
+     "buffer": 110,
+     "worlds": [
+      "Sullust"
+     ]
+    },
+    {
+     "name": "Galactic Republic",
+     "buffer": 230,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
+   "title": "Knight Errant",
+   "date": "1032 BBY · the last map the Republic drew of this country",
+   "view": {
+    "center": [
+     4435,
+     6600
+    ],
+    "w": 1250
+   },
+   "text": "One Jedi, Kerra Holt, fights a private war through the sector while the family finishes itself. Daiman burns Chelloa rather than lose its baradium; the brothers trap each other at Gazzari; on Vilia's word the grandchildren turn on Bactra, and the Bactranate is gone in days, its worlds shared out at a family bequest. Quillan is kidnapped, the Dyarchy's mind-lock breaks, and Arkadia annexes Byllura. Zodoh's Stormdrivers drown Daiman's worlds — Aquilaris among them — until his fleet breaks over Darkknell; Odion takes the Helm of Ieldis on Skarpos and dies at Vanahame. What remains is the last thing the Republic ever writes down about this country — and the floor the Run is built on.",
+   "polities": [
+    {
+     "name": "Daimanate",
+     "buffer": 95,
+     "worlds": [
+      [
+       "Darkknell",
+       "Chelloa",
+       "Nilash III",
+       "Oranessan",
+       "Tergamenion",
+       "Vellas Pavo",
+       "Alphoresis",
+       "Aquilaris Minor"
+      ],
+      [
+       "Gazzari"
+      ]
+     ]
+    },
+    {
+     "name": "Arkadianate",
+     "buffer": 90,
+     "worlds": [
+      "Syned",
+      "Byllura"
+     ]
+    },
+    {
+     "name": "The bequests",
+     "buffer": 85,
+     "worlds": [
+      "Jutrand",
+      "Sarrassia",
+      "Jubalene",
+      "Whinndor",
+      "Vanahame",
+      "Skarpos"
+     ]
+    },
+    {
+     "name": "Buruun's Brema",
+     "buffer": 110,
+     "worlds": [
+      "Sullust"
+     ]
+    },
+    {
+     "name": "Galactic Republic",
+     "buffer": 230,
+     "worlds": [
+      "Coruscant",
+      "Corellia",
+      "Kuat",
+      "Alderaan",
+      "Chandrila",
+      "Brentaal",
+      "Duro",
+      "Anaxes",
+      "Commenor",
+      "Ralltiir",
+      "Esseles",
+      "Rendili",
+      "Empress Teta",
+      "Abregado-rae",
+      "Byss"
+     ]
+    },
+    {
+     "name": "Hutt Space",
+     "path": "hutt"
+    }
+   ]
+  },
+  {
    "title": "The Brotherhood of Darkness",
    "date": "1010–1003 BBY · the Light and Darkness War",
    "view": {
@@ -432,6 +685,17 @@
       [
        "Roon",
        "Apatros"
+      ],
+      [
+       "Darkknell",
+       "Jutrand",
+       "Syned",
+       "Sanrafsix",
+       "Gazzari",
+       "Chelloa",
+       "Nilash III",
+       "Jubalene",
+       "Byllura"
       ]
      ]
     },
