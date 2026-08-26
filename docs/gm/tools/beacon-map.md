@@ -6,10 +6,10 @@
 
 | Beacon | Status | Corridor it opens | Certified by | First-lighting fee | Who followed through? |
 |---|---|---|---|---|---|
-| **Kalarba** | LIT (early 80s AR) | Duros Space Run, first hop off New Cov | Lamplighters | paid in full | Kajidic traders, then everyone |
-| **Kyrska** | LIT (mid 80s AR) | Duros Space Run, Kalarba → Glom Tho | Lamplighters | paid in full | slow — a quiet world, quietly reconnected |
-| **Glom Tho** | LIT (late 80s AR) | Duros Space Run toward Triffis | Lamplighters | paid in full | trade before flags — no Republic overture yet |
-| **Triffis** | LIT (89 AR) | Duros Space Run to Bannistar | Lamplighters | **paid to the crew of the *Larksong*** | the Bannistar boom — gantries funded on the next prize |
+| **Kalarba** | LIT (81 AR) | Duros Space Run, first hop off New Cov | Lamplighters | paid in full | Kajidic traders, then everyone |
+| **Kyrska** | LIT (82–83 AR) | Duros Space Run, Kalarba → Glom Tho | Lamplighters | paid in full | slow — a quiet world, quietly reconnected |
+| **Glom Tho** | LIT (84 AR) | Duros Space Run toward Triffis | Lamplighters | paid in full | trade before flags — no Republic overture yet |
+| **Triffis** | LIT (85 AR) | Duros Space Run to Bannistar | Lamplighters | **paid to the crew of the *Larksong*** | the Bannistar boom — gantries funded on the next prize, then five years of failed Vesta-9 surveys |
 | **Vesta-9** | **LIT** (90 AR — nobody admits to lighting it; its prize hung unclaimed for years because the beacon could not be *found*) | the Run past Vesta-9 (toward Enarc) | Chartmistress Bel Nerra (Lamplighters) | pending session one | Vigil, Admiralty, Lamplighters… and one uncounted observer |
 | *(next beacon)* | dark | | | | |
 

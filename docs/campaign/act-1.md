@@ -2,7 +2,7 @@
 
 *Sessions ~1–8. Episodic. Each relit beacon opens a corridor, and each corridor holds a world that spent ninety years becoming something strange.*
 
-**Act goals:** meet all five factions on the ground, gather [lore fragments](../mechanics/lore-fragments.md), and let the crew's reputation outrun them.
+**Act goals:** put the factions on the ground in front of the crew, gather [lore fragments](../mechanics/lore-fragments.md), and let the crew's reputation outrun them. Pacing note: the prose of this campaign runs elegiac — schedule the comic engines deliberately (Del Gormo, the Quartermaster, Marrow's wager, the court at Enarc) and alternate heavy and light episodes; and after two sessions that end in paperwork, make the third end in weather — Aquilaris (hop 2) should be a *physical* adventure.
 
 **Where:** the episodes sit along the dead [Duros Space Run](../setting/geography.md) — one relit beacon per hop, Bannistar Station back toward Darkknell and the Hydian Way. Place each seed on a real system as the crew reaches it (the GM keeps suggested placements on the beacon map).
 

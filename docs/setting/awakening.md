@@ -2,7 +2,7 @@
 
 *The Force is coming back. Nobody knows why. The Temple thinks it is ready.*
 
-For two generations almost no one was born with the gift; for the last twenty years the births have been rising, and no one knows why. The signs are consistent:
+For a generation almost no one was born with the gift; for the last twenty years the births have been rising, and no one knows why. The signs are consistent:
 
 - **True dreams.**
 - **The hearth-sense** — reading a room's feeling like weather.
@@ -37,4 +37,4 @@ The Jedi of 90 AR are peacekeepers — the Chancellor's, answerable to a Senate,
 
 ## The Awakening sits at your table
 
-This is not a backdrop: one or more of the player characters carries the gift (see [Character Creation](../mechanics/character-creation.md)). Every policy in the table above is aimed at somebody's character sheet — the census, the assets, the custody, the apprenticeship, the navigator's articles, the Temple's watching. The party doesn't watch the Awakening happen to the galaxy. The galaxy watches it happen to the party, starting the moment [a sixty-years-dead beacon chooses one of their pulses to keep time with](../campaign/session-one.md).
+This is not a backdrop: one or more of the player characters carries the gift (see [Character Creation](../mechanics/character-creation.md)). Every policy in the table above is aimed at somebody's character sheet — the census, the assets, the custody, the apprenticeship, the navigator's articles, the Temple's watching. The party doesn't watch the Awakening happen to the galaxy. The galaxy watches it happen to the party, starting the night [a sixty-years-dead beacon lights itself and three factions ask the crew to swear to who did it](../campaign/session-one.md).

@@ -23,11 +23,11 @@ A few Jedi refuse the recall. They stay where the anger is thickest and do the o
 
 The fleets are decommissioned faster than anything replaces them, and sector defense devolves to local squadrons. Around 20 AR, one admiral simply declines the recall order, citing piracy — and instead of sailing coreward to be scrapped, takes her squadron, tenders and yard-ships rimward down the Enarc Run, past the last living relay, to quiet, half-charted Naboo. She is quietly ignored, then quietly forgotten. [Her heirs never leave.](../factions/admiralty.md) The pocket they fortify — fed by the plasma seams their engineers open — has no name the living galaxy would recognize; the government her heirs build there styles itself, in time, the **Naboo Admiralty**. The living galaxy will not hear from it for seventy years.
 
-## 35–58 AR — The Quiet Ledger
+## 35–45 AR — The Quiet Ledger
 
 No villain kills the HoloNet; appropriations committees do. Relay maintenance lapses sector by sector. Interstellar credit fractures into sector scrip. Long-haul trade privatizes, then localizes, then stops.
 
-## 58–75 AR — The Drift and the Ebb
+## 45–75 AR — The Drift and the Ebb
 
 The last adjourned delegations stop sending even observers to a Senate whose sessions cost more to reach than they are worth. Meanwhile Force-sensitive births thin to almost nothing — **the Ebb** — and in the Core the Temple *notices*, because the Temple counts: its search returns fewer children each year, and the Order hardens its rule in response, taking every gifted child it can find, younger each decade. In the Rim, no one is counting. The few children born with the gift are hidden by their own families, because the surest way to lose a child is to let the neighbors hear the word *Jedi*. The withdrawn lineages starve for pupils, and one by one they snap — the last of them ends quietly, unremarked, a generation before anyone knows the Force is coming back.
 
