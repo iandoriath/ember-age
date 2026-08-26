@@ -23,7 +23,7 @@ And the Temple has no rule for an adult. A twenty-year-old who dreams true is, b
 | [The Jedi Order](../factions/jedi-order.md) | **Initiates** — the young ones, for the Temple; the rest, watched |
 | [The Republic](../factions/republic.md) | A census — and the Temple's quota met, as a condition of the charter |
 | [The Admiralty](../factions/admiralty.md) | Assets |
-| [The Vigil](../factions/vigil.md) | Wards — custody, and kept *here* |
+| [The Vigil](../factions/vigil.md) | Wards — the gift is a war orphan: kept *here*, taught restraint |
 | [The Inheritors](../factions/inheritors.md) | Apprentices |
 | [The Lamplighters](../factions/lamplighters.md) | Navigators — quietly. A child who dreams true can feel a dead lane the way old pilots claim to |
 | [The Kajidics](../factions/kajidics.md) | Merchandise |

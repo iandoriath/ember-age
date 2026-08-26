@@ -153,9 +153,9 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
 ## Vesta-9 Station — The Standoff
 
 ### Keeper Adressa Vhail
-*Rival — The Vigil — keeper found praying at the beacon core*
+*Rival — The Vigil — circuit warden found reading the necrology at the beacon core*
 
-> She was here before the first ship arrived, kneeling at the core in the beacon-light, and she answers every "how" with a psalm about doors.
+> She was here before the first ship arrived, kneeling at the core in the beacon-light, reading names from a slate — the war dead, Jedi and Sith in one column. The list is long, and she is not far into it.
 
 | Brawn | Agility | Intellect | Cunning | Willpower | Presence |
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -166,10 +166,10 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
 - **Skills:** Computers 2, Cool 1, Discipline 2, Knowledge (Core Worlds) 3, Knowledge (Education) 3, Knowledge (Lore) 3, Knowledge (Outer Rim) 3, Knowledge (Underworld) 3, Knowledge (Warfare) 3, Knowledge (Xenology) 3, Perception 1, Vigilance 1
 - **Talents:** none
 - **Abilities:** —
-- **Equipment:** Vigil breath-veil (breath mask), annotated psalter-slate (datapad), stylus. She carries no weapon and never has.
+- **Equipment:** Vigil breath-veil (breath mask), psalter-slate (datapad — the necrology, and eighty years of margin notes), stylus. She carries no weapon and never has.
 
 **Chassis:** Ashur Sungazer, Force and Destiny Core Rulebook ("Lessons from the Past") (adjustments: none).
-**Using her:** Vhail is the party's best living source on the old Order, the Valley, and relic law — the library's Jedi-tag fragment authority (Merion and Marn, on this same chassis by design, own the Civic tag and relic forensics) — every Knowledge skill at 3, and she trades answers for reverence, not scrip. She is serene under any pressure (lean on Discipline and Cool) and perfectly evasive about her arrival. **Default truth** (override freely; see the module's prep list): a Vigil circuit ship dropped her at the *dark* station on pilgrimage and returns on schedule — the Vigil knew where Vesta-9 sat all along and never told the guild, because doors stay shut; she is the campaign's second person who knew and said nothing, and both facts are discoverable later. And she saw the lighter — a shape that looked at her, and left her alive; she has not decided what that makes her either. When the crew's testimony lands at the Record, Vhail goes very quiet: she is living the Vigil's crack in real time, and which half of the order she lands on can hinge on what the crew swore to — and on how they treat their own gifted. She is a noncombatant; if blasters come out, she kneels by the core and keeps praying.
+**Using her:** Vhail is the party's best living source on **the war** — its graves, its lineages, its law of relics — every Knowledge skill at 3, with the ledger the Core sanitized on her slate (the library's Jedi-tag fragment authority; Merion and Marn, on this same chassis by design, own the Civic tag and relic forensics). A coreward crew arrives knowing more than she does about the living Order; let them discover, fast, that she knows more than they do about everything the Order would rather not discuss — she has read what the Jedi were the last time they were here, and she was at the funerals the Temple never came to. Play her unimpressed by the Jedi, the Republic, and the prize money in equal measure — *"They come for the children. They never come for the graves."* — and let her correct the crew's Coruscant textbook about once per scene, gently, with a name and a date. She trades answers for respect, not scrip; she is serene under any pressure (lean on Discipline and Cool) and perfectly evasive about her arrival. **Default truth** (override freely; see the module's prep list): a Vigil circuit ship dropped her at the *dark* station on the warden's round — seals checked, names read — and returns on schedule; the Vigil knew where Vesta-9 sat all along and never told the guild, because doors stay shut. She is the campaign's second person who knew and said nothing, and both facts are discoverable later. And she saw the lighter — a shape that looked at her, and left her alive; she has not decided what that makes her either. When the crew's testimony lands at the Record, Vhail goes very quiet: she is living the Vigil's crack in real time, and which half of the order she lands on can hinge on what the crew swore to — and on how they treat their own gifted. She is a noncombatant; if blasters come out, she kneels by the core and goes on reading the names.
 
 ### Commander Joss Reike
 *Nemesis — The Admiralty — commander of the sloop* Steadfast

@@ -18,7 +18,7 @@ Astrogation on a decayed route. Introduce [fragments](../mechanics/lore-fragment
 
 Vesta-9 station, three light-hours from where the charts put it, lit and humming — and occupied.
 
-- **Keeper Adressa Vhail** of the Vigil is praying at the beacon core; she was here before the light came on, and will not say how.
+- **Keeper Adressa Vhail** of the Vigil kneels at the beacon core, reading the war dead's names from a slate; she was here before the light came on, and will not say how.
 - One docking cradle is still warm. Nothing is in it.
 - The Admiralty sloop ***Steadfast*** (**Cmdr. Joss Reike**) drops in demanding all vessels stand to for inspection.
 - **Chartmistress Bel Nerra** of the Lamplighters arrives to certify the relight — and to hire witnesses.

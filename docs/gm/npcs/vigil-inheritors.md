@@ -66,6 +66,30 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 
 ---
 
+### Set piece — The Unbroken Seal
+*Revelation encounter — the Scrub's crime surfaces — run it mid–Act 1 or in Act 2, at any Vigil-kept vault the story reaches*
+
+> Three hours of liturgy to open a door nobody ever forced. Behind it, dust outlines where the relics stood.
+
+**Setup.** Any honest reason to unseal a Vigil vault works: a provenance dispute the crew brought them, Tane's accreditation survey, the codicil question, the *Sealed Enclave* seed — or the crew's own earned access. What matters is that the Vigil opens the door *willingly, by the rite, for the first time in eighty years*, with the crew standing witness.
+
+**The rite is the scene.** The necrology read at the threshold — the site's own dead, by name, and it takes hours; the wax and scripture peeled in strict order; the keeper's hands unsteady with the honor of it. Give the liturgy real screen time, because the scene's whole power is the gap between the ceremony and what it opens onto: a bare room. Dust outlines on the shelves. One relic left on the central plinth.
+
+**The truth.** The seal is honest — that is the horror. The Scrub came **through the stone**: a bored shaft from an adjacent gallery, cut with months of patience and re-mortared behind them, decades ago. The doctrine wasn't fooled; it was irrelevant. Everything genuinely of the war is gone, the one piece left behind is a counterfeit (Scrub doctrine: the galaxy is to be left *wrong*, not ignorant), and the theft is older than anyone in the room.
+
+**Reading the room** (RAW difficulties; a failed check says nothing, a despair says something false):
+
+| Check | What it gives |
+|---|---|
+| **Perception or Skulduggery, Hard** | The re-mortared bore behind the reliquary shelving — entry through the rock, the seal never touched. The craftsmanship says months of work; the dust says decades ago. |
+| **Knowledge (Lore), Hard** *(Average with a Sith-tagged fragment)* | The plinth-piece is a counterfeit — left deliberately, not forgotten. Whoever chose could tell true from false at a glance. |
+| **Knowledge (Warfare or Education), Average** | The missing inventory skews: everything of the *war* taken — records, regalia, the site's true relics — while devotional copies elsewhere in the shrine stand untouched. This was a reader, not a looter. |
+| **Vigilance (or Sense), Average** | The room is quiet the way the Emptied House is quiet: whatever the Force could feel here left long ago. The gifted feel nothing where the manifest promises weight. |
+
+**What it does to the Vigil.** The keeper's crisis lands first — then the order's. A quiet audit of seals begins (a season of circuit ships, checking); the early returns are bad, and both halves of the crack weaponize them: the wardens read it as *seal deeper, trust no one*; the Order-reborn wing reads it as proof the watch failed **because** it refused to wield. Advance the Vigil clock. If Vhail is present and trusted, this is her hour.
+
+**The campaign hook.** The audit's pattern is Ladder evidence of the first order: the emptied vaults track the relighting sequence *years ahead of the light* — proof that someone holding the patron's order has been working the dark country (rungs 1–2, [Faction Clocks](../tools/faction-clocks.md)), and the Vigil's dated seal-audits are exactly the kind of *filed* documentation the Ladder pays for. From this night on, the war's grave-keepers are the Ladder's best archive and its most motivated clients. (The Emptied House, below, is this scene's dark twin: there the fakes stay on their plinths to tell a lie; here the bareness tells the truth. The full doctrine is the Scrub, in [Keepers of the Flame](keepers.md).)
+
 ## The Inheritors
 
 ### Meru Vane, the First Friend
