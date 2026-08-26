@@ -301,9 +301,9 @@ Before the table stands up, mark which of these are true. [Module 02's carry-for
 | **Handed the evidence to Vhail** | The Vigil holds the wake-log evidence | A circuit ship shadows the crew, census-curious about everything. |
 | **Sold Osk's page — or the book's address** | Nerra (or anyone) bought it | The Scrub is *ahead* of the crew from now on. |
 | **Kept the page / hold the book** | The original (or the inheritance) travels with them | Boost dice on the dark legs — and a target on the hull. |
-| **Returned to Osk** | The inheritance scene was played (tonight or next session) | The full testimony names the Weighbridge: her survey stopped there once. |
-| **However it went with Skell** | Bought off, faced down, bloodied, or never met | The *Overdue* reaches the Weighbridge ahead of the crew — the enemy peer is now a fixture of the Run. |
-| **However the Record went** | Always | Vale has read the certificate before the crew arrives at Enarc. Founding papers follow you. |
+| **Returned to Osk** | The inheritance scene was played (tonight or next session) | The full testimony names the closed kingdom at Enarc: her survey skirted it once, running dark, and was never challenged. |
+| **However it went with Skell** | Bought off, faced down, bloodied, or never met | The *Overdue* reaches Enarc ahead of the crew — and the first thing Skell sells the court is the crew's biography. |
+| **However the Record went** | Always | Breck — the Admiralty's envoy at Enarc — has read the certificate before the crew arrives. Founding papers follow you. |
 
 **Schedule the warm knock:** within weeks of Vesta-9, the Inheritors' first contact arrives *helpful* — coin, rescue, answers, no visible strings (Meru Vane's people; see Vigil & Inheritors). Aim it at session three, so the faction has a face before it has a file.
 
