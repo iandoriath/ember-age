@@ -88,6 +88,66 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
 **Era notes:** This is what a first-lighting prize looks like when it is spent well. The Triffis fee went to the chop-yard under Okrent's Drift for a salvaged turbine and a generator pulled from a dead courier, and the yard quoted the crew the same work at a price they could not pay. Nothing about the *Larksong* is new; it is simply the one YT-1300 in the sector whose owner has been paid.
 **Using it:** The envy is calibrated on purpose: Speed 4 against the crew's 3, and Class 1 against their Class 2 — she wins every straight race and every jump, and "the *Larksong* got there an hour ago" is the hyperdrive math, not luck. Everything else is the same ship: same two turrets, same paper armor, same strain. The weaknesses are real and the players can find them. **No backup hyperdrive:** a Despair on her Astrogation, or a hit that drops the primary, leaves the *Larksong* drifting on a dead lane with no way home — Marrow knows it, which is why she only races lanes she holds a chart for, and why she wants the crew's page as much as they want hers. **The turbine runs hot:** after any chase flown at full speed, the GM may hang the Inferior quality on it until she has had a night in port (the lane-runner convention in the ships file). **The prize is mostly gone:** the pouch she pays Grell from is the last of it, and her hard points are two-thirds spent. And the hook under all of it: the turbine and the generator are RAW attachments at printed prices, sold by a yard that will sell the crew the same thing the day they have a prize of their own. The *Larksong* is not a better ship. It is a paid-for one. This is the same block as **The Larksong** in the ships file ([ships.md](../../mechanics/ships.md)) — one canonical print; if either copy is ever adjusted, keep the two in sync.
 
+### Captain Ferro Skell
+*Rival — Independent (master of the* Overdue*) — debt-buyer, extortionist, and the crew's enemy peer*
+
+> He buys what people owe and collects what they love. He has never raised his voice in a negotiation, because the two spacers behind him are the voice.
+
+| Brawn | Agility | Intellect | Cunning | Willpower | Presence |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| 3 | 3 | 2 | 2 | 2 | 2 |
+
+**Soak 5 · Wounds 15 · M/R Defense 0/0**
+
+- **Skills:** Brawl 2, Discipline 2, Gunnery 2, Leadership 1, Melee 2, Ranged (Heavy) 3, Ranged (Light) 2, Vigilance 2
+- **Talents:** Adversary 1 (*upgrade the difficulty of all combat checks targeting him once*), Point Blank 2 (*add 2 damage to one hit of a successful Ranged [Heavy] or Ranged [Light] attack made at short range or engaged*)
+- **Abilities:** —
+- **Equipment:** Worn coil carbine (Ranged [Heavy]; Damage 9; Critical 3; Range [Medium]; Stun setting — never used), heavy holdout pistol (Ranged [Light]; Damage 6; Critical 3; Range [Medium]), scarred laminate vest (+2 soak), a folio of bought debts, each one somebody's worst year.
+
+**Chassis:** Mercenary Soldier, Edge of the Empire Core Rulebook (adjustments: none — transcribed from the printed block; confirm skill ranks and the carbine profile against print before his first roll, per the sourcing rule).
+**Using him:** Skell is the other kind of rival. Where Marrow races the crew and buys the round after, Skell buys the crew's debts and calls it a relationship. His method never changes: find what someone owes, buy the paper, squeeze what they love. He is violent but commercial — he starts nothing he cannot profit from, breaks off any fight the moment the math goes wrong, and keeps a ledger of humiliations that he services like debts. At the bedside he is leverage; on the lane he is an ambush; at the beacon he is a hostile witness; and up the Run he keeps turning up one deal ahead. Kill him and the *Overdue*'s paper passes to somebody worse; beat him *commercially* and he pays up to the letter, hating them, which is how you keep an enemy peer for a whole campaign.
+
+### Skell's crew
+*Minion — Independent (the* Overdue*'s spacers) — collection muscle that flies*
+
+> They read your debt aloud before they board you. It is the only warning the Overdue gives.
+
+| Brawn | Agility | Intellect | Cunning | Willpower | Presence |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| 2 | 3 | 1 | 2 | 1 | 2 |
+
+**Soak 4 · Wounds 5 (each) · M/R Defense 0/0**
+
+- **Skills (group only):** Cool, Ranged (Heavy), Ranged (Light)
+- **Abilities:** —
+- **Equipment:** Depot-grade heavy coil pistol (Ranged [Light]; Damage 7; Critical 3; Range [Medium]), locker-worn coil carbine (Ranged [Heavy]; Damage 9; Critical 3; Range [Medium]), deck vibroknife (Melee; Damage 3; Critical 2; Range [Engaged]; Pierce 2, Vicious 1), patched vac-jacket (+2 soak).
+
+**Chassis:** Pirate Crew, Edge of the Empire Core Rulebook (also printed in the Age of Rebellion Core Rulebook) (adjustments: none — the same printed chassis as the Larksong crew, one canonical print; only the doctrine differs).
+**Group math:** Typically deployed in groups of 3–4: a group of 4 has Wounds 20 (4 × WT 5) and 3 ranks in its group skills (members − 1); one drops each time total damage passes a multiple of 5. As minions they have no strain threshold — strain they suffer is applied as wounds.
+**Using them:** The dark mirror of Marrow's deckhands, on the same printed block: where the *Larksong*'s people shoot to drive off and surrender fast, Skell's people shoot to end arguments and surrender only when Skell's math says so. Stun settings are nowhere in their doctrine. They fight like collectors — target the engines, the cargo, the person holding the thing Skell wants — and losses do not sting anyone's conscience, which is exactly the contrast the session is built on.
+
+### The Overdue, debt-bought Ghtroc 720
+*Vehicle — Independent (Captain Ferro Skell) — the enemy peer's ship: the turtle, foreclosed and armed*
+
+> A shell-back freighter that used to be somebody's inheritance, until the payments stopped. Skell kept the family name on the bow. He thinks it is funny.
+
+| Silhouette | Speed | Handling |
+|:-:|:-:|:-:|
+| 4 | 3 | −1 |
+
+**Defense Fore/Aft 1/1 · Armor 5 · Hull Trauma Threshold 28 · System Strain Threshold 15**
+
+- **Hyperdrive:** Primary: Class 2, Backup: Class 15
+- **Navicomputer:** Yes
+- **Sensor Range:** Medium
+- **Crew:** One pilot, one co-pilot
+- **Encumbrance Capacity:** 200 · **Passenger Capacity:** 10
+- **Consumables:** Two months · **Price/Rarity:** 112,000 credits/8 · **Customization Hard Points:** 4
+- **Weapons:** Dorsal turret-mounted twin light laser cannon (Fire Arc All; Damage 5; Critical 3; Range [Close]; Linked 1)
+
+**Chassis:** Ghtroc 720 Light Freighter, Edge of the Empire Core Rulebook (adjustments: none — the stock block; this is the same print as the Ghtroc 720 in the ships file ([ships.md](../../mechanics/ships.md)) — one canonical print; if either copy is ever adjusted, keep the two in sync).
+**Using it:** The turtle against the crew's hare: slower, blinder in a knife fight, and famously hard to kill — Armor 5 and twenty-eight hull mean the crew cannot win a slugging match and should not try; their outs are flying, focused fire on the turret, or the last leg to the station. Skell flies it like he negotiates: patient, positional, breaking off the moment the exchange stops paying. Ten passenger berths that used to carry a family's pilgrims now carry boarding muscle, which tells you everything about the ship's last twenty years.
+
 ---
 
 ## Vesta-9 Station — The Standoff

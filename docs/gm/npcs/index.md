@@ -23,6 +23,7 @@
 | Commander Joss Reike | Nemesis | Admiralty | [Vesta-9 & the Crew's Orbit](session-one.md) |
 | Chartmistress Bel Nerra | Rival | Lamplighters | [Vesta-9 & the Crew's Orbit](session-one.md) |
 | Captain Vess Marrow + the *Larksong* crew | Rival + Minions | Independent | [Vesta-9 & the Crew's Orbit](session-one.md) |
+| Captain Ferro Skell + Skell's crew | Rival + Minions | Independent (the *Overdue*) | [Vesta-9 & the Crew's Orbit](session-one.md) |
 | Portmaster Grell | Rival | Okrent's Drift | [Vesta-9 & the Crew's Orbit](session-one.md) |
 | Senator Vekris Dahl | Nemesis | Republic | [Republic & Admiralty](republic-admiralty.md) |
 | Envoy-Archivist Calla Merion | Rival | Republic | [Republic & Admiralty](republic-admiralty.md) |
