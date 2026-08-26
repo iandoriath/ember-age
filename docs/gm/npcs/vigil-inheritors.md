@@ -11,7 +11,7 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 ### First Keeper Odran Su
 *Nemesis — The Vigil — hardliner First Keeper of a dying doctrine*
 
-> His memory of the last true Jedi is failing him, so he grips the doctrine instead — and doctrine, unlike memory, does not soften.
+> He was a boy at the last of the great burials, and that memory is failing him now — so he grips the doctrine instead; and doctrine, unlike memory, does not soften.
 
 | Brawn | Agility | Intellect | Cunning | Willpower | Presence |
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -25,7 +25,7 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 - **Equipment:** The First Staff (staff of office; ceremonial, no combat profile printed), keeper's grey robes, ledger-slate (datapad), short-range comlink, 500 in chapter scrip.
 
 **Chassis:** Doellinist High Priest, Strongholds of Resistance (adjustments: none).
-**Using him:** Odran Su's chapter was founded by Gran grave-tenders from the Ruusan burial details, and its inner circle is still largely Gran — which is why his printed congregation ability, a Gran devotional invocation, still earns its keep at the table. He never fights; he rules rooms, invokes the deed of the Council's last act, and makes refusing him feel like desecrating a grave. Play his failing memory as the engine of his hardness: each session he remembers one less true thing about the Jedi and forbids one more thing in their name. When the Vigil breaks (Act 2), he is the half that comes armed — with wardens, writs, and absolute sincerity that the Awakened are sacrilege walking in children's bodies.
+**Using him:** Odran Su's chapter was founded by Gran grave-tenders from the Ruusan burial details, and its inner circle is still largely Gran — which is why his printed congregation ability, a Gran devotional invocation, still earns its keep at the table. He never fights; he rules rooms, invokes the deed of the Council's last act, and makes refusing him feel like desecrating a grave. Play his failing memory as the engine of his hardness: each session he remembers one less true thing about the war and forbids one more thing in the dead's name. When the Vigil breaks (Act 2), he is the half that comes armed — with wardens, writs, and absolute sincerity that the Awakened are sacrilege walking in children's bodies.
 
 ### Keeper Tessa Marn
 *Rival — The Vigil — reformer keeper and relic-scholar*
