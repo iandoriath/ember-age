@@ -628,18 +628,26 @@ function presTarget(view) {
   const w = view.w || 1500, h = w * asp;
   return {x:c[0] - w / 2, y:c[1] - h / 2, w, h};
 }
-function startPres(id) {
+function startPres(id, at = 0) {
   const p = PRES.find(x => x.id === id) || PRES[0]; if (!p) return;
   closePanel();
   pres = {p, i:-1, pol:new Map(), cam:null};
   for (const st of p.steps) for (const pol of st.polities || []) if (!pres.pol.has(pol.name))
     pres.pol.set(pol.name, {color:(p.colors || {})[pol.name] || "#9fb0c0", lobes:polLobes(pol), buffer:pol.buffer || 180, a:0, target:0});
   document.getElementById("pres").classList.add("open");
-  presStep(1);
+  presStep(at + 1);
 }
 function presStep(d) {
   if (!pres) return;
-  const p = pres.p, i = Math.max(0, Math.min(p.steps.length - 1, pres.i + d));
+  const p = pres.p;
+  // past the last slide (or before the first) the tour rolls into the neighbouring era
+  if (pres.i >= 0 && (pres.i + d >= p.steps.length || pres.i + d < 0)) {
+    const k = PRES.indexOf(p) + Math.sign(d), q = PRES[k];
+    if (!q) return;
+    startPres(q.id, d < 0 ? q.steps.length - 1 : 0);
+    return;
+  }
+  const i = Math.max(0, Math.min(p.steps.length - 1, pres.i + d));
   if (i === pres.i && p.steps.length) return;
   pres.i = i;
   const st = p.steps[i];

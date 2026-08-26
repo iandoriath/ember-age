@@ -233,6 +233,11 @@ def sample_path(d: str, tx: float, ty: float, seg_samples: int = 14) -> list:
     return out
 
 
+# stray strokes in the drawing that are not lanes: path2656 is a near-straight ghost of the Rimma
+# between Dentall and the Jaso sector, drawn beside the real curved route
+STRAY_PATHS = {"path2656"}
+
+
 def parse_paths(block: str) -> list:
     tx, ty = layer_translate(block)
     polys = []
@@ -240,6 +245,9 @@ def parse_paths(block: str) -> list:
         a = m.group("attrs")
         dm = re.search(r'(?<![a-z\-])d="([^"]+)"', a)
         if not dm:
+            continue
+        im = re.search(r'\bid="([^"]+)"', a)
+        if im and im.group(1) in STRAY_PATHS:
             continue
         polys.extend(sample_path(dm.group(1), tx, ty))
     return polys
