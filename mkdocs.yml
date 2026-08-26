@@ -98,3 +98,4 @@ nav:
           - "Fragment Tracker": gm/tools/fragment-tracker.md
           - "Beacon Map": gm/tools/beacon-map.md
           - "Faction Clocks": gm/tools/faction-clocks.md
+          - "Threads": gm/tools/threads.md

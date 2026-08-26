@@ -483,6 +483,14 @@ function runAction(div){
     if(b) Object.assign(b, args);
     else S.beacons.push({name:args.name||"", status:args.status||"lit", corridor:args.corridor||"",
                          certified:args.certified||"", fee:args.fee||"", followed:args.followed||""});
+  } else if(kind === "thread"){
+    if(args.ledger === "knows"){
+      (S.knows=S.knows||[]).push({who:args.who||"", what:args.what||"", since:args.since||"", notes:args.notes||""});
+    } else if(args.ledger === "holds"){
+      (S.holds=S.holds||[]).push({item:args.item||"", holder:args.holder||"", since:args.since||"", notes:args.notes||""});
+    } else if(args.ledger === "debts"){
+      (S.debts=S.debts||[]).push({who:args.who||"", whom:args.whom||"", what:args.what||"", status:args.status||"open"});
+    } else return;
   } else return;
   rs.actions[aid] = true;
   save(); trackersTab(); markDoneActions(m.id);
@@ -616,6 +624,53 @@ function trackersTab(){
     <div class="card"><details><summary style="cursor:pointer"><b style="color:var(--gold)">Reconstruction payouts</b> <span class="muted small">— the truth ladder per Question: award the lowest unearned rung</span></summary>
       <div class="doc" style="margin-top:.5rem">${TRACKDOCS.payouts||""}</div></details></div>
 
+    <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Threads</h2>
+      <p class="muted small">The information war: who knows what, who holds what, who owes whom. Fragment custody lives in the fragment ledger above — everything else lives here. A witness who knows too much and filed nothing is a Weeding target.</p>
+      <div class="grp">Who knows what</div>
+      <table class="tr"><thead><tr><th>Who</th><th>Knows</th><th>Since</th><th>Notes</th><th></th></tr></thead>
+      <tbody>${(S.knows||[]).map((k,i)=>`
+        <tr><td><b>${esc(k.who)}</b></td><td class="small">${esc(k.what)}</td><td>${esc(k.since)}</td>
+        <td><input value="${esc(k.notes)}" onchange="S.knows[${i}].notes=this.value;save()"></td>
+        <td class="rowbtns"><button title="delete" onclick="S.knows.splice(${i},1);save();trackersTab()">✕</button></td></tr>`).join("")}
+      </tbody></table>
+      <div class="formgrid">
+        <div><label>Who</label><input id="k-who" placeholder="Sorulba's court"></div>
+        <div class="wide"><label>Knows</label><input id="k-what"></div>
+        <div><label>Since</label><input id="k-since" placeholder="S2"></div>
+        <div><label>Notes</label><input id="k-notes"></div>
+        <div style="align-self:end"><button class="btn" onclick="addKnow()">Add</button></div>
+      </div>
+      <div class="grp" style="margin-top:.7rem">Who holds what</div>
+      <table class="tr"><thead><tr><th>Object</th><th>Holder</th><th>Since</th><th>Notes</th><th></th></tr></thead>
+      <tbody>${(S.holds||[]).map((h,i)=>`
+        <tr><td><b>${esc(h.item)}</b></td>
+        <td><input value="${esc(h.holder)}" onchange="S.holds[${i}].holder=this.value;save()"></td>
+        <td>${esc(h.since)}</td>
+        <td><input value="${esc(h.notes)}" onchange="S.holds[${i}].notes=this.value;save()"></td>
+        <td class="rowbtns"><button title="delete" onclick="S.holds.splice(${i},1);save();trackersTab()">✕</button></td></tr>`).join("")}
+      </tbody></table>
+      <div class="formgrid">
+        <div class="wide"><label>Object</label><input id="h-item"></div>
+        <div><label>Holder</label><input id="h-holder" placeholder="crew"></div>
+        <div><label>Since</label><input id="h-since" placeholder="S2"></div>
+        <div><label>Notes</label><input id="h-notes"></div>
+        <div style="align-self:end"><button class="btn" onclick="addHold()">Add</button></div>
+      </div>
+      <div class="grp" style="margin-top:.7rem">Debts &amp; favors</div>
+      <table class="tr"><thead><tr><th>Who owes</th><th>Whom</th><th>What</th><th>Status</th><th></th></tr></thead>
+      <tbody>${(S.debts||[]).map((d,i)=>`
+        <tr><td><b>${esc(d.who)}</b></td><td>${esc(d.whom)}</td><td class="small">${esc(d.what)}</td>
+        <td><select onchange="S.debts[${i}].status=this.value;save()">${["open","paid","called","forgiven"].map(s=>`<option ${d.status===s?"selected":""}>${s}</option>`).join("")}</select></td>
+        <td class="rowbtns"><button title="delete" onclick="S.debts.splice(${i},1);save();trackersTab()">✕</button></td></tr>`).join("")}
+      </tbody></table>
+      <div class="formgrid">
+        <div><label>Who owes</label><input id="d-who" placeholder="The crew"></div>
+        <div><label>Whom</label><input id="d-whom"></div>
+        <div class="wide"><label>What</label><input id="d-what"></div>
+        <div style="align-self:end"><button class="btn" onclick="addDebt()">Add</button></div>
+      </div>
+    </div>
+
     <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Beacon map</h2>
       <table class="tr"><thead><tr><th>Beacon</th><th>Status</th><th>Corridor</th><th>Certified by</th><th>First-lighting fee</th><th>Who followed through</th><th></th></tr></thead>
       <tbody>${S.beacons.map((b,i)=>`
@@ -663,6 +718,24 @@ function addBeacon(){
   const g=id=>document.getElementById(id).value;
   if(!g("b-name").trim()) return;
   S.beacons.push({name:g("b-name"),status:g("b-status"),corridor:g("b-corridor"),certified:g("b-certified"),fee:g("b-fee"),followed:g("b-followed")});
+  save(); trackersTab();
+}
+function addKnow(){
+  const g=id=>document.getElementById(id).value;
+  if(!g("k-who").trim()) return;
+  (S.knows=S.knows||[]).push({who:g("k-who"),what:g("k-what"),since:g("k-since"),notes:g("k-notes")});
+  save(); trackersTab();
+}
+function addHold(){
+  const g=id=>document.getElementById(id).value;
+  if(!g("h-item").trim()) return;
+  (S.holds=S.holds||[]).push({item:g("h-item"),holder:g("h-holder"),since:g("h-since"),notes:g("h-notes")});
+  save(); trackersTab();
+}
+function addDebt(){
+  const g=id=>document.getElementById(id).value;
+  if(!g("d-who").trim()) return;
+  (S.debts=S.debts||[]).push({who:g("d-who"),whom:g("d-whom"),what:g("d-what"),status:"open"});
   save(); trackersTab();
 }
 function questionSummary(){

@@ -42,6 +42,8 @@ Collect what the table actually did; use every row that applies. (Set by Session
 
 Carry the small economy too: the witness charter (250/lighting) applies tonight; Grell's cut, if signed, follows the crew's fees; the Marrow wager stands.
 
+@@action:thread {"ledger":"knows","who":"Sorulba's court","what":"The crew's biography — their debts, their record at Vesta-9, Skell's own edit of the lane ambush","since":"S2","notes":"Sold by Skell before the crew landed; correcting the record is play, and the court enjoys watching"}@@
+
 ## Scene 1 — Arrival: The Closed Door
 
 **The jump.** Vesta-9 to Enarc is an uncertified dead leg: **Hard Astrogation** (Osk's page or margins add a boost die). Enarc is not *lost* — it is on every old chart, a famous junction — it is *closed*: anyone can attempt the jump; Osk's margins only make it safe. Skell beat everyone here because he jumped straight from the lane while the crew sat through certification.

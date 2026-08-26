@@ -7,7 +7,7 @@
 
 - **[GM Truths](truths.md)** — the campaign's spine on one screen: the three dials, plus pointers to where the working detail now lives (the Sith machinery and holocron in [Keepers of the Flame](npcs/keepers.md), the culling in [Vigil & Inheritors](npcs/vigil-inheritors.md), the Ladder of Sightings in [Faction Clocks](tools/faction-clocks.md), the truth ladders in the [Fragment Tracker](tools/fragment-tracker.md)).
 - **[NPC Library](npcs/index.md)** — FFG-correct stat blocks for the whole era, pulled from official published adversaries and re-skinned.
-- **GM Tools** — the [Fragment Tracker](tools/fragment-tracker.md), the [Beacon Map](tools/beacon-map.md), and [Faction Clocks](tools/faction-clocks.md).
+- **GM Tools** — the [Fragment Tracker](tools/fragment-tracker.md), the [Beacon Map](tools/beacon-map.md), [Faction Clocks](tools/faction-clocks.md), and [Threads](tools/threads.md) (who knows what · who holds what · debts & favors).
 
 ## Running the era — one-paragraph reminders
 

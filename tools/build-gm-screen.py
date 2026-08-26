@@ -101,6 +101,7 @@ NAV_MAP = {
     "gm/tools/fragment-tracker.md": "tab:trackers",
     "gm/tools/beacon-map.md": "tab:trackers",
     "gm/tools/faction-clocks.md": "tab:trackers",
+    "gm/tools/threads.md": "tab:trackers",
     "gm/modules/01-the-light-on-vesta-9.md": "tab:run",
 }
 
@@ -224,6 +225,11 @@ def action_label(kind, args):
     if kind == "beacon":
         return (f"Update beacon map: {args.get('name','')}",
                 f"{args.get('status','')} · {args.get('fee','')}")
+    if kind == "thread":
+        heads = {"knows": ("who", "what"), "holds": ("holder", "item"), "debts": ("who", "what")}
+        a, b = heads.get(args.get("ledger"), ("who", "what"))
+        return (f"Log thread ({args.get('ledger','')}): {args.get(a,'')}",
+                args.get(b, ""))
     return (kind, "")
 
 
@@ -248,6 +254,8 @@ def parse_module(mid, relpath, name_to_id):
             problems.append(f"unknown clock faction: {args.get('faction')}")
         if kind == "fragment" and args.get("tag") not in FRAGMENT_TAGS:
             problems.append(f"bad fragment tag: {args.get('tag')}")
+        if kind == "thread" and args.get("ledger") not in ("knows", "holds", "debts"):
+            problems.append(f"bad thread ledger: {args.get('ledger')}")
         counter[0] += 1
         aid = f"m{mid}-{counter[0]}"
         label, desc = action_label(kind, args)
@@ -336,6 +344,23 @@ SEED = {
          "followed": "Vigil, Admiralty, Lamplighters — and one Inheritor observer (Dial 3)"},
     ],
     "fragments": [],
+    "knows": [
+        {"who": "Tama Osk", "what": "Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said)", "since": "pre-S1", "notes": "Dial 3 bedside; pays off when the crew has a silhouette to match"},
+        {"who": "The patron's desk", "what": "“The one pilot who won't sell” — the registry forwarded Osk's name coreward years ago", "since": "pre-S1", "notes": "How the line found her"},
+        {"who": "Sorulba's court", "what": "The ghost order: pickets log-and-let-pass the dark-lane traffic, six years standing", "since": "pre-S1", "notes": "Module 02 scene 3 — the picket log"},
+    ],
+    "holds": [
+        {"item": "Osk's true rutter (the whole book)", "holder": "Tama Osk", "since": "pre-S1", "notes": "Inheritance on return — module 01 scene 3"},
+        {"item": "Bought debt over Osk, 250 scrip", "holder": "Capt. Ferro Skell", "since": "pre-S1", "notes": "Tender, coercion, or brawl — module 01 scene 3"},
+        {"item": "Rade's rutter (the hidden-children route-log)", "holder": "Lost — last sold estate, Veshet", "since": "pre-S1", "notes": "The live grenade — Keepers of the Flame"},
+        {"item": "The heirloom lightsaber", "holder": "Memory Market consignment, Sanrafsix", "since": "pre-S1", "notes": "Unauthenticated; first-ignition rule — Keepers"},
+        {"item": "The holocron of Lord Kaan", "holder": "The Last Muster's cache (off every catalogue)", "since": "0 AR", "notes": "The campaign's center — Keepers"},
+    ],
+    "debts": [
+        {"who": "The crew", "whom": "Portmaster Grell", "what": "Lease arrears 450 + 60/week, compounding", "status": "open"},
+        {"who": "The crew", "whom": "Tama Osk", "what": "The two-part promise: her name into the carrier wave, and the story told right", "status": "open"},
+        {"who": "Denno Pike", "whom": "Meru Vane", "what": "His debts — the mole's leash", "status": "open"},
+    ],
     "truthsFound": [],
     "corrupted": [],
     "sessions": [],

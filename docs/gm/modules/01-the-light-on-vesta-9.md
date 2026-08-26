@@ -282,6 +282,8 @@ When a page lands — hers or a copy — hand over the card and log it (copy onl
 
 @@action:clock {"faction":"Inheritors","delta":1,"note":"Dial 3 — the observer files the Vesta-9 census: the crew, what they testified, and what they carry are now in an Inheritor file"}@@
 
+@@action:thread {"ledger":"knows","who":"The Inheritors","what":"The Vesta-9 file: the crew, the ship, the certified corridor, what they said on the record — and, if it was ever visible, the rutter","since":"S1","notes":"Filed by the clerk in guild grey; first contact will be helpful"}@@
+
 4. **Start the pressure dials honestly.** The Admiralty's reveal is itself pressure — a phantom navy now holds the corridor:
 
 @@action:clock {"faction":"Admiralty","delta":1,"note":"The reveal at Vesta-9 — a fleet nobody knew existed now holds the first relit corridor"}@@
