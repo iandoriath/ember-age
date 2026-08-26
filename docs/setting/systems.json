@@ -32,10 +32,10 @@
    "beacon": true,
    "alwaysLit": false,
    "hop": 1,
-   "blurb": "A sealed junction — the Enarc Run (toward Naboo and the Rimma) and the Hutt-ringed Triellus once met the Run here — now the Anchorage of Sorulba, a closed Hutt kingdom that taxes nothing because it admits no one.",
+   "blurb": "A sealed junction — the Enarc Run (toward Naboo and the Rimma) and the Hutt-ringed Triellus once met the Run here — now the Anchorage of Sorulba, a closed Hutt kingdom where any ship may dock and none has left in forty years. Spacers say Enarc eats ships.",
    "gm": {
     "seed": "Session Two — the Anchorage's opening crisis: the King's Circuit swoop race and the campaign's first hand-lit beacon",
-    "canon": "Real junction: Enarc Run + Triellus (Hutt space ring). Campaign frame: the closed hermit kingdom of Sorulba's kajidic — no Run contact in decades, no toll on the lane because no traffic; its one quiet foreign relationship runs down the Enarc Run to Naboo (the Admiralty). The opening crisis begins when the guild posts the Enarc prize.",
+    "canon": "Real junction: Enarc Run + Triellus (Hutt space ring). Campaign frame: the closed hermit kingdom of Sorulba's kajidic. The door swings ONE WAY — any ship may arrive and is welcomed and absorbed; exit visas are the king's rarest grant (almost never in forty years); embassy personnel are exempt by treaty. That is why the Run knows nothing of the kingdom though the junction is on every old chart: nobody who found it ever came back. No toll on the lane because no traffic; its one quiet foreign relationship runs down the Enarc Run to Naboo (the Admiralty). The opening crisis begins when the guild posts the Enarc prize.",
     "factions": [
      "kajidics"
     ]
