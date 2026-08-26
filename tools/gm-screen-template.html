@@ -207,7 +207,6 @@
     <div class="subnav" id="booknav"></div>
     <div id="tab-reference" class="sub"></div>
     <div id="tab-setting" class="sub"></div>
-    <div id="tab-truths" class="sub"></div>
   </div>
   <div id="qs" hidden><div class="qsbox"><input id="qs-in" placeholder="Jump to an NPC, page, or scene…  (Esc closes)" autocomplete="off"><div id="qs-out"></div></div></div>
 </main>
@@ -219,6 +218,7 @@ const GROUPS = /*__GROUPS__*/[];
 const PAGES  = /*__PAGES__*/[];
 const MODULES= /*__MODULES__*/[];
 const SEED   = /*__SEED__*/{};
+const TRACKDOCS = /*__TRACKDOCS__*/{};
 const CREW   = /*__CREW__*/[];
 const HEAD_STATIC = /*__HEAD__*/"";
 const SKELETON = /*__SKEL__*/"";
@@ -324,8 +324,8 @@ function resetState(){
 
 /* ------------------------------------------------ tabs & in-app links */
 const TABS = [["run","Run"],["npcs","NPCs"],["crew","Crew"],["trackers","Trackers"],["log","Session Log"],["book","Book"]];
-const BOOK = [["reference","Reference"],["setting","Setting"],["truths","GM Truths"]];
-const SUB = {reference:"book", setting:"book", truths:"book"};
+const BOOK = [["reference","Reference"],["setting","Setting"]];
+const SUB = {reference:"book", setting:"book"};
 let cur = "run", bookSel = "reference";
 try{ const r = JSON.parse(sessionStorage.getItem("ea.resume")); if(r && r.tab){ cur = r.tab; sessionStorage.removeItem("ea.resume"); } }catch(e){}
 { const h = location.hash.slice(1); if(h && TABS.some(t=>t[0]===h)) cur = h; else if(SUB[h]){ cur = "book"; bookSel = h; } }
@@ -588,6 +588,9 @@ function trackersTab(){
         </div>`).join("")}
       </div></div>
 
+    <div class="card"><details><summary style="cursor:pointer"><b style="color:var(--gold)">The Ladder of Sightings</b> <span class="muted small">— the eighth clock: how the crew actually beats the line</span></summary>
+      <div class="doc" style="margin-top:.5rem">${TRACKDOCS.ladder||""}</div></details></div>
+
     <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Lore fragments</h2>
       <div class="qsum">${questionSummary()}</div>
       <table class="tr"><thead><tr><th>Fragment</th><th>Form</th><th>Tag</th><th>Question</th><th>Load-bearing claim</th><th>Holder</th><th>Status</th><th></th></tr></thead>
@@ -609,6 +612,9 @@ function trackersTab(){
       </div>
       <div class="stat small muted">Rules: a held, relevant fragment = boost die on related Knowledge checks. 3+ fragments on one Question → Hard Knowledge (Lore) Reconstruction as a group scene; all three tags represented → upgrade an ability die once; only one tag → upgrade difficulty once. Full rules: <a href="#" class="xin" data-nav="page:reference:lore-fragments">Lore Fragments</a>.</div>
     </div>
+
+    <div class="card"><details><summary style="cursor:pointer"><b style="color:var(--gold)">Reconstruction payouts</b> <span class="muted small">— the truth ladder per Question: award the lowest unearned rung</span></summary>
+      <div class="doc" style="margin-top:.5rem">${TRACKDOCS.payouts||""}</div></details></div>
 
     <div class="card"><h2 style="margin:.1rem 0;color:var(--gold)">Beacon map</h2>
       <table class="tr"><thead><tr><th>Beacon</th><th>Status</th><th>Corridor</th><th>Certified by</th><th>First-lighting fee</th><th>Who followed through</th><th></th></tr></thead>
@@ -708,7 +714,7 @@ function copySession(i){
     : alert("Clipboard unavailable — select and copy:\n\n"+md);
 }
 
-/* ------------------------------------------------ page tabs (reference / setting / truths) */
+/* ------------------------------------------------ page tabs (reference / setting) */
 const pageSel = {reference:null, setting:null};
 function pagesTab(section){
   const el = document.getElementById("tab-"+section);
@@ -740,19 +746,8 @@ function mcOut(){
     `Group WT <b style="color:var(--gold)">${wt*n}</b> · group skills at <b style="color:var(--gold)">${Math.max(0,n-1)}</b> ranks<br>
      one minion drops at ${Array.from({length:n},(_,i)=>wt*(i+1)).join(", ")} total damage`;
 }
-let truthsOpen = false;
-function truthsTab(){
-  const el = document.getElementById("tab-truths");
-  const p = PAGES.find(p=>p.section==="truths");
-  el.innerHTML = truthsOpen
-    ? `<div class="card doc">${p.html}</div><button class="btn ghost" onclick="truthsOpen=false;truthsTab()">Seal it again</button>`
-    : `<div class="gate"><h2 style="color:var(--bad)">Part V — GM Truths (locked)</h2>
-       <p class="muted">Players never see this page. Three dials, now set.<br>Don't open it with anyone looking over your shoulder.</p>
-       <button class="btn danger" onclick="truthsOpen=true;truthsTab()">Break the seal</button></div>`;
-}
-
 /* ------------------------------------------------ boot */
-function renderAll(){ nav(); runTab(); crewTab(); npcTab(); trackersTab(); logTab(); pagesTab("reference"); pagesTab("setting"); truthsTab();
+function renderAll(){ nav(); runTab(); crewTab(); npcTab(); trackersTab(); logTab(); pagesTab("reference"); pagesTab("setting");
   if(document.getElementById("mc-out")) mcOut(); updateSyncUI(); }
 window.addEventListener("hashchange",()=>{ const h=location.hash.replace("#",""); if(TABS.some(t=>t[0]===h)||SUB[h]){ go(h); } });
 renderAll();

@@ -5,7 +5,7 @@
 
 ## What lives here
 
-- **[GM Truths](truths.md)** — Part V: the three dials, now set. The campaign's locked answers.
+- **[GM Truths](truths.md)** — the campaign's spine on one screen: the three dials, plus pointers to where the working detail now lives (the Sith machinery and holocron in [Keepers of the Flame](npcs/keepers.md), the culling in [Vigil & Inheritors](npcs/vigil-inheritors.md), the Ladder of Sightings in [Faction Clocks](tools/faction-clocks.md), the truth ladders in the [Fragment Tracker](tools/fragment-tracker.md)).
 - **[NPC Library](npcs/index.md)** — FFG-correct stat blocks for the whole era, pulled from official published adversaries and re-skinned.
 - **GM Tools** — the [Fragment Tracker](tools/fragment-tracker.md), the [Beacon Map](tools/beacon-map.md), and [Faction Clocks](tools/faction-clocks.md).
 

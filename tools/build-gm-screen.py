@@ -91,7 +91,6 @@ NAV_MAP = {
     "mechanics/dice-results.md": "page:reference:dice-results",
     "mechanics/ships.md": "npcs:group:ships",
     "gm/index.md": "tab:trackers",
-    "gm/truths.md": "tab:truths",
     "gm/npcs/index.md": "page:reference:primer",
     "gm/npcs/session-one.md": "npcs:group:session-one",
     "gm/npcs/republic-admiralty.md": "npcs:group:republic-admiralty",
@@ -311,7 +310,6 @@ PAGES_SPEC = [
     ("setting", "act-1", "Act 1 — Reconnection", "campaign/act-1.md"),
     ("setting", "act-2", "Act 2 — Convergence", "campaign/act-2.md"),
     ("setting", "act-3", "Act 3 — The Founding", "campaign/act-3.md"),
-    ("truths", "truths", "GM Truths (Part V)", "gm/truths.md"),
 ]
 
 SEED = {
@@ -348,6 +346,19 @@ def between(text, start, end):
     return text.split(start, 1)[1].split(end, 1)[0]
 
 
+def md_section(relpath, heading_prefix):
+    """Render one `## `-level section of a docs file (used to surface the GM
+    instruments that live in the tracker template files on the Trackers tab)."""
+    text = (DOCS / relpath).read_text(encoding="utf-8")
+    m = re.search(rf"(?m)^## {re.escape(heading_prefix)}.*$", text)
+    if not m:
+        raise SystemExit(f"{relpath}: section starting '## {heading_prefix}' not found")
+    start = m.end()
+    nxt = re.search(r"(?m)^## ", text[start:])
+    body = text[start:start + nxt.start()] if nxt else text[start:]
+    return render(body, posixpath.dirname(relpath))
+
+
 def main():
     tpl = TEMPLATE.read_text(encoding="utf-8")
     head_static = between(tpl, "<!--HEAD_STATIC_START-->", "<!--HEAD_STATIC_END-->").strip()
@@ -359,6 +370,10 @@ def main():
     pages = [{"section": s, "id": i, "title": t, "html": render_file(p)} for s, i, t, p in PAGES_SPEC]
     name_to_id = {n["name"]: n["id"] for n in npcs}
     modules = [m for m in (parse_module(mid, rp, name_to_id) for mid, rp in MODULE_FILES) if m]
+    trackdocs = {
+        "ladder": md_section("gm/tools/faction-clocks.md", "The Ladder of Sightings"),
+        "payouts": md_section("gm/tools/fragment-tracker.md", "Reconstruction payouts"),
+    }
 
     skeleton = skeleton.replace("__BUILDDATE__", date.today().isoformat())
     code = (app_code
@@ -367,6 +382,7 @@ def main():
             .replace("/*__PAGES__*/[]", json.dumps(pages, ensure_ascii=False))
             .replace("/*__MODULES__*/[]", json.dumps(modules, ensure_ascii=False))
             .replace("/*__SEED__*/{}", json.dumps(SEED, ensure_ascii=False))
+            .replace("/*__TRACKDOCS__*/{}", json.dumps(trackdocs, ensure_ascii=False))
             .replace("/*__CREW__*/[]", json.dumps(json.loads(CHARACTERS.read_text(encoding="utf-8")) if CHARACTERS.exists() else [], ensure_ascii=False))
             .replace('/*__HEAD__*/""', json.dumps(head_static, ensure_ascii=False))
             .replace('/*__SKEL__*/""', json.dumps(skeleton, ensure_ascii=False)))

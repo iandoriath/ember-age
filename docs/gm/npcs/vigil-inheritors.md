@@ -161,3 +161,36 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 
 **Chassis:** Slicer, Edge of the Empire Core Rulebook (reprinted in Age of Rebellion Core Rulebook and Allies and Adversaries) (adjustments: none).
 **Using him:** Denno is how the Inheritors follow the relights and why the Conclave of Charts is rigged from the second direction: guild handshake codes and the patron's relighting order are his product, and Meru Vane holds his debts. He has no idea the order he is selling was bought first by someone far worse than his buyers (Dial 3). He is not a villain, he is a man in a hole — nervous, over-leveraged, and visibly relieved the first time anyone offers him a way out that isn't a deeper hole. His stun-only sidearm is the tell: he has never once planned to hurt anybody. Redeeming him hands the party the proof that exposes the auction; cornering him hands the Inheritors a martyr and burns the evidence — let the players discover which they did.
+
+### The culling — how the Inheritors end
+
+**The fork is closed: the Inheritors are heretics.** No connection to the true line, and they do not know it — real techniques scraped from artifacts, counterfeit lineage, no living tradition. **The Sith do not yet know they exist.**
+
+The moment that changes — the Unveiling, a public claim to a Darth title, anything that makes them look less like grave-robbers and more like a rival tradition — **the culling comes**, and it is surgical, anonymous, and total: the senior circle dead across a dozen worlds in one night, the archives vanished rather than burned, and nobody sane concluding "Sith." The galaxy blames the Vigil, or the Admiralty, or an internal purge, and every misattribution lights a different Act 3 fire. (It is Mendac's exam — the Graduation, in [Keepers of the Flame](keepers.md).)
+
+Two aftershocks matter:
+
+1. The culling **shatters the Inheritors instead of ending them**: leaderless cells, fire-sale artifacts, half-trained adepts scattering with dangerous knowledge.
+2. The harvested archives include **the Vesta-9 file** — whoever wrecked the Inheritors now knows about the crew — what they saw at Vesta-9, what they carry, and by then which of them is gifted — and has never once been seen.
+
+### Set piece — The Emptied House
+*Aftermath encounter — the culling, seen from inside — run it after the Unveiling, or earlier as the culling's first quiet strike*
+
+> One night, one base, nobody alive, and the relic hall still full.
+
+Use an Inheritor base the crew has already visited with courtesy — first contact is always helpful (Dial 3) — so that coming back is the point: the dig camp at the Scar, a Sanrafsix warehouse, a cell on the Veshet spur. They find it taken apart. Everyone is dead and it happened in one night. There are no blaster scorings and no cauterized wounds. The bodies that must never be identified are not there at all (the disruptor); the rest died of falls, of fire, and of each other (Influence). The archive rooms are bare — not burned, *emptied*: dust outlines where shelves stood. And the relic hall is untouched. Every "Sith artifact" the Inheritors ever displayed is still on its plinth.
+
+**The truth.** Mendac took every genuine item and left every counterfeit, because Veritis's eye is the one thing in the galaxy that can tell them apart — and because a room full of fakes tells the galaxy this was robbery by people who did not know what they were looking at. That is the Scrub's whole doctrine in one room: the galaxy is not to be left ignorant of the Sith, it is to be left *wrong*. Nobody sane concludes "Sith." The fakes are also a message, for the one reader in ten thousand who can tell.
+
+**Reading the room** (optional clue ladder; RAW difficulties; a failed check says nothing, a despair says something false):
+
+| Check | What it gives |
+|---|---|
+| **Perception, Average** | No blaster or saber marks; too few bodies for a base this size; the missing dead are exactly the senior faces the crew remembers. |
+| **Medicine, Hard** | The survivors of the first wave killed each other and then themselves, in an order that makes no sense — unless they were *made* to (Influence). Force-sensitive characters may substitute a Sense check: the fear in the walls has a shape. |
+| **Knowledge (Lore), Hard** *(Average if the character has handled a real Sith relic or holds a Sith-tagged fragment)* | The relics on the plinths are counterfeits — good ones, the Inheritors' own costume pieces. |
+| **Knowledge (Lore), Daunting** *(Formidable without a Sith-tagged fragment)* | *Only* fakes remain. Whoever did this could tell — which means a living tradition, not grave-robbers. Success awards a **Sith-tagged lore fragment** ("Someone in the galaxy can still tell true from false") and the GM a problem: the players now know the thing nobody sane concludes. |
+| **Streetwise, Hard** | The fakes will surface on the Memory Market within weeks, consigned by a fence who never met the seller. The trail ends at a dead fence. |
+| **Vigilance (or Sense), Average, in the archive** | The house is *quiet*. Whatever was here that the Force could feel left with the thieves — the only honest inventory of what was taken. |
+
+**Aftermath.** Fire-sale of the fakes; leaderless cells; half-trained adepts scattering with dangerous knowledge; if this was a senior base, the Vesta-9 file is gone with everything else. The galaxy blames the Vigil, the Admiralty, or an Inheritor purge, and each misattribution lights a different Act 3 fire ([Act 3](../../campaign/act-3.md)). If the crew's gifted stands in the relic hall and feels nothing at all, let that land: the real thing was here, and it is with someone now.

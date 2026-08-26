@@ -13,7 +13,7 @@
 | **Vesta-9** | **LIT** (90 AR — nobody admits to lighting it; its prize hung unclaimed for years because the beacon could not be *found*) | the Run past Vesta-9 (toward Enarc) | Chartmistress Bel Nerra (Lamplighters) | pending session one | Vigil, Admiralty, Lamplighters… and one uncounted observer |
 | *(next beacon)* | dark | | | | |
 
-*The four paid prizes are the decade of public history behind session one: the guild's surprise pivot off the Corellian Run at New Cov (see [the geography page](../../setting/geography.md) — and, GM-side, the Patronage in [Truths](../truths.md)), four beacons relit, then the stall at Bannistar when Vesta-9 beat every survey sent after it.*
+*The four paid prizes are the decade of public history behind session one: the guild's surprise pivot off the Corellian Run at New Cov (see [the geography page](../../setting/geography.md) — and, GM-side, the Patronage in [Keepers of the Flame](../npcs/keepers.md)), four beacons relit, then the stall at Bannistar when Vesta-9 beat every survey sent after it.*
 
 ## The chain — the Duros Space Run, hop by hop
 
