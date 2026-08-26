@@ -49,3 +49,5 @@ Side-lanes: **Sanrafsix Corridor** (Syned → Fostin Nine → Sanrafsix → Omwa
 
 !!! note "The standing question"
     Every relight raises it again: **who follows you through?** Note the answer each time — it is the faction map moving.
+
+    And its shadow: **what left when the light came on?** Ninety dark years bred tenants — mynock colonies, roost-predators, reef-fauna in the wreck fields — and every relight evicts them up the dark Run ahead of the advance. Spacers read the displaced swarms as omens, and sector folklore has spent a decade blaming ghost-traffic on mynock-waves and mynock-waves on ghosts — a confusion the campaign's hidden actors enjoy without ever having arranged it ([The Feral Run](../npcs/wildlife.md)).

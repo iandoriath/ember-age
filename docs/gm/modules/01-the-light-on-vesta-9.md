@@ -138,6 +138,9 @@ When a page lands — hers or a copy — hand over the card and log it (copy onl
 
 **The situation.** Frame it mechanically before anyone rolls: this session *is* the [beacon-relighting set piece](../../mechanics/beacon-relighting.md), run out of order. **Wake it** was done by an unknown hand — that mystery is the campaign's. The crew is flying **Chart it** now, and **Speak to it** waits at the station.
 
+!!! tip "Weather with teeth (optional)"
+    A cheap, perfect Threat spend anywhere on the leg: **mynocks** — the dead lane's pigeons — latched on at the last cold buoy and chewing the power couplings (1 system strain a round until somebody EVAs or barrel-rolls them off; [The Feral Run](../npcs/wildlife.md)). Sixty dark years put colonies on every cold surface out here, and the crew's running lights are the first thing to disturb them in a lifetime.
+
 **The jump.** The Run's first dead leg — Bannistar toward Enarc — has decayed past its nav data: **Hard Astrogation**, exactly per the beacon rules. A rutter page bearing on the route adds a boost die — the fragment lesson, taught at the moment it matters. Jumping blind is legal but earns a setback die for sixty years of drift silt. *(Why the Larksong's Class 1 hyperdrive doesn't simply win: on a decayed lane the clock is recalculation, not multiplier — the legs between dead buoys are short, and every reversion resets the math. Open lanes are where she laps people; dead ones are won by charts.)*
 
 **While the navigator plots** — one supporting beat per other PC, so nobody watches one person roll:
@@ -181,6 +184,8 @@ When a page lands — hers or a copy — hand over the card and log it (copy onl
 | Throughout | The arrival swarm: a dozen hulls from Okrent's Drift — and, later, in the certification crowd, a clerk in guild grey who writes nothing down (The Out). |
 
 **Running order.** Whatever the arrival math: (1) the crew and the empty, humming station — and Vhail, who does not look up; (2) the *Steadfast*'s broadcast, which turns every hopeful in the swarm into an audience; (3) the inspection; (4) Nerra's docking request, timed to interrupt whatever is tensest; (5) certification. Scene 6 detonates the moment the paper asks who lit it.
+
+Color for the approach: as the arrival swarm's floodlights sweep the station, a **mynock colony** lifts off the dead hull in a single grey sheet — sixty years of tenants leaving as the neighborhood relights. It costs nothing mechanically and tells the table the truth about the dark: it was never empty ([The Feral Run](../npcs/wildlife.md)).
 
 **The three-cornered standoff.** A social scene with a warship in it, not a combat with dialogue. Each corner wants something *from the crew*, and each has a lever. (Budget note: if the table is swamped with names, Vhail can run *silent* tonight — skip her trade; her one question still lands in Scene 6, and her answers keep for the return visit.)
 

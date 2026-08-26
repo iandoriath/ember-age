@@ -141,6 +141,7 @@ NPC_FILES = [
     ("vigil-inheritors", "Vigil & Inheritors", "gm/npcs/vigil-inheritors.md"),
     ("lanes-ledgers", "Lanes & Ledgers", "gm/npcs/lanes-ledgers.md"),
     ("reaches", "Out on the Run", "gm/npcs/reaches.md"),
+    ("wildlife", "The Feral Run", "gm/npcs/wildlife.md"),
     ("keepers", "Keepers of the Flame 🔒", "gm/npcs/keepers.md"),
     ("ships", "Ships of the Ember Age", "mechanics/ships.md"),
 ]

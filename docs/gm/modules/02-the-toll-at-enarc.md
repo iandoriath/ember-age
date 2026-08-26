@@ -94,7 +94,7 @@ The warning is genuine, delivered once, and phrased so that gold-rush crews have
 | Leg | The ride | The check |
 |---|---|---|
 | **The colonnades** | Flat-out slalom through the repainted fuel bowsers, the whole court watching from the galleries | **Hard Piloting (Planetary)** |
-| **The dead docks** | A lightless tunnel of forty years of mothballed hulls — racers navigate by memory or nerve | **Average Piloting (Planetary)** plus a setback die for the dark; a bold rider may substitute **Perception** to read the wrecks |
+| **The dead docks** | A lightless tunnel of forty years of mothballed hulls — racers navigate by memory or nerve, and the hulls are *inhabited*: forty years of roosts, and the lead racer's wake lifts them in a burst of startled wings | **Average Piloting (Planetary)** plus a setback die for the dark; a bold rider may substitute **Perception** to read the wrecks. Threat on this leg is wildlife, not walls ([The Feral Run](../npcs/wildlife.md)) |
 | **The spine** | The climb along the palace's back, finishing under the dark beacon mast itself | **Hard Piloting (Planetary)**; Advantage from earlier legs carries forward as boost dice |
 Best of three legs wins. Draz rolls three Piloting with a boost (home track); a **Triumph** anywhere is a lead nothing answers; a **Despair** is a wreck — dramatic, survivable, and the court *loves* it. Stakes: the picket log's pages against something the crew genuinely fears losing — their rutter page, their sworn testimony in a future dispute, or their ship's papers for a season. *(A crew with no rider can propose dejarik — holochess, Vopp playing for the house — best of three, **Knowledge (Education) or Astrogation vs 3 difficulty**; but the court will be disappointed in them, and show it.)*
 

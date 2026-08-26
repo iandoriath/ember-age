@@ -42,6 +42,8 @@ The Run's beacons died **twice**, and the distinction matters to anyone reading 
 1. **The first darkening (before Ruusan).** In the depths of the Dark Age, the old Republic — bankrupt and losing — *deliberately shut down* its hyperspace relays beyond the Core, to deny the Sith the network. Thousands of systems went dark by policy. Out here, most beacons never came back: the oldest rutter pages describe lanes no living pilot has run.
 2. **The second darkening (the Withering).** After Ruusan the recovery relit beacons Core-outward — slowly, and only so far. Vesta-9's sixty dark years date from this lapse: it was revived in the early Reformation and abandoned again when the appropriations stopped. The Withering is not the war's darkness; it is the recovery giving up.
 
+Both darkenings left more than silence: ninety years without traffic **rewilded the lane itself**. Dead stations wear mynock colonies like moss, war-wreck fields have grown into reefs with residents, and the deep worlds' abandoned farms belong to their livestock's feral great-grandchildren. Spacer wisdom on the living end of the Run is blunt about it — *check your intakes, light your holds, and never open a hatch that's been shut sixty years without standing to the side* — and when a beacon relights, the dark's tenants move up the lane ahead of the light: the wave of displaced mynocks is read as an omen from Bannistar to New Cov.
+
 ## The far end: the Dead Gate
 
 Every spacer eventually asks it: Darkknell is alive, rich, and one hop from Jutrand — so why has nobody ever relit the Run from *that* end? Two answers, and every merchant house on Darkknell can recite both.

@@ -59,6 +59,13 @@
 | Swoop Ace "Kettle" Maro | Rival | the circuit | [Out on the Run](reaches.md) |
 | Pirate Captain of the Quiet + Quiet Pirates | Nemesis + Minions | the Quiet | [Out on the Run](reaches.md) |
 | Hullmayor Bessa Rin + Hull-City Militia | Rival + Minions | the Mausoleum Yards | [Out on the Run](reaches.md) |
+| Mynock | Minions | The Feral Run | [The Feral Run](wildlife.md) |
+| Fyrnock | Rival | The Feral Run | [The Feral Run](wildlife.md) |
+| Nexu | Rival | The Feral Run | [The Feral Run](wildlife.md) |
+| Vornskr | Rival | The Feral Run | [The Feral Run](wildlife.md) |
+| Feral Bantha Herd | Minions | The Feral Run | [The Feral Run](wildlife.md) |
+| The Reef | Hazard | The Feral Run | [The Feral Run](wildlife.md) |
+| The Aquilaris Deep | Hazard | The Feral Run | [The Feral Run](wildlife.md) |
 | Master N'Kata Del Gormo | Nemesis | the swamp (no faction) | [Keepers of the Flame](keepers.md) 🔒 |
 | Master Seldra Tane | Nemesis | Jedi Order (Temple envoy) | [Keepers of the Flame](keepers.md) 🔒 |
 | The Patient Master | Nemesis | the true Sith line | [Keepers of the Flame](keepers.md) 🔒 |
