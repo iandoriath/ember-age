@@ -342,7 +342,7 @@ SEED = {
     "beacons": [
         {"name": "Vesta-9", "status": "lit", "corridor": "the Run past Vesta-9 (toward Enarc)",
          "certified": "Chartmistress Bel Nerra (Lamplighters)", "fee": "pending session one",
-         "followed": "Vigil, Admiralty, Lamplighters — and one Inheritor observer (Dial 3)"},
+         "followed": "Vigil, Admiralty, Lamplighters, the Overdue — and one Inheritor observer (Dial 3)"},
     ],
     "fragments": [],
     "knows": [

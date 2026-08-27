@@ -22,6 +22,10 @@ The seals honored. The graves left alone by the prize-rush pouring up the Run. A
 - **The war's true records** — authentication of war-era relics and [lore fragments](../mechanics/lore-fragments.md), and testimony the Core never wrote down. (They are the second-best authenticators in the galaxy. Nobody, including them, knows who is first.)
 - **Access to sealed places** no one else may enter — including the temples the Temple now wants back.
 
+## How the Run sees them
+
+The relit decade introduced them ahead of the campaign: every corridor the advance opened turned out to have Vigil sites in it — sealed doors under grey tape and script, and a warden arriving within the season to stand at whatever the prospectors had uncovered. So the living end of the Run already has a settled opinion of them, and it is conveniently wrong: *a weird religious sect* — grave cult, mostly harmless, don't touch what they've taped off, don't ask about the lists. Spacers trade Vigil stories the way they trade weather. Almost nobody has noticed that the strange grey order that mumbles over graves is also the only institution on the Run that knows what is behind every door the rush is about to open.
+
 ## The crack
 
 The newly Force-sensitive split them in half: sacrilege walking around in children's bodies, or the Order reborn. The Order's return splits them again: half the Vigil will hand over the keys and weep with relief; half will not hand over the children, and has begun to wonder whether eighty years of keeping the watch has *earned* something the minutes never granted.
