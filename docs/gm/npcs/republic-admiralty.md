@@ -69,7 +69,7 @@ Recovered in the Core and absent out here since the Adjournment, the Republic ar
 
 ## The Admiralty
 
-*Roster note: **Cmdr. Joss Reike** of the corvette* Steadfast *— the campaign's first named Admiralty contact (planning doc, session one) — is statted in the session-one NPC file (**session-one.md**; Chassis: Lt. Commander Jilan Noor, Age of Rebellion Core Rulebook), alongside his* Steadfast *boarding party, which uses the same Admiralty Marines print as below. He is deliberately not duplicated here.*
+*Roster note: **Cmdr. Joss Reike** of the sloop* Steadfast *— the campaign's first named Admiralty contact (planning doc, session one) — is statted in the session-one NPC file (**session-one.md**; Chassis: Lt. Commander Jilan Noor, Age of Rebellion Core Rulebook), alongside his* Steadfast *boarding party, which uses the same Admiralty Marines print as below. He is deliberately not duplicated here.*
 
 ### Lady Admiral Maren Voss
 *Nemesis — The Admiralty — sovereign of the Naboo Admiralty*

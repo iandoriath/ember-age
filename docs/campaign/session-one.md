@@ -21,7 +21,7 @@ Vesta-9 station, three light-hours from where the charts put it, lit and humming
 - **Keeper Adressa Vhail** of the Vigil kneels at the beacon core, reading the war dead's names from a slate; she was here before the light came on, and will not say how. Spacers on the band shrug — the grey veils turn up wherever the advance opens a door; grave cult, mostly harmless, don't touch what they tape off.
 - The battered Ghtroc ***Overdue*** — **Captain Ferro Skell**, the rival crew from the Drift — turns up with a first-lighting claim on the public band: the chart that found this station, he says, is collateral on a debt he bought that morning.
 - One docking cradle is still warm. Nothing is in it.
-- The Admiralty corvette ***Steadfast*** (**Cmdr. Joss Reike**) drops in, runs out its guns, and demands all vessels stand to for inspection.
+- The Admiralty sloop ***Steadfast*** (**Cmdr. Joss Reike**) drops in, runs out its guns, and demands all vessels stand to for inspection.
 - **Chartmistress Bel Nerra** of the Lamplighters arrives to certify the relight — and to hire witnesses.
 
 ## Scene 4 — The Record
