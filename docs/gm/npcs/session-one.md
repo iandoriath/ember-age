@@ -172,7 +172,7 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
 **Using her:** Vhail is the party's best living source on **the war** — its graves, its lineages, its law of relics — every Knowledge skill at 3, with the ledger the Core sanitized on her slate (the library's Jedi-tag fragment authority; Merion and Marn, on this same chassis by design, own the Civic tag and relic forensics). A coreward crew arrives knowing more than she does about the living Order; let them discover, fast, that she knows more than they do about everything the Order would rather not discuss — she has read what the Jedi were the last time they were here, and she was at the funerals the Temple never came to. Play her unimpressed by the Jedi, the Republic, and the prize money in equal measure — *"They come for the children. They never come for the graves."* — and let her correct the crew's Coruscant textbook about once per scene, gently, with a name and a date. She trades answers for respect, not scrip; she is serene under any pressure (lean on Discipline and Cool) and perfectly evasive about her arrival. **Default truth** (override freely; see the module's prep list): a Vigil circuit ship dropped her at the *dark* station on the warden's round — seals checked, names read — and returns on schedule; the Vigil knew where Vesta-9 sat all along and never told the guild, because doors stay shut. She is the campaign's second person who knew and said nothing, and both facts are discoverable later. And she saw the lighter — a shape that looked at her, and left her alive; she has not decided what that makes her either. When the crew's testimony lands at the Record, Vhail goes very quiet: she is living the Vigil's crack in real time, and which half of the order she lands on can hinge on what the crew swore to — and on how they treat their own gifted. She is a noncombatant; if blasters come out, she kneels by the core and goes on reading the names.
 
 ### Commander Joss Reike
-*Nemesis — The Admiralty — commander of the sloop* Steadfast
+*Nemesis — The Admiralty — commander of the corvette* Steadfast
 
 > Correct to the last button, he boards your ship the way other men shake hands, and he honestly believes he is saving your life.
 
@@ -209,10 +209,10 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
 **Group math:** Typically deployed in groups of 4. A group of 4 has Wounds 20 (4 × WT 5) and 3 ranks in its group skills (members − 1); one marine is incapacitated each time total damage passes a multiple of 5. As minions they have no strain threshold — strain they suffer is applied as wounds.
 **Using them:** This is Reike's escalation made flesh — he directs them with Tactical Direction from behind cover, so the party's real fight is the group, never the man. In the standoff they hold the airlock ring, set weapons to stun for a registered boarding, and take prisoners cleanly; they stand down the instant Reike orders it, and a marine hesitating at an unlawful order is the crew's best lever. This is the same block as **Admiralty Marines** in the Republic & Admiralty file (republic-admiralty.md) — one canonical print; if either copy is ever adjusted, keep the two in sync.
 
-### NAS Steadfast, Naboo-pattern Patrol Sloop
-*Vehicle — the Admiralty — Commander Joss Reike's inspection sloop*
+### NAS Steadfast, Naboo-pattern Corvette
+*Vehicle — the Admiralty — Commander Joss Reike's inspection corvette*
 
-> The Steadfast does not hail you so much as inform you: a wall of pre-Ruusan naval steel that was keeping this watch before your grandmother was born, crewed by people who never stopped believing in uniforms.
+> The Steadfast does not hail you so much as inform you: a wall of pre-Ruusan naval steel, gun batteries on every quarter and boarding pinnaces racked amidships, that was keeping this watch before your grandmother was born — crewed by people who never stopped believing in uniforms.
 
 | Silhouette | Speed | Handling |
 |:-:|:-:|:-:|
@@ -223,16 +223,16 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
 - **Hyperdrive:** None
 - **Navicomputer:** None
 - **Sensor Range:** Long
-- **Crew:** Twelve
-- **Encumbrance Capacity:** not listed in the printed block · **Passenger Capacity:** 10 (troopers or prisoners)
+- **Crew:** Forty — the expeditionary complement (declared adjustment; the printed customs configuration is twelve)
+- **Encumbrance Capacity:** not listed in the printed block · **Passenger Capacity:** 10 (the brig ring), plus two racked boarding pinnaces with marine sections (declared adjustment)
 - **Consumables:** One month · **Price/Rarity:** 4,000,000 credits/5 · **Customization Hard Points:** 2
 - **Weapons:**
   - Dorsal, ventral, port, and starboard turret-mounted point-defense turbolaser batteries (Fire Arc All; Damage 11; Critical 3; Range [Long]; Breach 3, Linked 1, Slow-Firing 1)
   - Forward-mounted concussion missile launcher (Fire Arc Forward; Damage 7; Critical 3; Range [Short]; Blast 4, Breach 4, Guided 3, Slow-Firing 1)
 
-**Chassis:** Imperial System Patrol Craft (IPV-1), Beyond the Rim (adjustments: none).
-**Era notes:** No hyperdrive, no navicomputer — Naboo-pattern sloops travel clamped to fleet tenders, which is why one can "drop in" on a beacon relight and why, once the tender casts off, it can hold the station but never chase anyone up the lane. It carries no ion weapons: a "disabled" quarry is throttled turbolaser fire, narrated, never a dice-off.
-**Using it:** The Steadfast is a wall, not a duel — its turbolasers outrange and outhit anything a wayfinder crew owns, so the scene it creates is procedural: stand to, present manifests, submit to boarding (those ten passenger berths are Reike's inspection party, or your cell). Let the players win against the paperwork, the commander's rigidity, or the tender schedule, never the guns. This is the same block as **NAS Steadfast, Naboo-pattern Patrol Sloop** in the ships file ([ships.md](../../mechanics/ships.md)) — one canonical print; if either copy is ever adjusted, keep the two in sync.
+**Chassis:** Imperial System Patrol Craft (IPV-1), Beyond the Rim (adjustments: **declared** — the class is re-titled a corvette in Naboo service, and the expeditionary complement replaces the printed crew-and-passenger fit: crew forty, two boarding pinnaces with marine sections; every hull number, defense, and weapon line is the printed block untouched).
+**Era notes:** No hyperdrive, no navicomputer — Naboo-pattern hulls travel clamped to fleet tenders, which is why one can "drop in" on a beacon relight and why, once the tender casts off, it can hold the station but never chase anyone up the lane. It carries no ion weapons: a "disabled" quarry is throttled turbolaser fire, narrated, never a dice-off. The class is the message — the Admiralty flies true patrol sloops for lane work; a corvette is what it sends to be obeyed by a crowd. Her answer to a swarm is arithmetic: the pinnaces work the inspection queue two hulls at a time, and the gun ladder means she only ever needs one example, which nobody volunteers to be.
+**Using it:** The Steadfast is a wall, not a duel — its turbolasers outrange and outhit anything a wayfinder crew owns, so the scene it creates is procedural: stand to, present manifests, submit to boarding (the pinnaces bring the inspection party to you; the brig ring is where you ride back). Let the players win against the paperwork, the commander's rigidity, or the tender schedule, never the guns. This is the same block as **NAS Steadfast, Naboo-pattern Corvette** in the ships file ([ships.md](../../mechanics/ships.md)) — one canonical print; if either copy is ever adjusted, keep the two in sync.
 
 ### Chartmistress Bel Nerra
 *Rival — The Lamplighters — certifier of the relight, recruiter of witnesses*

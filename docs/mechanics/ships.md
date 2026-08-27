@@ -111,10 +111,10 @@ Ninety years after Ruusan, nothing flies new. Every hull in this file is an inhe
 
 ## The Admiralty
 
-### NAS Steadfast, Naboo-pattern Patrol Sloop
-*Vehicle — the Admiralty — Commander Joss Reike's inspection sloop*
+### NAS Steadfast, Naboo-pattern Corvette
+*Vehicle — the Admiralty — Commander Joss Reike's inspection corvette*
 
-> The Steadfast does not hail you so much as inform you: a wall of pre-Ruusan naval steel that was keeping this watch before your grandmother was born, crewed by people who never stopped believing in uniforms.
+> The Steadfast does not hail you so much as inform you: a wall of pre-Ruusan naval steel, gun batteries on every quarter and boarding pinnaces racked amidships, that was keeping this watch before your grandmother was born — crewed by people who never stopped believing in uniforms.
 
 | Silhouette | Speed | Handling |
 |:-:|:-:|:-:|
@@ -125,17 +125,17 @@ Ninety years after Ruusan, nothing flies new. Every hull in this file is an inhe
 - **Hyperdrive:** None
 - **Navicomputer:** None
 - **Sensor Range:** Long
-- **Crew:** Twelve
-- **Encumbrance Capacity:** not listed in the printed block · **Passenger Capacity:** 10 (troopers or prisoners)
+- **Crew:** Forty — the expeditionary complement (declared adjustment; the printed customs configuration is twelve)
+- **Encumbrance Capacity:** not listed in the printed block · **Passenger Capacity:** 10 (the brig ring), plus two racked boarding pinnaces with marine sections (declared adjustment)
 - **Consumables:** One month · **Price/Rarity:** 4,000,000 credits/5 · **Customization Hard Points:** 2
 - **Weapons:**
   - Dorsal, ventral, port, and starboard turret-mounted point-defense turbolaser batteries (Fire Arc All; Damage 11; Critical 3; Range [Long]; Breach 3, Linked 1, Slow-Firing 1)
   - Forward-mounted concussion missile launcher (Fire Arc Forward; Damage 7; Critical 3; Range [Short]; Blast 4, Breach 4, Guided 3, Slow-Firing 1)
 
-**Chassis:** Imperial System Patrol Craft (IPV-1), Beyond the Rim (adjustments: none — the printed block lists no encumbrance capacity; the line above reports that fact rather than inventing a number).
+**Chassis:** Imperial System Patrol Craft (IPV-1), Beyond the Rim (adjustments: **declared** — the class is re-titled a corvette in Naboo service, and the expeditionary complement replaces the printed crew-and-passenger fit: crew forty, two boarding pinnaces with marine sections. Every hull number, defense, and weapon line is the printed block untouched; the printed block lists no encumbrance capacity — the line above reports that fact rather than inventing a number).
 *(stats unverified against print — scope: every other line of this block verified against the printed IPV-1; the one unverified field is **Price/Rarity** — check the printed block for the figure and restore the "(R)" restricted marker if the print carries one, as a military hull likely does)*
-**Era notes:** Naboo-pattern sloops carry no hyperdrive as printed — the Admiralty ferries them between systems clamped to fleet tenders, which is why one can "drop in" on a beacon relight and why, once on station, it is never leaving until the tender comes back. The NAS prefix is *Naboo Admiralty Ship* — a registry no chart on this side of the dark lists. Maintenance is the one thing the Naboo yards still do perfectly; this is the rare hull in the era with nothing patched.
-**Using it:** The Steadfast is a wall, not a duel — its turbolasers outrange and outhit anything a wayfinder crew owns, so the scene it creates is procedural: stand to, present manifests, submit to boarding (those ten passenger berths are Reike's inspection party, or your cell). Let the players win against the paperwork, the commander's rigidity, or the tender schedule, never the guns. If they run, Speed 3 and Handling −1 give a bold pilot honest odds; being *remembered* by the Admiralty is the real cost. This block is mirrored in the session-one NPC file ([session-one.md](../gm/npcs/session-one.md)) so the GM-screen markers resolve — one canonical print; if either copy is ever adjusted, keep the two in sync.
+**Era notes:** Naboo-pattern hulls carry no hyperdrive as printed — the Admiralty ferries them between systems clamped to fleet tenders, which is why one can "drop in" on a beacon relight and why, once on station, it is never leaving until the tender comes back. The NAS prefix is *Naboo Admiralty Ship* — a registry no chart on this side of the dark lists. Maintenance is the one thing the Naboo yards still do perfectly; this is the rare hull in the era with nothing patched. And the class is the message: the Admiralty flies true patrol *sloops* on the Naboo lane for lane work — a corvette is what they send when they intend to be obeyed by a crowd. Her answer to a swarm is arithmetic, not volume of fire: the pinnaces work the inspection queue two hulls at a time, and the gun ladder means she only ever needs one example — which nobody volunteers to be.
+**Using it:** The Steadfast is a wall, not a duel — its turbolasers outrange and outhit anything a wayfinder crew owns, so the scene it creates is procedural: stand to, present manifests, submit to boarding (the pinnaces bring the inspection party to you; the brig ring is where you ride back). Let the players win against the paperwork, the commander's rigidity, or the tender schedule, never the guns. If they run, Speed 3 and Handling −1 give a bold pilot honest odds; being *remembered* by the Admiralty is the real cost. This block is mirrored in the session-one NPC file ([session-one.md](../gm/npcs/session-one.md)) so the GM-screen markers resolve — one canonical print; if either copy is ever adjusted, keep the two in sync.
 
 ---
 
