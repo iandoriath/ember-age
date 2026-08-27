@@ -45,12 +45,12 @@
   {
    "id": "verdanth",
    "name": "Verdanth",
-   "x": 4632.8,
-   "y": 6419.9,
+   "x": 4735.4,
+   "y": 6400.0,
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
-   "hop": 4,
+   "hop": 3,
    "blurb": "Jungle world.",
    "gm": {
     "seed": "The Oracle of Brel (Brel = a settlement moon here?); N'Kata Del Gormo's swamp — the hermit who left the Order at the Reformation lives here (Temple-suppressed rumor player-side; nothing player-visible)",
@@ -58,7 +58,7 @@
     "factions": []
    },
    "grid": "N-17",
-   "la": "below"
+   "la": "above"
   },
   {
    "id": "aplooine",
@@ -68,7 +68,7 @@
    "region": "reach",
    "beacon": true,
    "alwaysLit": false,
-   "hop": 3,
+   "hop": 4,
    "blurb": "Quiet agrarian survivor.",
    "gm": {
     "seed": "The Ration Engine or The Five Systems",
@@ -78,7 +78,7 @@
     ]
    },
    "grid": "N-17",
-   "la": "above"
+   "la": "left"
   },
   {
    "id": "sanrafsix",

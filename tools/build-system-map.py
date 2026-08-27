@@ -223,10 +223,14 @@ def build_network(data: dict) -> None:
     # ---- hero positions: the drawn map governs; the atlas fills in; four campaign
     # worlds are our own and sit in stated relation to real neighbours. Nothing is
     # placed by hand-drawn grid guesses any more.
-    ATLAS_WRONG = {"Heptooine"}  # vendor lists a different Heptooine (B-9, Wild Space)
+    ATLAS_WRONG = {"Heptooine", "Verdanth"}  # Heptooine: vendor lists a different one (B-9, Wild Space).
+    # Verdanth: the vendor dataset contradicts itself — its sub-grid row puts the dot WEST of Aplooine (N-17 0.739 vs
+    # 0.904) while its drawn route order runs Sanrafsix -> Aplooine -> "to Verdanth" (user ruling 2026-08-27, from the
+    # SWGalacticMap render): the route order wins, so Verdanth sits between Aplooine and Aquilaris (relational below).
     RELATIONAL = [
         # (name, anchorA, anchorB, along, perp)  pos = A + along*(B-A) + perp*rot90(B-A)
         ("Heptooine", "Sanrafsix", "Jutrand", 0.5, 0.0),
+        ("Verdanth", "Aplooine", "Aquilaris", 0.5, -0.12),  # hop 3: midway between Aplooine and Aquilaris, a hair north of the line so the Run reads as one WNW leg
         ("Kyrska", "Kalarba", "Glom Tho", 0.5, 0.0),  # user-invented Run stop; snaps onto the drawn Duros Space Run
         ("Fostin Nine", "Syned", "Sanrafsix", 0.5, 0.0),
         ("Veshet", "Syned", "Sanrafsix", 0.5, -0.28),
