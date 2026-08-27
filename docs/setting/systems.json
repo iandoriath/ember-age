@@ -78,7 +78,7 @@
     ]
    },
    "grid": "N-17",
-   "la": "left"
+   "la": "below"
   },
   {
    "id": "sanrafsix",
@@ -735,18 +735,18 @@
   },
   {
    "from": "aquilaris",
-   "to": "aplooine",
-   "kind": "dark",
-   "name": "Duros Space Run"
-  },
-  {
-   "from": "aplooine",
    "to": "verdanth",
    "kind": "dark",
    "name": "Duros Space Run"
   },
   {
    "from": "verdanth",
+   "to": "aplooine",
+   "kind": "dark",
+   "name": "Duros Space Run"
+  },
+  {
+   "from": "aplooine",
    "to": "sanrafsix",
    "kind": "dark",
    "name": "Duros Space Run"
