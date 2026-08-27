@@ -1,0 +1,59 @@
+# Campaign Checkpoint — state of development
+
+*Written 2026-08-27, before a context reset. **Read this first after any reset.** Where a conversation summary, an older doc passage, or a memory disagrees with this page, this page wins — and the "Retired" section is binding: those ideas were considered and rejected; do not re-import them because an old summary mentions them. Update this page at every major ruling.*
+
+## The campaign in one paragraph
+
+**The Ember Age** — FFG Star Wars, 90 years After Ruusan (910 BBY), Legends continuity. A broke crew at Okrent's Drift (Bannistar Station) rides the Lamplighters' relighting of the dead **Duros Space Run** — a coreward-in exploration of a country that went dark; the players are *not* natives of the marooned sector. The campaign's weapon is testimony, not turbolasers (what the crew puts *on the record*); its hidden engine is a two-person Sith line that made the region wither so it could empty the old Sith principalities' vaults of incriminating lore; its lore spine runs to Ruusan — the thought bomb, the sealed souls, the Rule of Two, the name Bane.
+
+## Settled canon (current emphasis)
+
+**Era & theme.** Nobody broke the galaxy — everyone stopped holding it up — with exactly one locked exception: *this region withered because the Sith required time for their searches* (lights helped out under the Ebb's cover, kept out while the vaults were cleared; the relighting order is the emptying order). Naming: the region is "the Duros Run" / "out on the Run" (never "Grumani Reach"; "Grumani sector" = the cluster only); "withered/withering" is banned as a descriptor (use dark/unlit/went dark); the era name "the Withering" is fine; computer intrusion is always "slicing"; "the Naboo lane" = the Enarc Run at the table.
+
+**The party.** Mikrés Kyríes (Chadra-Fan technician — predatory lease, drowning-fear), the Republic Trooper (garrison kept three generations past its suspended charter; the Adjournment Question is on his sheet), the Dathomiri PC (self-taught, *not* a Nightsister; she hears the grinding call clearest).
+
+**Geography.** Chain from Bannistar: Enarc (1, the Anchorage), Aquilaris (2, drowned resort — the physical session), **Verdanth (3, Del Gormo's swamp)**, **Aplooine (4)**, Sanrafsix (5, Memory Market), Heptooine (6), Jutrand (7, ex-Bactranate capital — the catalogue's *wrong* guess), Darkknell (alive; the Dead Gate). Rule: adapt the campaign to the chart, never the reverse — and when the vendored atlas contradicts its own drawn route, **route order wins** (Ian, 2026-08-27). Byllura (dead Dyarchy spur) = the Last Muster's suggested placement; Veshet (off the Sanrafsix Corridor) = Rade's graves. Enarc is a closed Hutt hermit kingdom with a ONE-WAY door: anyone may arrive, no one leaves ("Enarc eats ships"); it is *not* and never was an active trade route.
+
+**The Sith line** (Keepers of the Flame). Darth Veritis (Master, *verity*) and Darth Mendac (apprentice, *mendax*; Screecher's Reach easter egg). Strategy: every true thing about the Sith out of the galaxy and into her hands. The Patronage funds the Lamplighters through a coreward "antiquarian" front; the relighting sequence is the search pattern; the Scrub runs two-phase (ahead of the light, behind it via the whisper network); the Weeding removes obstacles (tell: the night after a guild packet leaves port) and guards the Dead Gate; Hutts are immune to Influence. Vesta-9 was lit by Mendac per plan after taking the position from blind Tama Osk with Influence — nothing the Mother would waste a thought on. The line stays an **absence** through the early acts, broken only by the players via the **Ladder of Sightings** (pattern → hull → face → name; filed rungs cost the line). The hunted object is **the holocron of Lord Kaan** (five chapters: the Brotherhood; the War — the Scrub's own catalogue; the Dissenter, naming Bane; the Weapon — the thought bomb *seals* rather than kills, a lock implies a key; the Seventh Campaign, cut off), kept in the Last Muster's cache, off every catalogue; its Gatekeeper recruits everyone and will never teach the Banite line. **The Last Muster** is Kaan's dead man's switch: fired when the thought bomb cut his thread, it reaches for its master's voice and relays the inside of the bomb instead — a thousand souls grinding at their prison (stone on dry stone). It calls new blood; the Banite line is deaf to it; the Census is quietly Veritis's search for an ear; the Vigil calls it the millstone dream. Dial 2 stands: the Force returns because it returns; neither the Valley nor the switch is the engine.
+
+**The Jedi.** Del Gormo — hermit of Verdanth (hop 3), left at the Reformation, trains young Yoda in 104 AR; unstatted. Seldra Tane — the Temple's envoy, Act 2, sector seat + the children; unstatted. The withdrawn are dead; Rade's graves, the heirloom saber (first ignition in a player's hand), and Rade's rutter remain. The codicil: three Masters in a sealed temple may seat a chapter.
+
+**The Vigil** — rebuilt 2026-08-26 as the war's *grave-keepers*: they buried both armies, hold the un-sanitized war ledger, read the necrology (Jedi and Sith in one column), respect the Force like the sea (never worship it); veneration without practice = the standing peace terms; they know MORE about the war than the crew, not less. The Run's spacers already know them as a weird grave cult ("don't touch what they've taped off"). Their sealed sites are the Scrub's richest victims — **The Unbroken Seal** set piece (vault opened by the full rite, found long-emptied through the stone) is the Scrub reveal and makes the Vigil the Ladder's best archive. Crack: keys or children. **Vhail** = circuit warden reading the necrology; she IS in Session One as the scene's fourth presence (not a standoff corner), at the core before the light; she saw the lighter.
+
+**The Naboo Admiralty** — the fleet that refused demobilization, sailed rimward to Naboo (~20 AR), became a state; revealed only when Vesta-9 lights, arriving from *inside* the dark; nascent-fascism germ; crack = Treaty wing vs Founding cadre (the Founding needs an enemy). Warhulls carry no hyperdrives — a tender-and-barge navy. **NAS *Steadfast* is a corvette** (verified IPV-1 print, class re-titled, declared expeditionary complement: crew forty, two boarding pinnaces); the Admiralty flies true sloops for lane work (Enarc's embassy has one); the corvette's answer to a swarm is one example nobody volunteers to be. No fighters.
+
+**Inheritors** — heretics with real technique; the Sith don't yet know they exist; an observer filed the Vesta-9 census; the culling (the Graduation) shatters them; **The Emptied House** set piece; mole Denno Pike leaks the relighting order (Conclave rigged twice). **Lamplighters** — patron-steered; Zel suspects the registry, not the money. **Kajidics** — Sorulba's Anchorage, the picket log (ghost order: log-and-let-pass, six years). **Skell / the *Overdue*** — the enemy peer: bought Osk's 250-scrip medical debt; at Vesta-9 his lien is the standoff's third corner (tender the 250 and it collapses); his arrival is keyed to the race (default: first, filing; lane fight: limps in behind); at Enarc he sold the crew's biography first.
+
+**Wildlife** — the Feral Run: ninety dark years rewilded the lane; every relight is an eviction; folklore blames ghost traffic on mynock-waves; wildlife is never a villain; silhouette 6+ runs as hazard.
+
+**Mechanics & tools.** Six Questions (Jedi left the Rim / the Valley / who lit Vesta-9 / why the Run stayed dark / what is calling the gifted / the Adjournment) with three-rung truth ladders; fragments are also navigation for the Ruusan road. Trackers: clocks (7 factions), Ladder of Sightings (eighth clock), fragment ledger + payouts, beacon map, **Threads** (knows/holds/debts) with `@@action:thread`. GM screen: cockpit (Run/NPCs/Crew/Trackers/Log/Book), no secrets tab — content lives where used; NPC files split on `### ` (prose cards must use `###`); vehicles shelve to Ships; TRACKDOCS renders tool-doc sections; 79 blocks / 28 pages at checkpoint.
+
+**Modules.** 01 *The Light on Vesta-9* — ten sections; standoff = Skell / Reike / Nerra with Vhail present; four wants at the Record; Handoff flags mirror 02's carry-forward. 02 *The Toll at Enarc* — eight scenes; one-way door; King's Circuit swoop race; the First Relight; prison-break exit.
+
+## Retired — do not resurrect
+
+- The holocron of **Naga Sadow** (replaced by Kaan's, 2026-08-26). The "Flesh for the Departed" chapter went with it.
+- The Vigil as a Jedi-reverent priesthood; Vhail "answering every how with a psalm about doors"; the **psalter** (it is the necrology slate).
+- Removing the Vigil/Vhail from Session One, and "the funeral as the Vigil's debut" (relayed ruling, superseded in person the same day).
+- The *Steadfast* as a "Naboo-pattern Patrol Sloop" (it is a corvette; sloops exist as a separate class).
+- Aplooine hop 3 / Verdanth hop 4 (old order; corrected — Verdanth 3, Aplooine 4).
+- The GM Truths "secrets" tab; truths.md as a sprawling page (it is a one-screen spine card).
+- The *Overdue* "always already clamped to the ring" (arrival is race-keyed).
+- Enarc as an active trade route; the Weighbridge concept; "Grumani Reach"; Greywatch / Blackwatch / Breakwater / Bastion as the Admiralty's name.
+- Beacon-pulse resonance with the gifted ("clumsy device"); Mendac lighting Vesta-9 by accident or Veritis caring about it; Osk's page as a mistaken-identity gift or deus ex machina; Marrow's errand as anything but trivial (jump-knots).
+- Yenna Sar and Coll Bren (cut Jedi); a Nightsister PC; the Question "What ended the Order?".
+- Building stat blocks from scratch (pull-don't-build: verbatim FFG prints, declared adjustments, print outranks the file).
+
+## Open threads (not yet ruled)
+
+- **The Admiralty Navy List** — drafted in chat 2026-08-27 (Sovereign of the Watch; corvettes Steadfast / Resolute / Constant + the lost Assurance; great tenders Patience / Providence; a dozen sloops; hydrographic sloops; no fighters; the fourth keel as an Act 2 clock; First Admiral Maren Voss as Captain-of-the-Watch Voss's ancestor). **Not canonized** — awaiting Ian's word; if approved: player-safe "The List" in factions/admiralty.md, full order in gm/npcs/republic-admiralty.md.
+- Print verification owed: Skell's Mercenary Soldier block; all Feral Run beasts (transcribed, unverified); a bigger-hull option for the Steadfast was offered and not taken.
+- Shelved hooks: the Chagrasi Remnant (survivor polity); printable props (certificate with the blank "Lighting party" line, picket-log page); a per-session player cast card.
+
+## Working conventions
+
+Two sessions share one checkout: this session owns docs/gm, setting prose, factions, campaign, non-map aids; the map session (peer "ember-age-3f") owns the chart tooling and systems.json — map changes are *messaged*, never edited here. Stage by explicit path (never `git add -A`); rebuild the screen before committing content that feeds it; gate commits on VERIFIED greps (remember: gm/tools/*.md is wiki-only unless surfaced via TRACKDOCS, and only PAGES_SPEC pages render). Creative rulings are discussed in chat first and applied once settled; make decisions rather than asking; a Darth name needs an English cognate. Mirror dependency: the Last Muster card in keepers.md ↔ Byllura's GM seed on the chart.
+
+## Where things live
+
+Spine: gm/truths.md · Sith machinery, holocron, Last Muster, Jedi: gm/npcs/keepers.md · Vigil & Inheritors (Unbroken Seal, Emptied House), Vhail: gm/npcs/vigil-inheritors.md, gm/npcs/session-one.md · Admiralty: factions/admiralty.md, gm/npcs/republic-admiralty.md · beasts: gm/npcs/wildlife.md · trackers: gm/tools/{faction-clocks, fragment-tracker, beacon-map, threads}.md · modules: gm/modules/01-*, 02-* · player recap: campaign/session-one.md · chart: docs/setting/systems.json + docs/maps (map session).

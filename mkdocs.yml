@@ -83,6 +83,7 @@ nav:
   - GM:
       - "GM Hub": gm/index.md
       - "GM Truths (Part V)": gm/truths.md
+      - "Campaign Checkpoint": gm/checkpoint.md
       - NPC Library:
           - "Index & Rules Primer": gm/npcs/index.md
           - "Vesta-9 & the Crew's Orbit": gm/npcs/session-one.md
