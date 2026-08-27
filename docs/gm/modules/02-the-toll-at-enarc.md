@@ -105,7 +105,7 @@ Best of three legs wins. Draz rolls three Piloting with a boost (home track); a 
 
 The built-in contradiction, for the players to find: Osk said somebody has been flying the dead Run *for ten years*; the pickets stopped *looking* six years ago. Both are true — the gap is the fact in dispute, and reconciling it (the ghosts didn't stop flying; they stopped being *challenged*, because a weak king did the honest arithmetic about what happens to picket boats that look too closely) is worth a Reconstruction and a very cold feeling at the table.
 
-!!! danger "GM only — Dial 3"
+!!! danger "GM only — the hidden hand"
     The Naboo account is commerce; the ghost order is the shadow of the campaign's hidden actors (see [Keepers of the Flame](../npcs/keepers.md), the doctrine of the open road — the short version: a patron secretly steers the guild's relighting order, and its agents fly the dark Run unseen; the lost picket boat stopped one of *their* hulls once). If the table has opened the Question *Why did the Run stay dark?*, this log bears on it as naturally as on Vesta-9 — let it count toward either. If the players conflate the two and close the case as "the Admiralty all along," let them — the fuel account's honest arithmetic is sitting right there, waiting to reopen it.
 
 ## Scene 4 — The First Relight
@@ -227,7 +227,7 @@ Every outcome below also answers the quieter question every guest in the kingdom
 
 **What she asks.** She cannot file her audit — Enarc has no outbound post but the pickets, and the pickets search grey veils twice. She asks the crew to carry it out: a sealed slate for the Vigil chapter at the next warden's station up the Run. In it: her observation that the treasury's *outer* seal — the Vigil's, eighty years old — is intact, and that the palace nonetheless took delivery of crates *from* the vault, six years ago, on festival nights, when the noise covered the work.
 
-**GM truth (Dial 3).** That vault is why the ghost order exists. The Scrub visited it through the stone, the way it visits everything — and the court, which noticed, took a bribe to look away and then ordered the pickets to stop hailing what they could not afford to see. The warden has, without knowing it, dated the Scrub's visit to Enarc and tied it to the picket log's six-year silence. Her slate is **rung-one Ladder material** — the pattern, filed — and a Civic fragment on *Why did the Run stay dark?* if the crew reads it.
+**GM truth — the hidden hand.** That vault is why the ghost order exists. The Scrub visited it through the stone, the way it visits everything — and the court, which noticed, took a bribe to look away and then ordered the pickets to stop hailing what they could not afford to see. The warden has, without knowing it, dated the Scrub's visit to Enarc and tied it to the picket log's six-year silence. Her slate is **rung-one Ladder material** — the pattern, filed — and a Civic fragment on *Why did the Run stay dark?* if the crew reads it.
 
 **Choice:** carry it (a Vigil favor, and the grave cult the spacers laugh at turns out to hold the kingdom's real secret), sell it to Nerra (the guild would like to know what is under the palace), or open it and read. **Aftermath:** the Unbroken Seal is foreshadowed at hop 1; when the crew stands in a Vigil vault later and finds dust outlines, they have already held the paper that predicted it.
 

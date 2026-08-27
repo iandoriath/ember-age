@@ -8,7 +8,7 @@ One boundary keeps it clean: **objects that are lore fragments live in the [Frag
 
 | Who | Knows | Since | Notes |
 |---|---|---|---|
-| Tama Osk | Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said) | pre-S1 | Dial 3 bedside; pays off when the crew has a silhouette to match |
+| Tama Osk | Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said) | pre-S1 | The Sith bedside; pays off when the crew has a silhouette to match |
 | The patron's desk | "The one pilot who won't sell" — the registry forwarded Osk's name coreward years ago | pre-S1 | How the line found her |
 | Sorulba's court | The ghost order: pickets log-and-let-pass the dark-lane traffic, six years standing | pre-S1 | Module 02 scene 3 — the picket log |
 

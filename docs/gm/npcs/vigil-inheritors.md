@@ -2,7 +2,7 @@
 
 Two orders answer the Awakening, and both were founded on graves. The Vigil holds the sealed temples and the relics of the old Orders under a doctrine of veneration-without-practice — the standing peace terms with a bereaved galaxy — even as its founding generation dies and its certainty hardens. The Inheritors, heirs of the Brotherhood's quartermasters and camp-followers, spent three generations hoarding Sith lore, and now arrive first — warm, helpful, and taking notes — on the doorsteps of frightened Force-sensitive families.
 
-**GM file — spoilers for Dial 3, the Unveiling, and the Conclave of Charts. Do not share with players.**
+**GM file — spoilers for the hidden hand behind the relighting, the Unveiling, and the Conclave of Charts. Do not share with players.**
 
 ---
 
@@ -109,7 +109,7 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 - **Equipment:** Pre-Ruusan arc-render, a Brotherhood quartermaster's heirloom (printed: disruptor pistol — Ranged [Light]; Damage 10; Critical 2; Range [Short]; Vicious 4), sleeve pistol (printed: holdout blaster — Ranged [Light]; Damage 5; Critical 4; Range [Short]; Stun setting), tailored travel-coat (armored clothing; +1 soak, +1 defense).
 
 **Chassis:** Loan Shark, Edge of the Empire Core Rulebook (adjustments: none).
-**Using her:** The loan-shark chassis is the point: Meru's kindness is a ledger, and every rescue, tuition stipend, and quietly-settled debt is principal accruing. She arrives before every other faction because the Lore-Clerks' files tell her where to be — she made first contact with the crew's world within weeks of Vesta-9 (Dial 3). Never play her as false: her warmth is real, her help is real, and her loyalty to the network is realer still, which is what makes exposing her feel like a betrayal the players committed. In violence she is a last-resort shot from an heirloom that should not exist and then gone; her real weapon is that half the NPCs the party loves owe her.
+**Using her:** The loan-shark chassis is the point: Meru's kindness is a ledger, and every rescue, tuition stipend, and quietly-settled debt is principal accruing. She arrives before every other faction because the Lore-Clerks' files tell her where to be — she made first contact with the crew's world within weeks of Vesta-9. Never play her as false: her warmth is real, her help is real, and her loyalty to the network is realer still, which is what makes exposing her feel like a betrayal the players committed. In violence she is a last-resort shot from an heirloom that should not exist and then gone; her real weapon is that half the NPCs the party loves owe her.
 
 ### Inheritor Adept
 *Rival — The Inheritors — artifact-trained Force cultist*
@@ -147,7 +147,7 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 - **Equipment:** Grave-pulled saber relic — a functional pre-Ruusan lightsaber recovered by the dig-cells (basic lightsaber; Lightsaber; Damage 6; Critical 2; Range [Engaged]; Breach 1, Sunder), black cadre robes (+1 soak).
 
 **Chassis:** Fallen Apprentice, Force and Destiny Core Rulebook (reprinted in Allies and Adversaries) (adjustments: none).
-**Using them:** Deploy in pairs, always — the pair is the costume, because everyone alive has heard the rumor that the Sith came in twos. Run each as a full Rival: two blades, mirrored forms, WT 14 apiece, and Adversary 1 each; that is a serious Act 2 duel for a mid-XP party without approaching Inquisitor-grade power, exactly as intended. The Unveiling is a performance with a body count, and the audience that matters most is the one nobody knows is watching (Dial 1): the night the cadre debuts is the night the true line learns the Inheritors exist. Open Force use before a crowd triggers the witness rule galaxy-wide — that is not a side effect, it is the Inheritors' entire strategy.
+**Using them:** Deploy in pairs, always — the pair is the costume, because everyone alive has heard the rumor that the Sith came in twos. Run each as a full Rival: two blades, mirrored forms, WT 14 apiece, and Adversary 1 each; that is a serious Act 2 duel for a mid-XP party without approaching Inquisitor-grade power, exactly as intended. The Unveiling is a performance with a body count, and the audience that matters most is the one nobody knows is watching — the true Sith line: the night the cadre debuts is the night the true line learns the Inheritors exist. Open Force use before a crowd triggers the witness rule galaxy-wide — that is not a side effect, it is the Inheritors' entire strategy.
 
 ### Inheritor Lore-Clerks
 *Minion — The Inheritors — archivist cell of couriers, copyists, and observers*
@@ -165,7 +165,7 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 
 **Chassis:** Spaceport Urchin, Edge of the Empire Core Rulebook (adjustments: none).
 **Group math:** Typically deployed in threes: group Wounds 9 (3 × WT 3), group skills at 2 ranks (e.g., Stealth 2, Streetwise 2); one clerk is incapacitated each time total damage passes a multiple of 3. A lone observer is a single minion: Wounds 3, no skill ranks.
-**Using them:** Lore-Clerks never fight — WT 3 and nothing deadlier than a pocketful of thrown scrap is the design, not an oversight. Their job is to see, copy, and carry: one of them stood in the certification crowd at Vesta-9, and the crew — what they testified, and what they were seen carrying — have been in the files ever since (Dial 3). Play them as texture the party learns to notice too late — the copyist at the archive, the runner at the swoop track — and as the campaign's paper trail: captured dead-drops are lore fragments with the Sith tag and somebody's handwriting. When the culling comes, surviving clerks scatter with dangerous knowledge and no protector, and every one of them is a hook.
+**Using them:** Lore-Clerks never fight — WT 3 and nothing deadlier than a pocketful of thrown scrap is the design, not an oversight. Their job is to see, copy, and carry: one of them stood in the certification crowd at Vesta-9, and the crew — what they testified, and what they were seen carrying — have been in the files ever since. Play them as texture the party learns to notice too late — the copyist at the archive, the runner at the swoop track — and as the campaign's paper trail: captured dead-drops are lore fragments with the Sith tag and somebody's handwriting. When the culling comes, surviving clerks scatter with dangerous knowledge and no protector, and every one of them is a hook.
 
 ### Chartkeeper Denno Pike
 *Rival — The Inheritors — mole inside the Lamplighters*
@@ -184,7 +184,7 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 - **Equipment:** Guild-issue suppression pistol (printed: stun blaster — Ranged [Light]; Damage 6; Critical —; Range [Short]; Stun Damage), chartkeeper's splice-kit (slicing gear).
 
 **Chassis:** Slicer, Edge of the Empire Core Rulebook (reprinted in Age of Rebellion Core Rulebook and Allies and Adversaries) (adjustments: none).
-**Using him:** Denno is how the Inheritors follow the relights and why the Conclave of Charts is rigged from the second direction: guild handshake codes and the patron's relighting order are his product, and Meru Vane holds his debts. He has no idea the order he is selling was bought first by someone far worse than his buyers (Dial 3). He is not a villain, he is a man in a hole — nervous, over-leveraged, and visibly relieved the first time anyone offers him a way out that isn't a deeper hole. His stun-only sidearm is the tell: he has never once planned to hurt anybody. Redeeming him hands the party the proof that exposes the auction; cornering him hands the Inheritors a martyr and burns the evidence — let the players discover which they did.
+**Using him:** Denno is how the Inheritors follow the relights and why the Conclave of Charts is rigged from the second direction: guild handshake codes and the patron's relighting order are his product, and Meru Vane holds his debts. He has no idea the order he is selling was bought first by someone far worse than his buyers. He is not a villain, he is a man in a hole — nervous, over-leveraged, and visibly relieved the first time anyone offers him a way out that isn't a deeper hole. His stun-only sidearm is the tell: he has never once planned to hurt anybody. Redeeming him hands the party the proof that exposes the auction; cornering him hands the Inheritors a martyr and burns the evidence — let the players discover which they did.
 
 ### The culling — how the Inheritors end
 
@@ -202,7 +202,7 @@ Two aftershocks matter:
 
 > One night, one base, nobody alive, and the relic hall still full.
 
-Use an Inheritor base the crew has already visited with courtesy — first contact is always helpful (Dial 3) — so that coming back is the point: the dig camp at the Scar, a Sanrafsix warehouse, a cell on the Veshet spur. They find it taken apart. Everyone is dead and it happened in one night. There are no blaster scorings and no cauterized wounds. The bodies that must never be identified are not there at all (the disruptor); the rest died of falls, of fire, and of each other (Influence). The archive rooms are bare — not burned, *emptied*: dust outlines where shelves stood. And the relic hall is untouched. Every "Sith artifact" the Inheritors ever displayed is still on its plinth.
+Use an Inheritor base the crew has already visited with courtesy — first contact is always helpful — it always is — so that coming back is the point: the dig camp at the Scar, a Sanrafsix warehouse, a cell on the Veshet spur. They find it taken apart. Everyone is dead and it happened in one night. There are no blaster scorings and no cauterized wounds. The bodies that must never be identified are not there at all (the disruptor); the rest died of falls, of fire, and of each other (Influence). The archive rooms are bare — not burned, *emptied*: dust outlines where shelves stood. And the relic hall is untouched. Every "Sith artifact" the Inheritors ever displayed is still on its plinth.
 
 **The truth.** Mendac took every genuine item and left every counterfeit, because Veritis's eye is the one thing in the galaxy that can tell them apart — and because a room full of fakes tells the galaxy this was robbery by people who did not know what they were looking at. That is the Scrub's whole doctrine in one room: the galaxy is not to be left ignorant of the Sith, it is to be left *wrong*. Nobody sane concludes "Sith." The fakes are also a message, for the one reader in ten thousand who can tell.
 

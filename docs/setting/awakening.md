@@ -2,6 +2,8 @@
 
 *The Force is coming back. Nobody knows why. The Temple thinks it is ready.*
 
+*(GM: there is a why, and it is the campaign's second locked truth — the thousand souls sealed at Ruusan are a vergence that has been pulling the Force toward itself for ninety years; the Ebb was it feeding and the Awakening is it leaking. Nobody in the galaxy knows. See [GM Truths](../gm/truths.md).)*
+
 For a generation almost no one was born with the gift; for the last twenty years the births have been rising, and no one knows why. The signs are consistent:
 
 - **True dreams.**
@@ -29,7 +31,7 @@ And the Temple has no rule for an adult. A twenty-year-old who dreams true is, b
 | [The Kajidics](../factions/kajidics.md) | Merchandise |
 | [The Mandalorian Clans](../factions/mandalorians.md) | Nothing — they simply adopt them. A foundling who bends luck is just a promising warrior |
 
-*(GM: there is a fourth count, and it is the oldest — see Dial 1.)*
+*(GM: there is a fourth count, and it is the oldest — the true Sith line's Census, in Keepers of the Flame.)*
 
 ## The question under the question
 

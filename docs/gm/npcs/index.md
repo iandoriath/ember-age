@@ -72,6 +72,6 @@
 | The Patient Apprentice | Nemesis | the true Sith line | [Keepers of the Flame](keepers.md) 🔒 |
 | The Scar's Echo | Hazard | the dark side, pooled | [Keepers of the Flame](keepers.md) 🔒 |
 
-🔒 = spoiler-critical even within the GM section: these existences are Dial 1 material.
+🔒 = spoiler-critical even within the GM section: these existences are the campaign's locked Sith truth.
 
 *Ship stat blocks live in [Ships of the Ember Age](../../mechanics/ships.md) (shareable — ship stats aren't spoilers).*

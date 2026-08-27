@@ -352,7 +352,7 @@ SEED = {
         {"faction": "Republic", "crack": "Recovered by adjourning the Rim; wants it back on its terms", "value": 0, "notes": ""},
         {"faction": "Admiralty", "crack": "Treaty wing vs the Founding cadre — and the Founding needs an enemy → the Annexation", "value": 0, "notes": ""},
         {"faction": "Vigil", "crack": "Sacrilege vs. Order-reborn — custody of the Awakened → the Vigil breaks", "value": 0, "notes": ""},
-        {"faction": "Inheritors", "crack": "Nobody knows whose hand is at the top → the Unveiling", "value": 0, "notes": "Hold the Vesta-9 file on the crew — and its gifted (Dial 3)."},
+        {"faction": "Inheritors", "crack": "Nobody knows whose hand is at the top → the Unveiling", "value": 0, "notes": "Hold the Vesta-9 file on the crew — and its gifted."},
         {"faction": "Lamplighters", "crack": "The relighting order is for sale → Conclave of Charts (rigged: Denno Pike)", "value": 0, "notes": ""},
         {"faction": "Kajidics", "crack": "The young Hutts have run the numbers → clan war", "value": 0, "notes": ""},
         {"faction": "The Awakening", "crack": "Every public display raises the temperature → it goes public", "value": 0, "notes": ""},
@@ -360,11 +360,11 @@ SEED = {
     "beacons": [
         {"name": "Vesta-9", "status": "lit", "corridor": "the Run past Vesta-9 (toward Enarc)",
          "certified": "Chartmistress Bel Nerra (Lamplighters)", "fee": "pending session one",
-         "followed": "Vigil, Admiralty, Lamplighters, the Overdue — and one Inheritor observer (Dial 3)"},
+         "followed": "Vigil, Admiralty, Lamplighters, the Overdue — and one Inheritor observer"},
     ],
     "fragments": [],
     "knows": [
-        {"who": "Tama Osk", "what": "Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said)", "since": "pre-S1", "notes": "Dial 3 bedside; pays off when the crew has a silhouette to match"},
+        {"who": "Tama Osk", "what": "Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said)", "since": "pre-S1", "notes": "The Sith bedside; pays off when the crew has a silhouette to match"},
         {"who": "The patron's desk", "what": "“The one pilot who won't sell” — the registry forwarded Osk's name coreward years ago", "since": "pre-S1", "notes": "How the line found her"},
         {"who": "Sorulba's court", "what": "The ghost order: pickets log-and-let-pass the dark-lane traffic, six years standing", "since": "pre-S1", "notes": "Module 02 scene 3 — the picket log"},
     ],

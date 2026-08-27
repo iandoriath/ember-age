@@ -29,7 +29,7 @@ No villain kills the HoloNet; appropriations committees do. Relay maintenance la
 
 ## 45–75 AR — The Drift and the Ebb
 
-The last adjourned delegations stop sending even observers to a Senate whose sessions cost more to reach than they are worth. Meanwhile Force-sensitive births thin to almost nothing — **the Ebb** — and in the Core the Temple *notices*, because the Temple counts: its search returns fewer children each year, and the Order hardens its rule in response, taking every gifted child it can find, younger each decade. In the Rim, no one is counting. The few children born with the gift are hidden by their own families, because the surest way to lose a child is to let the neighbors hear the word *Jedi*. The withdrawn lineages starve for pupils, and one by one they snap — the last of them ends quietly, unremarked, a generation before anyone knows the Force is coming back.
+The last adjourned delegations stop sending even observers to a Senate whose sessions cost more to reach than they are worth. Meanwhile Force-sensitive births thin to almost nothing — **the Ebb** — no one can say why, and every tradition has a theology for it; and in the Core the Temple *notices*, because the Temple counts: its search returns fewer children each year, and the Order hardens its rule in response, taking every gifted child it can find, younger each decade. In the Rim, no one is counting. The few children born with the gift are hidden by their own families, because the surest way to lose a child is to let the neighbors hear the word *Jedi*. The withdrawn lineages starve for pupils, and one by one they snap — the last of them ends quietly, unremarked, a generation before anyone knows the Force is coming back.
 
 ## 75–90 AR — The Dimming and the Awakening
 

@@ -12,11 +12,11 @@ And hanging over the whole chamber is a codicil almost nobody remembers: **three
 
 Getting there is its own act: up the [whole Hydian Way](../setting/geography.md) coreward to Brentaal, out the Perlemian to Lantillies, down the Randon Run past Kashyyyk — and then off every chart that survives, into the Teraab stellar nursery, where the nebulae have been quietly erasing the last lanes to Ruusan since the war ended. The crew that relit the Rim's beacons ends the campaign navigating a road the sky itself is closing.
 
-Whoever brings the new Force-sensitives here defines what the Force's return means. On the table:
+Whoever brings the new Force-sensitives here decides what the Force's return *means* — because the Valley is not a monument, it is a knot: a thousand bound souls have been pulling the Force toward themselves for a century, and every option below changes what the Force is for the next thousand years. On the table:
 
-- **Release** the thousand bound souls.
-- **Draw** on them.
-- **Seal** the Valley for another age.
+- **Release** the thousand bound souls — and let the Force flood back into a galaxy with no Order ready to meet it.
+- **Draw** on them — an engine, for an empire or a republic.
+- **Seal** the Valley for another age — another Ebb, and a peace bought with the dead.
 - **Or ask the souls what they want.**
 
 ## The true ending
