@@ -28,7 +28,7 @@
 
 **Mechanics & tools.** Six Questions (Jedi left the Rim / the Valley / who lit Vesta-9 / why the Run stayed dark / what is calling the gifted / the Adjournment) with three-rung truth ladders; fragments are also navigation for the Ruusan road. Trackers: clocks (7 factions), Ladder of Sightings (eighth clock), fragment ledger + payouts, beacon map, **Threads** (knows/holds/debts) with `@@action:thread`. GM screen: cockpit (Run/NPCs/Crew/Trackers/Log/Book), no secrets tab — content lives where used; NPC files split on `### ` (prose cards must use `###`); vehicles shelve to Ships; TRACKDOCS renders tool-doc sections; 79 blocks / 28 pages at checkpoint.
 
-**Modules.** 01 *The Light on Vesta-9* — ten sections; standoff = Skell / Reike / Nerra with Vhail present; four wants at the Record; Handoff flags mirror 02's carry-forward. 02 *The Toll at Enarc* — eight scenes; one-way door; King's Circuit swoop race; the First Relight; prison-break exit.
+**Modules.** 01 *The Light on Vesta-9* — ten sections; standoff = Skell / Reike / Nerra with Vhail present; four wants at the Record; Handoff flags mirror 02's carry-forward. 02 *The Toll at Enarc* — nine sections; one-way door; King's Circuit swoop race; the First Relight; prison-break exit; **Wrinkles & side quests** (canon core four, 2026-08-27: the Exit Pit, the Debt Auction — Mikrés's lease on the block, Jeeda bidding; the Stranded Warden — the palace treasury vault is why the ghost order exists, rung-one Ladder material; Service Is Citizenship — the Admiralty recruits the stranded, a commission offered to the Trooper; drop-ins: Third-Week Captains, the Bowser, the Long Wait; reserved for the return: Jeeda's Numbers).
 
 ## Retired — do not resurrect
 

@@ -169,6 +169,72 @@ Every outcome below also answers the quieter question every guest in the kingdom
 2. **The dark approaches** — the junction's unlit far sky, where the ghosts fly: **Average Perception or Astrogation** to thread the dead buoys. Despair: running lights snap on off the port bow — a hull that was never asleep, watching, not firing — and the last leg is flown in its shadow.
 3. **The jump** — calculating out under pursuit: **Hard Astrogation** (Osk's margins boost). The pickets break off at the shoal's edge: the kingdom does not chase into the dark it fears. If @@npc:The Overdue, debt-bought Ghtroc 720@@ is at Enarc, Skell picks whichever side of the chase pays better, and makes sure the crew sees him choose.
 
+## Wrinkles & side quests
+
+*Enarc is a kingdom nobody leaves, run by a weak king with Hutt appetites, sitting on the only door in the sector — which makes it the campaign's best side-quest ground. Four core wrinkles below are canon; each hits a PC or the campaign's spine and can run tonight or on the return visit the First Relight guarantees. Three drop-ins follow for texture, and one is reserved for the return. Log every change of custody or knowledge in Threads — Enarc is where the crew learns the ledger cuts both ways.*
+
+### The Exit Pit
+
+**The custom.** @@npc:Sorulba the Anchor@@ keeps a menagerie under the festival galleries, and the court's cruelest custom lives there: a petitioner denied an exit visa may *fight for one* in the pit. Nobody has won in eleven years, which is the point — the pit is how the king says no with entertainment attached. The beast is a feral @@npc:Nexu@@ (or two, for a party — heat sight beats the pit's darkness, which the court keeps dark on purpose); the galleries are full; the king watches through Vopp and never speaks.
+
+**How it reaches the crew.** A stranded captain from the guest docks — pick one the crew has met, third week, counting days — draws the pit rather than the wait, and asks the crew to stand with her: the custom allows a *party* of petitioners, and the visa is shared. Or it reaches them directly: if the Way Out goes wrong (the dark choice, a refused walk-away), the pit is the crew's third exit — the one the king cannot refuse, because the custom is older than he is.
+
+**Running it.** Two or three rounds of real combat, then the court's verdict — surviving is not winning; the king's *thumb* is. Advantage spent in the pit buys the galleries (the crowd's roar is the one thing Sorulba fears), and a Triumph gives the crew the pit's real prize: the beast *spared*, a gifted PC calming it in front of a thousand witnesses — the witness rule firing like a struck bell, and a Hutt court that has just seen the Force for the first time in a century.
+
+**Choice:** enter the pit for a stranger, for yourselves, or refuse it and find another way. **Aftermath:** a visa won in the pit is *unconditional* and the court remembers who won it.
+
+@@action:thread {"ledger":"debts","who":"A stranded captain (name her)","whom":"The crew","what":"Her life and her exit visa — the pit, stood together","status":"open"}@@
+
+### The Debt Auction
+
+**The custom.** Festival night's second spectacle: the king auctions the *debts* of the stranded — Hutt debt-bondage with paperwork. Ledger-law as theatre: a captain's arrears, a mechanic's medical bill, an apprentice's articles, read aloud by Vopp and sold to the galleries. The buyer owns the debtor's labor until paid, and nobody stranded ever pays.
+
+**The wrinkle.** Halfway through the lots, Vopp reads a lease. **Mikrés's** — the predatory lease from the Drift, sold up the chain to the Anchorage the way all paper on the Run eventually sells, and **@@npc:Jeeda the Younger@@ is bidding.** She is not cruel about it; she is *precise*: a Chadra-Fan technician who can relight beacons is the most valuable labor in the kingdom, and she has run the numbers.
+
+**Running it.** The bidding is a scene, not a roll — the crew can outbid (they may not have it), interpose paper (Nerra's witness charter, if they hold it, makes a certified crew's articles *guild-protected* — a Hard Negotiation to make the court honor it), or make the king an offer for the whole lot. If Jeeda wins, she does not enslave Mikrés; she *hires* him, generously, with a clause: he does not leave Enarc until the beacon is lit and the young Hutts hold the door. Skell's lien precedent, if the crew co-signed it at Vesta-9, is cited by Vopp from the bench — their own signature, read back to them.
+
+**Choice:** buy a stranger's freedom with the money they need for their own, or watch a friend's paper go to a Hutt who means to keep him. **Aftermath:** whoever holds the lease after tonight is a face Mikrés's Wealth pursuit now has.
+
+@@action:thread {"ledger":"holds","item":"Mikrés's predatory lease","holder":"(who won the auction — Jeeda, the crew, or the king)","since":"S2","notes":"Sold up the chain from the Drift; read aloud at the Debt Auction"}@@
+
+### The Stranded Warden
+
+**The wrinkle.** In the guest docks there is a grey veil who has been inside for *four years*. A circuit warden — statted as one of the @@npc:Vigil Wardens@@ if it matters — she came to check the seal on the old principality vault under the palace, which the king now uses as his treasury. The door swings one way for her too. She has never been allowed near the vault, and she has never stopped asking.
+
+**What she asks.** She cannot file her audit — Enarc has no outbound post but the pickets, and the pickets search grey veils twice. She asks the crew to carry it out: a sealed slate for the Vigil chapter at the next warden's station up the Run. In it: her observation that the treasury's *outer* seal — the Vigil's, eighty years old — is intact, and that the palace nonetheless took delivery of crates *from* the vault, six years ago, on festival nights, when the noise covered the work.
+
+**GM truth (Dial 3).** That vault is why the ghost order exists. The Scrub visited it through the stone, the way it visits everything — and the court, which noticed, took a bribe to look away and then ordered the pickets to stop hailing what they could not afford to see. The warden has, without knowing it, dated the Scrub's visit to Enarc and tied it to the picket log's six-year silence. Her slate is **rung-one Ladder material** — the pattern, filed — and a Civic fragment on *Why did the Run stay dark?* if the crew reads it.
+
+**Choice:** carry it (a Vigil favor, and the grave cult the spacers laugh at turns out to hold the kingdom's real secret), sell it to Nerra (the guild would like to know what is under the palace), or open it and read. **Aftermath:** the Unbroken Seal is foreshadowed at hop 1; when the crew stands in a Vigil vault later and finds dust outlines, they have already held the paper that predicted it.
+
+@@action:fragment {"name":"The stranded warden's audit slate","form":"sealed Vigil audit","tag":"Civic","question":"Why did the Run stay dark?","claim":"the treasury's seal is intact, and crates still came out of it — on festival nights, six years ago","holder":"crew","status":"trusted"}@@
+
+@@action:thread {"ledger":"knows","who":"The Vigil (once the slate is delivered)","what":"The Anchorage's treasury vault was worked through the stone, six years ago, with the court's paid silence","since":"S2","notes":"Rung-one Ladder material if filed; the warden is still inside"}@@
+
+### Service Is Citizenship
+
+**The wrinkle.** Lieutenant Kollen's @@npc:Admiralty Marines@@ drill on the embassy pad in public view for a reason the crew can work out: the Admiralty *recruits the stranded*. Enlist, and the embassy's treaty exemption carries you out the door — the only legal exit from the Anchorage is a uniform. The Founding cadre has quietly filled two boats this year with people who would have signed anything.
+
+**How it reaches the crew.** Twice. First through an NPC — the stranded captain from the pit, the mechanic whose debt sold last night — who asks the crew whether they should *take it*, because it is a real way out and it costs only everything after. Second, and personally, the offer lands on **the Republic Trooper**: Kollen, correct to the last button, offers him a commission — the Admiralty's writ as his exit visa, from the navy that believes it inherited his oath. *"The writ passed to those who kept it, Trooper. You kept it. Come and be paid for it."*
+
+**Running it.** Not a roll — a conversation, ideally overheard by the crew's gifted, because the marines' census-curiosity about the Awakened is part of the recruiting pitch. If the Trooper refuses, Kollen salutes; the offer is never withdrawn, and it will be repeated up the Run at every relit beacon, a little warmer each time. If any NPC the crew cares about enlists, they leave Enarc in a uniform on the next tender — and the crew meets them again, later, on the other side of an inspection.
+
+**Choice:** get someone out through the one door that is open, knowing what walks through it. **Aftermath:** the nascent empire recruiting through the only exit is the Admiralty's real mechanism, shown once, small, at hop 1.
+
+@@action:clock {"faction":"Admiralty","delta":1,"note":"The Founding cadre recruits the stranded at Enarc — the treaty exemption is the exit visa; the crew saw the machinery"}@@
+
+### Drop-ins
+
+- **The Third-Week Captains.** The guest docks are a shadow society of the stranded, counting days, with a lottery for exit petitions and a forgery trade in visa seals — and they need a *mail run*: a bag of letters out past the pickets, one of which names a Naboo account. Carry it (a smuggling check at the exit picket with other people's hopes aboard; every letter delivered is a favor logged in Threads) or sell the manifest to Vopp.
+- **The Bowser.** The embassy's plasma bowser is the kingdom's only fuel: Breck wants to sell it low, Kollen wants to withhold it until the court folds — and @@npc:Skell's crew@@ is *siphoning* it at night. A night op in the fuel yard; expose Skell to Breck for an Admiralty favor, or catch him and hold it over the lien.
+- **The Long Wait.** A derelict in the dead docks: a freighter whose captain died in his third year of waiting. Something roosts in it now (@@npc:Nexu@@, heat sight in the dark). His log is a fragment — *"the ghosts come on festival nights; the noise covers them"* (Civic, *Why did the Run stay dark?*) — and his will names whoever brings his body out. Ten minutes of derelict crawl, and a lesson about what Enarc does to people.
+
+### Reserved for the return visit — Jeeda's Numbers
+
+@@npc:Jeeda the Younger@@ wants the door open and the old king embarrassed. When the crew comes back with a certified corridor behind them, she offers the picket log's *second* page — who paid the court to stop hailing the ghosts — in exchange for helping rig the King's Circuit against Draz and handing her the festival. Backing her is backing the palace coup in waiting, and "the young Hutts have run the numbers" ends in clan war one bad season away. Let it breathe: the coup should be a session, not a scene.
+
+@@action:clock {"faction":"Kajidics","delta":1,"note":"Jeeda's coup in waiting — the crew helped rig the Circuit; the young Hutts have the festival"}@@
+
 ## The Out
 
 **The fork — let the players choose the direction.** Three lanes meet at Enarc, and for the first time the campaign asks which way:
