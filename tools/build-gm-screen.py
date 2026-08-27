@@ -27,6 +27,22 @@ CHARACTERS = ROOT / "docs/setting/characters.json"
 
 MD = markdown.Markdown(extensions=["tables"])
 
+_TABLE_RE = re.compile(r"<table>(.*?)</table>", re.S)
+
+
+def wrap_tables(html: str) -> str:
+    """Wrap every table in a scroll container; mark prose-heavy tables (4+ columns of long cells)
+    `wide` so phones scroll them sideways at a readable width instead of squeezing the cells."""
+    def one(m):
+        inner = m.group(1)
+        rows = re.findall(r"<tr>(.*?)</tr>", inner, re.S)
+        cols = len(re.findall(r"<t[hd]\b", rows[0])) if rows else 0
+        cells = [re.sub(r"<[^>]+>", "", c) for r in rows[1:3] for c in re.findall(r"<td[^>]*>(.*?)</td>", r, re.S)]
+        longest = max((len(c.strip()) for c in cells), default=0)
+        wide = (cols >= 4 and longest > 60) or (cols >= 3 and longest > 110)
+        return '<div class="tw"><table%s>%s</table></div>' % (' class="wide"' if wide else "", inner)
+    return _TABLE_RE.sub(one, html)
+
 ADM_RE = re.compile(r'^!!!\s+(\w+)(?:\s+"([^"]*)")?\s*$')
 
 
@@ -48,7 +64,7 @@ def preprocess_admonitions(text: str) -> str:
             body.append(lines[i][4:] if lines[i].startswith("    ") else "")
             i += 1
         MD.reset()
-        body_html = MD.convert("\n".join(body))
+        body_html = wrap_tables(MD.convert("\n".join(body)))
         out.append("")
         out.append(f'<div class="adm adm-{kind}">'
                    + (f'<p class="adm-title">{title}</p>' if title else "")
@@ -121,7 +137,7 @@ def resolve_links(html: str, src_rel_dir: str) -> str:
 
 def render(md_text: str, src_rel_dir: str) -> str:
     MD.reset()
-    html = MD.convert(preprocess_admonitions(md_text))
+    html = wrap_tables(MD.convert(preprocess_admonitions(md_text)))
     return resolve_links(html, src_rel_dir)
 
 
@@ -322,6 +338,7 @@ PAGES_SPEC = [
 ]
 
 SEED = {
+    "ui": {"fs": 1},   # text-size scale chosen with the header's Aa button (1 / 1.15 / 1.3)
     "questions": [
         "Why did the Jedi leave the Rim?",
         "What is the Valley?",
