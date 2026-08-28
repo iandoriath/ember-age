@@ -120,6 +120,8 @@ NAV_MAP = {
     "gm/tools/faction-clocks.md": "tab:trackers",
     "gm/tools/threads.md": "tab:trackers",
     "gm/modules/01-the-light-on-vesta-9.md": "tab:run",
+    "gm/modules/02-the-toll-at-enarc.md": "tab:run",
+    "gm/modules/03-the-drowned-resort.md": "tab:run",
 }
 
 LINK_RE = re.compile(r'<a href="([^"]*\.md)(?:#[^"]*)?"[^>]*>(.*?)</a>', re.S)
@@ -227,6 +229,7 @@ def parse_npcs():
 MODULE_FILES = [
     ("01", "gm/modules/01-the-light-on-vesta-9.md"),
     ("02", "gm/modules/02-the-toll-at-enarc.md"),
+    ("03", "gm/modules/03-the-drowned-resort.md"),
 ]
 
 CLOCK_FACTIONS = {"Republic", "Admiralty", "Vigil", "Inheritors",

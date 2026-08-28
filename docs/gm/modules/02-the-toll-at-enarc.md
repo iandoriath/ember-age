@@ -278,4 +278,6 @@ Every outcome below also answers the quieter question every guest in the kingdom
 
 **XP:** 15–20; **+5** for a resolution that used ledgers, paper, or testimony where blasters would have been easier.
 
+**Handoff to session three:** [Module 03 — The Drowned Resort](03-the-drowned-resort.md) reads its carry-forward from what happened here — which Hutt won, whose clauses rode the paper, whether the stranded went free, what Skell holds, and what the crew carried out of the kingdom. Mark those before the table stands up.
+
 **The closing image**, in your own words: the junction lit or dark by the crew's own hand — and in the palace's oldest hall, under forty years of festival banners, Vopp chalks tonight's entry in the court record the way the kingdom has always kept history. A hull. A name. A price. Whatever the galaxy decides Enarc was worth, the court already wrote it down.
