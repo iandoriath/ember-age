@@ -486,9 +486,10 @@ document.addEventListener("input", e=>{ if(e.target.id==="qs-in") qsRender(e.tar
 document.addEventListener("click", e=>{ if(e.target.id==="qs") qsClose(); });
 
 function markDoneActions(mid){
-  const rs = runState(mid);
-  document.querySelectorAll("#tab-run .runact").forEach(d=>{
-    if(rs.actions[d.dataset.aid]){
+  const rs = runState(mid), lib = runState("npc");
+  document.querySelectorAll("#tab-run .runact, #tab-npcs .runact").forEach(d=>{
+    const done = d.dataset.aid.startsWith("npc-") ? lib.actions[d.dataset.aid] : rs.actions[d.dataset.aid];
+    if(done){
       const b = d.querySelector("button");
       b.disabled = true; b.textContent = "✓ " + b.textContent.replace(/^✓ /,"");
       b.classList.add("ghost");
@@ -499,7 +500,8 @@ function runAction(div){
   const kind = div.dataset.kind, aid = div.dataset.aid;
   let args = {};
   try{ args = JSON.parse(div.dataset.args); }catch(e){ return; }
-  const m = MODULES[0], rs = runState(m.id);
+  const inLibrary = aid.startsWith("npc-");
+  const m = MODULES[0], rs = inLibrary ? runState("npc") : runState(m.id);
   if(rs.actions[aid]) return;
   if(kind === "fragment"){
     if(args.question && !S.questions.includes(args.question)) S.questions.push(args.question);
@@ -524,7 +526,7 @@ function runAction(div){
     } else return;
   } else return;
   rs.actions[aid] = true;
-  save(); trackersTab(); markDoneActions(m.id);
+  save(); trackersTab(); if(inLibrary){ npcTab(); } markDoneActions(m.id);
 }
 
 /* ------------------------------------------------ NPC tab */

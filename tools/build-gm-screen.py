@@ -172,6 +172,10 @@ def parse_npcs():
     for slug, label, relpath in NPC_FILES:
         src_dir = posixpath.dirname(relpath)
         text = (DOCS / relpath).read_text(encoding="utf-8")
+        problems = []
+        text = substitute_actions(text, f"npc-{slug}", problems)
+        if problems:
+            raise SystemExit(f"npc file {relpath}: " + "; ".join(problems))
         parts = re.split(r"(?m)^### ", text)
         groups.append({"slug": slug, "label": label, "intro": render(parts[0], src_dir)})
         for chunk in parts[1:]:
@@ -252,14 +256,11 @@ def action_label(kind, args):
     return (kind, "")
 
 
-def parse_module(mid, relpath, name_to_id):
+def substitute_actions(text, id_prefix, problems):
+    """Render @@action:...@@ markers into clickable run-action blocks. Shared by the run
+    modules (ids m<mid>-n) and the NPC library files (ids npc-<slug>-n), so a set piece
+    that lives beside its stat blocks can still log a thread or a fragment in one click."""
     import html as htmllib
-    path = DOCS / relpath
-    if not path.exists():
-        return None
-    src_dir = posixpath.dirname(relpath)
-    text = path.read_text(encoding="utf-8")
-    problems = []
     counter = [0]
 
     def sub_action(m):
@@ -276,12 +277,23 @@ def parse_module(mid, relpath, name_to_id):
         if kind == "thread" and args.get("ledger") not in ("knows", "holds", "debts"):
             problems.append(f"bad thread ledger: {args.get('ledger')}")
         counter[0] += 1
-        aid = f"m{mid}-{counter[0]}"
+        aid = f"{id_prefix}-{counter[0]}"
         label, desc = action_label(kind, args)
         payload = htmllib.escape(json.dumps(args, ensure_ascii=False), quote=True)
         return (f'\n<div class="runact" data-kind="{kind}" data-aid="{aid}" data-args="{payload}">'
                 f'<button class="btn">{htmllib.escape(label)}</button>'
                 f'<span class="runact-desc">{htmllib.escape(desc)}</span></div>\n')
+
+    return ACTION_RE.sub(sub_action, text)
+
+
+def parse_module(mid, relpath, name_to_id):
+    path = DOCS / relpath
+    if not path.exists():
+        return None
+    src_dir = posixpath.dirname(relpath)
+    text = path.read_text(encoding="utf-8")
+    problems = []
 
     def sub_npc(m):
         name = m.group(1).strip()
@@ -291,7 +303,7 @@ def parse_module(mid, relpath, name_to_id):
             return name
         return f'<a href="#" class="xin" data-nav="npc:{nid}">{name}</a>'
 
-    text = ACTION_RE.sub(sub_action, text)
+    text = substitute_actions(text, f"m{mid}", problems)
     text = NPCREF_RE.sub(sub_npc, text)
     if problems:
         raise SystemExit(f"module {relpath}: " + "; ".join(problems))
@@ -367,6 +379,7 @@ SEED = {
         {"who": "Tama Osk", "what": "Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said)", "since": "pre-S1", "notes": "The Sith bedside; pays off when the crew has a silhouette to match"},
         {"who": "The patron's desk", "what": "“The one pilot who won't sell” — the registry forwarded Osk's name coreward years ago", "since": "pre-S1", "notes": "How the line found her"},
         {"who": "Sorulba's court", "what": "The ghost order: pickets log-and-let-pass the dark-lane traffic, six years standing", "since": "pre-S1", "notes": "Module 02 scene 3 — the picket log"},
+        {"who": "N'Kata Del Gormo", "what": "Whose grave is on the hill above the swamp — Kerra Holt, his teacher, and the sibling she found too late", "since": "pre-S1", "notes": "The only living being who knows; says it at the relight or never — the Hill on Verdanth"},
     ],
     "holds": [
         {"item": "Osk's true rutter (the whole book)", "holder": "Tama Osk", "since": "pre-S1", "notes": "Inheritance on return — module 01 scene 3"},
@@ -374,6 +387,9 @@ SEED = {
         {"item": "Rade's rutter (the hidden-children route-log)", "holder": "Lost — last sold estate, Veshet", "since": "pre-S1", "notes": "The live grenade — Keepers of the Flame"},
         {"item": "The heirloom lightsaber", "holder": "Memory Market consignment, Sanrafsix", "since": "pre-S1", "notes": "Unauthenticated; first-ignition rule — Keepers"},
         {"item": "The holocron of Lord Kaan", "holder": "The Last Muster's cache (off every catalogue)", "since": "0 AR", "notes": "The campaign's center — Keepers"},
+        {"item": "Kerra Holt's green lightsaber", "holder": "Her grave — the hill on Verdanth (hop 3)", "since": "pre-S1", "notes": "First-ignition rule; the Hill on Verdanth — The Dead Lords"},
+        {"item": "Kerra Holt's recorder (undelivered testimony for Chancellor Genarra)", "holder": "Her grave — the hill on Verdanth", "since": "pre-S1", "notes": "Names the Calimondra vaults and Grace Command; the Sith line wants it erased"},
+        {"item": "Odion's Project Pandemonium archive (the thought bomb's shell)", "holder": "An unreached Odionate vault — GM-placeable", "since": "pre-S1", "notes": "The only written engineering of the lock — The Dead Lords"},
     ],
     "debts": [
         {"who": "The crew", "whom": "Portmaster Grell", "what": "Lease arrears 450 + 60/week, compounding", "status": "open"},

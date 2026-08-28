@@ -24,7 +24,7 @@ One beacon per hop, Bannistar Station back to the Hydian. Assign episode seeds p
 | ⌂ | Bannistar Station / Okrent's Drift | Session One | — | Canonically a massive refueling depot (attested in Clone Wars-era sources, 900 years later — use freely) |
 | 1 | Enarc | *Session Two — the Anchorage* | — | Real junction: Enarc Run + Triellus. Now the Anchorage of Sorulba — a closed Hutt hermit kingdom with a one-way door: anyone may arrive, no one leaves without the king's leave ("Enarc eats ships"); its opening crisis is module 02 |
 | 2 | Aquilaris | *e.g. The Drowned Resort* | — | Legends ocean world (Sanbra sector): resort seas over dead pleasure piers. Knight Errant rhyme: Zodoh's Stormdrivers drowned Daiman's Aquilaris by weather-weapon in 1032 BBY — treat the deep flood-stories out here as older than the Withering |
-| 3 | Verdanth | *e.g. The Oracle of Brel (Brel = a settlement moon here?)* | — | Jungle world; otherwise blank |
+| 3 | Verdanth | **The Hill on Verdanth** (the relight brings the Vigil to seal the seventeen lords' tombs; Del Gormo vs the wardens over Kerra Holt's grave — first and only pass, no return) · *or The Oracle of Brel* | — | Jungle world; Legends: ruled by 17 rival Sith Lords in the Dark Age; Narsk Ka'hane's birthplace; Kerra Holt's grave and Del Gormo's swamp (GM) |
 | 4 | Aplooine | *e.g. The Ration Engine or The Five Systems* | — | Blank canvas |
 | 5 | Sanrafsix | *e.g. The Memory Market* | — | Great dead trade hub of the New Sith Wars economy — provenance bazaars fit perfectly; junction of the Sanrafsix Corridor |
 | 6 | Heptooine | *e.g. The Mausoleum Yards* | — | Route stop |
