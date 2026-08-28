@@ -60,6 +60,25 @@
    "grid": "N-17",
    "la": "above"
   },
+    {
+   "id": "brel",
+   "name": "Brel",
+   "x": 4723.4,
+   "y": 6415.1,
+   "region": "reach",
+   "beacon": false,
+   "alwaysLit": false,
+   "blurb": "Brel — a settlement moon of Verdanth; a small farming community with a shrine.",
+   "gm": {
+    "seed": "The Oracle of Brel — Anwei, ten, an Awakened child whose true dreams are eating her sleep, worshipped by the settlement and guarded by its armed faithful; courted by three factions the same week the crew arrives (the Inheritors, the Vigil, the crew — module 05, Scene 3); her prophecy 'don't go in the second door' points at the Verdanth temple's bare vault. Stats: gm/npcs/reaches.md.",
+    "canon": "Campaign-invented moon of Verdanth (no Legends source).",
+    "factions": [
+     "vigil",
+     "inheritors"
+    ]
+   },
+   "la": "below"
+  },
   {
    "id": "aplooine",
    "name": "Aplooine",
