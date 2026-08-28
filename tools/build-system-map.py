@@ -230,8 +230,7 @@ def build_network(data: dict) -> None:
     RELATIONAL = [
         # (name, anchorA, anchorB, along, perp)  pos = A + along*(B-A) + perp*rot90(B-A)
         ("Heptooine", "Sanrafsix", "Jutrand", 0.5, 0.0),
-        ("Verdanth", "Aplooine", "Aquilaris", 0.5, -0.12),
-        ("Brel", "Verdanth", "Aquilaris", 0.0, 0.46),  # settlement moon of Verdanth: a hair south-west of its planet, clear of the lane  # hop 3: midway between Aplooine and Aquilaris, a hair north of the line so the Run reads as one WNW leg
+        ("Verdanth", "Aplooine", "Aquilaris", 0.5, -0.12),  # hop 3: midway between Aplooine and Aquilaris, a hair north of the line so the Run reads as one WNW leg
         ("Kyrska", "Kalarba", "Glom Tho", 0.5, 0.0),  # user-invented Run stop; snaps onto the drawn Duros Space Run
         ("Fostin Nine", "Syned", "Sanrafsix", 0.5, 0.0),
         ("Veshet", "Syned", "Sanrafsix", 0.5, -0.28),

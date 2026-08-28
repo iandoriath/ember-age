@@ -53,7 +53,7 @@
    "hop": 3,
    "blurb": "Jungle world.",
    "gm": {
-    "seed": "The Oracle of Brel (Brel = a settlement moon here?); the swamp Del Gormo was born in — empty until the hill on Aquilaris no longer needs him (he is there in time for Yoda, 104 AR). The hermit is Kerra Holt's student, never the Temple's. The seventeen dead lords' sealed tombs; the relight brings the Vigil to seal them, first and only pass. Full detail: gm/npcs/knight-errant.md. GM: the Inheritors' capital — Lord Vhasla's sealed temple, its nameplate chiseled away (the stolen name defaced at the source); the Unveiling is shown to the crew privately inside, and the culling triggers after they leave. Odri's counter sets up outside the temple. Module 05 (The Seventeen Tombs; play order 03 → 05 → 04): seventeen clearings visible from the beacon ridge — sixteen under Vigil tape, one (the temple) lit and untaped; the beacon relay is a Republic mast on the ridge above the old landing field, the easy relight; the Unbroken Seal runs at a tomb the crew chooses; the Emptied House is the temple itself, found when the landing-field band goes silent; Vhasla's necrology date is 1029 BBY.",
+    "seed": "Brel — a settlement in the seventeen's country, a day's walk from the temple road; the Oracle Anwei, an Awakened child whose true dreams are eating her sleep, courted by three factions the week the crew arrives (module 05, Scene 3); her prophecy 'don't go in the second door' points at the temple's bare vault (stats: gm/npcs/reaches.md). Kerra Holt fought her one-Jedi war in this country. The seventeen dead lords' sealed tombs; the relight brings the Vigil to seal them, first and only pass. GM: the Inheritors' capital — Lord Vhasla's sealed temple, its nameplate chiseled away (the stolen name defaced at the source); the Unveiling is shown to the crew privately inside, and the culling triggers after they leave. Odri's counter sets up outside the temple. Module 05 (The Seventeen Tombs; play order 03 → 05 → 04): seventeen clearings visible from the beacon ridge — sixteen under Vigil tape, one (the temple) lit and untaped; the beacon relay is a Republic mast on the ridge above the old landing field, the easy relight; the Unbroken Seal runs at a tomb the crew chooses; the Emptied House is the temple itself, found when the landing-field band goes silent; Vhasla's necrology date is 1029 BBY. Full detail: gm/npcs/knight-errant.md.",
     "canon": "Jungle world; otherwise blank.",
     "factions": []
    },
@@ -61,25 +61,6 @@
    "la": "above"
   },
     {
-   "id": "brel",
-   "name": "Brel",
-   "x": 4723.4,
-   "y": 6415.1,
-   "region": "reach",
-   "beacon": false,
-   "alwaysLit": false,
-   "blurb": "Brel — a settlement moon of Verdanth; a small farming community with a shrine.",
-   "gm": {
-    "seed": "The Oracle of Brel — Anwei, ten, an Awakened child whose true dreams are eating her sleep, worshipped by the settlement and guarded by its armed faithful; courted by three factions the same week the crew arrives (the Inheritors, the Vigil, the crew — module 05, Scene 3); her prophecy 'don't go in the second door' points at the Verdanth temple's bare vault. Stats: gm/npcs/reaches.md.",
-    "canon": "Campaign-invented moon of Verdanth (no Legends source).",
-    "factions": [
-     "vigil",
-     "inheritors"
-    ]
-   },
-   "la": "below"
-  },
-  {
    "id": "aplooine",
    "name": "Aplooine",
    "x": 4694.5,
