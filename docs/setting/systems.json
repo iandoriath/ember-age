@@ -89,9 +89,9 @@
    "beacon": true,
    "alwaysLit": false,
    "hop": 5,
-   "blurb": "The great dead hub — its bazaars thrived on the last war's economy and died with it. Junction of the smugglers' Sanrafsix Corridor.",
+   "blurb": "The great dead hub: its groundside died sealed in the Candorian plague back in the Dark Age and has never been reopened; the orbital ring above it lived on the last war's economy and went quiet with it. Junction of the smugglers' Sanrafsix Corridor.",
    "gm": {
-    "seed": "The Memory Market",
+    "seed": "The Memory Market — the orbital bazaar. The Inheritor beat here: the remnant's stall beside a chandler's counter, the dead temple's fakes under the hammer.",
     "canon": "Great dead trade hub of the New Sith Wars economy — provenance bazaars fit perfectly. Don't crater it: alive in later-era sources. Legends: a cosmopolitan hub whose groundside population was sealed in and lost to the Candorian plague in the wars' last century while the orbital stations lived — the Memory Market is an orbital bazaar above a dead, sealed city. The article names its Run links as Aplooine and Heptooine — the hop order as drawn.",
     "factions": [
      "kajidics",
