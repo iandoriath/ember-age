@@ -50,6 +50,7 @@
 
 - **The pumps.** Capital Cay lives by three Republic-era pumps that keep the lower stories dry, and one is failing: **Average Mechanics** to diagnose, **Hard Mechanics** to fix with what the guild has, or **Average Negotiation** to talk the guild into cannibalizing a submersible for parts (Padgett hates it; she will do it). A fixed pump is the town's gratitude, and this is Mikrés's world — a Chadra-Fan who cannot swim being the only one who can keep the water out is the session's first honest hero-moment; let it be dry-land engineering, no diving, and let the town notice.
 - **The elders' porch.** The old Seacroppers remember what their grandparents told them: a Republic charity that came with food and left with the town *addicted* — Grace Command, and the spice called Deluge — and the Jedi girl from this very town who dumped it in the sea. Nobody remembers her name. They remember *the crazy one who stole the submersible.* This is the verdict Question's first honest evidence, and it is the Republic's side of the ledger; if the Trooper is at that table, let the elders ask him, kindly, whose uniform that is.
+- **The chandler on the roofs.** Between the pumps and the porch, a folding counter on a rooftop — *Sund & Daughter* — a young woman buying pump line and lamp cells off the drowned promenades from Seacropper divers, refurbishing them on the spot. A Seacropper mutters that the chandler girl *never rounds*. One line; say nothing. *(GM: Odri Sund — [Keepers](../npcs/keepers.md); note where the counter stood.)*
 - **The eel-smoker on the hill road.** Old Gormo, selling smoked eel from a rack at the foot of the hill; four arms working, staff propped against the rack. He is *funny* — jokes about the tide, a riddle about which end of a net is the important one, a wrong answer about the beacon that turns out later to be exactly right. He asks the crew nothing. If a gifted PC stands near him, run the hearth-sense as *quiet* — the first place on the Run the grinding does not reach, as if something on this hill were louder than it. Do not explain it. Sell them the eel.
 
 @@action:fragment {"name":"The elders' porch — the Deluge story","form":"living witnesses — three Seacropper elders","tag":"Civic","question":"Should the Run be reconnected at all?","claim":"the last time the Republic came to help, it left the town addicted — and it was one of our own who poured the poison into the sea","holder":"crew","status":"trusted"}@@
@@ -172,7 +173,7 @@ Run it interleaved over two or three rounds; the tide is the clock — **every r
 
 ## The Out
 
-**Up the Run: Verdanth, hop 3** — the jungle world the old keeper was born in, the seventeen sealed tombs of the lords his master fought, and a swamp that is empty or not depending on what the crew did on the hill. The guild's next prize posts within the hour. *Of course it does.*
+**Up the Run: Verdanth, hop 3** — the jungle world the old keeper was born in, the seventeen sealed tombs of the lords his master fought, the Inheritors' temple with its nameplate chiseled away, and a swamp that is empty or not depending on what the crew did on the hill. The guild's next prize posts within the hour. *Of course it does.* (Hop 4, [The Ash Sea](04-the-ash-sea.md), is the breather after.)
 
 **Other doors:**
 

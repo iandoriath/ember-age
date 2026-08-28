@@ -22,7 +22,7 @@ Then the advance stopped. The next beacon up the lane — **Vesta-9**, serving t
 | 1 | **Enarc** | A sealed crossroads — the **Enarc Run** (toward Naboo and the Rimma) and the Hutt-ringed **Triellus** once met the Run here. Now the **Anchorage of Sorulba**: a closed Hutt kingdom where any ship may dock and none has left in forty years. Spacers say it plainly — Enarc eats ships |
 | 2 | **Aquilaris** | Drowned resort world — first of the deep-Run stops |
 | 3 | **Verdanth** | Jungle world |
-| 4 | **Aplooine** | Quiet agrarian survivor |
+| 4 | **Aplooine** | The Ash Sea — a world buried under three hundred meters of black ash, no air, a scatter of sealed peak-holds on mountaintops; settled thirteen thousand years ago and never once asked to be found. The drivers cross it for pay |
 | 5 | **Sanrafsix** | The great dead hub — its bazaars thrived on the last war's economy and died with it. Junction of the smugglers' **Sanrafsix Corridor** |
 | 6 | **Heptooine** | The Run's last waystop |
 | 7 | **Jutrand** | City-planet; capital of a dead Sith principality, haunted by its own grandeur |

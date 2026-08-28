@@ -9,7 +9,7 @@
 ## Episode seeds beyond Vesta-9
 
 1. **The Sealed Enclave.** A Vigil-sealed temple whose caretaker droid still runs lessons for empty rooms — and something answered this year's roll call.
-2. **The Ration Engine.** A world administered for ninety years by a droid bureaucracy that refuses to believe the galaxy is back; the crew must out-argue a spreadsheet that genuinely loves its people.
+2. **The Ash Sea.** A world buried under black ash to three hundred meters, its people in sealed peaks, its beacon mast swallowed by a slide two generations ago with three meters still showing — drive the moving Sea, race the crossing champion, dig sixty meters to a dead hold, and light a beacon underground. The ash gave up a thirteen-thousand-year-old colony ship the same season; nobody on this world has ever asked the galaxy for anything. (Hop 4 — module 04.)
 3. **The Mausoleum Yards.** A mothballed Republic fleet, now a hull-city of squatters, with an Admiralty prize crew inbound carrying eviction orders.
 4. **The Memory Market.** A world where provenance is currency, and a forgery ring is quietly poisoning the galaxy's lore-fragment economy — including, perhaps, something the party already trusts.
 5. **The Oracle of Brel.** A settlement worships a Force-sensitive child whose true dreams are eating her sleep; three factions arrive the same week the PCs do.

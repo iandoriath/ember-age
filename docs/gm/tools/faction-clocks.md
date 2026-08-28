@@ -7,7 +7,7 @@
 | Republic | Recovered by adjourning the Rim; wants it back on its terms | 0 | The Founding Conclave's legitimacy fight |
 | Admiralty | Treaty wing vs the Founding cadre — and the Founding needs an enemy | 0 | **The Annexation** |
 | Vigil | Sacrilege vs. Order-reborn — custody of the Awakened | 0 | **The Vigil breaks** |
-| Inheritors | Nobody knows whose hand is at the top | 0 | **The Unveiling** → the culling |
+| Inheritors | Nobody knows whose hand is at the top | 0 | **The Unveiling** (private, in the Verdanth temple) → the culling, after the crew leaves |
 | Lamplighters | The relighting order is for sale, price very high | 0 | **The Conclave of Charts** (rigged twice — the patron bought the order, the Inheritors' mole stole it) |
 | Kajidics | The young Hutts have run the numbers | 0 | Clan war, one bad season away |
 | The Awakening | Every public display raises the temperature | 0 | **The Awakening goes public** |
