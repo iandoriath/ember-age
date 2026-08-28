@@ -379,7 +379,7 @@ SEED = {
         {"who": "Tama Osk", "what": "Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said)", "since": "pre-S1", "notes": "The Sith bedside; pays off when the crew has a silhouette to match"},
         {"who": "The patron's desk", "what": "“The one pilot who won't sell” — the registry forwarded Osk's name coreward years ago", "since": "pre-S1", "notes": "How the line found her"},
         {"who": "Sorulba's court", "what": "The ghost order: pickets log-and-let-pass the dark-lane traffic, six years standing", "since": "pre-S1", "notes": "Module 02 scene 3 — the picket log"},
-        {"who": "N'Kata Del Gormo", "what": "Whose grave is on the hill above the swamp — Kerra Holt, his teacher, and her sister Marenna, found too late", "since": "pre-S1", "notes": "The only living being who knows; says it at the relight or never — the Hill on Verdanth"},
+        {"who": "N'Kata Del Gormo", "what": "Whose grave is on Tarrah Hill, Aquilaris — Kerra Holt, his teacher, and her sister Marenna, found too late", "since": "pre-S1", "notes": "The only living being who knows; says it at the relight or never — the Hill on Aquilaris"},
     ],
     "holds": [
         {"item": "Osk's true rutter (the whole book)", "holder": "Tama Osk", "since": "pre-S1", "notes": "Inheritance on return — module 01 scene 3"},
@@ -387,8 +387,8 @@ SEED = {
         {"item": "Rade's rutter (the hidden-children route-log)", "holder": "Lost — last sold estate, Veshet", "since": "pre-S1", "notes": "The live grenade — Keepers of the Flame"},
         {"item": "The heirloom lightsaber", "holder": "Memory Market consignment, Sanrafsix", "since": "pre-S1", "notes": "Unauthenticated; first-ignition rule — Keepers"},
         {"item": "The holocron of Lord Kaan", "holder": "The Last Muster's cache (off every catalogue)", "since": "0 AR", "notes": "The campaign's center — Keepers"},
-        {"item": "Kerra Holt's green lightsaber", "holder": "Her grave — the hill on Verdanth (hop 3)", "since": "pre-S1", "notes": "First-ignition rule; the Hill on Verdanth — The Dead Lords"},
-        {"item": "Kerra Holt's recorder (undelivered testimony for Chancellor Genarra)", "holder": "Her grave — the hill on Verdanth", "since": "pre-S1", "notes": "Names the Calimondra vaults and Grace Command; the Sith line wants it erased"},
+        {"item": "Kerra Holt's green lightsaber", "holder": "The sisters' grave — Tarrah Hill, Aquilaris (hop 2)", "since": "pre-S1", "notes": "First-ignition rule; the Hill on Aquilaris — The Dead Lords"},
+        {"item": "Kerra Holt's recorder (undelivered testimony for Chancellor Genarra)", "holder": "The sisters' grave — Tarrah Hill, Aquilaris", "since": "pre-S1", "notes": "Names the Calimondra vaults and Grace Command; the Sith line wants it erased"},
         {"item": "Odion's Project Pandemonium archive (the thought bomb's shell)", "holder": "An unreached Odionate vault — GM-placeable", "since": "pre-S1", "notes": "The only written engineering of the lock — The Dead Lords"},
     ],
     "debts": [
