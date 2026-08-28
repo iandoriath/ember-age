@@ -114,6 +114,7 @@ NAV_MAP = {
     "gm/npcs/lanes-ledgers.md": "npcs:group:lanes-ledgers",
     "gm/npcs/reaches.md": "npcs:group:reaches",
     "gm/npcs/keepers.md": "npcs:group:keepers",
+    "gm/npcs/knight-errant.md": "npcs:group:knight-errant",
     "gm/tools/fragment-tracker.md": "tab:trackers",
     "gm/tools/beacon-map.md": "tab:trackers",
     "gm/tools/faction-clocks.md": "tab:trackers",
@@ -158,6 +159,7 @@ NPC_FILES = [
     ("lanes-ledgers", "Lanes & Ledgers", "gm/npcs/lanes-ledgers.md"),
     ("reaches", "Out on the Run", "gm/npcs/reaches.md"),
     ("wildlife", "The Feral Run", "gm/npcs/wildlife.md"),
+    ("knight-errant", "The Dead Lords 🔒", "gm/npcs/knight-errant.md"),
     ("keepers", "Keepers of the Flame 🔒", "gm/npcs/keepers.md"),
     ("ships", "Ships of the Ember Age", "mechanics/ships.md"),
 ]
