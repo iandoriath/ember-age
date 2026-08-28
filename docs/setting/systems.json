@@ -53,7 +53,7 @@
    "hop": 3,
    "blurb": "Jungle world.",
    "gm": {
-    "seed": "The Oracle of Brel (Brel = a settlement moon here?); N'Kata Del Gormo's swamp — the hermit who left the Order at the Reformation lives here (Temple-suppressed rumor player-side; nothing player-visible)",
+    "seed": "The Oracle of Brel (Brel = a settlement moon here?); Del Gormo's swamp — the hermit is Kerra Holt's student, never the Temple's. Set piece: The Hill on Verdanth (hop 3, first and only pass) — Kerra's grave above the swamp holds her green lightsaber (first ignition happens in a player's hand or not at all) and the undelivered recorder for Chancellor Genarra; the relight brings the Vigil to seal the seventeen dead lords' tombs, and the hermit sits exactly where the warden's tape must go. Full scene: gm/npcs/knight-errant.md.",
     "canon": "Jungle world; otherwise blank.",
     "factions": []
    },
