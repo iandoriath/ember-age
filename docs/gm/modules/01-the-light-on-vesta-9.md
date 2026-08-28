@@ -126,6 +126,8 @@ Nobody in this port needs the stakes explained — they have been the port's who
 
 Two threads for later, if the conversation opens: asked whether she ever told a soul where Vesta-9 sits, her rasp goes quiet — *"Once. A young woman. Right questions, kind voice. I couldn't tell you a single word I said to her."* (GM: the Sith bedside — a living-witness thread that pays off when the crew someday has a silhouette to match; do not explain it tonight.) And her old **navigation droid** — blind pilots need eyes — went to a chop-yard for debts years ago; its unwiped core holds fifty years of the Run. Recovering it is a quest hook with a technician's name on it (the buyer, if anyone ever chases it, was Okkam Dree).
 
+One more buyer, for texture: the chart-broker on the Field mentions a rival bidder for rutter pages who pays in *pre-war coin* — "the antiquaries," people call them. It is the same word the guild's coreward patron hides behind. Two collectors of old things, one a costume and one the real thing; the mid-game twist is that there were always two. Say it once and move on.
+
 When a page lands — hers or a copy — hand over the card and log it (copy only: log the card with the claim blank, and let them notice the blank):
 
 @@action:fragment {"name":"Grandmother Osk's rutter, page 40","form":"rutter","tag":"Civic","question":"Who lit Vesta-9?","claim":"somebody has been flying the dead Run for years, and the prizes follow them","holder":"crew","status":"trusted"}@@
@@ -193,7 +195,7 @@ When a page lands — hers or a copy — hand over the card and log it (copy onl
 | The crew's arrival | Per the outcomes ladder — first, second, or last. |
 | +40 minutes (or already there) | The @@npc:NAS Steadfast, Naboo-pattern Patrol Sloop@@ arrives **out of the dark side of the lane** — from up the dead Run, where nothing is supposed to live — off a fleet tender no chart lists, runs out its guns, and broadcasts: all vessels stand to for inspection under the Corridor Security Act, a law of a navy nobody in the swarm has ever heard of. This is the galaxy's first sight of the **Naboo Admiralty**. Within the hour, half the swarm settles on the comfortable answer: *the Admiralty lit it — they came out of the dark, navies have codes.* Let that answer harden; the crew's evidence will fight it. |
 | +90 minutes | @@npc:Chartmistress Bel Nerra@@'s guild packet arrives trailing the swarm from the Drift. She requests docking "as certifying observer," ink already wet. |
-| Throughout | The arrival swarm: a dozen hulls from Okrent's Drift — and, later, in the certification crowd, a clerk in guild grey who writes nothing down (The Out). |
+| Throughout | The arrival swarm: a dozen hulls from Okrent's Drift — and, later, in the certification crowd, a *third* clerk in guild grey who writes nothing down and leaves before the fee is read (The Out). Recallable texture, nothing more tonight. |
 
 **Running order.** Whatever the arrival math: (1) the crew, the humming station, the warden at the core who does not look up — and, unless the lane fight delayed him, the *Overdue* on the ring, Skell mid-recital on the public band; (2) the *Steadfast*'s broadcast, which turns every hopeful in the swarm into an audience; (3) the inspection; (4) Nerra's docking request, timed to interrupt whatever is tensest; (5) certification. Scene 6 detonates the moment the paper asks who lit it.
 
@@ -327,7 +329,7 @@ Before the table stands up, mark which of these are true. [Module 02's carry-for
 | **However it went with Skell** | Bought off, faced down, bloodied, or never met | The *Overdue* reaches Enarc ahead of the crew — and the first thing Skell sells the court is the crew's biography. |
 | **However the Record went** | Always | Breck — the Admiralty's envoy at Enarc — has read the certificate before the crew arrives. Founding papers follow you. |
 
-**Schedule the warm knock:** within weeks of Vesta-9, the Inheritors' first contact arrives *helpful* — coin, rescue, answers, no visible strings (Meru Vane's people; see Vigil & Inheritors). Aim it at session three, so the faction has a face before it has a file.
+**Schedule the warm knock:** within weeks of Vesta-9, the Inheritors' first contact arrives *helpful* — coin, rescue, answers, no visible strings (Meru Vane's people; see Vigil & Inheritors). It is written into session three as the produced rescue and the testimony commission ([module 03](03-the-drowned-resort.md)), so the faction has a face before it has a file.
 
 **One open door, keyed to the loudest flag:** kept the page — the first leg is exactly where her margins say, and something in a margin is waiting on their first Chart-it check · named the stranger — a courteous Admiralty letter at the next port, asking them to carry something · certified clean — Nerra's 250-scrip charter dangles the next dark beacon, and the wager board has posted odds on the crew, which is how they learn they are famous · sold the book — a survey team nobody hired leaves Bannistar ahead of them, up the lane they sold · fee unclaimed — Nerra's backdating favor is on the table, destination attached.
 

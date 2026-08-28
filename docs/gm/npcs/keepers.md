@@ -83,7 +83,7 @@ The true Sith line, statted. Bane, then Zannah, then Cognus — and the record g
 ### The Patient Apprentice
 *Nemesis — the Sith line — Darth Mendac, the culling made flesh — she/her*
 
-> No name survives contact. When the Inheritors unveil their costume Sith, this is what a real one looks like: a week of quiet travel, one night of work across a dozen worlds' worth of planning, and no witnesses who understand what they saw.
+> No name survives contact. When the Inheritors unveil their costume Sith, this is what a real one looks like: a week of quiet travel, one night of work across a dozen worlds' worth of planning, and no witnesses who understand what they saw. On the Run, she is a chandler's daughter with a dead man's ledger — *Odri Sund*, below.
 
 | Brawn | Agility | Intellect | Cunning | Willpower | Presence |
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -98,6 +98,21 @@ The true Sith line, statted. Bane, then Zannah, then Cognus — and the record g
 
 **Chassis:** Emperor's Hand, Edge of the Empire Core Rulebook, p. 402 (adjustments: declared — the printed vibrosword is replaced by a lightsaber, and the block's Melee 3 is read as Lightsaber 3; **Gunnery 3 and Piloting (Space) 3 are added**, so that she flies the interceptor below as well as she does everything else; everything else as printed).
 **Using her:** The culling of the Inheritors is her graduation exam, and the grade is *anonymity*: the senior circle dead across a dozen worlds in one night, the archives vanished rather than burned, and nobody sane concluding "Sith." Force Rating 2 is justified as the line's entire pedagogy poured into a single student (era rule, Part VII). She never claims a kill, never duels when a fall down a lift shaft will do, and withdraws the moment a fight turns evidentiary — being *seen* fighting with a lightsaber is a mission failure worse than death, which is why the blade comes out only when nobody present will live to describe it: the disruptor leaves no body, and the saber leaves no witnesses. A cauterized wound on a survivor is the one mistake the Mother would not forgive. Vesta-9 is her signature read correctly: years of patient off-pattern search, an emptied cache, and a lit beacon on the way out that turned her one failure into the engine of the whole advance — even her dead ends serve the plan. After the culling she holds the harvested Vesta-9 file: she knows about the crew — what they saw at the station she lit, what they carry, and by then which of them is gifted — and has never once been seen — every misattribution the players chase (the Vigil? the Admiralty? a purge?) lights a different Act 3 fire.
+
+### Odri Sund, dig-chandler — Mendac's cover
+*Rival (in cover) — the Sith line — "Sund & Daughter", excavation consumables and curios, valued honestly; Mendac on camera, never revealed*
+
+> A young woman behind a folding counter of refurbished shoring jacks and lamp cells, running her late father's ledger by his rules. She gives exact change. Always.
+
+**The cover (Ian, 2026-08-28 — operationalizes "near and almost invisible"; competence is paramount).** Darth Mendac followed the Vesta-9 swarm to Enarc as **Odri Sund**, dig-chandler: she sells excavation consumables (shoring, cutting charges, pump line, lamp cells — all refurbished) and buys broken tools and "curios, valued honestly," from a stall that travels with the prospectors up the Run. The business is her **late father's** — *Sund & Daughter* — and the dead man's book is the whole trick: "the book says no credit," dead men verify nothing, and pity replaces curiosity. (An absent *living* master was rejected as too strong a Sith hint; the ledger gives the same deferral with nothing offscreen.)
+
+**Why a chandler.** The ledger is a map of every dig on the Run: the *reorder* tells her what they found — deep-shoring means a vault, rush charges mean a sealed door, a crew that goes quiet has found something better than digging. The curio counter is a private assay office: finds come to her first, voluntarily, in daylight. She never has to search; the Run brings her everything and pays her for the privilege.
+
+**At Enarc.** The one-way door kept *her* out too — forty years of confiscated arrivals were never scrubbed — and the relight crisis decides whether that hoard reaches the market. Her stall stands in the festival among the repainted bowsers (module 02, Scene 2). Her exit was never the door: the picket's log-and-let-pass ghost order covers her dark hull, pre-verified.
+
+**Tradecraft rules — binding.** She may appear on camera as Odri at any time, but **nothing may force the reveal**: the Ladder of Sightings is the only road to her name. She never initiates contact with the crew. She never uses the Force in cover. **One tell, exactly one:** *exact change, always* — her father's rule. Witness it **once per module**, as a one-line GM cue, never remarked on; by the time anyone thinks about it there should be three receipts to find. Keep a private per-session note of where her stall stood: the retroactive payoff is players finding the chandler girl in the margins of their own notes. Her receipts are the only paper the true line has ever generated.
+
+**The collision (the discovery vector).** The Inheritors buy Sith material — and an organized, theatrical buyer of Sith material is exactly what the whisper network flags. At Enarc their stuck clerk finds her counter (module 02); on the Run they make her their favorite fence, deferring to the book on anything genuine while their whole shopping list flows past her — the Inheritors volunteering their own acquisition map. Pre-Unveiling the line did not know they existed; **the Inheritors signed their death warrant the week they tried to recruit a supply girl at Enarc.** She never sells them anything traceable and never meets them twice in the same configuration. Stats: [The Patient Apprentice](#the-patient-apprentice), when the cover is gone; until then she does not roll.
 
 ### Sith Scout Fighter — Mendac's interceptor
 *Vehicle — the Sith line — the Patient Apprentice's fighter: no name, no transponder; the fastest thing on the Run, and the least seen*

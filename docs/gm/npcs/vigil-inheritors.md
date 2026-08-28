@@ -92,6 +92,32 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 
 ## The Inheritors
 
+### How the Inheritors work — theater and surveillance
+*Doctrine — the Inheritors — the campaign's comfortable wrong answer, with a face (Ian, 2026-08-28)*
+
+> Black robes glimpsed at distance; wax seals on ribboned reports; a red blade lit for two seconds across dark water and never mentioned again. And behind the costume, a census that knows what the crew carries.
+
+**Two channels, meant to be conflated.** The Inheritors run on **theater** — signs left deliberately, occult tradecraft, a mysteriousness they *play up* because it is the whole point of the costume — and on **surveillance**, their real competence: the Vesta-9 census, Chartkeeper Pike's leaks, the Lore-Clerks who see and copy and carry. The players meet the theater, attribute the surveillance to it, and conclude *Sith*. Let them. The Inheritors are the wrong answer the campaign wants the table to reach with confidence; the culling is what detonates it.
+
+**No "Darth" — ever.** Their scraps are Brotherhood-era, so their register is Kaan's: every Sith a *Lord*, equal, a thousand of them. They do not know the word *Darth*; it exists in this campaign only in the holocron of Lord Kaan's Gatekeeper and in the true line's own mouths. That makes it a **shibboleth**: anyone who says it is evidence — a rung on the Ladder of Sightings by itself ([Faction Clocks](../tools/faction-clocks.md)) — and at the Unveiling an informed player can spot that the costume got the vocabulary wrong. The irony is the campaign's own: they are re-enacting the thousand-equal-lords heresy that Bane's line was founded to bury. **The culling's trigger is therefore the Unveiling itself** — a public, organized claim to the Sith inheritance — no forbidden word required.
+
+**What they want from the crew: standing.** The Vigil outclasses them. The grave-keepers' seals are *social*, not mechanical — the bereaved galaxy enforces them, and three generations of camp-followers survived by never being caught at a taped door — so the watched graves are beyond the Inheritors' reach. A crew with guild paper and certified names is the one thing they cannot forge. Recruitment line, when it comes: *"You have the one thing we cannot forge: standing."* Their archive in exchange is genuinely useful — real fragments, fake lineage — and the hidden cost is that everything the crew hands over lands in the file Mendac harvests.
+
+**The recruitment ladder.** *Vesta-9* — a third clerk in guild grey who wrote nothing and left before the fee was read; a rival buyer of rutter pages who pays in pre-war coin, called "the antiquaries" (the same word the guild's patron hides behind: two collectors of old things, one a costume and one Veritis — the mid-game twist is that there were always two). *Enarc* — the stuck clerk and a sealed report to carry (module 02). *Aquilaris* — the introduction: a produced rescue and a testimony commission (module 03). *Sanrafsix* — the recruitment proper, at the Memory Market, where their stall sits beside a chandler's curio counter (below). **Crime scene in advance:** every ritual detail the intro stages is an Emptied House clue later — plant the normal so the players can read the wrong.
+
+### The Heir
+*Nemesis — The Inheritors — cult leader; a fraud among true believers; offstage until the Unveiling arc; run unstatted until then*
+
+> A Kel Dor, mid-fifties, immaculate; the respirator mask is the costume, and nobody has ever seen the face. At the Unveiling he will call himself **Lord Vhasla** — a name taken off a sealed tomb on Verdanth.
+
+**The fraud.** The rank-and-file's technique is real — scraped from artifacts, drilled, dangerous (the adept blocks below stand). The Heir's is not. He pretends Force-sensitivity by stagecraft: filament rigs, a clerk-fed earpiece, and one "divination" per audience that only the Vesta-9 census could know — spooky until a player realizes it is surveillance, which is its own chill. He is known in rumor only as *the Heir* until the Unveiling.
+
+**The robbed grave.** Legends names none of Verdanth's seventeen Dark Age lords; this campaign names one, and the Heir steals it: **Lord Vhasla**, whose sealed tomb sits under Vigil tape on hop 3. The Unveiling's claim is descent from Vhasla — a Brotherhood-style *Lord*, not a Darth — which makes the Vigil's necrology the paternity test that can falsify the claim on paper. One more reason the Inheritors fear the grave-keepers more than the Temple.
+
+**His management problem.** A genuinely Awakened recruit will one day outshine him — the Census's target and the Heir's nightmare in one person. If the crew's gifted PC is courted, this is what they are being courted *for*.
+
+**Fate (canon):** the culling. Slaughtered by Mendac with the senior circle, staged as an internal fight — they killed each other — with too many coincidences for a careful investigator (*The Emptied House*, below).
+
 ### Meru Vane, the First Friend
 *Nemesis — The Inheritors — first-contact agent and keeper of files*
 
@@ -190,7 +216,7 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 
 **The fork is closed: the Inheritors are heretics.** No connection to the true line, and they do not know it — real techniques scraped from artifacts, counterfeit lineage, no living tradition. **The Sith do not yet know they exist.**
 
-The moment that changes — the Unveiling, a public claim to a Darth title, anything that makes them look less like grave-robbers and more like a rival tradition — **the culling comes**, and it is surgical, anonymous, and total: the senior circle dead across a dozen worlds in one night, the archives vanished rather than burned, and nobody sane concluding "Sith." The galaxy blames the Vigil, or the Admiralty, or an internal purge, and every misattribution lights a different Act 3 fire. (It is Mendac's exam — the Graduation, in [Keepers of the Flame](keepers.md).)
+The moment that changes — **the Unveiling**: a public, organized claim to the Sith inheritance (the Heir's "Lord Vhasla"; no forbidden word needed — they do not know it), anything that makes them look less like grave-robbers and more like a rival tradition — **the culling comes**, and it is surgical, anonymous, and total: the senior circle dead across a dozen worlds in one night, the archives vanished rather than burned, and nobody sane concluding "Sith." The galaxy blames the Vigil, or the Admiralty, or an internal purge, and every misattribution lights a different Act 3 fire. (It is Mendac's exam — the Graduation, in [Keepers of the Flame](keepers.md).)
 
 Two aftershocks matter:
 
@@ -216,5 +242,7 @@ Use an Inheritor base the crew has already visited with courtesy — first conta
 | **Knowledge (Lore), Daunting** *(Formidable without a Sith-tagged fragment)* | *Only* fakes remain. Whoever did this could tell — which means a living tradition, not grave-robbers. Success awards a **Sith-tagged lore fragment** ("Someone in the galaxy can still tell true from false") and the GM a problem: the players now know the thing nobody sane concludes. |
 | **Streetwise, Hard** | The fakes will surface on the Memory Market within weeks, consigned by a fence who never met the seller. The trail ends at a dead fence. |
 | **Vigilance (or Sense), Average, in the archive** | The house is *quiet*. Whatever was here that the Force could feel left with the thieves — the only honest inventory of what was taken. |
+
+**Reading the stage, in reverse.** Everything the crew saw the Inheritors *perform* at Aquilaris and Sanrafsix is a clue here, if they planted the normal: the Blade-Cadre's inseparable pairs are dead *apart*; the archive kept everything in triplicate and no brawl destroys all three copies; the Heir's stage rig is untouched, its operator dead mid-cue — fights do not break out mid-performance; and the fake relics are *perfectly arranged*. Too many coincidences for a careful investigator, and exactly enough for the galaxy. **GM dial:** the harvested file contains a page reading *Sund's counter, Enarc*. Whether Mendac left it in the wreckage for an investigator to find, or took it, is yours — it is the one thread from the culling back to the chandler's stall.
 
 **Aftermath.** Fire-sale of the fakes; leaderless cells; half-trained adepts scattering with dangerous knowledge; if this was a senior base, the Vesta-9 file is gone with everything else. The galaxy blames the Vigil, the Admiralty, or an Inheritor purge, and each misattribution lights a different Act 3 fire ([Act 3](../../campaign/act-3.md)). If the crew's gifted stands in the relic hall and feels nothing at all, let that land: the real thing was here, and it is with someone now.

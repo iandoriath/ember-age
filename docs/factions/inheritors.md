@@ -14,6 +14,10 @@ A monopoly on the returning Force.
 
 The era's most dangerous currency: **real training, when no one else alive can teach.**
 
+## How they present
+
+Black at a distance, wax seals and ribboned reports up close, and a courtesy so complete it feels like a script. They arrive first at accidents and refuse payment. They call their masters *Lords*, in the old plural way, and never explain. Spacers who have dealt with them say two things: that they are frightening, and that they were never once seen to do anything a frightened person could describe.
+
 ## The crack
 
 Even senior Inheritors are not sure whose hand is at the top of their own organization — whether they serve a living tradition or are merely wearing its costume.
