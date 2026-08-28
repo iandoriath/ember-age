@@ -7,8 +7,8 @@
 | | |
 |---|---|
 | **When** | ~910 BBY. In-world, the year **90 AR** — After Ruusan. |
-| **What** | Ninety years after the Jedi and Sith annihilated each other at Ruusan, the galaxy has gone dark, ten thousand islands — and the war is passing out of human living memory. Now the Force is returning, the beacons are relighting, and what comes next has not been decided. |
-| **Who** | The player characters are **wayfinders** — a crew of seekers, traders, diplomats, and perhaps one of the newly Force-sensitive — reopening the galaxy one lane at a time. |
+| **What** | Ninety years after the Jedi and Sith annihilated each other at Ruusan, the galaxy has gone dark, ten thousand islands — and the war is passing out of human living memory. A broke crew at Okrent's Drift rides the Lamplighters' relighting of the dead Duros Space Run, one beacon and one strange world per hop, with three factions and a rival crew on their heels. |
+| **Who** | The player characters are **wayfinders** — the crew of one old ship, reopening a dead lane one hop at a time, with the Force coming back and at least one of them able to feel it. |
 | **Tone** | Hope with rust on it. Rebuilding and discovery. Light and dark finding a way forward together — or the old dogmas returning wearing new faces. |
 
 The thesis of the era, and the line to say aloud at session zero:
@@ -21,7 +21,7 @@ The thesis of the era, and the line to say aloud at session zero:
 
 - **[The Withering](setting/timeline.md)** — the ninety-year timeline from Ruusan to the relighting of Vesta-9.
 - **[The Galaxy at 90 AR](setting/galaxy.md)** — travel, memory, salvage, and the two networks that never stopped running.
-- **[Factions](factions/index.md)** — six answers to "what comes next," and two standing powers.
+- **[Factions](factions/index.md)** — seven answers to "what comes next," and two standing powers.
 - **[The Awakening](setting/awakening.md)** — the Force is coming back, and nobody knows why.
 - **[Campaign Structure](campaign/index.md)** — three acts: Reconnection, Convergence, the Founding.
 - **[Session One: "The Light on Vesta-9"](campaign/session-one.md)** — the cold open.

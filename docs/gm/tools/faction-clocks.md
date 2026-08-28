@@ -34,12 +34,14 @@ Use this space for who-knows-what, current attitude toward the crew, and debts e
 ### Kajidics
 —
 
-### Guild & Mandalorians
+### The Awakening
 —
 
 ## The Ladder of Sightings — the eighth clock
 
 **Rungs filed:** ☐ pattern ☐ hull ☐ face ☐ name
+
+**Sightings, unfiled** — the chandler's counter, one position per module; the GM's private log ([Keepers of the Flame](../npcs/keepers.md), Odri Sund). The tell is exact change, witnessed once per module and never remarked on. ☐ Enarc, the festival stall among the bowsers (S2) · ☐ Capital Cay, a rooftop counter between the pumps and the porch (S3) · ☐ Verdanth, the counter on the apron outside the temple (S4) · ☐ Aplooine, absent: the Varrow dock-log's chandler's crawler that bought no air (S5) · ☐ Sanrafsix, the Market ring beside the Inheritors' stall (hop 5, unwritten). Three receipts in the players' own notes before anyone thinks to count them.
 
 The Rule of Two survives on one asset: nobody knows it exists. So the line does not lose duels — it loses *sightings*. What the crew files — a certificate, a sworn statement, a pattern documented where other people can read it — is the one thing that works on the Sith, and it climbs a ladder. Each rung is something the crew **records and files** — a certificate, a sworn statement, an archive deposit, a pattern documented where other people can read it. A rung merely *witnessed* is a scare; a rung *filed* is a wound.
 

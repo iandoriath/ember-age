@@ -6,7 +6,7 @@
 
 The Order the Reformation made: no Lords, no armies, one Temple on Coruscant, and a doctrine written in grief. The Jedi of 90 AR are found young, taken from their families, raised without attachment, and sworn to a peace they keep on the Chancellor's behalf — investigators, mediators, the Senate's conscience with a lightsaber. There are fewer of them than there are sectors. They believe the Sith extinct, and they are the reason the Sith are careful.
 
-They have not been out on the Run since the Adjournment. The last Jedi anyone here remembers were Knight Errant–era warriors fighting Sith Lords through these systems — and the principalities spent the century after telling their subjects who the invaders had been.
+They have not been out on the Run since the Adjournment. The last Jedi anyone here saw were the Army of Light's, at Enarc and Sanrafsix in the war's final years. The Knight Errant raids are the story before that — lone Jedi fighting Sith Lords through these systems — and the principalities spent the century between telling their subjects who the invaders had been.
 
 ## What they want
 

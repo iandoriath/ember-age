@@ -2,15 +2,13 @@
 
 *The Force is coming back. Nobody knows why. The Temple thinks it is ready.*
 
-*(GM: there is a why, and it is the campaign's second locked truth — the thousand souls sealed at Ruusan are a vergence that has been pulling the Force toward itself for ninety years; the Ebb was it feeding and the Awakening is it leaking. Nobody in the galaxy knows. See [GM Truths](../gm/truths.md).)*
-
 For a generation almost no one was born with the gift; for the last twenty years the births have been rising, and no one knows why. The signs are consistent:
 
 - **True dreams.**
 - **The hearth-sense** — reading a room's feeling like weather.
 - **Small luck that bends.**
 
-In the Core there is an answer for it: the **Temple** on Coruscant, which has been finding gifted children and raising them since the Reformation, and whose creches are fuller this decade than in living memory. Out here there is nothing — no school, no Council that has ever heard of this sector, at most a rumor of a withdrawn Jedi or two in the deep systems, not advertising — and a galaxy with a generational grudge: households that buried sons over the orders' last war now watch the neighbor's daughter bend luck, and respond with worship, exile, or drowning-fear.
+In the Core there is an answer for it: the **Temple** on Coruscant, which has been finding gifted children and raising them since the Reformation, and whose creches are fuller this decade than in living memory. Out here there is nothing — no school, no Council that has thought about this sector since the Adjournment, at most a rumor of a withdrawn Jedi or two in the deep systems, not advertising — and a galaxy with a generational grudge: households that buried sons over the orders' last war now watch the neighbor's daughter bend luck, and respond with worship, exile, or drowning-fear.
 
 ## The ask
 
@@ -31,11 +29,9 @@ And the Temple has no rule for an adult. A twenty-year-old who dreams true is, b
 | [The Kajidics](../factions/kajidics.md) | Merchandise |
 | [The Mandalorian Clans](../factions/mandalorians.md) | Nothing — they simply adopt them. A foundling who bends luck is just a promising warrior |
 
-*(GM: there is a fourth count, and it is the oldest — the true Sith line's Census, in Keepers of the Flame.)*
-
 ## The question under the question
 
-The Jedi of 90 AR are peacekeepers — the Chancellor's, answerable to a Senate, forbidden the war that made them, raising children to keep a peace the Rim never got. Is that what the Force is about? The Temple says yes. The withdrawn Jedi who never left the Rim say something else. The Awakened at your table will be asked to choose, by people who each think the choice is obvious.
+The Jedi of 90 AR are peacekeepers — the Chancellor's, answerable to a Senate, forbidden the war that made them, raising children to keep a peace the Rim never got. Is that what the Force is about? The Temple says yes. The withdrawn Jedi who never left the Rim said something else, before the last of them died. The Awakened at your table will be asked to choose, by people who each think the choice is obvious.
 
 ## The Awakening sits at your table
 

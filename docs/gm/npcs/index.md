@@ -33,7 +33,7 @@
 | Lieutenant-at-Writs Enna Calloway | Rival | Admiralty | [Republic & Admiralty](republic-admiralty.md) |
 | First Keeper Odran Su | Nemesis | Vigil (hardline) | [Vigil & Inheritors](vigil-inheritors.md) |
 | Keeper Tessa Marn | Rival | Vigil (reform) | [Vigil & Inheritors](vigil-inheritors.md) |
-| Vigil Wardens | Minions | Vigil | [Vigil & Inheritors](vigil-inheritors.md) |
+| Vigil Wardens | Minions | Vigil (Warden Ossa Tull's escort, not her — Tull: use Vhail's Rival print, adjustments none) | [Vigil & Inheritors](vigil-inheritors.md) |
 | Meru Vane, "the First Friend" | Nemesis | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
 | Inheritor Adept | Rival | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
 | Unveiling Blade-Cadre | Rival | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
@@ -52,7 +52,6 @@
 | Runi Ordo | Rival | Mandalorian Clans (Awakened foundling) | [Lanes & Ledgers](lanes-ledgers.md) |
 | "Dead Letter" | Nemesis | a ninety-year-old contract | [Out on the Run](reaches.md) |
 | Docent-7 | Rival | the Sealed Enclave | [Out on the Run](reaches.md) |
-| The Quartermaster | Rival (social) | the Ration Engine | [Out on the Run](reaches.md) |
 | Anwei, the Oracle of Brel | Rival | Brel | [Out on the Run](reaches.md) |
 | Provenance-Broker Halla Wex + Scribes | Rival + Minions | the Memory Market | [Out on the Run](reaches.md) |
 | Junk Baron Okkam Dree + Clan Cutters | Rival + Minions | salvage economy | [Out on the Run](reaches.md) |
@@ -67,8 +66,8 @@
 | The Reef | Hazard | The Feral Run | [The Feral Run](wildlife.md) |
 | The Aquilaris Deep | Hazard | The Feral Run | [The Feral Run](wildlife.md) |
 | Lord Daiman · Lord Odion · Arkadia Calimondra · the Dyarchy · Ayanos Bactra · Malakite · Vilia Calimondra | Special (history, unstatted) | the dead principalities (1032 BBY) | [The Dead Lords](knight-errant.md) 🔒 |
-| Master N'Kata Del Gormo | Nemesis | the swamp (no faction) | [Keepers of the Flame](keepers.md) 🔒 |
-| Master Seldra Tane | Nemesis | Jedi Order (Temple envoy) | [Keepers of the Flame](keepers.md) 🔒 |
+| Master N'Kata Del Gormo | Special (unstatted) | no faction — the hill on Aquilaris in Act 1, the swamp on Verdanth later | [Keepers of the Flame](keepers.md) 🔒 |
+| Master Seldra Tane | Special (unstatted) | Jedi Order (Temple envoy; arrives at the Conclave of Charts) | [Keepers of the Flame](keepers.md) 🔒 |
 | The Patient Master | Nemesis | the true Sith line | [Keepers of the Flame](keepers.md) 🔒 |
 | The Patient Apprentice | Nemesis | the true Sith line | [Keepers of the Flame](keepers.md) 🔒 |
 | The Scar's Echo | Hazard | the dark side, pooled | [Keepers of the Flame](keepers.md) 🔒 |

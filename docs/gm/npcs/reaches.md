@@ -2,7 +2,7 @@
 
 Beyond the Vesta-9 corridor lies the deep Run — the dark country where the last war's Sith principalities died and the Republic's recovery never returned: ten thousand islands, each one grown strange in its own direction across ninety unlit years. The people and machines below are what the crew finds when a lane relights — caretakers still keeping faith with vanished masters, economies built on scrap and provenance, and one very polite droid still working a dead government's kill-list. Every stat block here but one is an official published FFG adversary pulled verbatim and re-skinned for 90 AR — the single exception (Anwei, an original build) is declared on her block; chassis and adjustments are cited on each block.
 
-*GM eyes only — this file spoils episode reveals for The Dead Letter, The Sealed Enclave, The Ration Engine, The Oracle of Brel, The Memory Market, The Chop-Yards, The Circuit, The Relit Lanes, and The Mausoleum Yards.*
+*GM eyes only — this file spoils episode reveals for The Dead Letter, The Sealed Enclave, The Oracle of Brel, The Memory Market, The Chop-Yards, The Circuit, The Relit Lanes, and The Mausoleum Yards.*
 
 ---
 
@@ -49,29 +49,6 @@ Beyond the Vesta-9 corridor lies the deep Run — the dark country where the las
 
 **Chassis:** Protocol Droid, Edge of the Empire Core Rulebook (also printed in the Age of Rebellion Core Rulebook; reprinted in Allies and Adversaries) (adjustments: none).
 **Using it:** Docent-7 is a non-combatant and the episode's heart: it does not know the Order is gone, only that attendance has been poor. It is also a walking archive — an unwiped pre-war memory core full of Jedi-tag lore fragments, which makes it quietly precious and, once word spreads, hunted (Okkam Dree pays in fuel for cores like this; the Vigil will claim custody of "the relic"). Its Knowledge skills answer almost any question about the world before the Withering, always in the present tense, which is worse. Let the players decide what it is owed: a fragment is a source, but Docent-7 is a witness — and the thing that answered this year's roll call thinks it is a student.
-
----
-
-## The Ration Engine
-
-### The Quartermaster
-*Rival (social) — independent civic machine — administrator intelligence that refuses to believe the galaxy is back*
-
-> "Your 'relit beacon' is an unverified atmospheric phenomenon. The ration cycle, by contrast, has never once failed you. Please present your chit."
-
-| Brawn | Agility | Intellect | Cunning | Willpower | Presence |
-|:-:|:-:|:-:|:-:|:-:|:-:|
-| 1 | 1 | 3 | 1 | 1 | 2 |
-
-**Soak 3 · Wounds 10 · M/R Defense 0/0**
-
-- **Skills:** Charm 2, Computers 2, Knowledge (Xenology) 1, Perception 1
-- **Talents:** none
-- **Abilities:** Droid (*does not need to breathe, eat, or drink; can survive in vacuum and underwater; immune to poisons and toxins; cannot be affected by mind-altering Force powers; cannot use or be trained in the Force*). Printed soak includes its integral plating.
-- **Equipment:** None printed. The Ration Engine itself — tally-looms, door seals, granary locks — is scenery and leverage, not a stat line.
-
-**Chassis:** 3D-4K, Administrative Droid, Debts to Pay, Edge of the Empire Game Master's Kit (adjustments: none).
-**Using it:** This is a contest of Computers, Negotiation, and Knowledge (Education), never blasters — run the confrontation as social combat: as a rival it has no strain threshold, so strain it suffers is applied as wounds against its Wound Threshold of 10. Be honest about that arithmetic: it is a printed rival with Presence 2 and Charm 2, and in a direct social duel against a competent negotiator it folds fast — the real threshold was never the duel. Its power is institutional, not personal: the sealed doors, the handshake protocols, the granary locks, and its genuine love of its people are what the crew must actually satisfy, so give it boost dice from ninety years of flawless records, and remember it controls food, water, and doors for everyone in the room. Out-arguing the Quartermaster is easy; it means nothing until the procedures are answered too. It genuinely loves its people, never lies (its Charm 2 is sincerity), and treats the crew's evidence the way an auditor treats a sob story. It loses gracefully to procedure: a verified census, a beacon certification with Lamplighter handshake codes, or proof its charter government still exists somewhere — that last one is a hook with teeth.
 
 ---
 

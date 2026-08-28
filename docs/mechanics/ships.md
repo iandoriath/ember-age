@@ -2,7 +2,7 @@
 
 Ninety years after Ruusan, nothing flies new. Every hull in this file is an inheritance — a pre-Ruusan pattern kept alive by devotion, cannibalized cousins, and a family's whole savings — and the handful of yards that could lay a fresh keel are strategic prizes worth wars. Book prices are quoted in old Republic credits as printed; in 90 AR a working ship is beyond price and a dead one becomes a neighborhood. Every stat block below is an official FFG vehicle block reproduced as printed; only the names and the rust are ours.
 
-*This file is player-safe: no campaign secrets appear anywhere in it.*
+*Stat blocks are shareable; the Using-it notes are the GM's.*
 
 ---
 
@@ -164,6 +164,34 @@ Ninety years after Ruusan, nothing flies new. Every hull in this file is an inhe
 *(stats unverified against print — scope: Speed/Handling and Hull Trauma/System Strain Thresholds could not be independently corroborated — verify them against the Flare-S Swoop entry in the Edge of the Empire Core Rulebook vehicles chapter before table use; the remaining fields are corroborated as printed)*
 **Era notes:** Circuit machines are shrines of mismatched relic parts, each with a dead racer's name painted somewhere honest. Sponsorship livery (Kajidic, Lamplighter, hometown collective) is worth a boost die on the *social* checks it impresses — never on the flying.
 **Using it:** Hull trauma 2 means any solid hit ends a swoop, so run races and chases as pure Piloting (Planetary) drama — opposed checks, terrain, nerve — where crashing out is the stake rather than damage math. A circuit rider is also the era's newsfeed: whoever wins the season carries the rumors, the mail, and quietly the contraband, which makes befriending one worth more than beating one.
+
+---
+
+## The Ash Sea
+
+### Ash-crawler (Varrow pattern)
+*Vehicle — the Aplooine peak-holds — a sealed speeder truck on treads, the only thing that crosses the Sea*
+
+> A cargo truck somebody's great-grandmother welded shut, dropped onto treads, and taught to swim in ash. The cabin smells of four people's breath, and the gauge over the driver's head counts it down.
+
+| Silhouette | Speed | Handling |
+|:-:|:-:|:-:|
+| as printed | **2** on the Sea (see Adjustments) | as printed |
+
+**Defense / Armor / Hull Trauma / System Strain: as printed for the A-A5 — print unverified**
+
+- **Hyperdrive:** None
+- **Navicomputer:** None
+- **Sensor Range:** as printed
+- **Crew:** One driver; a co-driver reads the dunes (Survival or Perception — Session Five, Scene 3)
+- **Encumbrance Capacity:** as printed · **Passenger Capacity:** as printed — the sealed cabin carries **four** on the Sea (see Adjustments)
+- **Consumables:** **six hours of cabin air for four** (see Adjustments) · **Price/Rarity:** as printed; on Aplooine, rental only, on the Varrow hold's terms · **Customization Hard Points:** as printed
+- **Weapons:** None
+
+**Chassis:** A-A5 Speeder Truck, Edge of the Empire Core Rulebook (adjustments: declared — (1) **treads and a sealed cabin** for the ash: the truck runs on treads instead of its repulsors and the cab is pressure-sealed, so it crosses the Sea where an open speeder chokes; (2) **Speed 2 on the Sea**: whatever the print says, nothing crosses the Ash Sea faster than 2, and a Full Throttle is a slide waiting to happen; (3) **cabin air for four for six hours**: the crawler's consumables are one driver's day of air for four people, and Session Five's air clock runs on it).
+*(print unverified — verify against the book before the first roll: every "as printed" field above is left blank on purpose rather than transcribed from memory; copy the A-A5's silhouette, handling, defense, armor, thresholds, capacities, price, and hard points from the Edge of the Empire Core Rulebook vehicles chapter, then apply the three adjustments)*
+**Era notes:** Nobody on Aplooine has built a crawler in living memory; every hull on the Sea is an A-A5 cab welded to a tread-bed pulled off something older, patched with plate from the last crawler that went under. The holds name them and chalk their crossings; a crawler with a name has been across the Snorkel's line at least once.
+**Using it:** The crawler is a cabin with a clock in it. Run the crossing as Piloting (Planetary) legs (Session Five, Scene 3) with the six hours of air as the stake, not the hull: a slide puts the crawler under for a round (Hard Athletics to get out and up), and a crawler under with its seal broken is four people breathing ash. Hesk Varrow's *Long Odds* is the same chassis with a driver who has never lost; the two Varrow-hold rigs in the race are Threat spends, not contenders. The hold rents, never sells, and the rental's damage goes on the crew's paper.
 
 ---
 

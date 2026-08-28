@@ -7,7 +7,7 @@
 
 ## 0 AR — Ruusan
 
-Seven battles end the New Sith Wars. Lord Kaan's thought bomb consumes both armies, and a thousand light and dark spirits are bound together in what becomes the Valley of the Jedi. Most of the Jedi Order dies on that world. Publicly, the Sith are extinct. Secretly, Darth Bane walks away with one apprentice and a Rule: two, no more.
+Seven battles end the New Sith Wars. Lord Kaan's thought bomb consumes every Force-user within its reach — Hoth's hundred and Kaan's whole Brotherhood — and a thousand light and dark spirits are bound together in what becomes the Valley of the Jedi. A generation of Jedi dies on that world. Publicly, the Sith are extinct. Secretly, Darth Bane walks away with one apprentice and a Rule: two, no more.
 
 ## 0–12 AR — The Reformation and the Adjournment
 
@@ -33,7 +33,7 @@ The last adjourned delegations stop sending even observers to a Senate whose ses
 
 ## 75–90 AR — The Dimming and the Awakening
 
-The war generation begins to die. News travels by courier and arrives as rumor, and on ten thousand worlds the Jedi and Sith pass from testimony into story. Then, in the same years, the Ebb reverses: Force-sensitive children are born in rising numbers, the oldest of them now young adults. In the Core the Temple's creches fill and its doctrine holds. In the Rim the galaxy is forgetting the Force at exactly the moment the Force remembers the galaxy — and no one out here has seen a Jedi in a lifetime.
+The war generation begins to die. News travels by courier and arrives as rumor, and on ten thousand worlds the Jedi and Sith pass from testimony into story. Then, from about 70 AR, the Ebb reverses: Force-sensitive children are born in rising numbers, the oldest of them now young adults. In the Core the Temple's creches fill and its doctrine holds. In the Rim the galaxy is forgetting the Force at exactly the moment the Force remembers the galaxy — and no one out here has seen a Jedi in a lifetime.
 
 Around 80 AR the Lamplighters — the guild that spent the century leading the Corellian Run's restoration — abruptly redirect their first-lighting prizes down the old **Duros Space Run**, turning aside at New Cov with Ryloth still unreached. The Core is surprised; the payouts keep coming anyway. Kalarba, Kyrska, Glom Tho and Triffis come back onto the charts inside a decade, every prize paid in full — the last claimed by the crew of the *Larksong* — and a new fueling station rises at Bannistar to feed the advance. Then the advance stops: the next beacon cannot be found, the prize hangs unclaimed for years, and Bannistar's boomtown slides into recession. The reconnected worlds begin trading again. Their adjourned Senate seats stay adjourned; no overture comes.
 

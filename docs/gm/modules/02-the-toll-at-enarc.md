@@ -25,6 +25,10 @@
 
 **Rules shorthand:** Average = 2 difficulty dice, Hard = 3. A **fragment** is the campaign's clue-card (form, tag, Question, claim); hand it over physically and log it in the [fragment tracker](../tools/fragment-tracker.md). **Triumph** = spectacular extra success; **Despair** = success-independent complication.
 
+**Spine:** Scene 1, the Closed Door (20 min) · Scene 2, the Festival (40) · Scene 3, the Court of the Anchor, the Circuit inside it (50) · Scene 4, the First Relight and the paper (60) · Scene 5, the Anchor Slips and the Way Out (40) · one wrinkle, if the night has room (30). About four hours with a break.
+**Cut for time:** the second petitioner, the dejarik fallback, the chase's middle leg, any wrinkle not already triggered.
+**Never cut:** the picket's warning at the door, the Scales, the three stations, the firing read aloud, the paper.
+
 ## Carrying Session One forward
 
 Collect what the table actually did; use every row that applies. (Set by Session One's Handoff table — same labels.)
@@ -45,9 +49,9 @@ Carry the small economy too: the witness charter (250/lighting) applies tonight;
 
 @@action:thread {"ledger":"knows","who":"Sorulba's court","what":"The crew's biography — their debts, their record at Vesta-9, Skell's own edit of the lane ambush","since":"S2","notes":"Sold by Skell before the crew landed; correcting the record is play, and the court enjoys watching"}@@
 
-## Scene 1 — Arrival: The Closed Door
+## Scene 1 — The Closed Door: the choice to enter knowing
 
-**The jump.** Vesta-9 to Enarc is an uncertified dead leg: **Hard Astrogation** (Osk's page or margins add a boost die). Enarc is not *lost* — it is on every old chart, a famous junction — it is *closed*: anyone can attempt the jump; Osk's margins only make it safe. Skell beat everyone here because he jumped straight from the lane while the crew sat through certification.
+**The jump.** Vesta-9 to Enarc is an uncertified dead leg: **Hard Astrogation** (Osk's page or margins add a boost die). Enarc is not *lost* — it is on every old chart, a famous junction — it is *closed*: anyone can attempt the jump; Osk's margins only make it safe. Skell beat everyone here because he was a step ahead the whole way: he left the ward when the crew did, the *Overdue* pre-flighted on the infirmary pad while the crew's split load walked over, so he was one reversion ahead at Vesta-9, clamped and mid-recital when they arrived, and off the ring for Enarc while the crew sat through certification.
 
 **The challenge.** The beacon mast reads cold on every band — then a picket boat older than anyone aboard slides out of the dark with its lights off and speaks:
 
@@ -59,7 +63,7 @@ The warning is genuine, delivered once, and phrased so that gold-rush crews have
 
 **What the players should feel:** they are celebrities in a sealed country — watched, feted, priced — and everyone at this court is starving for the outside while pretending not to be. First outside faces in decades. Every conversation is an interrogation wearing perfume. And on the guest docks, the gold-rush captains who beat them here are learning the rule the hard way — one mutters "third week" into his drink — because berthing is free, fuel is a gift, and the exit paperwork is always *almost* ready.
 
-## Scene 2 — The Festival
+## Scene 2 — The Festival: the offers arrive over the courses
 
 **The kingdom, seen walking.** A pre-Ruusan customs hulk grown into a palace-city: the old inspection halls hung with tapestries, fuel bowsers repainted as triumphal columns, a court that eats imported delicacies off Naboo-stamped crates while the dock families ration. Give the players the two beats that matter: the **beacon mast** on the palace spine — polished, maintained, dark, the king's crown jewel and his proof that the closed door is a *choice* — and the **festival** the court throws for its new guests, because a hermit court celebrates anything that breaks the boredom.
 
@@ -68,12 +72,14 @@ The warning is genuine, delivered once, and phrased so that gold-rush crews have
 - **The wager settles loudly.** @@npc:Captain Vess Marrow@@ pays or collects on the Vesta-9 race in front of the whole court — toasts, the story retold with the crew in it, the court adopting favorites. *(Cold rivalry? She settles with cold courtesy, and the court notices that too — this is a room that reads faces professionally.)*
 - **The letter of marque.** Mid-toast, Purser-Lieutenant Breck — the Admiralty's envoy, navy grey among the silks — approaches Marrow *publicly* and offers an escort commission and naval registry: the fleet wants its first famous privateer. Warm Marrow asks the crew what they think, and means it. The crew watches their likable rival being courted by the nascent empire — and understands the same offer is one good deed away from *them*.
 - **The corner seat.** @@npc:Captain Ferro Skell@@ dines two tables away, already at ease, already owed favors — and sends the crew a course they didn't order, with his compliments, paid from an account that used to be their debts. *(He sold their story; now he shows them he can afford to be gracious. Let a player fantasize about the punch they cannot throw at a king's table.)*
-- **The chandler's stall.** Among the repainted bowsers a folding counter of refurbished shoring jacks and lamp cells — *Sund & Daughter*, a young woman running her late father's ledger, buying curios "valued honestly" from the guest-dock captains who have nothing left to sell. The court tolerates her because she pays in scrip and asks nothing. She gives exact change. *(GM: this is Mendac in cover — [Keepers of the Flame](../npcs/keepers.md), Odri Sund. She never approaches the crew. If they buy, note where the stall stood tonight; say nothing.)*
+- **The chandler's stall.** Among the repainted bowsers a folding counter of refurbished shoring jacks and lamp cells — *Sund & Daughter*, a young woman running her late father's ledger, buying curios "valued honestly" from the guest-dock captains who have nothing left to sell. The court tolerates her because she pays in scrip and asks nothing. Stage her in one narrated sentence as the crew walk the bowsers: she counts change back to a third-week captain coin by coin, then writes him a slip. If a PC buys, they get a paper receipt: *Sund & Daughter, Enarc, paid in full.* *(GM: this is Mendac in cover — [Keepers of the Flame](../npcs/keepers.md), Odri Sund. She never approaches the crew. Note where the stall stood tonight, whether or not they buy; say nothing.)*
 - **Background truth:** through the feast-hall's viewport, Kollen drills his marines on the embassy pad — parade-order, in public view, saying nothing. Breck is visibly annoyed at the timing. That is the Annexation, rehearsing where everyone can see it.
 
-**Breck's quiet question** — after the festival, once, to the crew alone: *"Your guild posted the Enarc prize before your Vesta-9 paper cleared. Who does your guild bank with?"* The Admiralty noticed the too-fast prize too, and the fleet's investigators are competent, patient, and genuinely useful. **(GM only — the trap is structural:** handing the who-funds-the-guild thread to the Founding cadre arms them with a perfect enemy; "a hidden hand funds the reopening" is rally material whether or not anyone ever says the word *Sith*. The players can hand the fascists their cause and believe they are doing detective work. They are. That is the problem.)
+**Breck's quiet question** — after certification (Scene 4), once, to the crew alone, and **only if a player noticed the date** on the prize paperwork: *"Who does your guild bank with?"* She never mentions the date herself. The Admiralty noticed the too-fast prize too, and she is waiting to see who else did; if nobody at the table noticed, she asks nothing, and the date stays where Scene 4 leaves it, for a player to find. The fleet's investigators are competent, patient, and genuinely useful. **(GM only — the trap is structural:** handing the who-funds-the-guild thread to the Founding cadre arms them with a perfect enemy; "a hidden hand funds the reopening" is rally material whether or not anyone ever says the word *Sith*. The players can hand the fascists their cause and believe they are doing detective work. They are. That is the problem.)
 
-## Scene 3 — The Court of the Anchor
+**Pillar check:** which pillar did this scene move? (The Festival, if the Debt Auction ran tonight and the crew turned it; otherwise none yet — the count starts in Scene 3.)
+
+## Scene 3 — The Court of the Anchor: the Scales, the race, the log
 
 **The situation.** @@npc:Sorulba the Anchor@@ holds court from a dais he has not left in forty years, and he speaks to outsiders **only through Scale-Master Vopp** — being addressed directly by the Anchor is a privilege, and the court keeps score of who earns it. Stage him as terrain, never combat: he pays promptly, keeps his word to the letter, prices the letter. Before the crew is called, let them watch the kingdom work on its own people — two petitioners ahead of them:
 
@@ -98,7 +104,7 @@ The warning is genuine, delivered once, and phrased so that gold-rush crews have
 | **The colonnades** | Flat-out slalom through the repainted fuel bowsers, the whole court watching from the galleries | **Hard Piloting (Planetary)** |
 | **The dead docks** | A lightless tunnel of forty years of mothballed hulls — racers navigate by memory or nerve, and the hulls are *inhabited*: forty years of roosts, and the lead racer's wake lifts them in a burst of startled wings | **Average Piloting (Planetary)** plus a setback die for the dark; a bold rider may substitute **Perception** to read the wrecks. Threat on this leg is wildlife, not walls ([The Feral Run](../npcs/wildlife.md)) |
 | **The spine** | The climb along the palace's back, finishing under the dark beacon mast itself | **Hard Piloting (Planetary)**; Advantage from earlier legs carries forward as boost dice |
-Best of three legs wins. Draz rolls three Piloting with a boost (home track); a **Triumph** anywhere is a lead nothing answers; a **Despair** is a wreck — dramatic, survivable, and the court *loves* it. Stakes: the picket log's pages against something the crew genuinely fears losing — their rutter page, their sworn testimony in a future dispute, or their ship's papers for a season. *(A crew with no rider can propose dejarik — holochess, Vopp playing for the house — best of three, **Knowledge (Education) or Astrogation vs 3 difficulty**; but the court will be disappointed in them, and show it.)*
+Best of three legs wins. **Competitive check: rider and champion roll the leg's difficulty; most net Successes wins the leg; Triumphs break ties, then Advantage. The champion rolls his printed pool plus the home boost.** Draz's pool is Kettle Maro's print, Agility 4 and Piloting (Planetary) 3, with Full Throttle on the spine if he needs it; a **Triumph** anywhere is a lead nothing answers; a **Despair** is a wreck — dramatic, survivable, and the court *loves* it. Stakes: the picket log's pages against something the crew genuinely fears losing — their rutter page, their sworn testimony in a future dispute, or their ship's papers for a season. *(A crew with no rider can propose dejarik — holochess, Vopp playing for the house — best of three, **Knowledge (Education) or Astrogation vs 3 difficulty**; but the court will be disappointed in them, and show it.)*
 
 **The picket log.** Two standing orders live in it, written years apart, and keeping them distinct is the whole game. **The first is the kingdom's one open door, priced and logged:** the Naboo account — Admiralty tenders down the Naboo lane for years, fueled, paid, every visit dated. (A careful reader can date the *Steadfast*'s tender passing toward Vesta-9 — which superficially feeds the port's wrong answer from Session One, *the Admiralty lit it*, and actually refutes it: a fleet that pays its fuel bills at a king's dock is not sneaking anywhere.) **The second order is newer, unpriced, and unexplained:** the pickets have logged **ghosts** for years — unidentified transits crossing the junction's far sky, dark, unanswering — and *six years ago the standing order changed from "hail and pursue" to "log and let pass,"* after a picket boat that went to look never came home. No wreck. No answer. There are ships you do not stop, and they are not the fleet's.
 
@@ -109,7 +115,9 @@ The built-in contradiction, for the players to find: Osk said somebody has been 
 !!! danger "GM only — the hidden hand"
     The Naboo account is commerce; the ghost order is the shadow of the campaign's hidden actors (see [Keepers of the Flame](../npcs/keepers.md), the doctrine of the open road — the short version: a patron secretly steers the guild's relighting order, and its agents fly the dark Run unseen; the lost picket boat stopped one of *their* hulls once). The log bears on *Who lit Vesta-9?* — and the fuel account beside it, with its honest arithmetic of who the Republic never came back for, is the first Civic evidence for the verdict Question if the table has opened it. If the players conflate the two and close the case as "the Admiralty all along," let them — the fuel account's honest arithmetic is sitting right there, waiting to reopen it.
 
-## Scene 4 — The First Relight
+**Pillar check:** which pillar did this scene move? (The Scales, if the ghost order was read aloud at the pan; the Festival, if Draz lost.)
+
+## Scene 4 — The First Relight: the centerpiece, then the paper
 
 **Why this scene is the centerpiece.** Vesta-9 lit itself. This is the first beacon the crew ever lights **with their own hands** — the campaign's whole premise, finally on-screen — so do not let it be one die roll. The mast has been polished for forty years and *fired* for none of them: the capacitor stacks need manual sequencing at **three stations at once**, and the politics do not stop screaming while it happens.
 
@@ -123,7 +131,7 @@ The built-in contradiction, for the players to find: Osk said somebody has been 
 | **The core room** | The old beacon heart, deep in the palace | **Average Computers** to run the guild handshake (their charter papers carry the codes; Osk's margins carry older ones), then **Hard Mechanics** to sequence capacitors that have never once fired | Arc-flash: 4 strain, and the mast tries to fire *early*, half-sequenced — see below. |
 | **The feed junction** | Down among the bowser colonnades — the crown's own grid | **Average Skulduggery or Mechanics** to re-route palace power without tripping the crown's alarms — or, with leave, **Average Negotiation** with the gantry master, who wants a bribe and an autograph | The palace grid *notices*: enforcers arrive to watch, arms folded, and every later check here is upgraded once. |
 
-Run it as two or three interleaved rounds — cut between stations like a heist. PCs without a station support: the captain on comms (**Average Leadership** — hand a boost die to any one station per round), a lookout (**Average Perception/Vigilance** — downgrade one incoming complication), a face holding off the court in the corridor (opposed social). The relight completes when all three stations have succeeded.
+**The relight rule.** Three stations over three rounds; cut between them like a heist. Every round past the second adds a setback die at every station. Any station not green at the end of round three fires the beacon wrong: run *If the mast fires early*, below. PCs without a station support: the captain on comms (**Average Leadership** — hand a boost die to any one station per round), a lookout (**Average Perception/Vigilance** — downgrade one incoming complication), a face holding off the court in the corridor (opposed social). The relight completes when all three stations are green.
 
 **Threat menu for the set piece:**
 
@@ -134,7 +142,7 @@ Run it as two or three interleaved rounds — cut between stations like a heist.
 | 3 Threat | A picket's spotlight pins the mast head: freeze in the glare for a round, or push through it for 2 strain. |
 | Despair | A ghost — a dark hull, unlit, unanswering — drifts past the mast head close enough to see the crew's faces, and somebody aboard is *watching*. It says nothing. It files no complaint. (GM: let the image sit; it is the campaign in one frame.) |
 
-**If the mast fires early** (core-room Despair): the beacon lights *wrong* — a stuttering, off-pitch carrier every nav board in the kingdom hears as a wounded animal — and someone must re-seat the sequence **live**, at the mast head, while it cycles: one more **Hard Mechanics** with the mast humming under their gloves. Scary; not lethal.
+**If the mast fires early** (core-room Despair, or a station still red at the end of round three): the beacon lights *wrong* — a stuttering, off-pitch carrier every nav board in the kingdom hears as a wounded animal — and someone must re-seat the sequence **live**, at the mast head, while it cycles: one more **Hard Mechanics** with the mast humming under their gloves. Scary; not lethal.
 
 **The firing.** When the last station goes green, read it slowly:
 
@@ -142,18 +150,20 @@ Run it as two or three interleaved rounds — cut between stations like a heist.
 
 Then let the silence break — some of the kingdom is cheering, and some of it is looking at the king — and cut to the paper.
 
-**Certification — the "Speak to it" stage.** @@npc:Chartmistress Bel Nerra@@ arrives a day behind the crew — in time for this scene — carrying the certification packet and the Enarc prize paperwork *(dated before Vesta-9's certificate cleared; say nothing, let a player find the date and realize the advance was never resumed, it was **waiting**)*. The check: **Average Negotiation or Charm**, upgraded once for her table manner — she *wants* to sign; the fight is over **whose clauses go on the founding paper of a three-lane junction**: Jeeda's *port authority of record*, Breck's *customs house + protected lane*, the guild's *charting authority* (if that fine print exists from Session One), and the crew's names as witnesses — again. The certificate is read for a century, and everyone in the room knows it.
+**Certification — the "Speak to it" stage.** @@npc:Chartmistress Bel Nerra@@ arrives a day behind the crew — in time for this scene — carrying the certification packet and the Enarc prize paperwork *(dated before Vesta-9's certificate cleared; say nothing, let a player find the date and realize the advance was never resumed, it was **waiting**; if one does, Breck's quiet question follows, Scene 2)*. The check: **Average Negotiation or Charm**, upgraded once for her table manner — she *wants* to sign; the fight is over **whose clauses go on the founding paper of a three-lane junction**: Jeeda's *port authority of record*, Breck's *customs house + protected lane*, the guild's *charting authority* (if that fine print exists from Session One), and the crew's names as witnesses — again. The certificate is read for a century, and everyone in the room knows it.
 
-## Scene 5 — The Way Out
+**Pillar check:** which pillar did this scene move? (The Door, if the paper certifies; the Guard, if the crew worked with Jeeda's leave and the enforcers stood easy.)
 
-Every outcome below also answers the quieter question every guest in the kingdom is asking: *who gets to leave, and on whose paper.* A lit, certified corridor makes the one-way rule unenforceable — which is half of why the king fights it, and the whole reason the gold-rush captains on the guest docks will love or hate the crew forever.
+## Scene 5 — The Anchor Slips, and the Way Out: the coup, and who leaves on whose paper
+
+Every outcome below also answers the quieter question every guest in the kingdom is asking: *who gets to leave, and on whose paper.* A lit, certified corridor makes the one-way rule unenforceable within a season; tonight the pickets still fly — which is half of why the king fights it, and the whole reason the gold-rush captains on the guest docks will love or hate the crew forever.
 
 **Outcomes** — what the founding paper says, and what it seeds:
 
 | If the crew… | Tonight | It seeds |
 |---|---|---|
-| Lights it on **Jeeda's** terms | The relight was *easy* — leave, power, a Hutt smiling for the first time in the campaign. Sorulba does not rage; he *audits*. Breck's report home says the junction opened under Hutt law | The kingdom opens on the family's terms and the clan war goes from one bad season away to scheduled. Jeeda is a patron; the old king is a creditor; the crew is the hinge of both. |
-| Lights it on **the Admiralty's** terms | Smooth and *legal-feeling*: naval escort, naval stamps, tariffs posted low — and the two Hutts agree with each other for the first time, about the crew | The Charter gets its first legal foothold on the Run; the Annexation learns it can arrive by clause instead of by tender. The Republic reads the certificate within the month and understands the Adjournment has a competitor. |
+| Lights it on **Jeeda's** terms | The relight was *easy* — leave, power, a Hutt smiling for the first time in the campaign. Sorulba does not rage; he *audits*. Breck's report home says the junction opened under Hutt law. *The exit:* her port-authority stamp on the new paper is a transit clearance the picket captain honors | The kingdom opens on the family's terms and the clan war goes from one bad season away to scheduled. Jeeda is a patron; the old king is a creditor; the crew is the hinge of both. |
+| Lights it on **the Admiralty's** terms | Smooth and *legal-feeling*: naval escort, naval stamps, tariffs posted low — and the two Hutts agree with each other for the first time, about the crew. *The exit:* the embassy's treaty exemption extends to hulls under naval escort | The Charter gets its first legal foothold on the Run; the Annexation learns it can arrive by clause instead of by tender. The Republic reads the certificate within the month and understands the Adjournment has a competitor. |
 | Lights it for **the guild**, around every court | The corridor certifies clean — and leaving the kingdom becomes the chase below, or hospitality that stops pretending | The king's counterstroke assembles; the crew has made an enemy of a man whose whole art is patience — and the court remembers everyone who was at the festival. |
 | Takes **Sorulba's** price and leaves it dark | 2,000 scrip, a black-lane rutter, and the Anchor's genuine respect — worth more than the money | The choice *stands* — no unseen hand undoes it. Instead the **order moves**: the guild posts its next prizes around the closed kingdom, the Run lights past it hop by hop, and Enarc becomes an embargoed island in a brightening lane — which is exactly what the king chose, and the crew will watch what that does to the people inside. (GM: the patron's sequence simply reroutes; the crew may notice the reroute happened *because of them*.) |
 | **Backs the coup** — helps Jeeda topple the king (see *The Anchor Slips*, below) | The Scales announce a new order; Sorulba is escorted from the dais he never leaves; the door opens by decree, the stranded go free, the beacon lights under the family's flag with the crew as witnesses of record | The kingdom is Jeeda's and the crew are the hinge she cannot deny; the clan war is *scheduled*; the treasury vault and whatever the Scrub left in it are a Kajidic asset; the second page of the picket log is theirs. Sorulba lives, patient, and will testify. |
@@ -169,12 +179,22 @@ Every outcome below also answers the quieter question every guest in the kingdom
 
 | Pillar | What holds it up | How it falls |
 |---|---|---|
-| **The Scales** | Vopp's honest arithmetic — the kingdom believes its ledgers | The picket log's ghost order, read aloud in court (Scene 3): the king was *paid* to stop looking. The Stranded Warden's slate proves what he was paid to ignore. |
+| **The Scales** | Vopp's honest arithmetic — the kingdom believes its ledgers | The picket log's ghost order, read aloud in court (Scene 3): the king was *paid* to stop looking. The Stranded Warden's slate proves what he was paid to ignore. **What topples it:** the log's first page plus the warden's slate (the same festival season, six years ago) on the pan; **Hard Negotiation at the Scales, opposed by Vopp.** |
 | **The Festival** | Draz's unbeaten Circuit; the pit nobody wins; the auction the galleries love | Beat Draz (Scene 3). Win the pit (the Exit Pit) — the beast *spared* before a thousand witnesses is worth two pillars. Turn the Debt Auction: buy a stranger free and the galleries see the king's cruelty priced. |
 | **The Guard** | @@npc:Kajidic Enforcers@@ — commercial, unhurried, paid by the family, not the man | @@npc:Jeeda the Younger@@ holds the payroll's numbers. Once she moves, the guard stands *still*, which is the only move it needs. |
-| **The Door** | The one-way rule — the king's whole legitimacy | A certified relight makes the rule unenforceable; the embassy's exemption already proves the rule has exceptions; Breck (treaty wing) will recognize *whoever can sign a tariff*. |
+| **The Door** | The one-way rule — the king's whole legitimacy | A certified relight makes the rule unenforceable within a season; the embassy's exemption already proves the rule has exceptions; Breck (treaty wing) will recognize *whoever can sign a tariff*. |
 
-**Running it.** Count pillars as the night goes; the crew does not need to know the mechanism, only to feel the room tilting. **Two pillars down** and Jeeda approaches them herself — not with a plot but with an *offer of the second page* (below): the coup is on, and she wants them in it or out of the way. **Three down** and the coup succeeds if they back it: a Hard Leadership or Negotiation from whoever fronts the crew, upgraded once for each pillar past three, in front of the whole court — or a Charm check on the galleries, which is the same thing louder. **Four down** and it does not need them at all; it needs only their silence. The king's counterstroke is real but late — Vopp's *scales* announce the change of order the way they announce everything, and Sorulba, who never leaves the dais, does not leave it now either: he is escorted from it. Nobody dies unless the crew makes them.
+**Jeeda's Numbers — the offer.** @@npc:Jeeda the Younger@@ wants the door open and the old king gone, and she means to try tonight. Her offer, when she makes it (two pillars down): the picket log's *second* page — who paid the court to stop hailing the ghosts — in exchange for the crew's hands on the remaining pillars: beat Draz, turn the auction, win the pit, or simply *stand in the court and say what they saw at the Scales*. Backing her is backing a palace coup, and "the young Hutts have run the numbers" ends in clan war one bad season away — now scheduled. Run it across the whole session, pillar by pillar, and let the crew notice the room tilting before anyone says the word. If they decline, or never get the pillars down, the coup waits — Jeeda is patient too; she is just younger at it.
+
+**Running it.** Count pillars as the night goes; the crew does not need to know the mechanism, only to feel the room tilting. **Two pillars down** and Jeeda approaches them herself — not with a plot but with the offer above: the coup is on, and she wants them in it or out of the way. **Three down:** Hard Leadership or Negotiation before the court (or Charm on the galleries), one boost for each Festival sub-trigger taken beyond the first (Draz beaten, the pit won, the auction turned). **Four down:** no check; it does not need them at all, only their silence. The king's counterstroke is real but late — Vopp's *scales* announce the change of order the way they announce everything, and Sorulba, who never leaves the dais, does not leave it now either: he is escorted from it. Nobody dies unless the crew makes them.
+
+**On failure:** Vopp announces the king's order instead, Jeeda withdraws to the family's roads, the crew's hosts become guards; run the prison break or the pit, and the coup does not happen tonight (tick Jeeda's clock; the clan war stays scheduled).
+
+**When it lands.** If the coup lands before Scene 4, the relight runs with the family's leave. If after, the relight itself is the Door, and the Scales announce the change of order in the same breath as the certificate.
+
+*If the coup fails or never launches tonight, but the crew helped Jeeda take the festival:*
+
+@@action:clock {"faction":"Kajidics","delta":1,"note":"Jeeda's coup in waiting — the crew helped rig the Circuit; the young Hutts have the festival"}@@
 
 **What it costs.** A coup is a *sale* — Jeeda is not a liberator, she is a Hutt with better arithmetic. The door opens on the family's terms; the stranded go free *as her first decree* (which buys her the guest docks forever); the treasury vault becomes hers, and what the Scrub left in it is now a Kajidic asset. The Republic Trooper watches a lawful order fall to a better-funded one, and Kollen's Founding cadre takes notes: it now knows courts on the Run can be *bought out from under*. And the clan war moves from one bad season away to **scheduled** — the old king's creditors are the family's creditors, and the family has just been told what it is worth.
 
@@ -188,15 +208,18 @@ Every outcome below also answers the quieter question every guest in the kingdom
 
 @@action:thread {"ledger":"knows","who":"The crew (via the picket log's second page)","what":"Who paid the Anchorage's court to stop hailing the ghosts","since":"S2","notes":"Rung-one Ladder material; filed by a Hutt court with a new reason to file it"}@@
 
-**The chase** *(if the crew leaves hostile — the guild-clean and covert rows, or any Scales bargain broken; remember there is no lawful exit without the king's leave, so these are prison breaks, and every gold-rush crew on the docks is watching to see if it can be done)*: three legs, one check each, hard narration between.
+**The chase** *(if the crew leaves hostile — the guild-clean and covert rows, or any Scales bargain broken; remember there is no lawful exit without the king's leave, so these are prison breaks, and every gold-rush crew on the docks is watching to see if it can be done)*: a berth to slip, then three legs, one check each, hard narration between.
 
-1. **The colonnade weave** — out through the bowser columns with picket boats rising: **Hard Piloting (Space)**. Fail: 2 system strain and the pickets herd them toward —
-2. **The dark approaches** — the junction's unlit far sky, where the ghosts fly: **Average Perception or Astrogation** to thread the dead buoys. Despair: running lights snap on off the port bow — a hull that was never asleep, watching, not firing — and the last leg is flown in its shadow.
-3. **The jump** — calculating out under pursuit: **Hard Astrogation** (Osk's margins boost). The pickets break off at the shoal's edge: the kingdom does not chase into the dark it fears. If @@npc:The Overdue, debt-bought Ghtroc 720@@ is at Enarc, Skell picks whichever side of the chase pays better, and makes sure the crew sees him choose.
+- **Leg 0 — the berth.** The ship sits under a docking clamp with a four-enforcer stick on the ramp (@@npc:Kajidic Enforcers@@: Vigilance and Perception as group skills, three ranks in a stick of four). **Average Skulduggery or Mechanics** to slip the clamp, or **Average Deception** in borrowed livery to walk the minders off. On failure: a stun fight at the ramp, which the crew can win, and the court remembers who shot first. Then cut to —
+- **Leg 1 — the colonnade weave** — out through the bowser columns with picket boats rising: **Hard Piloting (Space)**. Fail: 2 system strain and the pickets herd them toward —
+- **Leg 2 — the dark approaches** — the junction's unlit far sky, where the ghosts fly: **Average Perception or Astrogation** to thread the dead buoys. Despair: running lights snap on off the port bow — a hull that was never asleep, watching, not firing — and the last leg is flown in its shadow.
+- **Leg 3 — the jump** — calculating out under pursuit: **Hard Astrogation** (Osk's margins boost). The pickets break off at the shoal's edge: the kingdom does not chase into the dark it fears. If @@npc:The Overdue, debt-bought Ghtroc 720@@ is at Enarc, Skell picks whichever side of the chase pays better, and makes sure the crew sees him choose.
 
 ## Wrinkles & side quests
 
-*Enarc is a kingdom nobody leaves, run by a weak king with Hutt appetites, sitting on the only door in the sector — which makes it the campaign's best side-quest ground. Four core wrinkles below are canon; each hits a PC or the campaign's spine and can run tonight or on the return visit the First Relight guarantees. Three drop-ins follow for texture, and the last — the coup — is live tonight if the crew earns it. Log every change of custody or knowledge in Threads — Enarc is where the crew learns the ledger cuts both ways.*
+*Enarc is a kingdom nobody leaves, run by a weak king with Hutt appetites, sitting on the only door in the sector — which makes it the campaign's best side-quest ground. Five core wrinkles below are canon; each hits a PC or the campaign's spine and can run tonight, or if the crew ever pass back through the junction. Three drop-ins follow for texture. The coup is not a wrinkle: it lives in Scene 5. Log every change of custody or knowledge in Threads — Enarc is where the crew learns the ledger cuts both ways.*
+
+**Triage.** *Run tonight:* the Stranded Warden, the Stuck Clerk, the Debt Auction. *On demand:* the Exit Pit, Service Is Citizenship. *Park:* the drop-ins.
 
 ### The Exit Pit
 
@@ -204,7 +227,13 @@ Every outcome below also answers the quieter question every guest in the kingdom
 
 **How it reaches the crew.** A stranded captain from the guest docks — pick one the crew has met, third week, counting days — draws the pit rather than the wait, and asks the crew to stand with her: the custom allows a *party* of petitioners, and the visa is shared. Or it reaches them directly: if the Way Out goes wrong (the dark choice, a refused walk-away), the pit is the crew's third exit — the one the king cannot refuse, because the custom is older than he is.
 
-**Running it.** Two or three rounds of real combat, then the court's verdict — surviving is not winning; the king's *thumb* is. Advantage spent in the pit buys the galleries (the crowd's roar is the one thing Sorulba fears), and a Triumph gives the crew the pit's real prize: the beast *spared*, a gifted PC calming it in front of a thousand witnesses — the witness rule firing like a struck bell, and a Hutt court that has just seen the Force for the first time in a century.
+**Running it.** Two or three rounds of real combat, then the court's verdict — surviving is not winning; the king's *thumb* is. The custom binds the king to the crowd: a beast down or spared before a roaring gallery is a visa the thumb cannot refuse; a silent gallery leaves it to the thumb, and the thumb says no. Advantage spent in the pit buys the galleries (the crowd's roar is the one thing Sorulba fears): Advantage spent on the galleries *is* the visa. A Triumph gives the crew the pit's real prize: the beast *spared*, a gifted PC calming it in front of a thousand witnesses — the witness rule firing like a struck bell, and a Hutt court that has just seen the Force for the first time in a century. A gifted PC may attempt the calming outright: **Hard Discipline or Survival plus a Force die**; the beast is spared on a Success with a Force point to spend, and the galleries decide what they saw.
+
+*If the Force was used in the open before the galleries:*
+
+@@action:clock {"faction":"The Awakening","delta":1,"note":"Open use of the Force before the pit galleries at Enarc"}@@
+
+@@action:thread {"ledger":"knows","who":"The pit galleries — a thousand of Enarc's people, and the court behind them","what":"One of the crew calmed a beast with the Force, in the open, in the pit","since":"S2","notes":"The witness rule fired before a whole kingdom; the story leaves on every hull that wins an exit visa"}@@
 
 **Choice:** enter the pit for a stranger, for yourselves, or refuse it and find another way. **Aftermath:** a visa won in the pit is *unconditional* and the court remembers who won it.
 
@@ -228,7 +257,7 @@ Every outcome below also answers the quieter question every guest in the kingdom
 
 **What she asks.** She cannot file her audit — Enarc has no outbound post but the pickets, and the pickets search grey veils twice. She asks the crew to carry it out: a sealed slate for the Vigil chapter at the next warden's station up the Run. In it: her observation that the treasury's *outer* seal — the Vigil's, eighty years old — is intact, and that the palace nonetheless took delivery of crates *from* the vault, six years ago, on festival nights, when the noise covered the work.
 
-**GM truth — the hidden hand.** That vault is why the ghost order exists. The Scrub visited it through the stone, the way it visits everything — and the court, which noticed, took a bribe to look away and then ordered the pickets to stop hailing what they could not afford to see. The warden has, without knowing it, dated the Scrub's visit to Enarc and tied it to the picket log's six-year silence. Her slate is **rung-one Ladder material** — the pattern, *filed*: if the crew carries it to the chapter (or files it with any registry), award rung 1 of the Ladder of Sightings outright, and log it — and a Civic fragment on *Who lit Vesta-9?* if the crew reads it.
+**GM truth — the hidden hand.** That vault is why the ghost order exists. The Scrub visited it through the stone, the way it visits everything — and the court, which noticed, took a bribe to look away and then ordered the pickets to stop hailing what they could not afford to see. The warden has, without knowing it, dated the Scrub's visit to Enarc and tied it to the picket log's six-year silence. Her slate is **rung-one Ladder material** — the pattern, *filed*: if the crew carries it to the chapter (or files it with any registry), award rung 1 of the Ladder of Sightings outright, and log it — and a Civic fragment on *Who lit Vesta-9?* if the crew reads it. *Optional:* whether Vopp himself took the payment, or only wrote it down, is your call; if he took it, Osk's margin note pays off here (*the scales are honest; the scale-master is not*), and the Scales pillar falls on the man rather than the arithmetic.
 
 **Choice:** carry it (a Vigil favor, and the grave cult the spacers laugh at turns out to hold the kingdom's real secret), sell it to Nerra (the guild would like to know what is under the palace), or open it and read. **Aftermath:** the Unbroken Seal is foreshadowed at hop 1; when the crew stands in a Vigil vault later and finds dust outlines, they have already held the paper that predicted it.
 
@@ -242,7 +271,9 @@ Every outcome below also answers the quieter question every guest in the kingdom
 
 **How it reaches the crew.** Twice. First through an NPC — the stranded captain from the pit, the mechanic whose debt sold last night — who asks the crew whether they should *take it*, because it is a real way out and it costs only everything after. Second, and personally, the offer lands on **the Republic Trooper**: Kollen, correct to the last button, offers him a commission — the Admiralty's writ as his exit visa, from the navy that believes it inherited his oath. *"The writ passed to those who kept it, Trooper. You kept it. Come and be paid for it."*
 
-**Running it.** Not a roll — a conversation, ideally overheard by the crew's gifted, because the marines' census-curiosity about the Awakened is part of the recruiting pitch. If the Trooper refuses, Kollen salutes; the offer is never withdrawn, and it will be repeated up the Run at every relit beacon, a little warmer each time. If any NPC the crew cares about enlists, they leave Enarc in a uniform on the next tender — and the crew meets them again, later, on the other side of an inspection.
+**Running it.** Not a roll — a conversation, ideally overheard by the crew's gifted, because the marines' census-curiosity about the Awakened is part of the recruiting pitch. **If he accepts:** the writ is his exit, and his Obligation gains the fleet's face. **If he refuses:** Kollen salutes, and his file notes a Republic soldier who declined the successor navy. Either way the offer is never withdrawn: it returns at every relit beacon, in escalating hands — a sealed letter in Nerra's certification packet at Aquilaris, in Kollen's hand, the same offer a little warmer; a signal on the newly lit carrier at Verdanth, addressed to him by rank and name; Reike himself on the band at Aplooine, with a date. If any NPC the crew cares about enlists, they leave Enarc in a uniform on the next tender — and the crew meets them again, later, on the other side of an inspection.
+
+@@action:thread {"ledger":"knows","who":"The Admiralty (Kollen's file)","what":"The Republic Trooper's answer to the commission — taken, or declined","since":"S2","notes":"The offer returns at every relit beacon: a letter at Aquilaris, a carrier signal at Verdanth, Reike on the band at Aplooine"}@@
 
 **Choice:** get someone out through the one door that is open, knowing what walks through it. **Aftermath:** the nascent empire recruiting through the only exit is the Admiralty's real mechanism, shown once, small, at hop 1.
 
@@ -268,14 +299,6 @@ Every outcome below also answers the quieter question every guest in the kingdom
 - **The Bowser.** The embassy's plasma bowser is the kingdom's only fuel: Breck wants to sell it low, Kollen wants to withhold it until the court folds — and @@npc:Skell's crew@@ is *siphoning* it at night. A night op in the fuel yard; expose Skell to Breck for an Admiralty favor, or catch him and hold it over the lien.
 - **The Long Wait.** A derelict in the dead docks: a freighter whose captain died in his third year of waiting. Something roosts in it now (@@npc:Nexu@@, heat sight in the dark). His log is a fragment — *"the ghosts come on festival nights; the noise covers them"* (Civic, *Who lit Vesta-9?*) — and his will names whoever brings his body out. Ten minutes of derelict crawl, and a lesson about what Enarc does to people.
 
-### Jeeda's Numbers — the coup, live tonight
-
-@@npc:Jeeda the Younger@@ wants the door open and the old king gone, and she does not need a return visit to try. Her offer, when she makes it (two pillars down — see *The Anchor Slips* in Scene 5): the picket log's *second* page — who paid the court to stop hailing the ghosts — in exchange for the crew's hands on the remaining pillars: beat Draz, turn the auction, win the pit, or simply *stand in the court and say what they saw at the Scales*. Backing her is backing a palace coup, and "the young Hutts have run the numbers" ends in clan war one bad season away — now scheduled. Run it across the whole session, pillar by pillar, and let the crew notice the room tilting before anyone says the word. If they decline, or never get the pillars down, the coup waits for the return visit — Jeeda is patient too; she is just younger at it.
-
-*If the coup does not happen tonight but the crew helped Jeeda take the festival:*
-
-@@action:clock {"faction":"Kajidics","delta":1,"note":"Jeeda's coup in waiting — the crew helped rig the Circuit; the young Hutts have the festival"}@@
-
 ## The Out
 
 **The fork — let the players choose the direction.** Three lanes meet at Enarc, and for the first time the campaign asks which way:
@@ -291,8 +314,28 @@ Every outcome below also answers the quieter question every guest in the kingdom
 - **Skell keeps the ledger he lives by.** Whatever happened tonight went into it, priced — including everything the court now believes about the crew.
 - **If the gifted dream recurs** (optional; the era's pull toward the Valley, nothing local): the canyon again, closer — and this time somebody in it is facing the dreamer.
 
-**XP:** 15–20; **+5** for a resolution that used ledgers, paper, or testimony where blasters would have been easier.
+**XP:** 15–20; **+5** for something the crew put on the record tonight that the Run will keep score on: a clause on the paper, a filed slate, a sworn account, however they got there; a firefight in the bowser colonnades counts.
 
-**Handoff to session three:** [Module 03 — The Drowned Resort](03-the-drowned-resort.md) reads its carry-forward from what happened here — which Hutt won, whose clauses rode the paper, whether the stranded went free, what Skell holds, and what the crew carried out of the kingdom. Mark those before the table stands up.
+**Handoff to session three:** [Module 03 — The Drowned Resort](03-the-drowned-resort.md) reads its carry-forward from what happened here — which Hutt won, whose clauses rode the paper, whether the stranded went free, what Skell holds, and what the crew carried out of the kingdom. Mark the Handoff table below before the table stands up.
 
 **The closing image**, in your own words: the junction lit or dark by the crew's own hand — and in the palace's oldest hall, under forty years of festival banners, Vopp chalks tonight's entry in the court record the way the kingdom has always kept history. A hull. A name. A price. Whatever the galaxy decides Enarc was worth, the court already wrote it down.
+
+## The Handoff — what session three reads (03, The Drowned Resort)
+
+Before the table stands up, mark which of these are true. [Module 03's carry-forward table](03-the-drowned-resort.md) reads these rows verbatim — this is the contract between the sessions.
+
+| Flag | What it means tonight | What 03 does with it |
+|---|---|---|
+| **Lit it on Jeeda's terms, or backed the coup** | The paper names the kajidic port authority of record, or the Anchor slipped with the crew standing in the court | A kajidic courier with a letter of credit is a day behind them; Padgett already holds a fuel offer she cannot refuse. |
+| **Lit it on the Admiralty's terms** | The customs-house and protected-lane clauses rode the founding paper | An Admiralty survey sloop is charting the bay when they land, taking soundings nobody asked for. |
+| **Took Sorulba's price and left Enarc dark** | 2,000 scrip, the black-lane rutter, the visas; the mast stays dark | The order reroutes: Aquilaris's prize posts anyway, at 6,000, and the dead leg's luck is strangely good. |
+| **Freed the stranded / won the pit / left with exit visas** | Guest-dock captains are leaving on paper the crew won them | Two of them are in the bay ahead of the crew; one has already been to the hill. |
+| **Backed Skell's lien** | Still standing from Session One; the court heard it notarized | The *Overdue* has filed a salvage claim over the Grand Pier. |
+| **Carried the stranded warden's slate** | The sealed audit left the kingdom in the crew's hold | Warden Tull knows them by name before they land; the slate is why she was sent. |
+| **Left the *Overdue*'s captain in a Hutt prison, or worse** | Skell is in the king's cells, in the pit, or dead | Skell's crew reach Aquilaris under the mate, meaner, with the ship and no restraint. |
+| **However the Record went** | Whose clauses the Enarc certificate carries, and whose names | Nerra has read both certificates; so has the Admiralty; so, when the time comes, has the Vigil. |
+| **Went down the Naboo lane or the Triellus first** | The crew left the patron's order to see the Admiralty's home waters or the family's roads before hop 2 | The Aquilaris jump loses its strange luck, and Nerra arrives a degree cooler. |
+| **Who holds Mikrés's lease** | Jeeda, the king, a factor, or the crew, per the Debt Auction | Jeeda: it rides her kajidic letter of credit, and a factor of hers waits at Capital Cay's port with the paper. The king: Sorulba's collector follows the clan argument to hop 2. A factor: the paper is in Nerra's packet, and Nerra offers to buy it for the chart. The crew: it is theirs, and Mikrés's Wealth pursuit has one face fewer. |
+| **Took the Admiralty commission** | The Trooper accepted Kollen's writ; the Admiralty holds his oath on paper | His line on the Founding cadre's rolls travels to Aquilaris in Nerra's packet, the reporting date left blank: the fleet lets him keep flying with the crew until the Conclave. |
+| **Refused the Admiralty commission** | The Trooper declined; Kollen's file notes it | Nerra's packet carries a sealed letter in Kollen's hand: the same offer, a little warmer. |
+| **Carried the stuck clerk's report** | The wax-sealed surveillance list is in the crew's hold, opened or not | Its dead-drop is Meru Vane's warm knock; Vane thanks them for it by name. |

@@ -33,8 +33,9 @@ With **enough fragments** bearing on one named **Question**, the party may attem
 | Result | Effect |
 |---|---|
 | **Success** | The GM reveals the next **Truth** on that Question's ladder, and the party gains an **Insight** — permanently remove a setback die from one defined category of checks, **or** unlock an out-of-career talent purchase the Truth justifies. *On the verdict Question (below), success grants no Truth — it grants the party's own conclusion the standing of one.* |
+| **Failure** | The rung stays unfilled; the fragments are kept; the table may try again with a new fragment or after the next relight. |
 | **Triumph** | A secret beyond the Question |
-| **Despair** | A **corrupted conclusion** enters play — and the party believes it |
+| **Despair** | A **corrupted conclusion** enters play, and the party believes it: the wrong reading goes on the record (an Insight the GM writes as false, which a later fragment can overturn). |
 
 ## Named Questions
 

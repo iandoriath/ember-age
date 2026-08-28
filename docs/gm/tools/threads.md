@@ -1,6 +1,6 @@
 # Threads
 
-*The information war, tracked: who knows what, who holds what, who owes whom. The campaign's currency is testimony — this page is the bank ledger. On the GM screen these three tables are live state on the Trackers tab; this file is the seed and the paper fallback.*
+*The information war, tracked: who knows what, who holds what, who owes whom. What the crew puts on the record is what the Run keeps score on; this page is the ledger. On the GM screen these three tables are live state on the Trackers tab; this file is the seed and the paper fallback.*
 
 One boundary keeps it clean: **objects that are lore fragments live in the [Fragment Tracker](fragment-tracker.md)** (it has its own Holder column). Track everything else here — deeds, debts, promises, biographies sold, and the things factions know that they should not.
 
@@ -11,7 +11,7 @@ One boundary keeps it clean: **objects that are lore fragments live in the [Frag
 | Tama Osk | Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said) | pre-S1 | The Sith bedside; pays off when the crew has a silhouette to match |
 | The patron's desk | "The one pilot who won't sell" — the registry forwarded Osk's name coreward years ago | pre-S1 | How the line found her |
 | Sorulba's court | The ghost order: pickets log-and-let-pass the dark-lane traffic, six years standing | pre-S1 | Module 02 scene 3 — the picket log |
-| N'Kata Del Gormo | Whose grave is on Tarrah Hill, Aquilaris — Kerra Holt, his teacher, and her sister Marenna, found too late | pre-S1 | The only living being who knows; says it at the relight or never — the Hill on Aquilaris |
+| N'Kata Del Gormo | Whose grave is on Tarrah Hill, Aquilaris — Kerra Holt, his teacher, and her sister Marenna, found too late | pre-S1 | The only living being who knows, and he never says it; the crew read it off the stone and the warden's slate, or nobody does (the Hill on Aquilaris, module 03 Scene 7) |
 
 ## Who holds what
 

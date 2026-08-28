@@ -1,6 +1,6 @@
 # Vesta-9 & the Crew's Orbit
 
-Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*'s marine boarding party and the sloop itself, statted here so the standoff runs without a lookup — and for the orbit the crew will keep crossing all campaign: the port that impounded their cargo, the rival ship racing them to the beacon, and the three factions waiting at the light. It is 90 AR — the beacon has just relit after sixty dark years, nobody admits to lighting it, and every ship at Okrent's Drift that can lift is lifting. Every stat block below is an official FFG print pulled verbatim and re-skinned for the era; chassis and adjustments are declared on each.
+Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*'s marine boarding party and the sloop itself, statted here so the standoff runs without a lookup, and a prose card for Tama Osk, who has no stats because she never leaves the bed — and for the orbit the crew will keep crossing all campaign: the port that impounded their cargo, the rival ship racing them to the beacon, and the three factions waiting at the light. It is 90 AR — the beacon has just relit after sixty dark years, nobody admits to lighting it, and every ship at Okrent's Drift that can lift is lifting. Every stat block below is an official FFG print pulled verbatim and re-skinned for the era; chassis and adjustments are declared on each.
 
 **GM file — contains spoilers for session one and threads into the campaign's locked truths (Part V). Players keep out.**
 
@@ -88,6 +88,25 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
 **Era notes:** This is what a first-lighting prize looks like when it is spent well. The Triffis fee went to the chop-yard under Okrent's Drift for a salvaged turbine and a generator pulled from a dead courier, and the yard quoted the crew the same work at a price they could not pay. Nothing about the *Larksong* is new; it is simply the one YT-1300 in the sector whose owner has been paid.
 **Using it:** The envy is calibrated on purpose: Speed 4 against the crew's 3, and Class 1 against their Class 2 — she wins every straight race and every jump, and "the *Larksong* got there an hour ago" is the hyperdrive math, not luck. Everything else is the same ship: same two turrets, same paper armor, same strain. The weaknesses are real and the players can find them. **No backup hyperdrive:** a Despair on her Astrogation, or a hit that drops the primary, leaves the *Larksong* drifting on a dead lane with no way home — Marrow knows it, which is why she only races lanes she holds a chart for, and why she wants the crew's page as much as they want hers. **The turbine runs hot:** after any chase flown at full speed, the GM may hang the Inferior quality on it until she has had a night in port (the lane-runner convention in the ships file). **The prize is mostly gone:** the pouch she pays Grell from is the last of it, and her hard points are two-thirds spent. And the hook under all of it: the turbine and the generator are RAW attachments at printed prices, sold by a yard that will sell the crew the same thing the day they have a prize of their own. The *Larksong* is not a better ship. It is a paid-for one. This is the same block as **The Larksong** in the ships file ([ships.md](../../mechanics/ships.md)) — one canonical print; if either copy is ever adjusted, keep the two in sync.
 
+### Tama Osk
+*Living witness — no faction (the depot infirmary) — the rutter's author; no stat block, she never leaves the bed*
+
+> A Duros somewhere past a hundred and fifty, blind these last two years, vacuum-lunged, entirely unafraid. She speaks in a dry rasp that costs her something to use, so she spends it only on what she means.
+
+**Her voice:** short, exact, amused by fear in other people. She solves a jump-knot before the sentence reading it is finished, and she does not explain how.
+
+**Her three speeches (Scene 3, verbatim):**
+
+1. The down payment, citing what the table actually did: *"Everyone in this port is running toward money tonight. You just spent yours keeping wolves off a stranger. Sit down."*
+2. The claim, free, with page 40 (the original): *"Somebody has been flying that lane for years. The buoys were warm when I went back. And the guild's prizes go exactly where those people wanted to go."*
+3. The promise and the hook: *"When it answers you, tell it Osk finished the run. And don't sell my page to the people who were just in this room."* Then: *"Come back and tell me what you found up there. Then we'll talk about the rest of the book."*
+
+**The living-witness thread.** Asked whether she ever told a soul where Vesta-9 sits: *"Once. A young woman. Right questions, kind voice. I couldn't tell you a single word I said to her."* GM: the Sith bedside. Pays off when the crew has a silhouette to match; do not explain it in session one.
+
+**The droid hook.** Her navigation droid, blind pilots' eyes, went to a chop-yard for debts years ago; its unwiped core holds fifty years of the Run. The buyer, if anyone chases it, was Okkam Dree. A quest with a technician's name on it.
+
+**Using her:** She never leaves the bed. Her one hard criterion for the book is *owes the guild nothing*; she loves Marrow and will not give it to her. She hears what went on the record before the crew is back on the Drift, and coming back at all is the second audition. She has weeks; her funeral is Act 1's first, and the war dead are read aloud at it.
+
 ### Captain Ferro Skell
 *Rival — Independent (master of the* Overdue*) — debt-buyer, extortionist, and the crew's enemy peer*
 
@@ -146,7 +165,7 @@ Six roster NPCs for session one, "The Light on Vesta-9" — plus the *Steadfast*
 - **Weapons:** Dorsal turret-mounted twin light laser cannon (Fire Arc All; Damage 5; Critical 3; Range [Close]; Linked 1)
 
 **Chassis:** Ghtroc 720 Light Freighter, Edge of the Empire Core Rulebook (adjustments: none — the stock block; this is the same print as the Ghtroc 720 in the ships file ([ships.md](../../mechanics/ships.md)) — one canonical print; if either copy is ever adjusted, keep the two in sync).
-**Using it:** The turtle against the crew's hare: slower, blinder in a knife fight, and famously hard to kill — Armor 5 and twenty-eight hull mean the crew cannot win a slugging match and should not try; their outs are flying, focused fire on the turret, or the last leg to the station. Skell flies it like he negotiates: patient, positional, breaking off the moment the exchange stops paying. Ten passenger berths that used to carry a family's pilgrims now carry boarding muscle, which tells you everything about the ship's last twenty years.
+**Using it:** The turtle against the crew's hare: slower, blinder in a knife fight, and famously hard to kill — Armor 5 and twenty-eight hull mean the crew cannot win a slugging match and should not try; their outs are flying, focused fire on the turret, or the last leg to the station. Skell flies it like he negotiates: patient, positional, breaking off the moment the exchange stops paying. Helm: a named deckhand on Agility 3, untrained (three green); Skell takes the turret on Gunnery 2. If Skell must fly, the turret is a deckhand on Agility 3. Ten passenger berths that used to carry a family's pilgrims now carry boarding muscle, which tells you everything about the ship's last twenty years.
 
 ---
 

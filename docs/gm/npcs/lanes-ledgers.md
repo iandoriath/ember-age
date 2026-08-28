@@ -70,7 +70,7 @@ Ninety years after Ruusan, the powers in this file are the ones the Withering co
 ## The Kajidics
 
 ### Sorulba the Anchor
-*Nemesis — The Kajidics — kajidic patriarch; scarcity is margin*
+*Nemesis — The Kajidics — the Anchor of Enarc; a minor Hutt who cornered the one market the dark left*
 
 > Sorulba remembers the Republic whole, remembers it solvent, and remembers precisely what he was paid the year it stopped mattering. He has not moved from his dais in forty years. He has not needed to.
 
@@ -86,7 +86,7 @@ Ninety years after Ruusan, the powers in this file are the ones the Withering co
 - **Equipment:** none carried — the printed block's weapons (a Hutt-scale large-bore blaster pistol and a vibro-ax) are explicitly optional in print, and Sorulba goes unarmed; his enforcers, his ledgers, and time itself are the arsenal.
 
 **Chassis:** Hutt Crime Lord, Edge of the Empire Core Rulebook (adjustments: none — soak, wounds, and strain above the house bands are the printed values, and so is the outlier Resilience 8, verified against the official block as transcribed from the Edge of the Empire Core Rulebook, p. 406; do not "correct" it down).
-**Using him:** Sorulba's kajidic holds the fuel and scrap monopolies across three dark sectors, and his answer to reunification is *no, thank you* — every relit beacon on a lane he does not own is competition. Never stage him as a combat; stage him as terrain. He negotiates from total safety, pays promptly, keeps his word to the letter, and prices the letter — and because he personally remembers the Republic failing to pay its debts, he can contradict any human myth about the old days with an eyewitness sneer. His real vulnerability is at his own table: Jeeda's spreadsheet heresy, one bad season from a clan war.
+**Using him:** Sorulba holds one junction, one dais, and a one-way door: anyone may arrive at Enarc, and in forty years he has granted almost no one leave to go, the Naboo embassy his one foreign account. A relight is that door opening, which is why his answer to the guild's prize is *no, thank you*, priced. Never stage him as a combat; stage him as terrain. He negotiates from total safety, pays promptly, keeps his word to the letter, and prices the letter — and because he personally remembers the Republic failing to pay its debts, he can contradict any human myth about the old days with an eyewitness sneer. His real vulnerability is at his own table: the family creed, *scarcity is margin*, is the one Jeeda rebels against, and her spreadsheet heresy is one bad season from a clan war.
 
 ### Jeeda the Younger
 *Rival — The Kajidics — young Hutt reformer; has run the numbers*

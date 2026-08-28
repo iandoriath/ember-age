@@ -10,11 +10,11 @@ A display of the Force too public to hush — now every government has a policy,
 
 ## The Conclave of Charts
 
-The [Lamplighters](../factions/lamplighters.md) auction the relighting order. Every faction bids; the party holds swing data from Act 1 — and the agenda carries a fight the party started: the **sharing precedents** (a certificate that named Aquilaris's harvester stations the Seacroppers' property; another that named Aplooine's dig rights the hold's). The guild wants them struck; the Founding cadre calls them sedition; the worlds that got them will not give them back. The Republic's accreditation mission — and with it Master Seldra Tane, the first Jedi of the Temple the Run has seen — arrives for this.
+The [Lamplighters](../factions/lamplighters.md) auction the relighting order. Every faction bids; the party holds swing data from Act 1 — and the agenda carries the fights the party started. What the Conclave now carries: the Aquilaris harvester stations, the Aplooine dig rights, the guild's charting-authority clause, the Vigil's audit of every seal opened under a certified name, and a Hutt creditor's testimony to the Republic's accreditation mission. Loudest are the **sharing precedents** (a certificate that named Aquilaris's stations the Seacroppers' property; another that named Aplooine's dig rights the hold's): the guild wants them struck; the Founding cadre calls them sedition; the worlds that got them will not give them back. The Republic's accreditation mission — and with it Master Seldra Tane, the first Jedi of the Temple the Run has seen — arrives for this.
 
-## The Unveiling
+## The Inheritors collect
 
-Not a public event. Inside their temple on Verdanth the [Inheritors](../factions/inheritors.md) show the party the costume — a trained cadre, a stage, a leader calling himself *Lord Vhasla* — and make the offer: standing for lore. They are costume: real techniques, counterfeit lineage. Almost nobody alive can tell the difference, and the two beings who can have just watched who came to call. **The culling triggers after the party leaves.** (Ian, 2026-08-28.)
+Whatever they showed the party on Verdanth, the [Inheritors](../factions/inheritors.md) now want paid for in standing.
 
 ## The Vigil breaks
 

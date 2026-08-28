@@ -28,6 +28,6 @@ The relit decade introduced them ahead of the campaign: every corridor the advan
 
 ## The crack
 
-The newly Force-sensitive split them in half: sacrilege walking around in children's bodies, or the Order reborn. The Order's return splits them again: half the Vigil will hand over the keys and weep with relief; half will not hand over the children, and has begun to wonder whether eighty years of keeping the watch has *earned* something the minutes never granted.
+The newly Force-sensitive split them in half: sacrilege walking around in children's bodies, or the war's orphans, to be raised. The Order's return splits them again: half will surrender the keys (stone and relic were always the Temple's; the deed says so), half will not surrender the children, and neither half weeps for a Temple that did not come to the funerals.
 
 And beneath it sits the deed itself: their authority covers stone and relic, not flesh — a distinction somebody from Coruscant is eventually going to read aloud, in a sealed temple, with two other Masters present.
