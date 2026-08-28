@@ -11,7 +11,7 @@ One boundary keeps it clean: **objects that are lore fragments live in the [Frag
 | Tama Osk | Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said) | pre-S1 | The Sith bedside; pays off when the crew has a silhouette to match |
 | The patron's desk | "The one pilot who won't sell" — the registry forwarded Osk's name coreward years ago | pre-S1 | How the line found her |
 | Sorulba's court | The ghost order: pickets log-and-let-pass the dark-lane traffic, six years standing | pre-S1 | Module 02 scene 3 — the picket log |
-| N'Kata Del Gormo | Whose grave is on the hill above the swamp — Kerra Holt, his teacher, and the sibling she found too late | pre-S1 | The only living being who knows; says it at the relight or never — the Hill on Verdanth |
+| N'Kata Del Gormo | Whose grave is on the hill above the swamp — Kerra Holt, his teacher, and her sister Marenna, found too late | pre-S1 | The only living being who knows; says it at the relight or never — the Hill on Verdanth |
 
 ## Who holds what
 

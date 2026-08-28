@@ -379,7 +379,7 @@ SEED = {
         {"who": "Tama Osk", "what": "Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said)", "since": "pre-S1", "notes": "The Sith bedside; pays off when the crew has a silhouette to match"},
         {"who": "The patron's desk", "what": "“The one pilot who won't sell” — the registry forwarded Osk's name coreward years ago", "since": "pre-S1", "notes": "How the line found her"},
         {"who": "Sorulba's court", "what": "The ghost order: pickets log-and-let-pass the dark-lane traffic, six years standing", "since": "pre-S1", "notes": "Module 02 scene 3 — the picket log"},
-        {"who": "N'Kata Del Gormo", "what": "Whose grave is on the hill above the swamp — Kerra Holt, his teacher, and the sibling she found too late", "since": "pre-S1", "notes": "The only living being who knows; says it at the relight or never — the Hill on Verdanth"},
+        {"who": "N'Kata Del Gormo", "what": "Whose grave is on the hill above the swamp — Kerra Holt, his teacher, and her sister Marenna, found too late", "since": "pre-S1", "notes": "The only living being who knows; says it at the relight or never — the Hill on Verdanth"},
     ],
     "holds": [
         {"item": "Osk's true rutter (the whole book)", "holder": "Tama Osk", "since": "pre-S1", "notes": "Inheritance on return — module 01 scene 3"},
