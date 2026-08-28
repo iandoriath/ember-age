@@ -47,6 +47,7 @@
 - Beacon-pulse resonance with the gifted ("clumsy device"); Mendac lighting Vesta-9 by accident or Veritis caring about it; Osk's page as a mistaken-identity gift or deus ex machina; Marrow's errand as anything but trivial (jump-knots).
 - Yenna Sar and Coll Bren (cut Jedi); a Nightsister PC; the Questions "What ended the Order?", "Why did the Jedi leave the Rim?", "What is the Valley?", "Why did the Run stay dark?", and "What did the Adjournment actually adjourn?" (all retired or absorbed 2026-08-28 — four Questions now).
 - Building stat blocks from scratch (pull-don't-build: verbatim FFG prints, declared adjustments, print outranks the file).
+- **Del Gormo's swamp on Dagobah** (never — Legends fixed Yoda's *first* Dagobah visit as much later; the Verdanth swamp is the continuity solution, not flavor. Hysalria sharing Dagobah's grid square is a wink, not a hint. Ian, 2026-08-28.)
 
 ## Open threads (not yet ruled)
 
