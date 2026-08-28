@@ -4,7 +4,7 @@
 
 ## The campaign in one paragraph
 
-**The Ember Age** — FFG Star Wars, 90 years After Ruusan (910 BBY), Legends continuity. A broke crew at Okrent's Drift (Bannistar Station) rides the Lamplighters' relighting of the dead **Duros Space Run** — a coreward-in exploration of a country that went dark; the players are *not* natives of the marooned sector. The campaign's weapon is testimony, not turbolasers (what the crew puts *on the record*); its hidden engine is a two-person Sith line that made the region wither so it could empty the old Sith principalities' vaults of incriminating lore; its lore spine runs to Ruusan — the thought bomb, the sealed souls, the Rule of Two, the name Bane.
+**The Ember Age** — FFG Star Wars, 90 years After Ruusan (910 BBY), Legends continuity. A broke crew at Okrent's Drift (Bannistar Station) rides the Lamplighters' relighting of the dead **Duros Space Run** — a coreward-in exploration of a country that went dark; the players are *not* natives of the marooned sector. What the crew puts *on the record* — certificates, sworn accounts, what they file — has consequences the Run keeps score on (that is the whole of it: **not a doctrine, not a pitch line, and not "testimony, not turbolasers" — retired 2026-08-28, Ian: "not right and not Star Wars"; blasters are welcome**); its hidden engine is a two-person Sith line that made the region wither so it could empty the old Sith principalities' vaults of incriminating lore; its lore spine runs to Ruusan — the thought bomb, the sealed souls, the Rule of Two, the name Bane.
 
 ## Settled canon (current emphasis)
 

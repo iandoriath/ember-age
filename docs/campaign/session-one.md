@@ -26,7 +26,7 @@ Vesta-9 station, three light-hours from where the charts put it, lit and humming
 
 ## Scene 4 — The Record
 
-Mid-certification, the paper asks its question — *lighting party?* — and everyone looks at the witnesses of record. The crew is holding more than anyone else in the room: a dying pilot's claim, a wake log, a warm cradle, a station that isn't where it should be. What they put on the founding paper of the reopened Run is theirs to decide — in front of three factions and a rival with a claim.
+Mid-certification, the paper asks its question — *lighting party?* — and everyone looks at the witnesses of record. The crew is holding more than anyone else in the room: a dying pilot's claim, a wake log, a warm cradle, a station that isn't where it should be. What they put on the certificate is theirs to decide — in front of three factions and a rival with a claim.
 
 - Reike wants a stranger on the lane, on the record.
 - Nerra wants it clean — and wants to buy the chart that found this place.

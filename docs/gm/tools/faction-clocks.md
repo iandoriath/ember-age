@@ -41,7 +41,7 @@ Use this space for who-knows-what, current attitude toward the crew, and debts e
 
 **Rungs filed:** ☐ pattern ☐ hull ☐ face ☐ name
 
-The Rule of Two survives on one asset: nobody knows it exists. So the line does not lose duels — it loses *sightings*. The campaign's stated weapon (testimony, not turbolasers) is also the weapon that works on the Sith, and it climbs a ladder. Each rung is something the crew **records and files** — a certificate, a sworn statement, an archive deposit, a pattern documented where other people can read it. A rung merely *witnessed* is a scare; a rung *filed* is a wound.
+The Rule of Two survives on one asset: nobody knows it exists. So the line does not lose duels — it loses *sightings*. What the crew files — a certificate, a sworn statement, a pattern documented where other people can read it — is the one thing that works on the Sith, and it climbs a ladder. Each rung is something the crew **records and files** — a certificate, a sworn statement, an archive deposit, a pattern documented where other people can read it. A rung merely *witnessed* is a scare; a rung *filed* is a wound.
 
 1. **The pattern.** The Weeding's tell, run down and documented: obstacles to the relighting vanish the night after a guild packet leaves port ([Keepers of the Flame](../npcs/keepers.md), the machinations). Filed, it proves *someone* is gardening the recovery. Cost to the line: the Weeding pauses on this corridor; a cutout is burned.
 2. **The hull.** A drive signature or silhouette recorded twice — the ghost-traffic given a shape (the picket logs are the natural first source). Filed, it proves the gardener has ships. Cost: the line changes carriers, abandons a hidden berth, loses a season.
