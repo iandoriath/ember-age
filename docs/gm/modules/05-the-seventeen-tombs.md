@@ -8,7 +8,7 @@
 
 **The twist of the night: the Inheritors live here.** The biggest Inheritor holding anywhere is on this world, in the sealed temple of one of the seventeen — and its **nameplate is chiseled away**, the only tomb on Verdanth without a lord's name. That lord was **Vhasla**, and the Inheritors' leader, known in rumor only as *the Heir*, means to claim descent from him: the defaced stone is the paternity test destroyed at the source. The base runs on *numbers*, like the volume-states it imitates: lore-clerks by the dozen, adepts in pairs, dig crews stripping the other sixteen tombs to feed it. It is theater over surveillance — black robes at distance, wax seals up close, and a census behind the costume that knows what the crew carries ([Vigil & Inheritors](../npcs/vigil-inheritors.md), *How the Inheritors work*). **The Unveiling is not public.** The Heir shows the crew the costume *inside the temple* and makes the offer. **The culling triggers after the crew leaves** — and the crew is still in the system when it does.
 
-**The other two things on this world.** A dry hill's worth of swamp where **@@npc:Master N'Kata Del Gormo@@** was born — *empty* unless the night on Aquilaris sent him here (carry-forward). And **Brel**, a settlement moon where a ten-year-old named **@@npc:Anwei, the Oracle of Brel@@** dreams true and is worshipped for it: the Awakening's high-water mark on the Run, the Census's target, and the recruit the Heir fears most, because a real one outshines a fraud. Three factions arrive at Brel the same week the crew does. One of them is the Inheritors.
+**The other thing on this world.** **Brel** — a settlement in the seventeen's country, a day's walk from the temple road, where a ten-year-old named **@@npc:Anwei, the Oracle of Brel@@** dreams true and is worshipped for it: the Awakening's high-water mark on the Run, the Census's target, and the recruit the Heir fears most, because a real one outshines a fraud. Three factions arrive at Brel the same week the crew does. One of them is the Inheritors, and they only had to walk.
 
 **The cast, one line each** *(stats in brackets)*:
 
@@ -17,7 +17,6 @@
 - **@@npc:Inheritor Adept@@** and **@@npc:Unveiling Blade-Cadre@@** — the drilled rank-and-file, real-but-scraped; the cadre always in pairs. **@@npc:Inheritor Lore-Clerks@@** — the archive, in triplicate. *(Vigil & Inheritors)*
 - **Warden Ossa Tull** — the Vigil's circuit warden from Aquilaris (or @@npc:Keeper Adressa Vhail@@ if the crew earned her), here for the seventeen; the Unbroken Seal is hers. *(borrow @@npc:Vigil Wardens@@)*
 - **Odri Sund** — the chandler; her counter stands on the temple road within sight of the steps, selling shoring to the dig crews. She never approaches the crew. *(GM: Mendac in cover — [Keepers of the Flame](../npcs/keepers.md); the tell, once, unremarked)*
-- **Old Gormo** — on his swamp *only if* Aquilaris sent him; otherwise the swamp is a place with a hut in it and nobody home. *(@@npc:Master N'Kata Del Gormo@@)*
 - **@@npc:Chartmistress Bel Nerra@@** — the certifier, a day behind, with 7,000 scrip and an interest in tombs. *(Vesta-9 & the Crew's Orbit)*
 
 **Rules shorthand:** Average = 2 difficulty dice, Hard = 3, Daunting = 4. The jungle is the Feral Run at its thickest — **rimebats** in every cavern (use @@npc:Mynock@@ for a swarm, ground-bound), **@@npc:Fyrnock@@** in every sealed tomb. A **fragment** is the campaign's clue-card; log it in the [fragment tracker](../tools/fragment-tracker.md). This world's fragments are **Sith-tagged** — the first the crew will hold — and they unlock the third rung of every ladder.
@@ -26,8 +25,8 @@
 
 | If, at Aquilaris, the crew… | Then, at Verdanth |
 |---|---|
-| Let the Vigil seal the hill | **Del Gormo is on his swamp** — he left Aquilaris the morning after, and he is not glad of it. He will talk to the crew once, about what a keeper does when the thing he kept is taken; then about the seventeen tombs, which he watched the Scrub visit as a boy. He does not go near the temple. |
-| Left the hill to its keeper | The swamp is *empty* — a hut, a net rack, nobody. Warden Tull arrives with the crew's names on her slate and the chapter's dissent in her satchel, and she wants one thing from them here: to *witness* a seal opened. |
+| Let the Vigil seal the hill | Warden Tull arrives with the crew's names on her slate and a chapter that now owns a Jedi it cannot admit to; she wants the same crew to witness a seal opened *properly* — by the rite, with nothing hidden. |
+| Left the hill to its keeper | Warden Tull arrives with the crew's names on her slate and the chapter's dissent in her satchel, and she wants one thing from them here: to *witness* a seal opened. |
 | Holds Kerra's saber | The Inheritors know within the hour of landing — Meru Vane's people watched the pad — and the Heir's whole evening is built around it: a Jedi's blade, in a lineage he means to prove is Sith. He will ask to *see* it. |
 | Holds the recorder | A kind stranger asks about it on the landing field — a prospector's wife, a story about her grandmother, a question about what the crew "brought off the water." Odri's whisper network, one degree removed. Note it. |
 | Wrote a verdict on hop 2's paper | Meru Vane has read it and quotes it back to the crew, approvingly — *"you already understand: the ones nobody comes for."* It is the Inheritors' recruiting line in the crew's own words. |
@@ -57,7 +56,7 @@
 
 ## Scene 3 — Brel
 
-**The situation.** A day's flight to the settlement moon, **Brel**, and the seed the beacon map has carried since Act 1 opened: a settlement worships a Force-sensitive child whose true dreams are eating her sleep, and three factions arrive the same week the crew does. **@@npc:Anwei, the Oracle of Brel@@** is ten, knows what the crew's ship is called, and is so very tired. The settlement's armed faithful guard her; her mother tied the dream-cord she wears.
+**The situation.** A day's walk from the temple road, through the seventeen's country, to the settlement of **Brel** — and the seed the beacon map has carried since Act 1 opened: a settlement worships a Force-sensitive child whose true dreams are eating her sleep, and three factions arrive the same week the crew does. **@@npc:Anwei, the Oracle of Brel@@** is ten, knows what the crew's ship is called, and is so very tired. The settlement's armed faithful guard her; her mother tied the dream-cord she wears.
 
 **Three factions, this week:** the **Inheritors** — Meru Vane's people, warm and helpful, with a tuition stipend and a place at the temple for "a gifted child who needs teachers" (she is the recruit the Heir fears: a real one, who would outshine him; the Census's target); the **Vigil** — Tull, or the chapter's next warden, who wants Anwei *kept here*, taught restraint, and taped into the world's care like a grave (keys or children, in one child); and **the crew**, whom Anwei has dreamed. *"You're the ones with the light. You'll go to the black stone. Don't go in the second door."*
 
@@ -144,7 +143,7 @@
 | Exposed the rig, or told him about the second door | The last thing the Heir learned was that a crew with standing could see through him | Nothing — he is gone. But the crew now knows *what* the Inheritors were, which is more than the galaxy will ever learn. |
 | Read the Emptied House right (the Sith-tag Lore success) | The players know the thing nobody sane concludes | The Sith-tagged fragment; the Ladder's rung-2 evidence if filed; and the Weeding's first quiet interest in *them* |
 | Brought Anwei out | An Awakened child on a freighter, dreaming | Every faction that counts the gifted counts her; the Heir's nightmare is the crew's passenger; *"the girl at the counter."* |
-| Left Anwei on Brel | The settlement keeps its oracle; the Vigil tapes the moon | The Census logs her. Someone will come. |
+| Left Anwei on Brel | The settlement keeps its oracle; the Vigil tapes the shrine | The Census logs her. Someone will come. |
 | Let the guild take the dig spoils | Nerra has sixteen tombs' worth of provenance | The Memory Market's next season, pre-sold. |
 
 ## The Out
@@ -156,7 +155,6 @@
 - **The galaxy's wrong answer.** Within the week the Run has decided who killed the Inheritors: the Vigil (a seal opened, a base dead), the Admiralty, or the Inheritors themselves. Each answer lights a different Act 3 fire ([Act 3](../../campaign/act-3.md)). The crew can correct the record — if they want the Weeding to notice.
 - **The Vigil's audit** runs all season: sixteen tombs, and the early returns are bad.
 - **The fakes** surface on the Memory Market within weeks, consigned by a fence who never met the seller. The trail ends at a dead fence. Sanrafsix is next.
-- **Del Gormo**, if he is on the swamp, says one thing about the temple when he hears: *"She'd have laughed. Then she'd have gone in."*
 
 **XP:** 20–25; **+5** for a crew that read the stage in reverse and said the word nobody says.
 

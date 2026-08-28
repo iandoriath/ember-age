@@ -6,7 +6,7 @@
 
 **Where we are.** Hop 2 of the dark Run: **Aquilaris**, a Legends ocean world — resort seas over dead pleasure piers, flat land, no mountains, one hill. It was a Republic resort and seafood exporter until the Sith took it in 1042 BBY; it was drowned twice (a Sith massacre that threw a city into the sea, then a Hutt's storm-ships that flooded the whole landmass in 1032 BBY — see [The Dead Lords](../npcs/knight-errant.md)); and it was, for a while, the sector's refugee road: the **Seacroppers' Guild** ran survivors out through **underwater harvester stations** nobody else knew existed. Ninety years of the Withering did not drown it again. It did something quieter: the resort promenades sank, the harvester stations went dark one by one, and the people who stayed learned to live on the water and speak well of the hill. The guild's prize for Aquilaris posted the hour Enarc's certificate cleared — **6,000 scrip** — and the beacon mast is the old resort's **Grand Pier tower**, half a kilometer out in the bay, its top third above water and its machinery below.
 
-**The twist of the night: the grave.** The highest point on the planet is **Tarrah Hill** — canonically "even pregnable to flooding" — and on it stands a stone with four words and no dates. It is the grave of **Kerra Holt**, the Jedi Knight who stayed in this sector 120 years ago and won, and her sister **Marenna**; the old four-armed keeper who lives on the hill and whom everyone speaks well of and never names is **@@npc:Master N'Kata Del Gormo@@**, her student. He has tolerated the Vigil's tape on this world's dead for ninety years because a tended grave is a safe one. **The relight ends that**: a lit corridor means prospectors, prospectors mean the wardens stop *tending* the twice-drowned dead and start *sealing* them — a manifest, not a tape — and the hill is next on the round. The crew will light the beacon, and the beacon will bring the Vigil to the stone, and the old keeper will have to say in one night what he has not said in ninety years. **That is the climax; everything before it is the fuse.** Full scene: *The Hill on Aquilaris*, in [The Dead Lords](../npcs/knight-errant.md). Play the session so the players like him before they know him.
+**The twist of the night: the grave.** The highest point on the planet is **Tarrah Hill** — canonically "even pregnable to flooding" — and on it stands a stone with four words and no dates. It is the grave of **Kerra Holt**, the Jedi Knight who stayed in this sector 120 years ago and won, and her sister **Marenna**; the old four-armed keeper who lives on the hill and whom everyone speaks well of and never names is **@@npc:Master N'Kata Del Gormo@@**, her student. He has tolerated the Vigil's tape on this world's dead for ninety years because a tended grave is a safe one. **The relight ends that**: a lit corridor means prospectors, prospectors mean the wardens stop *tending* the twice-drowned dead and start *sealing* them — a manifest, not a tape — and the hill is next on the round. The crew will light the beacon, and the beacon will bring the Vigil to the stone — and the old keeper will *not* say what he has not said in ninety years: the crew will have to, or nobody will. **That is the climax; everything before it is the fuse.** Full scene: *The Hill on Aquilaris*, in [The Dead Lords](../npcs/knight-errant.md). Play the session so the players like him before they know him.
 
 **The cast, one line each** *(stats in brackets)*:
 
@@ -82,22 +82,20 @@
 
 ## Scene 4 — The Hill
 
-**Go up before the relight.** Something should draw them — Padgett sends the crew to ask "the old fellow" about the tides for the relight (he knows them to the minute); or the gifted PC follows the quiet; or they simply climb the only hill on the world to look at the bay. Tarrah Hill is grass and wind, a rack of drying nets, a hut, and at the top, **a stone**:
+**Go up before the relight.** Something should draw them — Padgett sends the crew to ask "the old fellow" about the tides (he knows them to the minute); or the gifted PC follows the quiet; or they simply climb the only hill on the world to look at the bay. Tarrah Hill is grass and wind, a rack of drying nets, a hut, and at the top, **a stone**:
 
 <pre style="text-align:center;font-family:inherit;letter-spacing:.2em;line-height:1.9">HOLT
 Marenna
 Kerra
 Sisters</pre>
 
-No dates. No titles. No Vigil tape — the only untaped grave on Aquilaris — and the old keeper sitting beside it, mending a net, who says, without looking up: *"They're not for sale. The eel is."*
+No dates. No titles. No Vigil tape — the only untaped grave on Aquilaris — and the old eel-smoker sitting beside it, mending a net, who says, without looking up: *"They're not for sale. The eel is."*
 
-**Run this scene warm and slow.** He feeds them (it is what he does before he will argue with anyone). He talks about the tide. He answers the question under the question. If they ask who is buried here, he asks what they would do with a dead woman's name — and if the answer is honest, he gives them *hers*, and nothing else: *"Kerra. She was from here. Nobody comes for the ones from here."* The Force-sensitive should feel it now for certain: the hill is the one silent place on the Run, and the silence has a shape, and the shape is a teacher's.
-
-**What he will not say tonight:** that he buried her; that she taught him; what is under the stone. He has kept the Vigil's tape off this hill for ninety years by being too ordinary to ask about. Tonight he is still ordinary. *(GM: if a player has Knowledge (Lore) and thinks to roll it — Hard — the name Kerra Holt is in the Republic's Dark Age histories: a Jedi Knight who went into Sith space and did not come back. Let that land in silence.)*
+**Run him as Star Wars, not a seminar.** He is a hermit: odd, funny, dangerous underneath, and playing dumb — jokes about the tide, a riddle about which end of a net matters, a wrong answer about the beacon that turns out later to be exactly right. He feeds them. He does not explain anything, ever. If they ask whose grave it is, he points at the stone with his staff: *it says.* If they ask who Kerra was: *"Ask her."* If they push: he goes back to the net. Nothing the players learn on this hill comes out of his mouth — it comes off the stone, off the warden's slate later, or off a **Hard Knowledge (Lore)** roll (the name *Kerra Holt* is in the Republic's Dark Age histories: a Jedi Knight who went into Sith space and did not come back — let that land in silence). The Force-sensitive should feel it for certain: the hill is the one silent place on the Run, and the silence has a shape.
 
 **The tide table.** He gives them the relight's window without being asked: slack water at the Grand Pier, tomorrow, one hour before dusk. *"After that the water belongs to something else. Don't be on it."*
 
-@@action:thread {"ledger":"knows","who":"The crew","what":"The untaped grave on Tarrah Hill is a woman named Kerra, 'from here' — and the old keeper knows more than he will say","since":"S3","notes":"Given for an honest answer; the name is in the Republic's Dark Age histories (Hard Lore)"}@@
+@@action:thread {"ledger":"knows","who":"The crew","what":"The untaped grave on Tarrah Hill has two names on it — Marenna and Kerra Holt, sisters — and the old man beside it will not say a word about them","since":"S3","notes":"Read off the stone; the name is in the Republic's Dark Age histories (Hard Lore)"}@@
 
 ## Scene 5 — The Second Relight
 
@@ -142,15 +140,17 @@ Run it interleaved over two or three rounds; the tide is the clock — **every r
 
 ## Scene 7 — The Hill on Aquilaris
 
-**The climax.** The full scene — the two claims, the stone, the saber's three roads, the recorder, and what travels — is written once, in [The Dead Lords](../npcs/knight-errant.md) (*Set piece — The Hill on Aquilaris*); run it from there. What this page adds is the *staging*, keyed to what the session built:
+**The climax.** The full scene — the claims, the stone, the saber's three roads, the recorder, and what travels — is written once, in [The Dead Lords](../npcs/knight-errant.md) (*Set piece — The Hill on Aquilaris*); run it from there. What this page adds is the *staging*, keyed to what the session built — and one rule above all: **the old man says nothing. The players say everything.**
 
-1. **The warden climbs** — with the manifest open or closed, per Scene 6. Del Gormo is where he always is, beside the stone, mending a net. He does not stand.
-2. **The truce breaks in one exchange.** Tull, reading: *"Holt, Marenna. Holt, Kerra. War dead. Is there anything in the ground, keeper?"* And the old man, for the first time in ninety years, answers a question straight: *"Yes. Her lightsaber. And me, when it's time."* Then — because he has fed the crew and told them the tide and sold them eel — he says the rest **to them**, not to her: who she was, that she taught him, that he carried her home. *"You may tend her. You may not own her."*
-3. **Nobody in the scene is wrong.** Tull has the deed; he has the grave; the crew have been trusted by both. Do not resolve it for them. The saber's three roads (earned / taken / arbitrated) are in the set piece — and the *arbitrated* road is the one this session was built for: the crew's judgment at the hill is a Reconstruction on the verdict Question in everything but dice. If they have three Civic fragments and this night (they do — the porch, the relay, and the tide table's keeper), let them roll it here, and let the verdict go on the paper.
-4. **If the gifted PC ignites the saber** — earned or taken — it is the campaign's first ignition: green, on a hill above a drowned city, in front of a warden of the grave-keepers and a Master who was never the Temple's. The witness rule fires like a struck bell. Do not undersell it.
-5. **What Tull does** depends on what the crew do. Sealed under deed, the hill becomes the Vigil's — and the old keeper's tolerance is over; he will not fight, and he will not stay. Left to him, the chapter files a *dissent* — and comes asking, at the next hop, what else the crew saw. Given to the crew, both file it, and the Weeding hears about a Jedi's recorder on a freighter.
+1. **The warden climbs** — with the manifest open or closed, per Scene 6. The keeper is where he always is, beside the stone, mending a net. He does not stand. He does not speak.
+2. **The warden asks — and not him.** Tull, reading: *"Holt, Marenna. Holt, Kerra. War dead. No tape recorded."* She looks at the old man; he looks at the net. So she turns to the only people on the hill with standing — the crew — and asks the question the whole session has been loading: *"You've been up here. Is there anything in the ground?"* Then she waits. **This is the scene.** Whatever a player says next is the line of the night; if nobody says anything, she tapes the stone, and he lets her.
+3. **If they dig** — with the warden watching and the keeper not moving — they find what is in the hill: the saber, the recorder, the locket, and the second grave. What they do with a dead Jedi's blade in front of a grave-keeper is theirs. Do not resolve it for them.
+4. **The arbitrated road** is the one this session was built for: the crew's own judgment, spoken here, is a Reconstruction on the verdict Question in everything but dice. If they hold three Civic fragments and this night (they do — the porch, the relay, the stone), let them roll it here, and let the verdict go on the paper.
+5. **If the gifted PC ignites the saber** it is the campaign's first ignition: green, on a hill above a drowned city, in front of a warden of the grave-keepers — and an old man who, for the first time all session, looks up. The witness rule fires like a struck bell. Do not undersell it.
+6. **What Tull does** depends on what the crew do. Sealed under deed, the hill becomes the Vigil's; the old man lets it happen, and is gone by morning. Left to him, the chapter files a *dissent* and comes asking, at the next hop, what else the crew saw. Given to the crew, both file it, and the Weeding hears about a Jedi's recorder on a freighter.
+7. **The one line he keeps.** After — after the tape or the dissent, after the saber is lit or left — he finds whoever spoke, and asks: *"Why did you?"* What he does next follows from the answer.
 
-@@action:thread {"ledger":"holds","item":"Kerra Holt's green lightsaber","holder":"(the grave, Del Gormo, the Vigil, or a player — record who)","since":"S3","notes":"Decided on the hill; first-ignition rule"}@@
+@@action:thread {"ledger":"holds","item":"Kerra Holt's green lightsaber","holder":"(the grave, the Vigil, or a player — record who)","since":"S3","notes":"Decided on the hill; first-ignition rule"}@@
 
 @@action:thread {"ledger":"holds","item":"Kerra Holt's recorder — the undelivered testimony for Chancellor Genarra","holder":"(the grave, the Vigil under seal, or the crew)","since":"S3","notes":"If it leaves Aquilaris, the Weeding follows it forward"}@@
 
@@ -163,7 +163,7 @@ Run it interleaved over two or three rounds; the tide is the clock — **every r
 | If the crew… | Tonight | It seeds |
 |---|---|---|
 | Named the harvester stations the guild's, and left the grave to its keeper | The Seacroppers keep their road; the Vigil files a dissent; Padgett gives them the tide tables for the whole Run — a rutter of water, in a guild that never charted one | The verdict Question's first written verdict, on hop 2's paper: *they built this themselves; let them keep it.* Factions read it. The Founding cadre reads it as sedition. |
-| Let the Vigil seal the hill | Tull is grateful and ashamed; the tape goes on the stone; the keeper is gone from the hill by morning — up the lane | Verdanth's swamp is *occupied* when the crew reaches it, and the man in it has a reason now. Kerra's saber is under seal, and the Vigil own a Jedi they cannot admit to. |
+| Let the Vigil seal the hill | Tull is grateful and ashamed; the tape goes on the stone; the keeper is gone from the hill by morning | Kerra's saber is under seal, and the Vigil own a Jedi they cannot admit to. Where the old man went is nobody's business this act. |
 | Took the saber (earned or otherwise) | The first ignition, or the first theft; either way the crew carries a dead Knight's blade up the Run | Every faction that counts the gifted now counts *this*: a Temple-less lineage with a weapon. Tane's mission gets a second reason to come. The Weeding notes a Jedi relic on a freighter. |
 | Took the recorder | Kerra's testimony — the Calimondra vaults, the Bequest, Grace Command | Fragments of the first order for *Who lit Vesta-9?* and the verdict; and the only object on the Run the true Sith line would kill a crew for. It follows them *forward*. |
 | Traded the beacon's margin for one station's life support (Scene 5's humane bypass) | The Cay keeps one harvester station lit; the certificate carries a clause nobody has seen before | A precedent: a relit beacon that *shares*. The guild will want it struck at the Conclave. |
@@ -173,7 +173,7 @@ Run it interleaved over two or three rounds; the tide is the clock — **every r
 
 ## The Out
 
-**Up the Run: Verdanth, hop 3** — the jungle world the old keeper was born in, the seventeen sealed tombs of the lords his master fought, the Inheritors' temple with its nameplate chiseled away, and a swamp that is empty or not depending on what the crew did on the hill. The guild's next prize posts within the hour. *Of course it does.* ([Module 05 — The Seventeen Tombs](05-the-seventeen-tombs.md) is hop 3; hop 4, [The Ash Sea](04-the-ash-sea.md), is the breather after.)
+**Up the Run: Verdanth, hop 3** — the seventeen sealed tombs of the Dark Age lords, and the Inheritors' temple with its nameplate chiseled away. The guild's next prize posts within the hour. *Of course it does.* ([Module 05 — The Seventeen Tombs](05-the-seventeen-tombs.md) is hop 3; hop 4, [The Ash Sea](04-the-ash-sea.md), is the breather after.)
 
 **Other doors:**
 
@@ -191,8 +191,8 @@ Run it interleaved over two or three rounds; the tide is the clock — **every r
 | Flag | Set it if… | Session four consequence (short form) |
 |---|---|---|
 | **Named the stations the guild's** | The certificate names the harvester stations the Seacroppers' property | The Conclave hears of a *sharing* precedent; the Founding cadre calls it sedition. |
-| **The hill sealed** | The Vigil hold the grave under deed | Del Gormo is on Verdanth when the crew arrives — and not glad of it. |
-| **The hill left to its keeper** | The Vigil filed a dissent | A warden meets the crew at hop 3 with a question and no tape; Del Gormo stays on Aquilaris — the swamp is empty. |
+| **The hill sealed** | The Vigil hold the grave under deed | The Vigil own a Jedi they cannot admit to; the audit of the drowned worlds' dead begins. |
+| **The hill left to its keeper** | The Vigil filed a dissent | A warden meets the crew at hop 3 with a question and no tape. |
 | **Holds the saber** | A player carries Kerra's blade | Every count of the gifted now counts a weapon; Tane's mission gains a second reason. |
 | **Holds the recorder** | The testimony travels with them | The Weeding follows it forward; a kind stranger asks about it at the next port. |
 | **Opened the verdict Question** | The crew wrote a verdict on hop 2's paper | Every faction has read it; the clocks moved. |
