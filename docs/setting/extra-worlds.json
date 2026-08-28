@@ -2,6 +2,22 @@
  "_doc": "Worlds the atlas doesn't mark but the chart should. anchor: {dot:<existing or earlier extra name>} | {xy:[x,y]} (world units); dx/dy offset; grid/sector/region override the anchor's when given; tier 1 = bright named class. The builder's sibling pass gathers same-system worlds like any moon. bright: the ONLY worlds drawn in the bright tier (labelled at the middle zoom) — a curated allowlist of worlds players recognise (films, TV, KOTOR, games, a few Legends icons); everything else is the plain tier regardless of the atlas's own flag.",
  "worlds": [
   {
+   "name": "Hysalria",
+   "tier": 0,
+   "grid": "M-19",
+   "sector": "Sluis",
+   "region": "Outer Rim Territories",
+   "note": "Del Gormo's species homeworld (Hysalrian; Essential Atlas Online Companion M-19 — the atlas dataset lacks a row). Placed at the chart's M-19 centroid.",
+   "anchor": {
+    "xy": [
+     4200.8,
+     7281.0
+    ]
+   },
+   "dx": 24.0,
+   "dy": -18.0
+  },
+  {
    "name": "Nar Shaddaa",
    "tier": 1,
    "anchor": {
