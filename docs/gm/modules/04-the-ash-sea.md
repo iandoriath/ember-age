@@ -22,11 +22,14 @@
 
 ## Carrying the Run forward
 
+*Reads [module 05 — The Seventeen Tombs](05-the-seventeen-tombs.md)'s Handoff as well as Aquilaris's: the crew arrives here the week after the culling.*
+
 | If, before now, the crew… | Then, at Aplooine |
 |---|---|
-| Holds Kerra's saber, or the recorder | Nothing on this world knows or cares — which is its own relief. Nerra, however, asks lightly what the Vigil dissent at Aquilaris was *about*. |
-| Visited the Inheritors' temple on Verdanth (or refused them) | A courier crawler from the Varrow hold carried "a sealed report, wax and ribbon" off-world last week for a black-clad buyer who paid well. The drivers thought it was funny. |
+| Holds Kerra's saber, the recorder, or the first Sith fragment | Nothing on this world knows or cares — which is its own relief. Nerra, however, asks lightly what the Vigil dissent at Aquilaris was *about*. |
+| Visited the Inheritors' temple on Verdanth — and saw it emptied | The drivers have heard "the grave-robbers on the green all died in a night" and think it is a ghost story; a courier crawler carried "a sealed report, wax and ribbon" off-world the week *before*, for a black-clad buyer who paid well. Nobody has come for the reply. |
 | Left Del Gormo on the hill / drove him to the swamp | No effect here — but if Verdanth's swamp was occupied when they passed, the old keeper sent a jar of smoked eel along with the guild packet. It arrives with Nerra. |
+| Anwei is aboard | The drivers are superstitious about the ash and *very* superstitious about a child who tells them which day the Sea will slide — she is right, and Old Mim is furious. |
 | Wrote a verdict on hop 2's paper | The drivers have heard the crew *writes things down for the galaxy*. Hesk wants his crossing record entered on the certificate, in the crew's hand. It matters to him more than the money. |
 | Named the harvester stations the Seacroppers' | The Varrow hold asks whether the same can be done for the **dig rights under the buried dome** — a precedent traveling up the Run on its own. |
 | However it went with Skell | If the *Overdue* is still behind them, it is not here: nobody comes to Aplooine who is not paid to. It will be at Sanrafsix. |

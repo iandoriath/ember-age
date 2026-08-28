@@ -173,7 +173,7 @@ Run it interleaved over two or three rounds; the tide is the clock — **every r
 
 ## The Out
 
-**Up the Run: Verdanth, hop 3** — the jungle world the old keeper was born in, the seventeen sealed tombs of the lords his master fought, the Inheritors' temple with its nameplate chiseled away, and a swamp that is empty or not depending on what the crew did on the hill. The guild's next prize posts within the hour. *Of course it does.* (Hop 4, [The Ash Sea](04-the-ash-sea.md), is the breather after.)
+**Up the Run: Verdanth, hop 3** — the jungle world the old keeper was born in, the seventeen sealed tombs of the lords his master fought, the Inheritors' temple with its nameplate chiseled away, and a swamp that is empty or not depending on what the crew did on the hill. The guild's next prize posts within the hour. *Of course it does.* ([Module 05 — The Seventeen Tombs](05-the-seventeen-tombs.md) is hop 3; hop 4, [The Ash Sea](04-the-ash-sea.md), is the breather after.)
 
 **Other doors:**
 

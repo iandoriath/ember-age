@@ -123,6 +123,7 @@ NAV_MAP = {
     "gm/modules/02-the-toll-at-enarc.md": "tab:run",
     "gm/modules/03-the-drowned-resort.md": "tab:run",
     "gm/modules/04-the-ash-sea.md": "tab:run",
+    "gm/modules/05-the-seventeen-tombs.md": "tab:run",
 }
 
 LINK_RE = re.compile(r'<a href="([^"]*\.md)(?:#[^"]*)?"[^>]*>(.*?)</a>', re.S)
@@ -232,6 +233,7 @@ MODULE_FILES = [
     ("02", "gm/modules/02-the-toll-at-enarc.md"),
     ("03", "gm/modules/03-the-drowned-resort.md"),
     ("04", "gm/modules/04-the-ash-sea.md"),
+    ("05", "gm/modules/05-the-seventeen-tombs.md"),
 ]
 
 CLOCK_FACTIONS = {"Republic", "Admiralty", "Vigil", "Inheritors",
