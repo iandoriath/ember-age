@@ -16,28 +16,35 @@ Some fragments are not just testimony but **navigation**: a rutter, a war-convoy
 
 ### Reconstruction
 
-With **three or more fragments** bearing on one named **Question** ("Why did the Jedi leave the Rim?" "What is the Valley?"), the party may attempt a **Hard Knowledge (Lore)** check as a group scene.
+With **enough fragments** bearing on one named **Question**, the party may attempt a **Hard Knowledge (Lore)** check as a group scene. Each Question pays out in three **rungs**, and the deeper rungs cost more evidence:
+
+| Rung | Fragments needed | Note |
+|:-:|:-:|---|
+| 1 | 3 | — |
+| 2 | 5 | or 3 with all three tags represented |
+| 3 | 7 | or 4 with all three tags — **and at least one Sith-tagged fragment**, always |
 
 - If **all three tags** are represented: upgrade an ability die once.
 - If **only one tag** is represented: upgrade the difficulty once — *bias is real.*
+- Spent fragments stay in the ledger and keep their boost dice; they are not consumed by a Reconstruction.
 
 ### Results
 
 | Result | Effect |
 |---|---|
-| **Success** | The GM reveals a **Truth**, and the party gains an **Insight** — permanently remove a setback die from one defined category of checks, **or** unlock an out-of-career talent purchase the Truth justifies |
+| **Success** | The GM reveals the next **Truth** on that Question's ladder, and the party gains an **Insight** — permanently remove a setback die from one defined category of checks, **or** unlock an out-of-career talent purchase the Truth justifies. *On the verdict Question (below), success grants no Truth — it grants the party's own conclusion the standing of one.* |
 | **Triumph** | A secret beyond the Question |
 | **Despair** | A **corrupted conclusion** enters play — and the party believes it |
 
 ## Named Questions
 
-Keep a public list of the Questions the party is working. Questions open *in play* — Vesta-9's on session one; the call's the night a gifted character goes looking for the sound:
+Keep a public list of the Questions the party is working. There are four — three mysteries and one judgment — and they open *in play*: Vesta-9's on session one; the call's the night a gifted character goes looking for the sound; Ruusan's when the first fragment names it; the verdict the first time someone on the Run asks the crew whether they *should* be doing this.
 
-- *Why did the Jedi leave the Rim?*
-- *What is the Valley?*
-- *Who lit Vesta-9?*
-- *Why did the Run stay dark?*
-- *What is calling the gifted up the Run?*
-- *What did the Adjournment actually adjourn?*
+- ***Who lit Vesta-9?*** — the hidden hand behind the relighting.
+- ***What is calling the gifted up the Run?*** — the pull, and where it leads.
+- ***What died at Ruusan?*** — what the last war actually ended, and what it sealed.
+- ***Should the Run be reconnected at all?*** — **the verdict Question.** This one has no answer hidden in the GM's notes. Its rungs are *evidence* — what the Republic did here, what the Sith did here, what the Run built for itself in the dark — and its Reconstruction pays out differently: the party does not learn a Truth, they **earn the standing to write one**. A successful Reconstruction entitles the crew to put their verdict on the next founding paper they witness (a certificate, a charter, the Conclave, the Founding) and have the world treat it as settled: an Insight, and every faction clock moves toward or against what they wrote. The beacons are plugging these people back into a galaxy that conquered, abandoned, and poisoned them. Whether that is a rescue is the players' call — and the campaign will hold them to it.
+
+Fragments from other histories — the Jedi who refused to leave, the Adjournment's minutes, the war's graves — are not their own Questions; they bear on these four.
 
 *(GM: track issued fragments and their tags in the GM tools section of this wiki.)*

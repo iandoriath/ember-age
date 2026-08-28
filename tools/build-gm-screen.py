@@ -343,12 +343,10 @@ PAGES_SPEC = [
 SEED = {
     "ui": {"fs": 1},   # text-size scale chosen with the header's Aa button (1 / 1.15 / 1.3)
     "questions": [
-        "Why did the Jedi leave the Rim?",
-        "What is the Valley?",
         "Who lit Vesta-9?",
-        "Why did the Run stay dark?",
         "What is calling the gifted up the Run?",
-        "What did the Adjournment actually adjourn?",
+        "What died at Ruusan?",
+        "Should the Run be reconnected at all?",
     ],
     "clocks": [
         {"faction": "Republic", "crack": "Recovered by adjourning the Rim; wants it back on its terms", "value": 0, "notes": ""},
