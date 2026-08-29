@@ -171,8 +171,33 @@ NPC_FILES = [
 TYPE_WORDS = ("Nemesis", "Rival", "Minion")
 
 
+HEADING_RE = re.compile(r"(?m)^(#{2,3}) (.+?)\s*$")
+
+
+def classify_section(name, typ):
+    """A `### ` section is an NPC-tab tile only when its typeline names a kind: Nemesis / Rival /
+    Minion (statted people, crews, beasts), Vehicle (hulls), Hazard (encounter landlords), or
+    Special (an unstatted person: Osk, Sull, Ostrel). Anything else — doctrine, set pieces, the
+    holocron, the Dead Lords' history cards, a working — is reference and renders in the Book."""
+    if typ.startswith("Vehicle"):
+        return "Vehicle"
+    if "hazard" in typ.lower() or "hazard" in name.lower():
+        return "Hazard"
+    for w in TYPE_WORDS:
+        if typ.startswith(w):
+            return w
+    if typ.startswith("Special"):
+        return "Special"
+    return None
+
+
 def parse_npcs():
-    npcs, groups = [], []
+    """Split each NPC file on BOTH heading levels. Text before the first heading is the group's
+    intro on the NPC tab; `## ` sections with prose of their own and any un-kinded `### ` section
+    go to a per-file reference page in the Book, in file order; kinded `### ` sections are tiles.
+    (Before 2026-08-28 the split was on `### ` alone, so a `## ` set piece following the last card
+    was swallowed into that card's tile, and every prose section became a 'Special' tile.)"""
+    npcs, groups, refpages = [], [], []
     for slug, label, relpath in NPC_FILES:
         src_dir = posixpath.dirname(relpath)
         text = (DOCS / relpath).read_text(encoding="utf-8")
@@ -180,11 +205,18 @@ def parse_npcs():
         text = substitute_actions(text, f"npc-{slug}", problems)
         if problems:
             raise SystemExit(f"npc file {relpath}: " + "; ".join(problems))
-        parts = re.split(r"(?m)^### ", text)
-        groups.append({"slug": slug, "label": label, "intro": render(parts[0], src_dir)})
-        for chunk in parts[1:]:
-            name, _, body = chunk.partition("\n")
-            name = re.sub(r"\*+", "", name).strip()
+        heads = list(HEADING_RE.finditer(text))
+        intro = text[:heads[0].start()] if heads else text
+        groups.append({"slug": slug, "label": label, "intro": render(intro, src_dir)})
+        ref_html = []
+        for i, h in enumerate(heads):
+            level = len(h.group(1))
+            name = re.sub(r"\*+", "", h.group(2)).strip()
+            body = text[h.end(): heads[i + 1].start() if i + 1 < len(heads) else len(text)]
+            if level == 2:
+                if body.strip():
+                    ref_html.append(f"<h2>{html_escape(name)}</h2>" + render(body, src_dir))
+                continue
             typ, faction, role = "", "", ""
             for line in body.splitlines():
                 ls = line.strip()
@@ -196,12 +228,10 @@ def parse_npcs():
                     faction = bits[1] if len(bits) > 1 else ""
                     role = bits[2] if len(bits) > 2 else ""
                     break
-            if slug == "ships" or typ.startswith("Vehicle"):
-                kind = "Vehicle"
-            elif "hazard" in typ.lower() or "hazard" in name.lower():
-                kind = "Hazard"
-            else:
-                kind = next((w for w in TYPE_WORDS if typ.startswith(w)), "Special")
+            kind = "Vehicle" if slug == "ships" else classify_section(name, typ)
+            if kind is None:
+                ref_html.append(f"<h3>{html_escape(name)}</h3>" + render(body, src_dir))
+                continue
             derived = re.search(r"\*\*((?:Soak|Defense|Silhouette).+?)\*\*", body)
             npcs.append({
                 "id": f"{slug}--{re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')}",
@@ -215,6 +245,9 @@ def parse_npcs():
                 "html": render(body, src_dir),
                 "search": plain(name + " " + body),
             })
+        if ref_html and slug != "ships":
+            refpages.append({"section": "reference", "id": f"ref-{slug}",
+                             "title": f"{label} — reference", "html": "".join(ref_html)})
     # Vehicles statted inside GM-only NPC files (e.g. the Sith line's fighter in
     # keepers.md) are shelved with the other ships. ships.md itself stays
     # player-safe, so this is the only place they meet. A hull the ships file
@@ -224,7 +257,11 @@ def parse_npcs():
     for n in npcs:
         if n["kind"] == "Vehicle" and n["group"] != "ships" and n["name"] not in ship_names:
             n["group"] = "ships"
-    return npcs, groups
+    return npcs, groups, refpages
+
+
+def html_escape(t):
+    return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
 # ---------------------------------------------------------------- run modules
@@ -448,8 +485,8 @@ def main():
     skeleton = between(tpl, "<!--SKELETON_START-->", "<!--SKELETON_END-->").strip()
     app_code = between(tpl, '<script id="app-code">', "</script>")
 
-    npcs, groups = parse_npcs()
-    pages = [{"section": s, "id": i, "title": t, "html": render_file(p)} for s, i, t, p in PAGES_SPEC]
+    npcs, groups, refpages = parse_npcs()
+    pages = [{"section": s, "id": i, "title": t, "html": render_file(p)} for s, i, t, p in PAGES_SPEC] + refpages
     name_to_id = {n["name"]: n["id"] for n in npcs}
     modules = [m for m in (parse_module(mid, rp, name_to_id) for mid, rp in MODULE_FILES) if m]
     trackdocs = {

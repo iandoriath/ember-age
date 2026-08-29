@@ -67,7 +67,7 @@
 | Feral Bantha Herd | Minions | The Feral Run | [The Feral Run](wildlife.md) |
 | The Reef | Hazard | The Feral Run | [The Feral Run](wildlife.md) |
 | The Aquilaris Deep | Hazard | The Feral Run | [The Feral Run](wildlife.md) |
-| Lord Daiman · Lord Odion · Arkadia Calimondra · the Dyarchy · Ayanos Bactra · Malakite · Vilia Calimondra | Special (history, unstatted) | the dead principalities (1032 BBY) | [The Dead Lords](knight-errant.md) 🔒 |
+| Lord Daiman · Lord Odion · Arkadia Calimondra · the Dyarchy · Ayanos Bactra · Malakite · Vilia Calimondra | History (unstatted; Book → The Dead Lords — reference) | the dead principalities (1032 BBY) | [The Dead Lords](knight-errant.md) 🔒 |
 | Master N'Kata Del Gormo | Special (unstatted) | no faction — the hill on Aquilaris in Act 1, the swamp on Verdanth later | [Keepers of the Flame](keepers.md) 🔒 |
 | Master Seldra Tane | Special (unstatted) | Jedi Order (Temple envoy; arrives at the Conclave of Charts) | [Keepers of the Flame](keepers.md) 🔒 |
 | The Patient Master | Nemesis | the true Sith line | [Keepers of the Flame](keepers.md) 🔒 |

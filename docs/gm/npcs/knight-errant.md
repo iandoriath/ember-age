@@ -16,7 +16,7 @@
 ## The Lords (GM cards — unstatted by design; they are history, not encounters)
 
 ### Lord Daiman, Creator of the Universe
-*Special — the Daimanate (dead, 1032 BBY floor) — the solipsist on Darkknell; run as inheritance, never as an encounter*
+*History — the Daimanate (dead, 1032 BBY floor) — the solipsist on Darkknell; run as inheritance, never as an encounter*
 
 > "I was bored — and so I created the universe." He meant it. Every act in nature was a move for or against him; every other being was a puzzle his own mind had set. His eyes were two colors until he used the dark side, and then both were yellow.
 
@@ -25,7 +25,7 @@
 **Fate:** alive at the end of the record (1032), inheriting Industrial Heuristics, Vellas Pavo, and part of the Odionate. Absorbed, presumably, into the Brotherhood. Unrecorded death.
 
 ### Lord Odion, the Destroyer
-*Special — the Odionate (dead, 1032 BBY) — the nihilist who felt every life as pain; run as inheritance*
+*History — the Odionate (dead, 1032 BBY) — the nihilist who felt every life as pain; run as inheritance*
 
 > Life burned in his Force-sense like a headache that began the day his brother was born. Each death dimmed one light. He built a state to dim them all.
 
@@ -34,7 +34,7 @@
 **Fate:** dead, Vanahame, 1032 BBY — the Helm overloaded on the children's joy. Territory partitioned (never itemized).
 
 ### Arkadia Calimondra
-*Special — the Arkadianate (1032 BBY floor) — the reasonable Sith; run as inheritance*
+*History — the Arkadianate (1032 BBY floor) — the reasonable Sith; run as inheritance*
 
 > Her city was warm, well-fed, bright-clothed, and rotated every citizen through a new profession before they could become good enough to threaten her.
 
@@ -43,7 +43,7 @@
 **Fate:** alive in 1032, capital damaged, expansion aborted, forces recalled from Byllura. Unrecorded thereafter.
 
 ### The Dyarchy — Dromika and Quillan, and Regent Saaj Calician
-*Special — the Dyarchy of Byllura (fell 1032 BBY) — a world run as one organism; run as inheritance*
+*History — the Dyarchy of Byllura (fell 1032 BBY) — a world run as one organism; run as inheritance*
 
 > Fourteen-year-old twins who never left their rooms; a whole planet moving to their will through a network of enslaved Celegian minds; a Krevaaki regent who thought he was the author and was the puppet.
 
@@ -51,19 +51,19 @@
 **Fate:** both twins in Vilia's custody, kept apart, on her secret garden world (Quillan) and "another of Vilia's worlds" (Dromika). Never mentioned again. Byllura survives to the Clone Wars.
 
 ### Ayanos Bactra and the Bactranate
-*Special — the Bactranate (liquidated 1032 BBY) — the Sith who ruled by corporation*
+*History — the Bactranate (liquidated 1032 BBY) — the Sith who ruled by corporation*
 
 **The facts.** A Quermian "old family friend," not blood. Preferred bureaucracy to armies; held three of the sector's four superconductor concerns; owned **Industrial Heuristics** (arrow logo), which built **arxeums** — mobile war-colleges of nine city-block towers, nine engines, students recruited young and kept for life (units near Alphoresis, Gazzari — destroyed — and Tergamenion). Ruled **Jutrand** (ecumenopolis, hundreds of corporate HQs; razed by stone mites in the Hundred-Year Darkness and rebuilt) and **Sarrassia** (Sarrassian iron; a 2,500-year religious war between the Grumani Hierophants and Spumani Crusaders that he ended by fiat). Kept his bankers; Odion fed three of them to a rancor.
 **Fate:** fled "into hiding at a Quermian retirement colony." Death unrecorded.
 
 ### Lord Malakite and the Menagerie
-*Special — the Menagerie (1032 BBY floor) — the embodiment of perversion*
+*History — the Menagerie (1032 BBY floor) — the embodiment of perversion*
 
 **The facts.** Vilia's grandson; saw himself as *perversion* to Daiman's creation and Odion's destruction. Sith alchemy on an industrial scale: **Mutates** (red-skinned twisted sentients as infantry), **Menagerie dragons**, winged **Night-Soarers**; disdained technology, swarmed it with numbers, ran a large-scale breeding program to replace losses, lured enemies into tar pits and lit them. Held **Skarpos** (stormy, trenched, the **Morbollon Mesa** with a Hierophant temple). Fled the Helm with his life; answered Vilia's call against Odion.
 **Fate:** alive 1032. Unrecorded thereafter. *(The Feral Run's beast file has no Sithspawn — deliberately; if the crew ever meets a Mutate's descendant, it is this man's.)*
 
 ### Vilia Calimondra, the Matriarch
-*Special — the Calimondra family (alive 1032 BBY) — the grandmother who ran the war as a family meeting*
+*History — the Calimondra family (alive 1032 BBY) — the grandmother who ran the war as a family meeting*
 
 > "A family is defined by its shared illusions, as much as by its blood."
 
