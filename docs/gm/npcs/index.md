@@ -35,8 +35,8 @@
 | Keeper Tessa Marn | Rival | Vigil (reform) | [Vigil & Inheritors](vigil-inheritors.md) |
 | Vigil Wardens | Minions | Vigil (Warden Ossa Tull's escort, not her — Tull: use Vhail's Rival print, adjustments none) | [Vigil & Inheritors](vigil-inheritors.md) |
 | Meru Vane, "the First Friend" | Nemesis | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
-| Inheritor Adept | Rival | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
-| Unveiling Blade-Cadre | Rival | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
+| Inheritor Adept | Rival | Inheritors (no Force — Force Rating removed by declared adjustment) | [Vigil & Inheritors](vigil-inheritors.md) |
+| Unveiling Blade-Cadre | Rival | Inheritors (no Force — Force Rating removed by declared adjustment) | [Vigil & Inheritors](vigil-inheritors.md) |
 | Inheritor Lore-Clerks | Minions | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
 | Chartkeeper Denno Pike | Rival | Lamplighters (mole) | [Vigil & Inheritors](vigil-inheritors.md) |
 | Ostrel, the Third Clerk | Special (unstatted) | Inheritor remnant (the Sanrafsix Ring) | [Vigil & Inheritors](vigil-inheritors.md) |

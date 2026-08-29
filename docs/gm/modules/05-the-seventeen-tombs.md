@@ -14,7 +14,7 @@
 
 - **The Heir** — a Kel Dor, mid-fifties, immaculate, masked; a fraud among true believers; the offer, the stage, the divination. Offstage until Scene 5. *(@@npc:The Heir@@ — unstatted until the Unveiling arc)*
 - **@@npc:Meru Vane, the First Friend@@** — the Inheritors' face, warm and real, who met the crew at Aquilaris; she brings them to the temple. *(Vigil & Inheritors)*
-- **@@npc:Inheritor Adept@@** and **@@npc:Unveiling Blade-Cadre@@** — the drilled rank-and-file, real-but-scraped; the cadre always in pairs. **@@npc:Inheritor Lore-Clerks@@** — the archive, in triplicate. *(Vigil & Inheritors)*
+- **@@npc:Inheritor Adept@@** and **@@npc:Unveiling Blade-Cadre@@** — the drilled rank-and-file: real blade forms scraped from artifacts, and no Force in any of them; the cadre always in pairs. **@@npc:Inheritor Lore-Clerks@@** — the archive, in triplicate. *(Vigil & Inheritors)*
 - **Warden Ossa Tull** — the Vigil's circuit warden from Aquilaris (or @@npc:Keeper Adressa Vhail@@ if the crew earned her), here for the seventeen; the Unbroken Seal is hers. *(run her on Vhail's Rival print, adjustments none; @@npc:Vigil Wardens@@ are her escort, not her)*
 - **Odri Sund** — the chandler; her counter stands on the temple road within sight of the steps, selling shoring to the dig crews. She never approaches the crew. *(GM: Mendac in cover — [Keepers of the Flame](../npcs/keepers.md); the tell, once, unremarked)*
 - **@@npc:Chartmistress Bel Nerra@@** — the certifier, a day behind, with 7,000 scrip and an interest in tombs. *(Vesta-9 & the Crew's Orbit)*
@@ -113,7 +113,7 @@ The chapter has decided, after Aquilaris, to open a Verdanth tomb **by the rite*
 
 > The lamps go down. The masked figure on the dais does not rise. "Witnesses of record. I am Vhasla, who conquered this world, come back in the blood of his heir. I have read what you swore at Vesta-9. Sit. Tell me what you left out."
 
-The cadre demonstrates (real, drilled, dangerous — the adept blocks stand). The rig performs: lamps dim on cue, a relic on the dais *lifts*, and the Heir delivers his one divination — the thing only the Vesta-9 census could know: what the crew carried off the station and never told anyone. It is spooky until a player realizes it is surveillance, and then it is worse. **He says *Lord*, never *Darth*.** An informed player may notice the costume got the vocabulary wrong; do not point it out.
+The cadre demonstrates (drilled and dangerous, and not one Force die between them — the adept blocks stand). The rig performs: lamps dim on cue, a relic on the dais *lifts*, and the Heir delivers his one divination — the thing only the Vesta-9 census could know: what the crew carried off the station and never told anyone. It is spooky until a player realizes it is surveillance, and then it is worse. **He says *Lord*, never *Darth*.** An informed player may notice the costume got the vocabulary wrong; do not point it out.
 
 **Reading the stage** *(before the offer; a failed check says nothing)*:
 

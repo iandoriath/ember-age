@@ -110,7 +110,7 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 
 > A Kel Dor, mid-fifties, immaculate; the respirator mask is the costume, and nobody has ever seen the face. At the Unveiling he will call himself **Lord Vhasla** — a name taken off a sealed tomb on Verdanth.
 
-**The fraud.** The rank-and-file's technique is real — scraped from artifacts, drilled, dangerous (the adept blocks below stand). The Heir's is not. He pretends Force-sensitivity by stagecraft: filament rigs, a clerk-fed earpiece, and one "divination" per audience that only the Vesta-9 census could know — spooky until a player realizes it is surveillance, which is its own chill. He is known in rumor only as *the Heir* until the Unveiling.
+**The fraud.** Nobody in the order can touch the Force — not the Heir, not the cadre, not one adept (Ian, 2026-08-28). What the rank-and-file have is real: blade forms scraped frame by frame from artifacts and drilled until dangerous (the adept blocks below stand, without a Force die between them). The Heir pretends Force-sensitivity by stagecraft: filament rigs, a clerk-fed earpiece, and one "divination" per audience that only the Vesta-9 census could know — spooky until a player realizes it is surveillance, which is its own chill. He is known in rumor only as *the Heir* until the Unveiling.
 
 **The robbed grave.** Legends names none of Verdanth's seventeen Dark Age lords; this campaign names one, and the Heir steals it: **Lord Vhasla**, whose sealed tomb sits under Vigil tape on hop 3. The Unveiling's claim is descent from Vhasla — a Brotherhood-style *Lord*, not a Darth — which makes the Vigil's necrology the paternity test that can falsify the claim on paper. One more reason the Inheritors fear the grave-keepers more than the Temple.
 
@@ -142,7 +142,7 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 **Using her:** The loan-shark chassis is the point: Meru's kindness is a ledger, and every rescue, tuition stipend, and quietly-settled debt is principal accruing. She arrives before every other faction because the Lore-Clerks' files tell her where to be — she made first contact with the crew's world within weeks of Vesta-9. Never play her as false: her warmth is real, her help is real, and her loyalty to the network is realer still, which is what makes exposing her feel like a betrayal the players committed. In violence she is a last-resort shot from an heirloom that should not exist and then gone; her real weapon is that half the NPCs the party loves owe her.
 
 ### Inheritor Adept
-*Rival — The Inheritors — artifact-trained Force cultist*
+*Rival — The Inheritors — artifact-trained cultist; no Force*
 
 > The forms are real — third drill of the old saber schools, scraped frame by frame from a cracked holocron — and the lineage reciting them is an invention no one alive can disprove.
 
@@ -153,11 +153,11 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 **Soak 3 · Wounds 14 · M/R Defense 0/0**
 
 - **Skills:** Coercion 2, Discipline 3, Melee 3 (printed as Lightsaber 3 — see Adjustments), Resilience 2, Stealth 2
-- **Talents:** Adversary 1 (*upgrade the difficulty of all combat checks targeting them once*), Force Rating 1 (*rolls 1 Force die when using Force abilities*), Soft Spot (*after a successful attack, may spend a Destiny Point to add damage equal to Cunning — 3 — to one hit*)
-- **Abilities:** Dark side Force user — generates Force points from dark side results; to use light side results they must spend a Destiny Point and suffer 1 strain per point used (taken as wounds, as a Rival has no strain threshold). The printed block lists no codified power trees: narrate the Force die as drilled reflexes, borrowed hunches, and small wrongness — and remember the era's witness rule when it shows.
+- **Talents:** Adversary 1 (*upgrade the difficulty of all combat checks targeting them once*), Soft Spot (*after a successful attack, may spend a Destiny Point to add damage equal to Cunning — 3 — to one hit*)
+- **Abilities:** none. The printed Force Rating 1 and Dark side Force user ability are removed by declared adjustment: no Inheritor is a Force user. What reads as the Force in an adept is drill — reflexes, guard positions held like ritual, a hunch borrowed from a manual.
 - **Equipment:** Drill-blade (vibrosword; Melee; Damage 4; Critical 2; Range [Engaged]; Defensive 1, Pierce 2, Vicious 1), black initiate robes (+1 soak).
 
-**Chassis:** Fallen Apprentice, Force and Destiny Core Rulebook (reprinted in Allies and Adversaries) (adjustments: printed basic lightsaber replaced with a RAW vibrosword, and the printed Lightsaber 3 ranks applied as Melee 3 — the roster's era conceit: adepts drill counterfeit saber forms with vibroswords, no other stat touched).
+**Chassis:** Fallen Apprentice, Force and Destiny Core Rulebook (reprinted in Allies and Adversaries) (adjustments: printed basic lightsaber replaced with a RAW vibrosword, and the printed Lightsaber 3 ranks applied as Melee 3 — the roster's era conceit: adepts drill counterfeit saber forms with vibroswords; and the printed Force Rating 1 and Dark side Force user ability removed — no Inheritor is a Force user (Ian, 2026-08-28); no other stat touched).
 **Using them:** An adept is what the Inheritors' whole proposition looks like up close: genuine technique, counterfeit ancestry, and total conviction. They fight in the drilled forms — Defensive 1 played up as ritual guard positions — and retreat the moment a fight stops resembling the holocron, because improvisation is where the counterfeit shows. Discipline 3 makes them hard to frighten and easy to radicalize. One adept who realizes the lineage is invented is a whole campaign's worth of defection story.
 
 ### Unveiling Blade-Cadre
@@ -172,12 +172,12 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 **Soak 3 · Wounds 14 · M/R Defense 0/0**
 
 - **Skills:** Coercion 2, Discipline 3, Lightsaber 3, Resilience 2, Stealth 2
-- **Talents:** Adversary 1 (*upgrade the difficulty of all combat checks targeting them once*), Force Rating 1 (*rolls 1 Force die when using Force abilities*), Soft Spot (*after a successful attack, may spend a Destiny Point to add damage equal to Cunning — 3 — to one hit*)
-- **Abilities:** Dark side Force user — generates Force points from dark side results; to use light side results they must spend a Destiny Point and suffer 1 strain per point used (taken as wounds, as a Rival has no strain threshold). No codified power trees printed — the Force die is theater made real: doors that open a beat early, a duel-sense trained into the body.
+- **Talents:** Adversary 1 (*upgrade the difficulty of all combat checks targeting them once*), Soft Spot (*after a successful attack, may spend a Destiny Point to add damage equal to Cunning — 3 — to one hit*)
+- **Abilities:** none. The printed Force Rating 1 and Dark side Force user ability are removed by declared adjustment: no Inheritor is a Force user. The theater is in the body and the room — a door opened a beat early by a clerk on a cue, a duel-sense that is drill, and a relic saber anyone can swing.
 - **Equipment:** Grave-pulled saber relic — a functional pre-Ruusan lightsaber recovered by the dig-cells (basic lightsaber; Lightsaber; Damage 6; Critical 2; Range [Engaged]; Breach 1, Sunder), black cadre robes (+1 soak).
 
-**Chassis:** Fallen Apprentice, Force and Destiny Core Rulebook (reprinted in Allies and Adversaries) (adjustments: none).
-**Using them:** Deploy in pairs, always — the pair is the costume, because everyone alive has heard the rumor that the Sith came in twos. Run each as a full Rival: two blades, mirrored forms, WT 14 apiece, and Adversary 1 each; that is a serious Act 2 duel for a mid-XP party without approaching Inquisitor-grade power, exactly as intended. The Unveiling is a performance with a body count, and the audience that matters most is the one nobody knows is watching — the true Sith line, listening since Enarc. Open Force use before the crew, witnesses with standing, is the point of the private show; the whisper network already had the address.
+**Chassis:** Fallen Apprentice, Force and Destiny Core Rulebook (reprinted in Allies and Adversaries) (adjustments: the printed Force Rating 1 and Dark side Force user ability removed — no Inheritor is a Force user, Ian 2026-08-28; the printed basic lightsaber stands as the grave-pulled relic; no other stat touched).
+**Using them:** Deploy in pairs, always — the pair is the costume, because everyone alive has heard the rumor that the Sith came in twos. Run each as a full Rival: two blades, mirrored forms, WT 14 apiece, and Adversary 1 each; that is a serious Act 2 duel for a mid-XP party without approaching Inquisitor-grade power, exactly as intended. The Unveiling is a performance with a body count, and the audience that matters most is the one nobody knows is watching — the true Sith line, listening since Enarc. The *appearance* of Force use before the crew, witnesses with standing, is the point of the private show — a rig, a cue, a relic that lifts — and there is no Force in the room; the whisper network already had the address.
 
 ### Inheritor Lore-Clerks
 *Minion — The Inheritors — archivist cell of couriers, copyists, and observers*
@@ -225,7 +225,7 @@ Thin, precise, in guild grey he has no right to. He was the third clerk at the V
 
 ### The culling — how the Inheritors end
 
-**The fork is closed: the Inheritors are heretics.** No connection to the true line, and they do not know it — real techniques scraped from artifacts, counterfeit lineage, no living tradition. **The line has known since Enarc:** the stuck clerk bought from Odri's counter; the Verdanth visit confirms the base.
+**The fork is closed: the Inheritors are heretics.** No connection to the true line, and they do not know it — drilled blade forms and ritual scraped from artifacts, a counterfeit lineage, and not one Force-sensitive among them. **The line has known since Enarc:** the stuck clerk bought from Odri's counter; the Verdanth visit confirms the base.
 
 What turns knowing into a sentence is **the Unveiling**: an organized claim to the Sith inheritance, shown to witnesses with standing, privately, inside the Verdanth temple (module 05, Scene 5; the Heir's "Lord Vhasla"; no forbidden word needed — they do not know it), anything that makes them look less like grave-robbers and more like a rival tradition. Then **the culling comes**, once the crew has walked out of the temple, and it is surgical, anonymous, and total: the senior circle dead across a dozen worlds in one night, the archives vanished rather than burned, and nobody sane concluding "Sith." The galaxy blames the Vigil, or the Admiralty, or an internal purge, and every misattribution lights a different Act 3 fire. (It is Mendac's exam — the Graduation, in [Keepers of the Flame](keepers.md).)
 

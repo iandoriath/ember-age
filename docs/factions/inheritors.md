@@ -12,7 +12,7 @@ A monopoly on the returning Force.
 
 ## What they offer a wayfinder crew
 
-The era's most dangerous currency: **real training, when no one else alive can teach.**
+The era's most dangerous currency: **real training, when no one else alive can teach** — or so the offer goes.
 
 ## How they present
 
