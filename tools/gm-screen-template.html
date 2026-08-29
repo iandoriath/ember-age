@@ -42,6 +42,7 @@
   .scenelist button{text-align:left;background:none;border:1px solid transparent;color:var(--dim);padding:.4rem .55rem;border-radius:.45rem;cursor:pointer;font:inherit;display:flex;gap:.45rem;align-items:baseline}
   .scenelist button.on{color:var(--gold);border-color:var(--line);background:var(--panel)}
   .scenelist button.done{opacity:.55;text-decoration:line-through}
+  .scenelist .srow{display:flex;align-items:center;gap:.3rem} .scenelist .srow>button{flex:1 1 auto} .scenelist .dn{display:none}
   .scenelist .n{font-family:var(--disp);font-weight:700;min-width:1.2em;color:var(--ember)}
   .scenenav{display:flex;justify-content:space-between;align-items:center;gap:.6rem;margin:.2rem 0 .6rem}
   .athand h3{margin:.2rem 0 .4rem;color:var(--ember);font-size:.95rem}
@@ -184,7 +185,7 @@
   @media (max-width:640px){
     html{font-size:calc(18px*var(--fs,1))}
     body{font-size:1.0625rem;line-height:1.5}
-    .doc,.npc .body,.card,.qcard,.clock,.sess{overflow-wrap:anywhere}
+    .doc,.npc .body,.card,.qcard,.clock,.sess{overflow-wrap:break-word} .doc code,.doc pre,.runact,.qcard{overflow-wrap:anywhere} .doc th{white-space:nowrap}
     header{position:static;gap:.45rem;padding:.5rem .7rem}
     .only-narrow{display:inline-block} .htools{display:none;width:100%;gap:.4rem} .htools.open{display:flex}  /* wrapped tabs make it ~200px tall; pinned, it would eat a quarter of a phone screen */
     header h1{font-size:1.2rem;margin-right:.4rem} header h1 .small{display:none}
@@ -204,6 +205,56 @@
     .chip{padding:.4rem .85rem} .btn{padding:.5rem .9rem}
     .clock .seg{width:36px;height:24px}
     footer{font-size:.85rem}
+  }
+
+  /* ---- Portrait phones: the deck. All navigation lives in a fixed console at the bottom of the screen,
+     under the thumb: the six tabs (and search) on the lower tier, and — on the Run tab — a scene tier:
+     prev · "3/10 The Field ▾" · done · "At hand" · next. The scene title opens the scene list as a sheet;
+     "At hand" opens the stat blocks / clocks / beacons / fragments as a sheet over the scene, so a GM can
+     check a block or tick a clock without losing their place. The header shrinks to one brand row that
+     scrolls away; nothing but the scene sits above the fold. */
+  .deck{display:none} #sheetback{display:none} .modsel.inner{display:none}
+  @media (orientation:portrait){
+    body{--deck-tabs:52px;--deck-run:0px;--deck-h:calc(var(--deck-tabs) + var(--deck-run) + env(safe-area-inset-bottom,0px))}
+    body[data-tab=run]{--deck-run:58px}
+    main{padding-bottom:calc(var(--deck-h) + 1.2rem)}
+    header{position:static;padding:.45rem .7rem;gap:.4rem}
+    header nav{display:none} header .spacer{display:none}
+    header h1{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;font-size:1.1rem;margin-right:.3rem}
+    .deck{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;background:linear-gradient(180deg,#241b12,#171310);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);box-shadow:0 -6px 24px rgba(0,0,0,.45)}
+    .deckrun{display:none;height:var(--deck-run);align-items:stretch;gap:.3rem;padding:6px .5rem;border-bottom:1px solid var(--line)}
+    body[data-tab=run] .deckrun{display:flex}
+    .deckrun .dk{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:.55rem;font:inherit;padding:0 .4rem;min-width:42px;min-height:44px;display:flex;align-items:center;justify-content:center;gap:.3rem;cursor:pointer}
+    .deckrun .dk:disabled{opacity:.35}
+    .deckrun .dk:focus-visible{outline:2px solid var(--ember);outline-offset:-2px}
+    .deckrun .dk.title{flex:1 1 0;min-width:0;justify-content:flex-start;font-family:var(--disp);font-weight:700;font-size:.98rem;color:var(--gold);letter-spacing:.02em;padding:0 .5rem}
+    .deckrun .dk.title .n{color:var(--ember);flex:0 0 auto} .deckrun .dk.title .t{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+    .deckrun .dk.title::after{content:"\25BE";color:var(--dim);margin-left:auto;padding-left:.3rem}
+    .deckrun .dk.title.open::after{content:"\25B4"}
+    .deckrun .dk.hand{flex:0 0 auto;font-family:var(--disp);font-weight:700;font-size:.92rem;color:var(--gold);padding:0 .5rem} .deckrun .dk.hand .cnt{background:var(--ember);color:#1b120a;border-radius:1rem;padding:0 .4rem;font-size:.8rem;line-height:1.3}
+    .deckrun .dk.hand.open{background:var(--panel2);border-color:var(--ember)}
+    .deckrun .dk.done{flex:0 0 auto;font-size:.8rem;color:var(--dim);gap:.25rem;padding:0 .4rem} .deckrun .dk.done input{width:1.15rem;height:1.15rem;margin:0;accent-color:var(--ember)}
+    .decktabs{display:flex;height:var(--deck-tabs)}
+    .decktabs button{flex:1;min-width:0;background:none;border:0;border-top:2px solid transparent;color:var(--dim);font-family:var(--disp);font-weight:600;font-size:.86rem;letter-spacing:.02em;padding:0 .1rem;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .decktabs button.on{color:var(--gold);border-top-color:var(--ember);background:rgba(224,123,57,.09)}
+    .decktabs button.qs{flex:0 0 3rem;font-size:1.2rem}
+    .decktabs button:focus-visible{outline:2px solid var(--ember);outline-offset:-2px}
+    /* the run cockpit in portrait: no strips or nav rows in the flow */
+    .cockpit .scenenav{display:none} .tab .modsel:not(.inner){display:none}
+    #scenes,#athand{display:block;position:fixed;top:auto;left:0;right:0;bottom:var(--deck-h);margin:0;z-index:29;max-height:min(72vh,36rem);overflow:auto;-webkit-overflow-scrolling:touch;background:var(--panel);border:1px solid var(--line);border-bottom:0;border-radius:1rem 1rem 0 0;box-shadow:0 -12px 40px rgba(0,0,0,.55);padding:.7rem .85rem 1rem;transform:translateY(110%);visibility:hidden;transition:transform .22s ease,visibility 0s .22s}
+    #scenes.open,#athand.open{transform:none;visibility:visible;transition:transform .22s ease,visibility 0s}
+    #scenes::before,#athand::before{content:"";display:block;width:2.4rem;height:4px;border-radius:2px;background:var(--line);margin:0 auto .6rem}
+    #athand>summary{display:none}
+    #scenes .modsel.inner{display:block;margin:0 0 .6rem}
+    #scenes .scenelist{flex-direction:column;flex-wrap:nowrap;overflow:visible;gap:.15rem;padding:0}
+    #scenes .scenelist button{white-space:normal;flex:1 1 auto;min-height:44px;font-size:1.05rem;padding:.5rem .7rem;align-items:center}
+    #scenes .scenelist .dn{display:inline-block;width:1.4rem;height:1.4rem;margin:0 .3rem;accent-color:var(--ember);flex:0 0 auto}
+    #scenes .hint{display:none}
+    #sheetback{position:fixed;left:0;right:0;top:0;bottom:var(--deck-h);background:rgba(0,0,0,.5);z-index:28}
+    body.sheet-open #sheetback{display:block}
+    .athand h3{margin:.7rem 0 .3rem} .athand .mini{min-height:44px;font-size:1.05rem} .athand .mini .seg{width:30px;height:22px;border-radius:3px}
+    footer{padding-bottom:calc(var(--deck-h) + 1rem)}
+    @media (prefers-reduced-motion:reduce){#scenes,#athand{transition:none}}
   }
 </style>
 <!--SKELETON_START-->
@@ -235,6 +286,8 @@
   </div>
   <div id="qs" hidden><div class="qsbox"><input id="qs-in" placeholder="Jump to an NPC, page, or scene…  (Esc closes)" autocomplete="off"><div id="qs-out"></div></div></div>
 </main>
+<div id="sheetback" onclick="closeSheets()"></div>
+<div class="deck" id="deck"><div class="deckrun" id="deckrun"></div><nav class="decktabs" id="decktabs" aria-label="sections"></nav></div>
 <footer>The Ember Age — homebrew campaign GM screen · built __BUILDDATE__ · state autosaves locally; Sync publishes it to this page's live copy</footer>
 <!--SKELETON_END-->
 <script id="app-code">
@@ -380,11 +433,14 @@ function nav(){
   document.getElementById("nav").innerHTML = TABS.map(([id,lbl])=>
     `<button class="${cur===id?'on':''}" onclick="go('${id}')">${lbl}</button>`).join("") +
     `<button title="quick search  ( / )" onclick="qsOpen()">⌕</button>`;
+  const dt = document.getElementById("decktabs");
+  if(dt) dt.innerHTML = TABS.map(([id,lbl])=>`<button class="${cur===id?'on':''}" onclick="go('${id}')">${lbl==="Session Log"?"Log":lbl}</button>`).join("") + `<button class="qs" title="quick search" aria-label="search" onclick="qsOpen()">⌕</button>`;
+  document.body.dataset.tab = cur;
   TABS.forEach(([id])=>document.getElementById("tab-"+id).classList.toggle("on", cur===id));
   document.getElementById("booknav").innerHTML = BOOK.map(([id,lbl])=>`<button class="${bookSel===id?'on':''}" onclick="go('${id}')">${lbl}</button>`).join("");
   BOOK.forEach(([id])=>document.getElementById("tab-"+id).classList.toggle("on", bookSel===id));
 }
-function go(id){ if(SUB[id]){ bookSel = id; id = "book"; } cur=id; try{history.replaceState(null,"","#"+(cur==="book"?bookSel:cur));}catch(e){} nav(); window.scrollTo(0,0); }
+function go(id){ if(SUB[id]){ bookSel = id; id = "book"; } cur=id; closeSheets(); try{history.replaceState(null,"","#"+(cur==="book"?bookSel:cur));}catch(e){} nav(); window.scrollTo(0,0); }
 let npcFocus = null;
 function navTo(spec){
   const p = spec.split(":");
@@ -425,13 +481,16 @@ function runTab(){
   const npcIds = [...new Set([...(scene ? scene.html : m.intro).matchAll(/data-nav="npc:([^"]+)"/g)].map(x=>x[1]))];
   const npcs = npcIds.map(id=>NPCS.find(x=>x.id===id)).filter(Boolean);
   const stacked = matchMedia("(max-width:1000px), (orientation:portrait)").matches;   // one-column cockpit: the at-hand rail starts folded
+  const portrait = matchMedia("(orientation:portrait)").matches;                       // …unless it is a sheet on the deck (portrait), which needs the details open
+  const modselInner = MODULES.length>1 ? `<select class="modsel inner" onchange="S.run.cur=this.value;save();runTab()">${MODULES.map(x=>`<option value="${x.id}" ${x.id===m.id?'selected':''}>${esc(x.title)}</option>`).join("")}</select>` : "";
   el.innerHTML = `
     ${MODULES.length>1 ? `<div class="toolbar modchips" style="margin-bottom:.6rem">${MODULES.map(x=>`<button class="chip ${x.id===m.id?'on':''}" onclick="S.run.cur='${x.id}';save();runTab()">${esc(x.title)}</button>`).join("")}</div><select class="modsel" onchange="S.run.cur=this.value;save();runTab()">${MODULES.map(x=>`<option value="${x.id}" ${x.id===m.id?'selected':''}>${esc(x.title)}</option>`).join("")}</select>` : ""}
     <div class="cockpit">
-      <div class="rail card">
+      <div class="rail card scenes" id="scenes">
+        ${modselInner}
         <div class="scenelist">
           <button class="${cur_i<0?'on':''}" onclick="runGo('${m.id}',-1)"><span class="n">◆</span><span>Preface</span></button>
-          ${m.scenes.map((s,i)=>`<button class="${i===cur_i?'on':''} ${rs.scenes[s.sid]?'done':''}" onclick="runGo('${m.id}',${i})"><span class="n">${i+1}</span><span>${esc(s.title.replace(/^Scene \d+\s*[—–-]\s*/,""))}</span></button>`).join("")}
+          ${m.scenes.map((s,i)=>`<div class="srow"><button class="${i===cur_i?'on':''} ${rs.scenes[s.sid]?'done':''}" onclick="runGo('${m.id}',${i})"><span class="n">${i+1}</span><span>${esc(s.title.replace(/^Scene \d+\s*[—–-]\s*/,""))}</span></button><input type="checkbox" class="dn" aria-label="scene ${i+1} done" ${rs.scenes[s.sid]?"checked":""} onchange="runState('${m.id}').scenes['${s.sid}']=this.checked;this.previousElementSibling.classList.toggle('done',this.checked);save()"></div>`).join("")}
         </div>
         <p class="muted small hint" style="margin:.6rem 0 0">[ and ] step scenes · / searches</p>
       </div>
@@ -447,7 +506,7 @@ function runTab(){
         </div>
         <div class="scenenav"><button class="btn ghost" ${cur_i<0?"disabled":""} onclick="runGo('${m.id}',${cur_i-1})">◀ prev</button><span></span><button class="btn ghost" ${cur_i>=n-1?"disabled":""} onclick="runGo('${m.id}',${cur_i+1})">next ▶</button></div>
       </div>
-      <details class="rail card athand" ${stacked?"":"open"}>
+      <details class="rail card athand" id="athand" ${(stacked && !portrait)?"":"open"}>
         <summary>At hand · ${npcs.length} stat block${npcs.length===1?"":"s"} · clocks · beacons · fragments</summary>
         <h3>Stat blocks in this scene</h3>
         ${npcs.length ? npcs.map(x=>`<details class="npc" id="run-npc-${x.id}"><summary><span class="nm">${esc(x.name)}</span> <span class="badge ${x.kind}">${x.kind}</span>${x.derived?`<span class="drv">${esc(x.derived)}</span>`:""}</summary><div class="body doc">${x.html}</div></details>`).join("") : `<p class="muted small">None referenced here.</p>`}
@@ -461,8 +520,29 @@ function runTab(){
       </details>
     </div>`;
   markDoneActions(m.id);
+  const dr = document.getElementById("deckrun");
+  if(dr) dr.innerHTML = `<button class="dk" ${cur_i<0?"disabled":""} onclick="runGo('${m.id}',${cur_i-1})" aria-label="previous scene">◀</button>
+    <button class="dk title" id="dk-title" onclick="toggleSheet('scenes')" aria-label="choose a scene"><span class="n">${cur_i<0?"◆":`${cur_i+1}/${n}`}${scene&&rs.scenes[scene.sid]?" ✓":""}</span><span class="t">${esc(cur_i<0?"Preface":scene.title.replace(/^Scene \d+\s*[—–-]\s*/,""))}</span></button>
+    <button class="dk hand" id="dk-hand" onclick="toggleSheet('athand')" aria-label="at hand: stat blocks, clocks, beacons, fragments">At hand<span class="cnt">${npcs.length}</span></button>
+    <button class="dk" ${cur_i>=n-1?"disabled":""} onclick="runGo('${m.id}',${cur_i+1})" aria-label="next scene">▶</button>`;
+  closeSheets();
   const on = el.querySelector(".scenelist button.on"), strip = on && on.parentElement;   // keep the current scene in view on the phone strip
   if(strip && strip.scrollWidth > strip.clientWidth) strip.scrollLeft = on.offsetLeft - strip.clientWidth/2 + on.offsetWidth/2;
+}
+function toggleSheet(id){
+  const el = document.getElementById(id); if(!el) return;
+  const opening = !el.classList.contains("open");
+  closeSheets();
+  if(opening){
+    el.classList.add("open"); if(el.tagName==="DETAILS") el.open = true;
+    document.body.classList.add("sheet-open");
+    const b = document.getElementById(id==="scenes" ? "dk-title" : "dk-hand"); if(b) b.classList.add("open");
+  }
+}
+function closeSheets(){
+  document.querySelectorAll("#scenes.open,#athand.open").forEach(e=>e.classList.remove("open"));
+  document.querySelectorAll("#dk-title.open,#dk-hand.open").forEach(e=>e.classList.remove("open"));
+  document.body.classList.remove("sheet-open");
 }
 function cycleFs(){ const steps=[1,1.15,1.3], cur=(S.ui&&S.ui.fs)||1, i=(steps.findIndex(v=>Math.abs(v-cur)<.01)+1)%steps.length; S.ui=Object.assign({},S.ui,{fs:steps[i]}); save(); applyFs(); }
 function applyFs(){ const v=(S.ui&&S.ui.fs)||1; document.documentElement.style.setProperty("--fs", v); const b=document.getElementById("fsbtn"); if(b) b.textContent = v>1.2 ? "Aa++" : v>1 ? "Aa+" : "Aa"; }
@@ -497,6 +577,7 @@ document.addEventListener("keydown", e=>{
     else if(e.key==="Enter"){ qsPick(qsSel); }
     return;
   }
+  if(e.key==="Escape" && document.body.classList.contains("sheet-open")){ closeSheets(); return; }
   if(inField) return;
   if(e.key==="/"){ e.preventDefault(); qsOpen(); }
   else if(cur==="run" && (e.key==="]"||e.key==="[")){
