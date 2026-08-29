@@ -91,7 +91,7 @@
    "hop": 5,
    "blurb": "The great dead hub: its groundside died sealed in the Candorian plague back in the Dark Age and has never been reopened; the orbital ring above it lived on the last war's economy and went quiet with it. Junction of the smugglers' Sanrafsix Corridor.",
    "gm": {
-    "seed": "The Memory Market — the orbital bazaar. The Inheritor beat here: the remnant's stall beside a chandler's counter, the dead temple's fakes under the hammer.",
+    "seed": "The Memory Market — the orbital bazaar. The Inheritor beat here: the remnant's stall beside a chandler's counter, the dead temple's fakes under the hammer. Module 06: the beacon is groundside — the plague-sealed city's port authority tower at the foot of the dead orbital elevator, under Vigil tape (nine of the Battle of Sanrafsix's dead, Jedi and Sith, laid there at the war's end); the approach is the Reef — the battle's wreck-field, Dree's chop-yard, an exogorth-class landlord; the House of Seals runs the Market's provenance; Rade's rutter and the heirloom saber are lots.",
     "canon": "Great dead trade hub of the New Sith Wars economy — provenance bazaars fit perfectly. Don't crater it: alive in later-era sources. Legends: a cosmopolitan hub whose groundside population was sealed in and lost to the Candorian plague in the wars' last century while the orbital stations lived — the Memory Market is an orbital bazaar above a dead, sealed city. The article names its Run links as Aplooine and Heptooine — the hop order as drawn.",
     "factions": [
      "kajidics",
@@ -151,7 +151,7 @@
    "alwaysLit": true,
    "blurb": "The lights come back on: a trinary-sun trade city that never stopped, the Hydian Way's local anchor.",
    "gm": {
-    "seed": "Act 1 finish line",
+    "seed": "Act 1 finish line Act 2 skeleton (editor's call, pending Ian): the Conclave of Charts sits here when the Dead Gate opens; the Republic's accreditation mission — and Master Seldra Tane — arrives up the Hydian through it.",
     "canon": "Never went dark. 'An important trading center for millennia,' trinary suns. The dark closes around it, never through it. The Sanctum Celestial — Daiman's heptagonal fortress in Xakrea — is a Force vergence (F&D Core Rulebook; flooded in the Battle of Darkknell, 1032 BBY).",
     "factions": [
      "admiralty",
