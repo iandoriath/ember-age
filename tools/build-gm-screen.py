@@ -361,6 +361,17 @@ PAGES_SPEC = [
     ("setting", "session-one", "Session One (player recap)", "campaign/session-one.md"),
 ]
 
+# Questions retired by the 2026-08-28 refocus, mapped to the Question that absorbed them. The template
+# remaps saved browser state (localStorage) on load: fragments logged against a retired Question move to
+# its successor and the retired name drops off the tracker. Keep every old string here forever.
+RETIRED_QUESTIONS = {
+    "Why did the Run stay dark?": "Who lit Vesta-9?",
+    "What is the Valley?": "What died at Ruusan?",
+    "What did the Adjournment actually adjourn?": "Should the Run be reconnected at all?",
+    "What ended the Order?": "Should the Run be reconnected at all?",
+    "Why did the Jedi leave the Rim?": "Should the Run be reconnected at all?",
+}
+
 SEED = {
     "ui": {"fs": 1},   # text-size scale chosen with the header's Aa button (1 / 1.15 / 1.3)
     "questions": [
@@ -372,7 +383,7 @@ SEED = {
     "clocks": [
         {"faction": "Republic", "crack": "Recovered by adjourning the Rim; wants it back on its terms", "value": 0, "notes": ""},
         {"faction": "Admiralty", "crack": "Treaty wing vs the Founding cadre — and the Founding needs an enemy → the Annexation", "value": 0, "notes": ""},
-        {"faction": "Vigil", "crack": "Sacrilege vs. Order-reborn — custody of the Awakened → the Vigil breaks", "value": 0, "notes": ""},
+        {"faction": "Vigil", "crack": "Keys or children — custody of the Awakened → the Vigil breaks", "value": 0, "notes": ""},
         {"faction": "Inheritors", "crack": "Nobody knows whose hand is at the top → the Unveiling", "value": 0, "notes": "Hold the Vesta-9 file on the crew — and its gifted."},
         {"faction": "Lamplighters", "crack": "The relighting order is for sale → Conclave of Charts (rigged: Denno Pike)", "value": 0, "notes": ""},
         {"faction": "Kajidics", "crack": "The young Hutts have run the numbers → clan war", "value": 0, "notes": ""},
@@ -388,7 +399,7 @@ SEED = {
         {"who": "Tama Osk", "what": "Where Vesta-9 sits — and that she once told a kind stranger (she cannot remember what she said)", "since": "pre-S1", "notes": "The Sith bedside; pays off when the crew has a silhouette to match"},
         {"who": "The patron's desk", "what": "“The one pilot who won't sell” — the registry forwarded Osk's name coreward years ago", "since": "pre-S1", "notes": "How the line found her"},
         {"who": "Sorulba's court", "what": "The ghost order: pickets log-and-let-pass the dark-lane traffic, six years standing", "since": "pre-S1", "notes": "Module 02 scene 3 — the picket log"},
-        {"who": "N'Kata Del Gormo", "what": "Whose grave is on Tarrah Hill, Aquilaris — Kerra Holt, his teacher, and her sister Marenna, found too late", "since": "pre-S1", "notes": "The only living being who knows; says it at the relight or never — the Hill on Aquilaris"},
+        {"who": "N'Kata Del Gormo", "what": "Whose grave is on Tarrah Hill, Aquilaris — Kerra Holt, his teacher, and her sister Marenna, found too late", "since": "pre-S1", "notes": "The only living being who knows, and he never says it; the crew read it off the stone and the warden's slate, or nobody does (the Hill on Aquilaris, module 03 Scene 7)"},
     ],
     "holds": [
         {"item": "Osk's true rutter (the whole book)", "holder": "Tama Osk", "since": "pre-S1", "notes": "Inheritance on return — module 01 scene 3"},
@@ -453,6 +464,7 @@ def main():
             .replace("/*__PAGES__*/[]", json.dumps(pages, ensure_ascii=False))
             .replace("/*__MODULES__*/[]", json.dumps(modules, ensure_ascii=False))
             .replace("/*__SEED__*/{}", json.dumps(SEED, ensure_ascii=False))
+            .replace("/*__RETIRED_Q__*/{}", json.dumps(RETIRED_QUESTIONS, ensure_ascii=False))
             .replace("/*__TRACKDOCS__*/{}", json.dumps(trackdocs, ensure_ascii=False))
             .replace("/*__CREW__*/[]", json.dumps(json.loads(CHARACTERS.read_text(encoding="utf-8")) if CHARACTERS.exists() else [], ensure_ascii=False))
             .replace('/*__HEAD__*/""', json.dumps(head_static, ensure_ascii=False))

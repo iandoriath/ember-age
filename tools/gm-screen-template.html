@@ -243,6 +243,7 @@ const GROUPS = /*__GROUPS__*/[];
 const PAGES  = /*__PAGES__*/[];
 const MODULES= /*__MODULES__*/[];
 const SEED   = /*__SEED__*/{};
+const RETIRED_Q = /*__RETIRED_Q__*/{};
 const TRACKDOCS = /*__TRACKDOCS__*/{};
 const CREW   = /*__CREW__*/[];
 const HEAD_STATIC = /*__HEAD__*/"";
@@ -259,6 +260,27 @@ try{
   const ls = JSON.parse(localStorage.getItem(KEY));
   if(ls && (ls.rev||0) > (EMBED.rev||0)) S = Object.assign(freshState(), ls);
 }catch(e){}
+/* Saved state outlives design changes: retire old Questions (remapping their fragments), keep the seed's
+   Question order, refresh clock cracks and the seeded pre-S1 ledger rows, without touching anything the GM entered. */
+function migrateState(s){
+  let changed = false;
+  const seedQ = SEED.questions || [];
+  (s.fragments || []).forEach(f => { if(f.question && Object.prototype.hasOwnProperty.call(RETIRED_Q, f.question)){ f.question = RETIRED_Q[f.question] || ""; changed = true; } });
+  const kept = (s.questions || []).filter(q => !Object.prototype.hasOwnProperty.call(RETIRED_Q, q));
+  const next = seedQ.concat(kept.filter(q => !seedQ.includes(q)));
+  if(JSON.stringify(next) !== JSON.stringify(s.questions || [])){ s.questions = next; changed = true; }
+  (SEED.clocks || []).forEach(sc => {
+    const c = (s.clocks || []).find(x => x.faction === sc.faction);
+    if(!c){ (s.clocks = s.clocks || []).push(JSON.parse(JSON.stringify(sc))); changed = true; }
+    else if(c.crack !== sc.crack){ c.crack = sc.crack; changed = true; }
+  });
+  (SEED.knows || []).forEach(sk => {
+    const k = (s.knows || []).find(x => x.who === sk.who && x.since === sk.since);
+    if(k && (k.what !== sk.what || k.notes !== sk.notes)){ k.what = sk.what; k.notes = sk.notes; changed = true; }
+  });
+  return changed;
+}
+if(migrateState(S)){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
 function save(){ S.rev = (S.rev||0)+1; try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} updateSyncUI(); }
 function esc(x){ return String(x==null?"":x).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
 
