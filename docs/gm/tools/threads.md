@@ -19,8 +19,8 @@ One boundary keeps it clean: **objects that are lore fragments live in the [Frag
 |---|---|---|---|
 | Osk's true rutter (the whole book) | Tama Osk | pre-S1 | Inheritance on return — module 01 scene 3 |
 | Bought debt over Osk, 250 scrip | Capt. Ferro Skell | pre-S1 | Tender, coercion, or brawl — module 01 scene 3 |
-| Rade's rutter (the hidden-children route-log) | Lost — last sold estate, Veshet | pre-S1 | The live grenade — [Keepers of the Flame](../npcs/keepers.md) |
-| The heirloom lightsaber | Memory Market consignment, Sanrafsix | pre-S1 | Unauthenticated; first-ignition rule — Keepers |
+| Rade's rutter (the hidden-children route-log) | On Wex's bench at the Memory Market, half-improved into a fake Jedi journal — Lot 63 (module 06) | pre-S1 | The live grenade — [Keepers of the Flame](../npcs/keepers.md) |
+| The heirloom lightsaber | Memory Market consignment, Sanrafsix — Lot 58 (module 06) | pre-S1 | Unauthenticated; first-ignition rule — Keepers |
 | The holocron of Lord Kaan | The Last Muster's cache (off every catalogue) | 0 AR | The campaign's center — Keepers |
 | Kerra Holt's green lightsaber | The sisters' grave — Tarrah Hill, Aquilaris (hop 2) | pre-S1 | First-ignition rule; the Hill on Aquilaris — [The Dead Lords](../npcs/knight-errant.md) |
 | Kerra Holt's recorder (undelivered testimony for Chancellor Genarra) | The sisters' grave — Tarrah Hill, Aquilaris | pre-S1 | Names the Calimondra vaults and Grace Command; the Sith line wants it erased |

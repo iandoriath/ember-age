@@ -197,6 +197,13 @@ Two orders answer the Awakening, and both were founded on graves. The Vigil hold
 **Group math:** Typically deployed in threes: group Wounds 9 (3 × WT 3), group skills at 2 ranks (e.g., Stealth 2, Streetwise 2); one clerk is incapacitated each time total damage passes a multiple of 3. A lone observer is a single minion: Wounds 3, no skill ranks.
 **Using them:** Lore-Clerks never fight — WT 3 and nothing deadlier than a pocketful of thrown scrap is the design, not an oversight. Their job is to see, copy, and carry: one of them stood in the certification crowd at Vesta-9, and the crew — what they testified, and what they were seen carrying — have been in the files ever since. Play them as texture the party learns to notice too late — the copyist at the archive, the runner at the swoop track — and as the campaign's paper trail: captured dead-drops are lore fragments with the Sith tag and somebody's handwriting. When the culling comes, surviving clerks scatter with dangerous knowledge and no protector, and every one of them is a hook.
 
+### Ostrel, the Third Clerk
+*Special — Inheritor remnant — the clerk in guild grey who wrote nothing at Vesta-9; unstatted (use Inheritor Lore-Clerks if it comes to hands)*
+
+> "You saw him. Say what you saw."
+
+Thin, precise, in guild grey he has no right to. He was the third clerk at the Vesta-9 certification, the one who wrote nothing and left before the fee was read; he was on the Sanrafsix Ring buying testimony the night the Verdanth temple went silent, which is why he is alive, and he has not slept properly since. A true believer: he does not know the Heir was a fraud and would not survive knowing. What he wants from the crew is the only provenance the remnant can live on — a sworn account, with their standing, that the Heir was what he claimed — and he asks for it plainly, because he has nothing left to be mysterious with. He pays what the remnant has (2,000 scrip in pre-war coin, the stipend he was holding for Anwei). **Using him (module 06, Scene 3):** never tell the players what they saw on Verdanth; whatever they swear here decides whether the Inheritors survive as a lineage or end as a footnote, and he thanks them either way. If the crew *Took the offer* he greets them as gardeners in front of the whole concourse. His stall stands beside a chandler's counter. He has never once looked at it.
+
 ### Chartkeeper Denno Pike
 *Rival — The Inheritors — mole inside the Lamplighters*
 

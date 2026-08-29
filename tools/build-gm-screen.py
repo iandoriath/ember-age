@@ -235,6 +235,7 @@ MODULE_FILES = [
     # play order, not file order: Verdanth (05) is session four, Aplooine (04) session five
     ("05", "gm/modules/05-the-seventeen-tombs.md"),
     ("04", "gm/modules/04-the-ash-sea.md"),
+    ("06", "gm/modules/06-the-memory-market.md"),
 ]
 
 CLOCK_FACTIONS = {"Republic", "Admiralty", "Vigil", "Inheritors",

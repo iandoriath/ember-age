@@ -116,6 +116,13 @@ Beyond the Vesta-9 corridor lies the deep Run — the dark country where the las
 **Group math:** Deployed in scriptorium rows of four: group Wounds 12, group skills at 3 ranks (Computers 3, Knowledge [Education] 3); one scribe is incapacitated each time total damage passes a multiple of 3.
 **Using them:** Total non-combatants — Wounds 3 means a raised voice nearly disperses a row. Their menace is throughput: a four-droid row at Computers 3 with Technical Aptitude fabricates sealed provenance faster than any human atelier, which is how the poison spread Run-wide in two seasons. Wex bought them from Okkam Dree's yard *because* their cores were never wiped — meaning each captured Scribe is simultaneously evidence, a Civic-tag lore fragment, and a victim. The era's droid-heirloom sentiment cuts both ways: wiping them solves Wex's problem, not the party's.
 
+### Registrar Ammet Sull
+*Special — the Memory Market — Registrar of the House of Seals; unstatted, she never leaves the rostrum*
+
+> "The House seals provenance. Provenance is who was there. You were there."
+
+A Duros woman past sixty who has run the Ring's House of Seals for thirty years and has never once been surprised by anger. Dry, quick, fair by her own lights: every seal on the Ring is hers, the season's auction is hers, and she quotes rather than bribes — an attestation is worth 1,000 scrip a lot in either direction, a repudiation costs the same, and proof that a name was copied rather than signed buys a strike at no fee, if it reaches the rostrum before the hammer. She knows Wex owns the bench; on the Ring it is the knowing-aloud that ends people. **Using her (module 06):** she is the room's rules made into a person. Never let her argue the crew's case or condemn it; she states the House's position once, in full, and then it is the players' turn. Her one soft spot is paper itself — a certificate the House cannot improve makes her nod. She bids on Lot 70 (Skell's second edition) because paper about people in the room amuses her.
+
 ---
 
 ## The Chop-Yards

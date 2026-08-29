@@ -167,7 +167,7 @@ Three stations over three rounds, the ash as the clock: **every round past the s
 
 **The closing image**, in your own words: the Snorkel burning three meters above a black sea gone silver in its light, and behind it, canted to the iron sky, a ship thirteen thousand years old sinking a hand's breadth an hour back into the ash that gave it up. On the Varrow pad the drivers chalk a name on a wall. The Sea moves. Nobody on this world will ever ask the galaxy for anything — and tonight, for the first time, the galaxy can find them.
 
-## The Handoff — what session six reads (Sanrafsix)
+## The Handoff — what session six reads (06, The Memory Market)
 
 | Flag | Set it if… | Session six consequence (short form) |
 |---|---|---|

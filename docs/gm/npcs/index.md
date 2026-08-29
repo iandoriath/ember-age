@@ -39,6 +39,7 @@
 | Unveiling Blade-Cadre | Rival | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
 | Inheritor Lore-Clerks | Minions | Inheritors | [Vigil & Inheritors](vigil-inheritors.md) |
 | Chartkeeper Denno Pike | Rival | Lamplighters (mole) | [Vigil & Inheritors](vigil-inheritors.md) |
+| Ostrel, the Third Clerk | Special (unstatted) | Inheritor remnant (the Sanrafsix Ring) | [Vigil & Inheritors](vigil-inheritors.md) |
 | Grandmaster of Charts Ophira Zel | Nemesis | Lamplighters | [Lanes & Ledgers](lanes-ledgers.md) |
 | Beacon-Tender | Rival | Lamplighters | [Lanes & Ledgers](lanes-ledgers.md) |
 | Lane-Runner Deckhands | Minions | Lamplighters | [Lanes & Ledgers](lanes-ledgers.md) |
@@ -54,6 +55,7 @@
 | Docent-7 | Rival | the Sealed Enclave | [Out on the Run](reaches.md) |
 | Anwei, the Oracle of Brel | Rival | Brel | [Out on the Run](reaches.md) |
 | Provenance-Broker Halla Wex + Scribes | Rival + Minions | the Memory Market | [Out on the Run](reaches.md) |
+| Registrar Ammet Sull | Special (unstatted) | the Memory Market (the House of Seals) | [Out on the Run](reaches.md) |
 | Junk Baron Okkam Dree + Clan Cutters | Rival + Minions | salvage economy | [Out on the Run](reaches.md) |
 | Swoop Ace "Kettle" Maro | Rival | the circuit | [Out on the Run](reaches.md) |
 | Pirate Captain of the Quiet + Quiet Pirates | Nemesis + Minions | the Quiet | [Out on the Run](reaches.md) |
