@@ -123,7 +123,7 @@ def test_coruscant_is_the_coreward_end_of_the_road():
     lane = next(l for l in d["lanes"] if {l["from"], l["to"]} == {"brentaal", "coruscant"})
     assert lane["kind"] == "living" and lane["name"] == "Perlemian Trade Route"
     tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
-    assert "road:{x:2950, y:3330, w:2800, h:3870}" in tpl
+    assert 'id:"road", label:"Frame the Road", box:{x:2950, y:3330, w:2800, h:3870}' in tpl
 
 
 def test_committed_outputs_match_fresh_build():
@@ -255,3 +255,63 @@ def test_deep_zoom_mode():
     assert "Math.max(vb.w / factor, 90)" in tpl and "function cullLabels" in tpl and "vector-effect:non-scaling-stroke" in tpl
     d = load_built()
     assert all(len(g) == 7 for g in d["galaxy"])  # no static show flag any more
+
+
+def test_meta_defaults_keep_ember_age_chrome():
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    out = bsm.build("player", load(), tpl)
+    for token in ("const META = Object.assign(", 'id:"reach", label:"Frame the Run", box:{x:4060, y:5680, w:1120, h:1280}',
+                  'id:"road", label:"Frame the Road", box:{x:2950, y:3330, w:2800, h:3870}', 'id:"galaxy", label:"Galaxy"',
+                  'regionLabels: {reach:"The Duros Run", hydian:"The living galaxy", far:"The far road"}',
+                  'homeBox: {x0:3950, x1:5350, y0:6050, y1:null}', "features: {beacons:true, history:true, plot:true, share:true, plotDots:false}",
+                  '<span id="views"></span>', "90 AR · beacon status live", "if (!META.features.beacons)", "META.link",
+                  "#views{display:contents}", "META.views = DEFAULT_VIEWS", "(VIEWS.galaxy || GALAXY_BOX)",
+                  "plotDots:false", "META.features.plotDots"):
+        assert token in out, token
+    assert "onclick=\"frame('reach')\">Frame the Run" not in out  # buttons are built from META.views now
+
+
+def test_meta_is_embedded_verbatim():
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    d = load()
+    d["meta"] = {"title": "Republic Survey", "views": [{"id": "home", "label": "Frame the Core", "box": {"x": 1, "y": 2, "w": 3, "h": 4}}],
+                 "features": {"beacons": False}, "link": "/worlds/{name}"}
+    out = bsm.build("player", d, tpl)
+    embedded = json.loads(re.search(r'type="application/json">(.*?)</script>', out, re.S).group(1))
+    assert embedded["meta"]["title"] == "Republic Survey" and embedded["meta"]["link"] == "/worlds/{name}"
+
+
+def test_title_and_focus_knobs():
+    """META.title also names the browser tab; ?focus=<name> deep-links to a world. Both no-ops for Ember Age."""
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    for ed in ("player", "gm"):
+        out = bsm.build(ed, load(), tpl)
+        assert "if (META.title) { document.title = META.title;" in out   # guarded, so Ember Age's own tab is untouched
+        assert "<title>Ember Age — System Map</title>" in out            # ...and the markup title still stands
+        assert 'searchParams.get("focus")' in out
+        # the deep link resolves off the search index, prefers a hero system, and runs after the boot render
+        assert "sIndex.filter(e => e.l === k)" in out and "if (hit) qPick(hit)" in out
+        assert out.index('searchParams.get("focus")') > out.rindex("render();")
+
+
+def test_state_styling_is_wired():
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    d = load()
+    d["systems"][0]["state"] = "hub"
+    d["galaxy"] = [["Ghostworld", 1.0, 2.0, "A-1", "", "Core", 0, "archived"]]
+    d["routes"] = [{"n": "Old Road", "major": False, "pts": [[0, 0], [1, 1]], "state": "archived"}]
+    out = bsm.build("player", d, tpl)
+    embedded = json.loads(re.search(r'type="application/json">(.*?)</script>', out, re.S).group(1))
+    assert embedded["systems"][0]["state"] == "hub" and embedded["galaxy"][0][7] == "archived"
+    for token in ('(s.state ? " st-" + s.state : "")', ".sys.st-hub .core", ".sys.st-foothold .core",
+                  "ghost:state === \"archived\"", "GHOST_A", 'rt.state === "charted"', 'rt.state === "archived"',
+                  '(g.wp || (META.link && !g.ghost)) ? "pointer"', '(META.link && !e.ghost)'):
+        assert token in out, token
+
+
+def test_build_wpbase_override():
+    tpl = STUB + '<script>const WPBASE = "__WPBASE__";</script>'
+    assert 'WPBASE = "/wp/"' in bsm.build("player", load(), tpl, wpbase="/wp/")
+    assert 'WPBASE = "wp/"' in bsm.build("player", load(), tpl)
+    assert 'WPBASE = "player-aids/wp/"' in bsm.build("gm", load(), tpl)
+    assert 'WPBASE = ""' in bsm.build("player", load(), tpl, wpbase="")

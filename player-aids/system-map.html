@@ -76,6 +76,11 @@
   .sys.always .core{fill:var(--gold);stroke:var(--gold);filter:url(#glow)}
   .sys.always .ring{stroke:var(--gold);opacity:.5;stroke-dasharray:none}
   .sys.lit text,.sys.always text{fill:var(--gold)}
+  /* chart contract: campaign states for hero systems (hub, foothold) — steady gold, no beacon semantics */
+  .sys.st-hub .core,.sys.st-foothold .core{fill:var(--gold);stroke:var(--gold);filter:url(#glow)}
+  .sys.st-hub .core{r:8px}
+  .sys.st-hub .lbl{font-weight:700;letter-spacing:.2em}
+  .sys.st-hub text,.sys.st-foothold text{fill:var(--gold)}
   .sys .hit{fill:transparent}
   @keyframes pulse{0%,100%{opacity:.35;r:11}50%{opacity:.9;r:15}}
   /* hover dimming */
@@ -124,6 +129,7 @@
   #status .pip:hover{color:var(--ink)}
   #status .cap{margin-right:.4rem;color:var(--holo)}
   #ctl{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end;margin-left:auto;pointer-events:auto}
+  #views{display:contents}
   .hb{background:rgba(5,10,16,.7);border:1px solid var(--holo-dim);color:var(--holo);font:600 .75rem/1 var(--disp);letter-spacing:.15em;text-transform:uppercase;padding:.5rem .7rem;cursor:pointer;backdrop-filter:blur(3px)}
   .hb:hover,.hb:focus-visible{border-color:var(--holo);color:var(--ink);outline:none}
   .hb.on{background:var(--ember);border-color:var(--ember);color:#1b120a}
@@ -176,9 +182,7 @@
   <div id="ctl">
     <span id="search"><input id="q" placeholder="Search…" autocomplete="off" spellcheck="false" aria-label="search the chart"><div id="qr"></div></span>
     <button class="hb" onclick="zoomBy(1.3)">+</button><button class="hb" onclick="zoomBy(1/1.3)">−</button>
-    <button class="hb" onclick="frame('reach')">Frame the Run</button>
-    <button class="hb" onclick="frame('road')">Frame the Road</button>
-    <button class="hb" onclick="frame('galaxy')">Galaxy</button>
+    <span id="views"></span>
     <button class="hb" id="plotbtn" onclick="togglePlot()">Plot Course</button>
     <button class="hb" onclick="share()">Share</button>
     <button class="hb" id="histbtn" onclick="openPresPicker()">History</button>
@@ -199,8 +203,26 @@ const DATA = JSON.parse(document.getElementById("data").textContent);
 const byId = new Map(DATA.systems.map(s => [s.id, s]));
 const SVG = "http://www.w3.org/2000/svg";
 const chart = document.getElementById("chart");
-const VIEWS = {reach:{x:4060, y:5680, w:1120, h:1280}, road:{x:2950, y:3330, w:2800, h:3870}, galaxy:{x:100, y:150, w:7500, h:8100}};
-let vb = {...VIEWS.reach};
+/* ---- chart contract: everything campaign-specific in the chrome reads from DATA.meta and
+   defaults to the Ember Age values, so another campaign can render through this same file ---- */
+const GALAXY_BOX = {x:100, y:150, w:7500, h:8100};
+const DEFAULT_VIEWS = [{id:"reach", label:"Frame the Run", box:{x:4060, y:5680, w:1120, h:1280}},
+        {id:"road", label:"Frame the Road", box:{x:2950, y:3330, w:2800, h:3870}},
+        {id:"galaxy", label:"Galaxy", box:GALAXY_BOX}];
+const META = Object.assign({
+  title: null, subtitle: null,   // null: keep the title block's own markup
+  home: "reach",
+  views: DEFAULT_VIEWS,
+  regionLabels: {reach:"The Duros Run", hydian:"The living galaxy", far:"The far road"},
+  regionShort: {reach:"the Duros Run", hydian:"living galaxy", far:"far road"},
+  homeBox: {x0:3950, x1:5350, y0:6050, y1:null},   // the box that selects the home ("reach") zoom tier; y1 null = unbounded
+  features: {beacons:true, history:true, plot:true, share:true, plotDots:false},
+  link: null                                        // e.g. "/worlds/{name}": every panel gets an "Open in campaign" link
+}, DATA.meta || {});
+if (!Array.isArray(META.views) || !META.views.length) META.views = DEFAULT_VIEWS;
+META.features = Object.assign({beacons:true, history:true, plot:true, share:true, plotDots:false}, (DATA.meta || {}).features || {});  // partial feature objects merge
+const VIEWS = Object.fromEntries(META.views.map(v => [v.id, v.box]));
+let vb = {...(VIEWS[META.home] || META.views[0].box)};
 
 /* ---- lit state (Task 4 adds persistence) ---- */
 let lit = new Set(["bannistar"]);
@@ -227,6 +249,13 @@ function el(tag, attrs = {}, parent) {
   return n;
 }
 const esc = t => String(t).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+{ // chrome from META, once; the markup keeps the Ember Age defaults when META provides none
+  if (META.title) { document.title = META.title; document.querySelector("#title h1").textContent = META.title; }   // the tab, too
+  if (META.subtitle) document.querySelector("#title small").textContent = META.subtitle;
+  document.getElementById("views").innerHTML = META.views.map(v => `<button class="hb" onclick="frame('${esc(v.id)}')">${esc(v.label)}</button>`).join("");
+  for (const [id, on] of [["plotbtn", META.features.plot], ["histbtn", META.features.history]]) { const b = document.getElementById(id); if (b) b.hidden = !on; }
+  if (!META.features.share) document.querySelectorAll('#ctl button[onclick="share()"]').forEach(b => { b.hidden = true; });
+}
 function laneIsRelit(l) { const a = byId.get(l.from), b = byId.get(l.to); return l.kind === "dark" && a.beacon && b.beacon && isLit(a) && isLit(b); }
 function regionOf(a, b) { return (a.region === "reach" && b.region === "reach") ? "reach" : (a.region === "far" || b.region === "far") ? "far" : "hydian"; }
 
@@ -259,7 +288,7 @@ function render() {
 
   const gs = el("g", {id:"systems"}, chart);
   for (const s of [...DATA.systems].sort((a, b) => (a.capital ? 1 : 0) - (b.capital ? 1 : 0))) {  // capitals paint last, in front
-    const cls = `sys r-${s.region}` + (s.major ? " major" : "") + (s.capital ? " capital" : "") + (s.beacon ? " beacon" : "") + (s.alwaysLit ? " always" : lit.has(s.id) ? " lit" : "");
+    const cls = `sys r-${s.region}` + (s.major ? " major" : "") + (s.capital ? " capital" : "") + (s.beacon ? " beacon" : "") + (s.alwaysLit ? " always" : lit.has(s.id) ? " lit" : "") + (s.state ? " st-" + s.state : "");
     const g = el("g", {class:cls, "data-id":s.id, transform:`translate(${s.x} ${s.y})`, tabindex:0, role:"button"}, gs);
     el("circle", {class:"hit", r:22}, g);
     if (s.beacon) el("circle", {class:"ring", r:12}, g);
@@ -291,6 +320,7 @@ function highlight(id) {
 }
 
 function renderStatus() {
+  if (!META.features.beacons) { document.getElementById("status").innerHTML = ""; return; }
   const chain = DATA.systems.filter(s => s.hop !== undefined).sort((a, b) => a.hop - b.hop).concat(DATA.systems.filter(s => s.beacon && s.alwaysLit && s.hop === undefined));
   document.getElementById("status").innerHTML = `<span class="cap">Beacons</span>` + chain.map(s =>
     `<span class="pip ${s.alwaysLit ? "always" : lit.has(s.id) ? "lit" : ""}" onclick="openPanel('${s.id}')" title="${esc(s.name)}"><i></i><span>${s.hop === 0 ? "⌂" : s.hop !== undefined ? s.hop : "★"}</span></span>`).join("");
@@ -302,7 +332,8 @@ function renderStatus() {
 const bg = document.getElementById("bg"), bctx = bg.getContext("2d"), tip = document.getElementById("tip");
 const RCOLOR = {"Deep Core":"#d9a24a","Core":"#c9843f","Colonies":"#b8767a","Inner Rim":"#9a7cc9","Expansion Region":"#5fa36e","Mid Rim":"#3fa9b5","Outer Rim":"#3d7ec2","Hutt Space":"#9fb04f","Wild Space":"#6a6f8c","Unknown Regions":"#6a6f8c"};
 const REGLBL_COLOR = {core:"#8a6a3a", hutt:"#5d7a4e", nebula:"#7a5d8f"};
-const GAL = (DATA.galaxy || []).map(([name, x, y, grid, sector, region, tier]) => ({name, x, y, grid, sector, region, tier:tier ? 1 : 0, wp:!!((DATA.gwp || {})[name]), color:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55")}));
+const GAL = (DATA.galaxy || []).map(([name, x, y, grid, sector, region, tier, state]) => ({name, x, y, grid, sector, region, tier:tier ? 1 : 0, ghost:state === "archived", wp:!!((DATA.gwp || {})[name]), color:RCOLOR[region] || (tier ? "#3d6a91" : "#203c55")}));
+const GHOST_A = 0.4;  // archived worlds: on the old charts, no current data
 {  // mega-region key, once
   const key = document.getElementById("regkey"), seen = new Set();
   for (const [name, col] of Object.entries(RCOLOR)) {
@@ -386,7 +417,8 @@ function drawBg() {
   for (const rt of (DATA.routes || [])) {
     if (!inView(rt.pts, 200)) continue;
     poly(rt.pts);
-    ctx.strokeStyle = rt.major ? "#35597a" : "#24435f"; ctx.globalAlpha = routeA * (rt.major ? 0.7 : 0.55);
+    ctx.strokeStyle = rt.state === "charted" ? "#3f7aa8" : rt.major ? "#35597a" : "#24435f";
+    ctx.globalAlpha = routeA * (rt.major ? 0.7 : 0.55) * (rt.state === "archived" ? GHOST_A : 1);
     ctx.lineWidth = labels === "all" ? (rt.major ? 3 : 1.5) : (rt.major ? 4 : 2) * S; ctx.stroke();
   }
   ctx.globalAlpha = 1;
@@ -399,13 +431,17 @@ function drawBg() {
   const [r0, r1] = DOT_R[zoom] || DOT_R.wide, [a0, a1] = DOT_A[zoom] || DOT_A.wide, pad = 20 * S;
   const dotFloor = (zoom === "close" || zoom === "reach") ? (IS_TOUCH ? [3.4, 4.6] : [2.2, 3.2]) : [0, 0];  // dust stays dust at galaxy zoom
   const dotPx = tier => Math.max(dotFloor[tier], (tier ? r1 : r0) * k * S);
-  const byColor = [new Map(), new Map()];
+  const byColor = [new Map(), new Map(), new Map(), new Map()];  // index: tier + (ghost ? 2 : 0)
   for (const g of GAL) {
     if (g.x < X0 - pad || g.x > X1 + pad || g.y < Y0 - pad || g.y > Y1 + pad) continue;
-    const m = byColor[g.tier]; let path = m.get(g.color); if (!path) m.set(g.color, path = new Path2D());
+    const m = byColor[g.tier + (g.ghost ? 2 : 0)]; let path = m.get(g.color); if (!path) m.set(g.color, path = new Path2D());
     const rad = dotPx(g.tier); path.moveTo(X(g.x) + rad, Y(g.y)); path.arc(X(g.x), Y(g.y), rad, 0, 6.2832);
   }
-  for (const tier of [0, 1]) { ctx.globalAlpha = tier ? a1 : a0; for (const [col, path] of byColor[tier]) { ctx.fillStyle = col; ctx.fill(path); } }
+  for (const i of [2, 3, 0, 1]) {  // ghosts first, live dots on top
+    const tier = i & 1, ghost = i >= 2;
+    ctx.globalAlpha = (tier ? a1 : a0) * (ghost ? GHOST_A : 1);
+    for (const [col, path] of byColor[i]) { ctx.fillStyle = col; ctx.fill(path); }
+  }
   ctx.globalAlpha = 1;
   if (hover) { ctx.beginPath(); ctx.arc(X(hover.x), Y(hover.y), dotPx(hover.tier) + 1.5, 0, 6.2832); ctx.strokeStyle = "#8fd0f4"; ctx.lineWidth = 2; ctx.stroke(); }
   // planet names — .gname: the culled set; at the sector tier only bright-tier worlds compete,
@@ -421,7 +457,7 @@ chart.addEventListener("pointermove", e => {
   if (e.pointerType !== "mouse" || drag) return;
   const g = dotAt(e.clientX, e.clientY, 9), r = chartRect();
   if (g !== hover) { hover = g; requestDraw(); }
-  chart.style.cursor = g && g.wp ? "pointer" : "";
+  chart.style.cursor = g && (g.wp || (META.link && !g.ghost)) ? "pointer" : "";
   if (g) { tip.textContent = `${g.name}${g.grid ? " · " + g.grid : ""}${g.sector ? " · " + g.sector + " sector" : ""}${g.region ? " · " + g.region : ""}`; tip.style.display = "block"; tip.style.left = (e.clientX - r.left + 14) + "px"; tip.style.top = (e.clientY - r.top + 12) + "px"; }
   else tip.style.display = "none";
 });
@@ -433,7 +469,7 @@ const CLOSE_W = 900, U0 = 0.85;  // units per screen pixel at which chart-unit s
 // past the threshold, sizes no longer freeze: they keep growing as z^0.3 (capped at 2.2x), so
 // deep zoom reads bigger instead of merely showing more names
 function kFor(w, px) { const z = (px / w) * U0; return z <= 1 ? 1 : Math.min(2.2, Math.pow(z, 0.3)) / z; }
-const gLabels = GAL.map(g => ({x:g.x, y:g.y, n:g.name, k:g.tier ? 1 : 2}));
+const gLabels = GAL.map(g => ({x:g.x, y:g.y, n:g.name, k:g.tier && !g.ghost ? 1 : 2}));
 let cullTimer = null;
 function scheduleCull() { clearTimeout(cullTimer); cullTimer = setTimeout(cullLabels, 60); }
 function cullLabels() {
@@ -458,13 +494,13 @@ function cullLabels() {
 }
 
 /* ---- search ---- */
-const REGLBL = {reach:"the Duros Run", hydian:"living galaxy", far:"far road"};
+const REGLBL = META.regionShort;
 let sIndex = null, sSel = 0, sHits = [];
 function buildIndex() {
   sIndex = [];
   for (const s of DATA.systems) sIndex.push({n:s.name, l:s.name.toLowerCase(), k:0, id:s.id, x:s.x, y:s.y, grid:s.grid || "", sector:"", region:s.region});
-  for (const [name, x, y, grid, sector, region, tier] of (DATA.galaxy || []))
-    sIndex.push({n:name, l:name.toLowerCase(), k:tier ? 1 : 2, x, y, grid:grid || "", sector:sector || "", region:region || ""});
+  for (const [name, x, y, grid, sector, region, tier, state] of (DATA.galaxy || []))
+    sIndex.push({n:name, l:name.toLowerCase(), k:tier ? 1 : 2, x, y, grid:grid || "", sector:sector || "", region:region || "", ghost:state === "archived"});
 }
 function doSearch(q) {
   if (!sIndex) buildIndex();
@@ -522,7 +558,7 @@ function qPick(e) {
   el("circle", {r:18}, g); el("circle", {r:18, class:"p2"}, g);
   setTimeout(() => g.remove(), 1900);
   if (e.k === 0) openPanel(e.id);
-  else if ((DATA.gwp || {})[e.n]) openGalaxyPanel(e.n, {grid:e.grid, sector:e.sector, region:e.region});
+  else if ((DATA.gwp || {})[e.n] || (META.link && !e.ghost)) openGalaxyPanel(e.n, {grid:e.grid, sector:e.sector, region:e.region});
   else closePanel();
 }
 {
@@ -622,9 +658,9 @@ function drawPolities(ctx, X, Y, S) {  // same treatment as the drawn Hutt Space
 }
 function presTarget(view) {
   const r = chartRect(), asp = r.height / r.width;
-  if (typeof view === "string") return VIEWS[view] || VIEWS.galaxy;
+  if (typeof view === "string") return VIEWS[view] || (VIEWS.galaxy || GALAXY_BOX);
   let c = view.center || (view.focus ? posOf(view.focus) : null);
-  if (!c) return VIEWS.galaxy;
+  if (!c) return (VIEWS.galaxy || GALAXY_BOX);
   const w = view.w || 1500, h = w * asp;
   return {x:c[0] - w / 2, y:c[1] - h / 2, w, h};
 }
@@ -718,7 +754,7 @@ function fitted(v) {  // the box as actually displayed: v widened/heightened to 
 function applyView() {
   const r = chartRect(), D = fitted(vb);
   chart.setAttribute("viewBox", `${D.x} ${D.y} ${D.w} ${D.h}`);
-  const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, inReach = cx > 3950 && cx < 5350 && cy > 6050;
+  const cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2, hb = META.homeBox, inReach = cx > hb.x0 && cx < hb.x1 && cy > hb.y0 && (hb.y1 == null || cy < hb.y1);
   chart.dataset.zoom = vb.w < 900 ? "close" : (vb.w < 2700 && inReach) ? "reach" : vb.w < 4800 ? "wide" : "far";
   chart.dataset.labels = vb.w < CLOSE_W ? "all" : vb.w < 2600 ? "sector" : "none";
   // k<1 shrinks nodes/labels in chart units so they hold ~constant screen size when zoomed past U0 units/px
@@ -729,7 +765,7 @@ function applyView() {
   scheduleCull();
 }
 function setView(v) { vb = {...v}; applyView(); }
-function frame(name) { setView(VIEWS[name]); }
+function frame(name) { if (VIEWS[name]) setView(VIEWS[name]); }
 function zoomAt(factor, cx, cy) {
   const r = chartRect(), {x:x0, y:y0, w:w0, h:h0} = fitted(vb);
   const px = x0 + (cx - r.left) / r.width * w0, py = y0 + (cy - r.top) / r.height * h0;
@@ -778,7 +814,8 @@ window.addEventListener("pointercancel", endDrag);
 chart.addEventListener("click", e => {
   if ((drag && drag.moved) || e.target !== chart) return;
   const g = dotAt(e.clientX, e.clientY, e.pointerType === "touch" ? 20 : 10);
-  if (g && g.wp && !plotMode) openGalaxyPanel(g.name, {grid:g.grid, sector:g.sector, region:g.region});  // wpdot
+  if (plotMode && META.features.plotDots) { if (g) plotPick(g.name); return; }
+  if (g && (g.wp || (META.link && !g.ghost)) && !plotMode) openGalaxyPanel(g.name, {grid:g.grid, sector:g.sector, region:g.region});  // wpdot
   else closePanel();
 });
 window.addEventListener("keydown", e => { if (e.key === "Escape") closePanel(); });
@@ -795,13 +832,16 @@ function factsHtml(f) {
 
 const WPBASE = "wp/";
 function openGalaxyPanel(name, m) {
-  const e = (DATA.gwp || {})[name]; if (!e) return;
+  const e = (DATA.gwp || {})[name]; if (!e && !META.link) return;
   panelId = null;
   let h = `<h2>${esc(name)}</h2>` + (m.grid ? `<div class="k">grid ${esc(m.grid)}</div>` : "");
-  h += `<div class="k">Wookieepedia</div>`;
-  if (e.i) h += `<img class="wp" alt="${esc(e.t)}" src="${WPBASE}${esc(e.i.f)}"${e.i.w && e.i.h ? ` width="${e.i.w}" height="${e.i.h}"` : ""}>`;
-  h += factsHtml(e.f);
-  h += `<p><a class="wpl" href="${esc(e.u)}" target="_blank" rel="noopener">${esc(e.t)} ↗</a><span class="cc">text CC BY-SA</span></p>`;
+  if (META.link) h += `<p><a class="wpl" href="${esc(META.link.replace("{name}", encodeURIComponent(name)))}">Open in campaign ↗</a></p>`;
+  if (e) {
+    h += `<div class="k">Wookieepedia</div>`;
+    if (e.i) h += `<img class="wp" alt="${esc(e.t)}" src="${WPBASE}${esc(e.i.f)}"${e.i.w && e.i.h ? ` width="${e.i.w}" height="${e.i.h}"` : ""}>`;
+    h += factsHtml(e.f);
+    h += `<p><a class="wpl" href="${esc(e.u)}" target="_blank" rel="noopener">${esc(e.t)} ↗</a><span class="cc">text CC BY-SA</span></p>`;
+  }
   
   document.getElementById("panel-body").innerHTML = h;
   document.getElementById("panel").classList.add("open");
@@ -812,12 +852,13 @@ function openPanel(id) {
   panelId = id;
   const lanes = [...new Set(DATA.lanes.filter(l => l.from === id || l.to === id).map(l => l.name || "dead spur"))];
   const status = s.alwaysLit ? "ALIVE — never went dark" : s.beacon ? (lit.has(id) ? "LIT" : "DARK") : "no beacon";
-  const region = {reach:"The Duros Run", hydian:"The living galaxy", far:"The far road"}[s.region];
+  const region = META.regionLabels[s.region] || s.region;
   let h = `<h2 class="${isLit(s) ? "lit" : ""}">${esc(s.name)}</h2>` + (s.sub ? `<div class="k">${esc(s.sub)}</div>` : "");
   h += `<div class="k">Region</div><p>${region}${s.grid ? ` · grid ${esc(s.grid)}` : ""}${s.hop !== undefined ? ` · hop ${s.hop}` : ""}</p>`;
   h += `<div class="k">Lanes</div><p>${lanes.map(esc).join(" · ") || "—"}</p>`;
-  h += `<div class="k">Beacon</div><p>${status}${s.beacon && !s.alwaysLit ? ` &nbsp; <button class="hb ${lit.has(id) ? "on" : ""}" onclick="toggleLit('${id}')">${lit.has(id) ? "Darken" : "Relight"}</button>` : ""}</p>`;
+  if (META.features.beacons) h += `<div class="k">Beacon</div><p>${status}${s.beacon && !s.alwaysLit ? ` &nbsp; <button class="hb ${lit.has(id) ? "on" : ""}" onclick="toggleLit('${id}')">${lit.has(id) ? "Darken" : "Relight"}</button>` : ""}</p>`;
   h += `<div class="k">Chart note</div><p>${esc(s.blurb)}</p>`;
+  if (META.link) h += `<p><a class="wpl" href="${esc(META.link.replace("{name}", encodeURIComponent(s.name)))}">Open in campaign ↗</a></p>`;
   if (s.wp) {
     h += `<div class="k">Wookieepedia</div>`;
     if (s.wp.image) h += `<img class="wp" alt="${esc(s.wp.title)}" src="data:${esc(s.wp.image.mime)};base64,${s.wp.image.data}">`;
@@ -908,6 +949,17 @@ chart.addEventListener("click", e => {
 window.addEventListener("keydown", e => { if (e.key === "Escape" && plotMode) togglePlot(); });
 
 render();
+
+{ /* ---- ?focus=<name>: deep-link into the chart — centre that world and open its panel (unknown name: no-op) ---- */
+  let fq = "";
+  try { fq = (new URL(location.href).searchParams.get("focus") || "").trim(); } catch (e) {}
+  if (fq) {
+    if (!sIndex) buildIndex();
+    const k = fq.toLowerCase();
+    const hit = sIndex.filter(e => e.l === k).sort((a, b) => a.k - b.k)[0];  // exact name; a hero system wins over a galaxy dot
+    if (hit) qPick(hit);
+  }
+}
 </script>
 </body>
 </html>

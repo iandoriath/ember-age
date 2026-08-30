@@ -698,7 +698,7 @@ def strip_gm(data: dict) -> dict:
     return d
 
 
-def build(edition: str, data: dict, template: str) -> str:
+def build(edition: str, data: dict, template: str, wpbase: str | None = None) -> str:
     starts = template.count("<!-- GM:start -->")
     ends = template.count("<!-- GM:end -->")
     if starts != ends:
@@ -709,7 +709,8 @@ def build(edition: str, data: dict, template: str) -> str:
     else:
         template = template.replace("<!-- GM:start -->", "").replace("<!-- GM:end -->", "")
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/").replace("<!--", "<\\u0021--")
-    wpbase = "wp/" if edition == "player" else "player-aids/wp/"
+    if wpbase is None:
+        wpbase = "wp/" if edition == "player" else "player-aids/wp/"
     out = template.replace("__DATA__", payload).replace("__EDITION__", edition).replace("__WPBASE__", wpbase)
     if edition == "player" and ("GM:start" in out or "GM:end" in out or '"gm":' in out):
         raise SystemExit("GM content leaked into the player edition")
