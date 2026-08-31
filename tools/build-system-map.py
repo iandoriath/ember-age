@@ -31,6 +31,9 @@ REGION_NORM = {"Core": "Core", "Deep Core": "Deep Core", "Colonies": "Colonies",
 PLAYER_FACTS = {"region", "sector", "system", "routes", "climate", "terrain", "species", "language"}
 
 GM_REGION = re.compile(r"<!-- GM:start -->.*?<!-- GM:end -->", re.S)
+# The embed contract (postMessage to a campaign shell) ships only when the campaign's meta asks for it.
+EMBED_REGION = re.compile(r"<!-- EMBED:start -->.*?<!-- EMBED:end -->(?:\r?\n)?", re.S)
+EMBED_MARKS = re.compile(r"<!-- EMBED:(?:start|end) -->(?:\r?\n)?")
 
 
 def merge_wookieepedia(data: dict, wp: dict) -> dict:
@@ -703,6 +706,14 @@ def build(edition: str, data: dict, template: str, wpbase: str | None = None) ->
     ends = template.count("<!-- GM:end -->")
     if starts != ends:
         raise SystemExit(f"GM marker mismatch: {starts} start / {ends} end")
+    estarts = template.count("<!-- EMBED:start -->")
+    eends = template.count("<!-- EMBED:end -->")
+    if estarts != eends:
+        raise SystemExit(f"EMBED marker mismatch: {estarts} start / {eends} end")
+    if (data.get("meta") or {}).get("embed"):
+        template = EMBED_MARKS.sub("", template)    # keep the block, drop its markers
+    else:
+        template = EMBED_REGION.sub("", template)   # no embed: the block never reaches the file
     if edition == "player":
         data = strip_gm(data)
         template = GM_REGION.sub("", template)

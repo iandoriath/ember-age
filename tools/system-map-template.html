@@ -1017,6 +1017,49 @@ render();
     if (hit) qPick(hit);
   }
 }
+<!-- EMBED:start -->
+
+/* ---- embed contract — DATA.meta.embed = true puts this chart in a campaign shell's iframe, and the two talk by
+   postMessage (target "*"; the shell checks event.origin on its side, and this side checks event.source, so only the
+   frame that holds this chart can drive it). Out: {type:"swm:ready"} once init is done; {type:"swm:world", name} when
+   a campaign link (META.link) is clicked instead of followed — and only when there IS a frame, so this same file
+   opened on its own keeps every campaign link working. In: {type:"swm:hello"} re-asks for ready (for a shell that
+   attached its listener late); {type:"swm:focus", name} centres that world and opens its panel. All of it is cut at
+   build time unless meta.embed is set — see EMBED_REGION in build-system-map.py — so a chart built without that key
+   carries none of this. ---- */
+if (META.embed) {
+  const post = m => { try { window.parent.postMessage(m, "*"); } catch (e) {} };
+  const LINK = String(META.link || ""), CUT = LINK.indexOf("{name}");
+  const linkedName = href => {   // invert the panel's own link build: META.link with {name} -> encodeURIComponent(name)
+    const head = LINK.slice(0, CUT), tail = LINK.slice(CUT + 6);
+    if (CUT < 0 || !head || !href) return null;   // a pattern with no literal prefix would match every href
+    if (!href.startsWith(head) || !href.endsWith(tail)) return null;
+    try { return decodeURIComponent(href.slice(CUT, href.length - tail.length)); } catch (e) { return null; }
+  };
+  document.getElementById("panel-body").addEventListener("click", e => {
+    const a = e.target.closest ? e.target.closest("a") : null;
+    const name = a && linkedName(a.getAttribute("href"));
+    if (!name) return;                         // Wookieepedia and every other link keeps its own behaviour
+    if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;  // let the browser do new-tab/new-window
+    if (window.parent === window) return;      // no frame around us (this chart opened on its own): nothing would hear swm:world, so the link keeps navigating
+    e.preventDefault();                        // no navigation inside the frame: the shell opens the world page
+    post({type:"swm:world", name:name});
+  });
+  window.addEventListener("message", ev => {
+    if (ev.source !== window.parent) return;   // only the frame that holds us: any other page on the host could otherwise steer this one
+    const d = ev.data;
+    if (!d) return;
+    if (d.type === "swm:hello") { post({type:"swm:ready"}); return; }   // a shell that attached late can re-ask
+    if (d.type !== "swm:focus") return;
+    const k = String(d.name == null ? "" : d.name).trim().toLowerCase();
+    if (!k || !document.body.getBoundingClientRect().width) return;   // unlaid-out/hidden frame: focusing would cache a zero rect in CR
+    if (!sIndex) buildIndex();
+    const hit = sIndex.filter(e => e.l === k).sort((a, b) => a.k - b.k)[0];   // the lookup ?focus= runs, on the same index
+    if (hit) qPick(hit);                       // unknown name: no-op, silently
+  });
+  post({type:"swm:ready"});                    // init is done — the shell may send focus now
+}
+<!-- EMBED:end -->
 </script>
 </body>
 </html>

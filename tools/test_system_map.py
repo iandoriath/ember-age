@@ -1,4 +1,6 @@
 import json
+import shutil
+import subprocess
 from pathlib import Path
 
 import pytest
@@ -315,3 +317,248 @@ def test_build_wpbase_override():
     assert 'WPBASE = "wp/"' in bsm.build("player", load(), tpl)
     assert 'WPBASE = "player-aids/wp/"' in bsm.build("gm", load(), tpl)
     assert 'WPBASE = ""' in bsm.build("player", load(), tpl, wpbase="")
+
+
+def test_embed_contract_is_wired_when_meta_asks_for_it():
+    """meta.embed: the chart runs in a campaign shell's iframe and talks to it by postMessage."""
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    d = load()
+    d["meta"] = {"embed": True, "link": "/worlds/{name}"}
+    for ed in ("player", "gm"):
+        out = bsm.build(ed, d, tpl)
+        for token in ("if (META.embed)", 'window.parent.postMessage(m, "*")', 'post({type:"swm:ready"})',
+                      '{type:"swm:world", name:name}', 'd.type !== "swm:focus"', 'd.type === "swm:hello"',
+                      'addEventListener("message"', "document.body.getBoundingClientRect().width",
+                      "e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey",
+                      "e.preventDefault()", "if (hit) qPick(hit)",
+                      # only the frame that holds this chart may drive it, and with no frame there
+                      # is nobody to hand a campaign link to, so the link is left to the browser
+                      "if (ev.source !== window.parent) return;",
+                      "if (window.parent === window) return;"):
+            assert token in out, token
+        assert "EMBED:start" not in out and "EMBED:end" not in out  # markers stripped, like the GM ones
+        # the campaign link is intercepted rather than followed; the world name comes back out of META.link's own href
+        assert "linkedName" in out and "decodeURIComponent" in out
+
+
+def test_embed_contract_is_absent_without_meta():
+    """Ember Age's own build carries no embed code at all — not even the message names."""
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    d = load()
+    for ed in ("player", "gm"):
+        out = bsm.build(ed, d, tpl)
+        for token in ("swm:ready", "swm:world", "swm:focus", "swm:hello", "META.embed", "window.parent", "EMBED:start", "EMBED:end"):
+            assert token not in out, token
+    d["meta"] = {"title": "Republic Survey", "link": "/worlds/{name}"}  # other meta, no embed: still dormant
+    out = bsm.build("player", d, tpl)
+    assert "swm:ready" not in out and "META.embed" not in out
+    assert "Open in campaign" in out  # ...while the campaign link itself is unaffected
+
+
+def test_unbalanced_embed_markers_are_rejected():
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    with pytest.raises(SystemExit):
+        bsm.build("player", load(), tpl.replace("<!-- EMBED:end -->", ""))
+
+
+def embed_script(tpl, edition="player"):
+    """The chart's own inline script, built with the embed contract switched on."""
+    d = load()
+    d["meta"] = {"embed": True, "link": "/worlds/{name}"}
+    out = bsm.build(edition, d, tpl)
+    return out[out.rindex("<script>") + len("<script>"): out.rindex("</script>")]
+
+
+def test_embed_build_javascript_parses(tmp_path):
+    """The block is dead code in this repo: nothing here would notice a stray brace, but swmarches' whole map would die."""
+    node = shutil.which("node")
+    if not node:
+        pytest.skip("node not available")
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    for ed in ("player", "gm"):
+        p = tmp_path / f"{ed}.js"
+        p.write_text(embed_script(tpl, ed), encoding="utf-8")
+        r = subprocess.run([node, "--check", str(p)], capture_output=True, text=True)
+        assert r.returncode == 0, r.stdout + r.stderr
+
+
+# Drives the shipped block under a fake DOM: reads the block on argv[2], exits non-zero on any failed check.
+EMBED_HARNESS = r"""
+const block = require("fs").readFileSync(process.argv[2], "utf8");
+const posted = [], picked = [];
+let clickHandler = null, msgHandler = null, bodyWidth = 1200;
+const META = {embed: true, link: "/worlds/{name}"};
+const window = {parent: {postMessage: (m, o) => posted.push([m, o])},
+                addEventListener: (t, h) => { if (t === "message") msgHandler = h; }};
+const document = {getElementById: id => ({addEventListener: (t, h) => { if (id === "panel-body" && t === "click") clickHandler = h; }}),
+                  body: {getBoundingClientRect: () => ({width: bodyWidth})}};
+let sIndex = null;
+const INDEX = [{n:"Coruscant", l:"coruscant", k:0}, {n:"Coruscant", l:"coruscant", k:2}, {n:"Bogden 3", l:"bogden 3", k:2}];
+const buildIndex = () => { sIndex = INDEX; };
+const qPick = e => picked.push(e);
+eval(block);
+
+const click = (href, mod) => { let prevented = false;
+  clickHandler(Object.assign({target: {closest: () => (href === null ? null : {getAttribute: k => (k === "href" ? href : null)})},
+                              preventDefault: () => { prevented = true; }, button: 0}, mod || {}));
+  return prevented; };
+const T = [], ok = (n, c) => T.push([n, c]);
+// Every real message from the shell arrives with the shell's window as its source; the block reads
+// that before it reads anything else, so the driver has to speak the same way a browser does.
+const shell = window.parent;
+const say = d => msgHandler({source: shell, data: d});
+
+ok("ready posted once, target *", JSON.stringify(posted) === '[[{"type":"swm:ready"},"*"]]'); posted.length = 0;
+ok("campaign link intercepted, name recovered", click("/worlds/Coruscant") && JSON.stringify(posted.pop()[0]) === '{"type":"swm:world","name":"Coruscant"}');
+ok("percent-encoded name decoded", click("/worlds/Bogden%203") && posted.pop()[0].name === "Bogden 3");
+ok("slash in a name survives", click("/worlds/Nal%2FHutta") && posted.pop()[0].name === "Nal/Hutta");
+ok("keyboard activation (button 0, no modifiers) still posts", click("/worlds/Coruscant") && posted.pop()[0].name === "Coruscant");
+for (const [n, m] of [["ctrl", {ctrlKey:true}], ["meta", {metaKey:true}], ["shift", {shiftKey:true}], ["alt", {altKey:true}], ["middle", {button:1}]])
+  ok(n + "-click is left to the browser", click("/worlds/Coruscant", m) === false && posted.length === 0);
+ok("wookieepedia link left alone", click("https://starwars.fandom.com/wiki/Enarc") === false && posted.length === 0);
+ok("non-anchor click ignored", click(null) === false && posted.length === 0);
+ok("bare pattern (empty name) ignored", click("/worlds/") === false && posted.length === 0);
+ok("malformed percent-escape ignored", click("/worlds/%E0%A4%A") === false && posted.length === 0);
+
+say({type:"swm:hello"});
+ok("hello re-posts ready", JSON.stringify(posted.pop()) === '[{"type":"swm:ready"},"*"]' && posted.length === 0);
+say({type:"swm:focus", name:"Coruscant"});
+ok("focus picks the hero entry over the galaxy dot", picked.length === 1 && picked[0].k === 0);
+say({type:"swm:focus", name:"  BOGDEN 3 "});
+ok("focus is trimmed and case-insensitive", picked.length === 2 && picked[1].n === "Bogden 3");
+for (const bad of [{type:"swm:focus", name:"Nowhere"}, {type:"swm:focus"}, {type:"swm:focus", name:null}, {type:"other", name:"Coruscant"},
+                   null, "s", 42, {}, {type:"swm:focus", name:""}])
+  say(bad);
+ok("unknown and foreign messages are silent no-ops", picked.length === 2 && posted.length === 0);
+// Only the frame that holds this one may drive it. Without the source check, any other frame on
+// the host — or a page that opened this chart in a window it kept a handle on — could pan the
+// camera and open panels in it; the shell posts with target "*", so this side is the one that can
+// tell who spoke. A window.open'd chart is the case that makes it more than housekeeping.
+for (const stranger of [{}, null, undefined, {postMessage(){}}])
+  msgHandler({source: stranger, data: {type:"swm:focus", name:"Coruscant"}});
+ok("a focus from anything but the parent frame is ignored", picked.length === 2);
+msgHandler({source: undefined, data: {type:"swm:hello"}});
+ok("...and so is a hello, so nothing else can even make it announce itself", posted.length === 0);
+bodyWidth = 0;
+say({type:"swm:focus", name:"Coruscant"});
+ok("focus into an unlaid-out frame is a no-op", picked.length === 2);
+bodyWidth = 1200;
+say({type:"swm:focus", name:"Coruscant"});
+ok("focus works again once the frame has width", picked.length === 3);
+
+for (const [n, c] of T) console.log((c ? "PASS  " : "FAIL  ") + n);
+const bad = T.filter(([, c]) => !c).length;
+console.log(bad ? bad + " FAILED of " + T.length : "all " + T.length + " checks pass");
+process.exit(bad ? 1 : 0);
+"""
+
+
+# The `!head` guard, driven rather than read. META.link is the pattern the panel builds its campaign
+# link from, and the block inverts it to get a world's name back out of an href. Given a pattern
+# with no literal prefix — "{name}" — head and tail are both empty, and startsWith("")/endsWith("")
+# are true of EVERY href: without the guard the block would take every link in the panel,
+# Wookieepedia's included, preventDefault it, and post the whole URL to the shell as a world name.
+# The same shipped block, one different META.
+PREFIX_HARNESS = r"""
+const block = require("fs").readFileSync(process.argv[2], "utf8");
+const META = {embed: true, link: "{name}"};
+const posted = [];
+let clickHandler = null;
+const window = {parent: {postMessage: (m, o) => posted.push([m, o])}, addEventListener: () => {}};
+const document = {getElementById: id => ({addEventListener: (t, h) => { if (id === "panel-body" && t === "click") clickHandler = h; }}),
+                  body: {getBoundingClientRect: () => ({width: 1200})}};
+let sIndex = null;
+const buildIndex = () => { sIndex = []; };
+const qPick = () => {};
+eval(block);
+posted.length = 0;                        // drop the swm:ready the block posts as it initialises
+
+let prevented = false;
+clickHandler({target: {closest: () => ({getAttribute: k => (k === "href" ? "https://starwars.fandom.com/wiki/Enarc" : null)})},
+              preventDefault: () => { prevented = true; }, button: 0});
+const ok = !prevented && posted.length === 0;
+console.log(ok ? "PASS  a link pattern with no literal prefix intercepts nothing"
+               : "FAIL  every link in the panel was swallowed: prevented=" + prevented + " posted=" + JSON.stringify(posted));
+process.exit(ok ? 0 : 1);
+"""
+
+
+# The same shipped block in a window that nothing framed, which is one right-click ("Open frame in
+# new tab") away from any shell — and the address is in the shell's page source. `window.parent` is
+# then this very window, so a swallowed click would post a world name to the chart's own listener,
+# which handles hello and focus and nothing else: the link would simply stop working, silently, on
+# a chart that otherwise looks fine. Unframed, the campaign link is left to the browser.
+UNFRAMED_HARNESS = r"""
+const block = require("fs").readFileSync(process.argv[2], "utf8");
+const META = {embed: true, link: "/worlds/{name}"};
+const posted = [];
+let clickHandler = null, msgHandler = null;
+const window = {addEventListener: (t, h) => { if (t === "message") msgHandler = h; },
+                postMessage: (m, o) => posted.push([m, o])};
+window.parent = window;                        // nothing framed this chart: the parent IS this window
+const document = {getElementById: id => ({addEventListener: (t, h) => { if (id === "panel-body" && t === "click") clickHandler = h; }}),
+                  body: {getBoundingClientRect: () => ({width: 1200})}};
+let sIndex = null;
+const picked = [];
+const buildIndex = () => { sIndex = [{n:"Coruscant", l:"coruscant", k:0}]; };
+const qPick = e => picked.push(e);
+eval(block);
+posted.length = 0;                             // the swm:ready it posted at itself on the way in
+
+let prevented = false;
+clickHandler({target: {closest: () => ({getAttribute: k => (k === "href" ? "/worlds/Coruscant" : null)})},
+              preventDefault: () => { prevented = true; }, button: 0});
+const T = [], ok = (n, c) => T.push([n, c]);
+ok("an unframed chart does not swallow its own campaign links", prevented === false);
+ok("...and posts nothing at itself in place of navigating", posted.length === 0);
+// The camera still answers its own window, which is what `?focus=` already does on this chart.
+msgHandler({source: window.parent, data: {type:"swm:focus", name:"Coruscant"}});
+ok("a focus from its own window still works, so nothing else regressed", picked.length === 1);
+
+for (const [n, c] of T) console.log((c ? "PASS  " : "FAIL  ") + n);
+const bad = T.filter(([, c]) => !c).length;
+console.log(bad ? bad + " FAILED of " + T.length : "all " + T.length + " checks pass");
+process.exit(bad ? 1 : 0);
+"""
+
+
+def drive_embed_block(tmp_path, harness_js, name="harness"):
+    """Run the shipped embed block under a fake DOM; the harness exits non-zero on a failed check."""
+    node = shutil.which("node")
+    if not node:
+        pytest.skip("node not available")
+    tpl = (ROOT / "tools/system-map-template.html").read_text(encoding="utf-8")
+    js = embed_script(tpl)
+    block = tmp_path / f"{name}-block.js"
+    block.write_text(js[js.index("if (META.embed) {"):], encoding="utf-8")
+    harness = tmp_path / f"{name}.js"
+    harness.write_text(harness_js, encoding="utf-8")
+    r = subprocess.run([node, str(harness), str(block)], capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr
+
+
+def test_embed_block_behaves(tmp_path):
+    """Execute the shipped block: ready, link interception (and the modifiers it must not steal), hello, focus."""
+    drive_embed_block(tmp_path, EMBED_HARNESS)
+
+
+def test_an_unframed_chart_leaves_its_campaign_links_alone(tmp_path):
+    """`/map?embed=1` opened on its own is a chart with no shell above it.
+
+    The embed build's whole job is to hand a click to the frame around it instead of navigating,
+    and with no frame there is nobody to hand it to: `window.parent` is the chart's own window, so
+    the post lands on its own listener, which speaks hello and focus and knows nothing about
+    worlds. The click would be swallowed and nothing would happen — on a chart that looks entirely
+    healthy, reached by one right-click on the shell's iframe.
+    """
+    drive_embed_block(tmp_path, UNFRAMED_HARNESS, "unframed")
+
+
+def test_a_link_pattern_with_no_literal_prefix_intercepts_nothing(tmp_path):
+    """The one branch the harness above cannot reach: it only ever supplies a well-formed pattern.
+
+    An embedder that set `meta.link` to a bare "{name}" would, without the guard, turn the panel
+    into a trap — every link in it, the Wookieepedia article most of all, would stop navigating and
+    post its own URL to the parent frame as though it were the name of a world.
+    """
+    drive_embed_block(tmp_path, PREFIX_HARNESS, "prefix")
