@@ -28,7 +28,7 @@
    "threshold": 7,
    "current": 0
   },
-  "force_rating": 2,
+  "force_rating": 1,
   "morality": 50,
   "credits": 75,
   "skills": [
@@ -368,6 +368,12 @@
     "description": "Take a Full Throttle action; make a [B]Hard ([DI][DI][DI]) Piloting check[b] to increase a vehicle's top speed by 1 for a number of rounds equal to Cunning."
    },
    {
+    "name": "Witchcraft",
+    "count": 1,
+    "activation": "Passive",
+    "description": "The character gains Force rating 1."
+   },
+   {
     "name": "Summon Item",
     "count": 1,
     "activation": "Active",
@@ -378,20 +384,28 @@
     "count": 1,
     "activation": "Passive",
     "description": "The character chooses one Melee or Brawl weapon they possess, which gains the Cortosis and Pierce 2 qualities and reduces its critical rating by 1 to a minimum of 1. If the weapon is ever lost or destroyed, the character can apply Ichor Blade to a new weapon."
+   },
+   {
+    "name": "Ichor Blade (Improved)",
+    "count": 1,
+    "activation": "Passive",
+    "description": "The chosen weapon also gains the Sunder and Defensive 1 qualities, and increases its damage by 2."
    }
   ],
   "weapons": [
    {
     "name": "Vibroknife",
     "skill": "Melee",
-    "damage": "3",
+    "damage": "7",
     "crit": "1",
     "range": "Engaged",
     "qualities": [
      "Pierce 2",
      "Vicious 1",
      "Cortosis",
-     "Ichor Blade"
+     "Defensive 1",
+     "Sunder",
+     "Ichor Blade (Improved)"
     ],
     "notes": "",
     "equipped": true
