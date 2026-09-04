@@ -11,7 +11,7 @@
   ],
   "characteristics": {
    "Brawn": 2,
-   "Agility": 3,
+   "Agility": 2,
    "Intellect": 2,
    "Cunning": 2,
    "Willpower": 2,
@@ -28,7 +28,7 @@
    "threshold": 7,
    "current": 0
   },
-  "force_rating": 1,
+  "force_rating": 2,
   "morality": 50,
   "credits": 75,
   "skills": [
@@ -101,7 +101,7 @@
     "rank": 0,
     "career": true,
     "proficiency": 0,
-    "ability": 3,
+    "ability": 2,
     "type": "General"
    },
    {
@@ -146,7 +146,7 @@
     "rank": 0,
     "career": false,
     "proficiency": 0,
-    "ability": 3,
+    "ability": 2,
     "type": "Combat"
    },
    {
@@ -236,7 +236,7 @@
     "rank": 1,
     "career": true,
     "proficiency": 1,
-    "ability": 2,
+    "ability": 1,
     "type": "General"
    },
    {
@@ -245,7 +245,7 @@
     "rank": 1,
     "career": true,
     "proficiency": 1,
-    "ability": 2,
+    "ability": 1,
     "type": "General"
    },
    {
@@ -254,7 +254,7 @@
     "rank": 0,
     "career": false,
     "proficiency": 0,
-    "ability": 3,
+    "ability": 2,
     "type": "Combat"
    },
    {
@@ -263,7 +263,7 @@
     "rank": 0,
     "career": false,
     "proficiency": 0,
-    "ability": 3,
+    "ability": 2,
     "type": "Combat"
    },
    {
@@ -290,7 +290,7 @@
     "rank": 1,
     "career": true,
     "proficiency": 1,
-    "ability": 2,
+    "ability": 1,
     "type": "General"
    },
    {
@@ -368,12 +368,6 @@
     "description": "Take a Full Throttle action; make a [B]Hard ([DI][DI][DI]) Piloting check[b] to increase a vehicle's top speed by 1 for a number of rounds equal to Cunning."
    },
    {
-    "name": "Witchcraft",
-    "count": 1,
-    "activation": "Passive",
-    "description": "The character gains Force rating 1."
-   },
-   {
     "name": "Summon Item",
     "count": 1,
     "activation": "Active",
@@ -384,12 +378,6 @@
     "count": 1,
     "activation": "Passive",
     "description": "The character chooses one Melee or Brawl weapon they possess, which gains the Cortosis and Pierce 2 qualities and reduces its critical rating by 1 to a minimum of 1. If the weapon is ever lost or destroyed, the character can apply Ichor Blade to a new weapon."
-   },
-   {
-    "name": "Ichor Blade (Improved)",
-    "count": 1,
-    "activation": "Passive",
-    "description": "The chosen weapon also gains the Sunder and Defensive 1 qualities, and increases its damage by 2."
    }
   ],
   "weapons": [
