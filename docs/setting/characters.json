@@ -6,12 +6,11 @@
   "species_abilities": [],
   "career": "Sentinel",
   "specializations": [
-   "Racer",
-   "Nightsister"
+   "Racer"
   ],
   "characteristics": {
    "Brawn": 2,
-   "Agility": 2,
+   "Agility": 3,
    "Intellect": 2,
    "Cunning": 2,
    "Willpower": 2,
@@ -101,7 +100,7 @@
     "rank": 0,
     "career": true,
     "proficiency": 0,
-    "ability": 2,
+    "ability": 3,
     "type": "General"
    },
    {
@@ -146,7 +145,7 @@
     "rank": 0,
     "career": false,
     "proficiency": 0,
-    "ability": 2,
+    "ability": 3,
     "type": "Combat"
    },
    {
@@ -197,10 +196,10 @@
    {
     "name": "Melee",
     "characteristic": "Brawn",
-    "rank": 1,
+    "rank": 0,
     "career": false,
-    "proficiency": 1,
-    "ability": 1,
+    "proficiency": 0,
+    "ability": 2,
     "type": "Combat"
    },
    {
@@ -236,7 +235,7 @@
     "rank": 1,
     "career": true,
     "proficiency": 1,
-    "ability": 1,
+    "ability": 2,
     "type": "General"
    },
    {
@@ -245,7 +244,7 @@
     "rank": 2,
     "career": true,
     "proficiency": 2,
-    "ability": 0,
+    "ability": 1,
     "type": "General"
    },
    {
@@ -254,7 +253,7 @@
     "rank": 0,
     "career": false,
     "proficiency": 0,
-    "ability": 2,
+    "ability": 3,
     "type": "Combat"
    },
    {
@@ -263,7 +262,7 @@
     "rank": 0,
     "career": false,
     "proficiency": 0,
-    "ability": 2,
+    "ability": 3,
     "type": "Combat"
    },
    {
@@ -290,7 +289,7 @@
     "rank": 1,
     "career": true,
     "proficiency": 1,
-    "ability": 1,
+    "ability": 2,
     "type": "General"
    },
    {
@@ -366,46 +365,18 @@
     "count": 1,
     "activation": "Active",
     "description": "Take a Full Throttle action; make a [B]Hard ([DI][DI][DI]) Piloting check[b] to increase a vehicle's top speed by 1 for a number of rounds equal to Cunning."
-   },
-   {
-    "name": "Witchcraft",
-    "count": 1,
-    "activation": "Passive",
-    "description": "The character gains Force rating 1."
-   },
-   {
-    "name": "Summon Item",
-    "count": 1,
-    "activation": "Active",
-    "description": "As a maneuver, the character can summon or dismiss a ritually prepared item."
-   },
-   {
-    "name": "Ichor Blade",
-    "count": 1,
-    "activation": "Passive",
-    "description": "The character chooses one Melee or Brawl weapon they possess, which gains the Cortosis and Pierce 2 qualities and reduces its critical rating by 1 to a minimum of 1. If the weapon is ever lost or destroyed, the character can apply Ichor Blade to a new weapon."
-   },
-   {
-    "name": "Ichor Blade (Improved)",
-    "count": 1,
-    "activation": "Passive",
-    "description": "The chosen weapon also gains the Sunder and Defensive 1 qualities, and increases its damage by 2."
    }
   ],
   "weapons": [
    {
     "name": "Vibroknife",
     "skill": "Melee",
-    "damage": "5",
-    "crit": "1",
+    "damage": "3",
+    "crit": "2",
     "range": "Engaged",
     "qualities": [
      "Pierce 2",
-     "Vicious 1",
-     "Cortosis",
-     "Defensive 1",
-     "Sunder",
-     "Ichor Blade (Improved)"
+     "Vicious 1"
     ],
     "notes": "",
     "equipped": true

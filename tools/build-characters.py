@@ -464,14 +464,23 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(crew, ensure_ascii=False, indent=1), encoding="utf-8")
     cards = 0
+    written = {"index.html"}
     for c in crew:
         (OUT_DIR / f"{c['slug']}.html").write_text(sheet_html(c), encoding="utf-8")
+        written.add(f"{c['slug']}.html")
         for w in c["weapons"]:
             if any(q.startswith("Ichor Blade") for q in w["qualities"]):
-                wslug = slugify(w["name"])
-                (OUT_DIR / f"{c['slug']}-{wslug}-card.html").write_text(weapon_card_html(c, w), encoding="utf-8")
+                fn = f"{c['slug']}-{slugify(w['name'])}-card.html"
+                (OUT_DIR / fn).write_text(weapon_card_html(c, w), encoding="utf-8")
+                written.add(fn)
                 cards += 1
     (OUT_DIR / "index.html").write_text(index_html(crew), encoding="utf-8")
+    # drop generated files no longer produced (a renamed export, a weapon that lost its ichor) so a
+    # stale sheet or item card never lingers as a handout.
+    for old in OUT_DIR.glob("*.html"):
+        if old.name not in written:
+            old.unlink()
+            print(f"removed stale {old.name}")
     print(f"{len(crew)} character(s): " + ", ".join(c["name"] for c in crew) + f" ({cards} item card{'s' if cards != 1 else ''}) -> {OUT_JSON.relative_to(ROOT)}, {OUT_DIR.relative_to(ROOT)}/")
     return 0
 
