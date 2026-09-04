@@ -83,7 +83,7 @@ def skill_ranks(d: dict) -> dict:
     return ranks
 
 
-def normalize(d: dict) -> dict:
+def normalize(d: dict, stem: str = "") -> dict:
     chars = {c: num(d["Characteristics"].get(c)) for c in CHARS}
     career_skills = set(as_list(d.get("CareerSkills"))) | set(as_list(d.get("SpecSkills"))) | set(as_list(d.get("ExtraCareerSkills")))
     ranks = skill_ranks(d)
@@ -141,7 +141,7 @@ def normalize(d: dict) -> dict:
         if sm.get("Name"):
             motivation = f"{m.get('Motivation', {}).get('Name', '')}: {sm['Name']}".strip(": ")
     morality = num(d.get("Morality", {}).get("Score"), 50) if d.get("Morality", {}).get("Toggle") else None
-    name = d.get("Name") or "Unnamed"
+    name = d.get("Name") or stem or "Unnamed"   # a nameless draft is labeled by its export file (Dathomiri.json -> "Dathomiri")
     return {
         "slug": slugify(name), "name": name, "species": species.get("Name", ""), "species_abilities": abilities,
         "career": d.get("Career", {}).get("Name", ""), "specializations": [s.get("Name", "") for s in as_list(d.get("Specializations")) if isinstance(s, dict)],
@@ -321,7 +321,7 @@ def main() -> int:
     crew = []
     for f in files:
         try:
-            crew.append(normalize(json.loads(f.read_text(encoding="utf-8"))))
+            crew.append(normalize(json.loads(f.read_text(encoding="utf-8")), f.stem))
         except Exception as ex:  # one bad export should not sink the rest
             print(f"skipping {f.name}: {ex}", file=sys.stderr)
     crew.sort(key=lambda c: c["name"])

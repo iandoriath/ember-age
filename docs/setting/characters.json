@@ -1,5 +1,450 @@
 [
  {
+  "slug": "dathomiri",
+  "name": "Dathomiri",
+  "species": "Dathomirian",
+  "species_abilities": [],
+  "career": "Sentinel",
+  "specializations": [
+   "Racer",
+   "Nightsister"
+  ],
+  "characteristics": {
+   "Brawn": 2,
+   "Agility": 3,
+   "Intellect": 2,
+   "Cunning": 2,
+   "Willpower": 2,
+   "Presence": 2
+  },
+  "wounds": 12,
+  "strain": 13,
+  "soak": 2,
+  "defense": {
+   "ranged": 1,
+   "melee": 1
+  },
+  "encumbrance": {
+   "threshold": 7,
+   "current": 0
+  },
+  "force_rating": 1,
+  "morality": 50,
+  "credits": 75,
+  "skills": [
+   {
+    "name": "Astrogation",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Athletics",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Brawl",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Combat"
+   },
+   {
+    "name": "Charm",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Coercion",
+    "characteristic": "Willpower",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Computers",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Cool",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Coordination",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Core Worlds)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Deception",
+    "characteristic": "Cunning",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Discipline",
+    "characteristic": "Willpower",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Education)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Gunnery",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Combat"
+   },
+   {
+    "name": "Leadership",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Lightsaber",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Combat"
+   },
+   {
+    "name": "Knowledge (Lore)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Mechanics",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Medicine",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Melee",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Combat"
+   },
+   {
+    "name": "Negotiation",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Outer Rim)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Perception",
+    "characteristic": "Cunning",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Piloting (Planetary)",
+    "characteristic": "Agility",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Piloting (Space)",
+    "characteristic": "Agility",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Ranged (Heavy)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Combat"
+   },
+   {
+    "name": "Ranged (Light)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "Combat"
+   },
+   {
+    "name": "Resilience",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Skulduggery",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Stealth",
+    "characteristic": "Agility",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Streetwise",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Survival",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Underworld)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Vigilance",
+    "characteristic": "Willpower",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Warfare)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Knowledge (Xenology)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   }
+  ],
+  "talents": [
+   {
+    "name": "Outdoorsman",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Remove [SE] per rank of Outdoorsman from checks to move through terrain or manage environmental effects. Decrease overland travel times by half."
+   },
+   {
+    "name": "Skilled Jockey",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Remove [SE] per rank of Skilled Jockey from all Piloting (Planetary) and Piloting (Space) checks the character attempts."
+   },
+   {
+    "name": "Full Throttle",
+    "count": 1,
+    "activation": "Active",
+    "description": "Take a Full Throttle action; make a [B]Hard ([DI][DI][DI]) Piloting check[b] to increase a vehicle's top speed by 1 for a number of rounds equal to Cunning."
+   },
+   {
+    "name": "Witchcraft",
+    "count": 1,
+    "activation": "Passive",
+    "description": "The character gains Force rating 1."
+   },
+   {
+    "name": "Summon Item",
+    "count": 1,
+    "activation": "Active",
+    "description": "As a maneuver, the character can summon or dismiss a ritually prepared item."
+   },
+   {
+    "name": "Ichor Blade",
+    "count": 1,
+    "activation": "Passive",
+    "description": "The character chooses one Melee or Brawl weapon they possess, which gains the Cortosis and Pierce 2 qualities and reduces its critical rating by 1 to a minimum of 1. If the weapon is ever lost or destroyed, the character can apply Ichor Blade to a new weapon."
+   },
+   {
+    "name": "Ichor Blade (Improved)",
+    "count": 1,
+    "activation": "Passive",
+    "description": "The chosen weapon also gains the Sunder and Defensive 1 qualities, and increases its damage by 2."
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Vibroknife",
+    "skill": "Melee",
+    "damage": "3",
+    "crit": "2",
+    "range": "Engaged",
+    "qualities": [
+     "Pierce 2",
+     "Vicious 1"
+    ],
+    "notes": "",
+    "equipped": true
+   },
+   {
+    "name": "Unarmed",
+    "skill": "Brawl",
+    "damage": "2",
+    "crit": "5",
+    "range": "Engaged",
+    "qualities": [
+     "Knockdown",
+     "Stun Setting"
+    ],
+    "notes": "",
+    "equipped": true
+   }
+  ],
+  "armor": [
+   {
+    "name": "Heavy Robes",
+    "soak": 0,
+    "defense": 1,
+    "encumbrance": 1,
+    "equipped": true
+   }
+  ],
+  "gear": [
+   {
+    "name": "Comlink (handheld)",
+    "quantity": 1,
+    "type": "Communications",
+    "encumbrance": 0,
+    "notes": ""
+   }
+  ],
+  "vehicles": [],
+  "obligations": [],
+  "duties": [],
+  "motivation": null,
+  "background": ""
+ },
+ {
   "slug": "mikres-kyries",
   "name": "Mikrés Kyríes",
   "species": "Chadra-Fan",
@@ -938,6 +1383,459 @@
   ],
   "duties": [],
   "motivation": "Oath: The Republic",
+  "background": ""
+ },
+ {
+  "slug": "shien",
+  "name": "Shien",
+  "species": "Devaronian",
+  "species_abilities": [
+   {
+    "name": "Resillient Metabolism",
+    "description": "Devaronians add automatic [SU] to all Resillience checks."
+   }
+  ],
+  "career": "Sentinel",
+  "specializations": [
+   "Shien Expert"
+  ],
+  "characteristics": {
+   "Brawn": 2,
+   "Agility": 2,
+   "Intellect": 2,
+   "Cunning": 3,
+   "Willpower": 2,
+   "Presence": 1
+  },
+  "wounds": 15,
+  "strain": 12,
+  "soak": 4,
+  "defense": {
+   "ranged": 1,
+   "melee": 1
+  },
+  "encumbrance": {
+   "threshold": 7,
+   "current": 0
+  },
+  "force_rating": 1,
+  "morality": 50,
+  "credits": 500,
+  "skills": [
+   {
+    "name": "Astrogation",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Athletics",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Brawl",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Combat"
+   },
+   {
+    "name": "Charm",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Coercion",
+    "characteristic": "Willpower",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Computers",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Cool",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Coordination",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Core Worlds)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Deception",
+    "characteristic": "Cunning",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Discipline",
+    "characteristic": "Willpower",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Education)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Gunnery",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Combat"
+   },
+   {
+    "name": "Leadership",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Lightsaber",
+    "characteristic": "Brawn",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 1,
+    "type": "Combat"
+   },
+   {
+    "name": "Knowledge (Lore)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Mechanics",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Medicine",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Melee",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Combat"
+   },
+   {
+    "name": "Negotiation",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Outer Rim)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Perception",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "General"
+   },
+   {
+    "name": "Piloting (Planetary)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Piloting (Space)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Ranged (Heavy)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Combat"
+   },
+   {
+    "name": "Ranged (Light)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Combat"
+   },
+   {
+    "name": "Resilience",
+    "characteristic": "Brawn",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Skulduggery",
+    "characteristic": "Cunning",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Stealth",
+    "characteristic": "Agility",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Streetwise",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "General"
+   },
+   {
+    "name": "Survival",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 3,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Underworld)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Vigilance",
+    "characteristic": "Willpower",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Warfare)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Knowledge (Xenology)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 2,
+    "type": "Knowledge"
+   }
+  ],
+  "talents": [
+   {
+    "name": "Side Step",
+    "count": 1,
+    "activation": "Active",
+    "description": "Once per round, may perform Side Step maneuver and suffer a number of strain to upgrade difficulty of all incoming ranged attacks by an equal number for the next round. Strain suffered this way cannot exceed ranks in Side Step."
+   },
+   {
+    "name": "Conditioned",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Remove [SE] per rank of Conditioned from Athletics and Coordination check. Reduce the damage and strain suffered from falling by 1 per rank of Conditioned."
+   },
+   {
+    "name": "Street Smarts",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Remove [SE] per rank of Street Smarts from Streetwise or Knowledge (Underworld) checks."
+   },
+   {
+    "name": "Reflect",
+    "count": 2,
+    "activation": "Active",
+    "description": "When hit by a ranged attack, suffer 3 strain to reduce damage by 2 plus ranks in Reflect."
+   },
+   {
+    "name": "Toughened",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Gain +2 wound threshold."
+   },
+   {
+    "name": "Parry",
+    "count": 2,
+    "activation": "Active",
+    "description": "When hit by a melee attack, suffer 3 strain to reduce damage by 2 plus ranks in Parry."
+   },
+   {
+    "name": "Shien Technique",
+    "count": 1,
+    "activation": "Passive",
+    "description": "When making a check using the Lightsaber skill, the character may use Cunning instead of Brawn."
+   },
+   {
+    "name": "Counterstrike",
+    "count": 1,
+    "activation": "Passive",
+    "description": "When an attack misses the character and generates [DE] or [TH][TH], may upgrade next Lightsaber (Cunning) check against attacker during encounter once."
+   },
+   {
+    "name": "Reflect (Improved)",
+    "count": 1,
+    "activation": "Active",
+    "description": "When reflecting a hit that generated [DE] or [TH][TH][TH] may hit one target in medium range with the same damage as the initial hit, after original attack resolves."
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Basic Lightsaber",
+    "skill": "Lightsaber",
+    "damage": "6",
+    "crit": "2",
+    "range": "Engaged",
+    "qualities": [
+     "Breach 1",
+     "Sunder"
+    ],
+    "notes": "",
+    "equipped": true
+   },
+   {
+    "name": "Unarmed",
+    "skill": "Brawl",
+    "damage": "2",
+    "crit": "5",
+    "range": "Engaged",
+    "qualities": [
+     "Knockdown",
+     "Stun Setting"
+    ],
+    "notes": "",
+    "equipped": true
+   }
+  ],
+  "armor": [
+   {
+    "name": "Armored Robes",
+    "soak": 2,
+    "defense": 1,
+    "encumbrance": 3,
+    "equipped": true
+   }
+  ],
+  "gear": [],
+  "vehicles": [],
+  "obligations": [],
+  "duties": [],
+  "motivation": null,
   "background": ""
  }
 ]
