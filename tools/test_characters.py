@@ -70,7 +70,8 @@ def test_ichor_blade_applies_to_the_vibroknife():
                      "Qualities": [{"Key": "PIERCE", "Count": "2"}, {"Key": "VICIOUS", "Count": "1"}]}] + d["Weapons"]
     d["BoughtTalents"] = list(d["BoughtTalents"]) + [
         {"key": "ICHBLADECOTR", "data": {"Name": "Ichor Blade"}, "count": 1},
-        {"key": "ICHORBI", "data": {"Name": "Ichor Blade (Improved)"}, "count": 1}]
+        {"key": "ICHORBI", "data": {"Name": "Ichor Blade (Improved)"}, "count": 1},
+        {"key": "GRIT2", "data": {"Name": "Grit"}, "count": 0}]
     c = bc.normalize(d, "sample")
     vk = next(w for w in c["weapons"] if w["name"] == "Vibroknife")
     assert vk["crit"] == "1", vk
@@ -86,3 +87,23 @@ def test_ichor_blade_applies_to_the_vibroknife():
 
 test_ichor_blade_applies_to_the_vibroknife()
 print("ichor test ok")
+
+
+def test_ichor_blade_count_zero_is_not_bought():
+    d = json.loads(json.dumps(SAMPLE))
+    d["Weapons"] = [{"Key": "VIBKN", "Name": "Vibroknife", "SkillKey": "MELEE", "DamageAdd": 1, "Crit": 2, "Range": "Engaged",
+                     "Qualities": [{"Key": "PIERCE", "Count": "2"}, {"Key": "VICIOUS", "Count": "1"}]}] + d["Weapons"]
+    d["BoughtTalents"] = list(d["BoughtTalents"]) + [
+        {"key": "ICHBLADECOTR", "data": {"Name": "Ichor Blade"}, "count": 1},
+        {"key": "ICHORBI", "data": {"Name": "Ichor Blade (Improved)"}, "count": 0}]   # touched, refunded
+    vk = next(w for w in bc.normalize(d, "sample")["weapons"] if w["name"] == "Vibroknife")
+    assert vk["crit"] == "1" and any(q == "Cortosis" for q in vk["qualities"]), vk       # basic applies
+    assert vk["damage"] == "3", vk                                                        # Brawn 2 + 1, no Improved +2
+    assert not any("Sunder" in q or "Defensive" in q for q in vk["qualities"]), vk        # Improved does not
+    assert any(x == "Ichor Blade" for x in vk["qualities"]), vk                           # tag without "(Improved)"
+    d2 = json.loads(json.dumps(SAMPLE))
+    d2["BoughtTalents"] = list(d2["BoughtTalents"]) + [{"key": "ICHBLADECOTR", "data": {}, "count": 0}]
+    assert not any("Ichor" in q for w in bc.normalize(d2, "s")["weapons"] for q in w["qualities"])
+
+test_ichor_blade_count_zero_is_not_bought()
+print("count-gate test ok")

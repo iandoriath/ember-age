@@ -114,7 +114,7 @@ def normalize(d: dict, stem: str = "") -> dict:
     # to the flagged weapon ("Ichored"), else the first vibro-named Melee/Brawl weapon, else the first
     # Melee/Brawl weapon that is not Unarmed. Basic: Cortosis, Pierce 2, crit -1 (min 1); Improved adds
     # Sunder, Defensive 1, +2 damage. The "Ichor Blade" tag in Qualities says why the numbers moved.
-    bought_keys = {t.get("key") for t in as_list(d.get("BoughtTalents")) if isinstance(t, dict)}
+    bought_keys = {t.get("key") for t in as_list(d.get("BoughtTalents")) if isinstance(t, dict) and num(t.get("count")) > 0}   # the app exports touched-but-refunded talents at count 0
     if "ICHBLADECOTR" in bought_keys and weapons:
         raws = as_list(d.get("Weapons"))
         cands = [i for i, w in enumerate(raws) if isinstance(w, dict)
