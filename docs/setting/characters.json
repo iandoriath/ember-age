@@ -396,7 +396,7 @@
    {
     "name": "Vibroknife",
     "skill": "Melee",
-    "damage": "7",
+    "damage": "5",
     "crit": "1",
     "range": "Engaged",
     "qualities": [

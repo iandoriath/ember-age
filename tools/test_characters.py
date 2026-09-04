@@ -107,3 +107,21 @@ def test_ichor_blade_count_zero_is_not_bought():
 
 test_ichor_blade_count_zero_is_not_bought()
 print("count-gate test ok")
+
+
+def test_ichor_blade_already_applied_by_the_app_is_not_doubled():
+    d = json.loads(json.dumps(SAMPLE))
+    d["Weapons"] = [{"Key": "VIBKN", "Name": "Vibroknife", "SkillKey": "MELEE", "DamageAdd": 3, "Crit": 1, "Range": "Engaged",
+                     "Ichored": True, "TalentMods": {"ICBuffs": [{"kind": "damage", "amt": 2}]},
+                     "Qualities": [{"Key": "PIERCE", "Count": 2}, {"Key": "VICIOUS", "Count": "1"}, {"Key": "CORTOSIS", "Count": 0},
+                                    {"Key": "Defensive", "Count": 1}, {"Key": "Sunder", "Count": 0}]}] + d["Weapons"]
+    d["BoughtTalents"] = list(d["BoughtTalents"]) + [
+        {"key": "ICHBLADECOTR", "data": {}, "count": 1}, {"key": "ICHORBI", "data": {}, "count": 1}]
+    vk = next(w for w in bc.normalize(d, "sample")["weapons"] if w["name"] == "Vibroknife")
+    assert vk["damage"] == "5", vk        # Brawn 2 + DamageAdd 3 (the app already added the Improved 2) — no second +2
+    assert vk["crit"] == "1", vk
+    assert sum("Ichor Blade" in q for q in vk["qualities"]) == 1
+    assert sum(q.startswith("Cortosis") for q in vk["qualities"]) == 1   # not added twice
+
+test_ichor_blade_already_applied_by_the_app_is_not_doubled()
+print("pre-applied test ok")

@@ -125,32 +125,38 @@ def normalize(d: dict, stem: str = "") -> dict:
         if tgt is not None:
             w = weapons[tgt]
             quals = [q for q in w["qualities"] if q]
-            def has(prefix):
-                return any(q.lower().startswith(prefix.lower()) for q in quals)
-            pieces = []
-            for i, q in enumerate(quals):
-                m = re.match(r"(?i)pierce\s*(\d+)", q)
-                if m and int(m.group(1)) < 2:
-                    quals[i] = "Pierce 2"
-            if not has("Pierce"):
-                quals.append("Pierce 2")
-            if not has("Cortosis"):
-                quals.append("Cortosis")
-            try:
-                w["crit"] = str(max(1, int(w["crit"]) - 1))
-            except ValueError:
-                pass
-            if "ICHORBI" in bought_keys:
-                if not has("Sunder"):
-                    quals.append("Sunder")
-                if not has("Defensive"):
-                    quals.append("Defensive 1")
+            raw = raws[tgt]
+            already = bool((raw.get("TalentMods") or {}).get("ICBuffs")) or                 any(str(q.get("Key", "")).upper() == "CORTOSIS" for q in as_list(raw.get("Qualities")) if isinstance(q, dict))
+            if already:   # newer exports bake the ichor buffs into the weapon itself; only label it
+                quals.append("Ichor Blade" + (" (Improved)" if "ICHORBI" in bought_keys else ""))
+                w["qualities"] = quals
+            else:
+                def has(prefix):
+                    return any(q.lower().startswith(prefix.lower()) for q in quals)
+                pieces = []
+                for i, q in enumerate(quals):
+                    m = re.match(r"(?i)pierce\s*(\d+)", q)
+                    if m and int(m.group(1)) < 2:
+                        quals[i] = "Pierce 2"
+                if not has("Pierce"):
+                    quals.append("Pierce 2")
+                if not has("Cortosis"):
+                    quals.append("Cortosis")
                 try:
-                    w["damage"] = str(int(w["damage"]) + 2)
+                    w["crit"] = str(max(1, int(w["crit"]) - 1))
                 except ValueError:
                     pass
-            quals.append("Ichor Blade" + (" (Improved)" if "ICHORBI" in bought_keys else ""))
-            w["qualities"] = quals
+                if "ICHORBI" in bought_keys:
+                    if not has("Sunder"):
+                        quals.append("Sunder")
+                    if not has("Defensive"):
+                        quals.append("Defensive 1")
+                    try:
+                        w["damage"] = str(int(w["damage"]) + 2)
+                    except ValueError:
+                        pass
+                quals.append("Ichor Blade" + (" (Improved)" if "ICHORBI" in bought_keys else ""))
+                w["qualities"] = quals
     armor = [{"name": a.get("Name", "?"), "soak": num(a.get("Soak")), "defense": num(a.get("Defense")), "encumbrance": num(a.get("Encumbrance")),
               "equipped": bool(a.get("Equipped"))} for a in as_list(d.get("Armor"))]
     gear = []
