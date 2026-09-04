@@ -424,7 +424,7 @@ def weapon_card_html(c: dict, w: dict) -> str:
     {quality_rows(w["qualities"])}
   </div>
   <div class="foot">
-    <b>Crit {e(w["crit"])}</b> means a hit that spends {e(w["crit"])} Advantage (\u2666 for each) rolls a Critical Injury &mdash; the lowest a weapon can go. Damage {e(w["damage"])} already includes the wielder's Brawn. The ichor holds while the blade does; if it is ever lost, the binding can be given to a new one.
+    A <b>Crit {e(w["crit"])}</b> hit inflicts a Critical Injury for {e(w["crit"])} Advantage spent (\u2666 each) &mdash; the lowest rating a weapon can have. Damage {e(w["damage"])} already includes her Brawn. The ichor holds while the blade does; if it is ever lost, the binding passes to a new one.
   </div>
 </div>
 </body></html>
