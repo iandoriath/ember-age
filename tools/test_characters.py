@@ -58,7 +58,7 @@ def test_real_exports_build_and_committed_roster_is_fresh():
     files = sorted((ROOT / "hyperdrive").glob("*.json"))
     if not files:
         return
-    crew = sorted((bc.normalize(json.loads(f.read_text(encoding="utf-8"))) for f in files), key=lambda c: c["name"])
+    crew = sorted((bc.normalize(json.loads(f.read_text(encoding="utf-8")), f.stem) for f in files), key=lambda c: c["name"])   # main() labels a nameless export by its file stem; mirror it
     assert json.loads((ROOT / "docs/setting/characters.json").read_text(encoding="utf-8")) == crew
     for c in crew:
         assert (ROOT / "player-aids/characters" / f"{c['slug']}.html").read_text(encoding="utf-8") == bc.sheet_html(c)
