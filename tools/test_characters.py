@@ -27,6 +27,17 @@ SAMPLE = {
 }
 
 
+def test_inline_value_adds_a_purchased_rank():
+    d = json.loads(json.dumps(SAMPLE))
+    d["Skills"] = d["Skills"] + [{"Key": "MELEE", "skill": "Melee", "characteristic": "Brawn", "type": "Combat", "value": 1}]
+    sk = {s["name"]: s for s in bc.normalize(d, "s")["skills"]}
+    assert sk["Melee"]["rank"] == 1, sk["Melee"]                       # Brawn 2, one purchased rank
+    assert (sk["Melee"]["proficiency"], sk["Melee"]["ability"]) == (1, 1)   # 1 yellow + 1 green
+    d2 = json.loads(json.dumps(SAMPLE))                                # a free spec rank plus a purchase stacks
+    d2["Skills"] = d2["Skills"] + [{"Key": "GUNN", "skill": "Gunnery", "characteristic": "Agility", "type": "Combat", "value": 1}]
+    assert {s["name"]: s for s in bc.normalize(d2, "s")["skills"]}["Gunnery"]["rank"] == 2   # SpecRanks 1 + value 1
+
+
 def test_ranks_pools_and_slug():
     c = bc.normalize(SAMPLE)
     assert c["slug"] == "test-pilot"

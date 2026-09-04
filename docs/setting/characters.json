@@ -197,10 +197,10 @@
    {
     "name": "Melee",
     "characteristic": "Brawn",
-    "rank": 0,
+    "rank": 1,
     "career": false,
-    "proficiency": 0,
-    "ability": 2,
+    "proficiency": 1,
+    "ability": 1,
     "type": "Combat"
    },
    {
@@ -242,10 +242,10 @@
    {
     "name": "Piloting (Space)",
     "characteristic": "Agility",
-    "rank": 1,
+    "rank": 2,
     "career": true,
-    "proficiency": 1,
-    "ability": 1,
+    "proficiency": 2,
+    "ability": 0,
     "type": "General"
    },
    {
@@ -1203,10 +1203,10 @@
    {
     "name": "Resilience",
     "characteristic": "Brawn",
-    "rank": 0,
+    "rank": 1,
     "career": true,
-    "proficiency": 0,
-    "ability": 3,
+    "proficiency": 1,
+    "ability": 2,
     "type": "General"
    },
    {

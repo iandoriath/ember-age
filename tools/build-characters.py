@@ -77,7 +77,10 @@ def skill_ranks(d: dict) -> dict:
     for name, r in (d.get("Modifiers", {}).get("Skills") or {}).items():
         ranks[SKILL_BY_KEY.get(name, name)] = ranks.get(SKILL_BY_KEY.get(name, name), 0) + num(r)
     for s in as_list(d.get("Skills")):
-        for k in ("rank", "Rank", "ranks", "Ranks"):
+        # "value" is Hyperdrive's inline per-skill rank store for ranks the free-rank lists above do
+        # not carry (XP-bought ranks, ranks set directly in the skill grid); it is additive, not a total
+        # — a career/spec free rank leaves it 0. Missing it dropped e.g. the Dathomiri's bought Melee 1.
+        for k in ("value", "rank", "Rank", "ranks", "Ranks"):
             if k in s:
                 ranks[s["skill"]] = ranks.get(s["skill"], 0) + num(s[k])
     return ranks
