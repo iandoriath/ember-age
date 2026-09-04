@@ -396,12 +396,16 @@
    {
     "name": "Vibroknife",
     "skill": "Melee",
-    "damage": "3",
-    "crit": "2",
+    "damage": "5",
+    "crit": "1",
     "range": "Engaged",
     "qualities": [
      "Pierce 2",
-     "Vicious 1"
+     "Vicious 1",
+     "Cortosis",
+     "Sunder",
+     "Defensive 1",
+     "Ichor Blade (Improved)"
     ],
     "notes": "",
     "equipped": true

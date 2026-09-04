@@ -62,3 +62,27 @@ def test_real_exports_build_and_committed_roster_is_fresh():
     assert json.loads((ROOT / "docs/setting/characters.json").read_text(encoding="utf-8")) == crew
     for c in crew:
         assert (ROOT / "player-aids/characters" / f"{c['slug']}.html").read_text(encoding="utf-8") == bc.sheet_html(c)
+
+
+def test_ichor_blade_applies_to_the_vibroknife():
+    d = json.loads(json.dumps(SAMPLE))
+    d["Weapons"] = [{"Key": "VIBKN", "Name": "Vibroknife", "SkillKey": "MELEE", "DamageAdd": 1, "Crit": 2, "Range": "Engaged",
+                     "Qualities": [{"Key": "PIERCE", "Count": "2"}, {"Key": "VICIOUS", "Count": "1"}]}] + d["Weapons"]
+    d["BoughtTalents"] = list(d["BoughtTalents"]) + [
+        {"key": "ICHBLADECOTR", "data": {"Name": "Ichor Blade"}, "count": 1},
+        {"key": "ICHORBI", "data": {"Name": "Ichor Blade (Improved)"}, "count": 1}]
+    c = bc.normalize(d, "sample")
+    vk = next(w for w in c["weapons"] if w["name"] == "Vibroknife")
+    assert vk["crit"] == "1", vk
+    assert vk["damage"] == str(2 + 1 + 2), vk       # Brawn 2 + DamageAdd 1 + Improved 2
+    for q in ("Cortosis", "Sunder", "Defensive 1", "Pierce 2"):
+        assert any(x.startswith(q) for x in vk["qualities"]), (q, vk["qualities"])
+    assert any("Ichor Blade" in x for x in vk["qualities"])
+    blaster = next(w for w in c["weapons"] if w["name"] == "Blaster Pistol")
+    assert not any("Ichor" in x for x in blaster["qualities"])          # only the chosen weapon changes
+    d2 = json.loads(json.dumps(SAMPLE))                                  # no talent -> no change
+    c2 = bc.normalize(d2, "sample")
+    assert not any("Ichor" in q for w in c2["weapons"] for q in w["qualities"])
+
+test_ichor_blade_applies_to_the_vibroknife()
+print("ichor test ok")

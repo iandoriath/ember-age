@@ -109,6 +109,48 @@ def normalize(d: dict, stem: str = "") -> dict:
                         "range": w.get("Range", "—"), "qualities": [quality_name(q, used_q) for q in as_list(w.get("Qualities")) if isinstance(q, dict)],
                         "notes": (w.get("BaseMods") or {}).get("MiscDesc", "") if isinstance(w.get("BaseMods"), dict) else "",
                         "equipped": bool(w.get("Equipped")) or w.get("Key") == "UNARMED"})
+    # Ichor Blade (the Nightsister tree): the app records the talent but never applies it to a weapon
+    # unless one is flagged, so a bought Ichor Blade otherwise vanishes from the printed sheet. Apply it
+    # to the flagged weapon ("Ichored"), else the first vibro-named Melee/Brawl weapon, else the first
+    # Melee/Brawl weapon that is not Unarmed. Basic: Cortosis, Pierce 2, crit -1 (min 1); Improved adds
+    # Sunder, Defensive 1, +2 damage. The "Ichor Blade" tag in Qualities says why the numbers moved.
+    bought_keys = {t.get("key") for t in as_list(d.get("BoughtTalents")) if isinstance(t, dict)}
+    if "ICHBLADECOTR" in bought_keys and weapons:
+        raws = as_list(d.get("Weapons"))
+        cands = [i for i, w in enumerate(raws) if isinstance(w, dict)
+                 and SKILL_BY_KEY.get(w.get("SkillKey", ""), "") in ("Melee", "Brawl") and w.get("Key") != "UNARMED"]
+        tgt = next((i for i in cands if (raws[i].get("Ichored") or "").__str__().lower() == "true"), None)
+        if tgt is None:
+            tgt = next((i for i in cands if "vibro" in (raws[i].get("Name") or "").lower()), cands[0] if cands else None)
+        if tgt is not None:
+            w = weapons[tgt]
+            quals = [q for q in w["qualities"] if q]
+            def has(prefix):
+                return any(q.lower().startswith(prefix.lower()) for q in quals)
+            pieces = []
+            for i, q in enumerate(quals):
+                m = re.match(r"(?i)pierce\s*(\d+)", q)
+                if m and int(m.group(1)) < 2:
+                    quals[i] = "Pierce 2"
+            if not has("Pierce"):
+                quals.append("Pierce 2")
+            if not has("Cortosis"):
+                quals.append("Cortosis")
+            try:
+                w["crit"] = str(max(1, int(w["crit"]) - 1))
+            except ValueError:
+                pass
+            if "ICHORBI" in bought_keys:
+                if not has("Sunder"):
+                    quals.append("Sunder")
+                if not has("Defensive"):
+                    quals.append("Defensive 1")
+                try:
+                    w["damage"] = str(int(w["damage"]) + 2)
+                except ValueError:
+                    pass
+            quals.append("Ichor Blade" + (" (Improved)" if "ICHORBI" in bought_keys else ""))
+            w["qualities"] = quals
     armor = [{"name": a.get("Name", "?"), "soak": num(a.get("Soak")), "defense": num(a.get("Defense")), "encumbrance": num(a.get("Encumbrance")),
               "equipped": bool(a.get("Equipped"))} for a in as_list(d.get("Armor"))]
     gear = []
