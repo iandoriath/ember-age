@@ -346,6 +346,91 @@ def sheet_html(c: dict) -> str:
 """
 
 
+# Weapon-quality glossary (paraphrased FFG rules, GM-facing plain terms). Keyed by the quality's
+# base word; a ranked quality ("Pierce 2") looks up "Pierce" and the renderer supplies the rank.
+QUALITY_GLOSS = {
+    "Pierce": ("ranked", "Ignore {n} point{s} of the target's soak before this weapon's damage is subtracted. A knife that reaches past armour."),
+    "Vicious": ("ranked", "Whenever you deal a Critical Injury with this weapon, add +{tens} to the d100 roll — the wounds it leaves run deep."),
+    "Defensive": ("ranked", "While you wield it, add +{n} melee defence: every close attack against you is upgraded {n} time{s}, so a good die can turn into a Threat or Despair on the attacker."),
+    "Cortosis": ("flag", "The blade is immune to Sunder and does not break, and it can parry a lightsaber without being cut through — the one thing an ordinary vibro-edge can never do. This is the ichor's gift."),
+    "Sunder": ("flag", "On a hit, spend \u2666\u2666 (Advantage) to damage the target's weapon or gear one step; keep spending to break it outright. She unmakes what the enemy is holding."),
+    "Stun Setting": ("flag", "May be set to deal stun damage (strain) instead of wounds, at no penalty."),
+    "Knockdown": ("flag", "On a hit, spend \u2666\u2666 to knock the target prone."),
+    "Vicious 1": ("flag", "+10 to any Critical Injury this weapon inflicts."),
+}
+
+
+def quality_rows(qualities: list) -> str:
+    rows = []
+    for q in qualities:
+        if q.startswith("Ichor Blade"):
+            continue   # the source line, rendered in the header, not a rule of its own
+        m = re.match(r"(.*?)\s*(\d+)?$", q)
+        base, n = (m.group(1).strip(), m.group(2)) if m else (q, None)
+        kind, text = QUALITY_GLOSS.get(base, QUALITY_GLOSS.get(q, ("flag", "")))
+        if kind == "ranked" and n:
+            n = int(n)
+            text = text.format(n=n, s="" if n == 1 else "s", tens=n * 10)
+        rows.append(f'<div class="q"><div class="qn">{e(q)}</div><div class="qd">{fmt(text) if text else "&mdash;"}</div></div>')
+    return "".join(rows)
+
+
+def weapon_card_html(c: dict, w: dict) -> str:
+    ichor = next((q for q in w["qualities"] if q.startswith("Ichor Blade")), "")
+    improved = "Improved" in ichor
+    owner = c["name"]
+    return f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{e(w["name"])} — item card</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=EB+Garamond:ital@0;1&display=swap">
+<style>
+  @page {{ size: Letter; margin: 14mm; }}
+  :root{{--bg:#0a0510;--ink:#efe6d6;--dim:#b39a8f;--ichor:#c65f4a;--glow:#e0836b;--edge:#5a3a34;--gold:#ffb454;--head:"Rajdhani",system-ui,sans-serif;--body:"EB Garamond",Georgia,serif}}
+  *{{box-sizing:border-box}} html,body{{margin:0}}
+  body{{background:radial-gradient(120% 90% at 50% -10%,#1c0d16,#0a0510 60%);color:var(--ink);font:16px/1.5 var(--body);padding:2rem 1rem 3rem;display:flex;justify-content:center;min-height:100vh}}
+  .card{{width:100%;max-width:30rem;border:1px solid var(--edge);border-radius:.6rem;background:linear-gradient(180deg,#160b12,#0c0710);box-shadow:0 0 0 1px #1c0d16,0 18px 50px rgba(0,0,0,.6),inset 0 1px 0 rgba(224,131,107,.14);overflow:hidden}}
+  .top{{padding:1.1rem 1.2rem .8rem;border-bottom:1px solid var(--edge);background:linear-gradient(180deg,rgba(198,95,74,.14),transparent)}}
+  .kick{{font:700 .66rem/1 var(--head);letter-spacing:.34em;text-transform:uppercase;color:var(--ichor);margin:0 0 .4rem}}
+  h1{{font:700 1.5rem/1.05 var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin:0}}
+  .src{{margin:.35rem 0 0;font-style:italic;color:var(--glow);font-size:.95rem}}
+  .strip{{display:flex;gap:1px;background:var(--edge);border-bottom:1px solid var(--edge)}}
+  .strip div{{flex:1;background:#0c0710;text-align:center;padding:.55rem .3rem}}
+  .strip b{{display:block;font:700 1.25rem/1 var(--head);color:var(--gold)}}
+  .strip span{{font:700 .6rem/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}}
+  .body{{padding:.4rem 1.2rem 1.1rem}}
+  .q{{padding:.7rem 0;border-bottom:1px solid rgba(90,58,52,.5)}}
+  .q:last-child{{border-bottom:0}}
+  .qn{{font:700 .82rem/1.2 var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--glow)}}
+  .qd{{margin:.2rem 0 0;color:var(--ink)}}
+  .foot{{padding:.8rem 1.2rem 1rem;border-top:1px solid var(--edge);color:var(--dim);font-size:.86rem;font-style:italic}}
+  .foot b{{color:var(--glow);font-style:normal}}
+  .sy.good{{color:#8fbf7a;font-style:normal;font-weight:700}} .sy.bad{{color:var(--ichor);font-style:normal;font-weight:700}}
+  @media print{{body{{background:#fff;color:#1a1015;padding:0}}.card{{box-shadow:none;border-color:#b9948a}}.top{{background:none}}.strip b{{color:#9a5a1e}}.qn,.src,.kick{{color:#a23c2c}}}}
+</style></head>
+<body>
+<div class="card">
+  <div class="top">
+    <p class="kick">Ichor-bound relic &middot; {e(owner)}</p>
+    <h1>{e(w["name"])}</h1>
+    <p class="src">A plain {e(w["name"].lower())}, bound with the ichor{" and deepened by the second binding" if improved else ""} &mdash; it holds an edge nothing has any right to.</p>
+  </div>
+  <div class="strip">
+    <div><b>{e(w["damage"])}</b><span>Damage</span></div>
+    <div><b>{e(w["crit"])}</b><span>Crit</span></div>
+    <div><b>{e(w["range"])}</b><span>Range</span></div>
+    <div><b>{e(w["skill"])}</b><span>Skill</span></div>
+  </div>
+  <div class="body">
+    {quality_rows(w["qualities"])}
+  </div>
+  <div class="foot">
+    <b>Crit {e(w["crit"])}</b> means a hit that spends {e(w["crit"])} Advantage (\u2666 for each) rolls a Critical Injury &mdash; the lowest a weapon can go. Damage {e(w["damage"])} already includes the wielder's Brawn. The ichor holds while the blade does; if it is ever lost, the binding can be given to a new one.
+  </div>
+</div>
+</body></html>
+"""
+
+
 def index_html(crew: list) -> str:
     items = "".join(f'<li><a class="card" href="{e(c["slug"])}.html">{e(c["name"])}<small>{e(c["species"])} · {e(c["career"])}{(" — " + e(" / ".join(s for s in c["specializations"] if s))) if any(c["specializations"]) else ""}</small></a></li>' for c in crew)
     return f"""<!doctype html>
@@ -375,10 +460,16 @@ def main() -> int:
     crew.sort(key=lambda c: c["name"])
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(crew, ensure_ascii=False, indent=1), encoding="utf-8")
+    cards = 0
     for c in crew:
         (OUT_DIR / f"{c['slug']}.html").write_text(sheet_html(c), encoding="utf-8")
+        for w in c["weapons"]:
+            if any(q.startswith("Ichor Blade") for q in w["qualities"]):
+                wslug = slugify(w["name"])
+                (OUT_DIR / f"{c['slug']}-{wslug}-card.html").write_text(weapon_card_html(c, w), encoding="utf-8")
+                cards += 1
     (OUT_DIR / "index.html").write_text(index_html(crew), encoding="utf-8")
-    print(f"{len(crew)} character(s): " + ", ".join(c["name"] for c in crew) + f" -> {OUT_JSON.relative_to(ROOT)}, {OUT_DIR.relative_to(ROOT)}/")
+    print(f"{len(crew)} character(s): " + ", ".join(c["name"] for c in crew) + f" ({cards} item card{'s' if cards != 1 else ''}) -> {OUT_JSON.relative_to(ROOT)}, {OUT_DIR.relative_to(ROOT)}/")
     return 0
 
 

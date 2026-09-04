@@ -125,3 +125,26 @@ def test_ichor_blade_already_applied_by_the_app_is_not_doubled():
 
 test_ichor_blade_already_applied_by_the_app_is_not_doubled()
 print("pre-applied test ok")
+
+
+def test_weapon_card_explains_each_quality():
+    d = json.loads(json.dumps(SAMPLE))
+    d["Weapons"] = [{"Key": "VIBKN", "Name": "Vibroknife", "SkillKey": "MELEE", "DamageAdd": 3, "Crit": 1, "Range": "Engaged",
+                     "Ichored": True, "TalentMods": {"ICBuffs": [{"kind": "damage", "amt": 2}]},
+                     "Qualities": [{"Key": "PIERCE", "Count": 2}, {"Key": "VICIOUS", "Count": "1"}, {"Key": "CORTOSIS", "Count": 0},
+                                    {"Key": "Defensive", "Count": 1}, {"Key": "Sunder", "Count": 0}]}] + d["Weapons"]
+    d["BoughtTalents"] = list(d["BoughtTalents"]) + [
+        {"key": "ICHBLADECOTR", "data": {}, "count": 1}, {"key": "ICHORBI", "data": {}, "count": 1}]
+    c = bc.normalize(d, "sample")
+    vk = next(w for w in c["weapons"] if w["name"] == "Vibroknife")
+    card = bc.weapon_card_html(c, vk)
+    assert "Vibroknife".upper() in card.upper() and vk["damage"] in card
+    for label in ("Pierce 2", "Vicious 1", "Cortosis", "Defensive 1", "Sunder"):     # each quality named as a row
+        assert f'class="qn">{label}<' in card, label
+    assert "soak" in card.lower() and "lightsaber" in card.lower()                    # the explanations are present
+    assert "Ichor Blade" not in card.split('class="body"')[1]                         # the tag is the header source, not a rule row
+    plain = next(w for w in bc.normalize(json.loads(json.dumps(SAMPLE)), "s")["weapons"] if w["name"] == "Blaster Pistol")
+    assert not any(q.startswith("Ichor Blade") for q in plain["qualities"])           # non-ichor weapons get no card
+
+test_weapon_card_explains_each_quality()
+print("item-card test ok")
