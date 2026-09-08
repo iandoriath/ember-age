@@ -21,7 +21,9 @@
 | The return, and the way out | The Out | ~25 min |
 | Flags for session two | The Handoff | ~5 min |
 
-**Cut for time, never for weight.** If the clock runs hot: compress the fuel problem to one roll, reach the page through whichever vector is nearest, and let the *Steadfast* arrive early to squeeze Scene 5. Never cut the bedside, the moment the paper asks who lit it, or the closing image — the session is remembered by those three, in that order.
+**Why nobody found it in five years.** Vesta-9 sits in the eye of **the Shoal** — a dense field of tumbling stone around the beacon's old anchorage that the Republic's collision carrier once kept a clear sphere in. Ninety years without the carrier and there is no plotted lane, only rock moving at speed, and every ship that went looking for the prize hit the stone before it found the station: turned back holed, or not seen again. The spacers' verdict is that the station is *gone*. It is not gone; it is guarded by gravel. **Osk's page is the line through** — the one approach she flew and wrote down — which is why a rutter page is worth 3,000 scrip to the guild and a lien to Skell, and why the young woman with the kind voice wanted it (GM: [Keepers of the Flame](../npcs/keepers.md)). The approach is a Piloting set piece at the end of Scene 4; without the page it is a Hard leg through the Mill, with it an Average one, and a crew that takes too much stone is *blown off* like everyone before them.
+
+**Cut for time, never for weight.** If the clock runs hot: compress the fuel problem to one roll, reach the page through whichever vector is nearest, fly the Shoal as one leg (the Mill), and let the *Steadfast* arrive early to squeeze Scene 5. Never cut the bedside, the moment the paper asks who lit it, or the closing image — the session is remembered by those three, in that order.
 
 **The numbers, on one line** *(all sector scrip)*: lease arrears **450** + lift tax **60** · fuel load **150** (off-book half-load 90) · Osk's bought debt, in Skell's pocket **250** · rutter copy **80** · witness fee **1,200** · the famous posted prize **12,000** · witness charter **250**/lighting.
 
@@ -44,6 +46,26 @@
 
 !!! tip "Table talk before the dice"
     If session zero did not already do it, say the era's thesis line aloud — *nobody broke the galaxy; everyone just stopped holding it up* — and remind the table that in this era the Force is not a skill, it is an event. Both lines pay for themselves later.
+
+## Cold open — The light in the Shoal
+
+**Read this aloud before Scene 1, with nobody at the table yet on stage.** It is a camera on the station, alone, minutes before the signal reaches the Drift. Nothing here shows a hand, a hull or a face; the warm, empty cradle is Scene 5's "whoever lit it — gone", shown and never explained. Vhail is deliberately not in it (she is kneeling at the cold core when the light comes on — Scene 5's occupancy table; keep her for the players to find).
+
+> Three light-hours off the guild's plot, in a stretch of dark no chart has drawn in ninety years, a Republic beacon station hangs in the eye of a storm of stone.
+>
+> The Shoal turns around it, slow as weather: rock the size of houses, rock the size of towns, tumbling end over end in a sphere the station's old carrier once kept clear and no longer does. For five years every ship that came looking for this place met the stone first. Some turned back holed. Some are still in there.
+>
+> The station is the colour of the dark. Frost has grown on the docking ring for a lifetime, thick as bark. The beacon mast runs out from the hull like a spine, a thousand meters of lattice, and every window is black.
+>
+> Inside, a failsafe releases. Then another. Then the next, in the order the builders wrote a century and a half ago — no panel forced, no alarm, the station simply remembering itself. Somewhere in the dark a capacitor stack takes a charge for the first time since the war, and the sound of it, if there were anyone to hear, would be a cathedral organ finding one note.
+>
+> Light comes up the ring. One cradle, two, the whole circle, running lights waking in sequence like a town at dusk. It climbs the mast from the root, section by section, until the lattice burns end to end against the black like a festival nobody came to, and the nearest rocks catch it and throw it back, and for the first time in ninety years the Shoal has a light in the middle of it. On the ring, one docking cradle's clamps stand open and warm, holding nothing.
+>
+> And then, on every band the old Republic ever used, the station says its own name.
+>
+> *Vesta-Nine.*
+>
+> It says it again. It will keep saying it. The word goes out through the stone and across the dark at the speed of light, toward a boomtown on the back of a fuel station where nobody has heard it in five years — and it will arrive in a few minutes.
 
 ## Scene 1 — Grell's Office
 
@@ -133,7 +155,7 @@ One more buyer, for texture: the chart-broker on the Field mentions a rival bidd
 
 When a page lands — hers or a copy — hand over the card and log it (copy only: log the card with the claim blank, and let them notice the blank):
 
-@@action:fragment {"name":"Grandmother Osk's rutter, page 40","form":"rutter","tag":"Civic","question":"Who lit Vesta-9?","claim":"somebody has been flying the dead Run for years, and the prizes follow them","holder":"crew","status":"trusted"}@@
+@@action:fragment {"name":"Grandmother Osk's rutter, page 40","form":"rutter","tag":"Civic","question":"Who lit Vesta-9?","claim":"somebody has been flying the dead Run for years, and the prizes follow them — and this page is the only known line through the Shoal to Vesta-9","holder":"crew","status":"trusted"}@@
 
 !!! tip "Teach the subsystem out loud"
     Say the rules as you hand the card: it has a **form**, a **tag** (Civic), and it bears on a named **Question** — *Who lit Vesta-9?* It boosts related Knowledge checks; three fragments on one Question unlock a [Reconstruction](../../mechanics/lore-fragments.md). Open the [fragment tracker](../tools/fragment-tracker.md) where the players can see it. Fragments from different tags always disagree on one load-bearing fact — write Osk's claim down now so the contradiction is loaded before anyone notices.
@@ -164,13 +186,28 @@ When a page lands — hers or a copy — hand over the card and log it (copy onl
 
 **Neck-and-neck.** Mid-run, the lane forces a recalculation at a collapsed drift buoy, and the *Larksong* reverts alongside. The crew's fresh solution shows what the older copies miss: the buoy's mass shadow has drifted into the third leg, dead across the *Larksong*'s plotted line. The choice: **comm the warning** — lose the lead, arrive together or second, and cement a friendship the campaign will spend for years — or **stay silent** — arrive first while the @@npc:Larksong crew@@ limps in behind a scarred hull, and start the rivalry cold. Do not soften it. And remember who Marrow is: the wager board's favorite, the crew that claimed the last prize the guild ever paid. Nobodies who beat the champion by warning her are a story the port tells for a season. Nobodies who beat her by letting her hull get scarred are a different story, and the port tells that one too.
 
+**The Shoal — the last leg.** The jump reverts at the edge of the field; the station is three light-hours further in, through the stone. This is the crew's pilot's scene, with a beat for everyone else. Run it as **terrain with intent** (rock and gravity, not wreckage — the Reef at Sanrafsix has a landlord; the Shoal has only speed and mass). Three legs, one round each, the ship's own strain and hull as the clock. **Osk's page is the line:** if the navigator has it open, the Mill is **Average** instead of Hard, because she flew it and wrote down where the slow gap is.
+
+| Leg | Check | Success | Failure | Threat / Despair |
+|---|---|---|---|---|
+| **The Gravel** — dust and pebble hail at the field's skin; sensors go white | **Average Piloting (Space)**, one setback (clutter) | Through, and the field's rhythm read | 2 system strain and 1 hull trauma (sand-blasted) | *Threat:* sensors fouled, one setback on the next leg. *Despair:* a tumbler nobody saw — a vehicle Critical Hit, and the ship is **blown off** (below). |
+| **The Mill** — the big stone, house-sized and town-sized, grinding past each other with a slow gap between | **Hard Piloting (Space)** — **Average with Osk's page** | Through the gap; the crew has seen what the Shoal does to everyone else | 3 hull trauma (a glancing kiss of rock) | *Threat:* the gap closes behind them — one setback for whoever follows on this line (the *Larksong*, the swarm), or for the crew's own way out later. *Despair:* **pinned** — shoved against a tumbler; **Hard Mechanics** or an EVA **Athletics** to free the hull, a leg lost. |
+| **The Eye** — the clear sphere, no longer clear: stone drifting in at walking pace, the lit station ahead | **Average Piloting (Space)** at dead slow, picking a cradle | Docked, and the whole Shoal watched them do it | A rock scrapes the ring: 2 hull trauma, and the cradle they wanted is fouled — take the next | *Threat:* a drifting rock parks across the way they came in; count it when someone wants to leave in a hurry. *Despair:* the station's ring takes the hit, not the ship — the beacon's own lights flicker for a round, seen by the whole swarm. |
+
+**Beats for the rest of the crew** (one each, before or during the pilot's roll): the **navigator** — **Average Astrogation**, plotting the tumble from the reversion fix (with Osk's page, no roll: the page *is* the plot) — removes the Gravel's setback; the **lookout** — **Average Perception** at the Mill, calling the tumblers a heartbeat early — a boost to the Mill; the **engineer** — **Average Mechanics**, shoring the hull or clearing 2 system strain between legs; the **gunner** — **Average Gunnery** at the Gravel, burning the small stuff off the line — removes a setback, but a **Threat** on that shot makes debris and hands the setback to the Mill instead; the **captain** — **Average Leadership**, calling the legs — recover 2 strain across the crew.
+
+**Blown off.** A ship whose hull trauma passes half its threshold inside the Shoal, or that takes the Gravel's Despair, is *blown off* the way five years of prize-hunters were: it must break out to the field's edge and re-enter — the leg is lost, the ship spends a round outside, and the crew's arrival slips one row down the ladder below. Say once, on the band, what it looks like from inside: another hull, somebody else's, turning back with a hole in it. **Nobody dies in the Shoal who flies it slow** — the stone punishes speed, and everyone who raced the prize here raced.
+
+**The swarm in the stone.** The *Larksong* has the best pilot on the Drift and gets through, scored. The *Overdue* has Osk's line (his lien is the chart) and gets through clean, which is why he is on the ring first in the default. The swarm proper loses half its number to the Gravel and the Mill — a Threat spend anywhere here is a hull on the band calling that it is turning back — and the ones that make the Eye come in slow and shaken, which is the mood Scene 5 opens on.
+
 **Outcomes ladder:**
 
 | The roll | What happens |
 |---|---|
 | Success | Clean jump — first of the swarm proper. The station is not empty even so: the warden was here before the light, and if Skell ran his default race (paper first — see *Where is the Overdue?* below), the *Overdue* is already on the ring, mid-recital. Perhaps an hour of quiet before the rest of the sky fills. |
 | Success with 3+ Threat, or failure | Slow jump: drift-silt reversions, two recalculations. They arrive to find the @@npc:NAS Steadfast, Naboo-pattern Patrol Sloop@@ already on station, interdiction broadcast running. |
-| Despair (regardless of success) | Misjump scare: reversion inside the shoal short of the station. 3 system strain, limping the last leg — the crew arrives *last*, standoff already assembled. |
+| Despair (regardless of success) | Misjump scare: reversion *inside* the Shoal, short of the edge. 3 system strain, and they fly the Mill first with no Gravel to read the rhythm on — the crew arrives *last*, standoff already assembled. |
+| Blown off in the Shoal | A hull past half, or the Gravel's Despair: out to the edge and back in, one row down from wherever the jump put them. |
 
 !!! danger "The Overdue is ahead of them"
     Default: Skell left the ward when the crew did; the *Overdue* was pre-flighted on the infirmary pad while the crew's split load walked over, so he is one reversion ahead, burning for the station with the debt-paper in the strongbox — his plan was always paper, and the beacon broadcasts its own address on every band. **But if the bedside drew blood**, he waits at the last reversion point instead: @@npc:The Overdue, debt-bought Ghtroc 720@@ drops onto an intercept vector — Skell, bloodied or humiliated at the ward, rounding the account to even before the paperwork. If the crew carries the page, he wants it; if not, crippling the competition before certification pays almost as well; and if there is blood between them from the ward, revenge rounds it to even. Run a real fight, two or three rounds — the turtle against their hare: the *Overdue* is slower and much harder (Armor 5, twenty-eight hull), its turret walks fire on Skell's own Gunnery, and @@npc:Skell's crew@@ shoot to kill, not to warn. The crew's outs are flying (the hulls match speeds; their pilot is better), gunnery of their own, or running the last leg — which means arriving at the station with the *Overdue* on their tail, into whatever the outcomes ladder put there: fleeing under the *Steadfast*'s guns is safety with a price tag (an Admiralty log entry with their name in it, and Skell peeling away, smiling, guns suddenly cold). Skell breaks off the moment the math goes wrong — he wants profit, not a grave. Never the *Larksong* (the rivalry stays clean), never the *Steadfast* (that is an arrest, not a fight — Scene 5). If the bedside never happened, there is no ambush at all — the *Overdue* is simply ahead, and the lane is quiet.
@@ -187,7 +224,7 @@ When a page lands — hers or a copy — hand over the card and log it (copy onl
 
 ## Scene 5 — The Beacon
 
-> The station hangs where no chart promised — three light-hours off the guild's plot, exactly where Osk's page says — and it is lit: running lights, docking ring, the long lattice of the beacon mast all burning like a festival. Under everything, on every band, the carrier hums: one clear note repeating its name to a galaxy that stopped listening. Nothing about it looks sixty years dead. Something about it looks *swept*. And the swept places look very, very recent.
+> The station hangs where no chart promised — three light-hours off the guild's plot, exactly where Osk's page says, in the eye of the Shoal with the stone turning slow around it — and it is lit: running lights, docking ring, the long lattice of the beacon mast all burning like a festival. Under everything, on every band, the carrier hums: one clear note repeating its name to a galaxy that stopped listening. Nothing about it looks sixty years dead. Something about it looks *swept*. And the swept places look very, very recent.
 
 **Occupancy timeline** — who is where, keyed to the Scene 4 ladder:
 
@@ -197,7 +234,7 @@ When a page lands — hers or a copy — hand over the card and log it (copy onl
 | Before the crew *(default — no blood at the bedside)* | @@npc:The Overdue, debt-bought Ghtroc 720@@, already clamped to the ring — Skell on the beacon's public band, filing a first-lighting claim flat as a recital: name, hull, debt-paper, lien. Half the early swarm believes *he* lit it, and keeps believing it until Nerra checks the codes. *(If the lane fight happened, he is not here yet — key this row to the* Where is the Overdue? *table in Scene 4.)* |
 | Within the hour | Whoever lit it — gone. One docking cradle on the ring is still warm to the touch, and nothing is in it. |
 | The crew's arrival | Per the outcomes ladder — first, second, or last. |
-| +40 minutes (or already there) | The @@npc:NAS Steadfast, Naboo-pattern Patrol Sloop@@ arrives **out of the dark side of the lane** — from up the dead Run, where nothing is supposed to live — off a fleet tender no chart lists, runs out its guns, and broadcasts: all vessels stand to for inspection under the Corridor Security Act, a law of a navy nobody in the swarm has ever heard of. This is the galaxy's first sight of the **Naboo Admiralty**. Within the hour, half the swarm settles on the comfortable answer: *the Admiralty lit it — they came out of the dark, navies have codes.* Let that answer harden; the crew's evidence will fight it. |
+| +40 minutes (or already there) | The @@npc:NAS Steadfast, Naboo-pattern Patrol Sloop@@ arrives **out of the dark side of the lane** — from up the dead Run, where nothing is supposed to live — off a fleet tender no chart lists, runs out its guns, and broadcasts: all vessels stand to for inspection under the Corridor Security Act, a law of a navy nobody in the swarm has ever heard of. This is the galaxy's first sight of the **Naboo Admiralty**. Within the hour, half the swarm settles on the comfortable answer: *the Admiralty lit it — they came out of the dark, navies have codes.* Let that answer harden; the crew's evidence will fight it. It comes through the Shoal at a picket's pace, guns run out, taking the stone as slowly as it likes — and parks in the one gap it came in by. Nothing leaves the Eye now without passing the sloop. |
 | +90 minutes | @@npc:Chartmistress Bel Nerra@@'s guild packet arrives trailing the swarm from the Drift. She requests docking "as certifying observer," ink already wet. |
 | Throughout | The arrival swarm: a dozen hulls from Okrent's Drift — and, later, in the certification crowd, a *third* clerk in guild grey who writes nothing down and leaves before the fee is read (The Out). Recallable texture, nothing more tonight. |
 

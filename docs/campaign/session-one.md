@@ -12,11 +12,11 @@ Get off-world first: the impound, the fuel, and the *Larksong* — the crew that
 
 ## Scene 2 — The Race
 
-Astrogation on a decayed route. Introduce [fragments](../mechanics/lore-fragments.md) here, when one page of somebody's grandmother's rutter is the difference between arrival and drift — and when the grandmother herself, dying in the depot infirmary, has something to say about who has been flying that lane.
+Astrogation on a decayed route, and then the Shoal: Vesta-9 sits in the eye of a dense asteroid field that turned back or holed every ship that went looking these five years, and the last leg is flown through the stone. Introduce [fragments](../mechanics/lore-fragments.md) here, when one page of somebody's grandmother's rutter is the difference between arrival and drift — and when the grandmother herself, dying in the depot infirmary, has something to say about who has been flying that lane.
 
 ## Scene 3 — The Beacon
 
-Vesta-9 station, three light-hours from where the charts put it, lit and humming — and occupied.
+Vesta-9 station, three light-hours from where the charts put it and deep inside the Shoal, lit and humming — and occupied.
 
 - **Keeper Adressa Vhail** of the Vigil kneels at the beacon core, reading the war dead's names from a slate; she was here before the light came on, and will not say how. Spacers on the band shrug — the grey veils turn up wherever the advance opens a door; grave cult, mostly harmless, don't touch what they tape off.
 - The battered Ghtroc ***Overdue*** — **Captain Ferro Skell**, the rival crew from the Drift — turns up with a first-lighting claim on the public band: the chart that found this station, he says, is collateral on a debt he bought that morning.
