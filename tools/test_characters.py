@@ -194,3 +194,12 @@ def test_nostun_base_mod_strips_the_merged_stun_setting():
 
 test_nostun_base_mod_strips_the_merged_stun_setting()
 print("nostun test ok")
+
+
+def test_md_lite_renders_pipe_tables():
+    h = bc.md_lite("# T\n\n| A | B |\n|---|---|\n| one | **two** |\n\nafter")
+    assert "<table><tr><th>A</th><th>B</th></tr><tr><td>one</td><td><b>two</b></td></tr></table>" in h, h
+    assert "<p>after</p>" in h and "<h3>T</h3>" in h
+
+test_md_lite_renders_pipe_tables()
+print("table test ok")

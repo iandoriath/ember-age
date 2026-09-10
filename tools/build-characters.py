@@ -99,8 +99,19 @@ def md_lite(text: str) -> str:
             out.append("<ul>" + "".join(f"<li>{inline(x)}</li>" for x in ul) + "</ul>"); ul = []
         if buf:
             out.append("<p>" + inline(" ".join(buf)) + "</p>"); buf = []
+    rows = []
+    def flush_table():
+        nonlocal rows
+        if rows:
+            head, body = rows[0], [r for r in rows[1:] if not all(set(c) <= set("-: ") for c in r)]
+            out.append("<table><tr>" + "".join(f"<th>{inline(c)}</th>" for c in head) + "</tr>"
+                       + "".join("<tr>" + "".join(f"<td>{inline(c)}</td>" for c in r) + "</tr>" for r in body) + "</table>"); rows = []
     for line in text.splitlines():
         s = line.strip()
+        if s.startswith("|"):
+            if buf or ul: flush()
+            rows.append([c.strip() for c in s.strip("|").split("|")]); continue
+        if rows: flush_table()
         if not s:
             flush(); continue
         if s.startswith("#"):
@@ -110,7 +121,7 @@ def md_lite(text: str) -> str:
             ul.append(s[2:]); continue
         if ul: flush()
         buf.append(s)
-    flush()
+    flush(); flush_table()
     return "".join(out)
 
 
@@ -321,6 +332,7 @@ def sheet_html(c: dict) -> str:
   .meta{{display:flex;gap:10pt;flex-wrap:wrap;font-size:8pt;margin:0 0 4pt}} .meta b{{color:var(--ember)}}
   .sec ul{{margin-left:9pt}} .sec li{{margin:1pt 0;font-size:8pt}}
   .sec.notes p{{font-size:8pt;margin:2pt 0}} .sec.notes h3{{font-size:8.6pt;margin:4pt 0 1pt;color:var(--ember)}}
+  .sec.notes table{{border-collapse:collapse;width:100%;font-size:7.4pt;margin:3pt 0}} .sec.notes th,.sec.notes td{{border:1px solid var(--line);padding:2pt 3pt;vertical-align:top;text-align:left}} .sec.notes th{{background:var(--wash);color:var(--ember)}}
 </style>
 </head>
 <body>
