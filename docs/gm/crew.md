@@ -27,3 +27,13 @@ Two hundred years as a training droid at the Coruscant Temple (c. 1110–910 BBY
 
 
 **Hooks.** *Kerra Holt* is the one that matters: the crew climbs Tarrah Hill in module 03 and the name on the stone is a name Kinch taught to block — a player's line for the silent-keeper scene ("I taught her that guard"), which makes the Hill his as much as the pilot's, and the Vigil's warden hears a Temple droid claim a Knight Errant. *Skere Kaan* is the second: the boy who "would like the overhand back" is the man in the holocron (Keepers of the Flame), and Kinch is a Jedi-tag fragment source about him that no Census can count and no Influence can touch. *Hoth recruiting Force-sensitive children* is the campaign's keys-or-children argument ninety years early, remembered by the droid who sparred them. *Fae Coven's manual* makes him a walking copy of *The Jedi Path* — the Temple's doctrine on the Run, in the body of something the Vigil would tape off and the Inheritors would buy.
+
+### Kinch — rulings and export housekeeping (GM)
+
+The build's second pass (Kinch2.json, 2026-09-10) took the multiclass-droid route to a Crit 1 punch: Martial Artist added for Iron Body ×4, paid for with Brawn 5 → 2 and three bought Brawl ranks (pool unchanged at 2Y+3G; damage down to fists 2 / blades 3). Roughly 175 of 180 XP.
+
+- **Brawl rank 5 at character creation breaks the rank-2 creation cap.** Two ranks are free (career + spec); the three bought ranks are 60 XP. Ian's call: waive the cap, or send the 60 XP back to Brawn (2 → 3 is 30) and toughness.
+- **Free career ranks:** the app allowed six; a droid Warrior gets 3 + 2 = five. One rank over.
+- **Obligation:** the export's 10 is the +10 options alone (+5 XP, +1,000 credits, both spent); with the four-PC base of 10 his line should carry **20**. The Contract's name and text and the Purpose motivation were lost in the re-export and restored by hand in hyperdrive/Kinch.json; check the next export he sends.
+- **The training suit** came through unequipped (soak 3); equipped by hand in the export at Ian's instruction (soak 5). Same caveat for his next export.
+- **Force Rating:** the app writes the Warrior career's FR 1 onto a droid; the converter zeroes it.

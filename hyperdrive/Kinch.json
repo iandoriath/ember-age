@@ -1,1 +1,1440 @@
-{"Background":{"Text":"Kinch spent 200 years as a jedi training droid on Coruscant, always knowing there had to\nbe a better target for his violence than the nice children he was tasked with fighting. One\nday he heard a master say, \"sometimes, one must take destiny into their own hands\" and\nhe had an epiphany - later that night, Kinch cornered the master alone and unarmed, and\nleft him covered in Discouraging Wounds before leaping out of a window into a speeder\nwhich was passing below by \"chance\". Ever since that night, Kinch has seized fate by the\nthroat in pursuit of proper opponents.","Culture":{},"Force":{},"Adventure":{},"Indexes":{"Culture":"","Force":"","Adventure":""}},"Obligations":[{"Name":"","Descpription":"","Toggle":true,"Obligation":"","Starting":"","Text":"","XP5":true,"XP10":false,"C1":true,"C2":false,"Total":10}],"Duties":[{"Name":"","Descpription":"","Toggle":false,"Duty":"","Starting":"","Text":"","XP5":false,"XP10":false,"C1":false,"C2":false,"Total":0}],"Morality":{"Toggle":false,"XPC":false,"XP10":false,"C2":false,"StartLight":false,"StartDark":false,"Score":50,"StrengthWeakness":[{"Strength":{"Text":"","Key":null},"Weakness":{"Text":"","Key":null}}]},"Species":{"Key":"DROID","Name":"Droid","Description":"","imageUrl":"https://i.imgur.com/BLE8LI6.png","thumbnailUrl":"https://i.imgur.com/g1AeESl.png","StartingChars":{"Brawn":"1","Agility":"1","Intellect":"1","Cunning":"1","Willpower":"1","Presence":"1"},"StartingAttrs":{"WoundThreshold":"10","StrainThreshold":"10","Experience":"175"},"TalentModifiers":{"Key":"ENDUR","RankAdd":"1"},"OptionChoices":[{"Key":"DROIDAB","Name":"Skills","Options":{"Key":"DROIDABSK","Name":"Additional Career Skills","Description":"May train in two additional career skills and one additional specialization skills","StartingSkillTraining":{"SkillTraining":[{"SkillCount":"2","Requirement":{"Career":"true"}},{"SkillCount":"1","Requirement":{"Specialization":"true"}}]}}},{"Key":"DROIDAB2","Name":"Droid","Options":{"Key":"DROIDAB2OP1","Name":"Feature","Description":"Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons."}},{"Key":"DROIDAB3","Name":"Droid","Options":{"Key":"DROIDAB3OP1","Name":"Inorganic","Description":"Droids do not gain benefits from bacta, stimpacks, or Medicine checks. They must be repaired with repair patches and Mechanics checks."}},{"Key":"DROIDAB4","Name":"Droid","Options":{"Key":"DROIDAB4OP1","Name":"Mechanical Being","Description":"Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers."}},{"Key":"DROIDAB5","Name":"Droid","Options":{"Key":"DROIDAB5OP1","Name":"Cybernetics","Description":"Droids have a cybernetics implant cap of 6."}}],"NoForceAbilities":"true","Source":[{"_Page":"45","__text":"Edge of the Empire Core Rulebook"},{"_Page":"53","__text":"Age of Rebellion Core Rulebook"}],"Species":"DROID","SubSpecies":""},"Career":{"Key":"WAR","Name":"Warrior","Description":"","Source":{"_Page":"96","__text":"Force and Destiny Core Rulebook"},"CareerSkills":["Athletics","Brawl","Cool","Melee","Perception","Survival"],"Specializations":["AGGRES","COLOSSUS","JUYO","SHIICHO","STARACE","STEELHAND"],"Attributes":{"ForceRating":"1"},"FreeRanks":"3","Specs":["AGGRES","COLOSSUS","JUYO","SHIICHO","STARACE","STEELHAND"]},"Specializations":[{"Key":"STEELHAND","Name":"Steel Hand Adept","Description":"","Source":{"_Page":"28","__text":"Knights of Fate"},"CareerSkills":["Brawl","Coordination","Discipline","Vigilance"],"TalentRows":[{"Cost":"5","Talents":["GRIT","IRONBODY","IRONBODY","TOUGH"],"Directions":[{"Down":"true"},{},{},{"Down":"true"}]},{"Cost":"10","Talents":["MARTIALGRACE","ACKLAYSCST","UNARMPARRY","PRECSTR"],"Directions":[{"Up":"true","Down":"true"},{"Down":"true"},{"Down":"true"},{"Up":"true","Down":"true"}]},{"Cost":"15","Talents":["DODGE","SWIFT","PARRY","PRECSTRIMP"],"Directions":[{"Right":"true","Up":"true","Down":"true"},{"Left":"true","Right":"true","Up":"true","Down":"true"},{"Left":"true","Right":"true","Up":"true","Down":"true"},{"Left":"true","Up":"true","Down":"true"}]},{"Cost":"20","Talents":["DODGEIMP","TOUGH","GRIT","SAPITHSUND"],"Directions":[{"Up":"true"},{"Up":"true","Down":"true"},{"Up":"true","Down":"true"},{"Up":"true"}]},{"Cost":"25","Talents":["FORCERAT","FARSTRIKE","DEDI","DODGE"],"Directions":[{"Right":"true"},{"Left":"true","Up":"true"},{"Right":"true","Up":"true"},{"Left":"true"}]}],"AddlCareerSkills":{"Type":""},"BoughtTalents":[[false,true,true,false],[false,false,false,false],[false,false,false,false],[false,false,false,false],[false,false,false,false]]},{"Key":"MARTIALARTIST","Name":"Martial Artist","Description":"","Source":{"_Page":"28","__text":"No Disintegrations"},"CareerSkills":["Athletics","Brawl","Coordination","Discipline"],"TalentRows":[{"Cost":"5","Talents":["IRONBODY","PARRY","GRIT","PRECSTR"],"Directions":[{"Down":"true"},{},{},{"Down":"true"}]},{"Cost":"10","Talents":["PARRY","TOUGH","MARTIALGRACE","GRIT"],"Directions":[{"Right":"true","Up":"true","Down":"true"},{"Left":"true","Right":"true","Down":"true"},{"Left":"true","Right":"true","Down":"true"},{"Left":"true","Up":"true"}]},{"Cost":"15","Talents":["UNARMPARRY","GRAPPLE","IRONBODY","PRECSTRIMP"],"Directions":[{"Right":"true","Up":"true","Down":"true"},{"Left":"true","Right":"true","Up":"true","Down":"true"},{"Left":"true","Right":"true","Up":"true","Down":"true"},{"Left":"true","Down":"true"}]},{"Cost":"20","Talents":["OVERBAL","TOUGH","MINDMAT","GRIT"],"Directions":[{"Up":"true"},{"Right":"true","Up":"true","Down":"true"},{"Left":"true","Up":"true"},{"Up":"true","Down":"true"}]},{"Cost":"25","Talents":["COORDODGE","DEDI","NATBRAW","PRECSTRSUP"],"Directions":[{"Right":"true"},{"Left":"true","Right":"true","Up":"true"},{"Left":"true"},{"Up":"true"}]}],"AddlCareerSkills":{"Type":""},"BoughtTalents":[[true,false,false,true],[false,false,true,true],[false,false,true,true],[false,false,false,false],[false,false,false,false]]}],"SignatureAbilities":[],"CareerSkills":["Athletics","Brawl","Cool","Melee","Perception","Survival"],"CareerRanks":["Athletics","Brawl","Cool","Melee","Perception","Survival"],"SpecSkills":["Brawl","Coordination","Discipline","Vigilance"],"SpecRanks":["Brawl","Discipline","Vigilance"],"ExtraCareerSkills":[],"SelectedCareerSkills":{},"Characteristics":{"Brawn":2,"Agility":1,"Intellect":1,"Cunning":1,"Willpower":1,"Presence":1},"Skills":[{"Key":"ASTRO","skill":"Astrogation","characteristic":"Intellect","type":"General"},{"Key":"ATHL","skill":"Athletics","characteristic":"Brawn","type":"General"},{"Key":"BRAWL","skill":"Brawl","characteristic":"Brawn","type":"Combat","value":3},{"Key":"CHARM","skill":"Charm","characteristic":"Presence","type":"General"},{"Key":"COERC","skill":"Coercion","characteristic":"Willpower","type":"General"},{"Key":"COMP","skill":"Computers","characteristic":"Intellect","type":"General"},{"Key":"COOL","skill":"Cool","characteristic":"Presence","type":"General"},{"Key":"COORD","skill":"Coordination","characteristic":"Agility","type":"General"},{"Key":"CORE","skill":"Core Worlds","characteristic":"Intellect","type":"Knowledge"},{"Key":"DECEP","skill":"Deception","characteristic":"Cunning","type":"General"},{"Key":"DISC","skill":"Discipline","characteristic":"Willpower","type":"General"},{"Key":"EDU","skill":"Education","characteristic":"Intellect","type":"Knowledge"},{"Key":"GUNN","skill":"Gunnery","characteristic":"Agility","type":"Combat"},{"Key":"LEAD","skill":"Leadership","characteristic":"Presence","type":"General"},{"Key":"LTSABER","skill":"Lightsaber","characteristic":"Brawn","type":"Combat"},{"Key":"LORE","skill":"Lore","characteristic":"Intellect","type":"Knowledge"},{"Key":"MECH","skill":"Mechanics","characteristic":"Intellect","type":"General"},{"Key":"MED","skill":"Medicine","characteristic":"Intellect","type":"General"},{"Key":"MELEE","skill":"Melee","characteristic":"Brawn","type":"Combat"},{"Key":"NEG","skill":"Negotiation","characteristic":"Presence","type":"General"},{"Key":"OUT","skill":"Outer Rim","characteristic":"Intellect","type":"Knowledge"},{"Key":"PERC","skill":"Perception","characteristic":"Cunning","type":"General"},{"Key":"PILOTPL","skill":"Piloting (Planetary)","characteristic":"Agility","type":"General"},{"Key":"PILOTSP","skill":"Piloting (Space)","characteristic":"Agility","type":"General"},{"Key":"RANGHVY","skill":"Ranged (Heavy)","characteristic":"Agility","type":"Combat"},{"Key":"RANGLT","skill":"Ranged (Light)","characteristic":"Agility","type":"Combat"},{"Key":"RESIL","skill":"Resilience","characteristic":"Brawn","type":"General"},{"Key":"SKUL","skill":"Skulduggery","characteristic":"Cunning","type":"General"},{"Key":"STEAL","skill":"Stealth","characteristic":"Agility","type":"General"},{"Key":"SW","skill":"Streetwise","characteristic":"Cunning","type":"General"},{"Key":"SURV","skill":"Survival","characteristic":"Cunning","type":"General"},{"Key":"UND","skill":"Underworld","characteristic":"Intellect","type":"Knowledge"},{"Key":"VIGIL","skill":"Vigilance","characteristic":"Willpower","type":"General"},{"Key":"WARF","skill":"Warfare","characteristic":"Intellect","type":"Knowledge"},{"Key":"XEN","skill":"Xenology","characteristic":"Intellect","type":"Knowledge"}],"ForcePowers":{},"MentorBonuses":{},"ForceRating":1,"CareerPowerGrants":{"career":null,"bonus":null,"upgrade":null,"specGrants":[]},"BoughtSpecForceRating":null,"Motivations":[{"Motivation":{"Key":""},"SpecificMotivation":{"Key":""}}],"Weapons":[{"Key":"VAMBLADE2S1","Name":"S-1 Vamblade (Paired)","Description":"","Source":"Dangerous Covenants","Type":"Brawling","Categories":"Melee","Encumbrance":"4","HP":"1","Price":"1000","Rarity":"4","BaseMods":{"Key":"NOSTUN"},"SkillKey":"BRAWL","DamageAdd":"1","Crit":1,"SizeHigh":"10","RangeValue":"wrEngaged","Qualities":[{"Key":"ACCURATE","Count":"1"},{"Key":"DEFENSIVE","Count":"1"},{"Key":"SUNDER"},{"Key":"KNOCKDOWN"},{"Key":"STUNSETTING"}],"Range":"Engaged","Quantity":1,"inventoryID":"VAMBLADE2S1_1789043016911","TalentMods":{"Crit":"3","UnarmedQualities":[{"Key":"KNOCKDOWN"},{"Key":"STUNSETTING"}],"Defensive":"1"}},{"Key":"UNARMED","Name":"Unarmed","DamageAdd":0,"Crit":1,"SkillKey":"BRAWL","Range":"Engaged","Qualities":[{"Key":"KNOCKDOWN"},{"Key":"STUNSETTING"}],"TalentMods":{"UnarmedQualities":[{"Key":"KNOCKDOWN"},{"Key":"STUNSETTING"}],"ICBuffs":[{"kind":"crit","amt":-4}]}}],"Armor":[{"Key":"JEDITRAINSUIT","Name":"Jedi Training Suit (Unweighted)","Description":"","Source":"Keeping the Peace","Encumbrance":"4","Price":"400","Rarity":"9","Restricted":"true","Soak":"2","Quantity":1,"inventoryID":"JEDITRAINSUIT_1789043029511"}],"Gear":[{"Key":"ENTTOOL","Name":"Entrenching Tool","Description":"","Source":"Dangerous Covenants","Type":"Tools/Electronics","Categories":"","Encumbrance":"1","Price":"20","Rarity":"1","Quantity":1,"inventoryID":"ENTTOOL_1789043286396"},{"Key":"ERP","Name":"Emergency Repair Patch","Description":"","Type":"Tools/Electronics","Categories":"","Price":"25","Rarity":"2","BaseMods":{"Count":"1","MiscDesc":"Repairs 3 wounds on a droid."},"Source":["Edge of the Empire Core Rulebook","Age of Rebellion Core Rulebook"],"Quantity":3,"inventoryID":"ERP_1789043295252"}],"Vehicles":[],"Mentor":{"Training":"","CW":"","Purge":"","ForceTradition":"","Personality":"","Complication":""},"Holocron":[],"XP":0,"Credits":5,"WoundThreshold":0,"StrainThreshold":0,"Soak":3,"Defense":{"Ranged":0,"Melee":0},"EncumbranceThreshold":0,"Name":"","UsedStartingXP":20,"Dedications":{},"Modifiers":{"Skills":{},"Chars":{},"CharsNoSoak":{},"Dice":{},"Stats":{},"Weapons":[]},"CyberCurrent":0,"CyberCap":6,"Strain":12,"Wounds":12,"BoughtPowers":[],"BoughtTalents":[{"key":"ENDUR","data":{"Key":"ENDUR","Name":"Enduring","Description":"Gain +1 soak value.","Ranked":"true","ActivationValue":"Passive","Attributes":{"SoakValue":"1"}},"count":1},{"key":"IRONBODY","data":{"Key":"IRONBODY","Name":"Iron Body","Description":"Remove [SE] per rank of Iron Body from Coordination and Resilience checks. Reduce the critical rating of unarmed attacks by 1 per rank of Iron Body (to a minimum of 1).","Source":{"_Page":"34","__text":"No Disintegrations"},"Ranked":"true","ActivationValue":"Passive","ItemChanges":[{"CritChange":"-1","ItemKey":"UNARMED"}],"DieModifiers":[{"SkillKey":"COORD","SetbackCount":"1"},{"SkillKey":"RESIL","SetbackCount":"1"}]},"count":4},{"key":"PRECSTR","data":{"Key":"PRECSTR","Name":"Precision Strike","Description":"When this character inflicts a Critical Injury with a Brawl, Melee, or Lightsaber weapon, may suffer 1 strain to change the result to any [B]Easy ([DI])[b] Critical Injury result.","ActivationValue":"Active","Activation":"OOT Incidental","Source":[{"_Page":"31","__text":"Keeping the Peace"},{"_Page":"35","__text":"No Disintegrations"}]},"count":1},{"key":"MARTIALGRACE","data":{"Key":"MARTIALGRACE","Name":"Martial Grace","Description":"Once per round, suffers 2 strain to add damage equal to ranks in Coordination to next Brawl check made this turn.","Source":{"_Page":"35","__text":"No Disintegrations"},"ActivationValue":"Active","Activation":"Incidental"},"count":1},{"key":"GRIT","data":{"Key":"GRIT","Name":"Grit","Description":"Gain +1 strain threshold","Ranked":"true","ActivationValue":"Passive","Attributes":{"StrainThreshold":"1"}},"count":1},{"key":"PRECSTRIMP","data":{"Key":"PRECSTRIMP","Name":"Precision Strike (Improved)","Description":"Once per round, when inflicting a Critical Injury with a Brawl or Melee weapon, may suffer 2 strain to change the result to any [B]Average ([DI][DI])[b] Critical injury.","ActivationValue":"Active","Activation":"OOT Incidental","Source":{"_Page":"35","__text":"No Disintegrations"}},"count":1},{"key":"TOUGH","data":{"Key":"TOUGH","Name":"Toughened","Description":"Gain +2 wound threshold.","Ranked":"true","ActivationValue":"Passive","Attributes":{"WoundThreshold":"2"}},"count":0},{"key":"ACKLAYSCST","data":{"Key":"ACKLAYSCST","Name":"Acklay's Scything Strike","Description":"Brawl attacks gain Pierce equal to Force rating.","ActivationValue":"Passive","ItemChanges":[{"QualityChanges":[{"UseForceRating":"true","Key":"PIERCE"}],"SkillKey":"BRAWL","AddQuality":"true"}],"ForceTalent":"true","Source":{"_Page":"30","__text":"Knights of Fate"}},"count":0},{"key":"UNARMPARRY","data":{"Key":"UNARMPARRY","Name":"Unarmed Parry","Description":"May Parry while unarmed Reduce strain cost to Parry while unarmed by 1 (to a minimum of 1).","ActivationValue":"Passive","Source":{"_Page":"36","__text":"No Disintegrations"}},"count":0},{"key":"DODGE","data":{"Key":"DODGE","Name":"Dodge","Description":"When targeted by combat check, may perform a Dodge incidental to suffer a number of strain no greater than ranks of Dodge, then upgrade the difficulty of the check by that number.","Ranked":"true","ActivationValue":"Active"},"count":0},{"key":"SWIFT","data":{"Key":"SWIFT","Name":"Swift","Description":"Do not suffer usual penalties for moving through difficult terrain.","ActivationValue":"Passive"},"count":0},{"key":"PARRY","data":{"Key":"PARRY","Name":"Parry","Description":"When hit by a melee attack, suffer 3 strain to reduce damage by 2 plus ranks in Parry.","Ranked":"true","ActivationValue":"Active","Activation":"OOT Incidental","Source":[{"_Page":"149","__text":"Force and Destiny Core Rulebook"},{"_Page":"35","__text":"No Disintegrations"}]},"count":0},{"key":"DODGEIMP","data":{"Key":"DODGEIMP","Name":"Dodge (Improved)","Description":"After using Dodge, can make a Move maneuver as an out-of-turn incidental.","ActivationValue":"Active","Activation":"Incidental","Source":{"_Page":"30","__text":"Knights of Fate"}},"count":0},{"key":"SAPITHSUND","data":{"Key":"SAPITHSUND","Name":"Sapith Sundering","Description":"May add [FO] up to Force rating to Brawl checks; the attack gains the Sunder quality, and character may spend [FP] generated one the check as [AD] to activate the Sunder quality.","Source":{"_Page":"31","__text":"Knights of Fate"},"ActivationValue":"Active","ForceTalent":"true","Activation":"Incidental"},"count":0},{"key":"FORCERAT","data":{"Key":"FORCERAT","Name":"Force Rating","Description":"Gain +1 Force Rating.","Ranked":"true","ActivationValue":"Passive","Attributes":{"ForceRating":"1"},"ForceTalent":"true"},"count":0},{"key":"FARSTRIKE","data":{"Key":"FARSTRIKE","Name":"Far Strike","Description":"As an action, make a Brawl check as a ranged attack, adding [FO] up to Force rating, increase the range of the attack by one band for each [FP] spent, to a maximum of long.","Source":{"_Page":"30","__text":"Knights of Fate"},"ActivationValue":"Active","ForceTalent":"true","Activation":"Action"},"count":0},{"key":"DEDI","data":{"Key":"DEDI","Name":"Dedication","Description":"Gain +1 to a single characteristic. This cannot bring a characteristic above 6.","Ranked":"true","ActivationValue":"Passive","CharacteristicChoices":{"CharacteristicChoice":{"Bonus":"1"}}},"count":0},{"key":"GRAPPLE","data":{"Key":"GRAPPLE","Name":"Grapple","Description":"Once per round, the character may perform the Grapple maneuver. Until the beginning of the character's next turn, enemies must spend two maneuvers instead of one maneuver to move from engaged range to short range of him.","Source":"Keeping the Peace","ActivationValue":"Active","Activation":"Maneuver"},"count":0},{"key":"OVERBAL","data":{"Key":"OVERBAL","Name":"Overbalance","Description":"Whenever an enemy engaged with the character makes a combat check, after the attack is resolved, the character may spend [DE] or [TH][TH][TH] to stagger the attacker until the end of the attacker's next turn.","Source":"Keeping the Peace","ActivationValue":"Passive"},"count":0},{"key":"MINDMAT","data":{"Key":"MINDMAT","Name":"Mind Over Matter","Description":"The character may spend one Destiny Point to recover strain equal to to his Willpower rating.","Source":{"_Page":"31","__text":"Savage Spirits"},"ActivationValue":"Active","Activation":"OOT Incidental"},"count":0},{"key":"COORDODGE","data":{"Key":"COORDODGE","Name":"Coordination Dodge","Description":"When targeted by a combat check, may spend 1 Destiny Point to add [FA] equal to ranks in Coordination to check.","Source":"Far Horizons","ActivationValue":"Active"},"count":0},{"key":"NATBRAW","data":{"Key":"NATBRAW","Name":"Natural Brawler","Description":"Once per session, may reroll any 1 Brawl or Melee check.","ActivationValue":"Active"},"count":0},{"key":"PRECSTRSUP","data":{"Key":"PRECSTRSUP","Name":"Precision Strike (Supreme)","Description":"When this character inflicts a Critical Injury with a Brawl wepaon, may suffer 1 strain to chang the result to any [B]Hard([DI][DI][DI])[b] Critical Injury.","ActivationValue":"Active","Activation":"OOT Incidental","Source":{"_Page":"36","__text":"No Disintegrations"}},"count":0}],"UsedQualities":[{"Key":"ACCURATE","Name":"Accurate Quality","Description":"","Type":"Weapon","ModDesc":"Accurate {0}","QualDesc":"Accurate {0}","IsQuality":"true","Source":["Edge of the Empire Core Rulebook","Age of Rebellion Core Rulebook","Force and Destiny Core Rulebook"]},{"Key":"DEFENSIVE","Name":"Defensive Quality","Description":"","ModDesc":"Defensive {0}","QualDesc":"Defensive {0}","IsQuality":"true"},{"Key":"SUNDER","Name":"Sunder Quality","Description":"","Type":"Weapon","ModDesc":"Sunder","QualDesc":"Sunder","IsBoolean":"true","IsQuality":"true","IsActiveQuality":"true"},{"Key":"KNOCKDOWN","Name":"Knockdown Quality","Description":"","Type":"Weapon","ModDesc":"Knockdown","QualDesc":"Knockdown","IsBoolean":"true","IsQuality":"true","IsActiveQuality":"true"},{"Key":"STUNSETTING","Name":"Stun Setting Quality","Description":"","Type":"Weapon","ModDesc":"Stun Setting","QualDesc":"Stun Setting","IsBoolean":"true","IsQuality":"true"}]}
+{
+ "Background": {
+  "Text": "Kinch spent 200 years as a jedi training droid on Coruscant, always knowing there had to\nbe a better target for his violence than the nice children he was tasked with fighting. One\nday he heard a master say, \"sometimes, one must take destiny into their own hands\" and\nhe had an epiphany - later that night, Kinch cornered the master alone and unarmed, and\nleft him covered in Discouraging Wounds before leaping out of a window into a speeder\nwhich was passing below by \"chance\". Ever since that night, Kinch has seized fate by the\nthroat in pursuit of proper opponents.",
+  "Culture": {},
+  "Force": {},
+  "Adventure": {},
+  "Indexes": {
+   "Culture": "",
+   "Force": "",
+   "Adventure": ""
+  }
+ },
+ "Obligations": [
+  {
+   "Name": "Contract",
+   "Descpription": "",
+   "Toggle": true,
+   "Obligation": "",
+   "Starting": "",
+   "Text": "Lamplighter's guild",
+   "XP5": true,
+   "XP10": false,
+   "C1": true,
+   "C2": false,
+   "Total": 10,
+   "Key": "CONTRACT"
+  }
+ ],
+ "Duties": [
+  {
+   "Name": "",
+   "Descpription": "",
+   "Toggle": false,
+   "Duty": "",
+   "Starting": "",
+   "Text": "",
+   "XP5": false,
+   "XP10": false,
+   "C1": false,
+   "C2": false,
+   "Total": 0
+  }
+ ],
+ "Morality": {
+  "Toggle": false,
+  "XPC": false,
+  "XP10": false,
+  "C2": false,
+  "StartLight": false,
+  "StartDark": false,
+  "Score": 50,
+  "StrengthWeakness": [
+   {
+    "Strength": {
+     "Text": "",
+     "Key": null
+    },
+    "Weakness": {
+     "Text": "",
+     "Key": null
+    }
+   }
+  ]
+ },
+ "Species": {
+  "Key": "DROID",
+  "Name": "Droid",
+  "Description": "",
+  "imageUrl": "https://i.imgur.com/BLE8LI6.png",
+  "thumbnailUrl": "https://i.imgur.com/g1AeESl.png",
+  "StartingChars": {
+   "Brawn": "1",
+   "Agility": "1",
+   "Intellect": "1",
+   "Cunning": "1",
+   "Willpower": "1",
+   "Presence": "1"
+  },
+  "StartingAttrs": {
+   "WoundThreshold": "10",
+   "StrainThreshold": "10",
+   "Experience": "175"
+  },
+  "TalentModifiers": {
+   "Key": "ENDUR",
+   "RankAdd": "1"
+  },
+  "OptionChoices": [
+   {
+    "Key": "DROIDAB",
+    "Name": "Skills",
+    "Options": {
+     "Key": "DROIDABSK",
+     "Name": "Additional Career Skills",
+     "Description": "May train in two additional career skills and one additional specialization skills",
+     "StartingSkillTraining": {
+      "SkillTraining": [
+       {
+        "SkillCount": "2",
+        "Requirement": {
+         "Career": "true"
+        }
+       },
+       {
+        "SkillCount": "1",
+        "Requirement": {
+         "Specialization": "true"
+        }
+       }
+      ]
+     }
+    }
+   },
+   {
+    "Key": "DROIDAB2",
+    "Name": "Droid",
+    "Options": {
+     "Key": "DROIDAB2OP1",
+     "Name": "Feature",
+     "Description": "Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons."
+    }
+   },
+   {
+    "Key": "DROIDAB3",
+    "Name": "Droid",
+    "Options": {
+     "Key": "DROIDAB3OP1",
+     "Name": "Inorganic",
+     "Description": "Droids do not gain benefits from bacta, stimpacks, or Medicine checks. They must be repaired with repair patches and Mechanics checks."
+    }
+   },
+   {
+    "Key": "DROIDAB4",
+    "Name": "Droid",
+    "Options": {
+     "Key": "DROIDAB4OP1",
+     "Name": "Mechanical Being",
+     "Description": "Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers."
+    }
+   },
+   {
+    "Key": "DROIDAB5",
+    "Name": "Droid",
+    "Options": {
+     "Key": "DROIDAB5OP1",
+     "Name": "Cybernetics",
+     "Description": "Droids have a cybernetics implant cap of 6."
+    }
+   }
+  ],
+  "NoForceAbilities": "true",
+  "Source": [
+   {
+    "_Page": "45",
+    "__text": "Edge of the Empire Core Rulebook"
+   },
+   {
+    "_Page": "53",
+    "__text": "Age of Rebellion Core Rulebook"
+   }
+  ],
+  "Species": "DROID",
+  "SubSpecies": ""
+ },
+ "Career": {
+  "Key": "WAR",
+  "Name": "Warrior",
+  "Description": "",
+  "Source": {
+   "_Page": "96",
+   "__text": "Force and Destiny Core Rulebook"
+  },
+  "CareerSkills": [
+   "Athletics",
+   "Brawl",
+   "Cool",
+   "Melee",
+   "Perception",
+   "Survival"
+  ],
+  "Specializations": [
+   "AGGRES",
+   "COLOSSUS",
+   "JUYO",
+   "SHIICHO",
+   "STARACE",
+   "STEELHAND"
+  ],
+  "Attributes": {
+   "ForceRating": "1"
+  },
+  "FreeRanks": "3",
+  "Specs": [
+   "AGGRES",
+   "COLOSSUS",
+   "JUYO",
+   "SHIICHO",
+   "STARACE",
+   "STEELHAND"
+  ]
+ },
+ "Specializations": [
+  {
+   "Key": "STEELHAND",
+   "Name": "Steel Hand Adept",
+   "Description": "",
+   "Source": {
+    "_Page": "28",
+    "__text": "Knights of Fate"
+   },
+   "CareerSkills": [
+    "Brawl",
+    "Coordination",
+    "Discipline",
+    "Vigilance"
+   ],
+   "TalentRows": [
+    {
+     "Cost": "5",
+     "Talents": [
+      "GRIT",
+      "IRONBODY",
+      "IRONBODY",
+      "TOUGH"
+     ],
+     "Directions": [
+      {
+       "Down": "true"
+      },
+      {},
+      {},
+      {
+       "Down": "true"
+      }
+     ]
+    },
+    {
+     "Cost": "10",
+     "Talents": [
+      "MARTIALGRACE",
+      "ACKLAYSCST",
+      "UNARMPARRY",
+      "PRECSTR"
+     ],
+     "Directions": [
+      {
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Down": "true"
+      },
+      {
+       "Down": "true"
+      },
+      {
+       "Up": "true",
+       "Down": "true"
+      }
+     ]
+    },
+    {
+     "Cost": "15",
+     "Talents": [
+      "DODGE",
+      "SWIFT",
+      "PARRY",
+      "PRECSTRIMP"
+     ],
+     "Directions": [
+      {
+       "Right": "true",
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Left": "true",
+       "Right": "true",
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Left": "true",
+       "Right": "true",
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Left": "true",
+       "Up": "true",
+       "Down": "true"
+      }
+     ]
+    },
+    {
+     "Cost": "20",
+     "Talents": [
+      "DODGEIMP",
+      "TOUGH",
+      "GRIT",
+      "SAPITHSUND"
+     ],
+     "Directions": [
+      {
+       "Up": "true"
+      },
+      {
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Up": "true"
+      }
+     ]
+    },
+    {
+     "Cost": "25",
+     "Talents": [
+      "FORCERAT",
+      "FARSTRIKE",
+      "DEDI",
+      "DODGE"
+     ],
+     "Directions": [
+      {
+       "Right": "true"
+      },
+      {
+       "Left": "true",
+       "Up": "true"
+      },
+      {
+       "Right": "true",
+       "Up": "true"
+      },
+      {
+       "Left": "true"
+      }
+     ]
+    }
+   ],
+   "AddlCareerSkills": {
+    "Type": ""
+   },
+   "BoughtTalents": [
+    [
+     false,
+     true,
+     true,
+     false
+    ],
+    [
+     false,
+     false,
+     false,
+     false
+    ],
+    [
+     false,
+     false,
+     false,
+     false
+    ],
+    [
+     false,
+     false,
+     false,
+     false
+    ],
+    [
+     false,
+     false,
+     false,
+     false
+    ]
+   ]
+  },
+  {
+   "Key": "MARTIALARTIST",
+   "Name": "Martial Artist",
+   "Description": "",
+   "Source": {
+    "_Page": "28",
+    "__text": "No Disintegrations"
+   },
+   "CareerSkills": [
+    "Athletics",
+    "Brawl",
+    "Coordination",
+    "Discipline"
+   ],
+   "TalentRows": [
+    {
+     "Cost": "5",
+     "Talents": [
+      "IRONBODY",
+      "PARRY",
+      "GRIT",
+      "PRECSTR"
+     ],
+     "Directions": [
+      {
+       "Down": "true"
+      },
+      {},
+      {},
+      {
+       "Down": "true"
+      }
+     ]
+    },
+    {
+     "Cost": "10",
+     "Talents": [
+      "PARRY",
+      "TOUGH",
+      "MARTIALGRACE",
+      "GRIT"
+     ],
+     "Directions": [
+      {
+       "Right": "true",
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Left": "true",
+       "Right": "true",
+       "Down": "true"
+      },
+      {
+       "Left": "true",
+       "Right": "true",
+       "Down": "true"
+      },
+      {
+       "Left": "true",
+       "Up": "true"
+      }
+     ]
+    },
+    {
+     "Cost": "15",
+     "Talents": [
+      "UNARMPARRY",
+      "GRAPPLE",
+      "IRONBODY",
+      "PRECSTRIMP"
+     ],
+     "Directions": [
+      {
+       "Right": "true",
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Left": "true",
+       "Right": "true",
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Left": "true",
+       "Right": "true",
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Left": "true",
+       "Down": "true"
+      }
+     ]
+    },
+    {
+     "Cost": "20",
+     "Talents": [
+      "OVERBAL",
+      "TOUGH",
+      "MINDMAT",
+      "GRIT"
+     ],
+     "Directions": [
+      {
+       "Up": "true"
+      },
+      {
+       "Right": "true",
+       "Up": "true",
+       "Down": "true"
+      },
+      {
+       "Left": "true",
+       "Up": "true"
+      },
+      {
+       "Up": "true",
+       "Down": "true"
+      }
+     ]
+    },
+    {
+     "Cost": "25",
+     "Talents": [
+      "COORDODGE",
+      "DEDI",
+      "NATBRAW",
+      "PRECSTRSUP"
+     ],
+     "Directions": [
+      {
+       "Right": "true"
+      },
+      {
+       "Left": "true",
+       "Right": "true",
+       "Up": "true"
+      },
+      {
+       "Left": "true"
+      },
+      {
+       "Up": "true"
+      }
+     ]
+    }
+   ],
+   "AddlCareerSkills": {
+    "Type": ""
+   },
+   "BoughtTalents": [
+    [
+     true,
+     false,
+     false,
+     true
+    ],
+    [
+     false,
+     false,
+     true,
+     true
+    ],
+    [
+     false,
+     false,
+     true,
+     true
+    ],
+    [
+     false,
+     false,
+     false,
+     false
+    ],
+    [
+     false,
+     false,
+     false,
+     false
+    ]
+   ]
+  }
+ ],
+ "SignatureAbilities": [],
+ "CareerSkills": [
+  "Athletics",
+  "Brawl",
+  "Cool",
+  "Melee",
+  "Perception",
+  "Survival"
+ ],
+ "CareerRanks": [
+  "Athletics",
+  "Brawl",
+  "Cool",
+  "Melee",
+  "Perception",
+  "Survival"
+ ],
+ "SpecSkills": [
+  "Brawl",
+  "Coordination",
+  "Discipline",
+  "Vigilance"
+ ],
+ "SpecRanks": [
+  "Brawl",
+  "Discipline",
+  "Vigilance"
+ ],
+ "ExtraCareerSkills": [],
+ "SelectedCareerSkills": {},
+ "Characteristics": {
+  "Brawn": 2,
+  "Agility": 1,
+  "Intellect": 1,
+  "Cunning": 1,
+  "Willpower": 1,
+  "Presence": 1
+ },
+ "Skills": [
+  {
+   "Key": "ASTRO",
+   "skill": "Astrogation",
+   "characteristic": "Intellect",
+   "type": "General"
+  },
+  {
+   "Key": "ATHL",
+   "skill": "Athletics",
+   "characteristic": "Brawn",
+   "type": "General"
+  },
+  {
+   "Key": "BRAWL",
+   "skill": "Brawl",
+   "characteristic": "Brawn",
+   "type": "Combat",
+   "value": 3
+  },
+  {
+   "Key": "CHARM",
+   "skill": "Charm",
+   "characteristic": "Presence",
+   "type": "General"
+  },
+  {
+   "Key": "COERC",
+   "skill": "Coercion",
+   "characteristic": "Willpower",
+   "type": "General"
+  },
+  {
+   "Key": "COMP",
+   "skill": "Computers",
+   "characteristic": "Intellect",
+   "type": "General"
+  },
+  {
+   "Key": "COOL",
+   "skill": "Cool",
+   "characteristic": "Presence",
+   "type": "General"
+  },
+  {
+   "Key": "COORD",
+   "skill": "Coordination",
+   "characteristic": "Agility",
+   "type": "General"
+  },
+  {
+   "Key": "CORE",
+   "skill": "Core Worlds",
+   "characteristic": "Intellect",
+   "type": "Knowledge"
+  },
+  {
+   "Key": "DECEP",
+   "skill": "Deception",
+   "characteristic": "Cunning",
+   "type": "General"
+  },
+  {
+   "Key": "DISC",
+   "skill": "Discipline",
+   "characteristic": "Willpower",
+   "type": "General"
+  },
+  {
+   "Key": "EDU",
+   "skill": "Education",
+   "characteristic": "Intellect",
+   "type": "Knowledge"
+  },
+  {
+   "Key": "GUNN",
+   "skill": "Gunnery",
+   "characteristic": "Agility",
+   "type": "Combat"
+  },
+  {
+   "Key": "LEAD",
+   "skill": "Leadership",
+   "characteristic": "Presence",
+   "type": "General"
+  },
+  {
+   "Key": "LTSABER",
+   "skill": "Lightsaber",
+   "characteristic": "Brawn",
+   "type": "Combat"
+  },
+  {
+   "Key": "LORE",
+   "skill": "Lore",
+   "characteristic": "Intellect",
+   "type": "Knowledge"
+  },
+  {
+   "Key": "MECH",
+   "skill": "Mechanics",
+   "characteristic": "Intellect",
+   "type": "General"
+  },
+  {
+   "Key": "MED",
+   "skill": "Medicine",
+   "characteristic": "Intellect",
+   "type": "General"
+  },
+  {
+   "Key": "MELEE",
+   "skill": "Melee",
+   "characteristic": "Brawn",
+   "type": "Combat"
+  },
+  {
+   "Key": "NEG",
+   "skill": "Negotiation",
+   "characteristic": "Presence",
+   "type": "General"
+  },
+  {
+   "Key": "OUT",
+   "skill": "Outer Rim",
+   "characteristic": "Intellect",
+   "type": "Knowledge"
+  },
+  {
+   "Key": "PERC",
+   "skill": "Perception",
+   "characteristic": "Cunning",
+   "type": "General"
+  },
+  {
+   "Key": "PILOTPL",
+   "skill": "Piloting (Planetary)",
+   "characteristic": "Agility",
+   "type": "General"
+  },
+  {
+   "Key": "PILOTSP",
+   "skill": "Piloting (Space)",
+   "characteristic": "Agility",
+   "type": "General"
+  },
+  {
+   "Key": "RANGHVY",
+   "skill": "Ranged (Heavy)",
+   "characteristic": "Agility",
+   "type": "Combat"
+  },
+  {
+   "Key": "RANGLT",
+   "skill": "Ranged (Light)",
+   "characteristic": "Agility",
+   "type": "Combat"
+  },
+  {
+   "Key": "RESIL",
+   "skill": "Resilience",
+   "characteristic": "Brawn",
+   "type": "General"
+  },
+  {
+   "Key": "SKUL",
+   "skill": "Skulduggery",
+   "characteristic": "Cunning",
+   "type": "General"
+  },
+  {
+   "Key": "STEAL",
+   "skill": "Stealth",
+   "characteristic": "Agility",
+   "type": "General"
+  },
+  {
+   "Key": "SW",
+   "skill": "Streetwise",
+   "characteristic": "Cunning",
+   "type": "General"
+  },
+  {
+   "Key": "SURV",
+   "skill": "Survival",
+   "characteristic": "Cunning",
+   "type": "General"
+  },
+  {
+   "Key": "UND",
+   "skill": "Underworld",
+   "characteristic": "Intellect",
+   "type": "Knowledge"
+  },
+  {
+   "Key": "VIGIL",
+   "skill": "Vigilance",
+   "characteristic": "Willpower",
+   "type": "General"
+  },
+  {
+   "Key": "WARF",
+   "skill": "Warfare",
+   "characteristic": "Intellect",
+   "type": "Knowledge"
+  },
+  {
+   "Key": "XEN",
+   "skill": "Xenology",
+   "characteristic": "Intellect",
+   "type": "Knowledge"
+  }
+ ],
+ "ForcePowers": {},
+ "MentorBonuses": {},
+ "ForceRating": 1,
+ "CareerPowerGrants": {
+  "career": null,
+  "bonus": null,
+  "upgrade": null,
+  "specGrants": []
+ },
+ "BoughtSpecForceRating": null,
+ "Motivations": [
+  {
+   "Motivation": {
+    "Key": "QUEST",
+    "Name": "Quest",
+    "Description": "",
+    "Source": "Age of Rebellion Core Rulebook"
+   },
+   "SpecificMotivation": {
+    "Key": "QUEPURPOSE",
+    "Name": "Purpose",
+    "Description": "",
+    "Source": "Age of Rebellion Beta Rulebook",
+    "Motivation": "Quest"
+   },
+   "Text": "I was made to punch - what?"
+  }
+ ],
+ "Weapons": [
+  {
+   "Key": "VAMBLADE2S1",
+   "Name": "S-1 Vamblade (Paired)",
+   "Description": "",
+   "Source": "Dangerous Covenants",
+   "Type": "Brawling",
+   "Categories": "Melee",
+   "Encumbrance": "4",
+   "HP": "1",
+   "Price": "1000",
+   "Rarity": "4",
+   "BaseMods": {
+    "Key": "NOSTUN"
+   },
+   "SkillKey": "BRAWL",
+   "DamageAdd": "1",
+   "Crit": 1,
+   "SizeHigh": "10",
+   "RangeValue": "wrEngaged",
+   "Qualities": [
+    {
+     "Key": "ACCURATE",
+     "Count": "1"
+    },
+    {
+     "Key": "DEFENSIVE",
+     "Count": "1"
+    },
+    {
+     "Key": "SUNDER"
+    },
+    {
+     "Key": "KNOCKDOWN"
+    },
+    {
+     "Key": "STUNSETTING"
+    }
+   ],
+   "Range": "Engaged",
+   "Quantity": 1,
+   "inventoryID": "VAMBLADE2S1_1789043016911",
+   "TalentMods": {
+    "Crit": "3",
+    "UnarmedQualities": [
+     {
+      "Key": "KNOCKDOWN"
+     },
+     {
+      "Key": "STUNSETTING"
+     }
+    ],
+    "Defensive": "1"
+   }
+  },
+  {
+   "Key": "UNARMED",
+   "Name": "Unarmed",
+   "DamageAdd": 0,
+   "Crit": 1,
+   "SkillKey": "BRAWL",
+   "Range": "Engaged",
+   "Qualities": [
+    {
+     "Key": "KNOCKDOWN"
+    },
+    {
+     "Key": "STUNSETTING"
+    }
+   ],
+   "TalentMods": {
+    "UnarmedQualities": [
+     {
+      "Key": "KNOCKDOWN"
+     },
+     {
+      "Key": "STUNSETTING"
+     }
+    ],
+    "ICBuffs": [
+     {
+      "kind": "crit",
+      "amt": -4
+     }
+    ]
+   }
+  }
+ ],
+ "Armor": [
+  {
+   "Key": "JEDITRAINSUIT",
+   "Name": "Jedi Training Suit (Unweighted)",
+   "Description": "",
+   "Source": "Keeping the Peace",
+   "Encumbrance": "4",
+   "Price": "400",
+   "Rarity": "9",
+   "Restricted": "true",
+   "Soak": "2",
+   "Quantity": 1,
+   "inventoryID": "JEDITRAINSUIT_1789043029511",
+   "Equipped": true,
+   "Carried": true
+  }
+ ],
+ "Gear": [
+  {
+   "Key": "ENTTOOL",
+   "Name": "Entrenching Tool",
+   "Description": "",
+   "Source": "Dangerous Covenants",
+   "Type": "Tools/Electronics",
+   "Categories": "",
+   "Encumbrance": "1",
+   "Price": "20",
+   "Rarity": "1",
+   "Quantity": 1,
+   "inventoryID": "ENTTOOL_1789043286396"
+  },
+  {
+   "Key": "ERP",
+   "Name": "Emergency Repair Patch",
+   "Description": "",
+   "Type": "Tools/Electronics",
+   "Categories": "",
+   "Price": "25",
+   "Rarity": "2",
+   "BaseMods": {
+    "Count": "1",
+    "MiscDesc": "Repairs 3 wounds on a droid."
+   },
+   "Source": [
+    "Edge of the Empire Core Rulebook",
+    "Age of Rebellion Core Rulebook"
+   ],
+   "Quantity": 3,
+   "inventoryID": "ERP_1789043295252"
+  }
+ ],
+ "Vehicles": [],
+ "Mentor": {
+  "Training": "",
+  "CW": "",
+  "Purge": "",
+  "ForceTradition": "",
+  "Personality": "",
+  "Complication": ""
+ },
+ "Holocron": [],
+ "XP": 0,
+ "Credits": 5,
+ "WoundThreshold": 0,
+ "StrainThreshold": 0,
+ "Soak": 5,
+ "Defense": {
+  "Ranged": 0,
+  "Melee": 0
+ },
+ "EncumbranceThreshold": 0,
+ "Name": "",
+ "UsedStartingXP": 20,
+ "Dedications": {},
+ "Modifiers": {
+  "Skills": {},
+  "Chars": {},
+  "CharsNoSoak": {},
+  "Dice": {},
+  "Stats": {},
+  "Weapons": []
+ },
+ "CyberCurrent": 0,
+ "CyberCap": 6,
+ "Strain": 12,
+ "Wounds": 12,
+ "BoughtPowers": [],
+ "BoughtTalents": [
+  {
+   "key": "ENDUR",
+   "data": {
+    "Key": "ENDUR",
+    "Name": "Enduring",
+    "Description": "Gain +1 soak value.",
+    "Ranked": "true",
+    "ActivationValue": "Passive",
+    "Attributes": {
+     "SoakValue": "1"
+    }
+   },
+   "count": 1
+  },
+  {
+   "key": "IRONBODY",
+   "data": {
+    "Key": "IRONBODY",
+    "Name": "Iron Body",
+    "Description": "Remove [SE] per rank of Iron Body from Coordination and Resilience checks. Reduce the critical rating of unarmed attacks by 1 per rank of Iron Body (to a minimum of 1).",
+    "Source": {
+     "_Page": "34",
+     "__text": "No Disintegrations"
+    },
+    "Ranked": "true",
+    "ActivationValue": "Passive",
+    "ItemChanges": [
+     {
+      "CritChange": "-1",
+      "ItemKey": "UNARMED"
+     }
+    ],
+    "DieModifiers": [
+     {
+      "SkillKey": "COORD",
+      "SetbackCount": "1"
+     },
+     {
+      "SkillKey": "RESIL",
+      "SetbackCount": "1"
+     }
+    ]
+   },
+   "count": 4
+  },
+  {
+   "key": "PRECSTR",
+   "data": {
+    "Key": "PRECSTR",
+    "Name": "Precision Strike",
+    "Description": "When this character inflicts a Critical Injury with a Brawl, Melee, or Lightsaber weapon, may suffer 1 strain to change the result to any [B]Easy ([DI])[b] Critical Injury result.",
+    "ActivationValue": "Active",
+    "Activation": "OOT Incidental",
+    "Source": [
+     {
+      "_Page": "31",
+      "__text": "Keeping the Peace"
+     },
+     {
+      "_Page": "35",
+      "__text": "No Disintegrations"
+     }
+    ]
+   },
+   "count": 1
+  },
+  {
+   "key": "MARTIALGRACE",
+   "data": {
+    "Key": "MARTIALGRACE",
+    "Name": "Martial Grace",
+    "Description": "Once per round, suffers 2 strain to add damage equal to ranks in Coordination to next Brawl check made this turn.",
+    "Source": {
+     "_Page": "35",
+     "__text": "No Disintegrations"
+    },
+    "ActivationValue": "Active",
+    "Activation": "Incidental"
+   },
+   "count": 1
+  },
+  {
+   "key": "GRIT",
+   "data": {
+    "Key": "GRIT",
+    "Name": "Grit",
+    "Description": "Gain +1 strain threshold",
+    "Ranked": "true",
+    "ActivationValue": "Passive",
+    "Attributes": {
+     "StrainThreshold": "1"
+    }
+   },
+   "count": 1
+  },
+  {
+   "key": "PRECSTRIMP",
+   "data": {
+    "Key": "PRECSTRIMP",
+    "Name": "Precision Strike (Improved)",
+    "Description": "Once per round, when inflicting a Critical Injury with a Brawl or Melee weapon, may suffer 2 strain to change the result to any [B]Average ([DI][DI])[b] Critical injury.",
+    "ActivationValue": "Active",
+    "Activation": "OOT Incidental",
+    "Source": {
+     "_Page": "35",
+     "__text": "No Disintegrations"
+    }
+   },
+   "count": 1
+  },
+  {
+   "key": "TOUGH",
+   "data": {
+    "Key": "TOUGH",
+    "Name": "Toughened",
+    "Description": "Gain +2 wound threshold.",
+    "Ranked": "true",
+    "ActivationValue": "Passive",
+    "Attributes": {
+     "WoundThreshold": "2"
+    }
+   },
+   "count": 0
+  },
+  {
+   "key": "ACKLAYSCST",
+   "data": {
+    "Key": "ACKLAYSCST",
+    "Name": "Acklay's Scything Strike",
+    "Description": "Brawl attacks gain Pierce equal to Force rating.",
+    "ActivationValue": "Passive",
+    "ItemChanges": [
+     {
+      "QualityChanges": [
+       {
+        "UseForceRating": "true",
+        "Key": "PIERCE"
+       }
+      ],
+      "SkillKey": "BRAWL",
+      "AddQuality": "true"
+     }
+    ],
+    "ForceTalent": "true",
+    "Source": {
+     "_Page": "30",
+     "__text": "Knights of Fate"
+    }
+   },
+   "count": 0
+  },
+  {
+   "key": "UNARMPARRY",
+   "data": {
+    "Key": "UNARMPARRY",
+    "Name": "Unarmed Parry",
+    "Description": "May Parry while unarmed Reduce strain cost to Parry while unarmed by 1 (to a minimum of 1).",
+    "ActivationValue": "Passive",
+    "Source": {
+     "_Page": "36",
+     "__text": "No Disintegrations"
+    }
+   },
+   "count": 0
+  },
+  {
+   "key": "DODGE",
+   "data": {
+    "Key": "DODGE",
+    "Name": "Dodge",
+    "Description": "When targeted by combat check, may perform a Dodge incidental to suffer a number of strain no greater than ranks of Dodge, then upgrade the difficulty of the check by that number.",
+    "Ranked": "true",
+    "ActivationValue": "Active"
+   },
+   "count": 0
+  },
+  {
+   "key": "SWIFT",
+   "data": {
+    "Key": "SWIFT",
+    "Name": "Swift",
+    "Description": "Do not suffer usual penalties for moving through difficult terrain.",
+    "ActivationValue": "Passive"
+   },
+   "count": 0
+  },
+  {
+   "key": "PARRY",
+   "data": {
+    "Key": "PARRY",
+    "Name": "Parry",
+    "Description": "When hit by a melee attack, suffer 3 strain to reduce damage by 2 plus ranks in Parry.",
+    "Ranked": "true",
+    "ActivationValue": "Active",
+    "Activation": "OOT Incidental",
+    "Source": [
+     {
+      "_Page": "149",
+      "__text": "Force and Destiny Core Rulebook"
+     },
+     {
+      "_Page": "35",
+      "__text": "No Disintegrations"
+     }
+    ]
+   },
+   "count": 0
+  },
+  {
+   "key": "DODGEIMP",
+   "data": {
+    "Key": "DODGEIMP",
+    "Name": "Dodge (Improved)",
+    "Description": "After using Dodge, can make a Move maneuver as an out-of-turn incidental.",
+    "ActivationValue": "Active",
+    "Activation": "Incidental",
+    "Source": {
+     "_Page": "30",
+     "__text": "Knights of Fate"
+    }
+   },
+   "count": 0
+  },
+  {
+   "key": "SAPITHSUND",
+   "data": {
+    "Key": "SAPITHSUND",
+    "Name": "Sapith Sundering",
+    "Description": "May add [FO] up to Force rating to Brawl checks; the attack gains the Sunder quality, and character may spend [FP] generated one the check as [AD] to activate the Sunder quality.",
+    "Source": {
+     "_Page": "31",
+     "__text": "Knights of Fate"
+    },
+    "ActivationValue": "Active",
+    "ForceTalent": "true",
+    "Activation": "Incidental"
+   },
+   "count": 0
+  },
+  {
+   "key": "FORCERAT",
+   "data": {
+    "Key": "FORCERAT",
+    "Name": "Force Rating",
+    "Description": "Gain +1 Force Rating.",
+    "Ranked": "true",
+    "ActivationValue": "Passive",
+    "Attributes": {
+     "ForceRating": "1"
+    },
+    "ForceTalent": "true"
+   },
+   "count": 0
+  },
+  {
+   "key": "FARSTRIKE",
+   "data": {
+    "Key": "FARSTRIKE",
+    "Name": "Far Strike",
+    "Description": "As an action, make a Brawl check as a ranged attack, adding [FO] up to Force rating, increase the range of the attack by one band for each [FP] spent, to a maximum of long.",
+    "Source": {
+     "_Page": "30",
+     "__text": "Knights of Fate"
+    },
+    "ActivationValue": "Active",
+    "ForceTalent": "true",
+    "Activation": "Action"
+   },
+   "count": 0
+  },
+  {
+   "key": "DEDI",
+   "data": {
+    "Key": "DEDI",
+    "Name": "Dedication",
+    "Description": "Gain +1 to a single characteristic. This cannot bring a characteristic above 6.",
+    "Ranked": "true",
+    "ActivationValue": "Passive",
+    "CharacteristicChoices": {
+     "CharacteristicChoice": {
+      "Bonus": "1"
+     }
+    }
+   },
+   "count": 0
+  },
+  {
+   "key": "GRAPPLE",
+   "data": {
+    "Key": "GRAPPLE",
+    "Name": "Grapple",
+    "Description": "Once per round, the character may perform the Grapple maneuver. Until the beginning of the character's next turn, enemies must spend two maneuvers instead of one maneuver to move from engaged range to short range of him.",
+    "Source": "Keeping the Peace",
+    "ActivationValue": "Active",
+    "Activation": "Maneuver"
+   },
+   "count": 0
+  },
+  {
+   "key": "OVERBAL",
+   "data": {
+    "Key": "OVERBAL",
+    "Name": "Overbalance",
+    "Description": "Whenever an enemy engaged with the character makes a combat check, after the attack is resolved, the character may spend [DE] or [TH][TH][TH] to stagger the attacker until the end of the attacker's next turn.",
+    "Source": "Keeping the Peace",
+    "ActivationValue": "Passive"
+   },
+   "count": 0
+  },
+  {
+   "key": "MINDMAT",
+   "data": {
+    "Key": "MINDMAT",
+    "Name": "Mind Over Matter",
+    "Description": "The character may spend one Destiny Point to recover strain equal to to his Willpower rating.",
+    "Source": {
+     "_Page": "31",
+     "__text": "Savage Spirits"
+    },
+    "ActivationValue": "Active",
+    "Activation": "OOT Incidental"
+   },
+   "count": 0
+  },
+  {
+   "key": "COORDODGE",
+   "data": {
+    "Key": "COORDODGE",
+    "Name": "Coordination Dodge",
+    "Description": "When targeted by a combat check, may spend 1 Destiny Point to add [FA] equal to ranks in Coordination to check.",
+    "Source": "Far Horizons",
+    "ActivationValue": "Active"
+   },
+   "count": 0
+  },
+  {
+   "key": "NATBRAW",
+   "data": {
+    "Key": "NATBRAW",
+    "Name": "Natural Brawler",
+    "Description": "Once per session, may reroll any 1 Brawl or Melee check.",
+    "ActivationValue": "Active"
+   },
+   "count": 0
+  },
+  {
+   "key": "PRECSTRSUP",
+   "data": {
+    "Key": "PRECSTRSUP",
+    "Name": "Precision Strike (Supreme)",
+    "Description": "When this character inflicts a Critical Injury with a Brawl wepaon, may suffer 1 strain to chang the result to any [B]Hard([DI][DI][DI])[b] Critical Injury.",
+    "ActivationValue": "Active",
+    "Activation": "OOT Incidental",
+    "Source": {
+     "_Page": "36",
+     "__text": "No Disintegrations"
+    }
+   },
+   "count": 0
+  }
+ ],
+ "UsedQualities": [
+  {
+   "Key": "ACCURATE",
+   "Name": "Accurate Quality",
+   "Description": "",
+   "Type": "Weapon",
+   "ModDesc": "Accurate {0}",
+   "QualDesc": "Accurate {0}",
+   "IsQuality": "true",
+   "Source": [
+    "Edge of the Empire Core Rulebook",
+    "Age of Rebellion Core Rulebook",
+    "Force and Destiny Core Rulebook"
+   ]
+  },
+  {
+   "Key": "DEFENSIVE",
+   "Name": "Defensive Quality",
+   "Description": "",
+   "ModDesc": "Defensive {0}",
+   "QualDesc": "Defensive {0}",
+   "IsQuality": "true"
+  },
+  {
+   "Key": "SUNDER",
+   "Name": "Sunder Quality",
+   "Description": "",
+   "Type": "Weapon",
+   "ModDesc": "Sunder",
+   "QualDesc": "Sunder",
+   "IsBoolean": "true",
+   "IsQuality": "true",
+   "IsActiveQuality": "true"
+  },
+  {
+   "Key": "KNOCKDOWN",
+   "Name": "Knockdown Quality",
+   "Description": "",
+   "Type": "Weapon",
+   "ModDesc": "Knockdown",
+   "QualDesc": "Knockdown",
+   "IsBoolean": "true",
+   "IsQuality": "true",
+   "IsActiveQuality": "true"
+  },
+  {
+   "Key": "STUNSETTING",
+   "Name": "Stun Setting Quality",
+   "Description": "",
+   "Type": "Weapon",
+   "ModDesc": "Stun Setting",
+   "QualDesc": "Stun Setting",
+   "IsBoolean": "true",
+   "IsQuality": "true"
+  }
+ ]
+}
