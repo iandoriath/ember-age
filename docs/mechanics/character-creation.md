@@ -25,7 +25,7 @@ Four seats are filled.
 - **A Chadra-Fan technician** — the engine room and the slicing.
 - **A Republic trooper** — from a garrison that kept its post for three generations after its charter lapsed, and still counts itself on duty.
 - **A Dathomiri pilot** — self-taught in the Force, with no teacher and no name for what she does.
-- **Kinch** — a Jedi training droid, two hundred years on Coruscant, who left to find better opponents than the children he was built to spar with. Brawn 5, paired vamblades, and the sincere belief that offering to fight you is a friendly gesture.
+- **Kinch** — a Jedi training droid, two hundred years on Coruscant, who left to find better opponents than the children he was built to spar with. Brawl 5 with four ranks of Iron Body (a Crit 1 punch), paired vamblades, and the sincere belief that offering to fight you is a friendly gesture.
 
 Nobody at the table is a talker: the one who speaks to certifiers, kings and wardens, and signs what the crew puts on paper, is whoever wants it that night.
 

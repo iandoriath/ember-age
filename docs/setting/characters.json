@@ -448,31 +448,32 @@
   ],
   "career": "Warrior",
   "specializations": [
-   "Steel Hand Adept"
+   "Steel Hand Adept",
+   "Martial Artist"
   ],
   "characteristics": {
-   "Brawn": 5,
+   "Brawn": 2,
    "Agility": 1,
    "Intellect": 1,
    "Cunning": 1,
    "Willpower": 1,
    "Presence": 1
   },
-  "wounds": 17,
-  "strain": 11,
-  "soak": 8,
+  "wounds": 12,
+  "strain": 12,
+  "soak": 3,
   "defense": {
    "ranged": 0,
    "melee": 0
   },
   "encumbrance": {
-   "threshold": 10,
-   "current": 6
+   "threshold": 7,
+   "current": 0
   },
   "force_rating": 0,
   "morality": null,
   "credits": 5,
-  "notes": "<h3>Kinch — table notes</h3><p><b>Concept.</b> A Jedi training droid, two hundred years on Coruscant, who always knew the nice children were the wrong target. Hammer-sees-nails: offering to fight someone is, sincerely, a friendly gesture — it is what he was built for and did for centuries. Plays for comedy. Punches; does little else.</p><p><b>How he fights (the player&#x27;s own notes)</b></p><ul><li>Up to four hits a round: a crit on a hit, then <i>Precision Strike (Improved)</i> (2 strain) turns it into <b>Overpowered</b> — a free second attack with the same pool — and 2 Advantage on each attack lands the off-hand vamblade as well.</li><li><b>Discouraging Wound</b> via <i>Precision Strike</i> (1 strain): flips a Destiny Point. He seizes fate by the throat.</li><li>Against vehicles with no armour (or armour 1, on a big roll) he can crit with his fists — picture him ripping out exposed hydraulics or fuel lines. He has no Gunnery; this is legitimately his best option.</li><li>Warrior duel option, at the GM&#x27;s discretion: forgo the initiative roll (take a slot as if he rolled nothing) to make an Average Perception or Knowledge check for a boost die against one chosen enemy — the Qui-Gon/Maul stare-down.</li><li>Took the +10 Obligation options (+5 XP, +1,000 credits) — both spent: Brawn 5, the paired vamblades.</li></ul><p><b>Rules check (GM)</b></p><ul><li><b>Crit rating is 3, not 1.</b> Iron Body ×2 takes <i>unarmed</i> crits from 5 to 3 and does not touch the vamblades (printed crit 3). Triggering a crit costs <b>3 Advantage</b>, so the four-hit round needs 5 Advantage on one roll (3 for the crit + 2 for the off-hand). Still very live with Brawn 5 and Accurate 1; just not on 1 Advantage.</li><li><b>No Force Rating.</b> Droids cannot have one; the Warrior career&#x27;s FR 1 does not apply, and the Steel Hand tree&#x27;s Force talents (Acklay&#x27;s Scything Strike, Sapith Sundering, Far Strike, Force Rating) are closed to him. The sheet prints none.</li><li><b>Free career ranks:</b> the app allowed six (all six Warrior skills); a droid Warrior gets 3 + 2 = <b>5</b>. One rank over — pick one to drop, or let it stand.</li><li><b>Obligation</b> reads 10 in the export — that is the +10 from the options alone. With the four-PC base of 10, his line should carry <b>20</b> (Contract: the Lamplighters&#x27; Guild).</li></ul>",
+  "notes": "<h3>Kinch — table notes</h3><p><b>Concept.</b> A Jedi training droid, two hundred years on Coruscant, who always knew the nice children were the wrong target. Hammer-sees-nails: offering to fight someone is, sincerely, a friendly gesture — it is what he was built for and did for centuries. Plays for comedy. Punches; does little else.</p><p><b>The build (second pass).</b> The &quot;multiclass droid&quot; route to a Crit 1 punch: Steel Hand Adept plus Martial Artist for <b>Iron Body ×4</b>, which takes the standard Brawl critical rating from 5 to 1 — and since a Brawl weapon augments an unarmed attack (core rules; Sam Stewart&#x27;s ruling), the vamblades swing at that rating too. Paid for with Brawn 5 → 2 and three bought Brawl ranks: the pool stays 2 yellow + 3 green, the damage does not (fists 2, blades 3).</p><p><b>How he fights (the player&#x27;s own notes)</b></p><ul><li>Up to four hits a round: a crit on a hit (1 Advantage now), then <i>Precision Strike (Improved)</i> (2 strain) turns it into <b>Overpowered</b> — a free second attack with the same pool — and 2 Advantage on each attack lands the off-hand vamblade as well.</li><li><b>Discouraging Wound</b> via <i>Precision Strike</i> (1 strain): landed on an NPC, flips a dark-side Destiny Point to light. He seizes fate by the throat.</li><li><i>Martial Grace</i> (2 strain): adds his Coordination ranks to the next Brawl hit — worth nothing until he buys Coordination.</li><li>Against vehicles with armour 0 he can crit with his fists once a hit deals damage (10 damage after the ÷10 — four Successes); armour 1 stops him cold. He has no Gunnery.</li><li>Warrior duel option, at the GM&#x27;s discretion: forgo the initiative roll for an Average Perception or Knowledge check for a boost die against one chosen enemy — the stare-down.</li><li>Took the +10 Obligation options (+5 XP, +1,000 credits) — both spent.</li></ul><p><b>Rules check (GM)</b></p><ul><li><b>Crit 1 is legitimate now</b> (Iron Body ×4: 5 − 4 = 1), for fists and for the vamblades alike. A crit costs <b>1 Advantage</b>; the four-hit round needs 3 Advantage on the first roll (1 for the crit, 2 for the off-hand).</li><li><b>But a crit needs the hit to deal damage.</b> Damage is 3 (blades) or 2 (fists) plus net Successes, against soak 3–5 on most of the Run&#x27;s enforcers: he needs 1–3 net Successes before the crit can fire at all. Brawn 2 is the price of Crit 1; it is a real price.</li><li><b>Brawl rank 5 at character creation breaks the creation cap</b> (no skill above rank 2 at creation). Two ranks are free (career + spec); the three bought ranks — 60 XP — are the problem. Ian&#x27;s call: waive the cap, or send those 60 XP back to Brawn (2 → 3 is 30) and toughness.</li><li><b>The Jedi Training Suit is not equipped</b> in this export (soak 3 instead of 5). Probably an accident of the rebuild; worn armour costs 3 less encumbrance, so it fits under his threshold of 7 alongside the vamblades.</li><li><b>The Obligation lost its name and text</b> in the re-export (it is a bare 10 with the options still ticked) and the <b>Purpose motivation is gone</b>; the comlink went too. Re-enter <i>Contract — the Lamplighters&#x27; Guild</i> and <i>Purpose: &quot;I was made to punch — what?&quot;</i>; with the four-PC base of 10 the Obligation should carry 20.</li><li><b>No Force Rating</b> for a droid despite the Warrior career; the Steel Hand tree&#x27;s Force talents are closed to him. The sheet prints none.</li><li><b>Free career ranks:</b> the app allowed six; a droid Warrior gets 3 + 2 = five. One rank over.</li></ul>",
   "skills": [
    {
     "name": "Astrogation",
@@ -489,13 +490,13 @@
     "rank": 1,
     "career": true,
     "proficiency": 1,
-    "ability": 4,
+    "ability": 1,
     "type": "General"
    },
    {
     "name": "Brawl",
     "characteristic": "Brawn",
-    "rank": 2,
+    "rank": 5,
     "career": true,
     "proficiency": 2,
     "ability": 3,
@@ -606,7 +607,7 @@
     "rank": 0,
     "career": false,
     "proficiency": 0,
-    "ability": 5,
+    "ability": 2,
     "type": "Combat"
    },
    {
@@ -642,7 +643,7 @@
     "rank": 1,
     "career": true,
     "proficiency": 1,
-    "ability": 4,
+    "ability": 1,
     "type": "Combat"
    },
    {
@@ -714,7 +715,7 @@
     "rank": 0,
     "career": false,
     "proficiency": 0,
-    "ability": 5,
+    "ability": 2,
     "type": "General"
    },
    {
@@ -799,21 +800,27 @@
    },
    {
     "name": "Iron Body",
-    "count": 2,
+    "count": 4,
     "activation": "Passive",
     "description": "Remove [SE] per rank of Iron Body from Coordination and Resilience checks. Reduce the critical rating of unarmed attacks by 1 per rank of Iron Body (to a minimum of 1)."
-   },
-   {
-    "name": "Toughened",
-    "count": 1,
-    "activation": "Passive",
-    "description": "Gain +2 wound threshold."
    },
    {
     "name": "Precision Strike",
     "count": 1,
     "activation": "Active",
     "description": "When this character inflicts a Critical Injury with a Brawl, Melee, or Lightsaber weapon, may suffer 1 strain to change the result to any [B]Easy ([DI])[b] Critical Injury result."
+   },
+   {
+    "name": "Martial Grace",
+    "count": 1,
+    "activation": "Active",
+    "description": "Once per round, suffers 2 strain to add damage equal to ranks in Coordination to next Brawl check made this turn."
+   },
+   {
+    "name": "Grit",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Gain +1 strain threshold"
    },
    {
     "name": "Precision Strike (Improved)",
@@ -826,8 +833,8 @@
    {
     "name": "S-1 Vamblade (Paired)",
     "skill": "Brawl",
-    "damage": "6",
-    "crit": "3",
+    "damage": "3",
+    "crit": "1",
     "range": "Engaged",
     "qualities": [
      "Accurate 1",
@@ -836,13 +843,13 @@
      "Knockdown"
     ],
     "notes": "",
-    "equipped": true
+    "equipped": false
    },
    {
     "name": "Unarmed",
     "skill": "Brawl",
-    "damage": "5",
-    "crit": "3",
+    "damage": "2",
+    "crit": "1",
     "range": "Engaged",
     "qualities": [
      "Knockdown",
@@ -858,17 +865,10 @@
     "soak": 2,
     "defense": 0,
     "encumbrance": 4,
-    "equipped": true
+    "equipped": false
    }
   ],
   "gear": [
-   {
-    "name": "Comlink (handheld)",
-    "quantity": 1,
-    "type": "Communications",
-    "encumbrance": 0,
-    "notes": ""
-   },
    {
     "name": "Entrenching Tool",
     "quantity": 1,
@@ -878,23 +878,17 @@
    },
    {
     "name": "Emergency Repair Patch",
-    "quantity": 2,
+    "quantity": 3,
     "type": "Tools/Electronics",
     "encumbrance": 0,
     "notes": "Repairs 3 wounds on a droid."
    }
   ],
   "vehicles": [],
-  "obligations": [
-   {
-    "type": "Contract",
-    "text": "Lamplighter's guild",
-    "total": 10
-   }
-  ],
+  "obligations": [],
   "duties": [],
-  "motivation": "Quest: Purpose",
-  "background": "Kinch spent 200 years as a jedi training droid on Coruscant, always knowing there had to be a better target for his violence than the nice children he was tasked with fighting. One day he heard a master say, \"sometimes, one must take destiny into their own hands\" and he had an epiphany - later that night, Kinch cornered the master alone and unarmed, and left him covered in Discouraging Wounds before leaping out of a window into a speeder which was passing below by \"chance\". Ever since that night, Kinch has seized fate by the throat in pursuit of proper opponents."
+  "motivation": null,
+  "background": "Kinch spent 200 years as a jedi training droid on Coruscant, always knowing there had to\nbe a better target for his violence than the nice children he was tasked with fighting. One\nday he heard a master say, \"sometimes, one must take destiny into their own hands\" and\nhe had an epiphany - later that night, Kinch cornered the master alone and unarmed, and\nleft him covered in Discouraging Wounds before leaping out of a window into a speeder\nwhich was passing below by \"chance\". Ever since that night, Kinch has seized fate by the\nthroat in pursuit of proper opponents."
  },
  {
   "slug": "mikres-kyries",
