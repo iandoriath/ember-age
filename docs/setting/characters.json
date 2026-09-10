@@ -30,6 +30,7 @@
   "force_rating": 1,
   "morality": 50,
   "credits": 75,
+  "notes": "",
   "skills": [
    {
     "name": "Astrogation",
@@ -420,6 +421,482 @@
   "background": ""
  },
  {
+  "slug": "kinch",
+  "name": "Kinch",
+  "species": "Droid",
+  "species_abilities": [
+   {
+    "name": "Additional Career Skills",
+    "description": "May train in two additional career skills and one additional specialization skills"
+   },
+   {
+    "name": "Feature",
+    "description": "Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons."
+   },
+   {
+    "name": "Inorganic",
+    "description": "Droids do not gain benefits from bacta, stimpacks, or Medicine checks. They must be repaired with repair patches and Mechanics checks."
+   },
+   {
+    "name": "Mechanical Being",
+    "description": "Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers."
+   },
+   {
+    "name": "Cybernetics",
+    "description": "Droids have a cybernetics implant cap of 6."
+   }
+  ],
+  "career": "Warrior",
+  "specializations": [
+   "Steel Hand Adept"
+  ],
+  "characteristics": {
+   "Brawn": 5,
+   "Agility": 1,
+   "Intellect": 1,
+   "Cunning": 1,
+   "Willpower": 1,
+   "Presence": 1
+  },
+  "wounds": 17,
+  "strain": 11,
+  "soak": 8,
+  "defense": {
+   "ranged": 0,
+   "melee": 0
+  },
+  "encumbrance": {
+   "threshold": 10,
+   "current": 6
+  },
+  "force_rating": 0,
+  "morality": null,
+  "credits": 5,
+  "notes": "<h3>Kinch — table notes</h3><p><b>Concept.</b> A Jedi training droid, two hundred years on Coruscant, who always knew the nice children were the wrong target. Hammer-sees-nails: offering to fight someone is, sincerely, a friendly gesture — it is what he was built for and did for centuries. Plays for comedy. Punches; does little else.</p><p><b>How he fights (the player&#x27;s own notes)</b></p><ul><li>Up to four hits a round: a crit on a hit, then <i>Precision Strike (Improved)</i> (2 strain) turns it into <b>Overpowered</b> — a free second attack with the same pool — and 2 Advantage on each attack lands the off-hand vamblade as well.</li><li><b>Discouraging Wound</b> via <i>Precision Strike</i> (1 strain): flips a Destiny Point. He seizes fate by the throat.</li><li>Against vehicles with no armour (or armour 1, on a big roll) he can crit with his fists — picture him ripping out exposed hydraulics or fuel lines. He has no Gunnery; this is legitimately his best option.</li><li>Warrior duel option, at the GM&#x27;s discretion: forgo the initiative roll (take a slot as if he rolled nothing) to make an Average Perception or Knowledge check for a boost die against one chosen enemy — the Qui-Gon/Maul stare-down.</li><li>Took the +10 Obligation options (+5 XP, +1,000 credits) — both spent: Brawn 5, the paired vamblades.</li></ul><p><b>Rules check (GM)</b></p><ul><li><b>Crit rating is 3, not 1.</b> Iron Body ×2 takes <i>unarmed</i> crits from 5 to 3 and does not touch the vamblades (printed crit 3). Triggering a crit costs <b>3 Advantage</b>, so the four-hit round needs 5 Advantage on one roll (3 for the crit + 2 for the off-hand). Still very live with Brawn 5 and Accurate 1; just not on 1 Advantage.</li><li><b>No Force Rating.</b> Droids cannot have one; the Warrior career&#x27;s FR 1 does not apply, and the Steel Hand tree&#x27;s Force talents (Acklay&#x27;s Scything Strike, Sapith Sundering, Far Strike, Force Rating) are closed to him. The sheet prints none.</li><li><b>Free career ranks:</b> the app allowed six (all six Warrior skills); a droid Warrior gets 3 + 2 = <b>5</b>. One rank over — pick one to drop, or let it stand.</li><li><b>Obligation</b> reads 10 in the export — that is the +10 from the options alone. With the four-PC base of 10, his line should carry <b>20</b> (Contract: the Lamplighters&#x27; Guild).</li></ul>",
+  "skills": [
+   {
+    "name": "Astrogation",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Athletics",
+    "characteristic": "Brawn",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 4,
+    "type": "General"
+   },
+   {
+    "name": "Brawl",
+    "characteristic": "Brawn",
+    "rank": 2,
+    "career": true,
+    "proficiency": 2,
+    "ability": 3,
+    "type": "Combat"
+   },
+   {
+    "name": "Charm",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Coercion",
+    "characteristic": "Willpower",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Computers",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Cool",
+    "characteristic": "Presence",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 0,
+    "type": "General"
+   },
+   {
+    "name": "Coordination",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": true,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Core Worlds)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Deception",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Discipline",
+    "characteristic": "Willpower",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 0,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Education)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Gunnery",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Combat"
+   },
+   {
+    "name": "Leadership",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Lightsaber",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 5,
+    "type": "Combat"
+   },
+   {
+    "name": "Knowledge (Lore)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Mechanics",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Medicine",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Melee",
+    "characteristic": "Brawn",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 4,
+    "type": "Combat"
+   },
+   {
+    "name": "Negotiation",
+    "characteristic": "Presence",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Outer Rim)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Perception",
+    "characteristic": "Cunning",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 0,
+    "type": "General"
+   },
+   {
+    "name": "Piloting (Planetary)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Piloting (Space)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Ranged (Heavy)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Combat"
+   },
+   {
+    "name": "Ranged (Light)",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Combat"
+   },
+   {
+    "name": "Resilience",
+    "characteristic": "Brawn",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 5,
+    "type": "General"
+   },
+   {
+    "name": "Skulduggery",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Stealth",
+    "characteristic": "Agility",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Streetwise",
+    "characteristic": "Cunning",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "General"
+   },
+   {
+    "name": "Survival",
+    "characteristic": "Cunning",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 0,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Underworld)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Vigilance",
+    "characteristic": "Willpower",
+    "rank": 1,
+    "career": true,
+    "proficiency": 1,
+    "ability": 0,
+    "type": "General"
+   },
+   {
+    "name": "Knowledge (Warfare)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Knowledge"
+   },
+   {
+    "name": "Knowledge (Xenology)",
+    "characteristic": "Intellect",
+    "rank": 0,
+    "career": false,
+    "proficiency": 0,
+    "ability": 1,
+    "type": "Knowledge"
+   }
+  ],
+  "talents": [
+   {
+    "name": "Enduring",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Gain +1 soak value."
+   },
+   {
+    "name": "Iron Body",
+    "count": 2,
+    "activation": "Passive",
+    "description": "Remove [SE] per rank of Iron Body from Coordination and Resilience checks. Reduce the critical rating of unarmed attacks by 1 per rank of Iron Body (to a minimum of 1)."
+   },
+   {
+    "name": "Toughened",
+    "count": 1,
+    "activation": "Passive",
+    "description": "Gain +2 wound threshold."
+   },
+   {
+    "name": "Precision Strike",
+    "count": 1,
+    "activation": "Active",
+    "description": "When this character inflicts a Critical Injury with a Brawl, Melee, or Lightsaber weapon, may suffer 1 strain to change the result to any [B]Easy ([DI])[b] Critical Injury result."
+   },
+   {
+    "name": "Precision Strike (Improved)",
+    "count": 1,
+    "activation": "Active",
+    "description": "Once per round, when inflicting a Critical Injury with a Brawl or Melee weapon, may suffer 2 strain to change the result to any [B]Average ([DI][DI])[b] Critical injury."
+   }
+  ],
+  "weapons": [
+   {
+    "name": "S-1 Vamblade (Paired)",
+    "skill": "Brawl",
+    "damage": "6",
+    "crit": "3",
+    "range": "Engaged",
+    "qualities": [
+     "Accurate 1",
+     "Defensive 1",
+     "Sunder",
+     "Knockdown"
+    ],
+    "notes": "",
+    "equipped": true
+   },
+   {
+    "name": "Unarmed",
+    "skill": "Brawl",
+    "damage": "5",
+    "crit": "3",
+    "range": "Engaged",
+    "qualities": [
+     "Knockdown",
+     "Stun Setting"
+    ],
+    "notes": "",
+    "equipped": true
+   }
+  ],
+  "armor": [
+   {
+    "name": "Jedi Training Suit (Unweighted)",
+    "soak": 2,
+    "defense": 0,
+    "encumbrance": 4,
+    "equipped": true
+   }
+  ],
+  "gear": [
+   {
+    "name": "Comlink (handheld)",
+    "quantity": 1,
+    "type": "Communications",
+    "encumbrance": 0,
+    "notes": ""
+   },
+   {
+    "name": "Entrenching Tool",
+    "quantity": 1,
+    "type": "Tools/Electronics",
+    "encumbrance": 1,
+    "notes": ""
+   },
+   {
+    "name": "Emergency Repair Patch",
+    "quantity": 2,
+    "type": "Tools/Electronics",
+    "encumbrance": 0,
+    "notes": "Repairs 3 wounds on a droid."
+   }
+  ],
+  "vehicles": [],
+  "obligations": [
+   {
+    "type": "Contract",
+    "text": "Lamplighter's guild",
+    "total": 10
+   }
+  ],
+  "duties": [],
+  "motivation": "Quest: Purpose",
+  "background": "Kinch spent 200 years as a jedi training droid on Coruscant, always knowing there had to be a better target for his violence than the nice children he was tasked with fighting. One day he heard a master say, \"sometimes, one must take destiny into their own hands\" and he had an epiphany - later that night, Kinch cornered the master alone and unarmed, and left him covered in Discouraging Wounds before leaping out of a window into a speeder which was passing below by \"chance\". Ever since that night, Kinch has seized fate by the throat in pursuit of proper opponents."
+ },
+ {
   "slug": "mikres-kyries",
   "name": "Mikrés Kyríes",
   "species": "Chadra-Fan",
@@ -459,6 +936,7 @@
   "force_rating": 0,
   "morality": null,
   "credits": 60,
+  "notes": "",
   "skills": [
    {
     "name": "Astrogation",
@@ -936,6 +1414,7 @@
   "force_rating": 0,
   "morality": null,
   "credits": 0,
+  "notes": "",
   "skills": [
    {
     "name": "Astrogation",
@@ -1396,6 +1875,7 @@
   "force_rating": 1,
   "morality": 50,
   "credits": 500,
+  "notes": "",
   "skills": [
    {
     "name": "Astrogation",

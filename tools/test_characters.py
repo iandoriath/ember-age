@@ -159,3 +159,38 @@ def test_weapon_card_explains_each_quality():
 
 test_weapon_card_explains_each_quality()
 print("item-card test ok")
+
+
+def test_droid_has_no_force_rating_and_sidecar_notes_render(tmp_path=None):
+    d = json.loads(json.dumps(SAMPLE))
+    d["Species"] = {"Name": "Droid", "Key": "DROID", "NoForceAbilities": "true", "OptionChoices": []}
+    d["ForceRating"] = 1                      # the app writes a Force career's FR 1 even for a droid
+    c = bc.normalize(d, "sample")
+    assert c["force_rating"] == 0, c["force_rating"]
+    assert "Force Rating" not in bc.sheet_html(c)
+    import tempfile, pathlib
+    old = bc.SRC
+    try:
+        tmp = pathlib.Path(tempfile.mkdtemp()); bc.SRC = tmp
+        (tmp / "sample.notes.md").write_text("# Notes\n\n**Bold** and *odd*.\n\n- one\n- two\n", encoding="utf-8")
+        c2 = bc.normalize(json.loads(json.dumps(SAMPLE)), "sample")
+        assert "<h3>Notes</h3>" in c2["notes"] and "<b>Bold</b>" in c2["notes"] and "<li>two</li>" in c2["notes"], c2["notes"]
+        assert "Table notes" in bc.sheet_html(c2)
+        assert not bc.normalize(json.loads(json.dumps(SAMPLE)), "nobody")["notes"]   # no sidecar, no section
+    finally:
+        bc.SRC = old
+
+test_droid_has_no_force_rating_and_sidecar_notes_render()
+print("droid/notes test ok")
+
+
+def test_nostun_base_mod_strips_the_merged_stun_setting():
+    d = json.loads(json.dumps(SAMPLE))
+    d["Weapons"] = [{"Key": "VAMBLADE2S1", "Name": "S-1 Vamblade (Paired)", "SkillKey": "BRAWL", "DamageAdd": "1", "Crit": "3", "Range": "Engaged",
+                     "BaseMods": {"Key": "NOSTUN"}, "Qualities": [{"Key": "ACCURATE", "Count": "1"}, {"Key": "SUNDER"}, {"Key": "STUNSETTING"}]}] + d["Weapons"]
+    w = {x["name"]: x for x in bc.normalize(d, "s")["weapons"]}
+    assert not any(q.startswith("Stun Setting") for q in w["S-1 Vamblade (Paired)"]["qualities"]), w
+    assert any(q.startswith("Stun Setting") for q in w["Blaster Pistol"]["qualities"])   # other weapons keep theirs
+
+test_nostun_base_mod_strips_the_merged_stun_setting()
+print("nostun test ok")

@@ -86,6 +86,34 @@ def skill_ranks(d: dict) -> dict:
     return ranks
 
 
+def md_lite(text: str) -> str:
+    """Paragraphs, "- " bullets, "# " headings, **bold** and *italic* — enough for a table-notes sidecar."""
+    out, buf, ul = [], [], []
+    def inline(t):
+        t = html.escape(t)
+        t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
+        return re.sub(r"(?<!\*)\*(?!\*)(.+?)\*", r"<i>\1</i>", t)
+    def flush():
+        nonlocal buf, ul
+        if ul:
+            out.append("<ul>" + "".join(f"<li>{inline(x)}</li>" for x in ul) + "</ul>"); ul = []
+        if buf:
+            out.append("<p>" + inline(" ".join(buf)) + "</p>"); buf = []
+    for line in text.splitlines():
+        s = line.strip()
+        if not s:
+            flush(); continue
+        if s.startswith("#"):
+            flush(); out.append(f"<h3>{inline(s.lstrip('#').strip())}</h3>"); continue
+        if s.startswith("- "):
+            if buf: flush()
+            ul.append(s[2:]); continue
+        if ul: flush()
+        buf.append(s)
+    flush()
+    return "".join(out)
+
+
 def normalize(d: dict, stem: str = "") -> dict:
     chars = {c: num(d["Characteristics"].get(c)) for c in CHARS}
     career_skills = set(as_list(d.get("CareerSkills"))) | set(as_list(d.get("SpecSkills"))) | set(as_list(d.get("ExtraCareerSkills")))
@@ -108,8 +136,12 @@ def normalize(d: dict, stem: str = "") -> dict:
             dmg = f"{chars['Brawn'] + num(w.get('DamageAdd'))}"
         else:
             dmg = str(w.get("Damage", "—"))
+        quals = [quality_name(q, used_q) for q in as_list(w.get("Qualities")) if isinstance(q, dict)]
+        base_mods = w.get("BaseMods") if isinstance(w.get("BaseMods"), dict) else {}
+        if base_mods.get("Key") == "NOSTUN":   # a Brawl weapon that forbids stun damage: the app still merges the unarmed Stun Setting onto it
+            quals = [q for q in quals if not q.startswith("Stun Setting")]
         weapons.append({"name": w.get("Name", "?"), "skill": skill, "damage": dmg, "crit": str(w.get("Crit", "—")),
-                        "range": w.get("Range", "—"), "qualities": [quality_name(q, used_q) for q in as_list(w.get("Qualities")) if isinstance(q, dict)],
+                        "range": w.get("Range", "—"), "qualities": quals,
                         "notes": (w.get("BaseMods") or {}).get("MiscDesc", "") if isinstance(w.get("BaseMods"), dict) else "",
                         "equipped": bool(w.get("Equipped")) or w.get("Key") == "UNARMED"})
     # Ichor Blade (the Nightsister tree): the app records the talent but never applies it to a weapon
@@ -193,13 +225,22 @@ def normalize(d: dict, stem: str = "") -> dict:
             motivation = f"{m.get('Motivation', {}).get('Name', '')}: {sm['Name']}".strip(": ")
     morality = num(d.get("Morality", {}).get("Score"), 50) if d.get("Morality", {}).get("Toggle") else None
     name = d.get("Name") or stem or "Unnamed"   # a nameless draft is labeled by its export file (Dathomiri.json -> "Dathomiri")
+    # Droids cannot acquire a Force Rating (species rule); a Force career's FR 1 does not apply to them,
+    # but the app still writes it into the export.
+    sp = d.get("Species") or {}
+    is_droid = str(sp.get("NoForceAbilities", "")).lower() == "true" or sp.get("Key") == "DROID"
+    # Optional sidecar, hyperdrive/<stem>.notes.md: table notes that survive every re-export
+    # (a player's tactics, the GM's rules check). Rendered on the sheet and the Crew tab.
+    notes_path = SRC / f"{stem}.notes.md" if stem else None
+    notes = md_lite(notes_path.read_text(encoding="utf-8")) if notes_path and notes_path.exists() else ""
     return {
         "slug": slugify(name), "name": name, "species": species.get("Name", ""), "species_abilities": abilities,
         "career": d.get("Career", {}).get("Name", ""), "specializations": [s.get("Name", "") for s in as_list(d.get("Specializations")) if isinstance(s, dict)],
         "characteristics": chars, "wounds": num(d.get("Wounds")), "strain": num(d.get("Strain")), "soak": num(d.get("Soak")),
         "defense": {"ranged": num(d.get("Defense", {}).get("Ranged")), "melee": num(d.get("Defense", {}).get("Melee"))},
         "encumbrance": {"threshold": 5 + chars["Brawn"], "current": num(d.get("EncumbranceCurrent"))},
-        "force_rating": num(d.get("ForceRating")), "morality": morality, "credits": num(d.get("Credits")),
+        "force_rating": 0 if is_droid else num(d.get("ForceRating")), "morality": morality, "credits": num(d.get("Credits")),
+        "notes": notes,
         "skills": skills, "talents": talents, "weapons": weapons, "armor": armor, "gear": gear, "vehicles": vehicles,
         "obligations": obligations, "duties": duties, "motivation": motivation, "background": (d.get("Background") or {}).get("Text", ""),
     }
@@ -279,6 +320,7 @@ def sheet_html(c: dict) -> str:
   .muted{{color:var(--dim)}} .small{{font-size:7.4pt}}
   .meta{{display:flex;gap:10pt;flex-wrap:wrap;font-size:8pt;margin:0 0 4pt}} .meta b{{color:var(--ember)}}
   .sec ul{{margin-left:9pt}} .sec li{{margin:1pt 0;font-size:8pt}}
+  .sec.notes p{{font-size:8pt;margin:2pt 0}} .sec.notes h3{{font-size:8.6pt;margin:4pt 0 1pt;color:var(--ember)}}
 </style>
 </head>
 <body>
@@ -339,6 +381,7 @@ def sheet_html(c: dict) -> str:
 
 {('<div class="sec"><h2><span class="n">◆</span> Ship</h2>' + ships + '</div>') if ships else ""}
 
+{('<div class="sec notes"><h2><span class="n">◆</span> Table notes</h2>' + c["notes"] + '</div>') if c.get("notes") else ""}
 {('<div class="sec"><h2><span class="n">◆</span> Background</h2><p>' + e(c["background"]) + '</p></div>') if c["background"] else ""}
 
 </div>
