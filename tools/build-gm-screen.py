@@ -369,6 +369,7 @@ def parse_module(mid, relpath, name_to_id):
 # ---------------------------------------------------------------- pages
 PAGES_SPEC = [
     ("reference", "primer", "Adversary Rules Primer", "gm/npcs/index.md"),
+    ("reference", "crew-notes", "The Crew — GM notes 🔒", "gm/crew.md"),
     ("reference", "dice-results", "Reading the Dice", "mechanics/dice-results.md"),
     ("reference", "lore-fragments", "Lore Fragments", "mechanics/lore-fragments.md"),
     ("reference", "beacon-relighting", "Relighting a Beacon", "mechanics/beacon-relighting.md"),
